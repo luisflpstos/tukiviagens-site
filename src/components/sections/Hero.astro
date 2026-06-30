@@ -1,7 +1,6 @@
 ---
 import Container from '../common/Container.astro';
 import Button from '../common/Button.astro';
-import StarDecoration from '../common/StarDecoration.astro';
 import { SITE, HERO_STATS, BRAND, HERO_EYEBROW, HERO_FLOATING_BADGES } from '../../lib/constants';
 import { buildWhatsAppUrl } from '../../lib/seo';
 import { resolveHeroImagePath } from '../../lib/image-paths';
@@ -24,8 +23,6 @@ const heroBackground = resolveHeroImagePath();
 		<div class="tuki-hero-photo-overlay"></div>
 		<div class="tuki-hero-ref absolute inset-0"></div>
 	</div>
-
-	<StarDecoration size={36} class="tuki-star-twinkle absolute right-6 top-6 z-20 text-tuki-orange md:right-12 md:top-10" />
 
 	<Container size="reference" class="relative pb-24 pt-10 md:pb-28 md:pt-14">
 		<div class="grid items-center gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-12">

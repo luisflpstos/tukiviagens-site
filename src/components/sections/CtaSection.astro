@@ -1,7 +1,6 @@
 ---
 import Container from '../common/Container.astro';
 import Button from '../common/Button.astro';
-import StarDecoration from '../common/StarDecoration.astro';
 import { SITE } from '../../lib/constants';
 import { buildWhatsAppUrl } from '../../lib/seo';
 
@@ -18,8 +17,7 @@ const {
 
 <section class="section-padding bg-tuki-off-white">
 	<Container size="reference">
-		<div class="relative tuki-cta-ref overflow-hidden rounded-3xl px-8 py-12 text-center text-white md:px-16 md:py-14">
-			<StarDecoration size={32} class="absolute right-6 top-6 text-tuki-orange" />
+		<div class="tuki-cta-ref overflow-hidden rounded-3xl px-8 py-12 text-center text-white md:px-16 md:py-14">
 			<h2 class="text-3xl font-extrabold tracking-[-0.03em] md:text-4xl">{title}</h2>
 			<p class="mx-auto mt-4 max-w-xl text-base leading-relaxed text-white/90 md:text-lg">{subtitle}</p>
 			<div class="mt-8 flex flex-wrap justify-center gap-4">

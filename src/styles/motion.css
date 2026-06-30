@@ -32,10 +32,6 @@
 	animation-delay: calc(var(--badge-i, 0) * 110ms + 600ms), calc(var(--badge-i, 0) * 0.45s + 2.4s);
 }
 
-.tuki-star-twinkle {
-	animation: tuki-star-pulse 3.5s ease-in-out infinite;
-}
-
 .tuki-mascot-glide {
 	animation: tuki-float 5.5s ease-in-out infinite;
 }
@@ -140,19 +136,6 @@ html.tuki-motion-ready [data-tuki-reveal].is-revealed .tuki-stagger-item {
 
 	50% {
 		translate: 0 -8px;
-	}
-}
-
-@keyframes tuki-star-pulse {
-	0%,
-	100% {
-		opacity: 0.85;
-		transform: scale(1) rotate(0deg);
-	}
-
-	50% {
-		opacity: 1;
-		transform: scale(1.12) rotate(12deg);
 	}
 }
 

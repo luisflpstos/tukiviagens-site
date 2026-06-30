@@ -159,7 +159,7 @@
 		display: flex;
 		width: max-content;
 		align-items: center;
-		animation: tuki-ticker 50s linear infinite;
+		animation: tuki-ticker 15s linear infinite;
 	}
 
 	.tuki-ticker-item {
