@@ -55,6 +55,10 @@ O Nordeste concentra alguns dos **resorts mais procurados do Brasil** — Marago
 | Casal | Resorts boutique ou beira-mar com spa |
 | Primeira viagem ao Nordeste | Porto de Galinhas ou Maragogi — infraestrutura consolidada |
 
+## All inclusive no Nordeste
+
+Para quem busca **resort all inclusive**, Maragogi e a Bahia concentram as ofertas mais consolidadas — mas nem todo hotel que anuncia all inclusive entrega regime completo de fato. Consulte nosso [guia de resorts all inclusive no Nordeste](/nordeste/resorts-all-inclusive/) para comparar destinos e entender quando vale a pena.
+
 ## Como cotar com a Tuki
 
 O Nordeste tem alta concorrência e muitas variações de regime de pensão. Nossa curadoria compara hotéis disponíveis para suas datas, explica o que está incluso e evita reservas que não correspondem à expectativa do viajante.
