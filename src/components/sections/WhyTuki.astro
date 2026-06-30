@@ -7,7 +7,7 @@ import { WHY_TUKI_BENEFITS, WHY_TUKI_CARDS, WHY_TUKI_INTRO, TRUST_ITEMS } from '
 
 <section id="por-que-tuki" class="relative section-padding overflow-hidden bg-white">
 	<StarDecoration
-		size={120}
+		size={156}
 		class="pointer-events-none absolute -right-8 top-1/2 -translate-y-1/2 text-tuki-orange/15"
 	/>
 
@@ -23,7 +23,7 @@ import { WHY_TUKI_BENEFITS, WHY_TUKI_CARDS, WHY_TUKI_INTRO, TRUST_ITEMS } from '
 					{
 						WHY_TUKI_BENEFITS.map((benefit) => (
 							<li class="flex items-start gap-3">
-								<span class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-tuki-orange text-xs font-bold text-white">
+								<span class="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-tuki-orange text-xs font-bold text-white">
 									✓
 								</span>
 								<span class="text-tuki-muted">{benefit}</span>
@@ -51,7 +51,7 @@ import { WHY_TUKI_BENEFITS, WHY_TUKI_CARDS, WHY_TUKI_INTRO, TRUST_ITEMS } from '
 				{
 					WHY_TUKI_CARDS.map((card) => (
 						<div class="tuki-card-ref bg-white p-5 transition hover:-translate-y-0.5 hover:shadow-md">
-							<div class="mb-4 flex h-14 w-14 items-center justify-center rounded-xl bg-tuki-lavender/80 p-1.5">
+							<div class="mb-4 flex h-19 w-19 items-center justify-center rounded-xl bg-tuki-lavender/80 p-1.5">
 								<TukiIcon src={card.icon} alt={card.iconAlt} size="md" />
 							</div>
 							<h3 class="font-bold text-tuki-ink">{card.title}</h3>

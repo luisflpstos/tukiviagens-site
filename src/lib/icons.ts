@@ -24,3 +24,32 @@ export const TUKI_ICONS = {
 } as const;
 
 export type TukiIconKey = keyof typeof TUKI_ICONS;
+
+const MARQUEE_ICON_ALTS: Record<TukiIconKey, string> = {
+	aviao: 'Avião',
+	cadeiraPraia: 'Cadeira de praia',
+	cama: 'Cama de hotel',
+	carro: 'Carro',
+	gramado: 'Gramado',
+	hotel: 'Hotel',
+	mala: 'Mala de viagem',
+	mapa: 'Mapa',
+	nordeste: 'Nordeste',
+	oculosBoia: 'Óculos e boia',
+	olimpia: 'Olímpia',
+	pacotesBrasil: 'Pacotes Brasil',
+	passaporte: 'Passaporte',
+	piscina: 'Piscina',
+	placaFerias: 'Placa de férias',
+	rioDeJaneiro: 'Rio de Janeiro',
+	rioQuente: 'Rio Quente',
+	sol: 'Sol',
+};
+
+/** Todos os ícones da marca para a faixa marquee da home. */
+export const MARQUEE_ICONS = (Object.entries(TUKI_ICONS) as [TukiIconKey, string][]).map(
+	([key, src]) => ({
+		src,
+		alt: MARQUEE_ICON_ALTS[key],
+	}),
+);

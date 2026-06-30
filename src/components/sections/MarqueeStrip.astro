@@ -1,19 +1,50 @@
 ---
-import StarDecoration from '../common/StarDecoration.astro';
 import TukiIcon from '../common/TukiIcon.astro';
-import { MARQUEE_ITEMS } from '../../lib/constants';
+import { MARQUEE_ICONS } from '../../lib/icons';
+import {
+	MARQUEE_BOTTOM_WAVE_PATH,
+	MARQUEE_BOTTOM_WAVE_VIEWBOX,
+	MARQUEE_CLIP_PATH_D,
+} from '../../lib/shapes';
+import { getMarqueeWaveOffsetPx } from '../../lib/wave-math';
+
+const icons = [...MARQUEE_ICONS, ...MARQUEE_ICONS].map((icon, index) => {
+	const waveX = ((index % MARQUEE_ICONS.length) / MARQUEE_ICONS.length) * 1440;
+	const waveOffset = Math.round(getMarqueeWaveOffsetPx(waveX, 72));
+
+	return { ...icon, waveOffset };
+});
 ---
 
-<div class="tuki-marquee-ref overflow-hidden py-3">
-	<div class="tuki-ticker-track">
-		{
-			[...MARQUEE_ITEMS, ...MARQUEE_ITEMS].map((item) => (
-				<span class="tuki-ticker-item">
-					<TukiIcon src={item.icon} alt={item.iconAlt} size="xs" decorative />
-					{item.label}
-					<StarDecoration size={12} class="text-white/90" />
-				</span>
-			))
-		}
+<div class="tuki-marquee relative z-20" data-tuki-marquee>
+	<svg class="pointer-events-none absolute size-0 overflow-hidden" aria-hidden="true">
+		<defs>
+			<clipPath id="tuki-marquee-clip" clipPathUnits="objectBoundingBox">
+				<path d={MARQUEE_CLIP_PATH_D}></path>
+			</clipPath>
+		</defs>
+	</svg>
+
+	<div class="tuki-marquee-ref tuki-marquee-ref--clipped">
+		<div class="tuki-marquee-track-wrap overflow-hidden">
+			<div class="tuki-ticker-track" aria-hidden="true">
+				{
+					icons.map((icon) => (
+						<span class="tuki-ticker-item" style={`--tuki-icon-wave-y: ${icon.waveOffset}px`}>
+							<TukiIcon src={icon.src} alt={icon.alt} size="md" class="tuki-marquee-icon" decorative />
+						</span>
+					))
+				}
+			</div>
+		</div>
 	</div>
+
+	<svg
+		class="tuki-marquee-bottom-wave pointer-events-none absolute bottom-0 left-0 block w-full"
+		viewBox={MARQUEE_BOTTOM_WAVE_VIEWBOX}
+		preserveAspectRatio="none"
+		aria-hidden="true"
+	>
+		<path fill="#ffffff" d={MARQUEE_BOTTOM_WAVE_PATH}></path>
+	</svg>
 </div>

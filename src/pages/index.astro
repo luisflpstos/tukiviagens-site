@@ -31,8 +31,9 @@ const properties = HOME_FEATURED_PROPERTIES.map((item) => ({
 	<div id="conteudo">
 	<script is:inline>
 		try {
-			if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-				document.documentElement.classList.add('tuki-motion-ready');
+			document.documentElement.classList.add('tuki-motion-ready');
+			if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+				document.documentElement.classList.add('tuki-reduced-motion');
 			}
 		} catch {}
 	</script>

@@ -1,3 +1,5 @@
+import { initMarqueeWave } from './marquee-wave';
+
 function prefersReducedMotion() {
 	return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 }
@@ -35,10 +37,12 @@ function initScrollReveals() {
 }
 
 export function initHomeMotion() {
-	if (prefersReducedMotion()) return;
-
 	document.documentElement.classList.add('tuki-motion-ready');
+	if (prefersReducedMotion()) {
+		document.documentElement.classList.add('tuki-reduced-motion');
+	}
 	initScrollReveals();
+	initMarqueeWave();
 }
 
 if (document.readyState === 'loading') {

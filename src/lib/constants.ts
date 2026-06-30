@@ -51,12 +51,6 @@ export const HOME_NAV_LINKS = [
 
 export const HERO_EYEBROW = 'Cadastro ativo · Pagamento protegido';
 
-export const MARQUEE_ITEMS = [
-	{ label: 'Praias paradisíacas', icon: TUKI_ICONS.cadeiraPraia, iconAlt: 'Cadeira de praia' },
-	{ label: 'Resorts all-inclusive', icon: TUKI_ICONS.piscina, iconAlt: 'Piscina de resort' },
-	{ label: 'Família & diversão', icon: TUKI_ICONS.oculosBoia, iconAlt: 'Óculos e boia — diversão em família' },
-] as const;
-
 export const HOTELS_PRICE_NOTE = '12x sem juros · consulte disponibilidade';
 
 export const HOME_FEATURED_PROPERTIES = [

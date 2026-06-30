@@ -180,25 +180,8 @@ html.tuki-motion-ready [data-tuki-reveal].is-revealed .tuki-stagger-item {
 }
 
 @media (prefers-reduced-motion: reduce) {
-	.tuki-hero-enter,
-	.tuki-hero-mascot-ring,
-	.tuki-hero-mascot-img,
-	.tuki-hero-bg-zoom,
-	.tuki-badge-float,
-	.tuki-star-twinkle,
-	.tuki-mascot-glide,
-	.tuki-fab-nudge {
+	/* Apenas efeitos contínuos de grande amplitude — mantém marquee, entradas e reveals */
+	.tuki-hero-bg-zoom {
 		animation: none !important;
-	}
-
-	html.tuki-motion-ready [data-tuki-reveal].is-revealed .tuki-stagger-item {
-		animation: none !important;
-		opacity: 1 !important;
-		translate: 0 0 !important;
-	}
-
-	.tuki-btn-motion:hover,
-	.tuki-btn-motion:active {
-		transform: none !important;
 	}
 }

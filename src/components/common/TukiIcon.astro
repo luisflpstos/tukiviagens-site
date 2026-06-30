@@ -10,11 +10,11 @@ interface Props {
 const { src, alt, size = 'md', class: className = '', decorative = false } = Astro.props;
 
 const sizes = {
-	xs: 'h-6 w-6',
-	sm: 'h-8 w-8',
-	md: 'h-11 w-11',
-	lg: 'h-14 w-14',
-	xl: 'h-16 w-16',
+	xs: 'h-8 w-8',
+	sm: 'h-11 w-11',
+	md: 'h-15 w-15',
+	lg: 'h-19 w-19',
+	xl: 'h-21 w-21',
 };
 ---
 
@@ -23,8 +23,8 @@ const sizes = {
 	alt={decorative ? '' : alt}
 	aria-hidden={decorative ? 'true' : undefined}
 	class:list={['tuki-brand-icon object-contain', sizes[size], className]}
-	width={64}
-	height={64}
+	width={84}
+	height={84}
 	loading="lazy"
 	decoding="async"
 />

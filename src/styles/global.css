@@ -16,6 +16,7 @@
 	--color-tuki-lavender: #f4f1ff;
 	--font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
 	--font-display: "Nunito", "Inter", ui-sans-serif, system-ui, sans-serif;
+	--tuki-wave-height: clamp(2rem, 100vw / 22.5, 4rem);
 }
 
 @layer base {
@@ -64,6 +65,15 @@
 		background: linear-gradient(90deg, var(--color-tuki-orange) 0%, color-mix(in srgb, var(--color-tuki-orange) 85%, white) 100%);
 	}
 
+	.tuki-marquee-ref--clipped {
+		clip-path: url(#tuki-marquee-clip);
+	}
+
+	.tuki-marquee-track-wrap {
+		padding-top: calc(1.25rem + var(--tuki-wave-height) * 0.55);
+		padding-bottom: calc(var(--tuki-wave-height) * 1.1);
+	}
+
 	.tuki-section-soft {
 		background: linear-gradient(180deg, var(--color-tuki-off-white) 0%, var(--color-tuki-lavender) 100%);
 	}
@@ -110,18 +120,30 @@
 		box-shadow: 0 16px 35px color-mix(in srgb, var(--color-tuki-purple-dark) 18%, transparent);
 	}
 
+	.tuki-hero-bottom-wave {
+		height: var(--tuki-wave-height);
+	}
+
+	.tuki-marquee-bottom-wave {
+		height: var(--tuki-wave-height);
+	}
+
 	.tuki-ticker-track {
 		display: flex;
 		width: max-content;
-		animation: tuki-ticker 35s linear infinite;
+		align-items: flex-end;
+		animation: tuki-ticker 50s linear infinite;
 	}
 
 	.tuki-ticker-item {
-		@apply flex shrink-0 items-center gap-2 px-6 text-xs font-bold tracking-[0.12em] text-white uppercase;
+		@apply flex shrink-0 items-center px-5;
+		transform: translate3d(0, calc(var(--tuki-icon-wave-y, 0px) - var(--tuki-wave-height) * 0.32), 0);
+		will-change: transform;
 	}
 
-	.tuki-ticker-item > :last-child {
-		@apply ml-4;
+	.tuki-marquee-icon {
+		height: 3.85rem;
+		width: 3.85rem;
 	}
 
 	.tuki-dest-card {
@@ -130,7 +152,7 @@
 	}
 
 	.tuki-dest-icon {
-		@apply flex h-16 w-16 items-center justify-center rounded-2xl bg-tuki-lavender/70 p-2 transition group-hover:scale-105;
+		@apply flex h-21 w-21 items-center justify-center rounded-2xl bg-tuki-lavender/70 p-2 transition group-hover:scale-105;
 	}
 
 	.tuki-brand-icon {
@@ -173,10 +195,6 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-	.tuki-ticker-track {
-		animation: none;
-	}
-
 	html {
 		scroll-behavior: auto;
 	}
