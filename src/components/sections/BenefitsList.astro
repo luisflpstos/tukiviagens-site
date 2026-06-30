@@ -13,11 +13,13 @@ const { items, title = 'Diferenciais' } = Astro.props;
 	items.length > 0 && (
 		<section class="py-8">
 			<Container size="narrow">
-				<h2 class="text-2xl font-bold text-gray-900">{title}</h2>
+				<h2 class="tuki-type-headline text-tuki-ink">{title}</h2>
 				<ul class="mt-6 grid gap-3 sm:grid-cols-2">
 					{items.map((item) => (
-						<li class="flex items-start gap-2 rounded-xl bg-gray-50 p-4 text-gray-700">
-							<span class="text-tuki-orange">✓</span>
+						<li class="tuki-type-body flex items-start gap-2 rounded-xl border border-tuki-purple/8 bg-tuki-lavender/50 p-4 text-tuki-muted">
+							<span class="font-bold text-tuki-orange" aria-hidden="true">
+								✓
+							</span>
 							{item}
 						</li>
 					))}

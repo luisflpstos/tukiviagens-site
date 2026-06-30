@@ -53,9 +53,9 @@ const jsonLd = {
 <BaseLayout title={title} description={description} path={path} jsonLd={jsonLd}>
 	<section class="tuki-gradient-purple section-padding text-white">
 		<Container>
-			<p class="text-sm font-medium uppercase tracking-wide text-tuki-orange">{categoria}</p>
-			<h1 class="mt-2 text-4xl font-bold md:text-5xl">{headline}</h1>
-			<p class="mt-2 text-white/80">{formatLocation(cidade, estado)}</p>
+			<p class="tuki-eyebrow-light">{categoria}</p>
+			<h1 class="tuki-type-display mt-2">{headline}</h1>
+			<p class="tuki-type-body tuki-type-inverse mt-2 text-white/85">{formatLocation(cidade, estado)}</p>
 			<div class="mt-8 flex flex-wrap gap-4">
 				<Button href="#formulario" variant="primary" size="lg">{cta}</Button>
 				<Button

@@ -49,8 +49,8 @@ const whatsappHref = buildWhatsAppUrl(SITE.phone, 'Olá! Quero planejar minha vi
 				<span class="hidden sm:inline">WhatsApp</span>
 			</Button>
 
-			<details class="relative lg:hidden">
-				<summary class="cursor-pointer list-none rounded-lg p-2 text-tuki-purple" aria-label="Abrir menu">
+			<details class="relative lg:hidden" data-tuki-mobile-menu>
+				<summary class="cursor-pointer list-none rounded-lg p-2.5 text-tuki-purple min-h-11 min-w-11" aria-label="Abrir menu">
 					<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
 					</svg>
@@ -58,7 +58,7 @@ const whatsappHref = buildWhatsAppUrl(SITE.phone, 'Olá! Quero planejar minha vi
 				<div class="absolute right-0 mt-2 w-56 rounded-2xl border border-tuki-purple/8 bg-white p-4 shadow-lg">
 					{
 						links.map((link) => (
-							<a href={link.href} class="block rounded-lg py-2 text-sm font-medium text-tuki-muted hover:text-tuki-purple">
+							<a href={link.href} class="block rounded-lg px-2 py-3 tuki-type-small font-medium text-tuki-muted hover:bg-tuki-lavender hover:text-tuki-purple">
 								{link.label}
 							</a>
 						))
@@ -68,3 +68,13 @@ const whatsappHref = buildWhatsAppUrl(SITE.phone, 'Olá! Quero planejar minha vi
 		</div>
 	</div>
 </header>
+
+<script>
+	document.querySelectorAll('[data-tuki-mobile-menu]').forEach((menu) => {
+		menu.querySelectorAll('a[href]').forEach((link) => {
+			link.addEventListener('click', () => {
+				if (menu instanceof HTMLDetailsElement) menu.open = false;
+			});
+		});
+	});
+</script>

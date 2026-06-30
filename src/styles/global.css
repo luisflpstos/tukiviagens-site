@@ -214,6 +214,16 @@
 		font-variant-numeric: tabular-nums;
 	}
 
+	.tuki-input {
+		@apply w-full rounded-xl border border-tuki-purple/10 bg-white px-4 py-3 text-tuki-ink;
+		@apply placeholder:text-tuki-muted;
+		@apply focus:border-tuki-purple focus:outline-none focus:ring-2 focus:ring-tuki-purple/20;
+	}
+
+	.tuki-surface-panel {
+		@apply rounded-3xl border border-tuki-purple/8 bg-tuki-lavender/40 p-8 md:p-10;
+	}
+
 	.tuki-eyebrow {
 		font-size: var(--text-label);
 		font-weight: 700;

@@ -1,0 +1,28 @@
+---
+import Container from '../common/Container.astro';
+import { HOW_IT_WORKS } from '../../lib/constants';
+---
+
+<section id="como-funciona" class="border-b border-tuki-purple/8 bg-white py-10 md:py-12" aria-labelledby="como-funciona-heading">
+	<Container size="reference">
+		<h2 id="como-funciona-heading" class="tuki-type-title text-center text-tuki-ink">
+			Como funciona com a Tuki
+		</h2>
+		<ol class="mt-8 grid gap-6 sm:grid-cols-3 sm:gap-8">
+			{
+				HOW_IT_WORKS.map((step, index) => (
+					<li class="relative text-center sm:text-left">
+						<span
+							class="mx-auto mb-3 flex h-10 w-10 items-center justify-center rounded-full bg-tuki-lavender tuki-type-small font-bold text-tuki-purple sm:mx-0"
+							aria-hidden="true"
+						>
+							{index + 1}
+						</span>
+						<h3 class="tuki-type-title text-tuki-ink">{step.title}</h3>
+						<p class="tuki-type-small mt-1.5 text-tuki-muted">{step.description}</p>
+					</li>
+				))
+			}
+		</ol>
+	</Container>
+</section>

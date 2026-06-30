@@ -14,8 +14,8 @@ import { buildWhatsAppUrl } from '../lib/seo';
 >
 	<section class="tuki-gradient-purple section-padding text-white">
 		<Container>
-			<h1 class="text-4xl font-bold md:text-5xl">Fale com a Tuki</h1>
-			<p class="mt-4 max-w-xl text-lg text-white/80">
+			<h1 class="tuki-type-display">Fale com a Tuki</h1>
+			<p class="tuki-type-lead tuki-type-inverse tuki-measure mt-4 text-white/90">
 				Estamos prontos para ajudar você a encontrar o hotel ou resort ideal para sua próxima viagem.
 			</p>
 		</Container>
@@ -25,8 +25,8 @@ import { buildWhatsAppUrl } from '../lib/seo';
 		<Container>
 			<div class="grid gap-12 lg:grid-cols-2">
 				<div>
-					<h2 class="text-2xl font-bold text-gray-900">Canais de atendimento</h2>
-					<ul class="mt-6 space-y-4 text-gray-700">
+					<h2 class="tuki-type-headline text-tuki-ink">Canais de atendimento</h2>
+					<ul class="tuki-type-body mt-6 space-y-4 text-tuki-muted">
 						<li>
 							<strong>Endereço:</strong> {SITE.location}
 						</li>
@@ -66,9 +66,9 @@ import { buildWhatsAppUrl } from '../lib/seo';
 					</div>
 				</div>
 
-				<div class="rounded-3xl border border-gray-100 bg-gray-50 p-8">
-					<h2 class="text-2xl font-bold text-gray-900">Ou preencha o formulário</h2>
-					<p class="mt-2 text-gray-600">Retornamos o mais rápido possível.</p>
+				<div class="tuki-surface-panel">
+					<h2 class="tuki-type-headline text-tuki-ink">Ou preencha o formulário</h2>
+					<p class="tuki-type-body mt-2 text-tuki-muted">Retornamos o mais rápido possível.</p>
 					<div class="mt-8">
 						<LeadForm formId="contato-lead-form" submitLabel="Enviar mensagem" />
 					</div>

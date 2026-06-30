@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/sections/Hero.astro';
+import HowItWorksStrip from '../components/sections/HowItWorksStrip.astro';
 import MarqueeStrip from '../components/sections/MarqueeStrip.astro';
 import DestinationsGrid from '../components/sections/DestinationsGrid.astro';
 import HotelsGrid from '../components/sections/HotelsGrid.astro';
@@ -41,6 +42,7 @@ const properties = HOME_FEATURED_PROPERTIES.map((item, index) => ({
 	<div id="conteudo">
 	<Hero />
 	<MarqueeStrip />
+	<HowItWorksStrip />
 	<DestinationsGrid />
 	<HotelsGrid items={properties} />
 	<WhyTuki />

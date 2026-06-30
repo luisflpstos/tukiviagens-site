@@ -96,7 +96,7 @@ const jsonLd = [
 <BaseLayout title={title} description={description} path={path} jsonLd={jsonLd}>
 	<section class="tuki-gradient-purple section-padding text-white">
 		<Container>
-			<nav aria-label="Breadcrumb" class="text-sm text-white/70">
+			<nav aria-label="Breadcrumb" class="tuki-type-small text-white/70">
 				<ol class="flex flex-wrap items-center gap-2">
 					<li><a href="/" class="hover:text-white">Início</a></li>
 					{
@@ -109,11 +109,9 @@ const jsonLd = [
 					}
 				</ol>
 			</nav>
-			<p class="mt-4 text-sm font-medium uppercase tracking-wide text-tuki-orange">
-				{pageTypeLabels[pageType]}
-			</p>
-			<h1 class="mt-2 text-4xl font-bold md:text-5xl">{headline}</h1>
-			<p class="mt-4 max-w-2xl text-lg text-white/90">{description}</p>
+			<p class="tuki-eyebrow-light mt-4">{pageTypeLabels[pageType]}</p>
+			<h1 class="tuki-type-display mt-2">{headline}</h1>
+			<p class="tuki-type-lead tuki-type-inverse tuki-measure mt-4 max-w-2xl text-white/90">{description}</p>
 			<Button
 				href={buildWhatsAppUrl(whatsapp, `Olá! Gostaria de uma cotação: ${title}.`)}
 				variant="primary"
@@ -127,15 +125,15 @@ const jsonLd = [
 
 	{
 		(navPages.length > 0 || plannedChildRoutes.length > 0) && (
-			<section class="border-b border-gray-100 bg-gray-50 py-8">
+			<section class="border-b border-tuki-purple/8 bg-tuki-lavender/50 py-8">
 				<Container>
-					<h2 class="text-lg font-semibold text-gray-900">Neste destino</h2>
+					<h2 class="tuki-type-title text-tuki-ink">Neste destino</h2>
 					{navPages.length > 0 && (
 						<div class="mt-4 flex flex-wrap gap-3">
 							{navPages.map((page) => (
 								<a
 									href={normalizePath(page.href)}
-									class="rounded-full bg-white px-4 py-2 text-sm font-medium text-tuki-purple shadow-sm transition hover:bg-tuki-purple/5"
+									class="tuki-type-small rounded-full bg-white px-4 py-2 font-medium text-tuki-purple shadow-sm transition hover:bg-tuki-purple/5"
 								>
 									{page.label}
 								</a>
@@ -143,7 +141,7 @@ const jsonLd = [
 						</div>
 					)}
 					{plannedChildRoutes.length > 0 && (
-						<p class="mt-4 text-sm text-gray-500">
+						<p class="tuki-type-small mt-4 text-tuki-muted">
 							Em breve:{' '}
 							{plannedChildRoutes.map((route) => route.title.toLowerCase()).join(', ')}.
 						</p>

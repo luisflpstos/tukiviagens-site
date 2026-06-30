@@ -43,6 +43,7 @@ export const NAV_LINKS = [
 ] as const;
 
 export const HOME_NAV_LINKS = [
+	{ label: 'Como funciona', href: '/#como-funciona' },
 	{ label: 'Destinos', href: '/#destinos' },
 	{ label: 'Hotéis & Resorts', href: '/#hoteis' },
 	{ label: 'Por que Tuki', href: '/#por-que-tuki' },
@@ -52,7 +53,7 @@ export const HOME_NAV_LINKS = [
 
 export const HERO_EYEBROW = 'Cadastro ativo · Viaje de forma segura';
 
-export const HOTELS_PRICE_NOTE = '12x sem juros · consulte disponibilidade';
+export const HOTELS_PRICE_NOTE = 'Valor por diária · 12x sem juros · sujeito a datas e disponibilidade';
 
 export const HOME_FEATURED_PROPERTIES = [
 	{
@@ -151,6 +152,21 @@ export const HERO_STATS = [
 	{ value: '+5 mil', label: 'viagens realizadas' },
 	{ value: '120+', label: 'hotéis parceiros' },
 	{ value: '100%', label: 'pagamento seguro' },
+] as const;
+
+export const HOW_IT_WORKS = [
+	{
+		title: 'Conte seu plano',
+		description: 'WhatsApp ou formulário — sem burocracia.',
+	},
+	{
+		title: 'Receba opções',
+		description: 'Indicamos hotéis que conhecemos e confiamos.',
+	},
+	{
+		title: 'Reserve com segurança',
+		description: 'Pagamento protegido e suporte até a viagem.',
+	},
 ] as const;
 
 export const TRUST_ITEMS = [

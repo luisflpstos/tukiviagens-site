@@ -16,8 +16,10 @@ const { headline, subheadline, cta, ctaHref = '#formulario' } = Astro.props;
 <section class="relative overflow-hidden bg-tuki-purple text-white">
 	<Container class="section-padding">
 		<div class="mx-auto max-w-3xl text-center">
-			<h1 class="text-3xl font-bold md:text-5xl">{headline}</h1>
-			{subheadline && <p class="mt-4 text-lg text-white/80 md:text-xl">{subheadline}</p>}
+			<h1 class="tuki-type-display">{headline}</h1>
+			{subheadline && (
+				<p class="tuki-type-lead tuki-type-inverse mx-auto mt-4 max-w-2xl text-white/90">{subheadline}</p>
+			)}
 			<Button href={ctaHref} variant="primary" size="lg" class="mt-8">
 				{cta}
 			</Button>

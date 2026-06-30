@@ -36,21 +36,21 @@ const jsonLd = {
 >
 	<article class="section-padding">
 		<Container size="narrow">
-			<header class="mb-10 border-b border-gray-100 pb-8">
+			<header class="mb-10 border-b border-tuki-purple/8 pb-8">
 				{
 					tags.length > 0 && (
 						<div class="mb-4 flex flex-wrap gap-2">
 							{tags.map((tag) => (
-								<span class="rounded-full bg-tuki-purple/10 px-3 py-1 text-xs font-medium text-tuki-purple">
+								<span class="tuki-type-caption rounded-full bg-tuki-purple/10 px-3 py-1 font-medium text-tuki-purple">
 									{tag}
 								</span>
 							))}
 						</div>
 					)
 				}
-				<h1 class="text-4xl font-bold text-gray-900">{title}</h1>
-				<p class="mt-4 text-lg text-gray-600">{description}</p>
-				<p class="mt-4 text-sm text-gray-500">
+				<h1 class="tuki-type-display text-tuki-ink">{title}</h1>
+				<p class="tuki-type-lead mt-4 text-tuki-muted">{description}</p>
+				<p class="tuki-type-small mt-4 text-tuki-muted">
 					{formatDate(publishedAt)} · {author}
 				</p>
 			</header>

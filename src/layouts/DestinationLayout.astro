@@ -24,9 +24,9 @@ const { title, description, path, headline, estado, highlights, whatsapp, cta } 
 <BaseLayout title={title} description={description} path={path}>
 	<section class="tuki-gradient-purple section-padding text-white">
 		<Container>
-			<p class="text-sm font-medium uppercase tracking-wide text-tuki-orange">Destino</p>
-			<h1 class="mt-2 text-4xl font-bold md:text-5xl">{headline}</h1>
-			<p class="mt-2 text-white/80">{estado}</p>
+			<p class="tuki-eyebrow-light">Destino</p>
+			<h1 class="tuki-type-display mt-2">{headline}</h1>
+			<p class="tuki-type-body tuki-type-inverse mt-2 text-white/85">{estado}</p>
 			<Button
 				href={buildWhatsAppUrl(whatsapp, `Olá! Gostaria de planejar uma viagem para ${title}.`)}
 				variant="primary"
