@@ -1,43 +1,174 @@
 ---
 import Container from '../common/Container.astro';
-import { TESTIMONIALS } from '../../lib/constants';
+import { TESTIMONIALS, BRAND } from '../../lib/constants';
 ---
 
-<section id="depoimentos" class="section-padding tuki-section-soft">
-	<Container size="reference">
+<section id="depoimentos" class="section-padding overflow-visible tuki-section-soft">
+	<Container size="reference" class="overflow-visible">
 		<div class="mx-auto max-w-2xl text-center">
 			<h2 class="text-3xl font-extrabold tracking-[-0.03em] text-tuki-ink md:text-4xl">
 				Histórias reais de quem voou com o <span class="text-tuki-purple">Tuki</span>
 			</h2>
 		</div>
 
-		<div class="mt-10 grid gap-6 md:grid-cols-3">
-			{
-				TESTIMONIALS.map((item) => (
-					<article class="tuki-card-ref flex h-full flex-col bg-white p-6 transition hover:shadow-md">
-						<span class="text-3xl font-extrabold leading-none text-tuki-orange" aria-hidden="true">
-							“
-						</span>
-						<div class="mt-2 flex gap-0.5 text-tuki-orange" aria-label={`${item.rating} estrelas`}>
-							{Array.from({ length: item.rating }).map(() => (
-								<span aria-hidden="true">★</span>
-							))}
-						</div>
-						<blockquote class="mt-4 flex-1 text-sm leading-relaxed text-tuki-muted">
-							"{item.text}"
-						</blockquote>
-						<div class="mt-6 flex items-center gap-3 border-t border-tuki-purple/8 pt-5">
-							<div class="flex h-11 w-11 items-center justify-center rounded-full bg-tuki-purple text-sm font-bold text-white">
-								{item.name.charAt(0)}
-							</div>
-							<div>
-								<p class="font-bold text-tuki-ink">{item.name}</p>
-								<p class="text-xs text-tuki-muted">{item.location}</p>
-							</div>
-						</div>
-					</article>
-				))
-			}
+		<div class="relative mx-auto mt-10 max-w-[32.4rem] overflow-visible sm:max-w-[37.8rem]">
+			<img
+				src={BRAND.mascot.boia}
+				alt="Tuki relaxando na boia"
+				class="pointer-events-none absolute top-1/2 right-0 z-20 hidden h-auto w-auto max-w-[36rem] translate-x-[58%] -translate-y-1/2 object-contain drop-shadow-lg sm:block md:max-w-[25rem]"
+				width={220}
+				height={400}
+				loading="lazy"
+				decoding="async"
+			/>
+
+			<div
+				class="relative z-10 mx-auto w-full"
+				data-testimonials-carousel
+				aria-roledescription="carrossel"
+				aria-label="Depoimentos de clientes"
+			>
+				<div class="relative overflow-hidden">
+					<div
+						class="flex transition-transform duration-500 ease-out"
+						data-carousel-track
+						aria-live="polite"
+					>
+						{
+							TESTIMONIALS.map((item) => (
+								<article
+									class="tuki-card-ref flex w-full shrink-0 flex-col bg-white p-6"
+									data-carousel-slide
+									aria-roledescription="slide"
+								>
+									<span class="text-3xl font-extrabold leading-none text-tuki-orange" aria-hidden="true">
+										“
+									</span>
+									<div class="mt-2 flex gap-0.5 text-tuki-orange" aria-label={`${item.rating} estrelas`}>
+										{Array.from({ length: item.rating }).map(() => (
+											<span aria-hidden="true">★</span>
+										))}
+									</div>
+									<blockquote class="mt-4 flex-1 text-sm leading-relaxed text-tuki-muted">
+										"{item.text}"
+									</blockquote>
+									<div class="mt-6 flex items-center gap-3 border-t border-tuki-purple/8 pt-5">
+										<div class="flex h-11 w-11 items-center justify-center rounded-full bg-tuki-purple text-sm font-bold text-white">
+											{item.name.charAt(0)}
+										</div>
+										<div>
+											<p class="font-bold text-tuki-ink">{item.name}</p>
+											<p class="text-xs text-tuki-muted">{item.location}</p>
+										</div>
+									</div>
+								</article>
+							))
+						}
+					</div>
+				</div>
+
+				<div class="mt-5 flex items-center justify-center gap-3">
+					<button
+						type="button"
+						class="flex h-9 w-9 items-center justify-center rounded-full border border-tuki-purple/15 bg-white text-tuki-purple transition hover:border-tuki-purple/30 hover:bg-tuki-purple/5"
+						data-carousel-prev
+						aria-label="Depoimento anterior"
+					>
+						<span aria-hidden="true">‹</span>
+					</button>
+
+					<div class="flex gap-2" data-carousel-dots>
+						{
+							TESTIMONIALS.map((_, index) => (
+								<button
+									type="button"
+									class:list={[
+										'h-2.5 w-2.5 rounded-full transition',
+										index === 0
+											? 'bg-tuki-purple'
+											: 'bg-tuki-purple/25 hover:bg-tuki-purple/40',
+									]}
+									data-carousel-dot={index}
+									aria-label={`Ir para depoimento ${index + 1}`}
+									aria-current={index === 0 ? 'true' : undefined}
+								/>
+							))
+						}
+					</div>
+
+					<button
+						type="button"
+						class="flex h-9 w-9 items-center justify-center rounded-full border border-tuki-purple/15 bg-white text-tuki-purple transition hover:border-tuki-purple/30 hover:bg-tuki-purple/5"
+						data-carousel-next
+						aria-label="Próximo depoimento"
+					>
+						<span aria-hidden="true">›</span>
+					</button>
+				</div>
+			</div>
 		</div>
 	</Container>
 </section>
+
+<script>
+	const carousels = document.querySelectorAll('[data-testimonials-carousel]');
+
+	carousels.forEach((carousel) => {
+		const track = carousel.querySelector('[data-carousel-track]') as HTMLElement | null;
+		const dots = carousel.querySelectorAll('[data-carousel-dot]');
+		const prev = carousel.querySelector('[data-carousel-prev]') as HTMLButtonElement | null;
+		const next = carousel.querySelector('[data-carousel-next]') as HTMLButtonElement | null;
+
+		if (!track || dots.length === 0) return;
+
+		let index = 0;
+		let timer: ReturnType<typeof setInterval> | undefined;
+
+		const goTo = (nextIndex: number) => {
+			index = (nextIndex + dots.length) % dots.length;
+			track.style.transform = `translateX(-${index * 100}%)`;
+
+			dots.forEach((dot, dotIndex) => {
+				const button = dot as HTMLButtonElement;
+				const isActive = dotIndex === index;
+				button.classList.toggle('bg-tuki-purple', isActive);
+				button.classList.toggle('bg-tuki-purple/25', !isActive);
+				button.setAttribute('aria-current', isActive ? 'true' : 'false');
+			});
+		};
+
+		const restartTimer = () => {
+			if (timer) clearInterval(timer);
+			timer = setInterval(() => goTo(index + 1), 5000);
+		};
+
+		prev?.addEventListener('click', () => {
+			goTo(index - 1);
+			restartTimer();
+		});
+
+		next?.addEventListener('click', () => {
+			goTo(index + 1);
+			restartTimer();
+		});
+
+		dots.forEach((dot) => {
+			dot.addEventListener('click', () => {
+				const target = Number((dot as HTMLElement).dataset.carouselDot);
+				if (!Number.isNaN(target)) {
+					goTo(target);
+					restartTimer();
+				}
+			});
+		});
+
+		carousel.addEventListener('mouseenter', () => {
+			if (timer) clearInterval(timer);
+		});
+
+		carousel.addEventListener('mouseleave', restartTimer);
+
+		goTo(0);
+		restartTimer();
+	});
+</script>

@@ -29,6 +29,7 @@ export const BRAND = {
 		hero: '/images/mascot/tuki-frente-mala.png',
 		profile: '/images/mascot/tuki-perfil.png',
 		selfie: '/images/mascot/tuki-celular-selfie.png',
+		boia: '/images/mascot/tuki-boia.png',
 	},
 } as const;
 
