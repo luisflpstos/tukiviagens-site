@@ -1,0 +1,611 @@
+{
+  "type": "landing_page_visual_reference",
+  "name": "Tuki Viagens - Home",
+  "canvas": {
+    "width": 660,
+    "height": 2048,
+    "aspect_ratio": "vertical_long_page",
+    "background": "#fbfbff"
+  },
+  "brand": {
+    "name": "Tuki Viagens",
+    "personality": [
+      "divertida",
+      "familiar",
+      "segura",
+      "turística",
+      "premium acessível"
+    ],
+    "visual_style": [
+      "3D mascot",
+      "rounded UI",
+      "travel landing page",
+      "high contrast hero",
+      "soft cards",
+      "playful gradients"
+    ],
+    "colors": {
+      "primary_purple": "#3b0094",
+      "deep_purple": "#25006d",
+      "violet": "#5a0fb8",
+      "orange": "#ff7a1a",
+      "coral": "#ff4f42",
+      "yellow_orange": "#ffb000",
+      "white": "#ffffff",
+      "off_white": "#fbfbff",
+      "soft_lavender": "#f4f1ff",
+      "dark_text": "#1f1545",
+      "muted_text": "#6e6685"
+    },
+    "typography": {
+      "style": "rounded, bold, playful sans-serif",
+      "headline": {
+        "weight": 800,
+        "letter_spacing": "-0.04em",
+        "line_height": 0.95,
+        "color": "#ffffff"
+      },
+      "body": {
+        "weight": 400,
+        "line_height": 1.55,
+        "color": "#6e6685"
+      },
+      "accent_text": {
+        "color": "#ff7a1a",
+        "weight": 800
+      }
+    }
+  },
+  "global_effects": {
+    "border_radius": {
+      "small": "10px",
+      "medium": "16px",
+      "large": "24px",
+      "pill": "999px"
+    },
+    "shadows": {
+      "soft_card": "0 12px 35px rgba(38, 0, 105, 0.08)",
+      "floating_badge": "0 16px 35px rgba(38, 0, 105, 0.18)",
+      "cta_card": "0 22px 55px rgba(59, 0, 148, 0.28)",
+      "hotel_card": "0 16px 40px rgba(31, 21, 69, 0.10)"
+    },
+    "gradients": {
+      "hero": "radial-gradient(circle at 18% 12%, rgba(255, 79, 66, 0.35), transparent 28%), radial-gradient(circle at 74% 38%, rgba(255, 122, 26, 0.28), transparent 35%), linear-gradient(135deg, #29007d 0%, #4b00a8 48%, #2b007a 100%)",
+      "cta": "linear-gradient(135deg, #4b00b5 0%, #7b13c9 48%, #ff513f 100%)",
+      "mascot_section": "linear-gradient(135deg, #39008e 0%, #5300a8 60%, #2a006d 100%)",
+      "orange_strip": "linear-gradient(90deg, #ff7a1a 0%, #ff8c24 100%)",
+      "soft_section": "linear-gradient(180deg, #fbfbff 0%, #f4f1ff 100%)"
+    },
+    "decorative_effects": {
+      "sparkles": {
+        "shape": "four_point_star",
+        "color": "#ff8c24",
+        "glow": "0 0 18px rgba(255, 140, 36, 0.45)"
+      },
+      "floating_labels": {
+        "background": "#ffffff",
+        "border": "1px solid rgba(90, 15, 184, 0.10)",
+        "shadow": "0 12px 32px rgba(31, 21, 69, 0.18)",
+        "rotation": "-4deg to 6deg"
+      },
+      "wave_divider": {
+        "type": "white organic wave",
+        "position": "bottom of hero",
+        "height": "40px"
+      }
+    }
+  },
+  "layout": {
+    "max_content_width": "980px",
+    "alignment": "centered container",
+    "section_spacing": {
+      "desktop": "88px",
+      "mobile": "56px"
+    },
+    "grid": {
+      "hotel_cards": "3 columns desktop",
+      "feature_cards": "2 columns desktop",
+      "testimonials": "3 columns desktop"
+    }
+  },
+  "sections": [
+    {
+      "id": "header",
+      "type": "navigation",
+      "background": "#ffffff",
+      "height": "52px",
+      "position": "top",
+      "elements": {
+        "logo": {
+          "text": "Tuki",
+          "color": "#3b0094",
+          "style": "small rounded brand mark"
+        },
+        "menu": [
+          "Destinos",
+          "Hotéis & Resorts",
+          "Por que Tuki",
+          "Depoimentos",
+          "Contato"
+        ],
+        "button": {
+          "label": "WhatsApp",
+          "background": "#ff7a1a",
+          "color": "#ffffff",
+          "radius": "999px"
+        }
+      },
+      "effects": {
+        "header_card": "white bar with subtle bottom shadow",
+        "nav_items": "pill-style compact links"
+      }
+    },
+    {
+      "id": "hero",
+      "type": "hero_section",
+      "background": {
+        "base": "#3b0094",
+        "overlay": "purple gradient over beach/resort aerial photo",
+        "image_treatment": "dark purple multiply overlay with soft blur"
+      },
+      "content": {
+        "eyebrow": "Operadora oficial · Cadastro ativo",
+        "headline": "O Brasil que você sonha, com a leveza do Tuki.",
+        "description": "Hotéis e resorts cuidadosamente selecionados, pagamento protegido e atendimento humano de verdade. Você descansa — a gente cuida do resto.",
+        "primary_cta": "Ver hotéis & resorts",
+        "secondary_cta": "Montar minha viagem",
+        "stats": [
+          {
+            "value": "+12 mil",
+            "label": "viajantes felizes"
+          },
+          {
+            "value": "4,9★",
+            "label": "avaliação média"
+          },
+          {
+            "value": "180+",
+            "label": "hotéis parceiros"
+          }
+        ]
+      },
+      "visual": {
+        "mascot": {
+          "type": "3D toucan mascot",
+          "position": "right side",
+          "expression": "happy, welcoming",
+          "background_shape": "large purple circular blob"
+        },
+        "logo": {
+          "text": "Tuki viagens",
+          "position": "right over mascot",
+          "color": "#ffffff"
+        },
+        "floating_badges": [
+          {
+            "text": "4,9/5",
+            "position": "top left of mascot",
+            "effect": "white floating pill with shadow"
+          },
+          {
+            "text": "Pagamento 100% protegido",
+            "position": "right of mascot",
+            "effect": "white floating pill with shadow"
+          },
+          {
+            "text": "Pacotes 2026 on",
+            "position": "bottom left",
+            "effect": "orange angled pill"
+          }
+        ]
+      },
+      "effects": {
+        "background_glow": [
+          "magenta radial glow top left",
+          "orange radial glow right center",
+          "deep violet vignette"
+        ],
+        "headline_highlight": {
+          "text": "com a leveza do Tuki.",
+          "color": "#ff7a1a"
+        },
+        "bottom_wave": "white curved organic divider",
+        "sparkle": "orange star in top right"
+      }
+    },
+    {
+      "id": "marquee_strip",
+      "type": "horizontal_banner",
+      "background": "#ff7a1a",
+      "content": [
+        "Praias paradisíacas",
+        "Resorts all-inclusive",
+        "Atendimento humano",
+        "Pagamento seguro",
+        "Curadoria Tuki"
+      ],
+      "effects": {
+        "text": "uppercase white bold",
+        "separator": "white star icons",
+        "motion_feel": "infinite marquee style"
+      }
+    },
+    {
+      "id": "trust_badges",
+      "type": "badge_row",
+      "background": "#fbfbff",
+      "items": [
+        {
+          "title": "Pagamento protegido",
+          "description": "CNPJ, PIX e parcelamento",
+          "icon": "shield"
+        },
+        {
+          "title": "Suporte 24h",
+          "description": "WhatsApp durante a viagem",
+          "icon": "headset"
+        },
+        {
+          "title": "Cadastro ativo",
+          "description": "Operadora formalizada",
+          "icon": "document"
+        },
+        {
+          "title": "Sem pegadinha",
+          "description": "Tudo incluso e transparente",
+          "icon": "check"
+        }
+      ],
+      "effects": {
+        "cards": "white rounded pills with subtle border and shadow",
+        "icons": "purple and orange circular icon containers"
+      }
+    },
+    {
+      "id": "destinations",
+      "type": "category_selector",
+      "content": {
+        "eyebrow": "Brasil de ponta a ponta",
+        "headline": "Para onde o Tuki te leva hoje?",
+        "categories": [
+          "Nordeste",
+          "Fernando de Noronha",
+          "Rio de Janeiro",
+          "Serra Gaúcha",
+          "Resorts All-Inclusive",
+          "Família & Kids"
+        ],
+        "link": "Ver catálogo completo"
+      },
+      "effects": {
+        "category_cards": "small white rounded cards with purple circular icons",
+        "active_color": "#3b0094",
+        "section_spacing": "airy with large white area"
+      }
+    },
+    {
+      "id": "hotel_catalog",
+      "type": "product_grid",
+      "background": "#f4f1ff",
+      "content": {
+        "eyebrow": "Catálogo Tuki",
+        "headline": "Hotéis e resorts selecionados a dedo.",
+        "description": "Visitamos, avaliamos e negociamos as melhores tarifas para você. Tudo o que você vê aqui passou pelo crivo Tuki.",
+        "cards": [
+          {
+            "name": "Praia Azul Beach Resort",
+            "location": "Alagoas",
+            "price": "R$ 1.890",
+            "tag": "All-inclusive",
+            "rating": "4.9",
+            "image_style": "tropical beach aerial"
+          },
+          {
+            "name": "Coqueiral Tropical Resort",
+            "location": "Maceió",
+            "price": "R$ 2.340",
+            "tag": "No azul",
+            "rating": "4.8",
+            "image_style": "resort pool with palm trees"
+          },
+          {
+            "name": "Vista Mar Premium Hotel",
+            "location": "Rio de Janeiro",
+            "price": "R$ 1.520",
+            "tag": "Vista panorâmica",
+            "rating": "4.8",
+            "image_style": "hotel balcony ocean view"
+          },
+          {
+            "name": "Noronha Paradise Pousada",
+            "location": "Fernando de Noronha",
+            "price": "R$ 3.890",
+            "tag": "Natureza radical",
+            "rating": "5.0",
+            "image_style": "eco lodge near beach"
+          },
+          {
+            "name": "Tuki Kids Resort & Park",
+            "location": "Olímpia",
+            "price": "R$ 2.190",
+            "tag": "Família",
+            "rating": "4.8",
+            "image_style": "water park resort"
+          },
+          {
+            "name": "Serra das Hortênsias",
+            "location": "Gramado",
+            "price": "R$ 1.690",
+            "tag": "Romântico",
+            "rating": "4.9",
+            "image_style": "mountain chalet with flowers"
+          }
+        ]
+      },
+      "effects": {
+        "section_background": "very soft lavender gradient",
+        "cards": {
+          "background": "#ffffff",
+          "radius": "18px",
+          "shadow": "0 16px 40px rgba(31, 21, 69, 0.10)",
+          "overflow": "hidden"
+        },
+        "images": {
+          "height_ratio": "60%",
+          "radius": "top rounded",
+          "overlay": "subtle dark gradient at bottom for location text"
+        },
+        "tags": {
+          "shape": "small pill",
+          "colors": [
+            "#ff4f42",
+            "#ff7a1a",
+            "#5a0fb8"
+          ]
+        },
+        "buttons": {
+          "label": "Reservar",
+          "background": "#1f1545",
+          "color": "#ffffff",
+          "radius": "999px"
+        }
+      }
+    },
+    {
+      "id": "safety_section",
+      "type": "benefits",
+      "background": "#ffffff",
+      "content": {
+        "eyebrow": "Por que Tuki Viagens",
+        "headline": "A leveza de viajar sabendo que tudo está sob controle.",
+        "description": "Somos uma agência brasileira apaixonada por mostrar o nosso país. Construímos relações com hotéis e resorts para garantir tarifas justas, conforto e o melhor da experiência — sem abrir mão da segurança.",
+        "bullets": [
+          "Melhor preço garantido em hotéis selecionados",
+          "Parcelamento em até 12x sem juros",
+          "Reembolso assegurado em caso de imprevisto"
+        ],
+        "feature_cards": [
+          {
+            "title": "Segurança em primeiro lugar",
+            "description": "CNPJ ativo, contratos claros, pagamento protegido e suporte durante sua estadia.",
+            "icon": "shield"
+          },
+          {
+            "title": "Atendimento humano",
+            "description": "Você fala com pessoas de verdade — antes, durante e depois da viagem.",
+            "icon": "users"
+          },
+          {
+            "title": "Curadoria de verdade",
+            "description": "Conhecemos pessoalmente cada hotel. Só indicamos o que vale a pena.",
+            "icon": "sparkle"
+          },
+          {
+            "title": "Pacote completo",
+            "description": "Hotel, voos, traslados e passeios em um só lugar — seguro e sem ruído.",
+            "icon": "package"
+          }
+        ]
+      },
+      "effects": {
+        "headline_highlight": {
+          "text": "tudo está sob controle.",
+          "background": "#3b0094",
+          "color": "#ffffff",
+          "shape": "rounded underline block"
+        },
+        "cards": "white rounded cards with subtle border and soft shadow",
+        "icons": "purple square icon badges",
+        "decorative_star": "orange sparkle on right"
+      }
+    },
+    {
+      "id": "mascot_brand_section",
+      "type": "brand_story",
+      "background": "#3b0094",
+      "content": {
+        "eyebrow": "Conheça o Tuki",
+        "headline": "Nosso tucano viajante, pronto pra te guiar.",
+        "description": "O Tuki nasceu da vontade de mostrar o Brasil sem complicação. Ele representa a alegria, a confiança e o cuidado que colocamos em cada viagem — do primeiro atendimento até o seu retorno para casa.",
+        "cta": "Quero viajar com o Tuki"
+      },
+      "visual": {
+        "mascot": "large 3D toucan mascot inside orange/purple circle",
+        "logo": "Tuki viagens",
+        "position": "left"
+      },
+      "effects": {
+        "background_gradient": "deep purple gradient",
+        "mascot_circle": "orange circular shape behind mascot",
+        "floating_badge": "small white travel badge above mascot",
+        "button": "orange pill with white text"
+      }
+    },
+    {
+      "id": "testimonials",
+      "type": "social_proof",
+      "background": "#fbfbff",
+      "content": {
+        "eyebrow": "Quem viaja, ama",
+        "headline": "Histórias reais de quem voou com o Tuki",
+        "cards": [
+          {
+            "name": "Camila Ribeiro",
+            "location": "Maringá · Família",
+            "rating": "5 stars",
+            "text": "Atendimento impecável do começo ao fim. As crianças amaram o resort e a Tuki cuidou de cada detalhe."
+          },
+          {
+            "name": "Rafael Andrade",
+            "location": "Fernanda de Noronha · Casal",
+            "rating": "5 stars",
+            "text": "Conseguiram tarifa melhor que qualquer site. Suporte 24h no WhatsApp fez toda a diferença."
+          },
+          {
+            "name": "Patrícia Lopes",
+            "location": "Gramado · Aniversário",
+            "rating": "5 stars",
+            "text": "Viagem dos sonhos! Hotel maravilhoso, traslados pontuais e zero preocupação."
+          }
+        ]
+      },
+      "effects": {
+        "cards": "white rounded testimonial cards with border",
+        "quote_icon": "orange quotation mark",
+        "stars": "#ff8c24",
+        "avatar": "small purple circular initials"
+      }
+    },
+    {
+      "id": "partners",
+      "type": "credibility_logos",
+      "background": "#f4f1ff",
+      "content": {
+        "title": "Autoridade e parcerias que protegem sua viagem",
+        "badges": [
+          "Cadastur ativo",
+          "ABAV associado",
+          "Reserva Aqui Rápido",
+          "Pagamento PCI-DSS",
+          "Seguro Assist Card",
+          "Embratur Parceiro"
+        ]
+      },
+      "effects": {
+        "badges": "white pill chips with subtle border",
+        "text": "uppercase muted purple"
+      }
+    },
+    {
+      "id": "final_cta",
+      "type": "call_to_action",
+      "background": "#fbfbff",
+      "content": {
+        "eyebrow": "Resposta em até 2min",
+        "headline": "Pronto pra próxima aventura?",
+        "description": "Fale com um consultor Tuki e receba um roteiro personalizado — sem compromisso.",
+        "primary_button": "11 9 9999-9999",
+        "secondary_button": "oi@tukiviagens.com.br"
+      },
+      "effects": {
+        "card": {
+          "background": "linear-gradient(135deg, #4b00b5 0%, #7b13c9 48%, #ff513f 100%)",
+          "radius": "28px",
+          "shadow": "0 22px 55px rgba(59, 0, 148, 0.28)"
+        },
+        "decorative_star": "orange sparkle top right",
+        "buttons": "rounded pills with white/transparent variants"
+      }
+    },
+    {
+      "id": "footer",
+      "type": "footer",
+      "background": "#25006d",
+      "content": {
+        "columns": [
+          {
+            "title": "Tuki",
+            "text": "Agência brasileira especializada em hotéis e resorts pelo Brasil."
+          },
+          {
+            "title": "Destinos",
+            "links": [
+              "Nordeste",
+              "Fernando de Noronha",
+              "Rio de Janeiro",
+              "Resorts All-Inclusive"
+            ]
+          },
+          {
+            "title": "Tuki",
+            "links": [
+              "Quem somos",
+              "Depoimentos",
+              "Política de privacidade",
+              "Termos de uso"
+            ]
+          },
+          {
+            "title": "Contato",
+            "links": [
+              "11 9 9999-9999",
+              "oi@tukiviagens.com.br",
+              "São Paulo, SP"
+            ]
+          }
+        ]
+      },
+      "effects": {
+        "text_color": "#ffffff",
+        "muted_text_color": "rgba(255,255,255,0.65)",
+        "social_icons": "small circular outlined icons",
+        "bottom_bar": "thin divider with copyright"
+      }
+    }
+  ],
+  "component_style": {
+    "buttons": {
+      "primary": {
+        "background": "#ff7a1a",
+        "color": "#ffffff",
+        "border_radius": "999px",
+        "padding": "12px 22px",
+        "shadow": "0 10px 24px rgba(255, 122, 26, 0.28)"
+      },
+      "secondary": {
+        "background": "rgba(255,255,255,0.10)",
+        "color": "#ffffff",
+        "border": "1px solid rgba(255,255,255,0.35)",
+        "border_radius": "999px"
+      },
+      "dark": {
+        "background": "#1f1545",
+        "color": "#ffffff",
+        "border_radius": "999px"
+      }
+    },
+    "cards": {
+      "background": "#ffffff",
+      "border": "1px solid rgba(59, 0, 148, 0.08)",
+      "border_radius": "18px",
+      "box_shadow": "0 16px 40px rgba(31, 21, 69, 0.08)"
+    },
+    "icons": {
+      "style": "rounded filled icons",
+      "primary_background": "#3b0094",
+      "secondary_background": "#ff7a1a",
+      "color": "#ffffff"
+    },
+    "badges": {
+      "shape": "pill",
+      "font_size": "11px",
+      "font_weight": 700,
+      "background": "#ffffff",
+      "border": "1px solid rgba(59, 0, 148, 0.10)"
+    }
+  },
+  "image_generation_prompt": {
+    "prompt": "Create a modern, playful Brazilian travel agency landing page for a fictional brand called Tuki Viagens. Use a deep purple and orange visual identity, a 3D toucan mascot, rounded cards, soft shadows, tropical resort imagery, floating badges, orange sparkle decorations, and a premium but fun family-travel feeling. The page should include a hero section, trust badges, destination categories, hotel/resort cards, benefits section, mascot story section, testimonials, partner badges, final CTA and dark purple footer. Use strong rounded typography, large bold headlines, white space, organic wave dividers, radial gradient glows and pill-shaped buttons.",
+    "negative_prompt": "avoid flat corporate design, avoid sharp corners, avoid dark unreadable text, avoid generic stock layout, avoid excessive clutter, avoid monochrome palette"
+  }
+}

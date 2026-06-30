@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-06-30T00:00:00.000Z",
+  "title": "Design System: Tuki Viagens",
+  "extensions": {
+    "colorMeta": {
+      "purple-primary": {
+        "role": "primary",
+        "displayName": "Roxo Tuki",
+        "canonical": "oklch(38% 0.22 285)",
+        "tonalRamp": [
+          "oklch(15% 0.12 285)",
+          "oklch(22% 0.18 285)",
+          "oklch(30% 0.21 285)",
+          "oklch(38% 0.22 285)",
+          "oklch(48% 0.20 285)",
+          "oklch(58% 0.16 285)",
+          "oklch(72% 0.10 285)",
+          "oklch(92% 0.04 285)"
+        ]
+      },
+      "purple-deep": {
+        "role": "primary",
+        "displayName": "Roxo Profundo",
+        "canonical": "oklch(28% 0.20 285)",
+        "tonalRamp": [
+          "oklch(12% 0.10 285)",
+          "oklch(18% 0.15 285)",
+          "oklch(24% 0.18 285)",
+          "oklch(28% 0.20 285)",
+          "oklch(35% 0.19 285)",
+          "oklch(45% 0.15 285)",
+          "oklch(60% 0.10 285)",
+          "oklch(85% 0.04 285)"
+        ]
+      },
+      "orange-primary": {
+        "role": "secondary",
+        "displayName": "Laranja Tuki",
+        "canonical": "oklch(68% 0.19 55)",
+        "tonalRamp": [
+          "oklch(25% 0.10 55)",
+          "oklch(35% 0.14 55)",
+          "oklch(48% 0.17 55)",
+          "oklch(58% 0.19 55)",
+          "oklch(68% 0.19 55)",
+          "oklch(78% 0.16 55)",
+          "oklch(88% 0.10 55)",
+          "oklch(96% 0.04 55)"
+        ]
+      },
+      "orange-deep": {
+        "role": "secondary",
+        "displayName": "Laranja Profundo",
+        "canonical": "oklch(58% 0.20 40)",
+        "tonalRamp": [
+          "oklch(22% 0.10 40)",
+          "oklch(32% 0.14 40)",
+          "oklch(42% 0.17 40)",
+          "oklch(52% 0.19 40)",
+          "oklch(58% 0.20 40)",
+          "oklch(68% 0.17 40)",
+          "oklch(80% 0.12 40)",
+          "oklch(94% 0.04 40)"
+        ]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "Branco Puro",
+        "canonical": "oklch(100% 0 0)",
+        "tonalRamp": [
+          "oklch(20% 0 0)",
+          "oklch(35% 0 0)",
+          "oklch(50% 0 0)",
+          "oklch(65% 0 0)",
+          "oklch(80% 0 0)",
+          "oklch(90% 0 0)",
+          "oklch(96% 0 0)",
+          "oklch(100% 0 0)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "H1 de hero e taglines principais." },
+      "headline": { "displayName": "Headline", "purpose": "H2 de seção e títulos de bloco." },
+      "title": { "displayName": "Title", "purpose": "H3 de cards e benefícios." },
+      "body": { "displayName": "Body", "purpose": "Parágrafos e descrições. Máx. 65–75ch." },
+      "label": { "displayName": "Label", "purpose": "Categorias em cards — uso moderado." }
+    },
+    "shadows": [
+      {
+        "name": "card-rest",
+        "value": "0 1px 2px rgba(0, 0, 0, 0.05)",
+        "purpose": "Cards de propriedade em repouso."
+      },
+      {
+        "name": "card-hover",
+        "value": "0 4px 6px rgba(0, 0, 0, 0.07)",
+        "purpose": "Elevação leve no hover — máximo 8px blur."
+      },
+      {
+        "name": "menu-overlay",
+        "value": "0 10px 25px rgba(0, 0, 0, 0.12)",
+        "purpose": "Menu mobile dropdown apenas."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-standard",
+        "value": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+        "purpose": "Transições de hover em botões e cards (200ms)."
+      }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "CTA principal de conversão — WhatsApp, começar, falar com Tuki.",
+      "html": "<button class=\"ds-btn-primary\">Falar com o Tuki</button>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; background: #FC7B04; color: #FFFFFF; padding: 16px 32px; font-family: Inter, ui-sans-serif, system-ui, sans-serif; font-size: 1.125rem; font-weight: 600; border: none; border-radius: 9999px; cursor: pointer; transition: background 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94); } .ds-btn-primary:hover { background: #E94F1B; } .ds-btn-primary:focus-visible { outline: 2px solid #FC7B04; outline-offset: 2px; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Ação em cards de propriedade — reservar, ver detalhes.",
+      "html": "<button class=\"ds-btn-secondary\">Reservar</button>",
+      "css": ".ds-btn-secondary { display: inline-flex; align-items: center; justify-content: center; width: 100%; background: #4B14AE; color: #FFFFFF; padding: 12px 24px; font-family: Inter, ui-sans-serif, system-ui, sans-serif; font-size: 0.875rem; font-weight: 600; border: none; border-radius: 9999px; cursor: pointer; transition: background 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94); } .ds-btn-secondary:hover { background: #270A78; } .ds-btn-secondary:focus-visible { outline: 2px solid #4B14AE; outline-offset: 2px; }"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "CTA secundário sobre fundos roxos.",
+      "html": "<button class=\"ds-btn-outline\">Tirar minha dúvida</button>",
+      "css": ".ds-btn-outline { display: inline-flex; align-items: center; justify-content: center; background: transparent; color: #FFFFFF; padding: 16px 32px; font-family: Inter, ui-sans-serif, system-ui, sans-serif; font-size: 1.125rem; font-weight: 600; border: 2px solid #FFFFFF; border-radius: 9999px; cursor: pointer; transition: background 0.2s; } .ds-btn-outline:hover { background: rgba(255, 255, 255, 0.1); } .ds-btn-outline:focus-visible { outline: 2px solid #FFFFFF; outline-offset: 2px; }"
+    },
+    {
+      "name": "Property Card",
+      "kind": "card",
+      "refersTo": "card-property",
+      "description": "Card de hotel/resort na grid da home.",
+      "html": "<article class=\"ds-card-property\"><div class=\"ds-card-property__media\"><span class=\"ds-card-property__badge\">Olímpia, SP</span></div><div class=\"ds-card-property__body\"><p class=\"ds-card-property__category\">Resort</p><h3 class=\"ds-card-property__title\">Enjoy Olímpia Park Resort</h3><p class=\"ds-card-property__price\">Consulte</p><button class=\"ds-btn-secondary\">Reservar</button></div></article>",
+      "css": ".ds-card-property { overflow: hidden; border-radius: 16px; background: #FFFFFF; box-shadow: 0 1px 2px rgba(0,0,0,0.05); transition: box-shadow 0.2s; } .ds-card-property:hover { box-shadow: 0 4px 6px rgba(0,0,0,0.07); } .ds-card-property__media { position: relative; display: flex; height: 12rem; align-items: center; justify-content: center; background: linear-gradient(135deg, rgba(75,20,174,0.2), rgba(252,123,4,0.2)); } .ds-card-property__badge { position: absolute; left: 12px; top: 12px; border-radius: 9999px; background: rgba(255,255,255,0.9); padding: 4px 12px; font-size: 0.75rem; font-weight: 600; color: #374151; } .ds-card-property__body { padding: 1.25rem; } .ds-card-property__category { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: #4B14AE; } .ds-card-property__title { margin-top: 4px; font-size: 1.125rem; font-weight: 700; color: #111827; } .ds-card-property__price { margin-top: 8px; font-size: 1.25rem; font-weight: 700; color: #FC7B04; }"
+    },
+    {
+      "name": "CTA Block",
+      "kind": "card",
+      "refersTo": "cta-gradient",
+      "description": "Bloco final de conversão com gradiente roxo.",
+      "html": "<div class=\"ds-cta-block\"><h2 class=\"ds-cta-block__title\">Pronto pra próxima aventura?</h2><p class=\"ds-cta-block__subtitle\">Fale com a Tuki e encontre o hotel perfeito.</p><button class=\"ds-btn-primary\">Falar com o Tuki</button></div>",
+      "css": ".ds-cta-block { border-radius: 24px; padding: 3rem 2rem; text-align: center; color: #FFFFFF; background: linear-gradient(135deg, #4B14AE 0%, #270A78 100%); } .ds-cta-block__title { font-family: Inter, sans-serif; font-size: clamp(1.875rem, 3vw, 2.25rem); font-weight: 700; } .ds-cta-block__subtitle { margin: 1rem auto 0; max-width: 36rem; font-size: 1.125rem; color: rgba(255,255,255,0.8); } .ds-cta-block .ds-btn-primary { margin-top: 2rem; }"
+    },
+    {
+      "name": "Site Header",
+      "kind": "nav",
+      "refersTo": "nav-header",
+      "description": "Header sticky roxo com logo e navegação.",
+      "html": "<header class=\"ds-header\"><span class=\"ds-header__logo\">Tuki Viagens</span><nav class=\"ds-header__nav\"><a href=\"#\">Olímpia</a><a href=\"#\">Rio Quente</a></nav><button class=\"ds-btn-primary ds-btn-primary--sm\">Começar</button></header>",
+      "css": ".ds-header { display: flex; align-items: center; justify-content: space-between; padding: 12px 24px; background: rgba(75, 20, 174, 0.95); backdrop-filter: blur(4px); } .ds-header__logo { font-family: Inter, sans-serif; font-weight: 700; font-size: 1.125rem; color: #FFFFFF; } .ds-header__nav { display: flex; gap: 2rem; } .ds-header__nav a { font-size: 0.875rem; font-weight: 500; color: rgba(255,255,255,0.9); text-decoration: none; transition: color 0.2s; } .ds-header__nav a:hover { color: #FFFFFF; } .ds-btn-primary--sm { padding: 8px 16px; font-size: 0.875rem; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "O Guia Colorido",
+    "overview": "O sistema visual da Tuki Viagens traduz leveza familiar em superfícies saturadas e confiantes. Roxo profundo ocupa heróis, header e blocos de confiança; laranja conduz a ação. Referência de calor humano tipo Nubank: amigável, colorido, confiável sem parecer corporativo.",
+    "keyCharacteristics": [
+      "Paleta base fixa: #4B14AE, #270A78, #FC7B04, #E94F1B, #FFFFFF",
+      "Heróis e header em roxo saturado; CTAs em laranja pill",
+      "Tom divertido-familiar com prova social e curadoria consultiva",
+      "Elevação mínima — profundidade por cor e contraste"
+    ],
+    "rules": [
+      { "name": "The Five-Color Rule", "body": "Apenas as cinco cores base mais neutros derivados. Não introduzir terceiros acentos sem aprovação.", "section": "colors" },
+      { "name": "The Orange-Action Rule", "body": "Laranja aparece em CTAs, preços e stats — não em fundos de seção inteira.", "section": "colors" },
+      { "name": "The No-Cream Rule", "body": "Proibido fundo cream/sand/beige quente. Branco frio ou cinza-50 para respiro.", "section": "colors" },
+      { "name": "The Flat-By-Default Rule", "body": "Superfícies em repouso são planas. Sombra só em hover de card ou menu mobile.", "section": "elevation" },
+      { "name": "The No-Ghost-Card Rule", "body": "Proibido border 1px + box-shadow blur ≥ 16px no mesmo elemento.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do usar as cinco cores base como âncora.",
+      "Do colocar CTAs primários em laranja pill sobre fundos roxos ou brancos.",
+      "Do manter tom divertido-familiar com mascote e prova social.",
+      "Do respeitar WCAG 2.1 AA."
+    ],
+    "donts": [
+      "Don't parecer marketplace frio (Booking, Decolar).",
+      "Don't usar estética SaaS/startup com hero-metric template.",
+      "Don't cair em cara de IA (slop) — cream bg, eyebrows em caps, glassmorphism.",
+      "Don't usar border-radius ≥ 32px em cards.",
+      "Don't empilhar border + shadow larga no mesmo elemento."
+    ]
+  }
+}

@@ -1,37 +1,52 @@
 ---
 import Container from '../common/Container.astro';
+import SectionEyebrow from '../common/SectionEyebrow.astro';
+import StarDecoration from '../common/StarDecoration.astro';
 import { WHY_TUKI_BENEFITS, WHY_TUKI_CARDS } from '../../lib/constants';
+
+const cardIcons = ['🛡️', '💬', '✦', '🎒'];
 ---
 
-<section id="por-que-tuki" class="section-padding bg-white">
-	<Container>
-		<h2 class="text-3xl font-bold text-gray-900 md:text-4xl">
-			A leveza de viajar sabendo que tudo está sob controle.
-		</h2>
+<section id="por-que-tuki" class="relative section-padding overflow-hidden bg-white">
+	<StarDecoration
+		size={120}
+		class="pointer-events-none absolute -right-8 top-1/2 -translate-y-1/2 text-tuki-orange/15"
+	/>
 
-		<div class="mt-12 grid gap-12 lg:grid-cols-2">
-			<ul class="space-y-4">
-				{
-					WHY_TUKI_BENEFITS.map((benefit) => (
-						<li class="flex items-start gap-3">
-							<span class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-tuki-orange text-sm text-white">
-								✓
-							</span>
-							<span class="text-gray-700">{benefit}</span>
-						</li>
-					))
-				}
-			</ul>
+	<Container size="reference" class="relative">
+		<div class="grid gap-12 lg:grid-cols-2 lg:gap-16">
+			<div>
+				<SectionEyebrow label="Por que Tuki Viagens" class="mb-3" />
+				<h2 class="text-3xl font-extrabold leading-tight tracking-[-0.03em] text-tuki-ink md:text-4xl">
+					A leveza de viajar sabendo que <span class="tuki-highlight-block">tudo está sob controle.</span>
+				</h2>
+
+				<ul class="mt-8 space-y-4">
+					{
+						WHY_TUKI_BENEFITS.map((benefit) => (
+							<li class="flex items-start gap-3">
+								<span class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-tuki-orange text-xs font-bold text-white">
+									✓
+								</span>
+								<span class="text-tuki-muted">{benefit}</span>
+							</li>
+						))
+					}
+				</ul>
+			</div>
 
 			<div class="grid gap-4 sm:grid-cols-2">
 				{
-					WHY_TUKI_CARDS.map((card) => (
-						<div class="rounded-2xl border border-gray-100 bg-gray-50 p-5">
-							<div class="mb-3 flex h-10 w-10 items-center justify-center rounded-full bg-tuki-purple/10 text-tuki-purple">
-								★
+					WHY_TUKI_CARDS.map((card, index) => (
+						<div class="tuki-card-ref bg-white p-5 transition hover:-translate-y-0.5">
+							<div
+								class="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-tuki-purple text-lg text-white"
+								aria-hidden="true"
+							>
+								{cardIcons[index]}
 							</div>
-							<h3 class="font-semibold text-gray-900">{card.title}</h3>
-							<p class="mt-2 text-sm text-gray-600">{card.description}</p>
+							<h3 class="font-bold text-tuki-ink">{card.title}</h3>
+							<p class="mt-2 text-sm leading-relaxed text-tuki-muted">{card.description}</p>
 						</div>
 					))
 				}

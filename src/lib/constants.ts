@@ -7,6 +7,23 @@ export const SITE = {
 	phoneDisplay: '(17) 99999-9999',
 } as const;
 
+export const BRAND = {
+	name: SITE.name,
+	logoColor: '/logotipo/logo-color.svg',
+	logoWhite: '/logotipo/logo-white.svg',
+	logoDark: '/logotipo/logo-dark.svg',
+	logoColorPng: '/logotipo/logo-color.png',
+	favicon: '/icons/favicon.ico',
+	faviconSvg: '/icons/favicon.svg',
+	appleTouchIcon: '/icons/apple-touch-icon.jpg',
+	ogImage: '/images/og/og-default.png',
+	mascot: {
+		hero: '/images/mascot/tuki-frente-mala.png',
+		profile: '/images/mascot/tuki-perfil.png',
+		selfie: '/images/mascot/tuki-celular-selfie.png',
+	},
+} as const;
+
 export const NAV_LINKS = [
 	{ label: 'Olímpia', href: '/olimpia/' },
 	{ label: 'Rio Quente', href: '/rio-quente/' },
@@ -15,6 +32,30 @@ export const NAV_LINKS = [
 	{ label: 'Agência', href: '/agencia-de-viagens/' },
 	{ label: 'Contato', href: '/contato' },
 ] as const;
+
+export const HOME_NAV_LINKS = [
+	{ label: 'Destinos', href: '/#destinos' },
+	{ label: 'Hotéis & Resorts', href: '/#hoteis' },
+	{ label: 'Por que Tuki', href: '/#por-que-tuki' },
+	{ label: 'Depoimentos', href: '/#depoimentos' },
+	{ label: 'Contato', href: '/contato' },
+] as const;
+
+export const HERO_EYEBROW = 'Operadora oficial · Curadoria premium';
+
+export const HERO_FLOATING_BADGES = [
+	{ text: '4,9★', class: 'left-0 top-2 -rotate-6 md:-left-8', variant: 'white' as const },
+	{ text: 'Rio de Janeiro', class: 'right-0 top-10 rotate-3 md:-right-6', variant: 'white' as const },
+	{ text: 'Porto de Galinhas', class: 'bottom-8 left-4 -rotate-3 md:left-0', variant: 'white' as const },
+	{ text: 'Pagamento protegido', class: 'bottom-2 right-0 rotate-2 md:-right-4', variant: 'orange' as const },
+] as const;
+
+export const HOTELS_DESCRIPTION =
+	'Visitamos, avaliamos e negociamos as melhores tarifas para você. Tudo o que você vê aqui passou pelo crivo Tuki.';
+
+export const DESTINATIONS_EYEBROW = 'Viagem de ponta a ponta';
+
+export const PARTNERS_TITLE = 'Autoridades e empresas que confiam na Tuki';
 
 export const FOOTER_DESTINATIONS = [
 	{ label: 'Olímpia', href: '/olimpia/' },

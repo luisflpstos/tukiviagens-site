@@ -1,4 +1,4 @@
-import { SITE } from './constants';
+import { SITE, BRAND } from './constants';
 
 export interface SeoProps {
 	title: string;
@@ -25,7 +25,7 @@ export function buildSeo({
 }: SeoProps) {
 	const canonical = buildCanonical(path);
 	const fullTitle = title.includes(SITE.name) ? title : `${title} | ${SITE.name}`;
-	const ogImage = image ?? `${SITE.url}/og-default.jpg`;
+	const ogImage = image ?? `${SITE.url}${BRAND.ogImage}`;
 
 	return {
 		title: fullTitle,

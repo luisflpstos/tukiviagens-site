@@ -1,7 +1,9 @@
 ---
 import Container from '../common/Container.astro';
 import Button from '../common/Button.astro';
+import SectionEyebrow from '../common/SectionEyebrow.astro';
 import { formatLocation } from '../../lib/formatters';
+import { HOTELS_DESCRIPTION } from '../../lib/constants';
 
 interface Property {
 	id: string;
@@ -11,6 +13,7 @@ interface Property {
 	categoria: string;
 	href: string;
 	price?: string;
+	image?: string;
 }
 
 interface Props {
@@ -19,31 +22,64 @@ interface Props {
 }
 
 const { items, title = 'Hotéis e resorts selecionados a dedo.' } = Astro.props;
+
+const tagColors = ['bg-tuki-orange-dark', 'bg-tuki-orange', 'bg-tuki-purple'] as const;
 ---
 
-<section id="hoteis" class="section-padding bg-gray-50">
-	<Container>
-		<h2 class="text-3xl font-bold text-gray-900 md:text-4xl">{title}</h2>
+<section id="hoteis" class="section-padding tuki-section-lavender">
+	<Container size="reference">
+		<div class="max-w-3xl">
+			<SectionEyebrow label="Curadoria Tuki" class="mb-3" />
+			<h2 class="text-3xl font-extrabold tracking-[-0.03em] text-tuki-ink md:text-4xl">{title}</h2>
+			<p class="mt-4 text-base leading-relaxed text-tuki-muted">{HOTELS_DESCRIPTION}</p>
+		</div>
 
 		<div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
 			{
-				items.map((item) => (
-					<article class="overflow-hidden rounded-2xl bg-white shadow-sm transition hover:shadow-md">
-						<div class="relative flex h-48 items-center justify-center bg-gradient-to-br from-tuki-purple/20 to-tuki-orange/20">
-							<span class="text-5xl">🏨</span>
-							<span class="absolute left-3 top-3 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-gray-700">
+				items.map((item, index) => (
+					<article class="tuki-card-ref group overflow-hidden bg-white transition hover:-translate-y-1">
+						<div class="relative h-52 overflow-hidden bg-gradient-to-br from-tuki-purple/20 to-tuki-orange/15">
+							{
+								item.image ? (
+									<img
+										src={item.image}
+										alt=""
+										class="h-full w-full object-cover transition duration-300 group-hover:scale-105"
+										loading="lazy"
+										decoding="async"
+									/>
+								) : (
+									<div class="flex h-full items-center justify-center text-5xl" aria-hidden="true">
+										🏨
+									</div>
+								)
+							}
+							<div class="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-tuki-ink/50 to-transparent"></div>
+							<span
+								class:list={[
+									'absolute left-3 top-3 rounded-full px-2.5 py-1 text-[10px] font-bold text-white uppercase',
+									tagColors[index % tagColors.length],
+								]}
+							>
+								{item.categoria}
+							</span>
+							<span class="absolute right-3 top-3 flex items-center gap-1 rounded-full bg-white/95 px-2 py-1 text-[10px] font-bold text-tuki-ink">
+								<span class="text-tuki-orange" aria-hidden="true">★</span> 4.9
+							</span>
+							<span class="absolute bottom-3 left-3 text-xs font-semibold text-white">
 								{formatLocation(item.cidade, item.estado)}
 							</span>
 						</div>
 						<div class="p-5">
-							<p class="text-xs font-medium uppercase tracking-wide text-tuki-purple">{item.categoria}</p>
-							<h3 class="mt-1 text-lg font-bold text-gray-900">{item.title}</h3>
+							<h3 class="text-lg font-bold text-tuki-ink">{item.title}</h3>
 							{
 								item.price && (
-									<p class="mt-2 text-xl font-bold text-tuki-orange">{item.price}</p>
+									<p class="mt-2 text-sm text-tuki-muted">
+										A partir de <span class="text-xl font-extrabold text-tuki-orange">{item.price}</span>
+									</p>
 								)
 							}
-							<Button href={item.href} variant="secondary" size="sm" class="mt-4 w-full">
+							<Button href={item.href} variant="dark" size="sm" class="mt-4 w-full">
 								Reservar
 							</Button>
 						</div>

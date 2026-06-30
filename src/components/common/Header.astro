@@ -1,44 +1,50 @@
 ---
-import { SITE, NAV_LINKS } from '../../lib/constants';
+import { NAV_LINKS, HOME_NAV_LINKS } from '../../lib/constants';
 import Button from './Button.astro';
+import Logo from './Logo.astro';
+
+const isHome = Astro.url.pathname === '/';
+const links = isHome ? HOME_NAV_LINKS : NAV_LINKS;
+const ctaLabel = isHome ? 'Embarcar' : 'Começar';
 ---
 
-<header class="sticky top-0 z-50 bg-tuki-purple/95 backdrop-blur-sm">
-	<div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-		<a href="/" class="text-2xl font-bold text-white">
-			{SITE.name.split(' ')[0]}
-		</a>
+<header class="sticky top-0 z-50 border-b border-tuki-purple/8 bg-white shadow-[0_4px_24px_color-mix(in_srgb,var(--color-tuki-purple)_6%,transparent)]">
+	<div class="mx-auto flex h-[52px] max-w-[980px] items-center justify-between gap-4 px-4 sm:px-6">
+		<Logo variant="color" height={32} />
 
-		<nav class="hidden items-center gap-8 md:flex" aria-label="Principal">
+		<nav class="hidden items-center gap-1 lg:flex" aria-label="Principal">
 			{
-				NAV_LINKS.map((link) => (
-					<a href={link.href} class="text-sm font-medium text-white/90 transition hover:text-white">
+				links.map((link) => (
+					<a
+						href={link.href}
+						class="rounded-full px-3 py-1.5 text-sm font-medium text-tuki-muted transition hover:bg-tuki-lavender hover:text-tuki-purple"
+					>
 						{link.label}
 					</a>
 				))
 			}
 		</nav>
 
-		<Button href="/contato" variant="primary" size="sm" class="hidden md:inline-flex">
-			Começar
+		<Button href="/contato" variant="primary" size="sm" class="hidden md:inline-flex uppercase tracking-wide">
+			{ctaLabel}
 		</Button>
 
 		<details class="relative md:hidden">
-			<summary class="cursor-pointer list-none rounded-lg p-2 text-white" aria-label="Abrir menu">
+			<summary class="cursor-pointer list-none rounded-lg p-2 text-tuki-purple" aria-label="Abrir menu">
 				<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
 				</svg>
 			</summary>
-			<div class="absolute right-0 mt-2 w-56 rounded-xl bg-white p-4 shadow-xl">
+			<div class="absolute right-0 mt-2 w-56 rounded-2xl border border-tuki-purple/8 bg-white p-4 shadow-lg">
 				{
-					NAV_LINKS.map((link) => (
-						<a href={link.href} class="block py-2 text-sm font-medium text-gray-700 hover:text-tuki-purple">
+					links.map((link) => (
+						<a href={link.href} class="block rounded-lg py-2 text-sm font-medium text-tuki-muted hover:text-tuki-purple">
 							{link.label}
 						</a>
 					))
 				}
 				<Button href="/contato" variant="primary" size="sm" class="mt-3 w-full">
-					Começar
+					{ctaLabel}
 				</Button>
 			</div>
 		</details>

@@ -1,69 +1,115 @@
 ---
 import Container from '../common/Container.astro';
 import Button from '../common/Button.astro';
-import { SITE, HERO_STATS } from '../../lib/constants';
+import StarDecoration from '../common/StarDecoration.astro';
+import { SITE, HERO_STATS, BRAND, HERO_EYEBROW, HERO_FLOATING_BADGES } from '../../lib/constants';
 import { buildWhatsAppUrl } from '../../lib/seo';
 ---
 
-<section class="relative overflow-hidden bg-tuki-purple text-white">
-	<div class="absolute inset-0 opacity-20">
-		<div class="absolute -right-20 -top-20 h-96 w-96 rounded-full bg-tuki-orange blur-3xl"></div>
-		<div class="absolute -bottom-20 -left-20 h-96 w-96 rounded-full bg-tuki-purple-light blur-3xl"></div>
-	</div>
+<section class="relative overflow-hidden tuki-hero-ref text-white">
+	<StarDecoration size={28} class="absolute right-6 top-6 z-20 text-tuki-orange md:right-12 md:top-10" />
 
-	<Container class="relative section-padding">
-		<div class="grid items-center gap-12 lg:grid-cols-2">
-			<div>
-				<h1 class="text-4xl font-bold leading-tight md:text-5xl lg:text-6xl">
-					{SITE.tagline}
+	<Container size="reference" class="relative pb-24 pt-10 md:pb-28 md:pt-14">
+		<div class="grid items-center gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-12">
+			<div class="max-w-xl">
+				<span class="mb-5 inline-flex rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-[11px] font-bold tracking-[0.12em] text-white/90 uppercase">
+					{HERO_EYEBROW}
+				</span>
+
+				<h1 class="text-[2rem] font-extrabold leading-[0.98] tracking-[-0.04em] md:text-5xl lg:text-[3.25rem]">
+					O Brasil que você <span class="tuki-heading-accent">sonha</span>,{' '}
+					<span class="text-tuki-orange">com a leveza do Tuki.</span>
 				</h1>
-				<p class="mt-6 text-lg text-white/80 md:text-xl">
+
+				<p class="mt-5 max-w-lg text-base leading-[1.55] text-white/85 md:text-lg">
 					Hotéis e resorts selecionados a dedo, atendimento humano e pagamento seguro para você viajar
 					com leveza.
 				</p>
-				<div class="mt-8 flex flex-wrap gap-4">
-					<Button href="/#hoteis" variant="primary" size="lg">Escolher viagem</Button>
+
+				<div class="mt-7 flex flex-wrap gap-3">
+					<Button href="/#hoteis" variant="primary" size="lg" class="uppercase tracking-wide">
+						Escolher viagem
+					</Button>
 					<Button
 						href={buildWhatsAppUrl(SITE.phone, 'Olá! Tenho uma dúvida sobre viagens com a Tuki.')}
 						variant="outline"
 						size="lg"
+						class="gap-2 uppercase tracking-wide"
 					>
+						<svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+							></path>
+						</svg>
 						Tirar minha dúvida
 					</Button>
 				</div>
-				<dl class="mt-10 grid grid-cols-3 gap-4">
+
+				<dl class="mt-8 grid grid-cols-3 gap-3 border-t border-white/15 pt-6">
 					{
 						HERO_STATS.map((stat) => (
 							<div>
-								<dt class="text-2xl font-bold text-tuki-orange md:text-3xl">{stat.value}</dt>
-								<dd class="mt-1 text-sm text-white/70">{stat.label}</dd>
+								<dt class="text-lg font-extrabold text-tuki-orange md:text-xl">{stat.value}</dt>
+								<dd class="mt-0.5 text-[11px] leading-snug text-white/70 md:text-xs">{stat.label}</dd>
 							</div>
 						))
 					}
 				</dl>
 			</div>
 
-			<div class="relative flex justify-center">
-				<div class="relative flex h-72 w-72 items-center justify-center rounded-full bg-white/10 backdrop-blur-sm md:h-96 md:w-96">
-					<div class="text-center">
-						<p class="text-6xl">🦜</p>
-						<p class="mt-4 text-xl font-bold">{SITE.name}</p>
-						<p class="text-sm text-white/70">Seu tucano viajante</p>
-					</div>
-					<span class="absolute -right-2 top-8 rounded-full bg-tuki-orange px-3 py-1 text-xs font-semibold">
-						Rio
-					</span>
-					<span class="absolute -left-2 bottom-12 rounded-full bg-white/20 px-3 py-1 text-xs font-semibold backdrop-blur">
-						Segurança
-					</span>
+			<div class="relative mx-auto flex w-full max-w-[340px] justify-center lg:max-w-none">
+				<div
+					class="relative flex aspect-square w-full max-w-[320px] items-center justify-center rounded-full bg-tuki-purple-light/30 shadow-[0_0_0_16px_color-mix(in_srgb,white_6%,transparent)] md:max-w-[360px]"
+					aria-hidden="true"
+				>
+					<div class="absolute inset-5 rounded-full border border-white/15"></div>
+					<img
+						src={BRAND.logoWhite}
+						alt=""
+						class="absolute top-8 z-20 h-8 w-auto opacity-95"
+						width={120}
+						height={32}
+						loading="eager"
+					/>
+					<img
+						src={BRAND.mascot.hero}
+						alt="Tuki, o tucano viajante da Tuki Viagens"
+						class="relative z-10 mt-6 h-[78%] w-auto object-contain drop-shadow-2xl"
+						width={320}
+						height={320}
+						loading="eager"
+						decoding="async"
+					/>
 				</div>
+
+				{
+					HERO_FLOATING_BADGES.map((badge) => (
+						<span
+							class:list={[
+								'absolute z-20',
+								badge.variant === 'white' ? 'tuki-floating-badge' : 'tuki-floating-badge-orange',
+								badge.class,
+							]}
+						>
+							{badge.text}
+						</span>
+					))
+				}
 			</div>
 		</div>
 	</Container>
 
-	<div class="bg-tuki-orange py-3">
-		<div class="animate-pulse overflow-hidden whitespace-nowrap text-center text-sm font-medium text-white">
-			PRAIAS PARADISÍACAS • RESORTS ALL-INCLUSIVE • ATENDIMENTO HUMANO • PAGAMENTO SEGURO • CURADORIA TUKI •
-		</div>
-	</div>
+	<svg
+		class="pointer-events-none absolute bottom-0 left-0 w-full text-tuki-off-white"
+		viewBox="0 0 1440 64"
+		preserveAspectRatio="none"
+		aria-hidden="true"
+	>
+		<path
+			fill="currentColor"
+			d="M0,40 C240,72 480,8 720,32 C960,56 1200,64 1440,48 L1440,64 L0,64 Z"></path>
+	</svg>
 </section>

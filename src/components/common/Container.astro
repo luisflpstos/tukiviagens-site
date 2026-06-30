@@ -1,7 +1,7 @@
 ---
 interface Props {
 	class?: string;
-	size?: 'default' | 'narrow' | 'wide';
+	size?: 'default' | 'narrow' | 'wide' | 'reference';
 }
 
 const { class: className = '', size = 'default' } = Astro.props;
@@ -10,6 +10,7 @@ const sizes = {
 	default: 'max-w-6xl',
 	narrow: 'max-w-3xl',
 	wide: 'max-w-7xl',
+	reference: 'max-w-[980px]',
 };
 ---
 

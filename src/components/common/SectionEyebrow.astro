@@ -1,0 +1,11 @@
+---
+interface Props {
+	label: string;
+	light?: boolean;
+	class?: string;
+}
+
+const { label, light = false, class: className = '' } = Astro.props;
+---
+
+<p class:list={[light ? 'tuki-eyebrow-light' : 'tuki-eyebrow', className]}>{label}</p>
