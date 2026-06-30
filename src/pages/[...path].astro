@@ -1,0 +1,32 @@
+---
+import { getCollection, render } from 'astro:content';
+import PageLayout from '../layouts/PageLayout.astro';
+import { slugToPath } from '../lib/site-routes';
+
+export async function getStaticPaths() {
+	const entries = await getCollection('paginas');
+	return entries.map((entry) => ({
+		params: { path: entry.id },
+		props: { entry },
+	}));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const { seo, ...data } = entry.data;
+const pagePath = slugToPath(entry.id);
+---
+
+<PageLayout
+	title={seo.title}
+	description={seo.description}
+	path={pagePath}
+	pageType={data.pageType}
+	headline={data.headline}
+	highlights={data.highlights}
+	faq={data.faq}
+	whatsapp={data.whatsapp}
+	cta={data.cta}
+>
+	<Content />
+</PageLayout>

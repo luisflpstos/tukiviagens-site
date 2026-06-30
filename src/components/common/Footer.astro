@@ -1,5 +1,5 @@
 ---
-import { SITE } from '../../lib/constants';
+import { SITE, FOOTER_DESTINATIONS } from '../../lib/constants';
 import { buildWhatsAppUrl } from '../../lib/seo';
 ---
 
@@ -16,15 +16,23 @@ import { buildWhatsAppUrl } from '../../lib/seo';
 			<div>
 				<h3 class="font-semibold">Destinos</h3>
 				<ul class="mt-4 space-y-2 text-sm text-white/70">
-					<li><a href="/destinos/olimpia" class="hover:text-white">Olímpia</a></li>
-					<li><a href="/#destinos" class="hover:text-white">Ver todos</a></li>
+					{
+						FOOTER_DESTINATIONS.map((dest) => (
+							<li>
+								<a href={dest.href} class="hover:text-white">
+									{dest.label}
+								</a>
+							</li>
+						))
+					}
 				</ul>
 			</div>
 
 			<div>
 				<h3 class="font-semibold">Tuki</h3>
 				<ul class="mt-4 space-y-2 text-sm text-white/70">
-					<li><a href="/#por-que-tuki" class="hover:text-white">Sobre nós</a></li>
+					<li><a href="/agencia-de-viagens/" class="hover:text-white">Agência de viagens</a></li>
+					<li><a href="/#por-que-tuki" class="hover:text-white">Por que Tuki</a></li>
 					<li><a href="/#depoimentos" class="hover:text-white">Depoimentos</a></li>
 					<li><a href="/contato" class="hover:text-white">Contato</a></li>
 				</ul>

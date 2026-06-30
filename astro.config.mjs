@@ -17,4 +17,9 @@ export default defineConfig({
       filter: (page) => !page.includes('/lp/'),
     }),
   ],
+
+  redirects: {
+    '/destinos/olimpia': '/olimpia',
+    '/destinos/olimpia/': '/olimpia/',
+  },
 });

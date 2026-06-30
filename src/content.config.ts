@@ -103,4 +103,21 @@ const blog = defineCollection({
 	}),
 });
 
-export const collections = { hoteis, resorts, destinos, landingpages, blog };
+const paginas = defineCollection({
+	loader: glob({ base: './src/content/paginas', pattern: '**/*.{md,mdx}' }),
+	schema: z.object({
+		title: z.string(),
+		pageType: z.enum(['hub', 'venda', 'atracao', 'propriedade', 'institucional']),
+		silo: z.enum(['olimpia', 'rio-quente', 'nordeste', 'pacotes', 'agencia']).optional(),
+		headline: z.string(),
+		description: z.string(),
+		highlights: z.array(z.string()).default([]),
+		keywords: z.array(z.string()).default([]),
+		whatsapp: z.string(),
+		cta: z.string(),
+		faq: faqSchema.default([]),
+		seo: seoSchema,
+	}),
+});
+
+export const collections = { hoteis, resorts, destinos, landingpages, blog, paginas };

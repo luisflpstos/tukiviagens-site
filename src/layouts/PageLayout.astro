@@ -1,0 +1,167 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Container from '../components/common/Container.astro';
+import Button from '../components/common/Button.astro';
+import BenefitsList from '../components/sections/BenefitsList.astro';
+import Faq from '../components/sections/Faq.astro';
+import LeadCaptureSection from '../components/sections/LeadCaptureSection.astro';
+import { buildWhatsAppUrl } from '../lib/seo';
+import { getChildRoutes, normalizePath } from '../lib/site-routes';
+
+interface RelatedPage {
+	label: string;
+	href: string;
+}
+
+interface Props {
+	title: string;
+	description: string;
+	path: string;
+	pageType: 'hub' | 'venda' | 'atracao' | 'propriedade' | 'institucional';
+	headline: string;
+	highlights: string[];
+	faq: { question: string; answer: string }[];
+	whatsapp: string;
+	cta: string;
+	relatedPages?: RelatedPage[];
+}
+
+const {
+	title,
+	description,
+	path,
+	pageType,
+	headline,
+	highlights,
+	faq,
+	whatsapp,
+	cta,
+	relatedPages = [],
+} = Astro.props;
+
+const pageTypeLabels: Record<Props['pageType'], string> = {
+	hub: 'Destino',
+	venda: 'Hospedagem',
+	atracao: 'Atração',
+	propriedade: 'Propriedade',
+	institucional: 'Tuki Viagens',
+};
+
+const childRoutes = getChildRoutes(path)
+	.filter((route) => route.status === 'published')
+	.map((route) => ({
+		label: route.title,
+		href: route.path,
+	}));
+
+const plannedChildRoutes = getChildRoutes(path).filter((route) => route.status === 'planned');
+
+const navPages = relatedPages.length > 0 ? relatedPages : childRoutes;
+
+const breadcrumbItems = [
+	{ name: 'Início', path: '/' },
+	...(path !== '/' ? [{ name: title, path }] : []),
+];
+
+const jsonLd = [
+	{
+		'@context': 'https://schema.org',
+		'@type': 'BreadcrumbList',
+		itemListElement: breadcrumbItems.map((item, index) => ({
+			'@type': 'ListItem',
+			position: index + 1,
+			name: item.name,
+			item: item.path.startsWith('http') ? item.path : undefined,
+		})),
+	},
+	...(faq.length > 0
+		? [
+				{
+					'@context': 'https://schema.org',
+					'@type': 'FAQPage',
+					mainEntity: faq.map((item) => ({
+						'@type': 'Question',
+						name: item.question,
+						acceptedAnswer: {
+							'@type': 'Answer',
+							text: item.answer,
+						},
+					})),
+				},
+			]
+		: []),
+];
+---
+
+<BaseLayout title={title} description={description} path={path} jsonLd={jsonLd}>
+	<section class="tuki-gradient-purple section-padding text-white">
+		<Container>
+			<nav aria-label="Breadcrumb" class="text-sm text-white/70">
+				<ol class="flex flex-wrap items-center gap-2">
+					<li><a href="/" class="hover:text-white">Início</a></li>
+					{
+						path !== '/' && (
+							<>
+								<li aria-hidden="true">/</li>
+								<li class="text-white">{title}</li>
+							</>
+						)
+					}
+				</ol>
+			</nav>
+			<p class="mt-4 text-sm font-medium uppercase tracking-wide text-tuki-orange">
+				{pageTypeLabels[pageType]}
+			</p>
+			<h1 class="mt-2 text-4xl font-bold md:text-5xl">{headline}</h1>
+			<p class="mt-4 max-w-2xl text-lg text-white/90">{description}</p>
+			<Button
+				href={buildWhatsAppUrl(whatsapp, `Olá! Gostaria de uma cotação: ${title}.`)}
+				variant="primary"
+				size="lg"
+				class="mt-8"
+			>
+				{cta}
+			</Button>
+		</Container>
+	</section>
+
+	{
+		(navPages.length > 0 || plannedChildRoutes.length > 0) && (
+			<section class="border-b border-gray-100 bg-gray-50 py-8">
+				<Container>
+					<h2 class="text-lg font-semibold text-gray-900">Neste destino</h2>
+					{navPages.length > 0 && (
+						<div class="mt-4 flex flex-wrap gap-3">
+							{navPages.map((page) => (
+								<a
+									href={normalizePath(page.href)}
+									class="rounded-full bg-white px-4 py-2 text-sm font-medium text-tuki-purple shadow-sm transition hover:bg-tuki-purple/5"
+								>
+									{page.label}
+								</a>
+							))}
+						</div>
+					)}
+					{plannedChildRoutes.length > 0 && (
+						<p class="mt-4 text-sm text-gray-500">
+							Em breve:{' '}
+							{plannedChildRoutes.map((route) => route.title.toLowerCase()).join(', ')}.
+						</p>
+					)}
+				</Container>
+			</section>
+		)
+	}
+
+	<article class="section-padding">
+		<Container size="narrow">
+			<div class="content-markdown max-w-none">
+				<slot />
+			</div>
+		</Container>
+	</article>
+
+	{highlights.length > 0 && <BenefitsList items={highlights} title="Destaques" />}
+	<Faq items={faq} />
+	<LeadCaptureSection formId="pagina-lead-form" destination={title} title="Peça sua cotação" />
+</BaseLayout>

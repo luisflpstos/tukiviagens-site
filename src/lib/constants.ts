@@ -8,11 +8,19 @@ export const SITE = {
 } as const;
 
 export const NAV_LINKS = [
-	{ label: 'Destinos', href: '/#destinos' },
-	{ label: 'Hotéis & Resorts', href: '/#hoteis' },
-	{ label: 'Por que Tuki', href: '/#por-que-tuki' },
-	{ label: 'Depoimentos', href: '/#depoimentos' },
+	{ label: 'Olímpia', href: '/olimpia/' },
+	{ label: 'Rio Quente', href: '/rio-quente/' },
+	{ label: 'Nordeste', href: '/nordeste/' },
+	{ label: 'Pacotes', href: '/pacotes-de-viagem-brasil/' },
+	{ label: 'Agência', href: '/agencia-de-viagens/' },
 	{ label: 'Contato', href: '/contato' },
+] as const;
+
+export const FOOTER_DESTINATIONS = [
+	{ label: 'Olímpia', href: '/olimpia/' },
+	{ label: 'Rio Quente', href: '/rio-quente/' },
+	{ label: 'Nordeste', href: '/nordeste/' },
+	{ label: 'Pacotes Brasil', href: '/pacotes-de-viagem-brasil/' },
 ] as const;
 
 export const HERO_STATS = [
@@ -85,10 +93,10 @@ export const PARTNERS = [
 ] as const;
 
 export const HOME_DESTINATIONS = [
-	{ name: 'Nordeste', slug: 'nordeste', emoji: '🌴' },
-	{ name: 'Fernando de Noronha', slug: 'fernando-de-noronha', emoji: '🏝️' },
-	{ name: 'Rio de Janeiro', slug: 'rio-de-janeiro', emoji: '🏖️' },
-	{ name: 'Olímpia', slug: 'olimpia', emoji: '♨️' },
-	{ name: 'Gramado', slug: 'gramado', emoji: '🍫' },
-	{ name: 'Bonito', slug: 'bonito', emoji: '💧' },
+	{ name: 'Nordeste', slug: 'nordeste', href: '/nordeste/', emoji: '🌴' },
+	{ name: 'Olímpia', slug: 'olimpia', href: '/olimpia/', emoji: '♨️' },
+	{ name: 'Rio Quente', slug: 'rio-quente', href: '/rio-quente/', emoji: '💦' },
+	{ name: 'Pacotes Brasil', slug: 'pacotes', href: '/pacotes-de-viagem-brasil/', emoji: '✈️' },
+	{ name: 'Rio de Janeiro', slug: 'rio-de-janeiro', href: '/pacotes-de-viagem-brasil/', emoji: '🏖️' },
+	{ name: 'Gramado', slug: 'gramado', href: '/pacotes-de-viagem-brasil/', emoji: '🍫' },
 ] as const;
