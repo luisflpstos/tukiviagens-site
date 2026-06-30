@@ -7,11 +7,11 @@ import { buildWhatsAppUrl } from '../../lib/seo';
 ---
 
 <section class="relative isolate overflow-hidden text-white">
-	<div class="absolute inset-0 -z-10" aria-hidden="true">
+	<div class="absolute inset-0 -z-10 overflow-hidden" aria-hidden="true">
 		<img
 			src={HERO_BACKGROUND}
 			alt=""
-			class="h-full w-full object-cover"
+			class="tuki-hero-bg-zoom h-full w-full object-cover"
 			width={2000}
 			height={1200}
 			loading="eager"
@@ -22,26 +22,35 @@ import { buildWhatsAppUrl } from '../../lib/seo';
 		<div class="tuki-hero-ref absolute inset-0"></div>
 	</div>
 
-	<StarDecoration size={28} class="absolute right-6 top-6 z-20 text-tuki-orange md:right-12 md:top-10" />
+	<StarDecoration size={28} class="tuki-star-twinkle absolute right-6 top-6 z-20 text-tuki-orange md:right-12 md:top-10" />
 
 	<Container size="reference" class="relative pb-24 pt-10 md:pb-28 md:pt-14">
 		<div class="grid items-center gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-12">
 			<div class="max-w-xl">
-				<span class="mb-5 inline-flex rounded-full border border-white/25 bg-white/10 px-4 py-1.5 text-[11px] font-bold tracking-[0.12em] text-white/90 uppercase backdrop-blur-sm">
+				<span
+					class="tuki-hero-enter mb-5 inline-flex rounded-full border border-white/25 bg-white/10 px-4 py-1.5 text-[11px] font-bold tracking-[0.12em] text-white/90 uppercase backdrop-blur-sm"
+					style="--enter-i: 0"
+				>
 					{HERO_EYEBROW}
 				</span>
 
-				<h1 class="text-[2rem] font-extrabold leading-[0.98] tracking-[-0.04em] md:text-5xl lg:text-[3.25rem]">
+				<h1
+					class="tuki-hero-enter text-[2rem] font-extrabold leading-[0.98] tracking-[-0.04em] md:text-5xl lg:text-[3.25rem]"
+					style="--enter-i: 1"
+				>
 					O Brasil que você <span class="tuki-heading-accent">sonha</span>,{' '}
 					<span class="text-tuki-orange">com a leveza do Tuki.</span>
 				</h1>
 
-				<p class="mt-5 max-w-lg text-base leading-[1.55] text-white/90 md:text-lg">
+				<p
+					class="tuki-hero-enter mt-5 max-w-lg text-base leading-[1.55] text-white/90 md:text-lg"
+					style="--enter-i: 2"
+				>
 					Hotéis e resorts selecionados a dedo, atendimento humano e pagamento seguro para você viajar
 					com leveza.
 				</p>
 
-				<div class="mt-7 flex flex-wrap gap-3">
+				<div class="tuki-hero-enter mt-7 flex flex-wrap gap-3" style="--enter-i: 3">
 					<Button
 						href={buildWhatsAppUrl(SITE.phone, 'Olá! Quero planejar minha viagem com a Tuki.')}
 						variant="primary"
@@ -62,7 +71,7 @@ import { buildWhatsAppUrl } from '../../lib/seo';
 					</Button>
 				</div>
 
-				<dl class="mt-8 grid grid-cols-3 gap-3 border-t border-white/20 pt-6">
+				<dl class="tuki-hero-enter mt-8 grid grid-cols-3 gap-3 border-t border-white/20 pt-6" style="--enter-i: 4">
 					{
 						HERO_STATS.map((stat) => (
 							<div>
@@ -74,9 +83,9 @@ import { buildWhatsAppUrl } from '../../lib/seo';
 				</dl>
 			</div>
 
-			<div class="relative mx-auto flex w-full max-w-[340px] justify-center lg:max-w-none">
+			<div class="tuki-hero-enter relative mx-auto flex w-full max-w-[340px] justify-center lg:max-w-none" style="--enter-i: 3">
 				<div
-					class="relative flex aspect-square w-full max-w-[320px] items-center justify-center rounded-full bg-tuki-purple/40 shadow-[0_0_0_16px_color-mix(in_srgb,white_8%,transparent)] backdrop-blur-sm md:max-w-[360px]"
+					class="tuki-hero-mascot-ring relative flex aspect-square w-full max-w-[320px] items-center justify-center rounded-full bg-tuki-purple/40 shadow-[0_0_0_16px_color-mix(in_srgb,white_8%,transparent)] backdrop-blur-sm md:max-w-[360px]"
 					aria-hidden="true"
 				>
 					<div class="absolute inset-5 rounded-full border border-white/20"></div>
@@ -91,7 +100,7 @@ import { buildWhatsAppUrl } from '../../lib/seo';
 					<img
 						src={BRAND.mascot.hero}
 						alt="Tuki, o tucano viajante da Tuki Viagens"
-						class="relative z-10 mt-8 h-[76%] w-auto object-contain drop-shadow-2xl"
+						class="tuki-hero-mascot-img relative z-10 mt-8 h-[76%] w-auto object-contain drop-shadow-2xl"
 						width={320}
 						height={320}
 						loading="eager"
@@ -100,13 +109,14 @@ import { buildWhatsAppUrl } from '../../lib/seo';
 				</div>
 
 				{
-					HERO_FLOATING_BADGES.map((badge) => (
+					HERO_FLOATING_BADGES.map((badge, index) => (
 						<span
 							class:list={[
-								'absolute z-20',
+								'tuki-badge-float absolute z-20',
 								badge.variant === 'white' ? 'tuki-floating-badge' : 'tuki-floating-badge-orange',
 								badge.class,
 							]}
+							style={`--badge-i: ${index}`}
 						>
 							{badge.text}
 						</span>

@@ -38,14 +38,17 @@ function resolveHotelImage(image: string | undefined, index: number) {
 			<p class="mt-4 text-base leading-relaxed text-tuki-muted">{HOTELS_DESCRIPTION}</p>
 		</div>
 
-		<div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+		<div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3" data-tuki-reveal>
 			{
 				items.map((item, index) => {
 					const imageSrc = resolveHotelImage(item.image, index);
 					const quoteMessage = `Olá! Quero cotar o ${item.title} com a Tuki.`;
 					const quoteHref = buildWhatsAppUrl(SITE.phone, quoteMessage);
 					return (
-						<article class="tuki-card-ref group overflow-hidden bg-white transition hover:-translate-y-1 hover:shadow-md">
+						<article
+							class="tuki-card-ref tuki-stagger-item group overflow-hidden bg-white transition hover:-translate-y-1 hover:shadow-md"
+							style={`--i: ${index}`}
+						>
 							<a href={item.href} class="block">
 								<div class="relative h-52 overflow-hidden bg-gradient-to-br from-tuki-purple/20 to-tuki-orange/15">
 									<img

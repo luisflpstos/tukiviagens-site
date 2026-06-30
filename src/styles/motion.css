@@ -1,0 +1,204 @@
+:root {
+	--tuki-ease-out: cubic-bezier(0.25, 1, 0.5, 1);
+	--tuki-ease-quint: cubic-bezier(0.22, 1, 0.36, 1);
+	--tuki-ease-expo: cubic-bezier(0.16, 1, 0.3, 1);
+	--tuki-duration-fast: 150ms;
+	--tuki-duration-normal: 280ms;
+	--tuki-duration-slow: 700ms;
+}
+
+/* Animações ativas por padrão; desligadas só com prefers-reduced-motion: reduce */
+.tuki-hero-enter {
+	animation: tuki-hero-rise var(--tuki-duration-slow) var(--tuki-ease-expo) both;
+	animation-delay: calc(var(--enter-i, 0) * 90ms + 120ms);
+}
+
+.tuki-hero-mascot-ring {
+	animation: tuki-hero-pop 0.9s var(--tuki-ease-expo) 0.35s both;
+}
+
+.tuki-hero-mascot-img {
+	animation: tuki-hero-mascot-in 1s var(--tuki-ease-expo) 0.5s both;
+}
+
+.tuki-hero-bg-zoom {
+	animation: tuki-hero-ken 20s var(--tuki-ease-out) infinite alternate;
+}
+
+.tuki-badge-float {
+	animation:
+		tuki-badge-in 0.6s var(--tuki-ease-expo) both,
+		tuki-float 4.5s ease-in-out infinite;
+	animation-delay: calc(var(--badge-i, 0) * 110ms + 600ms), calc(var(--badge-i, 0) * 0.45s + 2.4s);
+}
+
+.tuki-star-twinkle {
+	animation: tuki-star-pulse 3.5s ease-in-out infinite;
+}
+
+.tuki-mascot-glide {
+	animation: tuki-float 5.5s ease-in-out infinite;
+}
+
+.tuki-fab-nudge {
+	animation: tuki-fab-attention 0.55s var(--tuki-ease-expo) 3s 2 both;
+}
+
+[data-tuki-reveal] .tuki-stagger-item {
+	opacity: 1;
+	translate: 0 0;
+}
+
+html.tuki-motion-ready [data-tuki-reveal].is-revealed .tuki-stagger-item {
+	animation: tuki-stagger-in 0.7s var(--tuki-ease-expo) both;
+	animation-delay: calc(var(--i, 0) * 65ms);
+}
+
+.tuki-btn-motion {
+	transition:
+		transform var(--tuki-duration-fast) var(--tuki-ease-quint),
+		background-color var(--tuki-duration-normal) var(--tuki-ease-out),
+		box-shadow var(--tuki-duration-normal) var(--tuki-ease-out),
+		color var(--tuki-duration-normal) var(--tuki-ease-out),
+		border-color var(--tuki-duration-normal) var(--tuki-ease-out);
+}
+
+.tuki-btn-motion:hover {
+	transform: scale(1.03);
+}
+
+.tuki-btn-motion:active {
+	transform: scale(0.97);
+	transition-duration: 80ms;
+}
+
+@keyframes tuki-hero-rise {
+	from {
+		opacity: 0;
+		transform: translateY(24px);
+		filter: blur(4px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+		filter: blur(0);
+	}
+}
+
+@keyframes tuki-hero-pop {
+	from {
+		opacity: 0;
+		transform: scale(0.9);
+	}
+
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+@keyframes tuki-hero-mascot-in {
+	from {
+		opacity: 0;
+		transform: translateY(16px) scale(0.94);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0) scale(1);
+	}
+}
+
+@keyframes tuki-hero-ken {
+	from {
+		transform: scale(1);
+	}
+
+	to {
+		transform: scale(1.08);
+	}
+}
+
+@keyframes tuki-badge-in {
+	from {
+		opacity: 0;
+		transform: translateY(12px) scale(0.94);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0) scale(1);
+	}
+}
+
+@keyframes tuki-float {
+	0%,
+	100% {
+		translate: 0 0;
+	}
+
+	50% {
+		translate: 0 -8px;
+	}
+}
+
+@keyframes tuki-star-pulse {
+	0%,
+	100% {
+		opacity: 0.85;
+		transform: scale(1) rotate(0deg);
+	}
+
+	50% {
+		opacity: 1;
+		transform: scale(1.12) rotate(12deg);
+	}
+}
+
+@keyframes tuki-stagger-in {
+	from {
+		opacity: 0.45;
+		translate: 0 32px;
+	}
+
+	to {
+		opacity: 1;
+		translate: 0 0;
+	}
+}
+
+@keyframes tuki-fab-attention {
+	0%,
+	100% {
+		transform: scale(1);
+	}
+
+	45% {
+		transform: scale(1.08);
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.tuki-hero-enter,
+	.tuki-hero-mascot-ring,
+	.tuki-hero-mascot-img,
+	.tuki-hero-bg-zoom,
+	.tuki-badge-float,
+	.tuki-star-twinkle,
+	.tuki-mascot-glide,
+	.tuki-fab-nudge {
+		animation: none !important;
+	}
+
+	html.tuki-motion-ready [data-tuki-reveal].is-revealed .tuki-stagger-item {
+		animation: none !important;
+		opacity: 1 !important;
+		translate: 0 0 !important;
+	}
+
+	.tuki-btn-motion:hover,
+	.tuki-btn-motion:active {
+		transform: none !important;
+	}
+}

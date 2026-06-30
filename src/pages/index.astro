@@ -29,6 +29,13 @@ const properties = HOME_FEATURED_PROPERTIES.map((item) => ({
 	path="/"
 >
 	<div id="conteudo">
+	<script is:inline>
+		try {
+			if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+				document.documentElement.classList.add('tuki-motion-ready');
+			}
+		} catch {}
+	</script>
 	<Hero />
 	<MarqueeStrip />
 	<DestinationsGrid />
@@ -40,4 +47,8 @@ const properties = HOME_FEATURED_PROPERTIES.map((item) => ({
 	<CtaSection />
 	<WhatsAppFab />
 	</div>
+	<script>
+		import { initHomeMotion } from '../scripts/home-motion.ts';
+		initHomeMotion();
+	</script>
 </BaseLayout>
