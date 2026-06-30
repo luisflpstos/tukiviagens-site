@@ -167,10 +167,10 @@ export const TRUST_ITEMS = [
 		iconAlt: 'Placa de férias — suporte durante a viagem',
 	},
 	{
-		title: 'Curadoria Tuki',
+		title: 'Escolha Tuki',
 		description: 'Hotéis selecionados a dedo para você.',
 		icon: TUKI_ICONS.hotel,
-		iconAlt: 'Hotel selecionado pela curadoria Tuki',
+		iconAlt: 'Hotel selecionado pela escolha Tuki',
 	},
 	{
 		title: 'Guia de pagamentos',
@@ -231,7 +231,7 @@ export const TESTIMONIALS = [
 		name: 'Juliana M.',
 		location: 'Ribeirão Preto, SP',
 		rating: 5,
-		text: 'Adorei a curadoria! Me indicaram opções que realmente faziam sentido para o que eu buscava.',
+		text: 'Adorei as escolhas! Me indicaram opções que realmente faziam sentido para o que eu buscava.',
 	},
 ] as const;
 

@@ -9,7 +9,7 @@ PNG da marca em `public/images/icons/`. Usar via `TUKI_ICONS` (`src/lib/icons.ts
 | `icone-cama-tuki-viagens.png` | `cama` | Card "Pacote completo" |
 | `icone-carro-tuki-viagens.png` | `carro` | Reservado (páginas de destino / traslado) |
 | `icone-gramado-tuki-viagens.png` | `gramado` | Destino Gramado |
-| `icone-hotel-tuki-viagens.png` | `hotel` | Trust pill "Curadoria Tuki" |
+| `icone-hotel-tuki-viagens.png` | `hotel` | Trust pill "Escolha Tuki" |
 | `icone-mala-tuki-viagens.png` | `mala` | Card "Atendimento humano" |
 | `icone-mapa-tuki-viagens.png` | `mapa` | Trust pill "Guia de pagamentos" |
 | `icone-nordeste-tuki-viagens.png` | `nordeste` | Destino Nordeste |

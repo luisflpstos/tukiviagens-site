@@ -222,7 +222,7 @@
         "Resorts all-inclusive",
         "Atendimento humano",
         "Pagamento seguro",
-        "Curadoria Tuki"
+        "Escolha Tuki"
       ],
       "effects": {
         "text": "uppercase white bold",
@@ -396,7 +396,7 @@
             "icon": "users"
           },
           {
-            "title": "Curadoria de verdade",
+            "title": "Escolha de verdade",
             "description": "Conhecemos pessoalmente cada hotel. Só indicamos o que vale a pena.",
             "icon": "sparkle"
           },

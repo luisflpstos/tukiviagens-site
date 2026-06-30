@@ -8,10 +8,10 @@ import { WHY_TUKI_BENEFITS, WHY_TUKI_CARDS, WHY_TUKI_INTRO, TRUST_ITEMS } from '
 	<Container size="reference">
 		<div class="grid gap-12 lg:grid-cols-2 lg:gap-16">
 			<div>
-				<h2 class="text-3xl font-extrabold leading-tight tracking-[-0.03em] text-tuki-ink md:text-4xl">
+				<h2 class="tuki-type-headline text-tuki-ink">
 					A leveza de viajar sabendo que <span class="tuki-highlight-block">tudo está sob controle.</span>
 				</h2>
-				<p class="mt-5 max-w-prose text-base leading-relaxed text-tuki-muted">{WHY_TUKI_INTRO}</p>
+				<p class="tuki-type-body tuki-measure mt-5 text-tuki-muted">{WHY_TUKI_INTRO}</p>
 
 				<ul class="mt-8 space-y-4">
 					{
@@ -20,7 +20,7 @@ import { WHY_TUKI_BENEFITS, WHY_TUKI_CARDS, WHY_TUKI_INTRO, TRUST_ITEMS } from '
 								<span class="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-tuki-orange text-xs font-bold text-white">
 									✓
 								</span>
-								<span class="text-tuki-muted">{benefit}</span>
+								<span class="tuki-type-body text-tuki-muted">{benefit}</span>
 							</li>
 						))
 					}
@@ -34,8 +34,8 @@ import { WHY_TUKI_BENEFITS, WHY_TUKI_CARDS, WHY_TUKI_INTRO, TRUST_ITEMS } from '
 							<div class="mb-4 flex h-19 w-19 items-center justify-center rounded-xl bg-tuki-lavender/80 p-1.5">
 								<TukiIcon src={card.icon} alt={card.iconAlt} size="md" />
 							</div>
-							<h3 class="font-bold text-tuki-ink">{card.title}</h3>
-							<p class="mt-2 text-sm leading-relaxed text-tuki-muted">{card.description}</p>
+							<h3 class="tuki-type-title text-tuki-ink">{card.title}</h3>
+							<p class="tuki-type-small mt-2 text-tuki-muted">{card.description}</p>
 						</div>
 					))
 				}

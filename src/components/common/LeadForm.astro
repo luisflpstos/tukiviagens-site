@@ -33,7 +33,7 @@ const hiddenFields = [
 <form id={formId} class="space-y-4" novalidate>
 	<div class="grid gap-4 sm:grid-cols-2">
 		<div class="sm:col-span-2">
-			<label for={`${formId}-nome`} class="mb-1 block text-sm font-medium text-gray-700">Nome *</label>
+			<label for={`${formId}-nome`} class="tuki-type-small mb-1 block font-medium text-tuki-ink">Nome *</label>
 			<input
 				id={`${formId}-nome`}
 				name="nome"
@@ -46,7 +46,7 @@ const hiddenFields = [
 		</div>
 
 		<div>
-			<label for={`${formId}-telefone`} class="mb-1 block text-sm font-medium text-gray-700">Telefone *</label>
+			<label for={`${formId}-telefone`} class="tuki-type-small mb-1 block font-medium text-tuki-ink">Telefone *</label>
 			<input
 				id={`${formId}-telefone`}
 				name="telefone"
@@ -61,7 +61,7 @@ const hiddenFields = [
 		{
 			showGuests && (
 				<div>
-					<label for={`${formId}-pessoas`} class="mb-1 block text-sm font-medium text-gray-700">
+					<label for={`${formId}-pessoas`} class="tuki-type-small mb-1 block font-medium text-tuki-ink">
 						Pessoas
 					</label>
 					<input
@@ -79,7 +79,7 @@ const hiddenFields = [
 		{
 			showDate && (
 				<div class="sm:col-span-2">
-					<label for={`${formId}-data`} class="mb-1 block text-sm font-medium text-gray-700">
+					<label for={`${formId}-data`} class="tuki-type-small mb-1 block font-medium text-tuki-ink">
 						Data desejada
 					</label>
 					<input
@@ -95,7 +95,7 @@ const hiddenFields = [
 		{
 			showMessage && (
 				<div class="sm:col-span-2">
-					<label for={`${formId}-mensagem`} class="mb-1 block text-sm font-medium text-gray-700">
+					<label for={`${formId}-mensagem`} class="tuki-type-small mb-1 block font-medium text-tuki-ink">
 						Mensagem
 					</label>
 					<textarea
@@ -125,7 +125,7 @@ const hiddenFields = [
 		{submitLabel}
 	</button>
 
-	<p data-form-status class="min-h-5 text-center text-sm" role="status" aria-live="polite"></p>
+	<p data-form-status class="tuki-type-small min-h-5 text-center" role="status" aria-live="polite"></p>
 </form>
 
 <script define:vars={{ formId, hotel, resort, destination, campaign }}>

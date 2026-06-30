@@ -23,7 +23,7 @@ cta: "Cotar hotel no Rio Quente"
 
 faq:
   - question: "A Tuki vende ingresso do Hot Park?"
-    answer: "Nosso foco é hospedagem e pacotes com curadoria. Orientamos sobre o Hot Park e indicamos hotéis com melhor localização para aproveitar o parque — informe suas datas para uma cotação completa."
+    answer: "Nosso foco é hospedagem e pacotes com escolha. Orientamos sobre o Hot Park e indicamos hotéis com melhor localização para aproveitar o parque — informe suas datas para uma cotação completa."
   - question: "Os hotéis no Rio Quente têm all inclusive?"
     answer: "Alguns resorts do complexo Rio Quente Resorts oferecem regime all inclusive em determinadas temporadas. Validamos a oferta real antes de cotar, sem prometer o que não está disponível."
   - question: "Qual hotel fica mais perto do Hot Park?"
@@ -33,7 +33,7 @@ faq:
   - question: "Rio Quente é bom para viajar com crianças?"
     answer: "Sim. O Hot Park é um dos parques aquáticos mais visitados do Brasil, com atrações para todas as idades. Hotéis e resorts da região costumam ter estrutura familiar — piscinas, recreação e refeições inclusas em alguns regimes."
   - question: "Rio Quente e Olímpia são o mesmo destino?"
-    answer: "Não. Rio Quente fica em Goiás, na região de Caldas Novas, e é famoso pelo Hot Park. Olímpia é em São Paulo, com Thermas dos Laranjais. São silos distintos — a Tuki atende cada um com curadoria específica."
+    answer: "Não. Rio Quente fica em Goiás, na região de Caldas Novas, e é famoso pelo Hot Park. Olímpia é em São Paulo, com Thermas dos Laranjais. São silos distintos — a Tuki atende cada um com escolhas específicas."
 
 seo:
   title: "Hotéis no Rio Quente | Hospedagem perto do Hot Park"

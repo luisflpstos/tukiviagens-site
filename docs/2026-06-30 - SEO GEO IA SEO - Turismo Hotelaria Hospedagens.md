@@ -133,7 +133,7 @@ Leitura do cache de Olímpia: termos de hospedagem e parques estavam levemente e
 
 ### Página institucional de agência
 
-- Explicar o processo de cotação e curadoria.
+- Explicar o processo de cotação e escolha.
 - Mostrar por que comprar hospedagem com atendimento humano reduz erro de escolha.
 - Provas: canais oficiais, depoimentos reais, tempo de mercado, destinos atendidos, políticas e suporte.
 - Conteúdo para IA SEO: “como funciona a cotação”, “o que informar”, “como comparar pacotes”, “quando vale pacote com aéreo”.

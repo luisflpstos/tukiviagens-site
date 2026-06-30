@@ -4,12 +4,12 @@ pageType: "hub"
 silo: "pacotes"
 
 headline: "Pacotes de viagem no Brasil: hotel, destinos e cotação consultiva"
-description: "Pacotes de viagem nacionais com hospedagem curada, atendimento humano e opções para família, férias e feriados. Cote com a Tuki Viagens."
+description: "Pacotes de viagem nacionais com hospedagem com escolha Tuki, atendimento humano e opções para família, férias e feriados. Cote com a Tuki Viagens."
 
 highlights:
   - Pacotes com hotel em Olímpia, Rio Quente e Nordeste
   - Opção de incluir aéreo sob consulta
-  - Curadoria para famílias e grupos
+  - Escolhas para famílias e grupos
   - Pagamento seguro e suporte na viagem
 
 keywords:
@@ -33,10 +33,10 @@ faq:
 
 seo:
   title: "Pacotes de viagem no Brasil | Hotel e cotação Tuki"
-  description: "Pacotes de viagem nacionais com hospedagem curada, família e férias. Cotação consultiva com atendimento humano pela Tuki Viagens."
+  description: "Pacotes de viagem nacionais com hospedagem com escolha Tuki, família e férias. Cotação consultiva com atendimento humano pela Tuki Viagens."
 ---
 
-## Pacotes nacionais com curadoria
+## Pacotes nacionais com escolha
 
 Buscar **pacotes de viagem no Brasil** pode gerar centenas de opções genéricas. A Tuki filtra hotéis e resorts reais, explica o que cada pacote inclui e acompanha você da cotação à viagem.
 

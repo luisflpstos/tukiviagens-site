@@ -4,7 +4,7 @@ pageType: "hub"
 silo: "nordeste"
 
 headline: "Resorts e hotéis no Nordeste: praias, família e all inclusive"
-description: "Encontre resorts e hotéis no Nordeste com curadoria Tuki. Maragogi, Porto de Galinhas, Bahia, Natal e opções para viajar com crianças."
+description: "Encontre resorts e hotéis no Nordeste com escolha Tuki. Maragogi, Porto de Galinhas, Bahia, Natal e opções para viajar com crianças."
 
 highlights:
   - Resorts em Maragogi, Porto de Galinhas e Praia do Forte
@@ -32,7 +32,7 @@ faq:
     answer: "Maragogi, Porto de Galinhas, Maceió, Salvador, Praia do Forte, Natal, Fortaleza e outras praias com inventário parceiro. Consulte disponibilidade para seu período."
 
 seo:
-  title: "Nordeste | Resorts e hotéis com curadoria Tuki"
+  title: "Nordeste | Resorts e hotéis com escolha Tuki"
   description: "Resorts e hotéis no Nordeste para família, praia e all inclusive. Cotação consultiva com hotéis selecionados pela Tuki Viagens."
 ---
 
@@ -61,4 +61,4 @@ Para quem busca **resort all inclusive**, Maragogi e a Bahia concentram as ofert
 
 ## Como cotar com a Tuki
 
-O Nordeste tem alta concorrência e muitas variações de regime de pensão. Nossa curadoria compara hotéis disponíveis para suas datas, explica o que está incluso e evita reservas que não correspondem à expectativa do viajante.
+O Nordeste tem alta concorrência e muitas variações de regime de pensão. Nossas escolhas comparam hotéis disponíveis para suas datas, explica o que está incluso e evita reservas que não correspondem à expectativa do viajante.

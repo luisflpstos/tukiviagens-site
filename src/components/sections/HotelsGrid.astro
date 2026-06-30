@@ -34,8 +34,8 @@ function resolveHotelImage(image: string | undefined, index: number) {
 <section id="hoteis" class="section-padding tuki-section-lavender">
 	<Container size="reference">
 		<div class="max-w-3xl">
-			<h2 class="text-3xl font-extrabold tracking-[-0.03em] text-tuki-ink md:text-4xl">{title}</h2>
-			<p class="mt-4 text-base leading-relaxed text-tuki-muted">{HOTELS_DESCRIPTION}</p>
+			<h2 class="tuki-type-headline text-tuki-ink">{title}</h2>
+			<p class="tuki-type-body tuki-measure mt-4 text-tuki-muted">{HOTELS_DESCRIPTION}</p>
 		</div>
 
 		<div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3" data-tuki-reveal>
@@ -63,32 +63,32 @@ function resolveHotelImage(image: string | undefined, index: number) {
 									<div class="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-tuki-ink/50 to-transparent"></div>
 									<span
 										class:list={[
-											'absolute left-3 top-3 rounded-full px-2.5 py-1 text-[10px] font-bold text-white uppercase',
+											'absolute left-3 top-3 rounded-full px-2.5 py-1 tuki-type-caption font-bold text-white uppercase',
 											tagColors[index % tagColors.length],
 										]}
 									>
 										{item.categoria}
 									</span>
-									<span class="absolute right-3 top-3 rounded-full bg-tuki-purple px-2 py-1 text-[10px] font-bold text-white">
-										Curado Tuki
+									<span class="absolute right-3 top-3 rounded-full bg-tuki-purple px-2 py-1 tuki-type-caption font-bold text-white">
+										Escolha Tuki
 									</span>
-									<span class="absolute bottom-3 left-3 text-xs font-semibold text-white">
+									<span class="absolute bottom-3 left-3 tuki-type-caption font-semibold text-white">
 										{formatLocation(item.cidade, item.estado)}
 									</span>
 								</div>
 							</a>
 							<div class="p-5">
-								<h3 class="text-lg font-bold text-tuki-ink">
+								<h3 class="tuki-type-title text-tuki-ink">
 									<a href={item.href} class="transition hover:text-tuki-purple">
 										{item.title}
 									</a>
 								</h3>
 								{
 									item.priceFrom && (
-										<p class="mt-2 text-sm text-tuki-muted">
+										<p class="tuki-type-small mt-2 text-tuki-muted">
 											A partir de{' '}
-											<span class="text-xl font-extrabold text-tuki-orange">{item.priceFrom}</span>
-											<span class="mt-1 block text-xs text-tuki-muted">{HOTELS_PRICE_NOTE}</span>
+											<span class="tuki-tabular-nums tuki-type-title font-extrabold text-tuki-orange">{item.priceFrom}</span>
+											<span class="tuki-type-caption mt-1 block text-tuki-muted">{HOTELS_PRICE_NOTE}</span>
 										</p>
 									)
 								}

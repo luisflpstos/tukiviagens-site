@@ -59,7 +59,7 @@ O **Thermas dos Laranjais** é o maior parque aquático da América Latina e o p
 
 ## Hospedagem + parque: como planejar
 
-Muitos viajantes buscam "pacote Thermas dos Laranjais", mas a melhor estratégia costuma ser **hospedagem bem localizada** + ingressos do parque comprados separadamente. A Tuki foca em curadoria de hotel e resort — podemos orientar sobre parques, mas nosso diferencial é a cotação de hospedagem com atendimento humano.
+Muitos viajantes buscam "pacote Thermas dos Laranjais", mas a melhor estratégia costuma ser **hospedagem bem localizada** + ingressos do parque comprados separadamente. A Tuki foca na escolha de hotel e resort — podemos orientar sobre parques, mas nosso diferencial é a cotação de hospedagem com atendimento humano.
 
 ## Peça cotação de hospedagem perto do Thermas
 

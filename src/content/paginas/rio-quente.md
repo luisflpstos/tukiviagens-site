@@ -33,7 +33,7 @@ faq:
 
 seo:
   title: "Rio Quente e Hot Park | Hotéis e resorts"
-  description: "Planeje sua viagem para Rio Quente. Hotéis perto do Hot Park, resorts e cotação com curadoria Tuki Viagens."
+  description: "Planeje sua viagem para Rio Quente. Hotéis perto do Hot Park, resorts e cotação com escolha Tuki Viagens."
 ---
 
 ## Por que visitar Rio Quente?
@@ -53,4 +53,4 @@ A escolha entre resort dentro do complexo ou hotel no entorno depende do orçame
 
 ## Silo separado de Olímpia
 
-Rio Quente e Olímpia são destinos distintos com parques e ofertas hoteleiras próprias. A Tuki atende os dois com curadoria específica para cada região — sem misturar informações que confundem o viajante na hora de reservar.
+Rio Quente e Olímpia são destinos distintos com parques e ofertas hoteleiras próprias. A Tuki atende os dois com escolhas específicas para cada região — sem misturar informações que confundem o viajante na hora de reservar.

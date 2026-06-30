@@ -4,7 +4,7 @@ pageType: "venda"
 silo: "nordeste"
 
 headline: "Resorts all inclusive no Nordeste: quando vale a pena e onde encontrar oferta real"
-description: "Compare resorts e hotéis all inclusive em Maragogi, Porto de Galinhas, Bahia e Maceió. Curadoria Tuki só indica regime completo quando a oferta é verdadeira."
+description: "Compare resorts e hotéis all inclusive em Maragogi, Porto de Galinhas, Bahia e Maceió. Escolha Tuki só indica regime completo quando a oferta é verdadeira."
 
 highlights:
   - Maragogi e Salinas — referência em all inclusive no litoral alagoano
@@ -35,12 +35,12 @@ faq:
 
 seo:
   title: "Resorts all inclusive no Nordeste | Maragogi, PE, BA e AL"
-  description: "Resorts e hotéis all inclusive no Nordeste com curadoria Tuki. Maragogi, Porto de Galinhas, Bahia e Maceió — só indicamos quando a oferta é real."
+  description: "Resorts e hotéis all inclusive no Nordeste com escolha Tuki. Maragogi, Porto de Galinhas, Bahia e Maceió — só indicamos quando a oferta é real."
 ---
 
 ## O que buscar em um resort all inclusive no Nordeste?
 
-All inclusive no Nordeste **só faz sentido quando a oferta é real** — refeições, bebidas e lazer inclusos conforme anunciado. Muitos hotéis usam o termo de forma flexível; nossa curadoria valida o regime antes de cotar.
+All inclusive no Nordeste **só faz sentido quando a oferta é real** — refeições, bebidas e lazer inclusos conforme anunciado. Muitos hotéis usam o termo de forma flexível; nossas escolhas validam o regime antes de cotar.
 
 Para famílias e viagens de uma semana ou mais, o regime integral costuma simplificar refeições, lazer e orçamento. Para estadias curtas ou quem prefere explorar a gastronomia local, meia pensão ou café da manhã pode ser mais vantajoso.
 

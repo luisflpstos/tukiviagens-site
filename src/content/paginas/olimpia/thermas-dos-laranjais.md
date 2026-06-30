@@ -68,4 +68,4 @@ Os dois parques são referência em Olímpia. O Thermas dos Laranjais é o de ma
 
 ## Cotação de hospedagem
 
-A Tuki não vende ingresso de parque, mas faz curadoria de **hotéis e resorts perto do Thermas dos Laranjais**. Informe datas, hóspedes e preferências. Volte ao [guia de Olímpia](/olimpia/) para o mapa completo do destino.
+A Tuki não vende ingresso de parque, mas escolhe **hotéis e resorts perto do Thermas dos Laranjais**. Informe datas, hóspedes e preferências. Volte ao [guia de Olímpia](/olimpia/) para o mapa completo do destino.

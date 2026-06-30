@@ -37,7 +37,7 @@ faq:
 
 seo:
   title: "Resorts no Rio Quente | Rio Quente Resorts e Hot Park"
-  description: "Resorts em Rio Quente (GO) no complexo Rio Quente Resorts. All inclusive, piscinas termais e Hot Park. Cotação consultiva com curadoria Tuki Viagens."
+  description: "Resorts em Rio Quente (GO) no complexo Rio Quente Resorts. All inclusive, piscinas termais e Hot Park. Cotação consultiva com escolha Tuki Viagens."
 ---
 
 ## Resorts Rio Quente: o complexo hoteleiro do Hot Park
@@ -83,7 +83,7 @@ Pacotes que combinam **resort Rio Quente** com ingressos do Hot Park podem simpl
 
 ## Silo separado de Olímpia
 
-**Rio Quente** e **Olímpia** são destinos distintos. Olímpia (SP) concentra Thermas dos Laranjais e resorts como Wyndham e Enjoy. Rio Quente (GO) tem o Hot Park e o Rio Quente Resorts. A Tuki trata cada região com curadoria própria — sem misturar ofertas que confundem o viajante.
+**Rio Quente** e **Olímpia** são destinos distintos. Olímpia (SP) concentra Thermas dos Laranjais e resorts como Wyndham e Enjoy. Rio Quente (GO) tem o Hot Park e o Rio Quente Resorts. A Tuki trata cada região com escolhas próprias — sem misturar ofertas que confundem o viajante.
 
 ## Peça sua cotação de resort
 

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-06-30T18:00:00.000Z",
+  "generatedAt": "2026-06-30T20:00:00.000Z",
   "title": "Design System: Tuki Viagens",
   "extensions": {
     "colorMeta": {
@@ -32,6 +32,21 @@
           "oklch(45% 0.15 285)",
           "oklch(60% 0.10 285)",
           "oklch(85% 0.04 285)"
+        ]
+      },
+      "purple-light": {
+        "role": "primary",
+        "displayName": "Roxo Claro",
+        "canonical": "oklch(48% 0.20 285)",
+        "tonalRamp": [
+          "oklch(18% 0.12 285)",
+          "oklch(26% 0.16 285)",
+          "oklch(34% 0.19 285)",
+          "oklch(42% 0.20 285)",
+          "oklch(48% 0.20 285)",
+          "oklch(58% 0.16 285)",
+          "oklch(72% 0.10 285)",
+          "oklch(90% 0.04 285)"
         ]
       },
       "orange-primary": {
@@ -78,25 +93,120 @@
           "oklch(96% 0 0)",
           "oklch(100% 0 0)"
         ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Tinta",
+        "canonical": "oklch(22% 0.06 285)",
+        "tonalRamp": [
+          "oklch(12% 0.04 285)",
+          "oklch(16% 0.05 285)",
+          "oklch(20% 0.06 285)",
+          "oklch(22% 0.06 285)",
+          "oklch(30% 0.05 285)",
+          "oklch(42% 0.04 285)",
+          "oklch(58% 0.03 285)",
+          "oklch(78% 0.02 285)"
+        ]
+      },
+      "ink-muted": {
+        "role": "neutral",
+        "displayName": "Tinta Suave",
+        "canonical": "oklch(48% 0.04 285)",
+        "tonalRamp": [
+          "oklch(22% 0.04 285)",
+          "oklch(30% 0.04 285)",
+          "oklch(38% 0.04 285)",
+          "oklch(48% 0.04 285)",
+          "oklch(58% 0.03 285)",
+          "oklch(68% 0.03 285)",
+          "oklch(80% 0.02 285)",
+          "oklch(92% 0.01 285)"
+        ]
+      },
+      "surface-off-white": {
+        "role": "neutral",
+        "displayName": "Off-White Lavanda",
+        "canonical": "oklch(99% 0.005 285)",
+        "tonalRamp": [
+          "oklch(20% 0.02 285)",
+          "oklch(35% 0.02 285)",
+          "oklch(50% 0.02 285)",
+          "oklch(65% 0.02 285)",
+          "oklch(80% 0.01 285)",
+          "oklch(90% 0.008 285)",
+          "oklch(96% 0.006 285)",
+          "oklch(99% 0.005 285)"
+        ]
+      },
+      "surface-lavender": {
+        "role": "neutral",
+        "displayName": "Lavanda Suave",
+        "canonical": "oklch(96% 0.02 285)",
+        "tonalRamp": [
+          "oklch(18% 0.04 285)",
+          "oklch(28% 0.04 285)",
+          "oklch(38% 0.03 285)",
+          "oklch(52% 0.03 285)",
+          "oklch(68% 0.02 285)",
+          "oklch(82% 0.02 285)",
+          "oklch(92% 0.015 285)",
+          "oklch(96% 0.02 285)"
+        ]
       }
     },
     "typographyMeta": {
-      "display": { "displayName": "Display", "purpose": "H1 de hero e taglines principais." },
-      "headline": { "displayName": "Headline", "purpose": "H2 de seção e títulos de bloco." },
-      "title": { "displayName": "Title", "purpose": "H3 de cards e benefícios." },
-      "body": { "displayName": "Body", "purpose": "Parágrafos e descrições. Máx. 65–75ch." },
-      "label": { "displayName": "Label", "purpose": "Categorias em cards — uso moderado." }
+      "display": {
+        "displayName": "Display",
+        "purpose": "H1 de hero fotográfico e taglines principais."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "H2 de seção e títulos de bloco CTA."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "H3 de cards de hotel e benefícios."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Parágrafos e descrições. Máx. 65–75ch."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Hero eyebrow único e categorias em cards — uso moderado."
+      }
     },
     "shadows": [
       {
+        "name": "header-glow",
+        "value": "0 4px 24px color-mix(in srgb, #4B14AE 6%, transparent)",
+        "purpose": "Sombra roxa difusa sob header branco sticky."
+      },
+      {
+        "name": "button-primary-glow",
+        "value": "0 10px 24px color-mix(in srgb, #FC7B04 28%, transparent)",
+        "purpose": "Glow laranja sob CTAs primários."
+      },
+      {
         "name": "card-rest",
         "value": "0 1px 2px rgba(0, 0, 0, 0.05)",
-        "purpose": "Cards de propriedade em repouso."
+        "purpose": "Cards de propriedade em repouso (tuki-card-ref)."
       },
       {
         "name": "card-hover",
         "value": "0 4px 6px rgba(0, 0, 0, 0.07)",
-        "purpose": "Elevação leve no hover — máximo 8px blur."
+        "purpose": "Elevação neutra no hover de cards."
+      },
+      {
+        "name": "dest-card-glow",
+        "value": "0 12px 35px color-mix(in srgb, #1F1545 6%, transparent)",
+        "purpose": "Glow tintado em cards de destino e badges flutuantes."
+      },
+      {
+        "name": "cta-block-glow",
+        "value": "0 22px 55px color-mix(in srgb, #4B14AE 28%, transparent)",
+        "purpose": "Glow roxo sob bloco CTA gradiente."
       },
       {
         "name": "menu-overlay",
@@ -106,9 +216,34 @@
     ],
     "motion": [
       {
-        "name": "ease-standard",
-        "value": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
-        "purpose": "Transições de hover em botões e cards (200ms)."
+        "name": "ease-out",
+        "value": "cubic-bezier(0.25, 1, 0.5, 1)",
+        "purpose": "Ken Burns hero background, transições de cor."
+      },
+      {
+        "name": "ease-quint",
+        "value": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "purpose": "Scale de botões no hover/active."
+      },
+      {
+        "name": "ease-expo",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Entradas stagger do hero, pop do mascote, reveals."
+      },
+      {
+        "name": "duration-fast",
+        "value": "150ms",
+        "purpose": "Transform de botões."
+      },
+      {
+        "name": "duration-normal",
+        "value": "280ms",
+        "purpose": "Background, shadow, border em botões."
+      },
+      {
+        "name": "duration-slow",
+        "value": "700ms",
+        "purpose": "Entrada tuki-hero-rise."
       }
     ],
     "breakpoints": [
@@ -122,25 +257,41 @@
       "name": "Primary Button",
       "kind": "button",
       "refersTo": "button-primary",
-      "description": "CTA principal de conversão — WhatsApp, começar, falar com Tuki.",
-      "html": "<button class=\"ds-btn-primary\">Falar com o Tuki</button>",
-      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; background: #FC7B04; color: #FFFFFF; padding: 16px 32px; font-family: Inter, ui-sans-serif, system-ui, sans-serif; font-size: 1.125rem; font-weight: 600; border: none; border-radius: 9999px; cursor: pointer; transition: background 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94); } .ds-btn-primary:hover { background: #E94F1B; } .ds-btn-primary:focus-visible { outline: 2px solid #FC7B04; outline-offset: 2px; }"
+      "description": "CTA principal de conversão — WhatsApp, falar com Tuki.",
+      "html": "<button class=\"ds-btn-primary\">Falar no WhatsApp</button>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: #FC7B04; color: #FFFFFF; padding: 16px 32px; font-family: Inter, ui-sans-serif, system-ui, sans-serif; font-size: 1.125rem; font-weight: 600; border: none; border-radius: 9999px; cursor: pointer; box-shadow: 0 10px 24px color-mix(in srgb, #FC7B04 28%, transparent); transition: transform 150ms cubic-bezier(0.22, 1, 0.36, 1), background-color 280ms cubic-bezier(0.25, 1, 0.5, 1), box-shadow 280ms cubic-bezier(0.25, 1, 0.5, 1); } .ds-btn-primary:hover { background: #E94F1B; transform: scale(1.03); } .ds-btn-primary:active { transform: scale(0.97); } .ds-btn-primary:focus-visible { outline: 2px solid #FC7B04; outline-offset: 2px; }"
     },
     {
       "name": "Secondary Button",
       "kind": "button",
       "refersTo": "button-secondary",
-      "description": "Ação em cards de propriedade — reservar, ver detalhes.",
+      "description": "Ação em cards de propriedade — reservar, cotar.",
       "html": "<button class=\"ds-btn-secondary\">Reservar</button>",
-      "css": ".ds-btn-secondary { display: inline-flex; align-items: center; justify-content: center; width: 100%; background: #4B14AE; color: #FFFFFF; padding: 12px 24px; font-family: Inter, ui-sans-serif, system-ui, sans-serif; font-size: 0.875rem; font-weight: 600; border: none; border-radius: 9999px; cursor: pointer; transition: background 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94); } .ds-btn-secondary:hover { background: #270A78; } .ds-btn-secondary:focus-visible { outline: 2px solid #4B14AE; outline-offset: 2px; }"
+      "css": ".ds-btn-secondary { display: inline-flex; align-items: center; justify-content: center; width: 100%; background: #4B14AE; color: #FFFFFF; padding: 12px 24px; font-family: Inter, ui-sans-serif, system-ui, sans-serif; font-size: 0.875rem; font-weight: 600; border: none; border-radius: 9999px; cursor: pointer; transition: transform 150ms cubic-bezier(0.22, 1, 0.36, 1), background-color 280ms cubic-bezier(0.25, 1, 0.5, 1); } .ds-btn-secondary:hover { background: #270A78; transform: scale(1.03); } .ds-btn-secondary:focus-visible { outline: 2px solid #4B14AE; outline-offset: 2px; }"
+    },
+    {
+      "name": "Inverse Button",
+      "kind": "button",
+      "refersTo": "button-inverse",
+      "description": "CTA sobre blocos gradiente — telefone, email.",
+      "html": "<button class=\"ds-btn-inverse\">(11) 99999-9999</button>",
+      "css": ".ds-btn-inverse { display: inline-flex; align-items: center; justify-content: center; background: #FFFFFF; color: #4B14AE; padding: 16px 32px; font-family: Inter, ui-sans-serif, system-ui, sans-serif; font-size: 1.125rem; font-weight: 600; border: none; border-radius: 9999px; cursor: pointer; transition: transform 150ms cubic-bezier(0.22, 1, 0.36, 1), background-color 280ms cubic-bezier(0.25, 1, 0.5, 1); } .ds-btn-inverse:hover { background: rgba(255, 255, 255, 0.9); transform: scale(1.03); } .ds-btn-inverse:focus-visible { outline: 2px solid #FFFFFF; outline-offset: 2px; }"
     },
     {
       "name": "Outline Button",
       "kind": "button",
       "refersTo": "button-outline",
-      "description": "CTA secundário sobre fundos roxos.",
-      "html": "<button class=\"ds-btn-outline\">Tirar minha dúvida</button>",
-      "css": ".ds-btn-outline { display: inline-flex; align-items: center; justify-content: center; background: transparent; color: #FFFFFF; padding: 16px 32px; font-family: Inter, ui-sans-serif, system-ui, sans-serif; font-size: 1.125rem; font-weight: 600; border: 2px solid #FFFFFF; border-radius: 9999px; cursor: pointer; transition: background 0.2s; } .ds-btn-outline:hover { background: rgba(255, 255, 255, 0.1); } .ds-btn-outline:focus-visible { outline: 2px solid #FFFFFF; outline-offset: 2px; }"
+      "description": "CTA secundário sobre hero fotográfico roxo.",
+      "html": "<button class=\"ds-btn-outline\">Ver hotéis</button>",
+      "css": ".ds-btn-outline { display: inline-flex; align-items: center; justify-content: center; background: rgba(255, 255, 255, 0.1); color: #FFFFFF; padding: 16px 32px; font-family: Inter, ui-sans-serif, system-ui, sans-serif; font-size: 1.125rem; font-weight: 600; border: 1px solid rgba(255, 255, 255, 0.35); border-radius: 9999px; cursor: pointer; transition: background 280ms cubic-bezier(0.25, 1, 0.5, 1), transform 150ms cubic-bezier(0.22, 1, 0.36, 1); } .ds-btn-outline:hover { background: rgba(255, 255, 255, 0.15); transform: scale(1.03); } .ds-btn-outline:focus-visible { outline: 2px solid #FFFFFF; outline-offset: 2px; }"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Link secundário em superfícies claras.",
+      "html": "<button class=\"ds-btn-ghost\">Saiba mais</button>",
+      "css": ".ds-btn-ghost { display: inline-flex; align-items: center; justify-content: center; background: transparent; color: #4B14AE; padding: 12px 24px; font-family: Inter, ui-sans-serif, system-ui, sans-serif; font-size: 1rem; font-weight: 600; border: none; border-radius: 9999px; cursor: pointer; transition: background 280ms cubic-bezier(0.25, 1, 0.5, 1); } .ds-btn-ghost:hover { background: rgba(75, 20, 174, 0.1); } .ds-btn-ghost:focus-visible { outline: 2px solid #4B14AE; outline-offset: 2px; }"
     },
     {
       "name": "Property Card",
@@ -148,53 +299,101 @@
       "refersTo": "card-property",
       "description": "Card de hotel/resort na grid da home.",
       "html": "<article class=\"ds-card-property\"><div class=\"ds-card-property__media\"><span class=\"ds-card-property__badge\">Olímpia, SP</span></div><div class=\"ds-card-property__body\"><p class=\"ds-card-property__category\">Resort</p><h3 class=\"ds-card-property__title\">Enjoy Olímpia Park Resort</h3><p class=\"ds-card-property__price\">Consulte</p><button class=\"ds-btn-secondary\">Reservar</button></div></article>",
-      "css": ".ds-card-property { overflow: hidden; border-radius: 16px; background: #FFFFFF; box-shadow: 0 1px 2px rgba(0,0,0,0.05); transition: box-shadow 0.2s; } .ds-card-property:hover { box-shadow: 0 4px 6px rgba(0,0,0,0.07); } .ds-card-property__media { position: relative; display: flex; height: 12rem; align-items: center; justify-content: center; background: linear-gradient(135deg, rgba(75,20,174,0.2), rgba(252,123,4,0.2)); } .ds-card-property__badge { position: absolute; left: 12px; top: 12px; border-radius: 9999px; background: rgba(255,255,255,0.9); padding: 4px 12px; font-size: 0.75rem; font-weight: 600; color: #374151; } .ds-card-property__body { padding: 1.25rem; } .ds-card-property__category { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: #4B14AE; } .ds-card-property__title { margin-top: 4px; font-size: 1.125rem; font-weight: 700; color: #111827; } .ds-card-property__price { margin-top: 8px; font-size: 1.25rem; font-weight: 700; color: #FC7B04; }"
+      "css": ".ds-card-property { overflow: hidden; border-radius: 16px; background: #FFFFFF; border: 1px solid rgba(75, 20, 174, 0.08); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); transition: box-shadow 280ms cubic-bezier(0.25, 1, 0.5, 1), transform 280ms cubic-bezier(0.25, 1, 0.5, 1); } .ds-card-property:hover { box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07); transform: translateY(-4px); } .ds-card-property__media { position: relative; display: flex; height: 13rem; align-items: center; justify-content: center; background: linear-gradient(135deg, rgba(75, 20, 174, 0.2), rgba(252, 123, 4, 0.15)); } .ds-card-property__badge { position: absolute; left: 12px; top: 12px; border-radius: 9999px; background: rgba(255, 255, 255, 0.9); padding: 4px 12px; font-size: 0.75rem; font-weight: 600; color: #6E6685; } .ds-card-property__body { padding: 1.25rem; } .ds-card-property__category { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: #4B14AE; } .ds-card-property__title { margin-top: 4px; font-family: Nunito, Inter, sans-serif; font-size: 1.125rem; font-weight: 700; color: #1F1545; } .ds-card-property__price { margin-top: 8px; font-size: 1.25rem; font-weight: 700; color: #FC7B04; } .ds-card-property .ds-btn-secondary { margin-top: 12px; }"
     },
     {
       "name": "CTA Block",
       "kind": "card",
       "refersTo": "cta-gradient",
-      "description": "Bloco final de conversão com gradiente roxo.",
-      "html": "<div class=\"ds-cta-block\"><h2 class=\"ds-cta-block__title\">Pronto pra próxima aventura?</h2><p class=\"ds-cta-block__subtitle\">Fale com a Tuki e encontre o hotel perfeito.</p><button class=\"ds-btn-primary\">Falar com o Tuki</button></div>",
-      "css": ".ds-cta-block { border-radius: 24px; padding: 3rem 2rem; text-align: center; color: #FFFFFF; background: linear-gradient(135deg, #4B14AE 0%, #270A78 100%); } .ds-cta-block__title { font-family: Inter, sans-serif; font-size: clamp(1.875rem, 3vw, 2.25rem); font-weight: 700; } .ds-cta-block__subtitle { margin: 1rem auto 0; max-width: 36rem; font-size: 1.125rem; color: rgba(255,255,255,0.8); } .ds-cta-block .ds-btn-primary { margin-top: 2rem; }"
+      "description": "Bloco final de conversão com gradiente roxo→laranja.",
+      "html": "<div class=\"ds-cta-block\"><h2 class=\"ds-cta-block__title\">Pronto pra próxima aventura?</h2><p class=\"ds-cta-block__subtitle\">Fale com a Tuki no WhatsApp — resposta em até 2 minutos.</p><button class=\"ds-btn-inverse\">Falar agora</button></div>",
+      "css": ".ds-cta-block { border-radius: 24px; padding: 3rem 2rem; text-align: center; color: #FFFFFF; background: linear-gradient(135deg, #4B14AE 0%, #6B2FD4 48%, #E94F1B 100%); box-shadow: 0 22px 55px color-mix(in srgb, #4B14AE 28%, transparent); } .ds-cta-block__title { font-family: Nunito, Inter, sans-serif; font-size: clamp(1.875rem, 3vw, 2.25rem); font-weight: 800; letter-spacing: -0.03em; } .ds-cta-block__subtitle { margin: 1rem auto 0; max-width: 36rem; font-family: Inter, sans-serif; font-size: 1.125rem; line-height: 1.6; color: rgba(255, 255, 255, 0.9); } .ds-cta-block .ds-btn-inverse { margin-top: 2rem; }"
+    },
+    {
+      "name": "Lead Form Input",
+      "kind": "input",
+      "refersTo": "input-lead",
+      "description": "Campo de formulário de lead com focus ring roxo.",
+      "html": "<div class=\"ds-input-group\"><label class=\"ds-input-label\" for=\"nome\">Nome *</label><input class=\"ds-input\" id=\"nome\" type=\"text\" placeholder=\"Seu nome completo\" /></div>",
+      "css": ".ds-input-group { display: flex; flex-direction: column; } .ds-input-label { margin-bottom: 4px; font-family: Inter, sans-serif; font-size: 0.875rem; font-weight: 500; color: #374151; } .ds-input { width: 100%; padding: 12px 16px; font-family: Inter, sans-serif; font-size: 1rem; color: #1F1545; background: #FFFFFF; border: 1px solid #E5E7EB; border-radius: 12px; transition: border-color 200ms, box-shadow 200ms; } .ds-input::placeholder { color: #9CA3AF; } .ds-input:focus { border-color: #4B14AE; outline: none; box-shadow: 0 0 0 2px rgba(75, 20, 174, 0.2); }"
     },
     {
       "name": "Site Header",
       "kind": "nav",
       "refersTo": "nav-header",
-      "description": "Header sticky roxo com logo e navegação.",
-      "html": "<header class=\"ds-header\"><span class=\"ds-header__logo\">Tuki Viagens</span><nav class=\"ds-header__nav\"><a href=\"#\">Olímpia</a><a href=\"#\">Rio Quente</a></nav><button class=\"ds-btn-primary ds-btn-primary--sm\">Começar</button></header>",
-      "css": ".ds-header { display: flex; align-items: center; justify-content: space-between; padding: 12px 24px; background: rgba(75, 20, 174, 0.95); backdrop-filter: blur(4px); } .ds-header__logo { font-family: Inter, sans-serif; font-weight: 700; font-size: 1.125rem; color: #FFFFFF; } .ds-header__nav { display: flex; gap: 2rem; } .ds-header__nav a { font-size: 0.875rem; font-weight: 500; color: rgba(255,255,255,0.9); text-decoration: none; transition: color 0.2s; } .ds-header__nav a:hover { color: #FFFFFF; } .ds-btn-primary--sm { padding: 8px 16px; font-size: 0.875rem; }"
+      "description": "Header sticky branco com logo colorido e nav em tinta suave.",
+      "html": "<header class=\"ds-header\"><span class=\"ds-header__logo\">Tuki Viagens</span><nav class=\"ds-header__nav\"><a href=\"#\">Olímpia</a><a href=\"#\">Rio Quente</a><a href=\"#\">Nordeste</a></nav><button class=\"ds-btn-primary ds-btn-primary--sm\">WhatsApp</button></header>",
+      "css": ".ds-header { display: flex; align-items: center; justify-content: space-between; gap: 12px; height: 60px; padding: 0 24px; background: #FFFFFF; border-bottom: 1px solid rgba(75, 20, 174, 0.08); box-shadow: 0 4px 24px color-mix(in srgb, #4B14AE 6%, transparent); } .ds-header__logo { font-family: Nunito, Inter, sans-serif; font-weight: 800; font-size: 1.125rem; color: #4B14AE; } .ds-header__nav { display: flex; gap: 4px; } .ds-header__nav a { padding: 6px 12px; font-family: Inter, sans-serif; font-size: 0.875rem; font-weight: 500; color: #6E6685; text-decoration: none; border-radius: 9999px; transition: background 200ms, color 200ms; } .ds-header__nav a:hover { background: #F4F1FF; color: #4B14AE; } .ds-btn-primary--sm { padding: 8px 16px; font-size: 0.875rem; }"
+    },
+    {
+      "name": "Floating Badge",
+      "kind": "chip",
+      "refersTo": "badge-float",
+      "description": "Badge pill flutuante no hero — branco ou laranja.",
+      "html": "<span class=\"ds-badge ds-badge--orange\">+500 famílias</span>",
+      "css": ".ds-badge { display: inline-flex; align-items: center; border-radius: 9999px; padding: 6px 14px; font-family: Inter, sans-serif; font-size: 0.75rem; font-weight: 700; } .ds-badge--white { background: #FFFFFF; color: #1F1545; border: 1px solid rgba(75, 20, 174, 0.1); box-shadow: 0 12px 32px color-mix(in srgb, #1F1545 18%, transparent); } .ds-badge--orange { background: #FC7B04; color: #FFFFFF; box-shadow: 0 16px 35px color-mix(in srgb, #270A78 18%, transparent); }"
     }
   ],
   "narrative": {
     "northStar": "O Guia Colorido",
-    "overview": "O sistema visual da Tuki Viagens traduz leveza familiar em superfícies saturadas e confiantes. Roxo profundo ocupa heróis, header e blocos de confiança; laranja conduz a ação. Referência de calor humano tipo Nubank: amigável, colorido, confiável sem parecer corporativo.",
+    "overview": "O sistema visual da Tuki Viagens traduz leveza familiar em superfícies saturadas e confiantes — não em neutros quentes genéricos. Roxo e laranja carregam identidade em heróis, gradientes e blocos de conversão; fundos off-white e lavender frios dão respiro sem cair no cream editorial. O header branco com logo colorido ancora navegação limpa; o hero fotográfico com mascote Tuki concentra personalidade e prova social.",
     "keyCharacteristics": [
-      "Paleta base fixa: #4B14AE, #270A78, #FC7B04, #E94F1B, #FFFFFF",
-      "Heróis e header em roxo saturado; CTAs em laranja pill",
-      "Tom divertido-familiar com prova social e curadoria consultiva",
-      "Elevação mínima — profundidade por cor e contraste"
+      "Paleta base: #4B14AE, #270A78, #6B2FD4, #FC7B04, #E94F1B, #FFFFFF + neutros lavanda",
+      "Hero fotográfico com overlay roxo, mascote circular e badges flutuantes",
+      "Header branco sticky; CTAs laranja pill com glow; CTA final em gradiente roxo→laranja",
+      "Sombras tintadas (color-mix roxo/ink) em vez de ghost cards pretos",
+      "Motion expo-out com stagger no hero; reduced-motion desliga Ken Burns"
     ],
     "rules": [
-      { "name": "The Five-Color Rule", "body": "Apenas as cinco cores base mais neutros derivados. Não introduzir terceiros acentos sem aprovação.", "section": "colors" },
-      { "name": "The Orange-Action Rule", "body": "Laranja aparece em CTAs, preços e stats — não em fundos de seção inteira.", "section": "colors" },
-      { "name": "The No-Cream Rule", "body": "Proibido fundo cream/sand/beige quente. Branco frio ou cinza-50 para respiro.", "section": "colors" },
-      { "name": "The Flat-By-Default Rule", "body": "Superfícies em repouso são planas. Sombra só em hover de card ou menu mobile.", "section": "elevation" },
-      { "name": "The No-Ghost-Card Rule", "body": "Proibido border 1px + box-shadow blur ≥ 16px no mesmo elemento.", "section": "elevation" }
+      {
+        "name": "The Five-Color Rule",
+        "body": "Roxo, laranja e branco são âncoras; lavanda/off-white são neutros derivados da marca (tint frio, não warm). Não introduzir terceiros acentos sem aprovação.",
+        "section": "colors"
+      },
+      {
+        "name": "The Orange-Action Rule",
+        "body": "Laranja aparece em CTAs, preços, stats e marquee — não como fundo de seção inteira. Roxo carrega identidade; laranja carrega clique.",
+        "section": "colors"
+      },
+      {
+        "name": "The No-Cream Rule",
+        "body": "Proibido fundo cream/sand/beige quente. Off-white #FBFBFF e lavender #F4F1FF são permitidos — frios, com leve tint roxo.",
+        "section": "colors"
+      },
+      {
+        "name": "The Display-Body Pair Rule",
+        "body": "Nunito em display (h1–h3); Inter em corpo e UI. Não misturar outras famílias.",
+        "section": "typography"
+      },
+      {
+        "name": "The Readable-Ink Rule",
+        "body": "Corpo usa tuki-ink (#1F1545) sobre off-white/branco — nunca gray-400/500.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tinted-Glow Rule",
+        "body": "Sombras de marca usam color-mix com roxo, laranja ou ink — nunca rgba(0,0,0,0.15+) com blur ≥ 16px junto a borda cinza.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Flat-By-Default Rule",
+        "body": "Superfícies em repouso são planas ou com glow sutil de marca. Sombra neutra aparece só em hover de card ou menu mobile overlay.",
+        "section": "elevation"
+      }
     ],
     "dos": [
-      "Do usar as cinco cores base como âncora.",
-      "Do colocar CTAs primários em laranja pill sobre fundos roxos ou brancos.",
-      "Do manter tom divertido-familiar com mascote e prova social.",
-      "Do respeitar WCAG 2.1 AA."
+      "Do usar as cores base como âncora: roxo, laranja, branco + neutros lavanda frios.",
+      "Do colocar CTAs primários em laranja pill com glow sobre fundos roxos, brancos ou gradientes.",
+      "Do manter tom divertido-familiar: mascote, copy leve, prova social antes do formulário.",
+      "Do usar hero fotográfico com overlay de marca — a foto carrega desejo de viagem.",
+      "Do respeitar WCAG 2.1 AA — contraste ≥4.5:1, foco visível, prefers-reduced-motion."
     ],
     "donts": [
       "Don't parecer marketplace frio (Booking, Decolar).",
-      "Don't usar estética SaaS/startup com hero-metric template.",
-      "Don't cair em cara de IA (slop) — cream bg, eyebrows em caps, glassmorphism.",
-      "Don't usar border-radius ≥ 32px em cards.",
-      "Don't empilhar border + shadow larga no mesmo elemento."
+      "Don't usar estética SaaS/startup — hero com métricas gigantes como único gancho.",
+      "Don't cair em cara de IA (slop) — fundo cream/sand/beige, eyebrows em caps em toda seção, glassmorphism decorativo, gradient text.",
+      "Don't usar header roxo sólido com logo branco — o padrão atual é header branco com logo colorido.",
+      "Don't empilhar borda cinza + sombra preta blur ≥ 16px — use glow tintado de marca."
     ]
   }
 }

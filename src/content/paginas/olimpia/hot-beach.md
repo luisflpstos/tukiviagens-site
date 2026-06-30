@@ -63,4 +63,4 @@ Para comparar todas as opções, acesse [hotéis em Olímpia](/olimpia/hoteis/) 
 
 ## Planeje sua viagem ao Hot Beach
 
-A Tuki faz curadoria de hospedagem em Olímpia — não vendemos ingresso de parque, mas orientamos sobre a melhor combinação hotel + parques. Informe datas, adultos e crianças para cotação consultiva. Volte ao [guia de Olímpia](/olimpia/) para o mapa do destino.
+A Tuki escolhe a hospedagem em Olímpia — não vendemos ingresso de parque, mas orientamos sobre a melhor combinação hotel + parques. Informe datas, adultos e crianças para cotação consultiva. Volte ao [guia de Olímpia](/olimpia/) para o mapa do destino.

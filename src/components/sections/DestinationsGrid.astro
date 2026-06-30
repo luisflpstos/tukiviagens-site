@@ -8,13 +8,13 @@ import { HOME_DESTINATIONS } from '../../lib/constants';
 	<Container size="reference">
 		<div class="flex flex-wrap items-end justify-between gap-6">
 			<div class="max-w-2xl">
-				<h2 class="text-3xl font-extrabold tracking-[-0.03em] text-tuki-ink md:text-4xl">
+				<h2 class="tuki-type-headline text-tuki-ink">
 					Para onde o Tuki te <span class="text-tuki-orange">leva</span> hoje?
 				</h2>
 			</div>
 			<a
 				href="/pacotes-de-viagem-brasil/"
-				class="inline-flex items-center gap-1 text-sm font-bold text-tuki-purple transition hover:text-tuki-purple-dark"
+				class="tuki-type-small inline-flex items-center gap-1 font-bold text-tuki-purple transition hover:text-tuki-purple-dark"
 			>
 				Ver pacotes no Brasil
 				<span aria-hidden="true">→</span>
@@ -28,7 +28,7 @@ import { HOME_DESTINATIONS } from '../../lib/constants';
 						<div class="tuki-dest-icon">
 							<TukiIcon src={dest.icon} alt={dest.iconAlt} size="2xl" />
 						</div>
-						<span class="text-xs font-bold text-tuki-ink transition group-hover:text-tuki-purple md:text-sm">
+						<span class="tuki-type-caption font-bold text-tuki-ink transition group-hover:text-tuki-purple md:text-sm">
 							{dest.name}
 						</span>
 					</a>

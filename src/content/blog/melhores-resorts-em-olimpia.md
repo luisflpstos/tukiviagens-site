@@ -37,4 +37,4 @@ Excelente custo-benefício, com boa estrutura de lazer e localização privilegi
 
 ## Conclusão
 
-Olímpia é um destino que combina diversão e conforto. Com a curadoria da Tuki Viagens, você encontra o resort ideal para sua família com atendimento humano do início ao fim.
+Olímpia é um destino que combina diversão e conforto. Com as escolhas da Tuki Viagens, você encontra o resort ideal para sua família com atendimento humano do início ao fim.

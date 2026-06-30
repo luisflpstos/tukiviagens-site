@@ -29,7 +29,7 @@ faq:
   - question: "Qual a melhor época para visitar Olímpia?"
     answer: "O destino recebe visitantes o ano todo. Férias escolares e feriados prolongados têm maior movimento — reserve com antecedência nesses períodos."
   - question: "A Tuki vende ingresso de parque?"
-    answer: "Nosso foco é hospedagem e pacotes com curadoria. Podemos orientar sobre parques e indicar hotéis com melhor localização para aproveitar Thermas dos Laranjais e Hot Beach."
+    answer: "Nosso foco é hospedagem e pacotes com escolha. Podemos orientar sobre parques e indicar hotéis com melhor localização para aproveitar Thermas dos Laranjais e Hot Beach."
 
 seo:
   title: "Olímpia SP | Hotéis, resorts e Thermas dos Laranjais"

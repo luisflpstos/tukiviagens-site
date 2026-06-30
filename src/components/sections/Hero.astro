@@ -28,22 +28,19 @@ const heroBackground = resolveHeroImagePath();
 		<div class="grid items-center gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-12">
 			<div class="max-w-xl">
 				<span
-					class="tuki-hero-enter mb-5 inline-flex rounded-full border border-white/25 bg-white/10 px-4 py-1.5 text-[11px] font-bold tracking-[0.12em] text-white/90 uppercase backdrop-blur-sm"
+					class="tuki-hero-enter tuki-eyebrow-light mb-5 inline-flex rounded-full border border-white/25 bg-white/10 px-4 py-1.5 text-white/90 backdrop-blur-sm"
 					style="--enter-i: 0"
 				>
 					{HERO_EYEBROW}
 				</span>
 
-				<h1
-					class="tuki-hero-enter text-[2rem] font-extrabold leading-[0.98] tracking-[-0.04em] md:text-5xl lg:text-[3.25rem]"
-					style="--enter-i: 1"
-				>
+				<h1 class="tuki-hero-enter tuki-type-display" style="--enter-i: 1">
 					O Brasil que você <span class="tuki-heading-accent">sonha</span>,{' '}
 					<span class="text-tuki-orange">com a leveza do Tuki.</span>
 				</h1>
 
 				<p
-					class="tuki-hero-enter mt-5 max-w-lg text-base leading-[1.55] text-white/90 md:text-lg"
+					class="tuki-hero-enter tuki-type-lead tuki-type-inverse tuki-measure mt-5 text-white/90"
 					style="--enter-i: 2"
 				>
 					Hotéis e resorts selecionados a dedo, atendimento humano e pagamento seguro para você viajar
@@ -75,8 +72,8 @@ const heroBackground = resolveHeroImagePath();
 					{
 						HERO_STATS.map((stat) => (
 							<div>
-								<dt class="text-lg font-extrabold text-tuki-orange md:text-xl">{stat.value}</dt>
-								<dd class="mt-0.5 text-[11px] leading-snug text-white/80 md:text-xs">{stat.label}</dd>
+								<dt class="tuki-tabular-nums text-lg font-extrabold text-tuki-orange md:text-xl">{stat.value}</dt>
+								<dd class="tuki-type-caption tuki-type-inverse mt-0.5 leading-snug text-white/80">{stat.label}</dd>
 							</div>
 						))
 					}

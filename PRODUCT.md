@@ -14,7 +14,7 @@ Contexto de uso: comparando opções de hospedagem, validando confiança na agê
 
 ## Product Purpose
 
-Site da **Tuki Viagens** — agência de viagens com curadoria de hotéis e resorts, atendimento humano e pagamento seguro. O site existe para:
+Site da **Tuki Viagens** — agência de viagens com escolha de hotéis e resorts, atendimento humano e pagamento seguro. O site existe para:
 
 1. **Converter tráfego pago** em leads qualificados via LPs e páginas de propriedade.
 2. **Construir confiança** com prova social, mascote, parceiros e tom acolhedor.
@@ -45,7 +45,7 @@ Evitar explicitamente:
 
 1. **Leveza na jornada** — cada tela reduz ansiedade da decisão de viagem; CTAs claros, copy direto, sem burocracia visual.
 2. **Confiança antes do clique** — prova social, parceiros reais e atendimento humano visíveis antes de pedir o lead.
-3. **Conversão consultiva, não marketplace** — curadoria Tuki em destaque; a agência orienta, não só lista opções.
+3. **Conversão consultiva, não marketplace** — escolha Tuki em destaque; a agência orienta, não só lista opções.
 4. **Família no centro** — fotos, copy e hierarquia pensados para quem viaja com crianças e busca segurança + diversão.
 5. **Identidade Tuki, não template** — roxo/laranja, mascote e tom descontraído como diferencial; nunca genérico de categoria "agência de viagens".
 

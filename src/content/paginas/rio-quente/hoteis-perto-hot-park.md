@@ -93,7 +93,7 @@ Informe as idades das crianças na cotação para indicarmos a categoria ideal n
 
 ## Rio Quente ≠ Olímpia
 
-**Hotel perto Hot Park** em Rio Quente (GO) não tem relação com Olímpia (SP), onde o parque principal é o Thermas dos Laranjais. São destinos separados com ofertas hoteleiras distintas. A Tuki mantém conteúdo e curadoria específicos para cada região.
+**Hotel perto Hot Park** em Rio Quente (GO) não tem relação com Olímpia (SP), onde o parque principal é o Thermas dos Laranjais. São destinos separados com ofertas hoteleiras distintas. A Tuki mantém conteúdo e escolhas específicas para cada região.
 
 ## Peça cotação de hospedagem perto do Hot Park
 

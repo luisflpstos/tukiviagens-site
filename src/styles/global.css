@@ -16,6 +16,24 @@
 	--color-tuki-lavender: #f4f1ff;
 	--font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
 	--font-display: "Nunito", "Inter", ui-sans-serif, system-ui, sans-serif;
+	--text-display: clamp(2rem, 5vw, 3.25rem);
+	--text-headline: clamp(1.875rem, 3vw, 2.25rem);
+	--text-title: 1.125rem;
+	--text-lead: clamp(1rem, 1.5vw + 0.5rem, 1.125rem);
+	--text-body: 1rem;
+	--text-small: 0.875rem;
+	--text-caption: 0.75rem;
+	--text-label: 0.6875rem;
+	--leading-display: 0.98;
+	--leading-headline: 1.2;
+	--leading-title: 1.35;
+	--leading-body: 1.6;
+	--leading-lead: 1.55;
+	--leading-inverse: 1.62;
+	--tracking-display: -0.04em;
+	--tracking-headline: -0.03em;
+	--tracking-label: 0.12em;
+	--tracking-label-wide: 0.14em;
 	--tuki-marquee-band-height: calc(3.85rem + 2rem);
 }
 
@@ -26,6 +44,8 @@
 
 	body {
 		@apply bg-tuki-off-white font-sans text-tuki-ink antialiased;
+		font-kerning: normal;
+		font-optical-sizing: auto;
 	}
 
 	h1,
@@ -33,6 +53,10 @@
 	h3 {
 		font-family: var(--font-display);
 		text-wrap: balance;
+	}
+
+	p {
+		text-wrap: pretty;
 	}
 }
 
@@ -129,12 +153,81 @@
 		@apply inline rounded-lg bg-tuki-purple px-2 py-0.5 text-white;
 	}
 
+	.tuki-type-display {
+		font-family: var(--font-display);
+		font-size: var(--text-display);
+		font-weight: 800;
+		line-height: var(--leading-display);
+		letter-spacing: var(--tracking-display);
+		text-wrap: balance;
+	}
+
+	.tuki-type-headline {
+		font-family: var(--font-display);
+		font-size: var(--text-headline);
+		font-weight: 800;
+		line-height: var(--leading-headline);
+		letter-spacing: var(--tracking-headline);
+		text-wrap: balance;
+	}
+
+	.tuki-type-title {
+		font-family: var(--font-display);
+		font-size: var(--text-title);
+		font-weight: 700;
+		line-height: var(--leading-title);
+	}
+
+	.tuki-type-body {
+		font-size: var(--text-body);
+		font-weight: 400;
+		line-height: var(--leading-body);
+		text-wrap: pretty;
+	}
+
+	.tuki-type-lead {
+		font-size: var(--text-lead);
+		line-height: var(--leading-lead);
+		text-wrap: pretty;
+	}
+
+	.tuki-type-small {
+		font-size: var(--text-small);
+		line-height: 1.5;
+	}
+
+	.tuki-type-caption {
+		font-size: var(--text-caption);
+		line-height: 1.4;
+	}
+
+	.tuki-type-inverse {
+		line-height: var(--leading-inverse);
+		letter-spacing: 0.01em;
+	}
+
+	.tuki-measure {
+		max-width: 65ch;
+	}
+
+	.tuki-tabular-nums {
+		font-variant-numeric: tabular-nums;
+	}
+
 	.tuki-eyebrow {
-		@apply text-[11px] font-bold tracking-[0.14em] text-tuki-orange-dark uppercase;
+		font-size: var(--text-label);
+		font-weight: 700;
+		letter-spacing: var(--tracking-label-wide);
+		text-transform: uppercase;
+		@apply text-tuki-orange-dark;
 	}
 
 	.tuki-eyebrow-light {
-		@apply text-[11px] font-bold tracking-[0.14em] text-white/75 uppercase;
+		font-size: var(--text-label);
+		font-weight: 700;
+		letter-spacing: var(--tracking-label-wide);
+		text-transform: uppercase;
+		@apply text-white/75;
 	}
 
 	.tuki-card-ref {
@@ -185,23 +278,54 @@
 	}
 
 	.content-markdown h2 {
-		@apply mt-8 mb-4 text-2xl font-bold text-gray-900;
+		margin-top: 2rem;
+		margin-bottom: 1rem;
+		font-family: var(--font-display);
+		font-size: var(--text-headline);
+		font-weight: 800;
+		line-height: var(--leading-headline);
+		letter-spacing: var(--tracking-headline);
+		text-wrap: balance;
+		color: var(--color-tuki-ink);
 	}
 
 	.content-markdown h3 {
-		@apply mt-6 mb-3 text-xl font-semibold text-gray-900;
+		margin-top: 1.5rem;
+		margin-bottom: 0.75rem;
+		font-family: var(--font-display);
+		font-size: var(--text-title);
+		font-weight: 700;
+		line-height: var(--leading-title);
+		color: var(--color-tuki-ink);
 	}
 
-	.content-markdown p {
-		@apply mb-4 leading-relaxed text-gray-700;
+	.content-markdown p,
+	.content-markdown ul,
+	.content-markdown ol {
+		margin-bottom: 1rem;
+		font-size: var(--text-body);
+		font-weight: 400;
+		line-height: var(--leading-body);
+		text-wrap: pretty;
+		color: var(--color-tuki-muted);
 	}
 
 	.content-markdown ul {
-		@apply mb-4 list-disc space-y-2 pl-6 text-gray-700;
+		list-style-type: disc;
+		padding-left: 1.5rem;
+	}
+
+	.content-markdown ul > :not(:last-child) {
+		margin-bottom: 0.5rem;
 	}
 
 	.content-markdown ol {
-		@apply mb-4 list-decimal space-y-2 pl-6 text-gray-700;
+		list-style-type: decimal;
+		padding-left: 1.5rem;
+	}
+
+	.content-markdown ol > :not(:last-child) {
+		margin-bottom: 0.5rem;
 	}
 
 	.content-markdown a {

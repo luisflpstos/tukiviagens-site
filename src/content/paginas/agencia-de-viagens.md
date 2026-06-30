@@ -4,11 +4,11 @@ pageType: "institucional"
 silo: "agencia"
 
 headline: "Agência de viagens com atendimento humano para hospedagem e pacotes"
-description: "Reserva de hotel, cotação consultiva e curadoria de resorts no Brasil. Saiba como funciona comprar hospedagem com a Tuki Viagens."
+description: "Reserva de hotel, cotação consultiva e escolha de resorts no Brasil. Saiba como funciona comprar hospedagem com a Tuki Viagens."
 
 highlights:
   - Atendimento humano do início ao fim
-  - Curadoria de hotéis e resorts selecionados
+  - Escolha de hotéis e resorts selecionados
   - Cotação com datas, hóspedes e perfil de viagem
   - Suporte durante toda a viagem
 
@@ -33,17 +33,17 @@ faq:
 
 seo:
   title: "Agência de viagens | Reserva de hotel e cotação Tuki"
-  description: "Agência de viagens especializada em hospedagem e pacotes no Brasil. Atendimento consultivo, curadoria e reserva de hotel com a Tuki Viagens."
+  description: "Agência de viagens especializada em hospedagem e pacotes no Brasil. Atendimento consultivo, escolha e reserva de hotel com a Tuki Viagens."
 ---
 
 ## Quem é a Tuki Viagens
 
-A Tuki é uma **agência de viagens** focada em hospedagem curada no Brasil — hotéis, resorts e pacotes com atendimento humano. Não somos um buscador automático: cada cotação passa por consultores que conhecem os destinos que vendemos.
+A Tuki é uma **agência de viagens** focada em hospedagem com escolha Tuki no Brasil — hotéis, resorts e pacotes com atendimento humano. Não somos um buscador automático: cada cotação passa por consultores que conhecem os destinos que vendemos.
 
 ## Como funciona o processo
 
 1. **Você envia sua necessidade** — destino, datas, adultos, crianças e preferências
-2. **Curadoria** — comparamos hotéis e resorts disponíveis para seu perfil
+2. **Escolha** — comparamos hotéis e resorts disponíveis para seu perfil
 3. **Proposta clara** — regime de pensão, localização e condições explicadas
 4. **Reserva e suporte** — acompanhamento até a viagem e orientação quando precisar
 
@@ -53,7 +53,7 @@ A Tuki é uma **agência de viagens** focada em hospedagem curada no Brasil — 
 - Check-in e check-out
 - Número de adultos e crianças (com idades)
 - Preferência: hotel, resort, proximidade a parque, all inclusive
-- Orçamento aproximado (opcional, mas ajuda na curadoria)
+- Orçamento aproximado (opcional, mas ajuda na escolha)
 
 ## Destinos que atendemos
 
