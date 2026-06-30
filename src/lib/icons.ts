@@ -21,6 +21,11 @@ export const TUKI_ICONS = {
 	rioDeJaneiro: '/images/icons/icone-rio-de-janeiro-tuki-viagens.png',
 	rioQuente: '/images/icons/icone-rio-quente-tuki-viagens.png',
 	sol: '/images/icons/icone-sol-tuki-viagens.png',
+	atendimento: '/images/icons/icone-atendimento-humano-tuki-viagens.png',
+	seguranca: '/images/icons/icone-seguranca-tuki-viagens.png',
+	pacote: '/images/icons/icone-pacote-completo-tuki-viagens.png',
+	calendario: '/images/icons/icone-calendario-reservas-tuki-viagens.png',
+
 } as const;
 
 export type TukiIconKey = keyof typeof TUKI_ICONS;
@@ -44,6 +49,10 @@ const MARQUEE_ICON_ALTS: Record<TukiIconKey, string> = {
 	rioDeJaneiro: 'Rio de Janeiro',
 	rioQuente: 'Rio Quente',
 	sol: 'Sol',
+	atendimento: 'Atendimento',
+	seguranca: 'Segurança',
+	pacote: 'Pacote completo',
+	calendario: 'Calendário',
 };
 
 /** Todos os ícones da marca para a faixa marquee da home. */

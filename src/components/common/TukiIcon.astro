@@ -2,7 +2,7 @@
 interface Props {
 	src: string;
 	alt: string;
-	size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl';
+	size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | '2xl';
 	class?: string;
 	decorative?: boolean;
 }
@@ -15,6 +15,16 @@ const sizes = {
 	md: 'h-15 w-15',
 	lg: 'h-19 w-19',
 	xl: 'h-21 w-21',
+	'2xl': 'h-38 w-38',
+};
+
+const dimensions = {
+	xs: 32,
+	sm: 44,
+	md: 60,
+	lg: 76,
+	xl: 84,
+	'2xl': 152,
 };
 ---
 
@@ -23,8 +33,8 @@ const sizes = {
 	alt={decorative ? '' : alt}
 	aria-hidden={decorative ? 'true' : undefined}
 	class:list={['tuki-brand-icon object-contain', sizes[size], className]}
-	width={84}
-	height={84}
+	width={dimensions[size]}
+	height={dimensions[size]}
 	loading="lazy"
 	decoding="async"
 />

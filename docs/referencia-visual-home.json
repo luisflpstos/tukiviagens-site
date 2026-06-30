@@ -151,7 +151,7 @@
       "content": {
         "eyebrow": "Operadora oficial · Cadastro ativo",
         "headline": "O Brasil que você sonha, com a leveza do Tuki.",
-        "description": "Hotéis e resorts cuidadosamente selecionados, pagamento protegido e atendimento humano de verdade. Você descansa — a gente cuida do resto.",
+        "description": "Hotéis e resorts cuidadosamente selecionados, Viaje de forma segura e atendimento humano de verdade. Você descansa — a gente cuida do resto.",
         "primary_cta": "Ver hotéis & resorts",
         "secondary_cta": "Montar minha viagem",
         "stats": [
@@ -236,7 +236,7 @@
       "background": "#fbfbff",
       "items": [
         {
-          "title": "Pagamento protegido",
+          "title": "Viaje de forma segura",
           "description": "CNPJ, PIX e parcelamento",
           "icon": "shield"
         },
@@ -387,7 +387,7 @@
         "feature_cards": [
           {
             "title": "Segurança em primeiro lugar",
-            "description": "CNPJ ativo, contratos claros, pagamento protegido e suporte durante sua estadia.",
+            "description": "CNPJ ativo, contratos claros, Viaje de forma segura e suporte durante sua estadia.",
             "icon": "shield"
           },
           {

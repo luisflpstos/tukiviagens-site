@@ -10,19 +10,7 @@ const whatsappHref = buildWhatsAppUrl(SITE.phone, 'Olá! Gostaria de saber mais 
 	<div class="mx-auto max-w-[980px] px-4 py-16 sm:px-6">
 		<div class="grid gap-10 md:grid-cols-4">
 			<div class="md:col-span-1">
-				<Logo variant="white" height={66} />
-				<p class="mt-4 text-sm leading-relaxed text-white/75">
-					Viagens com curadoria, atendimento humano e a leveza que você merece.
-				</p>
-				<img
-					src={BRAND.cadastur}
-					alt="Selo Cadastur — agência de turismo cadastrada"
-					class="mt-6 h-16 w-auto"
-					width={120}
-					height={48}
-					loading="lazy"
-					decoding="async"
-				/>
+				<Logo variant="white" height={128} />
 			</div>
 
 			<div>
@@ -80,6 +68,17 @@ const whatsappHref = buildWhatsAppUrl(SITE.phone, 'Olá! Gostaria de saber mais 
 			<div>
 				<p>&copy; {new Date().getFullYear()} {SITE.name}. Todos os direitos reservados.</p>
 				<p class="mt-1 text-xs text-white/40">{SITE.cadastro}</p>
+			</div>
+			<div>
+			<img
+					src={BRAND.cadastur}
+					alt="Selo Cadastur — agência de turismo cadastrada"
+					class="mt-6 h-16 w-auto"
+					width={120}
+					height={48}
+					loading="lazy"
+					decoding="async"
+				/>
 			</div>
 		</div>
 	</div>

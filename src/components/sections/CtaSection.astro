@@ -1,7 +1,7 @@
 ---
 import Container from '../common/Container.astro';
 import Button from '../common/Button.astro';
-import { SITE } from '../../lib/constants';
+import { SITE, BRAND } from '../../lib/constants';
 import { buildWhatsAppUrl } from '../../lib/seo';
 
 interface Props {
@@ -15,24 +15,35 @@ const {
 } = Astro.props;
 ---
 
-<section class="section-padding bg-tuki-off-white">
-	<Container size="reference">
-		<div class="tuki-cta-ref overflow-hidden rounded-3xl px-8 py-12 text-center text-white md:px-16 md:py-14">
-			<h2 class="text-3xl font-extrabold tracking-[-0.03em] md:text-4xl">{title}</h2>
-			<p class="mx-auto mt-4 max-w-xl text-base leading-relaxed text-white/90 md:text-lg">{subtitle}</p>
-			<div class="mt-8 flex flex-wrap justify-center gap-4">
-				<Button
-					href={buildWhatsAppUrl(SITE.phone, 'Olá! Estou pronto para minha próxima aventura com a Tuki!')}
-					variant="inverse"
-					size="lg"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					{SITE.phoneDisplay}
-				</Button>
-				<Button href={`mailto:${SITE.email}`} variant="outline" size="lg">
-					{SITE.email}
-				</Button>
+<section class="section-padding overflow-visible bg-tuki-off-white">
+	<Container size="reference" class="overflow-visible">
+		<div class="relative overflow-visible">
+			<img
+				src={BRAND.mascot.selfie}
+				alt="Tuki tirando selfie com o celular"
+				class="pointer-events-none absolute top-1/2 left-0 z-20 hidden h-[27rem] w-auto max-w-[21rem] -translate-x-[58%] -translate-y-1/2 object-contain sm:block md:h-[30rem] md:max-w-[24rem] lg:h-[36rem] lg:max-w-[27rem]"
+				width={432}
+				height={576}
+				loading="lazy"
+				decoding="async"
+			/>
+			<div class="tuki-cta-ref relative z-10 overflow-hidden rounded-3xl px-8 py-12 text-center text-white md:px-16 md:py-14">
+				<h2 class="text-3xl font-extrabold tracking-[-0.03em] md:text-4xl">{title}</h2>
+				<p class="mx-auto mt-4 max-w-xl text-base leading-relaxed text-white/90 md:text-lg">{subtitle}</p>
+				<div class="mt-8 flex flex-wrap justify-center gap-4">
+					<Button
+						href={buildWhatsAppUrl(SITE.phone, 'Olá! Estou pronto para minha próxima aventura com a Tuki!')}
+						variant="inverse"
+						size="lg"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						{SITE.phoneDisplay}
+					</Button>
+					<Button href={`mailto:${SITE.email}`} variant="outline" size="lg">
+						{SITE.email}
+					</Button>
+				</div>
 			</div>
 		</div>
 	</Container>

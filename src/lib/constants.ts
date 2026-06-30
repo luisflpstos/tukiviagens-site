@@ -49,7 +49,7 @@ export const HOME_NAV_LINKS = [
 	{ label: 'Contato', href: '/contato' },
 ] as const;
 
-export const HERO_EYEBROW = 'Cadastro ativo · Pagamento protegido';
+export const HERO_EYEBROW = 'Cadastro ativo · Viaje de forma segura';
 
 export const HOTELS_PRICE_NOTE = '12x sem juros · consulte disponibilidade';
 
@@ -129,7 +129,7 @@ export const HERO_FLOATING_BADGES = [
 	{ text: 'Olímpia', class: 'left-0 top-2 -rotate-6 md:-left-8', variant: 'white' as const },
 	{ text: 'Rio Quente', class: 'right-0 top-10 rotate-3 md:-right-6', variant: 'white' as const },
 	{ text: 'Nordeste', class: 'bottom-8 left-4 -rotate-3 md:left-0', variant: 'white' as const },
-	{ text: 'Pagamento protegido', class: 'bottom-2 right-0 rotate-2 md:-right-4', variant: 'orange' as const },
+	{ text: 'Viaje de forma segura', class: 'bottom-2 right-0 rotate-2 md:-right-4', variant: 'orange' as const },
 ] as const;
 
 export const HOTELS_DESCRIPTION =
@@ -154,15 +154,15 @@ export const HERO_STATS = [
 
 export const TRUST_ITEMS = [
 	{
-		title: 'Pagamento protegido',
-		description: 'Transações seguras e confiáveis.',
-		icon: TUKI_ICONS.passaporte,
-		iconAlt: 'Passaporte e documentação de viagem',
+		title: 'Viaje de forma segura',
+		description: 'Pagamentos protegidos e parceiros confiáveis.',
+		icon: TUKI_ICONS.seguranca,
+		iconAlt: 'Segurança e documentação de viagem',
 	},
 	{
 		title: 'Suporte 24h',
-		description: 'Atendimento humano quando você precisar.',
-		icon: TUKI_ICONS.placaFerias,
+		description: 'Pessoas reais prontas para ajudar na sua viagem.',
+		icon: TUKI_ICONS.atendimento,
 		iconAlt: 'Placa de férias — suporte durante a viagem',
 	},
 	{
@@ -190,25 +190,25 @@ export const WHY_TUKI_CARDS = [
 	{
 		title: 'Segurança em primeiro lugar',
 		description: 'Pagamentos protegidos e parceiros confiáveis.',
-		icon: TUKI_ICONS.passaporte,
+		icon: TUKI_ICONS.seguranca,
 		iconAlt: 'Segurança e documentação de viagem',
 	},
 	{
 		title: 'Atendimento humano',
 		description: 'Pessoas reais prontas para ajudar na sua viagem.',
-		icon: TUKI_ICONS.mala,
+		icon: TUKI_ICONS.atendimento,
 		iconAlt: 'Mala de viagem com atendimento Tuki',
 	},
 	{
 		title: 'Facilidade de reserva',
 		description: 'Processo simples, rápido e sem burocracia.',
-		icon: TUKI_ICONS.aviao,
-		iconAlt: 'Avião — reserva descomplicada',
+		icon: TUKI_ICONS.calendario,
+		iconAlt: 'Calendário — reserva descomplicada',
 	},
 	{
 		title: 'Pacote completo',
 		description: 'Hospedagem, suporte e orientação em um só lugar.',
-		icon: TUKI_ICONS.cama,
+		icon: TUKI_ICONS.pacote,
 		iconAlt: 'Hospedagem confortável em pacote completo',
 	},
 ] as const;

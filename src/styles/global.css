@@ -177,7 +177,7 @@
 	}
 
 	.tuki-dest-icon {
-		@apply flex h-21 w-21 items-center justify-center rounded-2xl bg-tuki-lavender/70 p-2 transition group-hover:scale-105;
+		@apply flex h-42 w-42 items-center justify-center rounded-2xl bg-tuki-lavender/70 p-4 transition group-hover:scale-105;
 	}
 
 	.tuki-brand-icon {

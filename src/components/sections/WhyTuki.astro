@@ -25,20 +25,6 @@ import { WHY_TUKI_BENEFITS, WHY_TUKI_CARDS, WHY_TUKI_INTRO, TRUST_ITEMS } from '
 						))
 					}
 				</ul>
-
-				<div class="mt-8 grid gap-3 sm:grid-cols-2">
-					{
-						TRUST_ITEMS.map((item) => (
-							<div class="tuki-trust-pill flex items-start gap-3 bg-tuki-lavender/50 p-4">
-								<TukiIcon src={item.icon} alt={item.iconAlt} size="sm" class="shrink-0" />
-								<div>
-									<p class="text-sm font-bold text-tuki-ink">{item.title}</p>
-									<p class="mt-0.5 text-xs leading-relaxed text-tuki-muted">{item.description}</p>
-								</div>
-							</div>
-						))
-					}
-				</div>
 			</div>
 
 			<div class="grid gap-4 sm:grid-cols-2">

@@ -27,7 +27,7 @@ faq:
   - question: "Por que comprar hospedagem com agência ainda faz sentido?"
     answer: "Em viagens de família e destinos como Olímpia e Nordeste, a escolha errada de hotel custa caro. Um consultor reduz risco, explica diferenças entre resorts e ajuda em remarcações quando necessário."
   - question: "A Tuki é segura para pagamento?"
-    answer: "Trabalhamos com parceiros confiáveis e processo transparente. Pagamento protegido e condições explicadas antes da confirmação."
+    answer: "Trabalhamos com parceiros confiáveis e processo transparente. Viaje de forma segura e condições explicadas antes da confirmação."
   - question: "Vocês vendem só hospedagem ou pacote completo?"
     answer: "Hospedagem é nosso foco principal. Pacotes com aéreo e combinações de destino podem ser cotados conforme disponibilidade e perfil da viagem."
 
