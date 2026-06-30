@@ -13,7 +13,7 @@ Method: dual-agent (A: 4a8be269-2c13-4856-b0f4-81892ac275e4 · B: 309ed14a-4a1c-
 | # | Heuristic | Score | Key Issue |
 |---|-----------|-------|-----------|
 | 1 | Visibility of System Status | 2 | No loading states for images; WhatsApp opens externally with no "what happens next" preview |
-| 2 | Match System / Real World | 2 | `contato@olimtour.com.br` undermines Tuki brand; hotel photos don't match named resorts |
+| 2 | Match System / Real World | 2 | `contato@tukiviagens.com.br` undermines Tuki brand; hotel photos don't match named resorts |
 | 3 | User Control and Freedom | 3 | Skip link + anchor nav good; mobile menu has no explicit close |
 | 4 | Consistency and Standards | 3 | Design tokens consistent; CTA language varies across sections |
 | 5 | Error Prevention | 2 | "A partir de R$ X" without dates/nights/pax invites misinterpretation |
@@ -60,7 +60,7 @@ The home has real brand bones — purple hero, Tuki mascot, custom 3D destinatio
 - **Suggested command:** `/impeccable shape home`
 
 ### [P1] Legacy brand leak in final CTA
-- **Why:** `contato@olimtour.com.br` in CtaSection is instant credibility hit.
+- **Why:** `contato@tukiviagens.com.br` in CtaSection is instant credibility hit.
 - **Fix:** Tuki-branded email or remove email CTA until migrated.
 - **Suggested command:** `/impeccable clarify home`
 

@@ -53,22 +53,6 @@ const resorts = defineCollection({
 	}),
 });
 
-const destinos = defineCollection({
-	loader: glob({ base: './src/content/destinos', pattern: '**/*.{md,mdx}' }),
-	schema: z.object({
-		title: z.string(),
-		type: z.literal('destino').default('destino'),
-		estado: z.string(),
-		headline: z.string(),
-		description: z.string(),
-		highlights: z.array(z.string()).default([]),
-		whatsapp: z.string(),
-		cta: z.string(),
-		images: z.array(z.string()).default([]),
-		seo: seoSchema,
-	}),
-});
-
 const landingpages = defineCollection({
 	loader: glob({ base: './src/content/landingpages', pattern: '**/*.{md,mdx}' }),
 	schema: z.object({
@@ -120,4 +104,4 @@ const paginas = defineCollection({
 	}),
 });
 
-export const collections = { hoteis, resorts, destinos, landingpages, blog, paginas };
+export const collections = { hoteis, resorts, landingpages, blog, paginas };

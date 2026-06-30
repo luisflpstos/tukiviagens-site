@@ -5,7 +5,7 @@ export const SITE = {
 	tagline: 'O Brasil que você sonha, com a leveza do Tuki.',
 	url: import.meta.env.PUBLIC_SITE_URL ?? 'http://localhost:4321',
 	location: 'Olímpia, São Paulo',
-	email: 'contato@olimtour.com.br',
+	email: 'contato@tukiviagens.com.br',
 	phone: '551721901358',
 	phoneDisplay: '(17) 2190-1358',
 	whatsappDisplay: '(17) 2190-1358',

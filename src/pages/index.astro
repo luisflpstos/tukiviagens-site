@@ -11,8 +11,9 @@ import PartnersStrip from '../components/sections/PartnersStrip.astro';
 import CtaSection from '../components/sections/CtaSection.astro';
 import WhatsAppFab from '../components/common/WhatsAppFab.astro';
 import { HOME_FEATURED_PROPERTIES, SITE } from '../lib/constants';
+import { getHotelImagePath } from '../lib/image-paths';
 
-const properties = HOME_FEATURED_PROPERTIES.map((item) => ({
+const properties = HOME_FEATURED_PROPERTIES.map((item, index) => ({
 	id: item.id,
 	title: item.title,
 	cidade: item.cidade,
@@ -20,6 +21,7 @@ const properties = HOME_FEATURED_PROPERTIES.map((item) => ({
 	categoria: item.categoria,
 	href: item.href,
 	priceFrom: item.priceFrom,
+	image: getHotelImagePath(item.id, index),
 }));
 ---
 
@@ -28,7 +30,6 @@ const properties = HOME_FEATURED_PROPERTIES.map((item) => ({
 	description="Viagens com curadoria, atendimento humano e pagamento seguro. Hotéis, resorts e destinos selecionados a dedo pela Tuki Viagens."
 	path="/"
 >
-	<div id="conteudo">
 	<script is:inline>
 		try {
 			document.documentElement.classList.add('tuki-motion-ready');
@@ -37,6 +38,7 @@ const properties = HOME_FEATURED_PROPERTIES.map((item) => ({
 			}
 		} catch {}
 	</script>
+	<div id="conteudo">
 	<Hero />
 	<MarqueeStrip />
 	<DestinationsGrid />

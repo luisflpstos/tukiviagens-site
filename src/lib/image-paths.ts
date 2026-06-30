@@ -1,3 +1,7 @@
+import { existsSync } from 'node:fs';
+import { join } from 'node:path';
+import { HERO_BACKGROUND, HOTEL_FALLBACK_IMAGES } from './constants';
+
 /**
  * Caminhos canônicos para imagens locais em `public/`.
  * Enquanto o arquivo não existir na pasta, os componentes usam fallback (Unsplash).
@@ -35,8 +39,23 @@ export const HOME_PROPERTY_IMAGE_SLUG: Record<string, keyof typeof IMAGE_PATHS.h
 	'nordeste-all-inclusive': 'nordeste-all-inclusive',
 };
 
-export function getHotelImagePath(propertyId: string): string | undefined {
+function publicFileExists(publicPath: string): boolean {
+	return existsSync(join(process.cwd(), 'public', publicPath));
+}
+
+export function resolvePublicImagePath(publicPath: string, fallback: string): string {
+	return publicFileExists(publicPath) ? publicPath : fallback;
+}
+
+export function resolveHeroImagePath(): string {
+	return resolvePublicImagePath(IMAGE_PATHS.hero, HERO_BACKGROUND);
+}
+
+export function getHotelImagePath(propertyId: string, index = 0): string {
 	const slug = HOME_PROPERTY_IMAGE_SLUG[propertyId];
-	if (!slug) return undefined;
-	return IMAGE_PATHS.hoteis[slug];
+	const localPath = slug ? IMAGE_PATHS.hoteis[slug] : undefined;
+	const fallback = HOTEL_FALLBACK_IMAGES[index % HOTEL_FALLBACK_IMAGES.length];
+
+	if (!localPath) return fallback;
+	return resolvePublicImagePath(localPath, fallback);
 }

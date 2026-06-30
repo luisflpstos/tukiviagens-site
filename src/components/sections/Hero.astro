@@ -2,15 +2,17 @@
 import Container from '../common/Container.astro';
 import Button from '../common/Button.astro';
 import StarDecoration from '../common/StarDecoration.astro';
-import { SITE, HERO_STATS, BRAND, HERO_EYEBROW, HERO_FLOATING_BADGES, HERO_BACKGROUND } from '../../lib/constants';
+import { SITE, HERO_STATS, BRAND, HERO_EYEBROW, HERO_FLOATING_BADGES } from '../../lib/constants';
 import { buildWhatsAppUrl } from '../../lib/seo';
-import { HERO_WAVE_PATH, HERO_WAVE_VIEWBOX } from '../../lib/shapes';
+import { resolveHeroImagePath } from '../../lib/image-paths';
+
+const heroBackground = resolveHeroImagePath();
 ---
 
-<section class="relative isolate z-[1000] overflow-hidden text-white">
+<section class="tuki-hero relative overflow-hidden text-white">
 	<div class="absolute inset-0 -z-10 overflow-hidden" aria-hidden="true">
 		<img
-			src={HERO_BACKGROUND}
+			src={heroBackground}
 			alt=""
 			class="tuki-hero-bg-zoom h-full w-full object-cover"
 			width={2000}
@@ -120,18 +122,4 @@ import { HERO_WAVE_PATH, HERO_WAVE_VIEWBOX } from '../../lib/shapes';
 		</div>
 	</Container>
 
-	<svg
-		class="tuki-hero-bottom-wave pointer-events-none absolute bottom-0 left-0 z-10 block w-full text-tuki-orange"
-		viewBox={HERO_WAVE_VIEWBOX}
-		preserveAspectRatio="none"
-		aria-hidden="true"
-	>
-		<defs>
-			<linearGradient id="tuki-hero-wave-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-				<stop offset="0%" stop-color="var(--color-tuki-orange)"></stop>
-				<stop offset="100%" stop-color="color-mix(in srgb, var(--color-tuki-orange) 85%, white)"></stop>
-			</linearGradient>
-		</defs>
-		<path fill="url(#tuki-hero-wave-gradient)" d={HERO_WAVE_PATH}></path>
-	</svg>
 </section>

@@ -1,5 +1,3 @@
-import { initMarqueeWave } from './marquee-wave';
-
 function prefersReducedMotion() {
 	return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 }
@@ -42,7 +40,6 @@ export function initHomeMotion() {
 		document.documentElement.classList.add('tuki-reduced-motion');
 	}
 	initScrollReveals();
-	initMarqueeWave();
 }
 
 if (document.readyState === 'loading') {
