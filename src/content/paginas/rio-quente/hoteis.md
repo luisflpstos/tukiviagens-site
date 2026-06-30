@@ -18,7 +18,7 @@ keywords:
   - hospedagem rio quente
   - hotel perto hot park
 
-whatsapp: "5517999999999"
+whatsapp: "551721901358"
 cta: "Cotar hotel no Rio Quente"
 
 faq:

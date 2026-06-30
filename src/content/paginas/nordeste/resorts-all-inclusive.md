@@ -18,7 +18,7 @@ keywords:
   - resort all inclusive nordeste para crianças
   - resort all inclusive para familia no nordeste
 
-whatsapp: "5517999999999"
+whatsapp: "551721901358"
 cta: "Cotar resort all inclusive no Nordeste"
 
 faq:

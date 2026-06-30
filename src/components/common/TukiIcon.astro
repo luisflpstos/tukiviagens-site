@@ -1,0 +1,30 @@
+---
+interface Props {
+	src: string;
+	alt: string;
+	size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl';
+	class?: string;
+	decorative?: boolean;
+}
+
+const { src, alt, size = 'md', class: className = '', decorative = false } = Astro.props;
+
+const sizes = {
+	xs: 'h-6 w-6',
+	sm: 'h-8 w-8',
+	md: 'h-11 w-11',
+	lg: 'h-14 w-14',
+	xl: 'h-16 w-16',
+};
+---
+
+<img
+	src={src}
+	alt={decorative ? '' : alt}
+	aria-hidden={decorative ? 'true' : undefined}
+	class:list={['tuki-brand-icon object-contain', sizes[size], className]}
+	width={64}
+	height={64}
+	loading="lazy"
+	decoding="async"
+/>

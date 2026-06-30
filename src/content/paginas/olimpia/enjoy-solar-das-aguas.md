@@ -18,7 +18,7 @@ keywords:
   - hotel solar das aguas olimpia
   - resort solar das aguas
 
-whatsapp: "5517999999999"
+whatsapp: "551721901358"
 cta: "Cotar Solar das Águas"
 
 faq:

@@ -18,7 +18,7 @@ keywords:
   - consultor de viagens
   - venda de hospedagem
 
-whatsapp: "5517999999999"
+whatsapp: "551721901358"
 cta: "Falar com consultor"
 
 faq:

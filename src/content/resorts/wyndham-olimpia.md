@@ -8,7 +8,7 @@ categoria: "Resort All-Inclusive"
 headline: "Wyndham Olímpia: resort all-inclusive para toda a família"
 description: "Descubra o Wyndham Olímpia, um resort completo com estrutura de lazer, gastronomia e conforto em Olímpia."
 
-whatsapp: "5517999999999"
+whatsapp: "551721901358"
 cta: "Consultar resort"
 
 amenities:

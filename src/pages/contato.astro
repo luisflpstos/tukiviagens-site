@@ -28,6 +28,9 @@ import { buildWhatsAppUrl } from '../lib/seo';
 					<h2 class="text-2xl font-bold text-gray-900">Canais de atendimento</h2>
 					<ul class="mt-6 space-y-4 text-gray-700">
 						<li>
+							<strong>Endereço:</strong> {SITE.location}
+						</li>
+						<li>
 							<strong>Telefone:</strong>
 							<a href={`tel:+${SITE.phone}`} class="text-tuki-purple hover:underline">
 								{SITE.phoneDisplay}
@@ -47,8 +50,11 @@ import { buildWhatsAppUrl } from '../lib/seo';
 								target="_blank"
 								rel="noopener noreferrer"
 							>
-								Enviar mensagem
+								{SITE.whatsappDisplay}
 							</a>
+						</li>
+						<li>
+							<strong>CNPJ:</strong> {SITE.cnpj}
 						</li>
 					</ul>
 					<div class="mt-8">

@@ -18,7 +18,7 @@ keywords:
   - hotel perto do thermas dos laranjais em olimpia
   - resort perto do thermas dos laranjais
 
-whatsapp: "5517999999999"
+whatsapp: "551721901358"
 cta: "Cotar hospedagem perto do Thermas"
 
 faq:

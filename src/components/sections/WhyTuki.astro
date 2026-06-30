@@ -1,10 +1,8 @@
 ---
 import Container from '../common/Container.astro';
-import SectionEyebrow from '../common/SectionEyebrow.astro';
+import TukiIcon from '../common/TukiIcon.astro';
 import StarDecoration from '../common/StarDecoration.astro';
-import { WHY_TUKI_BENEFITS, WHY_TUKI_CARDS } from '../../lib/constants';
-
-const cardIcons = ['🛡️', '💬', '✦', '🎒'];
+import { WHY_TUKI_BENEFITS, WHY_TUKI_CARDS, WHY_TUKI_INTRO, TRUST_ITEMS } from '../../lib/constants';
 ---
 
 <section id="por-que-tuki" class="relative section-padding overflow-hidden bg-white">
@@ -16,10 +14,10 @@ const cardIcons = ['🛡️', '💬', '✦', '🎒'];
 	<Container size="reference" class="relative">
 		<div class="grid gap-12 lg:grid-cols-2 lg:gap-16">
 			<div>
-				<SectionEyebrow label="Por que Tuki Viagens" class="mb-3" />
 				<h2 class="text-3xl font-extrabold leading-tight tracking-[-0.03em] text-tuki-ink md:text-4xl">
 					A leveza de viajar sabendo que <span class="tuki-highlight-block">tudo está sob controle.</span>
 				</h2>
+				<p class="mt-5 max-w-prose text-base leading-relaxed text-tuki-muted">{WHY_TUKI_INTRO}</p>
 
 				<ul class="mt-8 space-y-4">
 					{
@@ -33,17 +31,28 @@ const cardIcons = ['🛡️', '💬', '✦', '🎒'];
 						))
 					}
 				</ul>
+
+				<div class="mt-8 grid gap-3 sm:grid-cols-2">
+					{
+						TRUST_ITEMS.map((item) => (
+							<div class="tuki-trust-pill flex items-start gap-3 bg-tuki-lavender/50 p-4">
+								<TukiIcon src={item.icon} alt={item.iconAlt} size="sm" class="shrink-0" />
+								<div>
+									<p class="text-sm font-bold text-tuki-ink">{item.title}</p>
+									<p class="mt-0.5 text-xs leading-relaxed text-tuki-muted">{item.description}</p>
+								</div>
+							</div>
+						))
+					}
+				</div>
 			</div>
 
 			<div class="grid gap-4 sm:grid-cols-2">
 				{
-					WHY_TUKI_CARDS.map((card, index) => (
-						<div class="tuki-card-ref bg-white p-5 transition hover:-translate-y-0.5">
-							<div
-								class="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-tuki-purple text-lg text-white"
-								aria-hidden="true"
-							>
-								{cardIcons[index]}
+					WHY_TUKI_CARDS.map((card) => (
+						<div class="tuki-card-ref bg-white p-5 transition hover:-translate-y-0.5 hover:shadow-md">
+							<div class="mb-4 flex h-14 w-14 items-center justify-center rounded-xl bg-tuki-lavender/80 p-1.5">
+								<TukiIcon src={card.icon} alt={card.iconAlt} size="md" />
 							</div>
 							<h3 class="font-bold text-tuki-ink">{card.title}</h3>
 							<p class="mt-2 text-sm leading-relaxed text-tuki-muted">{card.description}</p>

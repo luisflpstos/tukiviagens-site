@@ -18,7 +18,7 @@ keywords:
   - hotel olimpia sp
   - hospedagem olimpia
 
-whatsapp: "5517999999999"
+whatsapp: "551721901358"
 cta: "Cotar hotel em Olímpia"
 
 faq:

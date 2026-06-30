@@ -8,7 +8,7 @@ categoria: "Resort"
 headline: "Enjoy Solar das Águas: hospedagem completa em Olímpia"
 description: "Conheça o Enjoy Solar das Águas, uma opção de hospedagem em Olímpia para famílias que buscam lazer, conforto e praticidade."
 
-whatsapp: "5517999999999"
+whatsapp: "551721901358"
 cta: "Consultar hospedagem"
 
 amenities:

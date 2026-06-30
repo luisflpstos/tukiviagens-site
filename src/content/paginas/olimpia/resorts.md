@@ -18,7 +18,7 @@ keywords:
   - resort olimpia park
   - resort thermas dos laranjais
 
-whatsapp: "5517999999999"
+whatsapp: "551721901358"
 cta: "Cotar resort em Olímpia"
 
 faq:

@@ -9,7 +9,7 @@ headline: "Reserve sua hospedagem em Olímpia com conforto para toda a família"
 subheadline: "Hospede-se próximo ao Thermas dos Laranjais com estrutura completa de resort."
 
 cta: "Consultar disponibilidade"
-whatsapp: "5517999999999"
+whatsapp: "551721901358"
 
 campaign: "google-search-enjoy-solar"
 channel: "google"

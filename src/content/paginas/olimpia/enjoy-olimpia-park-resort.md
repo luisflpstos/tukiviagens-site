@@ -18,7 +18,7 @@ keywords:
   - hotel enjoy olimpia park resort
   - diaria hotel enjoy olimpia park resort
 
-whatsapp: "5517999999999"
+whatsapp: "551721901358"
 cta: "Cotar Enjoy Olímpia Park"
 
 faq:

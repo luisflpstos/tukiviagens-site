@@ -5,15 +5,16 @@ import { PARTNERS, PARTNERS_TITLE } from '../../lib/constants';
 
 <section class="tuki-section-lavender py-12">
 	<Container size="reference">
-		<p class="mb-8 text-center text-xs font-bold tracking-[0.14em] text-tuki-muted uppercase">
-			{PARTNERS_TITLE}
-		</p>
+		<p class="mb-8 text-center text-sm font-semibold text-tuki-muted">{PARTNERS_TITLE}</p>
 		<div class="flex flex-wrap items-center justify-center gap-3">
 			{
 				PARTNERS.map((partner) => (
-					<span class="rounded-full border border-tuki-purple/10 bg-white px-5 py-2.5 text-sm font-bold text-tuki-muted">
-						{partner}
-					</span>
+					<a
+						href={partner.href}
+						class="rounded-full border border-tuki-purple/10 bg-white px-5 py-2.5 text-sm font-bold text-tuki-muted transition hover:border-tuki-purple/25 hover:text-tuki-purple"
+					>
+						{partner.name}
+					</a>
 				))
 			}
 		</div>

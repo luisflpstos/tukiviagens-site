@@ -18,7 +18,7 @@ keywords:
   - resort rio quente
   - hotel em rio quente
 
-whatsapp: "5517999999999"
+whatsapp: "551721901358"
 cta: "Cotar hospedagem no Rio Quente"
 
 faq:

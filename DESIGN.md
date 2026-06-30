@@ -13,21 +13,21 @@ colors:
   surface-muted: "#F9FAFB"
 typography:
   display:
-    fontFamily: "Inter, ui-sans-serif, system-ui, sans-serif"
-    fontSize: "clamp(2.25rem, 5vw, 3.75rem)"
-    fontWeight: 700
-    lineHeight: 1.15
-    letterSpacing: "-0.02em"
+    fontFamily: "Nunito, Inter, ui-sans-serif, system-ui, sans-serif"
+    fontSize: "clamp(2rem, 5vw, 3.25rem)"
+    fontWeight: 800
+    lineHeight: 1.05
+    letterSpacing: "-0.04em"
   headline:
-    fontFamily: "Inter, ui-sans-serif, system-ui, sans-serif"
+    fontFamily: "Nunito, Inter, ui-sans-serif, system-ui, sans-serif"
     fontSize: "clamp(1.875rem, 3vw, 2.25rem)"
-    fontWeight: 700
+    fontWeight: 800
     lineHeight: 1.2
-    letterSpacing: "-0.01em"
+    letterSpacing: "-0.03em"
   title:
-    fontFamily: "Inter, ui-sans-serif, system-ui, sans-serif"
+    fontFamily: "Nunito, Inter, ui-sans-serif, system-ui, sans-serif"
     fontSize: "1.125rem"
-    fontWeight: 600
+    fontWeight: 700
     lineHeight: 1.35
     letterSpacing: "normal"
   body:
@@ -129,23 +129,23 @@ Paleta vibrante de agência de viagens familiar: roxo confiança + laranja energ
 
 ## Typography
 
-**Display Font:** Inter (Google Fonts, pesos 400–800)
-**Body Font:** Inter (mesma família — contraste por peso e escala, não por par)
+**Display Font:** Nunito (Google Fonts, pesos 700–900) — headings h1–h3
+**Body Font:** Inter (Google Fonts, pesos 400–700) — parágrafos, UI, labels
 **Label Font:** Inter semibold, uppercase com tracking em categorias de card
 
-**Character:** Geométrica-humanista, legível em mobile, amigável sem ser infantil. Uma família, múltiplos pesos — adequada para famílias lendo ofertas no celular.
+**Character:** Nunito arredondada nos títulos transmite leveza e família; Inter no corpo garante legibilidade em mobile. Par tipográfico display + body — adequado para famílias lendo ofertas no celular.
 
 ### Hierarchy
 
-- **Display** (700, `clamp(2.25rem, 5vw, 3.75rem)`, lh 1.15): H1 de hero e tagline. `text-wrap: balance`. Letter-spacing ≥ -0.04em (usar -0.02em a -0.03em).
-- **Headline** (700, `clamp(1.875rem, 3vw, 2.25rem)`, lh 1.2): H2 de seção ("Hotéis selecionados", CTAs finais).
-- **Title** (600, 1.125rem, lh 1.35): H3 de cards, itens de benefício.
-- **Body** (400, 1rem, lh 1.6): Parágrafos e descrições. Máx. 65–75ch em blocos longos. `text-wrap: pretty` em prosa.
-- **Label** (600, 0.75rem, tracking 0.05em, uppercase): Categorias em cards de propriedade — usar com moderação, nunca como eyebrow em toda seção.
+- **Display** (800, Nunito, `clamp(2rem, 5vw, 3.25rem)`, lh 0.98–1.15): H1 de hero e tagline. `text-wrap: balance`. Letter-spacing ≥ -0.04em.
+- **Headline** (800, Nunito, `clamp(1.875rem, 3vw, 2.25rem)`, lh 1.2): H2 de seção ("Hotéis selecionados", CTAs finais).
+- **Title** (700, Nunito, 1.125rem, lh 1.35): H3 de cards, itens de benefício.
+- **Body** (400, Inter, 1rem, lh 1.6): Parágrafos e descrições. Máx. 65–75ch em blocos longos. `text-wrap: pretty` em prosa.
+- **Label** (600, Inter, 0.75rem, tracking 0.05em, uppercase): Categorias em cards de propriedade — usar com moderação, nunca como eyebrow em toda seção.
 
 ### Named Rules
 
-**The One-Voice Type Rule.** Inter em todo o site. Não adicionar serif display ou mono decorativo sem decisão de rebranding.
+**The Display-Body Pair Rule.** Nunito em display (h1–h3); Inter em corpo e UI. Não misturar outras famílias sem decisão de rebranding.
 
 **The Readable-Gray Rule.** Corpo nunca abaixo de gray-700 sobre branco. `text-white/80` só sobre roxo/laranja saturado com contraste verificado.
 

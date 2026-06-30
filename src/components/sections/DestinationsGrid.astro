@@ -1,15 +1,13 @@
 ---
 import Container from '../common/Container.astro';
-import SectionEyebrow from '../common/SectionEyebrow.astro';
-import StarDecoration from '../common/StarDecoration.astro';
-import { HOME_DESTINATIONS, DESTINATIONS_EYEBROW } from '../../lib/constants';
+import TukiIcon from '../common/TukiIcon.astro';
+import { HOME_DESTINATIONS } from '../../lib/constants';
 ---
 
 <section id="destinos" class="section-padding bg-white">
 	<Container size="reference">
 		<div class="flex flex-wrap items-end justify-between gap-6">
 			<div class="max-w-2xl">
-				<SectionEyebrow label={DESTINATIONS_EYEBROW} class="mb-3" />
 				<h2 class="text-3xl font-extrabold tracking-[-0.03em] text-tuki-ink md:text-4xl">
 					Para onde o Tuki te <span class="text-tuki-orange">leva</span> hoje?
 				</h2>
@@ -27,7 +25,9 @@ import { HOME_DESTINATIONS, DESTINATIONS_EYEBROW } from '../../lib/constants';
 			{
 				HOME_DESTINATIONS.map((dest) => (
 					<a href={dest.href} class="tuki-dest-card group">
-						<div class="tuki-dest-icon transition group-hover:scale-105">{dest.emoji}</div>
+						<div class="tuki-dest-icon">
+							<TukiIcon src={dest.icon} alt={dest.iconAlt} size="lg" />
+						</div>
 						<span class="text-xs font-bold text-tuki-ink transition group-hover:text-tuki-purple md:text-sm">
 							{dest.name}
 						</span>

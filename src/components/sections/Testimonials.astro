@@ -1,13 +1,11 @@
 ---
 import Container from '../common/Container.astro';
-import SectionEyebrow from '../common/SectionEyebrow.astro';
 import { TESTIMONIALS } from '../../lib/constants';
 ---
 
 <section id="depoimentos" class="section-padding tuki-section-soft">
 	<Container size="reference">
 		<div class="mx-auto max-w-2xl text-center">
-			<SectionEyebrow label="Quem viaja, ama" class="mb-3" />
 			<h2 class="text-3xl font-extrabold tracking-[-0.03em] text-tuki-ink md:text-4xl">
 				Histórias reais de quem voou com o <span class="text-tuki-purple">Tuki</span>
 			</h2>
@@ -16,7 +14,7 @@ import { TESTIMONIALS } from '../../lib/constants';
 		<div class="mt-10 grid gap-6 md:grid-cols-3">
 			{
 				TESTIMONIALS.map((item) => (
-					<article class="tuki-card-ref flex h-full flex-col bg-white p-6">
+					<article class="tuki-card-ref flex h-full flex-col bg-white p-6 transition hover:shadow-md">
 						<span class="text-3xl font-extrabold leading-none text-tuki-orange" aria-hidden="true">
 							“
 						</span>
