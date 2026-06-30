@@ -22,3 +22,29 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# vscode setting folder
+.vscode/
+
+# cursor setting folder
+.cursor/
+
+# astro setting folder
+.astro/
+
+# node setting folder
+.node/
+
+.docs/
+.claude/
+.codex/
+.gemini/
+.kiro/
+.rovodev/
+.trae/
+.trae-cn/
+.pi/
+.opencode/
+.agents/
+.context/
+.docs/
