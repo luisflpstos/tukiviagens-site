@@ -1,0 +1,16 @@
+---
+import Container from '../common/Container.astro';
+import { PARTNERS } from '../../lib/constants';
+---
+
+<section class="border-y border-gray-100 bg-white py-10">
+	<Container>
+		<div class="flex flex-wrap items-center justify-center gap-8 md:gap-12">
+			{
+				PARTNERS.map((partner) => (
+					<span class="text-lg font-semibold text-gray-300">{partner}</span>
+				))
+			}
+		</div>
+	</Container>
+</section>

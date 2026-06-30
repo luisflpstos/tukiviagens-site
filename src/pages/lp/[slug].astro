@@ -1,0 +1,53 @@
+---
+import { getCollection, render } from 'astro:content';
+import LandingLayout from '../../layouts/LandingLayout.astro';
+import LandingHero from '../../components/sections/LandingHero.astro';
+import BenefitsList from '../../components/sections/BenefitsList.astro';
+import Faq from '../../components/sections/Faq.astro';
+import LeadCaptureSection from '../../components/sections/LeadCaptureSection.astro';
+
+export async function getStaticPaths() {
+	const entries = await getCollection('landingpages');
+	return entries.map((entry) => ({
+		params: { slug: entry.id },
+		props: { entry },
+	}));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const { seo, ...data } = entry.data;
+---
+
+<LandingLayout
+	title={seo.title}
+	description={seo.description}
+	path={`/lp/${entry.id}`}
+	noindex={data.noindex}
+	whatsapp={data.whatsapp}
+	campaign={data.campaign}
+	whatsappMessage={`Olá! Vi a oferta do ${data.hotel} e gostaria de consultar disponibilidade para minha viagem.\n\nOrigem: LP ${data.hotel} ${data.channel}`}
+>
+	<LandingHero
+		headline={data.headline}
+		subheadline={data.subheadline}
+		cta={data.cta}
+		ctaHref="#formulario"
+	/>
+	<BenefitsList items={data.benefits} title="Por que escolher?" />
+	<section class="py-8">
+		<div class="content-markdown mx-auto max-w-2xl px-4">
+			<Content />
+		</div>
+	</section>
+	<Faq items={data.faq} />
+	<div id="formulario">
+		<LeadCaptureSection
+			formId="landing-lead-form"
+			hotel={data.hotel}
+			campaign={data.campaign}
+			title="Consulte disponibilidade"
+			subtitle={`${data.hotel} · ${data.cidade}, ${data.estado}`}
+		/>
+	</div>
+</LandingLayout>

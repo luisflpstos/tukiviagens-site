@@ -1,0 +1,41 @@
+---
+import Container from '../common/Container.astro';
+import { WHY_TUKI_BENEFITS, WHY_TUKI_CARDS } from '../../lib/constants';
+---
+
+<section id="por-que-tuki" class="section-padding bg-white">
+	<Container>
+		<h2 class="text-3xl font-bold text-gray-900 md:text-4xl">
+			A leveza de viajar sabendo que tudo está sob controle.
+		</h2>
+
+		<div class="mt-12 grid gap-12 lg:grid-cols-2">
+			<ul class="space-y-4">
+				{
+					WHY_TUKI_BENEFITS.map((benefit) => (
+						<li class="flex items-start gap-3">
+							<span class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-tuki-orange text-sm text-white">
+								✓
+							</span>
+							<span class="text-gray-700">{benefit}</span>
+						</li>
+					))
+				}
+			</ul>
+
+			<div class="grid gap-4 sm:grid-cols-2">
+				{
+					WHY_TUKI_CARDS.map((card) => (
+						<div class="rounded-2xl border border-gray-100 bg-gray-50 p-5">
+							<div class="mb-3 flex h-10 w-10 items-center justify-center rounded-full bg-tuki-purple/10 text-tuki-purple">
+								★
+							</div>
+							<h3 class="font-semibold text-gray-900">{card.title}</h3>
+							<p class="mt-2 text-sm text-gray-600">{card.description}</p>
+						</div>
+					))
+				}
+			</div>
+		</div>
+	</Container>
+</section>

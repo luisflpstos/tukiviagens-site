@@ -1,0 +1,33 @@
+---
+import Container from '../common/Container.astro';
+import Button from '../common/Button.astro';
+import { SITE } from '../../lib/constants';
+import { buildWhatsAppUrl } from '../../lib/seo';
+---
+
+<section class="tuki-gradient-purple section-padding text-white">
+	<Container>
+		<div class="grid items-center gap-10 lg:grid-cols-2">
+			<div class="flex justify-center">
+				<div class="flex h-64 w-64 items-center justify-center rounded-full bg-white/10 text-8xl backdrop-blur-sm">
+					🦜
+				</div>
+			</div>
+			<div>
+				<h2 class="text-3xl font-bold md:text-4xl">Nosso tucano viajante, pronto pra te guiar</h2>
+				<p class="mt-4 text-lg text-white/80">
+					Com a Tuki, você tem curadoria de verdade, atendimento humano e a tranquilidade de saber que
+					cada detalhe da sua viagem está sob controle.
+				</p>
+				<Button
+					href={buildWhatsAppUrl(SITE.phone, 'Olá! Quero viajar com a Tuki!')}
+					variant="primary"
+					size="lg"
+					class="mt-8"
+				>
+					Quero viajar com o Tuki
+				</Button>
+			</div>
+		</div>
+	</Container>
+</section>

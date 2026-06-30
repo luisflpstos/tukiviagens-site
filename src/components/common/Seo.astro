@@ -1,0 +1,33 @@
+---
+import { buildSeo, type SeoProps } from '../../lib/seo';
+
+interface Props extends SeoProps {
+	jsonLd?: Record<string, unknown> | Record<string, unknown>[];
+}
+
+const { title, description, path, image, noindex, type, jsonLd } = Astro.props;
+const seo = buildSeo({ title, description, path, image, noindex, type });
+---
+
+<title>{seo.title}</title>
+<meta name="description" content={seo.description} />
+<link rel="canonical" href={seo.canonical} />
+{noindex && <meta name="robots" content="noindex, nofollow" />}
+
+<meta property="og:type" content={type ?? 'website'} />
+<meta property="og:title" content={seo.title} />
+<meta property="og:description" content={seo.description} />
+<meta property="og:url" content={seo.canonical} />
+<meta property="og:image" content={seo.ogImage} />
+<meta property="og:locale" content="pt_BR" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={seo.title} />
+<meta name="twitter:description" content={seo.description} />
+<meta name="twitter:image" content={seo.ogImage} />
+
+{
+	jsonLd && (
+		<script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+	)
+}

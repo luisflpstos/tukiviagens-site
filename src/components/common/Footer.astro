@@ -1,0 +1,58 @@
+---
+import { SITE } from '../../lib/constants';
+import { buildWhatsAppUrl } from '../../lib/seo';
+---
+
+<footer class="bg-tuki-purple-dark text-white">
+	<div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+		<div class="grid gap-10 md:grid-cols-4">
+			<div>
+				<p class="text-2xl font-bold">{SITE.name.split(' ')[0]}</p>
+				<p class="mt-4 text-sm text-white/70">
+					Viagens com curadoria, atendimento humano e a leveza que você merece.
+				</p>
+			</div>
+
+			<div>
+				<h3 class="font-semibold">Destinos</h3>
+				<ul class="mt-4 space-y-2 text-sm text-white/70">
+					<li><a href="/destinos/olimpia" class="hover:text-white">Olímpia</a></li>
+					<li><a href="/#destinos" class="hover:text-white">Ver todos</a></li>
+				</ul>
+			</div>
+
+			<div>
+				<h3 class="font-semibold">Tuki</h3>
+				<ul class="mt-4 space-y-2 text-sm text-white/70">
+					<li><a href="/#por-que-tuki" class="hover:text-white">Sobre nós</a></li>
+					<li><a href="/#depoimentos" class="hover:text-white">Depoimentos</a></li>
+					<li><a href="/contato" class="hover:text-white">Contato</a></li>
+				</ul>
+			</div>
+
+			<div>
+				<h3 class="font-semibold">Contato</h3>
+				<ul class="mt-4 space-y-2 text-sm text-white/70">
+					<li>{SITE.phoneDisplay}</li>
+					<li>
+						<a href={`mailto:${SITE.email}`} class="hover:text-white">{SITE.email}</a>
+					</li>
+					<li>
+						<a
+							href={buildWhatsAppUrl(SITE.phone, 'Olá! Gostaria de saber mais sobre a Tuki Viagens.')}
+							class="hover:text-white"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							WhatsApp
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="mt-12 border-t border-white/10 pt-8 text-center text-sm text-white/50">
+			<p>&copy; {new Date().getFullYear()} {SITE.name}. Todos os direitos reservados.</p>
+		</div>
+	</div>
+</footer>

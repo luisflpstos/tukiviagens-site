@@ -1,0 +1,32 @@
+---
+import { getCollection, render } from 'astro:content';
+import ResortLayout from '../../layouts/ResortLayout.astro';
+
+export async function getStaticPaths() {
+	const entries = await getCollection('resorts');
+	return entries.map((entry) => ({
+		params: { slug: entry.id },
+		props: { entry },
+	}));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const { seo, ...data } = entry.data;
+---
+
+<ResortLayout
+	title={seo.title}
+	description={seo.description}
+	path={`/resorts/${entry.id}`}
+	headline={data.headline}
+	cidade={data.cidade}
+	estado={data.estado}
+	categoria={data.categoria}
+	amenities={data.amenities}
+	faq={data.faq}
+	whatsapp={data.whatsapp}
+	cta={data.cta}
+>
+	<Content />
+</ResortLayout>

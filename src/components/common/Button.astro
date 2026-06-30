@@ -1,0 +1,50 @@
+---
+interface Props {
+	href?: string;
+	variant?: 'primary' | 'secondary' | 'outline' | 'ghost';
+	size?: 'sm' | 'md' | 'lg';
+	class?: string;
+	type?: 'button' | 'submit';
+	disabled?: boolean;
+}
+
+const {
+	href,
+	variant = 'primary',
+	size = 'md',
+	class: className = '',
+	type = 'button',
+	disabled = false,
+} = Astro.props;
+
+const base =
+	'inline-flex items-center justify-center gap-2 rounded-full font-semibold transition-all duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2';
+
+const variants = {
+	primary: 'bg-tuki-orange text-white hover:bg-tuki-orange-dark focus-visible:outline-tuki-orange',
+	secondary: 'bg-tuki-purple text-white hover:bg-tuki-purple-dark focus-visible:outline-tuki-purple',
+	outline:
+		'border-2 border-white text-white hover:bg-white/10 focus-visible:outline-white',
+	ghost: 'text-tuki-purple hover:bg-tuki-purple/10 focus-visible:outline-tuki-purple',
+};
+
+const sizes = {
+	sm: 'px-4 py-2 text-sm',
+	md: 'px-6 py-3 text-base',
+	lg: 'px-8 py-4 text-lg',
+};
+
+const classes = [base, variants[variant], sizes[size], className].join(' ');
+---
+
+{
+	href ? (
+		<a href={href} class={classes}>
+			<slot />
+		</a>
+	) : (
+		<button type={type} class={classes} disabled={disabled}>
+			<slot />
+		</button>
+	)
+}

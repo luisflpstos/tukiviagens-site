@@ -1,0 +1,65 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Container from '../components/common/Container.astro';
+import LeadCaptureSection from '../components/sections/LeadCaptureSection.astro';
+import { formatDate } from '../lib/formatters';
+
+interface Props {
+	title: string;
+	description: string;
+	path: string;
+	publishedAt: Date;
+	author: string;
+	tags: string[];
+	noindex?: boolean;
+}
+
+const { title, description, path, publishedAt, author, tags, noindex = false } = Astro.props;
+
+const jsonLd = {
+	'@context': 'https://schema.org',
+	'@type': 'Article',
+	headline: title,
+	description,
+	datePublished: publishedAt.toISOString(),
+	author: { '@type': 'Organization', name: author },
+};
+---
+
+<BaseLayout
+	title={title}
+	description={description}
+	path={path}
+	type="article"
+	noindex={noindex}
+	jsonLd={jsonLd}
+>
+	<article class="section-padding">
+		<Container size="narrow">
+			<header class="mb-10 border-b border-gray-100 pb-8">
+				{
+					tags.length > 0 && (
+						<div class="mb-4 flex flex-wrap gap-2">
+							{tags.map((tag) => (
+								<span class="rounded-full bg-tuki-purple/10 px-3 py-1 text-xs font-medium text-tuki-purple">
+									{tag}
+								</span>
+							))}
+						</div>
+					)
+				}
+				<h1 class="text-4xl font-bold text-gray-900">{title}</h1>
+				<p class="mt-4 text-lg text-gray-600">{description}</p>
+				<p class="mt-4 text-sm text-gray-500">
+					{formatDate(publishedAt)} · {author}
+				</p>
+			</header>
+
+			<div class="content-markdown max-w-none">
+				<slot />
+			</div>
+		</Container>
+	</article>
+
+	<LeadCaptureSection title="Quer ajuda para planejar sua viagem?" />
+</BaseLayout>

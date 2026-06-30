@@ -1,0 +1,28 @@
+---
+import { getCollection, render } from 'astro:content';
+import BlogLayout from '../../layouts/BlogLayout.astro';
+
+export async function getStaticPaths() {
+	const entries = await getCollection('blog');
+	return entries.map((entry) => ({
+		params: { slug: entry.id },
+		props: { entry },
+	}));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const { seo, publishedAt, author, tags, noindex, description } = entry.data;
+---
+
+<BlogLayout
+	title={seo.title}
+	description={seo.description || description}
+	path={`/blog/${entry.id}`}
+	publishedAt={publishedAt}
+	author={author}
+	tags={tags}
+	noindex={noindex}
+>
+	<Content />
+</BlogLayout>

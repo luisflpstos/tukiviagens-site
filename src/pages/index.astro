@@ -1,17 +1,54 @@
 ---
-import '../styles/global.css';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/sections/Hero.astro';
+import Benefits from '../components/sections/Benefits.astro';
+import DestinationsGrid from '../components/sections/DestinationsGrid.astro';
+import HotelsGrid from '../components/sections/HotelsGrid.astro';
+import WhyTuki from '../components/sections/WhyTuki.astro';
+import MascotSection from '../components/sections/MascotSection.astro';
+import Testimonials from '../components/sections/Testimonials.astro';
+import PartnersStrip from '../components/sections/PartnersStrip.astro';
+import CtaSection from '../components/sections/CtaSection.astro';
+import { getCollection } from 'astro:content';
+import { SITE } from '../lib/constants';
+
+const hoteis = await getCollection('hoteis');
+const resorts = await getCollection('resorts');
+
+const properties = [
+	...hoteis.map((entry) => ({
+		id: entry.id,
+		title: entry.data.title,
+		cidade: entry.data.cidade,
+		estado: entry.data.estado,
+		categoria: entry.data.categoria,
+		href: `/hoteis/${entry.id}`,
+		price: 'Consulte',
+	})),
+	...resorts.map((entry) => ({
+		id: entry.id,
+		title: entry.data.title,
+		cidade: entry.data.cidade,
+		estado: entry.data.estado,
+		categoria: entry.data.categoria,
+		href: `/resorts/${entry.id}`,
+		price: 'Consulte',
+	})),
+];
 ---
 
-<html lang="pt-BR">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout
+	title={SITE.name}
+	description="Viagens com curadoria, atendimento humano e pagamento seguro. Hotéis, resorts e destinos selecionados a dedo pela Tuki Viagens."
+	path="/"
+>
+	<Hero />
+	<Benefits />
+	<DestinationsGrid />
+	<HotelsGrid items={properties} />
+	<WhyTuki />
+	<MascotSection />
+	<Testimonials />
+	<PartnersStrip />
+	<CtaSection />
+</BaseLayout>

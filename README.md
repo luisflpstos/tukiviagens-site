@@ -18,4 +18,4 @@ pnpm build
 pnpm preview
 ```
 
-Planejamento completo: [planejamento-mvp-astro-vercel.md](./planejamento-mvp-astro-vercel.md)
+Planejamento completo: [planejamento-mvp-astro-vercel.md](./docs/planejamento-mvp-astro-vercel.md)

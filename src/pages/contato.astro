@@ -1,0 +1,73 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Container from '../components/common/Container.astro';
+import LeadForm from '../components/common/LeadForm.astro';
+import WhatsAppButton from '../components/common/WhatsAppButton.astro';
+import { SITE } from '../lib/constants';
+import { buildWhatsAppUrl } from '../lib/seo';
+---
+
+<BaseLayout
+	title="Contato"
+	description="Entre em contato com a Tuki Viagens. Atendimento humano para planejar sua viagem com hotéis e resorts selecionados."
+	path="/contato"
+>
+	<section class="tuki-gradient-purple section-padding text-white">
+		<Container>
+			<h1 class="text-4xl font-bold md:text-5xl">Fale com a Tuki</h1>
+			<p class="mt-4 max-w-xl text-lg text-white/80">
+				Estamos prontos para ajudar você a encontrar o hotel ou resort ideal para sua próxima viagem.
+			</p>
+		</Container>
+	</section>
+
+	<section class="section-padding">
+		<Container>
+			<div class="grid gap-12 lg:grid-cols-2">
+				<div>
+					<h2 class="text-2xl font-bold text-gray-900">Canais de atendimento</h2>
+					<ul class="mt-6 space-y-4 text-gray-700">
+						<li>
+							<strong>Telefone:</strong>
+							<a href={`tel:+${SITE.phone}`} class="text-tuki-purple hover:underline">
+								{SITE.phoneDisplay}
+							</a>
+						</li>
+						<li>
+							<strong>E-mail:</strong>
+							<a href={`mailto:${SITE.email}`} class="text-tuki-purple hover:underline">
+								{SITE.email}
+							</a>
+						</li>
+						<li>
+							<strong>WhatsApp:</strong>
+							<a
+								href={buildWhatsAppUrl(SITE.phone, 'Olá! Gostaria de falar com a Tuki Viagens.')}
+								class="text-tuki-purple hover:underline"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								Enviar mensagem
+							</a>
+						</li>
+					</ul>
+					<div class="mt-8">
+						<WhatsAppButton
+							phone={SITE.phone}
+							message="Olá! Gostaria de falar com a Tuki Viagens."
+							label="Chamar no WhatsApp"
+						/>
+					</div>
+				</div>
+
+				<div class="rounded-3xl border border-gray-100 bg-gray-50 p-8">
+					<h2 class="text-2xl font-bold text-gray-900">Ou preencha o formulário</h2>
+					<p class="mt-2 text-gray-600">Retornamos o mais rápido possível.</p>
+					<div class="mt-8">
+						<LeadForm formId="contato-lead-form" submitLabel="Enviar mensagem" />
+					</div>
+				</div>
+			</div>
+		</Container>
+	</section>
+</BaseLayout>

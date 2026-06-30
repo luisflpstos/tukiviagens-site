@@ -1,0 +1,88 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Container from '../components/common/Container.astro';
+import Button from '../components/common/Button.astro';
+import BenefitsList from '../components/sections/BenefitsList.astro';
+import Faq from '../components/sections/Faq.astro';
+import LeadCaptureSection from '../components/sections/LeadCaptureSection.astro';
+import { formatLocation } from '../lib/formatters';
+import { buildWhatsAppUrl } from '../lib/seo';
+
+interface Props {
+	title: string;
+	description: string;
+	path: string;
+	headline: string;
+	cidade: string;
+	estado: string;
+	categoria: string;
+	amenities: string[];
+	faq: { question: string; answer: string }[];
+	whatsapp: string;
+	cta: string;
+}
+
+const {
+	title,
+	description,
+	path,
+	headline,
+	cidade,
+	estado,
+	categoria,
+	amenities,
+	faq,
+	whatsapp,
+	cta,
+} = Astro.props;
+
+const jsonLd = {
+	'@context': 'https://schema.org',
+	'@type': 'Hotel',
+	name: title,
+	description,
+	address: {
+		'@type': 'PostalAddress',
+		addressLocality: cidade,
+		addressRegion: estado,
+		addressCountry: 'BR',
+	},
+};
+---
+
+<BaseLayout title={title} description={description} path={path} jsonLd={jsonLd}>
+	<section class="tuki-gradient-purple section-padding text-white">
+		<Container>
+			<p class="text-sm font-medium uppercase tracking-wide text-tuki-orange">{categoria}</p>
+			<h1 class="mt-2 text-4xl font-bold md:text-5xl">{headline}</h1>
+			<p class="mt-2 text-white/80">{formatLocation(cidade, estado)}</p>
+			<div class="mt-8 flex flex-wrap gap-4">
+				<Button href="#formulario" variant="primary" size="lg">{cta}</Button>
+				<Button
+					href={buildWhatsAppUrl(whatsapp, `Olá! Vi a página do ${title} e gostaria de consultar hospedagem.`)}
+					variant="outline"
+					size="lg"
+				>
+					WhatsApp
+				</Button>
+			</div>
+		</Container>
+	</section>
+
+	<article class="section-padding">
+		<Container size="narrow">
+			<div class="content-markdown max-w-none">
+				<slot />
+			</div>
+		</Container>
+	</article>
+
+	<BenefitsList items={amenities} title="Comodidades" />
+	<Faq items={faq} />
+	<LeadCaptureSection
+		formId="hotel-lead-form"
+		hotel={title}
+		destination={formatLocation(cidade, estado)}
+		title="Consulte hospedagem"
+	/>
+</BaseLayout>

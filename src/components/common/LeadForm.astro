@@ -1,0 +1,134 @@
+---
+interface Props {
+	formId?: string;
+	hotel?: string;
+	resort?: string;
+	destination?: string;
+	campaign?: string;
+	submitLabel?: string;
+	showMessage?: boolean;
+	showDate?: boolean;
+	showGuests?: boolean;
+}
+
+const {
+	formId = 'lead-form',
+	hotel,
+	resort,
+	destination,
+	campaign,
+	submitLabel = 'Enviar',
+	showMessage = true,
+	showDate = true,
+	showGuests = true,
+} = Astro.props;
+
+const hiddenFields = [
+	'utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term',
+	'gclid', 'gbraid', 'wbraid', 'fbclid', 'msclkid',
+	'referrer', 'landing_page', 'first_landing_page', 'current_url', 'page_title',
+];
+---
+
+<form id={formId} class="space-y-4" novalidate>
+	<div class="grid gap-4 sm:grid-cols-2">
+		<div class="sm:col-span-2">
+			<label for={`${formId}-nome`} class="mb-1 block text-sm font-medium text-gray-700">Nome *</label>
+			<input
+				id={`${formId}-nome`}
+				name="nome"
+				type="text"
+				required
+				autocomplete="name"
+				class="w-full rounded-xl border border-gray-200 px-4 py-3 focus:border-tuki-purple focus:outline-none focus:ring-2 focus:ring-tuki-purple/20"
+				placeholder="Seu nome completo"
+			/>
+		</div>
+
+		<div>
+			<label for={`${formId}-telefone`} class="mb-1 block text-sm font-medium text-gray-700">Telefone *</label>
+			<input
+				id={`${formId}-telefone`}
+				name="telefone"
+				type="tel"
+				required
+				autocomplete="tel"
+				class="w-full rounded-xl border border-gray-200 px-4 py-3 focus:border-tuki-purple focus:outline-none focus:ring-2 focus:ring-tuki-purple/20"
+				placeholder="(00) 00000-0000"
+			/>
+		</div>
+
+		{
+			showGuests && (
+				<div>
+					<label for={`${formId}-pessoas`} class="mb-1 block text-sm font-medium text-gray-700">
+						Pessoas
+					</label>
+					<input
+						id={`${formId}-pessoas`}
+						name="pessoas"
+						type="number"
+						min="1"
+						class="w-full rounded-xl border border-gray-200 px-4 py-3 focus:border-tuki-purple focus:outline-none focus:ring-2 focus:ring-tuki-purple/20"
+						placeholder="2"
+					/>
+				</div>
+			)
+		}
+
+		{
+			showDate && (
+				<div class="sm:col-span-2">
+					<label for={`${formId}-data`} class="mb-1 block text-sm font-medium text-gray-700">
+						Data desejada
+					</label>
+					<input
+						id={`${formId}-data`}
+						name="data"
+						type="date"
+						class="w-full rounded-xl border border-gray-200 px-4 py-3 focus:border-tuki-purple focus:outline-none focus:ring-2 focus:ring-tuki-purple/20"
+					/>
+				</div>
+			)
+		}
+
+		{
+			showMessage && (
+				<div class="sm:col-span-2">
+					<label for={`${formId}-mensagem`} class="mb-1 block text-sm font-medium text-gray-700">
+						Mensagem
+					</label>
+					<textarea
+						id={`${formId}-mensagem`}
+						name="mensagem"
+						rows="3"
+						class="w-full rounded-xl border border-gray-200 px-4 py-3 focus:border-tuki-purple focus:outline-none focus:ring-2 focus:ring-tuki-purple/20"
+						placeholder="Conte-nos sobre sua viagem..."
+					/>
+				</div>
+			)
+		}
+	</div>
+
+	{hiddenFields.map((name) => <input type="hidden" name={name} />)}
+	{hotel && <input type="hidden" name="hotel" value={hotel} />}
+	{resort && <input type="hidden" name="resort" value={resort} />}
+	{destination && <input type="hidden" name="destination" value={destination} />}
+	{campaign && <input type="hidden" name="campaign" value={campaign} />}
+	<input type="hidden" name="landing_slug" value={Astro.url.pathname} />
+
+	<button
+		type="submit"
+		data-default-label={submitLabel}
+		class="w-full rounded-full bg-tuki-orange px-6 py-3 font-semibold text-white transition hover:bg-tuki-orange-dark disabled:opacity-60"
+	>
+		{submitLabel}
+	</button>
+
+	<p data-form-status class="min-h-5 text-center text-sm" role="status" aria-live="polite"></p>
+</form>
+
+<script define:vars={{ formId, hotel, resort, destination, campaign }}>
+	import { initLeadForm } from '../../scripts/lead-form';
+	initLeadForm({ formId, hotel, resort, destination, campaign });
+</script>

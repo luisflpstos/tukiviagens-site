@@ -1,0 +1,43 @@
+---
+import Container from '../common/Container.astro';
+import LeadForm from '../common/LeadForm.astro';
+
+interface Props {
+	title?: string;
+	subtitle?: string;
+	formId?: string;
+	hotel?: string;
+	resort?: string;
+	destination?: string;
+	campaign?: string;
+}
+
+const {
+	title = 'Consulte disponibilidade',
+	subtitle = 'Preencha o formulário e nossa equipe retorna rapidamente.',
+	formId = 'lead-capture-form',
+	hotel,
+	resort,
+	destination,
+	campaign,
+} = Astro.props;
+---
+
+<section class="section-padding bg-white">
+	<Container size="narrow">
+		<div class="rounded-3xl border border-gray-100 bg-gray-50 p-8 md:p-10">
+			<h2 class="text-2xl font-bold text-gray-900">{title}</h2>
+			<p class="mt-2 text-gray-600">{subtitle}</p>
+			<div class="mt-8">
+				<LeadForm
+					formId={formId}
+					hotel={hotel}
+					resort={resort}
+					destination={destination}
+					campaign={campaign}
+					submitLabel="Consultar disponibilidade"
+				/>
+			</div>
+		</div>
+	</Container>
+</section>
