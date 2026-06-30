@@ -148,9 +148,9 @@ export const FOOTER_DESTINATIONS = [
 ] as const;
 
 export const HERO_STATS = [
-	{ value: '+12 mil', label: 'viagens feitas' },
+	{ value: '+5 mil', label: 'viagens realizadas' },
 	{ value: '120+', label: 'hotéis parceiros' },
-	{ value: '24h', label: 'atendimento humano' },
+	{ value: '100%', label: 'pagamento seguro' },
 ] as const;
 
 export const TRUST_ITEMS = [
