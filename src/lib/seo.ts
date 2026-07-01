@@ -1,5 +1,8 @@
 import { SITE, BRAND } from './constants';
 
+/** When true, blocks all search engine indexing (robots.txt, meta, X-Robots-Tag). */
+export const BLOCK_INDEXING = import.meta.env.PUBLIC_BLOCK_INDEXING === 'true';
+
 export interface SeoProps {
 	title: string;
 	description: string;

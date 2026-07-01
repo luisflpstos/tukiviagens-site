@@ -1,18 +1,19 @@
 ---
-import { buildSeo, type SeoProps } from '../../lib/seo';
+import { BLOCK_INDEXING, buildSeo, type SeoProps } from '../../lib/seo';
 
 interface Props extends SeoProps {
 	jsonLd?: Record<string, unknown> | Record<string, unknown>[];
 }
 
 const { title, description, path, image, noindex, type, jsonLd } = Astro.props;
-const seo = buildSeo({ title, description, path, image, noindex, type });
+const shouldNoindex = BLOCK_INDEXING || noindex;
+const seo = buildSeo({ title, description, path, image, noindex: shouldNoindex, type });
 ---
 
 <title>{seo.title}</title>
 <meta name="description" content={seo.description} />
 <link rel="canonical" href={seo.canonical} />
-{noindex && <meta name="robots" content="noindex, nofollow" />}
+{shouldNoindex && <meta name="robots" content="noindex, nofollow" />}
 
 <meta property="og:type" content={type ?? 'website'} />
 <meta property="og:title" content={seo.title} />

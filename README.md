@@ -30,6 +30,7 @@ Copie `.env.example` para `.env` e ajuste os valores:
 | `PUBLIC_SITE_URL` | URL canônica do site (SEO, sitemap, links absolutos) |
 | `PUBLIC_LEAD_WEBHOOK_URL` | Webhook para envio de leads do formulário |
 | `PUBLIC_GTM_ID` | ID do Google Tag Manager (opcional) |
+| `PUBLIC_BLOCK_INDEXING` | `true` bloqueia indexação (meta noindex, header X-Robots-Tag, sem sitemap). O `public/robots.txt` também deve estar com `Disallow: /` enquanto o bloqueio estiver ativo. |
 
 ## Estrutura do projeto
 

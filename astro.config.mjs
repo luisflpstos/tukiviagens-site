@@ -4,6 +4,8 @@ import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
 
+const blockIndexing = process.env.PUBLIC_BLOCK_INDEXING === 'true';
+
 // https://astro.build/config
 export default defineConfig({
   site: process.env.PUBLIC_SITE_URL ?? 'http://localhost:4321',
@@ -14,9 +16,13 @@ export default defineConfig({
   },
 
   integrations: [
-    sitemap({
-      filter: (page) => !page.includes('/lp/'),
-    }),
+    ...(blockIndexing
+      ? []
+      : [
+          sitemap({
+            filter: (page) => !page.includes('/lp/'),
+          }),
+        ]),
   ],
 
   redirects: {
