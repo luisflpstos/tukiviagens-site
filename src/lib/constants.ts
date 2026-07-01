@@ -158,14 +158,20 @@ export const HOW_IT_WORKS = [
 	{
 		title: 'Conte seu plano',
 		description: 'WhatsApp ou formulário — sem burocracia.',
+		icon: TUKI_ICONS.contePlano,
+		iconAlt: 'Conte seu plano de viagem',
 	},
 	{
 		title: 'Receba opções',
 		description: 'Indicamos hotéis que conhecemos e confiamos.',
+		icon: TUKI_ICONS.recebaOpcoes,
+		iconAlt: 'Receba opções de hotéis selecionados',
 	},
 	{
 		title: 'Reserve com segurança',
 		description: 'Pagamento protegido e suporte até a viagem.',
+		icon: TUKI_ICONS.viajarSeguranca,
+		iconAlt: 'Reserve com pagamento protegido',
 	},
 ] as const;
 

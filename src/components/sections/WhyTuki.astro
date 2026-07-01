@@ -31,8 +31,13 @@ import { WHY_TUKI_BENEFITS, WHY_TUKI_CARDS, WHY_TUKI_INTRO, TRUST_ITEMS } from '
 				{
 					WHY_TUKI_CARDS.map((card) => (
 						<div class="tuki-card-ref bg-white p-5 transition hover:-translate-y-0.5 hover:shadow-md">
-							<div class="mb-4 flex h-19 w-19 items-center justify-center rounded-xl bg-tuki-lavender/80 p-1.5">
-								<TukiIcon src={card.icon} alt={card.iconAlt} size="md" />
+							<div class="mb-4 flex h-[7.125rem] w-[7.125rem] items-center justify-center rounded-xl bg-tuki-lavender/80 p-2">
+								<TukiIcon
+									src={card.icon}
+									alt={card.iconAlt}
+									size="md"
+									class="h-[5.625rem] w-[5.625rem]"
+								/>
 							</div>
 							<h3 class="tuki-type-title text-tuki-ink">{card.title}</h3>
 							<p class="tuki-type-small mt-2 text-tuki-muted">{card.description}</p>

@@ -25,7 +25,9 @@ export const TUKI_ICONS = {
 	seguranca: '/images/icons/icone-seguranca-tuki-viagens.png',
 	pacote: '/images/icons/icone-pacote-completo-tuki-viagens.png',
 	calendario: '/images/icons/icone-calendario-reservas-tuki-viagens.png',
-
+	contePlano: '/images/icons/icone-conte-planos-tuki-viajens.png',
+	recebaOpcoes: '/images/icons/icone-receba-opcoes-tuki-viajens.png',
+	viajarSeguranca: '/images/icons/icone-viajar-com-seguranca-tuki-viajens.png',
 } as const;
 
 export type TukiIconKey = keyof typeof TUKI_ICONS;
@@ -53,6 +55,9 @@ const MARQUEE_ICON_ALTS: Record<TukiIconKey, string> = {
 	seguranca: 'Segurança',
 	pacote: 'Pacote completo',
 	calendario: 'Calendário',
+	contePlano: 'Conte seu plano de viagem',
+	recebaOpcoes: 'Receba opções de hotéis',
+	viajarSeguranca: 'Viaje com segurança',
 };
 
 /** Todos os ícones da marca para a faixa marquee da home. */
