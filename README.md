@@ -10,7 +10,7 @@ Site estático em Astro para a agência Tuki Viagens: home institucional, hubs d
 - **@astrojs/sitemap** — sitemap automático (landing pages em `/lp/` ficam de fora)
 - **Deploy:** Vercel (via GitHub)
 
-Requisito: Node.js **≥ 22.12.0**
+Requisito: Node.js **22.x** (`.nvmrc`: `22.12.0`)
 
 ## Comandos
 
@@ -65,14 +65,36 @@ Silos de conteúdo: **Olímpia**, **Rio Quente**, **Nordeste**, **Pacotes** e **
 ## Deploy (Vercel)
 
 1. Importe o repositório [luisflpstos/tukiviagens-site](https://github.com/luisflpstos/tukiviagens-site) na [Vercel](https://vercel.com).
-2. A Vercel detecta Astro automaticamente. Confirme:
+2. O `vercel.json` já define build e output. No painel da Vercel, confirme:
+   - **Framework Preset:** Astro
    - **Build Command:** `pnpm build`
    - **Output Directory:** `dist`
-   - **Node.js:** 22.x (`.nvmrc` e `engines` no `package.json`)
-3. Configure as variáveis de ambiente no painel da Vercel (`PUBLIC_SITE_URL` é obrigatória em produção).
+   - **Install Command:** `pnpm install`
+   - **Node.js:** 22.x
+   - **Start Command:** deixe vazio (site estático, sem `pnpm preview`)
+3. Configure as variáveis de ambiente (`PUBLIC_SITE_URL` é obrigatória em produção).
 4. Cada push em `main` dispara deploy automático.
 
-O site é gerado estaticamente em `dist/`. Redirects adicionais ficam em `vercel.json`.
+O site é gerado estaticamente em `dist/`.
+
+### Domínio na Cloudflare
+
+Com o domínio gerenciado na Cloudflare e o site na Vercel:
+
+1. Em **Vercel → Project → Settings → Domains**, adicione o domínio (ex.: `tukiviagens.com.br` e `www`).
+2. Na **Cloudflare → DNS**, use os registros que a Vercel indicar. Exemplo típico:
+
+| Tipo | Nome | Conteúdo | Proxy |
+|---|---|---|---|
+| `A` | `@` | `76.76.21.21` | DNS only (cinza) no primeiro deploy |
+| `CNAME` | `www` | `cname.vercel-dns.com` | DNS only (cinza) no primeiro deploy |
+
+3. Em **Cloudflare → SSL/TLS**, use **Full (strict)**. Evite "Flexible" — causa loop de redirect com a Vercel.
+4. Aguarde a Vercel validar o domínio (status "Valid").
+5. Depois de validado, pode ligar o proxy (nuvem laranja) se quiser CDN da Cloudflare.
+
+Se o deploy falhar no painel da Vercel, abra o log completo e procure a linha após `pnpm build` — a instalação de dependências costuma passar; o erro real aparece no build ou na configuração do projeto (ex.: Start Command do Railway ainda preenchido).
+
 
 ## Documentação
 

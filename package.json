@@ -2,8 +2,9 @@
   "name": "tukiviagens-site",
   "type": "module",
   "version": "0.0.1",
+  "packageManager": "pnpm@10.12.4",
   "engines": {
-    "node": ">=22.12.0"
+    "node": "22.x"
   },
   "scripts": {
     "dev": "astro dev",
