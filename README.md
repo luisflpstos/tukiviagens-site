@@ -8,7 +8,7 @@ Site estático em Astro para a agência Tuki Viagens: home institucional, hubs d
 - **Tailwind CSS 4** (via `@tailwindcss/vite`)
 - **Content Collections** (Markdown + Zod)
 - **@astrojs/sitemap** — sitemap automático (landing pages em `/lp/` ficam de fora)
-- **Deploy:** Railway
+- **Deploy:** Vercel (via GitHub)
 
 Requisito: Node.js **≥ 22.12.0**
 
@@ -62,15 +62,17 @@ public/               # Assets estáticos (logotipo, imagens, favicon)
 
 Silos de conteúdo: **Olímpia**, **Rio Quente**, **Nordeste**, **Pacotes** e **Agência**.
 
-## Deploy (Railway)
+## Deploy (Vercel)
 
-1. Conecte o repositório no Railway.
-2. Configure as variáveis de ambiente (`PUBLIC_SITE_URL` é obrigatória em produção).
-3. Comandos de build:
-   - **Build:** `pnpm build`
-   - **Start:** `pnpm preview --host 0.0.0.0 --port $PORT`
+1. Importe o repositório [luisflpstos/tukiviagens-site](https://github.com/luisflpstos/tukiviagens-site) na [Vercel](https://vercel.com).
+2. A Vercel detecta Astro automaticamente. Confirme:
+   - **Build Command:** `pnpm build`
+   - **Output Directory:** `dist`
+   - **Node.js:** 22.x (`.nvmrc` e `engines` no `package.json`)
+3. Configure as variáveis de ambiente no painel da Vercel (`PUBLIC_SITE_URL` é obrigatória em produção).
+4. Cada push em `main` dispara deploy automático.
 
-O site é gerado estaticamente em `dist/`.
+O site é gerado estaticamente em `dist/`. Redirects adicionais ficam em `vercel.json`.
 
 ## Documentação
 

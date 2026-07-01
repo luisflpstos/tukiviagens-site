@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/destinos/olimpia",
+      "destination": "/olimpia/",
+      "permanent": true
+    },
+    {
+      "source": "/destinos/olimpia/",
+      "destination": "/olimpia/",
+      "permanent": true
+    }
+  ]
+}
