@@ -5,6 +5,7 @@ import Header from '../components/common/Header.astro';
 import Footer from '../components/common/Footer.astro';
 import { BRAND } from '../lib/constants';
 import type { SeoProps } from '../lib/seo';
+import Analytics from '@vercel/analytics/astro'
 
 interface Props extends SeoProps {
 	showHeader?: boolean;
@@ -85,3 +86,4 @@ const gtmId = import.meta.env.PUBLIC_GTM_ID;
 		</script>
 	</body>
 </html>
+<Analytics/>
