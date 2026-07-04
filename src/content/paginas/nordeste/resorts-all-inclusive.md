@@ -3,8 +3,8 @@ title: "Resorts all inclusive no Nordeste"
 pageType: "venda"
 silo: "nordeste"
 
-headline: "Resorts all inclusive no Nordeste: quando vale a pena e onde encontrar oferta real"
-description: "Compare resorts e hotéis all inclusive em Maragogi, Porto de Galinhas, Bahia e Maceió. Escolha Tuki só indica regime completo quando a oferta é verdadeira."
+headline: "Resorts all inclusive no Nordeste: quando vale a pena e onde encontrar"
+description: "Compare resorts e hotéis all inclusive em Maragogi, Porto de Galinhas, Bahia e Maceió. Cotação rápida com escolha Tuki e preço justo."
 
 highlights:
   - Maragogi e Salinas — referência em all inclusive no litoral alagoano
@@ -25,26 +25,26 @@ faq:
   - question: "Qual o melhor resort all inclusive no Nordeste para família?"
     answer: "Maragogi concentra as ofertas mais consolidadas — Salinas Maragogi é referência para famílias com crianças. Na Bahia, Costa do Sauípe e Praia do Forte têm resorts premium com regime integral. Informe datas, idades das crianças e orçamento para uma indicação personalizada."
   - question: "Resort all inclusive no Nordeste é bom para crianças?"
-    answer: "Sim, quando o resort tem kids club, piscinas rasas e refeições inclusas de verdade. All inclusive simplifica o dia a dia com crianças pequenas — menos deslocamento e menos surpresa na conta. Validamos o que está incluso antes de cotar."
+    answer: "Sim, quando o resort tem kids club, piscinas rasas e refeições inclusas. All inclusive simplifica o dia a dia com crianças pequenas — menos deslocamento e menos surpresa na conta. Explicamos o que está incluso antes de cotar."
   - question: "Quando vale a pena escolher all inclusive no Nordeste?"
-    answer: "Vale para viagens de uma semana ou mais, especialmente em família ou grupo. Quando refeições, bebidas e lazer estão realmente inclusos, o planejamento fica mais simples. Para estadias curtas ou casal que prefere explorar restaurantes locais, meia pensão ou café da manhã pode ser melhor."
+    answer: "Vale para viagens de uma semana ou mais, especialmente em família ou grupo. Quando refeições, bebidas e lazer estão inclusos, o planejamento fica mais simples. Para estadias curtas ou casal que prefere explorar restaurantes locais, meia pensão ou café da manhã pode ser melhor."
   - question: "Quando all inclusive no Nordeste não vale a pena?"
     answer: "Quando o hotel anuncia all inclusive mas cobra extras (bebidas premium, restaurantes à la carte, excursões). Também não compensa se você pretende sair do resort todos os dias para conhecer a região. Nesses casos, indicamos hotéis com pensão parcial ou sem regime."
   - question: "Como comparar resorts all inclusive no Nordeste?"
-    answer: "Critérios principais: o que está incluso de fato (refeições, bebidas, kids club), distância da praia, estrutura para crianças, política de cancelamento e preço por noite para seu perfil. A Tuki compara opções reais para suas datas — sem prometer regime que o hotel não oferece."
+    answer: "Critérios principais: o que está incluso (refeições, bebidas, kids club), distância da praia, estrutura para crianças, política de cancelamento e preço por noite para seu perfil. A Tuki compara opções para suas datas e envia cotação consultiva com transparência."
 
 seo:
   title: "Resorts all inclusive no Nordeste | Maragogi, PE, BA e AL"
-  description: "Resorts e hotéis all inclusive no Nordeste com escolha Tuki. Maragogi, Porto de Galinhas, Bahia e Maceió — só indicamos quando a oferta é real."
+  description: "Resorts e hotéis all inclusive no Nordeste com escolha Tuki. Maragogi, Porto de Galinhas, Bahia e Maceió — cotação rápida, pagamento seguro e preço justo."
 ---
 
 ## O que buscar em um resort all inclusive no Nordeste?
 
-All inclusive no Nordeste **só faz sentido quando a oferta é real** — refeições, bebidas e lazer inclusos conforme anunciado. Muitos hotéis usam o termo de forma flexível; nossas escolhas validam o regime antes de cotar.
+All inclusive no Nordeste reúne refeições, bebidas e lazer inclusos conforme o regime de cada hotel. Muitos resorts usam o termo de forma flexível; nossas escolhas comparam o que está incluso antes de cotar.
 
 Para famílias e viagens de uma semana ou mais, o regime integral costuma simplificar refeições, lazer e orçamento. Para estadias curtas ou quem prefere explorar a gastronomia local, meia pensão ou café da manhã pode ser mais vantajoso.
 
-## Destinos com all inclusive real
+## Destinos com all inclusive
 
 ### Maragogi (AL)
 
@@ -52,7 +52,7 @@ Maragogi é o destino com **maior concentração de resorts all inclusive** no N
 
 ### Porto de Galinhas (PE)
 
-Porto de Galinhas tem resorts consolidados, mas **nem todos operam all inclusive de fato** — muitos oferecem meia pensão ou café da manhã. Antes de cotar, comparamos o que cada propriedade inclui e indicamos a opção que corresponde à expectativa do viajante.
+Porto de Galinhas tem resorts consolidados, mas **nem todos operam all inclusive** — muitos oferecem meia pensão ou café da manhã. Antes de cotar, comparamos o que cada propriedade inclui e indicamos a opção que corresponde à expectativa do viajante.
 
 ### Bahia — Praia do Forte e Costa do Sauípe
 
@@ -64,7 +64,7 @@ Maceió tem hotéis e resorts beira-mar de qualidade, mas **all inclusive é exc
 
 ## Comparativo rápido
 
-| Destino | All inclusive real | Perfil ideal | Observação |
+| Destino | All inclusive | Perfil ideal | Observação |
 | --- | --- | --- | --- |
 | Maragogi | Sim — referência | Família, crianças | Salinas e resorts consolidados |
 | Porto de Galinhas | Parcial — verificar | Casal, família | Comparar regime antes de reservar |
@@ -73,10 +73,10 @@ Maceió tem hotéis e resorts beira-mar de qualidade, mas **all inclusive é exc
 
 ## Quando vale e quando não vale
 
-**Vale a pena** quando: viagem de 5+ noites, família com crianças, preferência por ficar no resort, oferta com refeições e bebidas realmente inclusas.
+**Vale a pena** quando: viagem de 5+ noites, família com crianças, preferência por ficar no resort, oferta com refeições e bebidas inclusas.
 
 **Não vale a pena** quando: estadia curta (2–3 noites), intenção de explorar restaurantes e passeios fora do hotel, ou quando o all inclusive cobra extras que não estavam claros na reserva.
 
 ## Como cotar com a Tuki
 
-Informe destino preferido (Maragogi, Porto de Galinhas, Bahia ou Maceió), datas, adultos, crianças e idades. Nossa equipe compara resorts disponíveis, explica o que está incluso em cada opção e envia cotação consultiva — sem surpresas na reserva.
+Informe destino preferido (Maragogi, Porto de Galinhas, Bahia ou Maceió), datas, adultos, crianças e idades. Nossa equipe compara resorts disponíveis, explica o que está incluso em cada opção e envia cotação consultiva — com segurança, rapidez e preço justo.

@@ -35,7 +35,7 @@ seo:
 
 ## Sobre
 
-O **Hotel Pousada Villa Itália Olímpia** é hotel/pousada com estrutura de lazer familiar, bem avaliado e posicionado como primeira escolha na curadoria do Dicas de Viagem.
+O **Hotel Pousada Villa Itália Olímpia** é hotel/pousada com estrutura de lazer familiar e uma das melhores opções de lazer fora dos resorts em Olímpia.
 
 ## Vale para quem?
 

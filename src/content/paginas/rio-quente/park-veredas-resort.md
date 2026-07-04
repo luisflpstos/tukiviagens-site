@@ -33,7 +33,7 @@ seo:
 
 ## Sobre
 
-O **Park Veredas Resort** é apart-hotel/condomínio com estrutura de resort fora do complexo, bastante presente em Booking e guias.
+O **Park Veredas Resort** é apart-hotel/condomínio com estrutura de resort fora do complexo.
 
 ## Vale para quem?
 
@@ -43,19 +43,19 @@ O **Park Veredas Resort** é apart-hotel/condomínio com estrutura de resort for
 
 ## Estrutura e diferenciais
 
-- Apartamentos com acessibilidade segundo Dicas de Viagem
+- Apartamentos com acessibilidade
 - Espaço kids, restaurante, bar e recepção 24h
 - Piscina coberta e ao ar livre, academia e sauna
 - Máquinas de snacks e bebidas
-- Parque aquático, spa com massagens e suítes família para até 4 pessoas segundo Quero Viajar Mais
+- Parque aquático, spa com massagens e suítes família para até 4 pessoas
 
 ## Localização
 
-Fora do complexo, cerca de **900 m do Hot Park** segundo Dicas de Viagem.
+Fora do complexo, cerca de **900 m do Hot Park**.
 
 ## Dados de referência
 
-Dicas informa nota **8,5** em **545 avaliações** e diária desde **R$ 315**. Booking atual listou Park Veredas Resort com **8,4** em **574 avaliações**, e unidades específicas com notas acima de 9.
+Nota **8,5** em **545 avaliações** e diária desde **R$ 315**. Em outra base de avaliações, **8,4** em **574 avaliações**; unidades específicas com notas acima de 9.
 
 ## Comparativo com outras opções
 

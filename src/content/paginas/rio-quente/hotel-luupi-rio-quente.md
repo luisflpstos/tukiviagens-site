@@ -24,7 +24,7 @@ faq:
   - question: "O Hotel Luupi inclui Hot Park?"
     answer: "Sim. Ingressos do Hot Park e Parque das Fontes incluídos, com transfer gratuito 24h."
   - question: "O Hotel Luupi tem meia pensão?"
-    answer: "Sim. Jantar no Restaurante Casa de Cora em pacote de meia pensão segundo Central e Melhores Destinos."
+    answer: "Sim. Jantar no Restaurante Casa de Cora em pacote de meia pensão."
 
 seo:
   title: "Hotel Luupi Rio Quente | Famílias grandes"
@@ -48,15 +48,15 @@ O **Hotel Luupi, Rio Quente Resorts** é hotel oficial voltado a famílias e gru
 - Spa, piscina, café da manhã, restaurante e sauna
 - Hidromassagem e apartamentos duplex em dois ambientes
 - Piscina própria de águas quentes
-- Jantar no Restaurante Casa de Cora em pacote de meia pensão segundo Central/Melhores Destinos
+- Jantar no Restaurante Casa de Cora em pacote de meia pensão
 
 ## Localização
 
-Dicas cita **900 m do Hot Park** e 2,4 km do Parque das Fontes. Central Rio Quente cita cerca de **800 m da entrada** com transfer gratuito 24h.
+**900 m do Hot Park** e 2,4 km do Parque das Fontes, a cerca de **800 m da entrada** com transfer gratuito 24h.
 
 ## Dados de referência
 
-Dicas informa nota **8,3** em **343 avaliações** e diária desde **R$ 1.200**. Booking resorts listou **8,4** em **275 avaliações**.
+Nota **8,3** em **343 avaliações** e diária desde **R$ 1.200**. Em outra base de avaliações, **8,4** em **275 avaliações**.
 
 ## Comparativo com outras opções
 

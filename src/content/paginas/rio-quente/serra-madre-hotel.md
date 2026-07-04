@@ -52,11 +52,11 @@ O **Serra Madre Hotel** é hotel fora do complexo com boa reputação e proposta
 
 ## Localização
 
-Fora do complexo, cerca de **650 m do Hot Park**, 2 km do Parque das Fontes e 25,6 km do diRoma Acqua Park segundo o Dicas de Viagem.
+Fora do complexo, cerca de **650 m do Hot Park**, 2 km do Parque das Fontes e 25,6 km do diRoma Acqua Park.
 
 ## Dados de referência
 
-Dicas de Viagem informa nota **8,8** em **800 avaliações** e diária desde **R$ 250**. Booking atual listou **8,7** em **743 avaliações**.
+Nota **8,8** em **800 avaliações** e diária desde **R$ 250**. Em outra base de avaliações, **8,7** em **743 avaliações**.
 
 ## Comparativo com outras opções
 

@@ -31,7 +31,7 @@ seo:
 
 ## Sobre
 
-O **Thermas Park Resort & Spa** é resort da rede Hot Beach com proposta mais intimista, chalés e serviço de padrão superior. No Booking aparece como Hot Beach Raízes.
+O **Thermas Park Resort & Spa** é resort da rede Hot Beach com proposta mais intimista, chalés e serviço de padrão superior. Também conhecido como Hot Beach Raízes.
 
 ## Vale para quem?
 
@@ -54,7 +54,7 @@ Cerca de **0,1 km do Thermas dos Laranjais** e **1 km do Hot Beach Olímpia**.
 
 ## Dados de referência
 
-Dicas de Viagem cita nota **9,1** em **136 avaliações** e diária desde **R$ 626**. Booking lista Hot Beach Raízes com nota **9,5** em **303 avaliações**.
+Nota **9,1** em **136 avaliações**. Como Hot Beach Raízes, nota **9,5** em **303 avaliações**. Diária de referência desde **R$ 626**.
 
 ## Comparativo com outras opções
 

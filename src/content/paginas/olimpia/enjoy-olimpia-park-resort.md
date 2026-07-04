@@ -27,7 +27,7 @@ faq:
   - question: "O Enjoy Olímpia Park tem cozinha nos flats?"
     answer: "Sim. Flats com sala de estar, cozinha com micro-ondas e frigobar, suíte e opção de dois quartos para até 7 pessoas."
   - question: "O Enjoy Olímpia Park fica perto do Thermas dos Laranjais?"
-    answer: "Sim. Cerca de 0,5 km do Thermas dos Laranjais, ao lado do Villa Mall segundo a Thermas & Cia."
+    answer: "Sim. Cerca de 0,5 km do Thermas dos Laranjais, ao lado do Villa Mall."
   - question: "Enjoy Olímpia Park é bom para grupos grandes?"
     answer: "Sim. Flats com opção de dois quartos para até 7 pessoas, com sala e cozinha — uma das melhores opções para grupos em Olímpia."
   - question: "Enjoy Olímpia Park ou Solar das Águas: qual escolher?"
@@ -40,7 +40,7 @@ seo:
 
 ## Sobre
 
-O **Enjoy Olímpia Park Resort** é resort de flats/apartamentos, muito procurado no Booking, com forte apelo para famílias e grupos.
+O **Enjoy Olímpia Park Resort** é resort de flats/apartamentos muito procurado, com forte apelo para famílias e grupos.
 
 ## Vale para quem?
 
@@ -59,7 +59,7 @@ O **Enjoy Olímpia Park Resort** é resort de flats/apartamentos, muito procurad
 
 ## Localização
 
-Cerca de **0,5 km do Thermas dos Laranjais**, ao lado do Villa Mall segundo a Thermas & Cia.
+Cerca de **0,5 km do Thermas dos Laranjais**, ao lado do Villa Mall.
 
 ## Dados de referência
 

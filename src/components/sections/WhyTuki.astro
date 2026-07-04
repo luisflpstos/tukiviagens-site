@@ -1,16 +1,14 @@
 ---
 import Container from '../common/Container.astro';
 import TukiIcon from '../common/TukiIcon.astro';
-import { WHY_TUKI_BENEFITS, WHY_TUKI_CARDS, WHY_TUKI_INTRO, TRUST_ITEMS } from '../../lib/constants';
+import { WHY_TUKI_BENEFITS, WHY_TUKI_CARDS, WHY_TUKI_HEADLINE, WHY_TUKI_INTRO } from '../../lib/constants';
 ---
 
 <section id="por-que-tuki" class="section-padding bg-white">
 	<Container size="reference">
 		<div class="grid gap-12 lg:grid-cols-2 lg:gap-16">
 			<div>
-				<h2 class="tuki-type-headline text-tuki-ink">
-					A leveza de viajar sabendo que <span class="tuki-highlight-block">tudo está sob controle.</span>
-				</h2>
+				<h2 class="tuki-type-headline text-tuki-ink">{WHY_TUKI_HEADLINE}</h2>
 				<p class="tuki-type-body tuki-measure mt-5 text-tuki-muted">{WHY_TUKI_INTRO}</p>
 
 				<ul class="mt-8 space-y-4">

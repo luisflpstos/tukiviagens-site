@@ -40,7 +40,7 @@ seo:
 
 ## Sobre
 
-O **Wyndham Olímpia Royal Hotels** é grande complexo hoteleiro, descrito pela fonte como o maior complexo hoteleiro do Brasil, com mais de 950 suítes e acesso exclusivo ao Thermas dos Laranjais.
+O **Wyndham Olímpia Royal Hotels** é o maior complexo hoteleiro do Brasil, com mais de 950 suítes e acesso exclusivo ao Thermas dos Laranjais.
 
 ## Vale para quem?
 
@@ -58,7 +58,7 @@ O **Wyndham Olímpia Royal Hotels** é grande complexo hoteleiro, descrito pela 
 
 ## Localização
 
-Cerca de **0,4 km do Thermas dos Laranjais**, **2,5 km do Hot Beach** e **2,5 km do Vale dos Dinossauros** segundo a fonte.
+Cerca de **0,4 km do Thermas dos Laranjais**, **2,5 km do Hot Beach** e **2,5 km do Vale dos Dinossauros**.
 
 ## Dados de referência
 

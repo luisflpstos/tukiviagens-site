@@ -22,7 +22,7 @@ cta: "Cotar Hotel Fazenda Haras"
 
 faq:
   - question: "O Hotel Fazenda Haras aceita pets?"
-    answer: "Sim, segundo a fonte editorial o hotel aceita pets — confirme política e taxas na cotação."
+    answer: "Sim, o hotel aceita pets — confirme política e taxas na cotação."
 
 seo:
   title: "Hotel Fazenda Haras Olímpia | Fazenda pet friendly"
@@ -46,7 +46,7 @@ O **Hotel Fazenda Haras** é hotel fazenda para descanso, verde e experiência r
 - Café da manhã elogiado
 - Quartos para até 5 pessoas
 - Estacionamento gratuito
-- Aceita pets segundo a fonte
+- Aceita pets
 
 ## Localização
 

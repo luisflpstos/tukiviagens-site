@@ -31,7 +31,7 @@ seo:
 
 ## Sobre
 
-O **Hot Beach Suites** é propriedade da rede Hot Beach com apartamentos/suítes para famílias, posicionada oficialmente como hospedagem com acesso exclusivo e ilimitado ao Hot Beach.
+O **Hot Beach Suites** é propriedade da rede Hot Beach com apartamentos/suítes para famílias, com acesso exclusivo e ilimitado ao Hot Beach.
 
 ## Vale para quem?
 
@@ -53,7 +53,7 @@ Próximo ao **Hot Beach Olímpia** e à **Vila Guarani**. Olímpia a cerca de 50
 
 ## Dados de referência
 
-Viajando com Lívia cita avaliação **8,0**. Página oficial mostra **191 avaliações** e diária de referência a partir de **R$ 831** (Suíte) e **R$ 955** (Suíte Premier).
+Nota **8,0** em **191 avaliações**. Diária de referência a partir de **R$ 831** (Suíte) e **R$ 955** (Suíte Premier).
 
 ## Comparativo com outras opções
 

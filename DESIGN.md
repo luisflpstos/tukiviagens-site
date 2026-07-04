@@ -1,6 +1,6 @@
 ---
 name: Tuki Viagens
-description: O Brasil que você sonha, com a leveza do Tuki.
+description: Hospedagens, hotéis, resorts e parques no Brasil — segurança, rapidez e preço justo.
 colors:
   purple-primary: "#4B14AE"
   purple-deep: "#270A78"
@@ -99,7 +99,7 @@ components:
 
 **Creative North Star: "O Guia Colorido"**
 
-O sistema visual da Tuki Viagens traduz leveza familiar em superfícies saturadas e confiantes — não em neutros quentes genéricos. Roxo e laranja carregam identidade em heróis, gradientes e blocos de conversão; fundos off-white e lavender frios dão respiro sem cair no cream editorial. O header branco com logo colorido ancora navegação limpa; o hero fotográfico com mascote Tuki concentra personalidade e prova social.
+O sistema visual da Tuki Viagens traduz confiança e proximidade familiar em superfícies saturadas e confiantes — não em neutros quentes genéricos. Roxo e laranja carregam identidade em heróis, gradientes e blocos de conversão; fundos off-white e lavender frios dão respiro sem cair no cream editorial. O header branco com logo colorido ancora navegação limpa; o hero fotográfico com mascote Tuki concentra personalidade e prova social.
 
 A estratégia de cor é **Committed**: roxo e laranja ocupam 30–60% da superfície visível em momentos-chave (hero, CTA gradient, marquee, stats). Tipografia Nunito bold nos títulos + Inter no corpo — par display/body pensado para famílias lendo ofertas no celular. Motion responsivo: entradas escalonadas no hero, hover tátil nos botões, Ken Burns sutil na foto — sempre com fallback em `prefers-reduced-motion`.
 
@@ -152,7 +152,7 @@ Paleta vibrante de agência familiar: roxo confiança + laranja energia, sobre o
 **Body Font:** Inter (Google Fonts, pesos 400–700) — parágrafos, UI, labels
 **Label Font:** Inter bold, uppercase com tracking em hero eyebrow e categorias de card
 
-**Character:** Nunito arredondada nos títulos transmite leveza e família; Inter no corpo garante legibilidade em mobile. Par tipográfico display + body — nunca serifas pretensiosas.
+**Character:** Nunito arredondada nos títulos transmite proximidade e família; Inter no corpo garante legibilidade em mobile. Par tipográfico display + body — nunca serifas pretensiosas.
 
 ### Hierarchy
 

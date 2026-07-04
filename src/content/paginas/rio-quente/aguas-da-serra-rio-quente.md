@@ -24,7 +24,7 @@ faq:
   - question: "O Águas da Serra fica perto do Hot Park?"
     answer: "Sim. Fica a cerca de 650 m do Hot Park, fora do complexo Rio Quente Resorts."
   - question: "Quantas pessoas cabem no Águas da Serra?"
-    answer: "As acomodações têm infraestrutura completa para até sete pessoas segundo o Dicas de Viagem."
+    answer: "As acomodações têm infraestrutura completa para até sete pessoas."
 
 seo:
   title: "Águas da Serra | Apart-hotel perto do Hot Park"
@@ -53,11 +53,11 @@ O **Águas da Serra** é apartamento/apart-hotel bem localizado, fora do complex
 
 ## Localização
 
-Fora do complexo, cerca de **650 m do Hot Park**, 2,4 km do Parque das Fontes e 25,8 km do diRoma Acqua Park segundo o Dicas de Viagem.
+Fora do complexo, cerca de **650 m do Hot Park**, 2,4 km do Parque das Fontes e 25,8 km do diRoma Acqua Park.
 
 ## Dados de referência
 
-Dicas de Viagem informa nota **9,1** em **145 avaliações** e diária desde **R$ 420**. Booking resorts listou Águas da Serra Apart Hotel com **9,2** em **42 avaliações** em uma das unidades.
+Nota **9,1** em **145 avaliações** e diária desde **R$ 420**. Águas da Serra Apart Hotel: **9,2** em **42 avaliações** em uma das unidades.
 
 ## Comparativo com outras opções
 
@@ -68,7 +68,7 @@ Dicas de Viagem informa nota **9,1** em **145 avaliações** e diária desde **R
 | [Thermas Paradise](/rio-quente/thermas-paradise/) | Apartamento termal | Proposta semelhante |
 | [Hotel Luupi](/rio-quente/hotel-luupi-rio-quente/) | Oficial RQR | Hot Park incluso, mais caro |
 
-Contra Prime Hotel Águas da Serra, é mais apartamento e grupo. Contra Thermas Paradise, tem proposta semelhante, mas nota editorial maior no Dicas. Contra Hotel Luupi, não inclui Hot Park, mas pode sair muito mais barato para grupo.
+Contra Prime Hotel Águas da Serra, é mais apartamento e grupo. Contra Thermas Paradise, tem proposta semelhante, mas nota mais alta. Contra Hotel Luupi, não inclui Hot Park, mas pode sair muito mais barato para grupo.
 
 Veja também [hotéis no Rio Quente](/rio-quente/hoteis/), [resorts no Rio Quente](/rio-quente/resorts/) e [hotéis perto do Hot Park](/rio-quente/hoteis-perto-hot-park/).
 

@@ -25,7 +25,7 @@ faq:
   - question: "Qual o melhor resort no Nordeste para família?"
     answer: "Depende da praia e do orçamento. Maragogi, Porto de Galinhas e Praia do Forte concentram resorts com estrutura para crianças. Informe datas e perfil para uma indicação personalizada."
   - question: "Vale a pena resort all inclusive no Nordeste?"
-    answer: "Para famílias e viagens de uma semana ou mais, all inclusive costuma simplificar refeições e lazer. Só recomendamos quando a oferta é real — sem prometer regime que o hotel não oferece."
+    answer: "Para famílias e viagens de uma semana ou mais, all inclusive costuma simplificar refeições e lazer. Indicamos resorts com regime integral conforme o perfil da viagem e o orçamento."
   - question: "A Tuki monta pacote com aéreo para o Nordeste?"
     answer: "Sim. Pacotes com hotel, orientação de datas e opção de aéreo podem ser cotados sob consulta. Informe origem, destino e quantidade de viajantes."
   - question: "Quais destinos do Nordeste vocês atendem?"
@@ -51,13 +51,13 @@ O Nordeste concentra alguns dos **resorts mais procurados do Brasil** — Marago
 
 | Perfil | Indicação |
 | --- | --- |
-| Família com crianças | Resorts com kids club, piscinas e all inclusive real |
+| Família com crianças | Resorts com kids club, piscinas e all inclusive |
 | Casal | Resorts boutique ou beira-mar com spa |
 | Primeira viagem ao Nordeste | Porto de Galinhas ou Maragogi — infraestrutura consolidada |
 
 ## All inclusive no Nordeste
 
-Para quem busca **resort all inclusive**, Maragogi e a Bahia concentram as ofertas mais consolidadas — mas nem todo hotel que anuncia all inclusive entrega regime completo de fato. Consulte nosso [guia de resorts all inclusive no Nordeste](/nordeste/resorts-all-inclusive/) para comparar destinos e entender quando vale a pena.
+Para quem busca **resort all inclusive**, Maragogi e a Bahia concentram as ofertas mais consolidadas. Consulte nosso [guia de resorts all inclusive no Nordeste](/nordeste/resorts-all-inclusive/) para comparar destinos e entender quando vale a pena.
 
 ## Como cotar com a Tuki
 

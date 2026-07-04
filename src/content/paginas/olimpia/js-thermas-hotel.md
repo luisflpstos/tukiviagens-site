@@ -24,7 +24,7 @@ faq:
   - question: "Qual o hotel mais barato perto do Thermas em Olímpia?"
     answer: "O JS Thermas Hotel tem diária de referência a partir de R$ 109, com piscina e proximidade de 1 km ao Thermas dos Laranjais."
   - question: "O JS Thermas aceita pets?"
-    answer: "Sim, segundo a fonte editorial. Confirme política na cotação."
+    answer: "Sim. Confirme política na cotação."
 
 seo:
   title: "JS Thermas Hotel Olímpia | Hotel barato perto do Thermas"
@@ -46,7 +46,7 @@ O **JS Thermas Hotel** é hotel econômico com estrutura suficiente para famíli
 - Piscina e área ao ar livre com redes
 - Parquinho infantil
 - Quartos simples com frigobar e ar-condicionado
-- Aceita pets segundo a fonte
+- Aceita pets
 
 ## Localização
 

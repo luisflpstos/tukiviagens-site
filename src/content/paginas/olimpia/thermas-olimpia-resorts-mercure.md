@@ -24,7 +24,7 @@ faq:
   - question: "O Mercure Olímpia tem acesso ao Thermas dos Laranjais?"
     answer: "Sim. Portaria com acesso exclusivo ao Thermas dos Laranjais, a cerca de 0,1 km."
   - question: "O Mercure Olímpia aceita pets?"
-    answer: "Sim, pet friendly segundo a fonte editorial. Confirme na cotação."
+    answer: "Sim, pet friendly. Confirme na cotação."
 
 seo:
   title: "Mercure Olímpia | Resort perto do Thermas"
@@ -33,7 +33,7 @@ seo:
 
 ## Sobre
 
-O **Thermas de Olímpia Resorts by Mercure** é resort com portaria de acesso exclusiva ao Thermas dos Laranjais, listado como um dos mais reservados no Booking.
+O **Thermas de Olímpia Resorts by Mercure** é resort com portaria de acesso exclusiva ao Thermas dos Laranjais, um dos mais procurados em Olímpia.
 
 ## Vale para quem?
 
@@ -43,13 +43,13 @@ O **Thermas de Olímpia Resorts by Mercure** é resort com portaria de acesso ex
 
 ## Estrutura e diferenciais
 
-- Acesso exclusivo ao Thermas e ingressos com desconto segundo a fonte
+- Acesso exclusivo ao Thermas e ingressos com desconto
 - Piscinas climatizadas adulto e infantil, jacuzzis e sauna seca
 - Playground, salão de jogos e academia
 - Lojas no lobby
 - Suítes com quarto, banheiro, área de estar e varanda
 - Opções duplex para até 7 pessoas
-- Pet friendly segundo a fonte
+- Pet friendly
 
 ## Localização
 

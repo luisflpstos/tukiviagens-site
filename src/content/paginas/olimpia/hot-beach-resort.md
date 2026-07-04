@@ -49,7 +49,7 @@ O **Hot Beach Resort** é resort da rede Hot Beach com proposta de ficar pratica
 
 ## Localização
 
-Cerca de **0,9 km do Thermas dos Laranjais**. Thermas & Cia descreve como opção pé na areia do Hot Beach.
+Cerca de **0,9 km do Thermas dos Laranjais**. Opção pé na areia do Hot Beach.
 
 ## Dados de referência
 

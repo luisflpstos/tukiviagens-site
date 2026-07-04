@@ -29,7 +29,7 @@ Sucesso = leads com origem rastreada (UTM/gclid), baixa fricção no contato e p
 - Tom próximo e leve, como uma amiga que entende de viagem em família.
 - Mascote Tuki (tucano viajante) como âncora de personalidade — sem infantilizar demais.
 - Referência de calor humano: proximidade tipo **Nubank** (amigável, colorido, confiável sem ser corporativo).
-- Tagline: *"O Brasil que você sonha, com a leveza do Tuki."*
+- Tagline: *"Hospedagens, hotéis, resorts e parques no Brasil — segurança, rapidez e preço justo."*
 - Cores de marca: roxo `#4b14ae` e laranja `#fc7b04`.
 
 ## Anti-references
@@ -43,7 +43,7 @@ Evitar explicitamente:
 
 ## Design Principles
 
-1. **Leveza na jornada** — cada tela reduz ansiedade da decisão de viagem; CTAs claros, copy direto, sem burocracia visual.
+1. **Clareza na jornada de compra** — cada tela reduz ansiedade da decisão de viagem; CTAs claros, copy direto, cotação rápida e sem burocracia visual.
 2. **Confiança antes do clique** — prova social, parceiros reais e atendimento humano visíveis antes de pedir o lead.
 3. **Conversão consultiva, não marketplace** — escolha Tuki em destaque; a agência orienta, não só lista opções.
 4. **Família no centro** — fotos, copy e hierarquia pensados para quem viaja com crianças e busca segurança + diversão.

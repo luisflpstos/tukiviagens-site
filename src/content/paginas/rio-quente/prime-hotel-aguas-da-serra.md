@@ -35,7 +35,7 @@ seo:
 
 ## Sobre
 
-O **Prime Hotel Águas da Serra** é hospedagem fora do complexo do Rio Quente Resorts, muito forte em custo-benefício. O Dicas de Viagem abre a lista com ele como uma das opções mais bem avaliadas do destino.
+O **Prime Hotel Águas da Serra** é hospedagem fora do complexo do Rio Quente Resorts, muito forte em custo-benefício — uma das opções mais bem avaliadas do destino.
 
 ## Vale para quem?
 
@@ -49,15 +49,15 @@ O **Prime Hotel Águas da Serra** é hospedagem fora do complexo do Rio Quente R
 - Piscina aquecida ao ar livre
 - Café da manhã
 - Recepção 24h
-- Piscina, academia, restaurantes e bom Wi-Fi segundo Quero Viajar Mais
+- Piscina, academia, restaurantes e bom Wi-Fi
 
 ## Localização
 
-Fora do complexo, cerca de **650 m do Hot Park**, 2,4 km do Parque das Fontes e 27,2 km do Aeroporto de Caldas Novas segundo o Dicas de Viagem.
+Fora do complexo, cerca de **650 m do Hot Park**, 2,4 km do Parque das Fontes e 27,2 km do Aeroporto de Caldas Novas.
 
 ## Dados de referência
 
-Dicas de Viagem informa nota **8,5** em **1.697 avaliações** e diária desde **R$ 237**. Booking atual listou **8,5** em **1.713 avaliações** entre os resorts mais reservados.
+Nota **8,5** em **1.697 avaliações** e diária desde **R$ 237**. Em outra base de avaliações, **8,5** em **1.713 avaliações**.
 
 ## Comparativo com outras opções
 

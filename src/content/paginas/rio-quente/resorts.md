@@ -27,11 +27,11 @@ faq:
   - question: "Qual resort tem Hot Park incluso?"
     answer: "Hotéis oficiais do Rio Quente Resorts — Cristal, Refúgio, Pousada, Giardino, Luupi e Eco Chalés — incluem Hot Park conforme pacote e temporada."
   - question: "Qual resort é melhor para famílias com crianças?"
-    answer: "Refúgio Grand Premium (brinquedoteca, piscinas próprias), Hotel Luupi (grupos e meia pensão) e Park Veredas (espaço kids) são referências na curadoria."
+    answer: "Refúgio Grand Premium (brinquedoteca, piscinas próprias), Hotel Luupi (grupos e meia pensão) e Park Veredas (espaço kids) são boas referências para famílias."
   - question: "Resort fora do complexo vale a pena?"
     answer: "Park Veredas, IMG Hotel e Prime Hotel oferecem estrutura de resort/lazer sem tarifa dos oficiais. Não incluem Hot Park, mas podem sair mais baratos para grupos."
   - question: "Eco Chalés tem transfer para o complexo?"
-    answer: "Não. Central e Melhores Destinos destacam que não há transfer — carro próprio é importante, pois fica a cerca de 4 km do complexo."
+    answer: "Não há transfer — carro próprio é importante, pois fica a cerca de 4 km do complexo."
 
 seo:
   title: "Resorts no Rio Quente | 10 opções Rio Quente Resorts"
@@ -46,9 +46,9 @@ Os resorts de Rio Quente foram pensados para quem visita o **Hot Park** e o **Pa
 
 | Resort | Nota / classificação | Localização | Perfil | Diária ref. |
 | --- | --- | --- | --- | --- |
-| [Hotel Cristal](/rio-quente/hotel-cristal-rio-quente/) | 4 estrelas (oficial) | Dentro do complexo | Famílias premium, casais | — |
-| [Refúgio Grand Premium](/rio-quente/refugio-grand-premium/) | 5 estrelas (oficial) | Dentro do complexo | Premium, a passos do Hot Park | R$ 2.300 |
-| [Hotel Pousada](/rio-quente/hotel-pousada-rio-quente/) | 9,0/10 (Central) | Dentro, 50 m Parque das Fontes | Tradição e natureza | — |
+| [Hotel Cristal](/rio-quente/hotel-cristal-rio-quente/) | 4 estrelas | Dentro do complexo | Famílias premium, casais | — |
+| [Refúgio Grand Premium](/rio-quente/refugio-grand-premium/) | 5 estrelas | Dentro do complexo | Premium, a passos do Hot Park | R$ 2.300 |
+| [Hotel Pousada](/rio-quente/hotel-pousada-rio-quente/) | 9,0/10 | Dentro, 50 m Parque das Fontes | Tradição e natureza | — |
 | [Hotel Giardino](/rio-quente/hotel-giardino-rio-quente/) | 8,3 (1.082) | 700–800 m, transfer 24h | Custo-benefício oficial | R$ 1.500 |
 | [Hotel Luupi](/rio-quente/hotel-luupi-rio-quente/) | 8,4 (275) | 800–900 m, transfer 24h | Famílias grandes, grupos | R$ 1.200 |
 | [Eco Chalés](/rio-quente/eco-chales-rio-quente/) | 7,2 (125) | 4 km do complexo | Natureza, menor preço | — |
@@ -69,7 +69,7 @@ Os resorts de Rio Quente foram pensados para quem visita o **Hot Park** e o **Pa
 
 ## Pacote premium
 
-Para pacote premium, a curadoria prioriza **Refúgio Grand Premium**, **Hotel Cristal** e **Hotel Pousada**.
+Para pacote premium, priorizamos **Refúgio Grand Premium**, **Hotel Cristal** e **Hotel Pousada**.
 
 Para proximidade ao Hot Park fora do complexo, veja também [hotéis perto do Hot Park](/rio-quente/hoteis-perto-hot-park/) e [hotéis no Rio Quente](/rio-quente/hoteis/).
 

@@ -51,15 +51,15 @@ O **Hotel Giardino, Rio Quente Resorts** é hotel oficial do Rio Quente Resorts 
 - Restaurante, bar e academia
 - Piscina e quadras de tênis
 - Arquitetura inspirada na Itália
-- Apartamentos espaçosos para até 7 pessoas segundo Melhores Destinos e Central Rio Quente
+- Apartamentos espaçosos para até 7 pessoas
 
 ## Localização
 
-Fora do complexo principal, Dicas cita **700 m do Hot Park** e 2,8 km do Parque das Fontes. Central Rio Quente cita cerca de **800 m da entrada** com transfer gratuito 24h.
+Fora do complexo principal, **700 m do Hot Park** e 2,8 km do Parque das Fontes, a cerca de **800 m da entrada** com transfer gratuito 24h.
 
 ## Dados de referência
 
-Dicas informa nota **8,2** em **1.353 avaliações** e diária desde **R$ 1.500**. Booking resorts listou **8,3** em **1.082 avaliações**.
+Nota **8,2** em **1.353 avaliações** e diária desde **R$ 1.500**. Em outra base de avaliações, **8,3** em **1.082 avaliações**.
 
 ## Comparativo com outras opções
 

@@ -7,7 +7,7 @@ headline: "Hotel Pousada: tradição e natureza a 50 m do Parque das Fontes"
 description: "Hotel Pousada em Rio Quente: histórico do complexo, Hot Park incluso e meia pensão. Cerca de 50 m do Parque das Fontes. Cotação consultiva Tuki Viagens."
 
 highlights:
-  - Nota média 9,0/10 (Central)
+  - Nota média 9,0/10
   - Cerca de 50 m do Parque das Fontes
   - Hot Park e meia pensão inclusos
   - Histórico desde 1966
@@ -22,9 +22,9 @@ cta: "Cotar Hotel Pousada"
 
 faq:
   - question: "O Hotel Pousada fica perto do Parque das Fontes?"
-    answer: "Sim. Central cita cerca de 50 m do Parque das Fontes. Melhores Destinos destaca que as piscinas do parque ficam coladas ao hotel."
+    answer: "Sim. Cerca de 50 m do Parque das Fontes — as piscinas do parque ficam coladas ao hotel."
   - question: "O Hotel Pousada inclui Hot Park?"
-    answer: "Sim. Hot Park incluído e meia pensão inclusa segundo página oficial."
+    answer: "Sim. Hot Park incluído e meia pensão inclusa."
 
 seo:
   title: "Hotel Pousada Rio Quente | Tradição e natureza"
@@ -33,7 +33,7 @@ seo:
 
 ## Sobre
 
-O **Hotel Pousada, Rio Quente Resorts** é hotel histórico que deu origem ao complexo. Melhores Destinos explica que a antiga Pousada do Rio Quente inaugurada em 1966 deu base ao desenvolvimento do destino.
+O **Hotel Pousada, Rio Quente Resorts** é hotel histórico que deu origem ao complexo. A antiga Pousada do Rio Quente, inaugurada em 1966, deu base ao desenvolvimento do destino.
 
 ## Vale para quem?
 
@@ -43,19 +43,19 @@ O **Hotel Pousada, Rio Quente Resorts** é hotel histórico que deu origem ao co
 
 ## Estrutura e diferenciais
 
-- Hot Park incluído e meia pensão inclusa segundo página oficial
+- Hot Park incluído e meia pensão inclusa
 - Ambiente integrado à mata nativa e piscinas termais de uso exclusivo
 - Atividades de ecoturismo
 - Restaurante Casa de Cora, Marolo Café, Sorveteria Frutos de Goiás e Pizzaria Oliva
-- Brinquedoteca, copa bebê e acesso 24h ao Parque das Fontes segundo Central
+- Brinquedoteca, copa bebê e acesso 24h ao Parque das Fontes
 
 ## Localização
 
-Dentro do complexo, cerca de **50 m do Parque das Fontes** segundo Central. Melhores Destinos destaca que as piscinas do Parque das Fontes ficam coladas ao hotel.
+Dentro do complexo, cerca de **50 m do Parque das Fontes**. As piscinas do Parque das Fontes ficam coladas ao hotel.
 
 ## Dados de referência
 
-Central cita nota média **9,0/10** no Booking e apartamentos para até 4 pessoas. Booking resorts listou **8,2** em **520 avaliações**.
+Nota média **9,0/10** e apartamentos para até 4 pessoas. Em outra base de avaliações, **8,2** em **520 avaliações**.
 
 ## Comparativo com outras opções
 

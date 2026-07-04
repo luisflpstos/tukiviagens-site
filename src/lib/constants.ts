@@ -2,7 +2,7 @@ import { TUKI_ICONS } from './icons';
 
 export const SITE = {
 	name: 'Tuki Viagens',
-	tagline: 'O Brasil que você sonha, com a leveza do Tuki.',
+	tagline: 'Hospedagens, hotéis, resorts e parques no Brasil — segurança, rapidez e preço justo.',
 	url: import.meta.env.PUBLIC_SITE_URL ?? 'http://localhost:4321',
 	location: 'Olímpia, São Paulo',
 	email: 'contato@tukiviagens.com.br',
@@ -52,6 +52,12 @@ export const HOME_NAV_LINKS = [
 ] as const;
 
 export const HERO_EYEBROW = 'Cadastro ativo · Viaje de forma segura';
+
+export const HOME_SEO_DESCRIPTION =
+	'Hospedagens, hotéis, resorts e parques no Brasil. Cotação rápida, atendimento humano, pagamento seguro e preço justo.';
+
+export const WHY_TUKI_HEADLINE =
+	'Hospedagens no Brasil com segurança, rapidez e preço justo.';
 
 export const HOTELS_PRICE_NOTE = 'Valor por diária · 12x sem juros · sujeito a datas e disponibilidade';
 

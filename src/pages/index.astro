@@ -11,7 +11,7 @@ import Testimonials from '../components/sections/Testimonials.astro';
 import PartnersStrip from '../components/sections/PartnersStrip.astro';
 import CtaSection from '../components/sections/CtaSection.astro';
 import WhatsAppFab from '../components/common/WhatsAppFab.astro';
-import { HOME_FEATURED_PROPERTIES, SITE } from '../lib/constants';
+import { HOME_FEATURED_PROPERTIES, HOME_SEO_DESCRIPTION, SITE } from '../lib/constants';
 import { getHotelImagePath } from '../lib/image-paths';
 
 const properties = HOME_FEATURED_PROPERTIES.map((item, index) => ({
@@ -28,7 +28,7 @@ const properties = HOME_FEATURED_PROPERTIES.map((item, index) => ({
 
 <BaseLayout
 	title={SITE.name}
-	description="Viagens com escolha, atendimento humano e pagamento seguro. Hotéis, resorts e destinos selecionados a dedo pela Tuki Viagens."
+	description={HOME_SEO_DESCRIPTION}
 	path="/"
 >
 	<script is:inline>

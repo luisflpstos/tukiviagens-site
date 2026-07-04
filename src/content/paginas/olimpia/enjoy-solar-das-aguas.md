@@ -7,7 +7,7 @@ headline: "Enjoy Solar das Águas: resort novo com flats amplos em Olímpia"
 description: "Enjoy Solar das Águas Park Resort em Olímpia: resort novo com flats, mini golfe e cinema a 2,1 km do Thermas dos Laranjais. Diária desde R$ 579. Cotação consultiva."
 
 highlights:
-  - Nota 7,8 na fonte editorial
+  - Nota 7,8
   - Flats com cozinha para até 7 pessoas
   - 2,1 km do Thermas dos Laranjais
   - Mini golfe, cinema e restaurantes temáticos
@@ -62,7 +62,7 @@ Cerca de **2,1 km do Thermas dos Laranjais**.
 
 ## Dados de referência
 
-Dicas de Viagem informa diária de referência a partir de **R$ 579** e nota **7,8** na tabela editorial.
+Nota **7,8**. Diária de referência a partir de **R$ 579**.
 
 ## Comparativo com outras opções
 

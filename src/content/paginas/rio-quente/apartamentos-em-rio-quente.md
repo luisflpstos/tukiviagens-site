@@ -10,7 +10,7 @@ highlights:
   - Nota 8,9 em 334 avaliações
   - Cerca de 400 m do Hot Park
   - Apartamentos para até cinco pessoas
-  - Melhor preço da seleção editorial
+  - Melhor preço da seleção
 
 keywords:
   - apartamentos em rio quente
@@ -22,7 +22,7 @@ cta: "Cotar Apartamentos em Rio Quente"
 
 faq:
   - question: "Os Apartamentos em Rio Quente ficam perto do Hot Park?"
-    answer: "Sim. Ficam a cerca de 400 m do Hot Park — a opção mais próxima fora do complexo na curadoria do Dicas de Viagem."
+    answer: "Sim. Ficam a cerca de 400 m do Hot Park — a opção mais próxima fora do complexo."
   - question: "Quanto custa a diária nos Apartamentos em Rio Quente?"
     answer: "A diária de referência começa em R$ 177, variando por temporada e ocupação. Envie datas e hóspedes para cotação atualizada."
 
@@ -33,7 +33,7 @@ seo:
 
 ## Sobre
 
-**Apartamentos em Rio Quente** é opção de apartamentos fora do complexo, a mais acessível na seleção do Dicas de Viagem.
+**Apartamentos em Rio Quente** é opção de apartamentos fora do complexo, a mais acessível da seleção.
 
 ## Vale para quem?
 
@@ -49,11 +49,11 @@ seo:
 
 ## Localização
 
-Fora do complexo, cerca de **400 m do Hot Park**, 25,6 km do diRoma Acqua Park e 26,9 km do Clube Privé segundo o Dicas de Viagem.
+Fora do complexo, cerca de **400 m do Hot Park**, 25,6 km do diRoma Acqua Park e 26,9 km do Clube Privé.
 
 ## Dados de referência
 
-Dicas informa nota **8,9** em **334 avaliações** e diária desde **R$ 177**.
+Nota **8,9** em **334 avaliações** e diária desde **R$ 177**.
 
 ## Comparativo com outras opções
 

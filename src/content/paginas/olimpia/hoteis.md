@@ -23,13 +23,13 @@ cta: "Cotar hotel em Olímpia"
 
 faq:
   - question: "Quanto custa a diária de hotel em Olímpia?"
-    answer: "Varia de R$ 109 (JS Thermas Hotel) a R$ 706 (Carpe Diem Park Hotel) nas diárias de referência citadas. Férias e feriados alteram os valores — envie datas para cotação real."
+    answer: "Varia de R$ 109 (JS Thermas Hotel) a R$ 706 (Carpe Diem Park Hotel) nas diárias de referência. Férias e feriados alteram os valores — envie datas para cotação real."
   - question: "Qual o melhor hotel em Olímpia para família?"
     answer: "Villa Itália Olímpia (nota 9,5, lazer infantil) e Parque das Águas (nota 9,2, piscinas) são fortes fora dos resorts. Para proximidade: Tiffany, Água Viva e Glória."
   - question: "Existe hotel barato perto do Thermas dos Laranjais?"
     answer: "Sim. JS Thermas (R$ 109, 1 km), Glória (R$ 240, 800 m), Villa Rebellato (R$ 244) e Água Viva (R$ 263, 500 m) são referências de custo-benefício."
   - question: "Qual hotel em Olímpia aceita pets?"
-    answer: "Hotel Fazenda Haras e JS Thermas Hotel aceitam pets segundo a fonte editorial. Confirme política na cotação."
+    answer: "Hotel Fazenda Haras e JS Thermas Hotel aceitam pets. Confirme política na cotação."
   - question: "Como reservar hotel em Olímpia pela Tuki?"
     answer: "Envie datas, adultos, crianças (com idades) e preferência de hotel. Retornamos opções comparadas com preço sob consulta."
 
@@ -65,7 +65,7 @@ Olímpia concentra hospedagem voltada para quem visita o **Thermas dos Laranjais
 | Lazer interno (sem resort) | Villa Itália, Dolce Dulce | Tobogã, 7 piscinas, parquinho |
 | Custo-benefício | JS Thermas, Glória, Villa Rebellato | Diárias desde R$ 109 a R$ 244 |
 | Natureza e descanso | Carpe Diem Park, Fazenda Haras | Verde, fazenda, pets |
-| Pet friendly | Fazenda Haras, JS Thermas | Aceita pets segundo a fonte |
+| Pet friendly | Fazenda Haras, JS Thermas | Aceita pets |
 
 Para resorts com acesso ao Thermas ou Hot Beach, consulte [resorts em Olímpia](/olimpia/resorts/) e [hotéis perto do Thermas](/olimpia/hoteis-perto-thermas-dos-laranjais/).
 

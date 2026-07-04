@@ -7,7 +7,7 @@ headline: "Hotel Cristal: sofisticação e vista dentro do Rio Quente Resorts"
 description: "Hotel Cristal em Rio Quente: 4 estrelas, piscina de borda infinita e Hot Park incluso. Hotel mais sofisticado do complexo. Cotação consultiva Tuki Viagens."
 
 highlights:
-  - 4 estrelas (página oficial)
+  - Hotel 4 estrelas
   - Hot Park e Praia do Cerrado inclusos
   - Piscina de borda infinita
   - Apartamentos para até 10 pessoas
@@ -24,7 +24,7 @@ faq:
   - question: "O Hotel Cristal inclui Hot Park?"
     answer: "Sim. Hot Park incluído na diária, com acesso à Praia do Cerrado."
   - question: "O Hotel Cristal é o mais sofisticado do complexo?"
-    answer: "Sim. Central Rio Quente o chama de 'joia da coroa' e hotel mais sofisticado do complexo."
+    answer: "Sim. É a joia da coroa do complexo — o hotel mais sofisticado da rede."
 
 seo:
   title: "Hotel Cristal Rio Quente | Resort premium"
@@ -33,7 +33,7 @@ seo:
 
 ## Sobre
 
-O **Hotel Cristal, Rio Quente Resorts** é hotel oficial 4 estrelas, posicionado como uma das opções mais sofisticadas do complexo. Central Rio Quente o chama de "joia da coroa" e destaca paisagismo de Benedito Abbud, piscina de borda infinita e Restaurante da Mata.
+O **Hotel Cristal, Rio Quente Resorts** é hotel oficial 4 estrelas, posicionado como a joia da coroa do complexo — uma das opções mais sofisticadas da rede, com paisagismo de Benedito Abbud, piscina de borda infinita e Restaurante da Mata.
 
 ## Vale para quem?
 
@@ -47,15 +47,15 @@ O **Hotel Cristal, Rio Quente Resorts** é hotel oficial 4 estrelas, posicionado
 - Piscina térmica própria e piscina de borda infinita
 - Restaurantes temáticos, buffet variado e recreação infantil
 - Meia pensão opcional, quartos família e SPA completo
-- Apartamentos para até 10 pessoas segundo Central
+- Apartamentos para até 10 pessoas
 
 ## Localização
 
-Dentro do complexo Rio Quente Resorts, em Rio Quente, Goiás. Proximidade com Hot Park, Praia do Cerrado e AqTermas. Central cita cerca de **300 m do Parque das Fontes**.
+Dentro do complexo Rio Quente Resorts, em Rio Quente, Goiás. Proximidade com Hot Park, Praia do Cerrado e AqTermas, a cerca de **300 m do Parque das Fontes**.
 
 ## Dados de referência
 
-Página oficial classifica como **4 estrelas**. Central Rio Quente o coloca como hotel mais sofisticado. Melhores Destinos cita inauguração em 2012, quartos amplos e vista para o pôr do sol.
+Hotel **4 estrelas**, o mais sofisticado do complexo. Inaugurado em 2012, com quartos amplos e vista para o pôr do sol.
 
 ## Comparativo com outras opções
 

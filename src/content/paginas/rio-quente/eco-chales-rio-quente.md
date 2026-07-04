@@ -7,7 +7,7 @@ headline: "Eco Chalés: natureza e menor preço dentro da marca Rio Quente Resor
 description: "Eco Chalés em Rio Quente: 3 estrelas, Hot Park incluso e chalés no Cerrado a 4 km do complexo. Cotação consultiva Tuki Viagens."
 
 highlights:
-  - 3 estrelas (página oficial)
+  - Hotel 3 estrelas
   - Hot Park incluso conforme pacote
   - Cerca de 4 km do complexo
   - Chalés cercados pela natureza
@@ -22,9 +22,9 @@ cta: "Cotar Eco Chalés"
 
 faq:
   - question: "O Eco Chalés tem transfer para o complexo?"
-    answer: "Não. Central e Melhores Destinos destacam que não há transfer — carro próprio é importante."
+    answer: "Não há transfer — carro próprio é importante."
   - question: "O Eco Chalés inclui Hot Park?"
-    answer: "Sim. Hot Park incluído conforme pacote, com café da manhã incluso segundo página oficial."
+    answer: "Sim. Hot Park incluído conforme pacote, com café da manhã incluso."
 
 seo:
   title: "Eco Chalés Rio Quente | Natureza e orçamento"
@@ -44,17 +44,17 @@ O **Eco Chalés, Rio Quente Resorts** é hospedagem oficial mais econômica e r�
 ## Estrutura e diferenciais
 
 - Hot Park incluído conforme pacote
-- Café da manhã incluso segundo página oficial
+- Café da manhã incluso
 - Chalés cercados pela natureza e ambiente silencioso
-- Piscina de água quente natural, playground e bar segundo página principal Rio Quente Resorts
+- Piscina de água quente natural, playground e bar
 
 ## Localização
 
-Cerca de **4 km do complexo/Parque das Fontes**. Central e Melhores Destinos destacam que **não há transfer**, então carro próprio é importante.
+Cerca de **4 km do complexo/Parque das Fontes**. **Não há transfer** — carro próprio é importante.
 
 ## Dados de referência
 
-Booking hotéis listou Rio Quente Resorts, Eco Chalés com **7,2** em **125 avaliações**. Página oficial classifica como **3 estrelas**.
+Nota **7,2** em **125 avaliações**. Hotel **3 estrelas**.
 
 ## Comparativo com outras opções
 

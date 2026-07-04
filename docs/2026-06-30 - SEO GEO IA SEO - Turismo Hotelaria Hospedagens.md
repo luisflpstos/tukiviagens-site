@@ -106,7 +106,7 @@ Leitura do cache de Olímpia: termos de hospedagem e parques estavam levemente e
 | Venda | /rio-quente/resorts/ | Resorts no Rio Quente | resort rio quente, rio quente resorts | Comparativo de resorts, perfis de viagem e reservas. |
 | Venda | /rio-quente/hoteis-perto-hot-park/ | Hotéis perto do Hot Park | hotel perto hot park, hospedagem rio quente | Alta intenção para busca de parque + hospedagem. |
 | Hub destino | /nordeste/ | Resorts e hotéis no Nordeste | resort nordeste, hotéis no nordeste | Página pilar com estados, praias, perfis e all inclusive quando aplicável. |
-| Venda | /nordeste/resorts-all-inclusive/ | Resorts all inclusive no Nordeste | resort all inclusive nordeste, hotel all inclusive nordeste | Só usar se a oferta tiver all inclusive real. Caso contrário, posicionar como comparação e qualificação. |
+| Venda | /nordeste/resorts-all-inclusive/ | Resorts all inclusive no Nordeste | resort all inclusive nordeste, hotel all inclusive nordeste | Página de venda com comparativo de destinos e regime de pensão. |
 | Hub comercial | /pacotes-de-viagem-brasil/ | Pacotes de viagem no Brasil | pacotes de viagem brasil, pacotes de viagem nacionais | Página para intenção ampla, com destinos, família, férias e cotação. |
 | Institucional | /agencia-de-viagens/ | Agência de viagens e venda de hospedagens | agência de viagens, reserva de hotel, consultor de viagens | Página de autoridade, atendimento consultivo, prova e processo de cotação. |
 

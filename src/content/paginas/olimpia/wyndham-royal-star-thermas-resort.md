@@ -31,7 +31,7 @@ seo:
 
 ## Sobre
 
-O **Wyndham Royal Star Thermas Resort** é propriedade listada em Hotels.com e Booking como hotel/resort perto do Thermas, com 10 piscinas externas e serviços de spa.
+O **Wyndham Royal Star Thermas Resort** é hotel/resort perto do Thermas, com 10 piscinas externas e serviços de spa.
 
 ## Vale para quem?
 
@@ -47,11 +47,11 @@ O **Wyndham Royal Star Thermas Resort** é propriedade listada em Hotels.com e B
 
 ## Localização
 
-**Rua Guarani, 01, Parque das Águas, Olímpia, SP, 15405-275**. Hotels.com informa **1,4 km do Thermas dos Laranjais**, 1,8 km do Hot Beach e 2,6 km do Vale dos Dinossauros.
+**Rua Guarani, 01, Parque das Águas, Olímpia, SP, 15405-275**. Cerca de **1,4 km do Thermas dos Laranjais**, **1,8 km do Hot Beach** e **2,6 km do Vale dos Dinossauros**.
 
 ## Dados de referência
 
-Hotels.com lista como propriedade 2 estrelas com 10 piscinas, próxima ao Thermas. Booking lista como "Resort Whyndham Royal Star Hotels Olímpia - Thermas dos Laranjais".
+Propriedade 2 estrelas com 10 piscinas, próxima ao Thermas dos Laranjais.
 
 ## Comparativo com outras opções
 
@@ -62,7 +62,7 @@ Hotels.com lista como propriedade 2 estrelas com 10 piscinas, próxima ao Therma
 | [Mercure Olímpia](/olimpia/thermas-olimpia-resorts-mercure/) | Acesso exclusivo Thermas | 0,1 km do parque |
 | [Enjoy Solar das Águas](/olimpia/enjoy-solar-das-aguas/) | Resort moderno | Flats amplos |
 
-Contra Wyndham Olímpia Royal Hotels, é mais simples e não deve ser confundido com o complexo principal. Contra Mercure, tem 10 piscinas listadas, mas menos força editorial. Contra Solar das Águas, parece mais funcional e menos complexo.
+Contra Wyndham Olímpia Royal Hotels, é mais simples e não deve ser confundido com o complexo principal. Contra Mercure, tem 10 piscinas, mas estrutura mais enxuta. Contra Solar das Águas, parece mais funcional e menos complexo.
 
 Veja também [hotéis em Olímpia](/olimpia/hoteis/), [resorts em Olímpia](/olimpia/resorts/) e [hotéis perto do Thermas](/olimpia/hoteis-perto-thermas-dos-laranjais/).
 

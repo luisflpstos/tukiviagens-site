@@ -52,11 +52,11 @@ O **Thermas Paradise** é hospedagem fora do complexo com apartamentos e estrutu
 
 ## Localização
 
-Fora do complexo, cerca de **700 m do Hot Park**, 2,3 km do Parque das Fontes e 26,9 km do Clube Privé segundo o Dicas de Viagem.
+Fora do complexo, cerca de **700 m do Hot Park**, 2,3 km do Parque das Fontes e 26,9 km do Clube Privé.
 
 ## Dados de referência
 
-Dicas de Viagem informa nota **9,0** em **456 avaliações** e diária desde **R$ 333**. Booking resorts lista unidades Thermas Paradise Residence com **8,4** em **267 avaliações** e outras unidades com notas variadas.
+Nota **9,0** em **456 avaliações** e diária desde **R$ 333**. Thermas Paradise Residence: **8,4** em **267 avaliações**; outras unidades com notas variadas.
 
 ## Comparativo com outras opções
 
