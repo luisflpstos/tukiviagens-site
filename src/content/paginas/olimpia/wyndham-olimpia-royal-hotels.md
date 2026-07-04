@@ -3,14 +3,14 @@ title: "Wyndham Olímpia Royal Hotels"
 pageType: "propriedade"
 silo: "olimpia"
 
-headline: "Wyndham Olímpia Royal Hotels: resort all inclusive perto do Thermas"
-description: "Wyndham Olímpia Royal Hotels: resort all inclusive em Olímpia com spa, kids club e proximidade ao Thermas dos Laranjais. Cotação de diária sob consulta."
+headline: "Wyndham Olímpia Royal Hotels: maior complexo hoteleiro com acesso ao Thermas"
+description: "Wyndham Olímpia Royal Hotels em Olímpia: mais de 950 suítes, 11 piscinas e acesso exclusivo ao Thermas dos Laranjais a 0,4 km. Diária desde R$ 499. Cotação consultiva."
 
 highlights:
-  - Regime all inclusive
-  - Spa, kids club e múltiplas piscinas
-  - Próximo ao Thermas dos Laranjais
-  - Ideal para famílias que buscam conforto premium
+  - Nota 8,5 em 1.662 avaliações
+  - Mais de 950 suítes e 11 piscinas aquecidas
+  - Acesso exclusivo ao Thermas dos Laranjais
+  - 0,4 km do Thermas dos Laranjais
 
 keywords:
   - wyndham olimpia royal hotels
@@ -23,53 +23,60 @@ cta: "Cotar Wyndham Olímpia"
 
 faq:
   - question: "Quanto custa a diária no Wyndham Olímpia Royal Hotels?"
-    answer: "O valor da diária varia por tipo de quarto, temporada e ocupação. Férias e feriados costumam ter tarifas mais altas. Envie datas e hóspedes para cotação personalizada."
-  - question: "O Wyndham Olímpia é all inclusive?"
-    answer: "Sim. O Wyndham Olímpia Royal Hotels oferece regime all inclusive com refeições e bebidas inclusas na diária, conforme política do resort."
-  - question: "O Wyndham fica perto do Thermas dos Laranjais?"
-    answer: "Sim. O resort está na região dos parques aquáticos de Olímpia, a poucos minutos do Thermas dos Laranjais de carro."
+    answer: "A diária de referência começa em R$ 499, variando por tipo de suíte, temporada e ocupação. Envie datas e hóspedes para cotação atualizada."
+  - question: "O Wyndham Olímpia tem acesso ao Thermas dos Laranjais?"
+    answer: "Sim. O complexo oferece acesso exclusivo ao Thermas dos Laranjais, a cerca de 0,4 km do parque."
+  - question: "Quantas piscinas tem o Wyndham Olímpia Royal Hotels?"
+    answer: "O complexo tem 11 piscinas aquecidas, 10 ofurôs, saunas com spa, academias, quadras esportivas e espaços kids."
   - question: "Wyndham Olímpia aceita crianças?"
-    answer: "Sim. O resort tem kids club com programação diária, piscinas e estrutura completa para famílias com crianças de todas as idades."
-  - question: "Como reservar o Wyndham Olímpia Royal Hotels?"
-    answer: "Informe datas de check-in e check-out, quantidade de adultos e crianças (com idades). A Tuki retorna cotação com preço sob consulta e suporte na reserva."
+    answer: "Sim. O complexo tem playground, brinquedotecas, espaços kids e estrutura ampla para famílias."
+  - question: "Wyndham Royal Star é o mesmo hotel?"
+    answer: "Não. O Wyndham Olímpia Royal Hotels é o grande complexo com acesso exclusivo ao Thermas. O Wyndham Royal Star Thermas Resort é propriedade distinta, mais simples, a 1,4 km do parque."
 
 seo:
-  title: "Wyndham Olímpia Royal Hotels | Resort All Inclusive"
-  description: "Wyndham Olímpia Royal Hotels: resort all inclusive perto do Thermas dos Laranjais. Spa, kids club e cotação consultiva Tuki Viagens."
+  title: "Wyndham Olímpia Royal Hotels | Resort perto do Thermas"
+  description: "Wyndham Olímpia Royal Hotels: 950+ suítes, 11 piscinas e acesso exclusivo ao Thermas a 0,4 km. Cotação Tuki Viagens."
 ---
 
-## Sobre o Wyndham Olímpia Royal Hotels
+## Sobre
 
-O **Wyndham Olímpia Royal Hotels** é um resort **all inclusive** em Olímpia, SP — referência para famílias que buscam conforto premium, gastronomia inclusa e proximidade ao **Thermas dos Laranjais**.
+O **Wyndham Olímpia Royal Hotels** é grande complexo hoteleiro, descrito pela fonte como o maior complexo hoteleiro do Brasil, com mais de 950 suítes e acesso exclusivo ao Thermas dos Laranjais.
 
 ## Vale para quem?
 
-- Famílias que querem **all inclusive** sem surpresas na conta
-- Viajantes que priorizam **spa, kids club** e estrutura de lazer completa
-- Quem busca **proximidade ao Thermas dos Laranjais** com padrão internacional
+- Famílias que querem escala, muitas piscinas e acesso facilitado ao Thermas
+- Hóspedes que buscam estrutura ampla com academias, quadras e espaços kids
+- Viajantes que priorizam proximidade do parque (0,4 km)
 
 ## Estrutura e diferenciais
 
-- Regime **all inclusive** — refeições e bebidas inclusas
-- Múltiplas piscinas e áreas de lazer
-- Spa e wellness
-- Kids club com monitoria e programação diária
-- Próximo aos parques aquáticos de Olímpia
+- Acesso exclusivo ao Thermas dos Laranjais
+- 11 piscinas aquecidas e 10 ofurôs
+- Saunas com spa, academias e quadras esportivas
+- Espaços kids, playground e brinquedotecas
+- Café da manhã
 
 ## Localização
 
-Em Olímpia, noroeste paulista — a poucos minutos do Thermas dos Laranjais. A localização reduz deslocamento e permite aproveitar melhor os dias de parque.
+Cerca de **0,4 km do Thermas dos Laranjais**, **2,5 km do Hot Beach** e **2,5 km do Vale dos Dinossauros** segundo a fonte.
 
-## Comparativo com outros resorts
+## Dados de referência
 
-| Resort | Perfil | Diferencial |
+Nota **8,5** em **1.662 avaliações**. Diária de referência a partir de **R$ 499**.
+
+## Comparativo com outras opções
+
+| Propriedade | Perfil | Diferencial |
 | --- | --- | --- |
-| Wyndham Olímpia Royal Hotels | Premium, all inclusive | Spa, kids club, padrão Wyndham |
-| [Enjoy Olímpia Park Resort](/olimpia/enjoy-olimpia-park-resort/) | Família, parque no resort | Parque aquático integrado |
-| [Enjoy Solar das Águas](/olimpia/enjoy-solar-das-aguas/) | Custo-benefício | Diária geralmente mais acessível |
+| Wyndham Olímpia Royal Hotels | Grande complexo | 950+ suítes, acesso Thermas |
+| [Thermas Park Resort & Spa](/olimpia/thermas-park-resort-hot-beach-raizes/) | Premium tranquilo | Chalés, spa, Hot Beach Raízes |
+| [Enjoy Olímpia Park Resort](/olimpia/enjoy-olimpia-park-resort/) | Flats para grupos | Cozinha, Villa Mall |
+| [Thermas de Olímpia Resorts by Mercure](/olimpia/thermas-olimpia-resorts-mercure/) | Acesso ao Thermas | 0,1 km, pet friendly |
 
-Veja o comparativo completo em [resorts em Olímpia](/olimpia/resorts/) e [hotéis perto do Thermas](/olimpia/hoteis-perto-thermas-dos-laranjais/).
+Contra Thermas Park, é maior e mais movimentado. Contra Enjoy Olímpia Park, tem mais estrutura aquática. Contra Mercure, é mais robusto e sofisticado.
 
-## Cotação do Wyndham Olímpia
+Veja também [resorts em Olímpia](/olimpia/resorts/) e [hotéis perto do Thermas](/olimpia/hoteis-perto-thermas-dos-laranjais/).
 
-Informe datas, adultos, crianças e tipo de quarto desejado. Retornamos proposta com preço sob consulta e atendimento consultivo. Volte ao [guia de Olímpia](/olimpia/) para explorar o destino.
+## Cotação
+
+Informe datas, adultos e crianças para receber proposta personalizada. Volte ao [guia de Olímpia](/olimpia/) para planejar a viagem completa.

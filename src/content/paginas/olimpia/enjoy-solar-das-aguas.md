@@ -3,14 +3,14 @@ title: "Enjoy Solar das Águas"
 pageType: "propriedade"
 silo: "olimpia"
 
-headline: "Enjoy Solar das Águas: resort com custo-benefício em Olímpia"
-description: "Enjoy Solar das Águas em Olímpia SP: resort com piscinas, restaurante e proximidade ao Thermas dos Laranjais. Boa opção de custo-benefício para famílias."
+headline: "Enjoy Solar das Águas: resort novo com flats amplos em Olímpia"
+description: "Enjoy Solar das Águas Park Resort em Olímpia: resort novo com flats, mini golfe e cinema a 2,1 km do Thermas dos Laranjais. Diária desde R$ 579. Cotação consultiva."
 
 highlights:
-  - Piscinas aquecidas e com tobogãs
-  - Restaurante e área de lazer completa
-  - Próximo ao Thermas dos Laranjais
-  - Custo-benefício entre os resorts de Olímpia
+  - Nota 7,8 na fonte editorial
+  - Flats com cozinha para até 7 pessoas
+  - 2,1 km do Thermas dos Laranjais
+  - Mini golfe, cinema e restaurantes temáticos
 
 keywords:
   - enjoy solar das aguas
@@ -23,53 +23,60 @@ cta: "Cotar Solar das Águas"
 
 faq:
   - question: "Quanto custa a diária no Enjoy Solar das Águas?"
-    answer: "O Solar das Águas costuma ter diária mais acessível que Wyndham e Enjoy Olímpia Park, mas o valor varia por datas, tipo de quarto e ocupação. Envie datas e hóspedes para cotação."
+    answer: "A diária de referência começa em R$ 579, variando por tipo de flat, temporada e ocupação. Envie datas e hóspedes para cotação atualizada."
   - question: "O Solar das Águas fica perto do Thermas dos Laranjais?"
-    answer: "Sim. O Enjoy Solar das Águas está a poucos minutos do Thermas dos Laranjais — localização conveniente para quem prioriza proximidade ao parque."
-  - question: "Solar das Águas aceita crianças?"
-    answer: "Sim. A estrutura é ideal para famílias com crianças de todas as idades, com piscinas, tobogãs e área de lazer."
+    answer: "Fica a cerca de 2,1 km do Thermas dos Laranjais — mais afastado que Enjoy Olímpia Park e Wyndham, mas com estrutura ampla e moderna."
+  - question: "Solar das Águas aceita grupos grandes?"
+    answer: "Sim. Flats com sala, cozinha e varanda privativa, opção de 1 ou 2 quartos para até 7 pessoas."
   - question: "Solar das Águas ou Enjoy Olímpia Park: qual escolher?"
-    answer: "Enjoy Olímpia Park tem parque aquático integrado e estrutura mais ampla; Solar das Águas oferece boa estrutura com custo-benefício. Depende do orçamento e do que a família prioriza."
+    answer: "Solar das Águas é mais novo e amplo, com mini golfe e cinema. Enjoy Olímpia Park fica mais perto do Thermas e do Villa Mall."
   - question: "Como reservar o Enjoy Solar das Águas?"
     answer: "Informe datas, adultos e crianças pela Tuki. Retornamos cotação com preço sob consulta e suporte consultivo na reserva."
 
 seo:
   title: "Enjoy Solar das Águas | Resort em Olímpia"
-  description: "Enjoy Solar das Águas: resort com custo-benefício em Olímpia, perto do Thermas dos Laranjais. Piscinas e estrutura familiar. Cotação Tuki."
+  description: "Enjoy Solar das Águas: resort novo com flats a 2,1 km do Thermas dos Laranjais. Mini golfe e cinema. Cotação Tuki Viagens."
 ---
 
-## Sobre o Enjoy Solar das Águas
+## Sobre
 
-O **Enjoy Solar das Águas** é um resort em Olímpia voltado para famílias que buscam **conforto, lazer e praticidade** com **bom custo-benefício** — a poucos minutos do **Thermas dos Laranjais**.
+O **Enjoy Solar das Águas Park Resort** é resort mais novo, com grande estrutura de lazer e suítes em formato de flats.
 
 ## Vale para quem?
 
-- Famílias que querem **estrutura de resort** sem o ticket premium
-- Viajantes que priorizam **proximidade ao Thermas dos Laranjais**
-- Grupos e famílias que valorizam **piscinas e área de lazer** no hotel
+- Famílias que querem complexo grande e moderno
+- Grupos que precisam de flats com cozinha
+- Hóspedes que não precisam ficar colados no Thermas
 
-## Estrutura
+## Estrutura e diferenciais
 
-- Piscinas aquecidas e com tobogãs
-- Restaurante com cardápio variado
-- Área de lazer para toda a família
-- Estacionamento
-- Próximo ao Thermas dos Laranjais e outras atrações da região
+- Diversas piscinas, restaurantes temáticos e loja de conveniência
+- Mini golfe, quadras esportivas e pista de skate
+- Salão de jogos, sala de cinema, sauna seca e spa
+- Área kids
+- Flats com sala, cozinha, varanda privativa e opção de 1 ou 2 quartos para até 7 pessoas
 
 ## Localização
 
-Situado em Olímpia, a cidade dos parques aquáticos, o resort fica próximo ao Thermas dos Laranjais — reduzindo deslocamento e facilitando dias consecutivos no parque.
+Cerca de **2,1 km do Thermas dos Laranjais**.
 
-## Comparativo com Wyndham e Enjoy Olímpia Park
+## Dados de referência
 
-| Resort | Perfil | Diferencial |
+Dicas de Viagem informa diária de referência a partir de **R$ 579** e nota **7,8** na tabela editorial.
+
+## Comparativo com outras opções
+
+| Propriedade | Perfil | Diferencial |
 | --- | --- | --- |
-| Enjoy Solar das Águas | Custo-benefício | Diária geralmente mais acessível |
-| [Enjoy Olímpia Park Resort](/olimpia/enjoy-olimpia-park-resort/) | Família, parque integrado | Parque aquático no resort |
-| [Wyndham Olímpia Royal Hotels](/olimpia/wyndham-olimpia-royal-hotels/) | Premium, all inclusive | Spa, kids club, regime all inclusive |
+| Enjoy Solar das Águas | Resort novo e amplo | Cinema, mini golfe, flats |
+| [Enjoy Olímpia Park Resort](/olimpia/enjoy-olimpia-park-resort/) | Flats Villa Mall | 0,5 km do Thermas |
+| [Hot Beach Resort](/olimpia/hot-beach-resort/) | Hot Beach integrado | Praia artificial |
+| [Wyndham Olímpia Royal Hotels](/olimpia/wyndham-olimpia-royal-hotels/) | Grande complexo | Acesso exclusivo Thermas |
 
-Veja o comparativo em [resorts em Olímpia](/olimpia/resorts/) e [hotéis perto do Thermas](/olimpia/hoteis-perto-thermas-dos-laranjais/).
+Contra Enjoy Olímpia Park, é mais novo e amplo, mas menos próximo do Thermas. Contra Hot Beach Resort, não tem a mesma integração com Hot Beach. Contra Wyndham, é melhor para quem quer flat moderno.
 
-## Cotação do Solar das Águas
+Veja também [resorts em Olímpia](/olimpia/resorts/) e [hotéis perto do Thermas](/olimpia/hoteis-perto-thermas-dos-laranjais/).
 
-Informe datas, adultos e crianças para receber proposta personalizada. A Tuki compara Solar das Águas com outras opções quando fizer sentido para sua viagem. Volte ao [guia de Olímpia](/olimpia/) para o mapa do destino.
+## Cotação
+
+Informe datas, adultos e crianças para receber proposta personalizada. Volte ao [guia de Olímpia](/olimpia/) para planejar a viagem completa.
