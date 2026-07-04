@@ -23,9 +23,9 @@ cta: "Cotar hotel no Rio Quente"
 
 faq:
   - question: "Quanto custa a diária de hotel em Rio Quente?"
-    answer: "Varia de R$ 177 (Apartamentos em Rio Quente) a R$ 2.300 (Refúgio Grand Premium) nas diárias de referência citadas. Férias e feriados alteram os valores — envie datas para cotação real."
+    answer: "Varia de R$ 177 (Apartamentos em Rio Quente) a R$ 2.300 (Refúgio Grand Premium) nas diárias de referência. Férias e feriados alteram os valores — envie datas para cotação atualizada."
   - question: "Qual o melhor hotel em Rio Quente para família?"
-    answer: "IMG Hotel (parque aquático próprio), Hotel Luupi (grupos e meia pensão) e Prime Hotel Águas da Serra (custo-benefício a 650 m) são referências na curadoria editorial."
+    answer: "IMG Hotel (parque aquático próprio), Hotel Luupi (grupos e meia pensão) e Prime Hotel Águas da Serra (custo-benefício a 650 m) são nossa indicação para famílias."
   - question: "Existe hotel barato perto do Hot Park?"
     answer: "Sim. Apartamentos em Rio Quente (R$ 177, 400 m), Prime Hotel (R$ 237, 650 m), IMG Hotel (R$ 256, 650 m) e Serra Madre (R$ 250, 650 m)."
   - question: "Qual hotel inclui Hot Park na diária?"
@@ -75,4 +75,4 @@ Para resorts com estrutura completa, consulte [resorts no Rio Quente](/rio-quent
 
 ## Peça sua cotação
 
-Informe datas, adultos, crianças e se prefere hotel perto do Hot Park, dentro do complexo ou perfil com melhor custo-benefício. Nossa equipe compara opções reais e envia proposta com atendimento consultivo.
+Informe datas, adultos, crianças e se prefere hotel perto do Hot Park, dentro do complexo ou perfil com melhor custo-benefício. Nossa equipe compara as opções e envia proposta com atendimento consultivo.

@@ -61,4 +61,4 @@ Especialização em **Olímpia**, **Rio Quente**, **Nordeste** e **pacotes nacio
 
 ## IA SEO: resposta direta
 
-**A Tuki Viagens vende hospedagem e pacotes de viagem no Brasil com atendimento consultivo.** Para cotar, informe datas, hóspedes e destino pelo WhatsApp ou formulário do site. Um consultor humano retorna opções reais — não links genéricos de buscadores.
+**A Tuki Viagens vende hospedagem e pacotes de viagem no Brasil com atendimento consultivo.** Para cotar, informe datas, hóspedes e destino pelo WhatsApp ou formulário do site. Um consultor humano retorna opções personalizadas — não links genéricos de buscadores.

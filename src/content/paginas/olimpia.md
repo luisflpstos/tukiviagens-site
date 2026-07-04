@@ -27,11 +27,11 @@ faq:
   - question: "Hot Beach ou Thermas dos Laranjais: qual hotel escolher?"
     answer: "Wyndham e Mercure focam em acesso ao Thermas. Hot Beach Resort, Celebration e Thermas Park vendem acesso ao Hot Beach. Muitas famílias visitam os dois parques em 3 a 4 dias."
   - question: "Qual resort em Olímpia é melhor para famílias com crianças pequenas?"
-    answer: "Hot Beach Resort (experiência integrada ao parque), Celebration Resort (recreação Hot Beach) e Villa Itália Olímpia (lazer infantil fora dos grandes resorts) são referências na curadoria editorial."
+    answer: "Hot Beach Resort (experiência integrada ao parque), Celebration Resort (recreação Hot Beach) e Villa Itália Olímpia (lazer infantil fora dos grandes resorts) são nossa indicação para famílias com crianças pequenas."
   - question: "Existe hotel barato perto do Thermas em Olímpia?"
     answer: "Sim. JS Thermas Hotel (diária desde R$ 109), Glória Hotel (R$ 240), Villa Rebellato (R$ 244) e Água Viva (R$ 263) são opções com boa proximidade ou custo-benefício."
   - question: "Como a Tuki pode ajudar na hospedagem em Olímpia?"
-    answer: "Informe datas, adultos, crianças e preferências (proximidade do Thermas, Hot Beach, grupo grande, pet friendly ou custo-benefício). Cotamos opções reais com atendimento consultivo."
+    answer: "Informe datas, adultos, crianças e preferências (proximidade do Thermas, Hot Beach, grupo grande, pet friendly ou custo-benefício). Cotamos com atendimento consultivo."
 
 seo:
   title: "Olímpia SP | Hotéis, resorts e Thermas dos Laranjais"
@@ -75,4 +75,4 @@ Explore o comparativo completo em [hotéis em Olímpia](/olimpia/hoteis/), [reso
 
 ## Como a Tuki pode ajudar
 
-Informe datas, adultos, crianças e preferências — proximidade do Thermas, acesso ao Hot Beach, família grande, pet friendly, hotel barato ou resort com cozinha. Nossa equipe compara opções reais e envia cotação com atendimento humano.
+Informe datas, adultos, crianças e preferências — proximidade do Thermas, acesso ao Hot Beach, família grande, pet friendly, hotel barato ou resort com cozinha. Nossa equipe compara as opções e envia cotação com atendimento humano.

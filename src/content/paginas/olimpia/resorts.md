@@ -64,12 +64,12 @@ Os resorts de Olímpia foram pensados para quem visita os **parques aquáticos**
 | Acesso ao Thermas | Mercure, Wyndham | Portaria exclusiva ou acesso direto |
 | Acesso ao Hot Beach | Hot Beach Resort, Celebration, Thermas Park | Ecossistema Hot Beach |
 | Grupos com cozinha | Enjoy Olímpia Park, Solar das Águas, Hot Beach Suites | Flats até 7 pessoas |
-| Premium familiar | Hot Beach Resort, Thermas Park, Wyndham | Recomendações finais da curadoria |
+| Premium familiar | Hot Beach Resort, Thermas Park, Wyndham | Nossa indicação principal |
 | Natureza e descanso | Carpe Diem Eco Resort | Fazenda, animais, 7,3 km Thermas |
 
 ## Pacote premium familiar
 
-Para pacote premium familiar, a curadoria prioriza **Hot Beach Resort**, **Thermas Park Resort & Spa** e **Wyndham Olímpia Royal Hotels**.
+Para pacote premium familiar, priorizamos **Hot Beach Resort**, **Thermas Park Resort & Spa** e **Wyndham Olímpia Royal Hotels**.
 
 Para proximidade ao Thermas, veja também [hotéis perto do Thermas](/olimpia/hoteis-perto-thermas-dos-laranjais/) e [hotéis em Olímpia](/olimpia/hoteis/).
 

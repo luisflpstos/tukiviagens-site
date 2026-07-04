@@ -23,7 +23,7 @@ cta: "Cotar hotel em Olímpia"
 
 faq:
   - question: "Quanto custa a diária de hotel em Olímpia?"
-    answer: "Varia de R$ 109 (JS Thermas Hotel) a R$ 706 (Carpe Diem Park Hotel) nas diárias de referência. Férias e feriados alteram os valores — envie datas para cotação real."
+    answer: "Varia de R$ 109 (JS Thermas Hotel) a R$ 706 (Carpe Diem Park Hotel) nas diárias de referência. Férias e feriados alteram os valores — envie datas para cotação atualizada."
   - question: "Qual o melhor hotel em Olímpia para família?"
     answer: "Villa Itália Olímpia (nota 9,5, lazer infantil) e Parque das Águas (nota 9,2, piscinas) são fortes fora dos resorts. Para proximidade: Tiffany, Água Viva e Glória."
   - question: "Existe hotel barato perto do Thermas dos Laranjais?"
@@ -75,4 +75,4 @@ Para resorts com acesso ao Thermas ou Hot Beach, consulte [resorts em Olímpia](
 
 ## Peça sua cotação
 
-Informe datas, adultos, crianças e se prefere hotel perto do Thermas dos Laranjais ou perfil com piscina e lazer. Nossa equipe compara opções reais e envia proposta com atendimento consultivo.
+Informe datas, adultos, crianças e se prefere hotel perto do Thermas dos Laranjais ou perfil com piscina e lazer. Nossa equipe compara as opções e envia proposta com atendimento consultivo.

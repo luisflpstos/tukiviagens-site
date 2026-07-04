@@ -6,7 +6,9 @@ const CONTENT_ROOT = join(process.cwd(), 'src/content');
 
 const FORBIDDEN_PATTERNS: RegExp[] = [
 	/fonte editorial/i,
+	/curadoria editorial/i,
 	/segundo a fonte/i,
+	/\bsegundo\b/i,
 	/segundo o dicas/i,
 	/segundo página oficial/i,
 	/página oficial descreve/i,
@@ -26,6 +28,9 @@ const FORBIDDEN_PATTERNS: RegExp[] = [
 	/segundo melhores destinos/i,
 	/segundo quero viajar/i,
 	/segundo a thermas/i,
+	/referências na curadoria/i,
+	/diárias de referência citadas/i,
+	/pet friendly segundo/i,
 ];
 
 function collectMarkdownFiles(dir: string): string[] {

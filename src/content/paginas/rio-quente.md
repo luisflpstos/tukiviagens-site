@@ -31,7 +31,7 @@ faq:
   - question: "Rio Quente e Caldas Novas são a mesma coisa?"
     answer: "Rio Quente é um município na região de Caldas Novas (GO), famoso pelas águas termais e pelo Hot Park. Muitos viajantes buscam hospedagem em Rio Quente para aproveitar o parque."
   - question: "Como funciona a cotação pela Tuki?"
-    answer: "Informe datas, hóspedes e preferências (dentro ou fora do complexo, grupo grande, custo-benefício). Cotamos opções reais com atendimento humano."
+    answer: "Informe datas, hóspedes e preferências (dentro ou fora do complexo, grupo grande, custo-benefício). Cotamos com atendimento humano."
 
 seo:
   title: "Rio Quente e Hot Park | Hotéis e resorts"
@@ -75,4 +75,4 @@ Explore o comparativo completo em [hotéis no Rio Quente](/rio-quente/hoteis/), 
 
 ## Como a Tuki pode ajudar
 
-Informe datas, adultos, crianças e preferências — dentro ou fora do complexo, Hot Park incluso, grupo grande ou hotel barato. Nossa equipe compara opções reais e envia cotação com atendimento humano.
+Informe datas, adultos, crianças e preferências — dentro ou fora do complexo, Hot Park incluso, grupo grande ou hotel barato. Nossa equipe compara as opções e envia cotação com atendimento humano.
