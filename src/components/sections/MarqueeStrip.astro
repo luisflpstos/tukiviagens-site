@@ -12,7 +12,14 @@ const icons = [...MARQUEE_ICONS, ...MARQUEE_ICONS];
 				{
 					icons.map((icon) => (
 						<span class="tuki-ticker-item">
-							<TukiIcon src={icon.src} alt={icon.alt} size="md" class="tuki-marquee-icon" decorative />
+							<TukiIcon
+								src={icon.src}
+								alt={icon.alt}
+								size="md"
+								class="tuki-marquee-icon"
+								decorative
+								loadingContext="marquee"
+							/>
 						</span>
 					))
 				}

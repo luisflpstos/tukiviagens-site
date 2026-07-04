@@ -1,13 +1,28 @@
 ---
+import {
+	resolveTukiIconLoading,
+	type TukiIconLoadingContext,
+} from '../../lib/tuki-icon-loading';
+
 interface Props {
 	src: string;
 	alt: string;
 	size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | '2xl';
 	class?: string;
 	decorative?: boolean;
+	loadingContext?: TukiIconLoadingContext;
 }
 
-const { src, alt, size = 'md', class: className = '', decorative = false } = Astro.props;
+const {
+	src,
+	alt,
+	size = 'md',
+	class: className = '',
+	decorative = false,
+	loadingContext = 'default',
+} = Astro.props;
+
+const loading = resolveTukiIconLoading(loadingContext);
 
 const sizes = {
 	xs: 'h-8 w-8',
@@ -35,6 +50,6 @@ const dimensions = {
 	class:list={['tuki-brand-icon object-contain', sizes[size], className]}
 	width={dimensions[size]}
 	height={dimensions[size]}
-	loading="lazy"
+	loading={loading}
 	decoding="async"
 />
