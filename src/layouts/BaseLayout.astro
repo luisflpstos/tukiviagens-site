@@ -82,7 +82,9 @@ const gtmId = import.meta.env.PUBLIC_GTM_ID;
 
 		<script>
 			import { captureUtmParams } from '../scripts/utm';
+			import { observeWhatsAppLinks } from '../scripts/whatsapp-click';
 			captureUtmParams();
+			observeWhatsAppLinks();
 		</script>
 	</body>
 </html>

@@ -2,7 +2,6 @@
 import Container from '../common/Container.astro';
 import Button from '../common/Button.astro';
 import { SITE, BRAND } from '../../lib/constants';
-import { buildWhatsAppUrl } from '../../lib/seo';
 
 interface Props {
 	title?: string;
@@ -32,7 +31,8 @@ const {
 				<p class="tuki-type-lead tuki-type-inverse mx-auto mt-4 max-w-xl text-white/90">{subtitle}</p>
 				<div class="mt-8 flex flex-wrap justify-center gap-4">
 					<Button
-						href={buildWhatsAppUrl(SITE.phone, 'Olá! Estou pronto para minha próxima aventura com a Tuki!')}
+						whatsappPhone={SITE.phone}
+						whatsappProduct="Tuki Viagens"
 						variant="inverse"
 						size="lg"
 						class="gap-2"

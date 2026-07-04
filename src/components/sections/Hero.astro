@@ -2,7 +2,6 @@
 import Container from '../common/Container.astro';
 import Button from '../common/Button.astro';
 import { SITE, HERO_STATS, BRAND, HERO_EYEBROW, HERO_FLOATING_BADGES } from '../../lib/constants';
-import { buildWhatsAppUrl } from '../../lib/seo';
 import { resolveHeroImagePath } from '../../lib/image-paths';
 
 const heroBackground = resolveHeroImagePath();
@@ -49,7 +48,8 @@ const heroBackground = resolveHeroImagePath();
 
 				<div class="tuki-hero-enter mt-7 flex flex-wrap gap-3" style="--enter-i: 3">
 					<Button
-						href={buildWhatsAppUrl(SITE.phone, 'Olá! Quero planejar minha viagem com a Tuki.')}
+						whatsappPhone={SITE.phone}
+						whatsappProduct="Tuki Viagens"
 						variant="primary"
 						size="lg"
 						class="gap-2 uppercase tracking-wide"

@@ -1,12 +1,10 @@
 ---
 import { NAV_LINKS, HOME_NAV_LINKS, SITE } from '../../lib/constants';
-import { buildWhatsAppUrl } from '../../lib/seo';
 import Button from './Button.astro';
 import Logo from './Logo.astro';
 
 const isHome = Astro.url.pathname === '/';
 const links = isHome ? HOME_NAV_LINKS : NAV_LINKS;
-const whatsappHref = buildWhatsAppUrl(SITE.phone, 'Olá! Quero planejar minha viagem com a Tuki.');
 ---
 
 <header class="sticky top-0 z-50 border-b border-tuki-purple/8 bg-white shadow-[0_4px_24px_color-mix(in_srgb,var(--color-tuki-purple)_6%,transparent)]">
@@ -34,7 +32,8 @@ const whatsappHref = buildWhatsAppUrl(SITE.phone, 'Olá! Quero planejar minha vi
 
 		<div class="flex items-center gap-2">
 			<Button
-				href={whatsappHref}
+				whatsappPhone={SITE.phone}
+				whatsappProduct="Tuki Viagens"
 				variant="primary"
 				size="sm"
 				class="gap-1.5 uppercase tracking-wide"

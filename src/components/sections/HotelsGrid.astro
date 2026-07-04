@@ -3,7 +3,6 @@ import Container from '../common/Container.astro';
 import Button from '../common/Button.astro';
 import { formatLocation } from '../../lib/formatters';
 import { HOTELS_DESCRIPTION, HOTEL_FALLBACK_IMAGES, HOTELS_PRICE_NOTE, SITE } from '../../lib/constants';
-import { buildWhatsAppUrl } from '../../lib/seo';
 
 interface Property {
 	id: string;
@@ -42,8 +41,6 @@ function resolveHotelImage(image: string | undefined, index: number) {
 			{
 				items.map((item, index) => {
 					const imageSrc = resolveHotelImage(item.image, index);
-					const quoteMessage = `Olá! Quero cotar o ${item.title} com a Tuki.`;
-					const quoteHref = buildWhatsAppUrl(SITE.phone, quoteMessage);
 					return (
 						<article
 							class="tuki-card-ref tuki-stagger-item group overflow-hidden bg-white transition hover:-translate-y-1 hover:shadow-md"
@@ -93,7 +90,8 @@ function resolveHotelImage(image: string | undefined, index: number) {
 									)
 								}
 								<Button
-									href={quoteHref}
+									whatsappPhone={SITE.phone}
+									whatsappProduct={item.title}
 									variant="dark"
 									size="sm"
 									class="mt-4 w-full"

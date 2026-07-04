@@ -8,7 +8,7 @@ import Faq from '../components/sections/Faq.astro';
 import LeadCaptureSection from '../components/sections/LeadCaptureSection.astro';
 import { type GalleryImage } from '../lib/gallery-images';
 import { shouldShowPageCarousel } from '../lib/property-gallery';
-import { buildCanonical, buildWhatsAppUrl } from '../lib/seo';
+import { buildCanonical } from '../lib/seo';
 import { getChildRoutes, getRouteByPath, normalizePath } from '../lib/site-routes';
 
 interface RelatedPage {
@@ -173,10 +173,14 @@ const leadDestination = destinationHubRoute?.title ?? parentRoute?.title ?? titl
 			<h1 class="tuki-type-display mt-2">{headline}</h1>
 			<p class="tuki-type-lead tuki-type-inverse tuki-measure mt-4 max-w-2xl text-white/90">{description}</p>
 			<Button
-				href={buildWhatsAppUrl(whatsapp, `Olá! Gostaria de uma cotação: ${title}.`)}
+				whatsappPhone={whatsapp}
+				whatsappProduct={title}
+				whatsappH1={headline}
 				variant="primary"
 				size="lg"
 				class="mt-8"
+				target="_blank"
+				rel="noopener noreferrer"
 			>
 				{cta}
 			</Button>

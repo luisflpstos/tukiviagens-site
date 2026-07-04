@@ -4,7 +4,9 @@ import Container from '../components/common/Container.astro';
 import LeadForm from '../components/common/LeadForm.astro';
 import WhatsAppButton from '../components/common/WhatsAppButton.astro';
 import { SITE } from '../lib/constants';
-import { buildWhatsAppUrl } from '../lib/seo';
+import { buildWhatsAppFallbackUrl } from '../lib/whatsapp';
+
+const whatsappHref = buildWhatsAppFallbackUrl(SITE.phone, 'Tuki Viagens');
 ---
 
 <BaseLayout
@@ -45,10 +47,13 @@ import { buildWhatsAppUrl } from '../lib/seo';
 						<li>
 							<strong>WhatsApp:</strong>
 							<a
-								href={buildWhatsAppUrl(SITE.phone, 'Olá! Gostaria de falar com a Tuki Viagens.')}
+								href={whatsappHref}
 								class="text-tuki-purple hover:underline"
 								target="_blank"
 								rel="noopener noreferrer"
+								data-whatsapp-link
+								data-phone={SITE.phone}
+								data-product="Tuki Viagens"
 							>
 								{SITE.whatsappDisplay}
 							</a>
@@ -60,7 +65,7 @@ import { buildWhatsAppUrl } from '../lib/seo';
 					<div class="mt-8">
 						<WhatsAppButton
 							phone={SITE.phone}
-							message="Olá! Gostaria de falar com a Tuki Viagens."
+							product="Tuki Viagens"
 							label="Chamar no WhatsApp"
 						/>
 					</div>

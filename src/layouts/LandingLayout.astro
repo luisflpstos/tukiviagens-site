@@ -9,10 +9,10 @@ interface Props {
 	noindex?: boolean;
 	whatsapp: string;
 	campaign?: string;
-	whatsappMessage?: string;
+	whatsappProduct?: string;
 }
 
-const { title, description, path, noindex = true, whatsapp, campaign, whatsappMessage } = Astro.props;
+const { title, description, path, noindex = true, whatsapp, campaign, whatsappProduct } = Astro.props;
 ---
 
 <BaseLayout
@@ -26,10 +26,12 @@ const { title, description, path, noindex = true, whatsapp, campaign, whatsappMe
 	<slot />
 	<WhatsAppButton
 		phone={whatsapp}
-		message={whatsappMessage}
+		product={whatsappProduct ?? title}
 		campaign={campaign}
+		h1={title}
 		fixed
 		label=""
+		showLabel={false}
 		class="!px-4"
 	/>
 </BaseLayout>

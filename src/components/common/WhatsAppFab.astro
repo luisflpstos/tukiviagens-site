@@ -1,9 +1,9 @@
 ---
 import { SITE } from '../../lib/constants';
-import { buildWhatsAppUrl } from '../../lib/seo';
+import { buildWhatsAppFallbackUrl } from '../../lib/whatsapp';
 
-const message = 'Olá! Vim pelo site da Tuki e quero ajuda para escolher minha viagem.';
-const href = buildWhatsAppUrl(SITE.phone, message);
+const product = 'Tuki Viagens';
+const href = buildWhatsAppFallbackUrl(SITE.phone, product);
 ---
 
 <a
@@ -12,6 +12,10 @@ const href = buildWhatsAppUrl(SITE.phone, message);
 	aria-label="Falar com a Tuki no WhatsApp"
 	target="_blank"
 	rel="noopener noreferrer"
+	data-whatsapp-link
+	data-phone={SITE.phone}
+	data-product={product}
+	data-button-label="Falar com a Tuki no WhatsApp"
 >
 	<svg class="h-10 w-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
 		<path

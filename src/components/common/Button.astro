@@ -1,4 +1,6 @@
 ---
+import { buildWhatsAppFallbackUrl } from '../../lib/whatsapp';
+
 interface Props {
 	href?: string;
 	variant?: 'primary' | 'secondary' | 'dark' | 'outline' | 'outline-dark' | 'inverse' | 'ghost';
@@ -8,6 +10,10 @@ interface Props {
 	disabled?: boolean;
 	target?: string;
 	rel?: string;
+	whatsappPhone?: string;
+	whatsappProduct?: string;
+	whatsappCampaign?: string;
+	whatsappH1?: string;
 }
 
 const {
@@ -19,7 +25,16 @@ const {
 	disabled = false,
 	target,
 	rel,
+	whatsappPhone,
+	whatsappProduct,
+	whatsappCampaign,
+	whatsappH1,
 } = Astro.props;
+
+const isWhatsAppLink = Boolean(whatsappPhone && whatsappProduct);
+const resolvedHref = isWhatsAppLink
+	? buildWhatsAppFallbackUrl(whatsappPhone!, whatsappProduct!)
+	: href;
 
 const base =
 	'inline-flex items-center justify-center gap-2 rounded-full font-semibold tuki-btn-motion focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2';
@@ -48,8 +63,22 @@ const classes = [base, variants[variant], sizes[size], className].join(' ');
 ---
 
 {
-	href ? (
-		<a href={href} class={classes} target={target} rel={rel}>
+	resolvedHref ? (
+		<a
+			href={resolvedHref}
+			class={classes}
+			target={target}
+			rel={rel}
+			{...(isWhatsAppLink
+				? {
+						'data-whatsapp-link': true,
+						'data-phone': whatsappPhone,
+						'data-product': whatsappProduct,
+						'data-campaign': whatsappCampaign,
+						'data-h1': whatsappH1,
+					}
+				: {})}
+		>
 			<slot />
 		</a>
 	) : (

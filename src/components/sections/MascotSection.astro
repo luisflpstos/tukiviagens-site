@@ -3,7 +3,6 @@ import Container from '../common/Container.astro';
 import Button from '../common/Button.astro';
 import TukiIcon from '../common/TukiIcon.astro';
 import { SITE, BRAND } from '../../lib/constants';
-import { buildWhatsAppUrl } from '../../lib/seo';
 ---
 
 <section class="relative overflow-hidden tuki-mascot-ref section-padding text-white">
@@ -38,7 +37,8 @@ import { buildWhatsAppUrl } from '../../lib/seo';
 					cada detalhe da sua viagem está sob controle.
 				</p>
 				<Button
-					href={buildWhatsAppUrl(SITE.phone, 'Olá! Quero viajar com a Tuki!')}
+					whatsappPhone={SITE.phone}
+					whatsappProduct="Tuki Viagens"
 					variant="primary"
 					size="lg"
 					class="mt-8"

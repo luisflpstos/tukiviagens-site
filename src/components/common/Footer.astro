@@ -1,9 +1,9 @@
 ---
 import { SITE, FOOTER_DESTINATIONS, BRAND } from '../../lib/constants';
-import { buildWhatsAppUrl } from '../../lib/seo';
+import { buildWhatsAppFallbackUrl } from '../../lib/whatsapp';
 import Logo from './Logo.astro';
 
-const whatsappHref = buildWhatsAppUrl(SITE.phone, 'Olá! Gostaria de saber mais sobre a Tuki Viagens.');
+const whatsappHref = buildWhatsAppFallbackUrl(SITE.phone, 'Tuki Viagens');
 ---
 
 <footer class="bg-tuki-purple-dark text-white">
@@ -54,7 +54,15 @@ const whatsappHref = buildWhatsAppUrl(SITE.phone, 'Olá! Gostaria de saber mais 
 					</p>
 					<p>
 						WhatsApp:{' '}
-						<a href={whatsappHref} class="transition hover:text-white" target="_blank" rel="noopener noreferrer">
+						<a
+							href={whatsappHref}
+							class="transition hover:text-white"
+							target="_blank"
+							rel="noopener noreferrer"
+							data-whatsapp-link
+							data-phone={SITE.phone}
+							data-product="Tuki Viagens"
+						>
 							{SITE.whatsappDisplay}
 						</a>
 					</p>
