@@ -1,6 +1,8 @@
 ---
 import { getCollection, render } from 'astro:content';
 import ResortLayout from '../../layouts/ResortLayout.astro';
+import { HOTEL_FALLBACK_IMAGES } from '../../lib/constants';
+import { resolveGalleryImages } from '../../lib/gallery-images';
 
 export async function getStaticPaths() {
 	const entries = await getCollection('resorts');
@@ -13,6 +15,14 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { Content } = await render(entry);
 const { seo, ...data } = entry.data;
+
+const galleryImages = resolveGalleryImages({
+	slug: entry.id,
+	category: 'hoteis',
+	explicitImages: data.images,
+	fallbacks: HOTEL_FALLBACK_IMAGES,
+	label: data.title,
+});
 ---
 
 <ResortLayout
@@ -27,6 +37,7 @@ const { seo, ...data } = entry.data;
 	faq={data.faq}
 	whatsapp={data.whatsapp}
 	cta={data.cta}
+	galleryImages={galleryImages}
 >
 	<Content />
 </ResortLayout>

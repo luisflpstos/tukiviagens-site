@@ -3,10 +3,13 @@ import BaseLayout from './BaseLayout.astro';
 import Container from '../components/common/Container.astro';
 import Button from '../components/common/Button.astro';
 import BenefitsList from '../components/sections/BenefitsList.astro';
+import ContentWithCarousel from '../components/sections/ContentWithCarousel.astro';
 import Faq from '../components/sections/Faq.astro';
 import LeadCaptureSection from '../components/sections/LeadCaptureSection.astro';
-import { buildWhatsAppUrl } from '../lib/seo';
-import { getChildRoutes, normalizePath } from '../lib/site-routes';
+import { type GalleryImage } from '../lib/gallery-images';
+import { shouldShowPageCarousel } from '../lib/property-gallery';
+import { buildCanonical, buildWhatsAppUrl } from '../lib/seo';
+import { getChildRoutes, getRouteByPath, normalizePath } from '../lib/site-routes';
 
 interface RelatedPage {
 	label: string;
@@ -19,11 +22,14 @@ interface Props {
 	path: string;
 	pageType: 'hub' | 'venda' | 'atracao' | 'propriedade' | 'institucional';
 	headline: string;
+	pageTitle?: string;
 	highlights: string[];
 	faq: { question: string; answer: string }[];
 	whatsapp: string;
 	cta: string;
+	image?: string;
 	relatedPages?: RelatedPage[];
+	galleryImages?: GalleryImage[];
 }
 
 const {
@@ -32,12 +38,25 @@ const {
 	path,
 	pageType,
 	headline,
+	pageTitle = title,
 	highlights,
 	faq,
 	whatsapp,
 	cta,
+	image,
 	relatedPages = [],
+	galleryImages = [],
 } = Astro.props;
+
+const showGallery = shouldShowPageCarousel(pageType, galleryImages);
+const currentRoute = getRouteByPath(path);
+const parentRoute = currentRoute?.parent ? getRouteByPath(currentRoute.parent) : undefined;
+const destinationHubRoute =
+	parentRoute?.pageType === 'hub'
+		? parentRoute
+		: parentRoute?.parent
+			? getRouteByPath(parentRoute.parent)
+			: undefined;
 
 const pageTypeLabels: Record<Props['pageType'], string> = {
 	hub: 'Destino',
@@ -60,8 +79,31 @@ const navPages = relatedPages.length > 0 ? relatedPages : childRoutes;
 
 const breadcrumbItems = [
 	{ name: 'Início', path: '/' },
-	...(path !== '/' ? [{ name: title, path }] : []),
+	...(destinationHubRoute ? [{ name: destinationHubRoute.title, path: destinationHubRoute.path }] : []),
+	...(parentRoute && parentRoute.pageType !== 'hub'
+		? [{ name: parentRoute.title, path: parentRoute.path }]
+		: []),
+	...(path !== '/' ? [{ name: pageTitle, path }] : []),
 ];
+
+const structuredPage =
+	pageType === 'propriedade'
+		? {
+				'@context': 'https://schema.org',
+				'@type': 'Hotel',
+				name: title,
+				description,
+				url: buildCanonical(path),
+			}
+		: pageType === 'atracao'
+			? {
+					'@context': 'https://schema.org',
+					'@type': 'TouristAttraction',
+					name: title,
+					description,
+					url: buildCanonical(path),
+				}
+			: null;
 
 const jsonLd = [
 	{
@@ -71,9 +113,10 @@ const jsonLd = [
 			'@type': 'ListItem',
 			position: index + 1,
 			name: item.name,
-			item: item.path.startsWith('http') ? item.path : undefined,
+			item: buildCanonical(item.path),
 		})),
 	},
+	...(structuredPage ? [structuredPage] : []),
 	...(faq.length > 0
 		? [
 				{
@@ -91,22 +134,39 @@ const jsonLd = [
 			]
 		: []),
 ];
+
+const benefitsTitle =
+	pageType === 'propriedade' ? 'Destaques da propriedade' : pageType === 'atracao' ? 'Destaques' : 'Destaques';
+
+const leadTitle =
+	pageType === 'propriedade'
+		? 'Consulte hospedagem'
+		: pageType === 'atracao'
+			? 'Cotar hospedagem no destino'
+			: 'Peça sua cotação';
+
+const leadDestination = destinationHubRoute?.title ?? parentRoute?.title ?? title;
 ---
 
-<BaseLayout title={title} description={description} path={path} jsonLd={jsonLd}>
+<BaseLayout title={title} description={description} path={path} image={image} jsonLd={jsonLd}>
 	<section class="tuki-gradient-purple section-padding text-white">
 		<Container>
 			<nav aria-label="Breadcrumb" class="tuki-type-small text-white/70">
 				<ol class="flex flex-wrap items-center gap-2">
-					<li><a href="/" class="hover:text-white">Início</a></li>
-					{
-						path !== '/' && (
-							<>
-								<li aria-hidden="true">/</li>
-								<li class="text-white">{title}</li>
-							</>
-						)
-					}
+					{breadcrumbItems.map((item, index) => (
+						<>
+							{index > 0 && <li aria-hidden="true">/</li>}
+							<li>
+								{index === breadcrumbItems.length - 1 ? (
+									<span class="text-white">{item.name}</span>
+								) : (
+									<a href={normalizePath(item.path)} class="hover:text-white">
+										{item.name}
+									</a>
+								)}
+							</li>
+						</>
+					))}
 				</ol>
 			</nav>
 			<p class="tuki-eyebrow-light mt-4">{pageTypeLabels[pageType]}</p>
@@ -151,15 +211,33 @@ const jsonLd = [
 		)
 	}
 
-	<article class="section-padding">
-		<Container size="narrow">
-			<div class="content-markdown max-w-none">
-				<slot />
-			</div>
-		</Container>
+	<article class:list={[!showGallery && 'section-padding']}>
+		{
+			showGallery ? (
+				<ContentWithCarousel images={galleryImages} label={title}>
+					<slot />
+				</ContentWithCarousel>
+			) : (
+				<Container size="narrow">
+					<div class="content-markdown max-w-none">
+						<slot />
+					</div>
+				</Container>
+			)
+		}
 	</article>
 
-	{highlights.length > 0 && <BenefitsList items={highlights} title="Destaques" />}
+	{highlights.length > 0 && <BenefitsList items={highlights} title={benefitsTitle} />}
 	<Faq items={faq} />
-	<LeadCaptureSection formId="pagina-lead-form" destination={title} title="Peça sua cotação" />
+	<LeadCaptureSection
+		formId="pagina-lead-form"
+		hotel={pageType === 'propriedade' ? title : undefined}
+		destination={leadDestination}
+		title={leadTitle}
+		subtitle={
+			pageType === 'propriedade'
+				? `${title} · ${leadDestination}`
+				: 'Preencha o formulário e nossa equipe retorna rapidamente.'
+		}
+	/>
 </BaseLayout>

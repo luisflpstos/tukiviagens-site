@@ -124,6 +124,12 @@ export const HOTEL_FALLBACK_IMAGES = [
 	'https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=1200&q=80',
 ] as const;
 
+export const DESTINATION_FALLBACK_IMAGES = [
+	'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1200&q=80',
+	'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1200&q=80',
+	'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1200&q=80',
+] as const;
+
 export const WHY_TUKI_INTRO =
 	'Somos uma agência brasileira apaixonada por mostrar o nosso país. Construímos relações com hotéis e resorts para garantir tarifas justas, conforto e o melhor da experiência — sem abrir mão da segurança.';
 

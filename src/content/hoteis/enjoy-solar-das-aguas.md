@@ -17,8 +17,7 @@ amenities:
   - Área de lazer
   - Próximo ao Thermas dos Laranjais
 
-images:
-  - "/images/placeholder-hotel.jpg"
+images: []
 
 faq:
   - question: "O hotel fica perto do Thermas dos Laranjais?"

@@ -341,6 +341,125 @@
 	.content-markdown a {
 		@apply text-tuki-purple underline;
 	}
+
+	.tuki-comparison-table-wrap {
+		margin: 1rem 0 1.5rem;
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+		border-radius: 1rem;
+		border: 1px solid color-mix(in srgb, var(--color-tuki-purple) 8%, transparent);
+		background: color-mix(in srgb, var(--color-tuki-lavender) 45%, white);
+		box-shadow: 0 8px 24px color-mix(in srgb, var(--color-tuki-purple) 6%, transparent);
+	}
+
+	.tuki-comparison-table {
+		width: 100%;
+		min-width: 32rem;
+		border-collapse: collapse;
+		font-size: var(--text-body);
+		line-height: var(--leading-body);
+	}
+
+	.tuki-comparison-table thead {
+		background: color-mix(in srgb, var(--color-tuki-purple) 6%, var(--color-tuki-lavender));
+	}
+
+	.tuki-comparison-table th {
+		padding: 0.875rem 1rem;
+		font-family: var(--font-display);
+		font-size: var(--text-small);
+		font-weight: 700;
+		line-height: 1.4;
+		text-align: left;
+		color: var(--color-tuki-ink);
+		border-bottom: 1px solid color-mix(in srgb, var(--color-tuki-purple) 10%, transparent);
+	}
+
+	.tuki-comparison-table td {
+		padding: 0.875rem 1rem;
+		vertical-align: top;
+		color: var(--color-tuki-muted);
+		border-bottom: 1px solid color-mix(in srgb, var(--color-tuki-purple) 6%, transparent);
+	}
+
+	.tuki-comparison-table tbody tr:last-child td {
+		border-bottom: none;
+	}
+
+	.tuki-comparison-table tbody tr:nth-child(even) {
+		background: color-mix(in srgb, var(--color-tuki-white) 55%, transparent);
+	}
+
+	.tuki-comparison-table td:first-child {
+		font-family: var(--font-display);
+		font-weight: 700;
+		color: var(--color-tuki-ink);
+	}
+
+	.tuki-comparison-table td a {
+		font-weight: 600;
+	}
+
+	@media (max-width: 639px) {
+		.tuki-comparison-table-wrap {
+			overflow-x: visible;
+		}
+
+		.tuki-comparison-table {
+			display: block;
+			min-width: 0;
+		}
+
+		.tuki-comparison-table thead {
+			display: none;
+		}
+
+		.tuki-comparison-table tbody {
+			display: block;
+		}
+
+		.tuki-comparison-table tbody tr {
+			display: block;
+			margin: 0.75rem;
+			padding: 1rem;
+			border-radius: 1rem;
+			border: 1px solid color-mix(in srgb, var(--color-tuki-purple) 8%, transparent);
+			background: var(--color-tuki-white);
+		}
+
+		.tuki-comparison-table tbody tr:nth-child(even) {
+			background: var(--color-tuki-white);
+		}
+
+		.tuki-comparison-table td {
+			display: block;
+			padding: 0.375rem 0;
+			border-bottom: none;
+		}
+
+		.tuki-comparison-table td:not(:first-child) {
+			font-size: var(--text-small);
+		}
+
+		.tuki-comparison-table td:not(:first-child)::before {
+			content: attr(data-label);
+			display: block;
+			margin-bottom: 0.125rem;
+			font-family: var(--font-display);
+			font-size: var(--text-caption);
+			font-weight: 700;
+			letter-spacing: 0.04em;
+			text-transform: uppercase;
+			color: var(--color-tuki-orange-dark);
+		}
+
+		.tuki-comparison-table td:first-child {
+			margin-bottom: 0.5rem;
+			padding-bottom: 0.625rem;
+			border-bottom: 1px solid color-mix(in srgb, var(--color-tuki-purple) 8%, transparent);
+			font-size: var(--text-title);
+		}
+	}
 }
 
 @keyframes tuki-ticker {

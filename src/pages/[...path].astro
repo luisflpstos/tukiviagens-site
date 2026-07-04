@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import PageLayout from '../layouts/PageLayout.astro';
+import { resolvePageGalleryImages } from '../lib/property-gallery';
 import { slugToPath } from '../lib/site-routes';
 
 export async function getStaticPaths() {
@@ -15,6 +16,14 @@ const { entry } = Astro.props;
 const { Content } = await render(entry);
 const { seo, ...data } = entry.data;
 const pagePath = slugToPath(entry.id);
+
+const galleryImages = resolvePageGalleryImages({
+	entryId: entry.id,
+	pageType: data.pageType,
+	explicitImages: data.images,
+	label: data.title,
+});
+const seoImage = galleryImages[0]?.src ?? seo.image;
 ---
 
 <PageLayout
@@ -23,10 +32,13 @@ const pagePath = slugToPath(entry.id);
 	path={pagePath}
 	pageType={data.pageType}
 	headline={data.headline}
+	pageTitle={data.title}
 	highlights={data.highlights}
 	faq={data.faq}
 	whatsapp={data.whatsapp}
 	cta={data.cta}
+	image={seoImage}
+	galleryImages={galleryImages}
 >
 	<Content />
 </PageLayout>

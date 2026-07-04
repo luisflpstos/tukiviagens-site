@@ -1,0 +1,24 @@
+---
+import PhotoCarousel from '../common/PhotoCarousel.astro';
+
+interface Props {
+	images: { src: string; alt: string }[];
+	label: string;
+}
+
+const { images, label } = Astro.props;
+---
+
+<section class="section-padding">
+	<div class="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
+		<div class="grid items-start gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)] lg:gap-12">
+			<div class="lg:sticky lg:top-28">
+				<PhotoCarousel images={images} label={label} />
+			</div>
+
+			<article class="content-markdown max-w-none">
+				<slot />
+			</article>
+		</div>
+	</div>
+</section>

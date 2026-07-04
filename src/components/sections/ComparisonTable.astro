@@ -1,0 +1,48 @@
+---
+import {
+	COMPARISON_TABLE_CLASS,
+	COMPARISON_TABLE_WRAP_CLASS,
+	DEFAULT_COMPARISON_COLUMNS,
+	type ComparisonTableRow,
+} from '../../lib/comparison-table';
+
+interface Props {
+	columns?: readonly string[];
+	rows: ComparisonTableRow[];
+}
+
+const { columns = DEFAULT_COMPARISON_COLUMNS, rows } = Astro.props;
+---
+
+<div class={COMPARISON_TABLE_WRAP_CLASS}>
+	<table class={COMPARISON_TABLE_CLASS}>
+		<thead>
+			<tr>
+				{columns.map((column) => (
+					<th scope="col">{column}</th>
+				))}
+			</tr>
+		</thead>
+		<tbody>
+			{rows.map((row) => (
+				<tr>
+					{row.cells.map((cell, index) => {
+						const href = row.links[index];
+
+						return (
+							<td data-label={columns[index]}>
+								{href ? (
+									<a href={href} class="font-semibold text-tuki-purple underline">
+										{cell}
+									</a>
+								) : (
+									cell
+								)}
+							</td>
+						);
+					})}
+				</tr>
+			))}
+		</tbody>
+	</table>
+</div>

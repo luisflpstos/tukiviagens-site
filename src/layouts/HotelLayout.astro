@@ -3,9 +3,11 @@ import BaseLayout from './BaseLayout.astro';
 import Container from '../components/common/Container.astro';
 import Button from '../components/common/Button.astro';
 import BenefitsList from '../components/sections/BenefitsList.astro';
+import ContentWithCarousel from '../components/sections/ContentWithCarousel.astro';
 import Faq from '../components/sections/Faq.astro';
 import LeadCaptureSection from '../components/sections/LeadCaptureSection.astro';
 import { formatLocation } from '../lib/formatters';
+import { shouldShowGallery, type GalleryImage } from '../lib/gallery-images';
 import { buildWhatsAppUrl } from '../lib/seo';
 
 interface Props {
@@ -20,6 +22,7 @@ interface Props {
 	faq: { question: string; answer: string }[];
 	whatsapp: string;
 	cta: string;
+	galleryImages?: GalleryImage[];
 }
 
 const {
@@ -34,7 +37,10 @@ const {
 	faq,
 	whatsapp,
 	cta,
+	galleryImages = [],
 } = Astro.props;
+
+const showGallery = shouldShowGallery(galleryImages);
 
 const jsonLd = {
 	'@context': 'https://schema.org',
@@ -69,12 +75,20 @@ const jsonLd = {
 		</Container>
 	</section>
 
-	<article class="section-padding">
-		<Container size="narrow">
-			<div class="content-markdown max-w-none">
-				<slot />
-			</div>
-		</Container>
+	<article class:list={[!showGallery && 'section-padding']}>
+		{
+			showGallery ? (
+				<ContentWithCarousel images={galleryImages} label={title}>
+					<slot />
+				</ContentWithCarousel>
+			) : (
+				<Container size="narrow">
+					<div class="content-markdown max-w-none">
+						<slot />
+					</div>
+				</Container>
+			)
+		}
 	</article>
 
 	<BenefitsList items={amenities} title="Comodidades" />

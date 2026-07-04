@@ -100,6 +100,7 @@ const paginas = defineCollection({
 		whatsapp: z.string(),
 		cta: z.string(),
 		faq: faqSchema.default([]),
+		images: z.array(z.string()).default([]),
 		seo: seoSchema,
 	}),
 });

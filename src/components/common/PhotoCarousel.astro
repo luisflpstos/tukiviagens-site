@@ -1,0 +1,82 @@
+---
+interface Props {
+	images: { src: string; alt: string }[];
+	label: string;
+}
+
+const { images, label } = Astro.props;
+---
+
+{
+	images.length > 0 && (
+		<div
+			class="photo-carousel"
+			data-photo-carousel
+			aria-roledescription="carrossel"
+			aria-label={`Fotos de ${label}`}
+		>
+			<div class="relative overflow-hidden rounded-2xl bg-tuki-lavender shadow-[0_18px_40px_color-mix(in_srgb,var(--color-tuki-purple)_12%,transparent)]">
+				<div class="aspect-[4/3]">
+					<div
+						class="flex h-full transition-transform duration-500 ease-out"
+						data-carousel-track
+						aria-live="polite"
+					>
+						{images.map((image) => (
+							<figure class="h-full w-full shrink-0" data-carousel-slide aria-roledescription="slide">
+								<img
+									src={image.src}
+									alt={image.alt}
+									class="h-full w-full object-cover"
+									loading="lazy"
+									decoding="async"
+								/>
+							</figure>
+						))}
+					</div>
+				</div>
+			</div>
+
+			{images.length > 1 && (
+				<div class="mt-4 flex items-center justify-center gap-3">
+					<button
+						type="button"
+						class="flex h-9 w-9 items-center justify-center rounded-full border border-tuki-purple/15 bg-white text-tuki-purple transition hover:border-tuki-purple/30 hover:bg-tuki-purple/5"
+						data-carousel-prev
+						aria-label="Foto anterior"
+					>
+						<span aria-hidden="true">‹</span>
+					</button>
+
+					<div class="flex gap-2" data-carousel-dots>
+						{images.map((_, index) => (
+							<button
+								type="button"
+								class:list={[
+									'h-2.5 w-2.5 rounded-full transition',
+									index === 0 ? 'bg-tuki-purple' : 'bg-tuki-purple/25 hover:bg-tuki-purple/40',
+								]}
+								data-carousel-dot={index}
+								aria-label={`Ir para foto ${index + 1}`}
+								aria-current={index === 0 ? 'true' : undefined}
+							/>
+						))}
+					</div>
+
+					<button
+						type="button"
+						class="flex h-9 w-9 items-center justify-center rounded-full border border-tuki-purple/15 bg-white text-tuki-purple transition hover:border-tuki-purple/30 hover:bg-tuki-purple/5"
+						data-carousel-next
+						aria-label="Próxima foto"
+					>
+						<span aria-hidden="true">›</span>
+					</button>
+				</div>
+			)}
+		</div>
+	)
+}
+
+<script>
+	import '../../scripts/photo-carousel';
+</script>
