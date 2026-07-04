@@ -3,14 +3,14 @@ title: "Resorts no Rio Quente"
 pageType: "venda"
 silo: "rio-quente"
 
-headline: "Resorts no Rio Quente: estrutura completa para aproveitar o Hot Park"
-description: "Resorts em Rio Quente (GO) no complexo Rio Quente Resorts. All inclusive, piscinas termais e acesso ao Hot Park — cotação consultiva Tuki Viagens."
+headline: "Resorts no Rio Quente: compare Rio Quente Resorts e opções no entorno"
+description: "Compare os 10 resorts de Rio Quente por acesso ao Hot Park, Parque das Fontes, grupos e custo-benefício. Cotação consultiva com datas e hóspedes."
 
 highlights:
-  - Rio Quente Resorts — complexo com múltiplas categorias de resort
-  - Opções all inclusive e meia pensão (conforme disponibilidade)
-  - Piscinas termais e lazer integrado ao Hot Park
-  - Ideal para famílias, casais e viagens em grupo
+  - "10 resorts: Cristal, Refúgio, Pousada, Giardino, Luupi e mais"
+  - Hot Park incluso nos oficiais Rio Quente Resorts
+  - Park Veredas e Thermas Paradise com estrutura de resort fora do complexo
+  - Ideal para famílias e viagens em grupo
 
 keywords:
   - resort rio quente
@@ -22,69 +22,57 @@ whatsapp: "551721901358"
 cta: "Cotar resort no Rio Quente"
 
 faq:
-  - question: "Qual a diferença entre resort e hotel no Rio Quente?"
-    answer: "Resorts no Rio Quente Resorts oferecem estrutura completa — piscinas termais, gastronomia, lazer e, em alguns casos, acesso integrado ao Hot Park. Hotéis no entorno costumam ser mais simples e exigem deslocamento até o parque."
-  - question: "Os resorts Rio Quente têm all inclusive?"
-    answer: "Sim, algumas categorias do Rio Quente Resorts oferecem regime all inclusive em determinadas temporadas. Validamos a oferta real e o que está incluso (refeições, bebidas, ingressos) antes de enviar a cotação."
-  - question: "Qual resort fica mais perto do Hot Park?"
-    answer: "Todo o complexo Rio Quente Resorts foi planejado em torno do Hot Park. As categorias dentro do complexo têm proximidade superior a hotéis no entorno — algumas permitem ir ao parque a pé."
-  - question: "Vale a pena pacote resort + ingresso Hot Park?"
-    answer: "Pacotes que combinam hospedagem no resort com ingressos podem simplificar a logística da viagem. Informe datas e perfil para compararmos pacotes reais versus reserva separada de hotel e ingresso."
-  - question: "Resort no Rio Quente é bom para crianças?"
-    answer: "Sim. O Hot Park tem atrações para todas as idades e os resorts do complexo costumam oferecer piscinas infantis, recreação e refeições adaptadas. Informe as idades das crianças para indicarmos a categoria ideal."
-  - question: "Rio Quente Resorts é o mesmo que resorts em Olímpia?"
-    answer: "Não. Rio Quente Resorts é o complexo hoteleiro em Goiás, ligado ao Hot Park. Olímpia (SP) tem resorts próprios — Wyndham, Enjoy e Solar das Águas — voltados ao Thermas dos Laranjais. São destinos e silos separados."
+  - question: "Qual o melhor resort em Rio Quente?"
+    answer: "Depende da intenção: Refúgio Grand Premium para premium perto do Hot Park; Cristal para vista e sofisticação; Pousada para tradição e Parque das Fontes; Giardino para custo-benefício oficial."
+  - question: "Qual resort tem Hot Park incluso?"
+    answer: "Hotéis oficiais do Rio Quente Resorts — Cristal, Refúgio, Pousada, Giardino, Luupi e Eco Chalés — incluem Hot Park conforme pacote e temporada."
+  - question: "Qual resort é melhor para famílias com crianças?"
+    answer: "Refúgio Grand Premium (brinquedoteca, piscinas próprias), Hotel Luupi (grupos e meia pensão) e Park Veredas (espaço kids) são referências na curadoria."
+  - question: "Resort fora do complexo vale a pena?"
+    answer: "Park Veredas, IMG Hotel e Prime Hotel oferecem estrutura de resort/lazer sem tarifa dos oficiais. Não incluem Hot Park, mas podem sair mais baratos para grupos."
+  - question: "Eco Chalés tem transfer para o complexo?"
+    answer: "Não. Central e Melhores Destinos destacam que não há transfer — carro próprio é importante, pois fica a cerca de 4 km do complexo."
 
 seo:
-  title: "Resorts no Rio Quente | Rio Quente Resorts e Hot Park"
-  description: "Resorts em Rio Quente (GO) no complexo Rio Quente Resorts. All inclusive, piscinas termais e Hot Park. Cotação consultiva com escolha Tuki Viagens."
+  title: "Resorts no Rio Quente | 10 opções Rio Quente Resorts"
+  description: "Os 10 resorts de Rio Quente comparados: Hot Park, Parque das Fontes, família e custo-benefício. Cotação consultiva Tuki Viagens."
 ---
 
-## Resorts Rio Quente: o complexo hoteleiro do Hot Park
+## Resorts em Rio Quente: visão geral
 
-Quem busca **resort Rio Quente** encontra no **Rio Quente Resorts** um dos maiores complexos hoteleiros termais do Brasil. Localizado em Rio Quente (GO), na região de Caldas Novas, o complexo integra hospedagem, águas termais e acesso ao **Hot Park** — parque aquático que atrai visitantes de todo o país.
+Os resorts de Rio Quente foram pensados para quem visita o **Hot Park** e o **Parque das Fontes**. O **Rio Quente Resorts** segmenta por perfil: Refúgio para premium, Cristal para vista, Pousada para tradição, Giardino para custo-benefício, Luupi para grupos e Eco Chalés para orçamento.
 
-Reservar um **Rio Quente resort** é a escolha mais comum para quem quer estrutura completa: piscinas aquecidas, gastronomia no local, lazer para crianças e adultos, sem depender de deslocamentos diários.
+## Comparativo dos 10 resorts
 
-## Por que escolher um resort no Rio Quente Resorts?
+| Resort | Nota / classificação | Localização | Perfil | Diária ref. |
+| --- | --- | --- | --- | --- |
+| [Hotel Cristal](/rio-quente/hotel-cristal-rio-quente/) | 4 estrelas (oficial) | Dentro do complexo | Famílias premium, casais | — |
+| [Refúgio Grand Premium](/rio-quente/refugio-grand-premium/) | 5 estrelas (oficial) | Dentro do complexo | Premium, a passos do Hot Park | R$ 2.300 |
+| [Hotel Pousada](/rio-quente/hotel-pousada-rio-quente/) | 9,0/10 (Central) | Dentro, 50 m Parque das Fontes | Tradição e natureza | — |
+| [Hotel Giardino](/rio-quente/hotel-giardino-rio-quente/) | 8,3 (1.082) | 700–800 m, transfer 24h | Custo-benefício oficial | R$ 1.500 |
+| [Hotel Luupi](/rio-quente/hotel-luupi-rio-quente/) | 8,4 (275) | 800–900 m, transfer 24h | Famílias grandes, grupos | R$ 1.200 |
+| [Eco Chalés](/rio-quente/eco-chales-rio-quente/) | 7,2 (125) | 4 km do complexo | Natureza, menor preço | — |
+| [Park Veredas Resort](/rio-quente/park-veredas-resort/) | 8,5 (545) | 900 m do Hot Park | Apart-hotel resort | R$ 315 |
+| [IMG Hotel Rio Quente](/rio-quente/img-hotel-rio-quente/) | 8,3 (1.105) | 650 m do Hot Park | Parque aquático próprio | R$ 256 |
+| [Prime Hotel Águas da Serra](/rio-quente/prime-hotel-aguas-da-serra/) | 8,5 (1.713) | 650 m do Hot Park | Apart-hotel econômico | R$ 237 |
+| [Thermas Paradise Residence](/rio-quente/thermas-paradise-residence/) | 8,4 (267) | 700 m do Hot Park | Condomínio com banho termal | R$ 333 |
 
-Os **resorts Rio Quente** dentro do complexo oferecem vantagens que hotéis no entorno nem sempre conseguem igualar:
+## Comparativo por intenção
 
-- **Proximidade ao Hot Park** — acesso facilitado ao parque, com economia de tempo
-- **Piscinas termais naturais** — águas quentes sem sair do resort
-- **Regimes de pensão variados** — café, meia pensão e all inclusive conforme categoria e temporada
-- **Estrutura familiar** — recreação, piscinas infantis e ambientes para grupos
+| Intenção | Indicação | Destaque |
+| --- | --- | --- |
+| Dentro do complexo | Refúgio, Pousada, Cristal | Hot Park incluso, acesso prático |
+| Custo-benefício oficial | Giardino, Luupi | Transfer 24h, parques inclusos |
+| Grupos com cozinha | Luupi, Giardino, Thermas Paradise | Apartamentos amplos |
+| Resort fora do complexo | Park Veredas, IMG, Prime | Preço menor, sem parques inclusos |
+| Natureza e descanso | Eco Chalés, Hotel Pousada | Mata nativa, silêncio |
 
-## All inclusive no Rio Quente: o que esperar
+## Pacote premium
 
-A busca por **resort Rio Quente all inclusive** é frequente, especialmente em viagens em família. Nem todas as categorias do complexo operam all inclusive o ano todo — a disponibilidade varia por temporada e tipo de acomodação.
+Para pacote premium, a curadoria prioriza **Refúgio Grand Premium**, **Hotel Cristal** e **Hotel Pousada**.
 
-Na cotação Tuki, validamos:
+Para proximidade ao Hot Park fora do complexo, veja também [hotéis perto do Hot Park](/rio-quente/hoteis-perto-hot-park/) e [hotéis no Rio Quente](/rio-quente/hoteis/).
 
-- O que está incluso no regime (refeições, bebidas, lazer)
-- Se ingressos do Hot Park entram no pacote
-- Diferença de preço entre all inclusive e meia pensão nas suas datas
+## Cotação consultiva
 
-Sem prometer o que não está disponível — transparência antes da reserva.
-
-## Hot Park: o parque que define a viagem
-
-O **Hot Park** é o coração turístico de Rio Quente: toboáguas, piscina de ondas, rio lento e atrações para crianças. Hospedar-se em um **resort perto do Hot Park** dentro do complexo Rio Quente Resorts maximiza o tempo de diversão.
-
-Para viagens com crianças, considere:
-
-- Categorias com recreação e piscinas infantis
-- Regime que inclua refeições (menos logística no parque)
-- Pacotes com ingressos, quando disponíveis
-
-## Pacotes resort + Hot Park
-
-Pacotes que combinam **resort Rio Quente** com ingressos do Hot Park podem simplificar o planejamento. A Tuki compara pacotes oficiais e reservas avulsas para indicar a melhor opção nas suas datas — com atendimento consultivo, não automatizado.
-
-## Silo separado de Olímpia
-
-**Rio Quente** e **Olímpia** são destinos distintos. Olímpia (SP) concentra Thermas dos Laranjais e resorts como Wyndham e Enjoy. Rio Quente (GO) tem o Hot Park e o Rio Quente Resorts. A Tuki trata cada região com escolhas próprias — sem misturar ofertas que confundem o viajante.
-
-## Peça sua cotação de resort
-
-Informe datas, hóspedes (adultos e crianças com idades), preferência de regime e orçamento. Nossa equipe compara categorias disponíveis no Rio Quente Resorts e retorna opções reais com atendimento humano.
+Informe datas, adultos, crianças e preferência de resort. Volte ao [guia de Rio Quente](/rio-quente/) ou peça cotação com atendimento humano.
