@@ -11,16 +11,19 @@ Uma pasta por destino. O **nome da pasta** deve ser o slug do hub (ex.: `olimpia
 | `02.jpg` | Terceira foto |
 | `03.jpg` … `05.jpg` | Fotos adicionais (até 6 no total) |
 
+**Formato:** `.jpg` ou `.webp`.  
+**Dimensões:** 1200×900 ou 1600×1200 (proporção **4:3**). Ver [README principal](../../../README.md#imagens).
+
 ## Pastas preparadas
 
 | Pasta | Destino |
 |-------|---------|
-| `olimpia/` | Hub Olímpia |
-| `rio-quente/` | Hub Rio Quente |
-| `nordeste/` | Hub Nordeste |
-| `pacotes-brasil/` | Pacotes Brasil |
-| `rio-de-janeiro/` | Rio de Janeiro |
-| `gramado/` | Gramado e Serra Gaúcha |
+| `olimpia/` | Hub Olímpia (`/olimpia/`) |
+| `rio-quente/` | Hub Rio Quente (`/rio-quente/`) |
+| `nordeste/` | Hub Nordeste (`/nordeste/`) |
+| `pacotes-brasil/` | Pacotes Brasil (`/pacotes-de-viagem-brasil/`) |
+| `rio-de-janeiro/` | Rio de Janeiro (futuro) |
+| `gramado/` | Gramado e Serra Gaúcha (futuro) |
 
 ## Frontmatter opcional
 

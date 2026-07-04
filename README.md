@@ -19,6 +19,7 @@ pnpm install
 pnpm dev       # http://localhost:4321
 pnpm build
 pnpm preview
+pnpm test      # testes unitários (Vitest)
 ```
 
 ## Variáveis de ambiente
@@ -62,6 +63,76 @@ public/               # Assets estáticos (logotipo, imagens, favicon)
 | `landingpages` | `/lp/[slug]` | LPs de campanha (noindex por padrão) |
 
 Silos de conteúdo: **Olímpia**, **Rio Quente**, **Nordeste**, **Pacotes** e **Agência**.
+
+## Imagens
+
+Todas as imagens ficam em `public/images/`. Enquanto o arquivo não existir na pasta, o site usa placeholders (Unsplash). Mapeamento no código: `src/lib/image-paths.ts` e `src/lib/property-gallery.ts`.
+
+### Pastas
+
+| Contexto | Caminho | Usado em |
+|---|---|---|
+| Hero da home | `public/images/hero/capa.jpg` | Banner fotográfico da página inicial |
+| Hubs de destino | `public/images/destinos/<slug>/` | `/olimpia/`, `/rio-quente/`, `/nordeste/`, etc. |
+| Hotéis e resorts | `public/images/hoteis/<slug>/` | Páginas de propriedade (`/olimpia/<slug>/`), `/hoteis/[slug]/`, cards da home |
+| OG padrão | `public/images/og/` | Compartilhamento social (fallback) |
+| Ícones e mascote | `public/images/icons/`, `public/images/mascot/` | Home e identidade visual |
+
+**Arquivos da galeria** (carrossel e cards): `capa.jpg`, `01.jpg`, `02.jpg` … `05.jpg` (até 6 fotos por pasta).
+
+**Regra prática:**
+
+- Hub de destino → `public/images/destinos/<slug>/`
+- Hotel, resort ou propriedade → `public/images/hoteis/<slug>/`
+- O nome da pasta segue o **slug da galeria**, que pode ser diferente da URL (ex.: pasta `hot-beach-olimpia/` → página `/olimpia/hot-beach/`)
+
+Listas completas de pastas: [public/images/hoteis/README.md](./public/images/hoteis/README.md) e [public/images/destinos/README.md](./public/images/destinos/README.md).
+
+### Formatos e dimensões recomendados
+
+#### Banner principal da home (`public/images/hero/capa.jpg`)
+
+| | Recomendação |
+|---|---|
+| Proporção | Paisagem — **16:9** ou **3:2** |
+| Dimensões | **2400×1350** (16:9) ou **2000×1333** (3:2); mínimo **2000px** de largura |
+| Formato | `.webp` (preferível) ou `.jpg` (qualidade 80–85%) |
+| Peso | 200–400 KB (WebP) / até ~500 KB (JPG otimizado) |
+| Composição | Assunto centralizado; evite detalhes nas bordas — há overlay roxo (~55%), texto à esquerda no desktop e animação Ken Burns que recorta com `object-cover` |
+
+Desktop e mobile usam o **mesmo arquivo**; o CSS recorta automaticamente.
+
+#### Carrossel (hotéis e hubs)
+
+| | Recomendação |
+|---|---|
+| Proporção | **4:3** (fixo no layout — `aspect-[4/3]`) |
+| Dimensões | **1200×900** ou **1600×1200** por foto |
+| Formato | `.webp` ou `.jpg` |
+| Peso | 150–300 KB por foto |
+| Composição | Enquadre no centro; `object-cover` recorta laterais e topo/base |
+
+Layout: no desktop, carrossel à esquerda e texto à direita; no mobile, carrossel em cima e texto embaixo.
+
+#### `capa.jpg` (uso duplo)
+
+A `capa.jpg` de cada hotel aparece no **carrossel** (4:3) e nos **cards da home** (crop mais panorâmico, altura fixa 208px). Mantenha o resort ou piscina **centralizado** na imagem.
+
+#### SEO / compartilhamento (Open Graph)
+
+A primeira foto do carrossel (`capa.jpg`) vira `og:image` nas páginas de propriedade. Redes sociais preferem **1200×630** (~1,91:1). Uma imagem 4:3 será recortada no WhatsApp/Facebook — opcional exportar versão dedicada para OG.
+
+### Frontmatter opcional
+
+Para forçar fotos específicas (ex.: ao usar `.webp`):
+
+```yaml
+images:
+  - /images/hoteis/enjoy-solar-das-aguas/capa.jpg
+  - /images/hoteis/enjoy-solar-das-aguas/01.jpg
+```
+
+Se `images` estiver vazio, o site descobre os arquivos na pasta automaticamente.
 
 ## Deploy (Vercel)
 
