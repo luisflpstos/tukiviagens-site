@@ -1,18 +1,22 @@
+import { initPhotoLightbox } from '../lib/photo-lightbox';
+
 const carousels = document.querySelectorAll('[data-photo-carousel]');
 
 carousels.forEach((carousel) => {
 	const track = carousel.querySelector('[data-carousel-track]') as HTMLElement | null;
+	const slides = carousel.querySelectorAll('[data-carousel-slide]');
 	const dots = carousel.querySelectorAll('[data-carousel-dot]');
 	const prev = carousel.querySelector('[data-carousel-prev]') as HTMLButtonElement | null;
 	const next = carousel.querySelector('[data-carousel-next]') as HTMLButtonElement | null;
 
-	if (!track || dots.length === 0) return;
+	if (!track || slides.length === 0) return;
 
+	const total = slides.length;
 	let index = 0;
 	let timer: ReturnType<typeof setInterval> | undefined;
 
 	const goTo = (nextIndex: number) => {
-		index = (nextIndex + dots.length) % dots.length;
+		index = ((nextIndex % total) + total) % total;
 		track.style.transform = `translateX(-${index * 100}%)`;
 
 		dots.forEach((dot, dotIndex) => {
@@ -26,7 +30,7 @@ carousels.forEach((carousel) => {
 
 	const restartTimer = () => {
 		if (timer) clearInterval(timer);
-		if (dots.length <= 1) return;
+		if (total <= 1) return;
 		timer = setInterval(() => goTo(index + 1), 6000);
 	};
 
@@ -55,6 +59,8 @@ carousels.forEach((carousel) => {
 	});
 
 	carousel.addEventListener('mouseleave', restartTimer);
+
+	initPhotoLightbox(carousel);
 
 	goTo(0);
 	restartTimer();

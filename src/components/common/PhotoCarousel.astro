@@ -22,15 +22,26 @@ const { images, label } = Astro.props;
 						data-carousel-track
 						aria-live="polite"
 					>
-						{images.map((image) => (
-							<figure class="h-full w-full shrink-0" data-carousel-slide aria-roledescription="slide">
-								<img
-									src={image.src}
-									alt={image.alt}
-									class="h-full w-full object-cover"
-									loading="lazy"
-									decoding="async"
-								/>
+						{images.map((image, index) => (
+							<figure
+								class="h-full w-full shrink-0"
+								data-carousel-slide={index}
+								aria-roledescription="slide"
+							>
+								<button
+									type="button"
+									class="group h-full w-full cursor-zoom-in"
+									data-carousel-open-lightbox
+									aria-label={`Ampliar foto: ${image.alt}`}
+								>
+									<img
+										src={image.src}
+										alt={image.alt}
+										class="h-full w-full object-cover transition group-hover:brightness-95"
+										loading="lazy"
+										decoding="async"
+									/>
+								</button>
 							</figure>
 						))}
 					</div>
@@ -73,6 +84,72 @@ const { images, label } = Astro.props;
 					</button>
 				</div>
 			)}
+
+			<div
+				class="photo-lightbox fixed inset-0 z-[100] hidden"
+				data-photo-lightbox
+				role="dialog"
+				aria-modal="true"
+				aria-label={`Galeria ampliada de ${label}`}
+				aria-hidden="true"
+			>
+				<div
+					class="photo-lightbox__backdrop absolute inset-0 bg-black/88"
+					data-lightbox-backdrop
+				/>
+
+				<button
+					type="button"
+					class="pointer-events-auto absolute top-4 right-4 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-white/10 text-2xl leading-none text-white transition hover:bg-white/20"
+					data-lightbox-close
+					aria-label="Fechar galeria"
+				>
+					<span aria-hidden="true">×</span>
+				</button>
+
+				<div class="pointer-events-none relative z-[1] h-full w-full overflow-hidden px-4 py-14 sm:px-10">
+					<div
+						class="pointer-events-auto flex h-full w-full cursor-grab touch-none active:cursor-grabbing"
+						data-lightbox-track
+					>
+						{images.map((image) => (
+							<figure
+								class="flex h-full w-full shrink-0 items-center justify-center"
+								data-lightbox-slide
+							>
+								<img
+									src={image.src}
+									alt={image.alt}
+									class="max-h-[calc(100vh-7rem)] max-w-[min(100vw-2rem,100%)] h-auto w-auto object-contain select-none"
+									draggable="false"
+									decoding="async"
+								/>
+							</figure>
+						))}
+					</div>
+
+					{images.length > 1 && (
+						<>
+							<button
+								type="button"
+								class="pointer-events-auto absolute top-1/2 left-2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/10 text-2xl text-white transition hover:bg-white/20 sm:left-4"
+								data-lightbox-prev
+								aria-label="Foto anterior"
+							>
+								<span aria-hidden="true">‹</span>
+							</button>
+							<button
+								type="button"
+								class="pointer-events-auto absolute top-1/2 right-2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/10 text-2xl text-white transition hover:bg-white/20 sm:right-4"
+								data-lightbox-next
+								aria-label="Próxima foto"
+							>
+								<span aria-hidden="true">›</span>
+							</button>
+						</>
+					)}
+				</div>
+			</div>
 		</div>
 	)
 }
