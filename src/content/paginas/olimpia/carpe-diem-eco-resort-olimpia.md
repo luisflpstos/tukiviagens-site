@@ -82,9 +82,9 @@ Recomendado no **TripAdvisor** e no **Google**. Em 2026, o resort aparece entre 
 | Carpe Diem Eco Resort | Eco resort familiar | Fazendinha, piscina natural, até 6 pessoas |
 | [Wyndham Olímpia Royal Hotels](/olimpia/wyndham-olimpia-royal-hotels/) | Proximidade do Thermas | 0,4 km do parque |
 | [Hot Beach Resort](/olimpia/hot-beach-resort/) | Parque integrado | Hot Beach |
-| [Hotel Fazenda Haras](/olimpia/hotel-fazenda-haras/) | Fazenda econômica | Pets e cavalo |
+| [Villa Itália Olímpia](/olimpia/villa-italia-olimpia/) | Lazer familiar | Tobogã e parquinho |
 
-Contra Wyndham, fica mais afastado do Thermas, mas oferece resort eco com lazer interno amplo. Contra Hot Beach Resort, não tem parque aquático integrado. Contra Hotel Fazenda Haras, é mais completo em estrutura de resort.
+Contra Wyndham, fica mais afastado do Thermas, mas oferece resort eco com lazer interno amplo. Contra Hot Beach Resort, não tem parque aquático integrado. Contra Villa Itália, é mais completo em estrutura de resort.
 
 Veja também [hotéis em Olímpia](/olimpia/hoteis/), [resorts em Olímpia](/olimpia/resorts/) e [hotéis perto do Thermas](/olimpia/hoteis-perto-thermas-dos-laranjais/).
 

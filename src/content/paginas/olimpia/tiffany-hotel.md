@@ -60,10 +60,9 @@ Nota **8,7** em **2.188 avaliações**. Diária de referência a partir de **R$ 
 | --- | --- | --- |
 | Tiffany Hotel | Proximidade do parque | 400 m do Thermas, 2.188 avaliações |
 | [Água Viva Hotel](/olimpia/agua-viva-hotel/) | Cozinha funcional | 500 m do Thermas |
-| [Glória Hotel](/olimpia/gloria-hotel/) | Custo-benefício | Nota 9,3 |
-| [JS Thermas Hotel](/olimpia/js-thermas-hotel/) | Econômico | Diária desde R$ 109 |
+| [Villa Rebellato](/olimpia/villa-rebellato/) | Econômico | Diária desde R$ 244 |
 
-Contra Água Viva, tem mais avaliações, mas nota menor. Contra Glória Hotel, fica mais perto, mas tem nota menor. Contra JS Thermas, é mais caro, porém mais próximo e completo.
+Contra Água Viva, tem mais avaliações, mas nota menor. Contra Villa Rebellato, é mais caro, porém mais próximo do Thermas.
 
 Veja também [hotéis em Olímpia](/olimpia/hoteis/), [resorts em Olímpia](/olimpia/resorts/) e [hotéis perto do Thermas](/olimpia/hoteis-perto-thermas-dos-laranjais/).
 

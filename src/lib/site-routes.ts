@@ -162,22 +162,6 @@ export const SITE_ROUTES: SiteRoute[] = [
 		{ silo: 'olimpia', parent: '/olimpia/hoteis/' },
 	),
 	route(
-		'/olimpia/hotel-fazenda-haras/',
-		'Hotel Fazenda Haras',
-		'hotel',
-		'published',
-		['hotel fazenda haras olimpia', 'fazenda haras olimpia'],
-		{ silo: 'olimpia', parent: '/olimpia/hoteis/' },
-	),
-	route(
-		'/olimpia/hotel-dolce-dulce/',
-		'Hotel Dolce Dulce',
-		'hotel',
-		'published',
-		['hotel dolce dulce olimpia', 'dolce dulce olimpia'],
-		{ silo: 'olimpia', parent: '/olimpia/hoteis/' },
-	),
-	route(
 		'/olimpia/agua-viva-hotel/',
 		'Água Viva Hotel',
 		'hotel',
@@ -201,23 +185,6 @@ export const SITE_ROUTES: SiteRoute[] = [
 		['villa rebellato olimpia', 'hotel villa rebellato'],
 		{ silo: 'olimpia', parent: '/olimpia/hoteis/' },
 	),
-	route(
-		'/olimpia/gloria-hotel/',
-		'Glória Hotel',
-		'hotel',
-		'published',
-		['gloria hotel olimpia', 'hotel gloria olimpia'],
-		{ silo: 'olimpia', parent: '/olimpia/hoteis/' },
-	),
-	route(
-		'/olimpia/js-thermas-hotel/',
-		'JS Thermas Hotel',
-		'hotel',
-		'published',
-		['js thermas hotel olimpia', 'hotel barato olimpia'],
-		{ silo: 'olimpia', parent: '/olimpia/hoteis/' },
-	),
-
 	// Rio Quente
 	route('/rio-quente/', 'Rio Quente e Hot Park', 'hub', 'published', [
 		'rio quente',

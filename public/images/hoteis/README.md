@@ -35,13 +35,9 @@ Usado em:
 | `hot-beach-suites/` | `/olimpia/hot-beach-suites/` |
 | `villa-italia-olimpia/` | `/olimpia/villa-italia-olimpia/` |
 | `parque-das-aguas/` | `/olimpia/parque-das-aguas/` |
-| `hotel-fazenda-haras/` | `/olimpia/hotel-fazenda-haras/` |
-| `hotel-dolce-dulce/` | `/olimpia/hotel-dolce-dulce/` |
 | `agua-viva-hotel/` | `/olimpia/agua-viva-hotel/` |
 | `tiffany-hotel/` | `/olimpia/tiffany-hotel/` |
 | `villa-rebellato/` | `/olimpia/villa-rebellato/` |
-| `gloria-hotel/` | `/olimpia/gloria-hotel/` |
-| `js-thermas-hotel/` | `/olimpia/js-thermas-hotel/` |
 
 ## Pastas — Rio Quente
 

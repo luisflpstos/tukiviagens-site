@@ -47,7 +47,7 @@ faq:
   - question: "Qual é a melhor época para visitar Olímpia?"
     answer: "Olímpia pode ser visitada durante o ano todo, especialmente por quem busca parques aquáticos, resorts e lazer em família. Períodos de férias, feriados e eventos costumam ter maior movimento, então é recomendável reservar hospedagem com antecedência."
   - question: "Qual o melhor hotel perto do Thermas dos Laranjais?"
-    answer: "Para acesso exclusivo: Mercure (0,1 km) e Wyndham (0,4 km). Para hotel econômico próximo: Tiffany (400 m), Água Viva (500 m) e Glória (800 m). Informe datas e hóspedes para cotação personalizada."
+    answer: "Para acesso exclusivo: Mercure (0,1 km) e Wyndham (0,4 km). Para hotel econômico próximo: Tiffany (400 m) e Água Viva (500 m). Informe datas e hóspedes para cotação personalizada."
   - question: "Como a Tuki pode ajudar na hospedagem em Olímpia?"
     answer: "Informe datas, adultos, crianças e preferências (proximidade do Thermas, Hot Beach, grupo grande, pet friendly ou custo-benefício). Cotamos com atendimento consultivo."
 
@@ -93,7 +93,7 @@ A **Vila Guarani**, por exemplo, reúne opções de alimentação, bebidas, arte
 
 ## Onde se hospedar
 
-O **acesso ao parque é o principal argumento de venda** em Olímpia. Wyndham, Mercure, Hot Beach Resort, Celebration e Thermas Park vendem facilidade de acesso ao Thermas ou ao Hot Beach. Para quem busca custo-benefício, hotéis como JS Thermas, Glória, Água Viva e Villa Itália capturam famílias que passam o dia no parque e querem hotel funcional à noite.
+O **acesso ao parque é o principal argumento de venda** em Olímpia. Wyndham, Mercure, Hot Beach Resort, Celebration e Thermas Park vendem facilidade de acesso ao Thermas ou ao Hot Beach. Para quem busca custo-benefício, hotéis como Água Viva, Villa Rebellato e Villa Itália capturam famílias que passam o dia no parque e querem hotel funcional à noite.
 
 ### Melhor para proximidade do Thermas dos Laranjais
 
