@@ -11,7 +11,7 @@ export interface LeadFormOptions {
 	campaign?: string;
 }
 
-const LEAD_API_PATH = '/api/lead';
+const LEAD_API_PATH = '/api/lead/';
 
 export function initLeadForm(options: LeadFormOptions): void {
 	const form = document.getElementById(options.formId) as HTMLFormElement | null;
@@ -92,6 +92,9 @@ export function initLeadForm(options: LeadFormOptions): void {
 						campaign: options.campaign,
 						form_id: options.formId,
 						landing_slug: window.location.pathname,
+						h1: document.querySelector('h1')?.textContent?.trim() ?? '',
+						page_url: window.location.href,
+						page_title: document.title,
 					},
 				}),
 			});

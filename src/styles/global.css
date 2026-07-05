@@ -233,6 +233,213 @@
 		@apply focus:border-tuki-purple focus:outline-none focus:ring-2 focus:ring-tuki-purple/20;
 	}
 
+	.tuki-date-trigger {
+		@apply cursor-pointer;
+		transition:
+			border-color var(--tuki-duration-normal) var(--tuki-ease-out),
+			background-color var(--tuki-duration-normal) var(--tuki-ease-out),
+			box-shadow var(--tuki-duration-normal) var(--tuki-ease-out),
+			color var(--tuki-duration-normal) var(--tuki-ease-out);
+	}
+
+	.tuki-date-trigger--active {
+		border-color: var(--color-tuki-orange) !important;
+		background: color-mix(in srgb, var(--color-tuki-orange) 10%, white) !important;
+		box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-tuki-orange) 30%, transparent) !important;
+		color: var(--color-tuki-ink);
+	}
+
+	.tuki-select {
+		@apply cursor-pointer pr-10;
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M4 6L8 10L12 6' stroke='%236e6685' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+		background-repeat: no-repeat;
+		background-position: right 1rem center;
+		appearance: none;
+	}
+
+	.tuki-date-picker {
+		overflow: hidden;
+		border: 2px solid var(--color-tuki-orange);
+		border-radius: 0.75rem;
+		background: var(--color-tuki-white);
+		box-shadow: 0 12px 32px color-mix(in srgb, var(--color-tuki-purple) 12%, transparent);
+		transform-origin: top center;
+	}
+
+	.tuki-date-picker[data-step='saida'] .tuki-date-picker__header {
+		background: linear-gradient(
+			135deg,
+			var(--color-tuki-orange) 0%,
+			var(--color-tuki-orange-dark) 100%
+		);
+	}
+
+	.tuki-date-picker--step-transition {
+		animation: tuki-date-picker-step 0.55s var(--tuki-ease-expo);
+	}
+
+	@keyframes tuki-date-picker-step {
+		0% {
+			transform: scale(1);
+			box-shadow: 0 12px 32px color-mix(in srgb, var(--color-tuki-purple) 12%, transparent);
+		}
+		35% {
+			transform: scale(1.02);
+			box-shadow:
+				0 16px 36px color-mix(in srgb, var(--color-tuki-orange) 30%, transparent),
+				0 0 0 4px color-mix(in srgb, var(--color-tuki-orange) 22%, transparent);
+		}
+		100% {
+			transform: scale(1);
+			box-shadow: 0 12px 32px color-mix(in srgb, var(--color-tuki-purple) 12%, transparent);
+		}
+	}
+
+	.tuki-date-picker__grid--refresh {
+		animation: tuki-date-grid-refresh 0.45s var(--tuki-ease-expo);
+	}
+
+	@keyframes tuki-date-grid-refresh {
+		from {
+			opacity: 0;
+			transform: translateY(10px);
+		}
+
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+
+	.tuki-date-picker__hint--refresh {
+		animation: tuki-date-hint-refresh 0.45s var(--tuki-ease-expo);
+	}
+
+	@keyframes tuki-date-hint-refresh {
+		from {
+			opacity: 0;
+			transform: translateY(4px);
+		}
+
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+
+	.tuki-date-picker__header {
+		display: grid;
+		grid-template-columns: 2.5rem 1fr 2.5rem;
+		align-items: center;
+		gap: 0.5rem;
+		padding: 0.85rem 0.75rem;
+		background: var(--color-tuki-orange);
+		color: var(--color-tuki-white);
+		transition: background var(--tuki-duration-normal) var(--tuki-ease-out);
+	}
+
+	.tuki-date-picker__title {
+		margin: 0;
+		text-align: center;
+		font-family: var(--font-display);
+		font-size: 1.125rem;
+		font-weight: 800;
+		line-height: 1.2;
+	}
+
+	.tuki-date-picker__nav {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 2rem;
+		height: 2rem;
+		border: 0;
+		border-radius: 9999px;
+		background: color-mix(in srgb, var(--color-tuki-white) 22%, var(--color-tuki-orange));
+		color: var(--color-tuki-white);
+		cursor: pointer;
+		transition: background-color 0.15s ease;
+	}
+
+	.tuki-date-picker__nav:hover:not(:disabled) {
+		background: color-mix(in srgb, var(--color-tuki-white) 32%, var(--color-tuki-orange));
+	}
+
+	.tuki-date-picker__nav:disabled {
+		opacity: 0.35;
+		cursor: not-allowed;
+	}
+
+	.tuki-date-picker__weekdays {
+		display: grid;
+		grid-template-columns: repeat(7, minmax(0, 1fr));
+		gap: 0.25rem;
+		padding: 0.85rem 0.75rem 0.35rem;
+	}
+
+	.tuki-date-picker__weekdays span {
+		text-align: center;
+		font-size: 0.95rem;
+		font-weight: 800;
+		color: var(--color-tuki-ink);
+	}
+
+	.tuki-date-picker__grid {
+		display: grid;
+		grid-template-columns: repeat(7, minmax(0, 1fr));
+		gap: 0.25rem;
+		padding: 0.25rem 0.75rem 0.85rem;
+	}
+
+	.tuki-date-picker__day {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		min-height: 2.35rem;
+		border: 0;
+		border-radius: 0.5rem;
+		background: transparent;
+		font-size: 0.95rem;
+		font-weight: 700;
+		color: var(--color-tuki-ink);
+		cursor: pointer;
+		transition:
+			background-color 0.15s ease,
+			color 0.15s ease;
+	}
+
+	.tuki-date-picker__day:hover:not(:disabled):not(.tuki-date-picker__day--disabled) {
+		background: color-mix(in srgb, var(--color-tuki-orange) 14%, transparent);
+	}
+
+	.tuki-date-picker__day--empty {
+		pointer-events: none;
+	}
+
+	.tuki-date-picker__day--disabled {
+		color: color-mix(in srgb, var(--color-tuki-muted) 55%, white);
+		cursor: not-allowed;
+	}
+
+	.tuki-date-picker__day--in-range {
+		background: color-mix(in srgb, var(--color-tuki-orange) 16%, transparent);
+		border-radius: 0;
+	}
+
+	.tuki-date-picker__day--start,
+	.tuki-date-picker__day--end {
+		background: var(--color-tuki-orange);
+		color: var(--color-tuki-white);
+	}
+
+	.tuki-date-picker__hint {
+		margin: 0;
+		padding: 0 0.75rem 0.85rem;
+		text-align: center;
+		font-size: var(--text-small);
+		color: var(--color-tuki-muted);
+	}
+
 	.tuki-surface-panel {
 		@apply rounded-3xl border border-tuki-purple/8 bg-tuki-lavender/40 p-8 md:p-10;
 	}

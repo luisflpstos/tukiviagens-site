@@ -25,11 +25,33 @@ function jsonResponse(body, status = 200) {
 	});
 }
 //#endregion
+//#region src/lib/date-rules.ts
+function startOfDay(date) {
+	const value = new Date(date);
+	value.setHours(0, 0, 0, 0);
+	return value;
+}
+function addDays(date, days) {
+	const value = new Date(date);
+	value.setDate(value.getDate() + days);
+	return startOfDay(value);
+}
+/** Primeira data permitida para check-in: amanhã. */
+function getMinCheckInDate(reference = /* @__PURE__ */ new Date()) {
+	return addDays(startOfDay(reference), 1);
+}
+function parseDateISO(value) {
+	const [year, month, day] = value.split("-").map(Number);
+	return startOfDay(new Date(year, month - 1, day));
+}
+function daysBetween(start, end) {
+	return Math.round((startOfDay(end).getTime() - startOfDay(start).getTime()) / 864e5);
+}
+//#endregion
 //#region src/lib/lead-schema.ts
 var dateString = z.string().trim().max(120).regex(/^\d{4}-\d{2}-\d{2}$/, "Data inválida.");
 function parseDateOnly(value) {
-	const [year, month, day] = value.split("-").map(Number);
-	return new Date(year, month - 1, day);
+	return parseDateISO(value);
 }
 function phoneDigits(phone) {
 	return phone.replace(/\D/g, "");
@@ -85,12 +107,16 @@ var leadFormFieldsSchema = z.object({
 		message: "A data de saída deve ser posterior à data de entrada.",
 		path: ["data_saida"]
 	});
-	const today = /* @__PURE__ */ new Date();
-	today.setHours(0, 0, 0, 0);
-	if (!Number.isNaN(entrada.getTime()) && entrada < today) ctx.addIssue({
+	const minCheckIn = getMinCheckInDate();
+	if (!Number.isNaN(entrada.getTime()) && entrada < minCheckIn) ctx.addIssue({
 		code: "custom",
-		message: "A data de entrada não pode ser no passado.",
+		message: "A data de entrada deve ser a partir de amanhã.",
 		path: ["data_entrada"]
+	});
+	if (!Number.isNaN(entrada.getTime()) && !Number.isNaN(saida.getTime()) && daysBetween(entrada, saida) < 2) ctx.addIssue({
+		code: "custom",
+		message: `Selecione no mínimo 2 dias de hospedagem.`,
+		path: ["data_saida"]
 	});
 });
 var leadSubmissionSchema = z.object({

@@ -1,5 +1,8 @@
 import { buildWhatsAppUrl } from './seo';
 import type { StoredAttribution } from '../scripts/utm';
+import { buildTrackingFields, formatLocalTimestamp } from './tracking-payload';
+
+export { formatLocalTimestamp };
 
 const SOURCE_LABELS: Record<string, string> = {
 	google: 'no Google',
@@ -24,27 +27,6 @@ export function buildWhatsAppQuoteMessage(productName: string, utmSource?: strin
 
 export function buildWhatsAppFallbackUrl(phone: string, productName: string): string {
 	return buildWhatsAppUrl(phone, buildWhatsAppQuoteMessage(productName));
-}
-
-export function formatLocalTimestamp(
-	date: Date,
-	timeZone = 'America/Sao_Paulo',
-): string {
-	const parts = new Intl.DateTimeFormat('pt-BR', {
-		timeZone,
-		day: '2-digit',
-		month: '2-digit',
-		year: 'numeric',
-		hour: '2-digit',
-		minute: '2-digit',
-		second: '2-digit',
-		hour12: false,
-	}).formatToParts(date);
-
-	const get = (type: Intl.DateTimeFormatPartTypes) =>
-		parts.find((part) => part.type === type)?.value ?? '';
-
-	return `${get('day')}/${get('month')}/${get('year')} ${get('hour')}:${get('minute')}:${get('second')}`;
 }
 
 export interface WhatsAppClickContext {
@@ -92,21 +74,12 @@ export function buildWhatsAppClickPayload(
 	context: WhatsAppClickContext,
 ): WhatsAppClickPayload {
 	const clickedAt = context.clickedAt ?? new Date();
-	const utmSource = empty(attribution.utm_source);
+	const tracking = buildTrackingFields(attribution);
 
 	return {
 		event: 'whatsapp_click',
-		source: utmSource || 'direct',
+		...tracking,
 		h1: context.h1,
-		utm_source: utmSource,
-		utm_medium: empty(attribution.utm_medium),
-		utm_campaign: empty(attribution.utm_campaign),
-		utm_content: empty(attribution.utm_content),
-		utm_term: empty(attribution.utm_term),
-		gclid: empty(attribution.gclid),
-		gbraid: empty(attribution.gbraid),
-		wbraid: empty(attribution.wbraid),
-		fbclid: empty(attribution.fbclid),
 		page_url: context.pageUrl,
 		page_title: context.pageTitle,
 		referrer: context.referrer ?? empty(attribution.referrer),

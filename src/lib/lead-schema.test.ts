@@ -1,10 +1,14 @@
 import { describe, expect, it } from 'vitest';
+import { MIN_STAY_DAYS } from './date-rules';
 import { leadFormFieldsSchema } from './lead-schema';
 
 function futureDate(daysFromNow: number): string {
 	const date = new Date();
 	date.setDate(date.getDate() + daysFromNow);
-	return date.toISOString().slice(0, 10);
+	const year = date.getFullYear();
+	const month = String(date.getMonth() + 1).padStart(2, '0');
+	const day = String(date.getDate()).padStart(2, '0');
+	return `${year}-${month}-${day}`;
 }
 
 describe('leadFormFieldsSchema', () => {
@@ -44,6 +48,33 @@ describe('leadFormFieldsSchema', () => {
 			data_saida: futureDate(7),
 		});
 		expect(result.success).toBe(false);
+	});
+
+	it('rejeita entrada antes de amanhã', () => {
+		const result = leadFormFieldsSchema.safeParse({
+			...validPayload,
+			data_entrada: futureDate(0),
+			data_saida: futureDate(3),
+		});
+		expect(result.success).toBe(false);
+	});
+
+	it('rejeita estadia menor que o mínimo', () => {
+		const result = leadFormFieldsSchema.safeParse({
+			...validPayload,
+			data_entrada: futureDate(1),
+			data_saida: futureDate(2),
+		});
+		expect(result.success).toBe(false);
+	});
+
+	it(`aceita estadia de ${MIN_STAY_DAYS} dias`, () => {
+		const result = leadFormFieldsSchema.safeParse({
+			...validPayload,
+			data_entrada: futureDate(1),
+			data_saida: futureDate(1 + MIN_STAY_DAYS),
+		});
+		expect(result.success).toBe(true);
 	});
 
 	it('rejeita campos acima de 120 caracteres', () => {

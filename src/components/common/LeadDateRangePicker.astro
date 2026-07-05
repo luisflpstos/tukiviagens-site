@@ -1,0 +1,81 @@
+---
+import { WEEKDAY_LABELS } from '../../lib/date-rules';
+
+interface Props {
+	formId: string;
+}
+
+const { formId } = Astro.props;
+---
+
+<div class="sm:col-span-2" data-date-range-picker>
+	<div class="grid gap-4 sm:grid-cols-2">
+		<div>
+			<span id={`${formId}-data-entrada-label`} class="tuki-type-small mb-1 block font-medium text-tuki-ink">
+				Data de entrada *
+			</span>
+			<button
+				type="button"
+				id={`${formId}-data-entrada`}
+				class="tuki-input tuki-date-trigger text-left"
+				data-date-trigger="entrada"
+				aria-labelledby={`${formId}-data-entrada-label`}
+				aria-expanded="false"
+				aria-haspopup="dialog"
+			>
+				Selecionar data
+			</button>
+		</div>
+
+		<div>
+			<span id={`${formId}-data-saida-label`} class="tuki-type-small mb-1 block font-medium text-tuki-ink">
+				Data de saída *
+			</span>
+			<button
+				type="button"
+				id={`${formId}-data-saida`}
+				class="tuki-input tuki-date-trigger text-left"
+				data-date-trigger="saida"
+				aria-labelledby={`${formId}-data-saida-label`}
+				aria-expanded="false"
+				aria-haspopup="dialog"
+			>
+				Selecionar data
+			</button>
+		</div>
+	</div>
+
+	<input type="hidden" name="data_entrada" required />
+	<input type="hidden" name="data_saida" required />
+
+	<div class="tuki-date-picker mt-3" data-calendar hidden role="dialog" aria-modal="true" aria-label="Selecionar datas da hospedagem">
+		<div class="tuki-date-picker__header">
+			<button type="button" class="tuki-date-picker__nav" data-cal-prev aria-label="Mês anterior">
+				<svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+					<path d="M9 2L4 7L9 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+				</svg>
+			</button>
+			<p class="tuki-date-picker__title" data-cal-title></p>
+			<button type="button" class="tuki-date-picker__nav" data-cal-next aria-label="Próximo mês">
+				<svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+					<path d="M5 2L10 7L5 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+				</svg>
+			</button>
+		</div>
+
+		<div class="tuki-date-picker__weekdays" aria-hidden="true">
+			{WEEKDAY_LABELS.map((label) => <span>{label}</span>)}
+		</div>
+
+		<div class="tuki-date-picker__grid" data-cal-grid></div>
+		<p class="tuki-date-picker__hint" data-cal-hint></p>
+	</div>
+</div>
+
+<script>
+	import { initLeadDatePicker } from '../../scripts/lead-date-picker';
+
+	document.querySelectorAll<HTMLElement>('[data-date-range-picker]').forEach((root) => {
+		initLeadDatePicker(root);
+	});
+</script>

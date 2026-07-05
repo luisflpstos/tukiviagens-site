@@ -1,5 +1,6 @@
 ---
-import { LEAD_FIELD_MAX_LENGTH } from '../../lib/lead-config';
+import { LEAD_FIELD_MAX_LENGTH, MAX_ADULTS, MAX_CHILDREN } from '../../lib/lead-config';
+import LeadDateRangePicker from './LeadDateRangePicker.astro';
 
 interface Props {
 	formId?: string;
@@ -19,7 +20,8 @@ const {
 	submitLabel = 'Enviar',
 } = Astro.props;
 
-const today = new Date().toISOString().slice(0, 10);
+const adultOptions = Array.from({ length: MAX_ADULTS }, (_, index) => index + 1);
+const childOptions = Array.from({ length: MAX_CHILDREN + 1 }, (_, index) => index);
 ---
 
 <form
@@ -81,66 +83,33 @@ const today = new Date().toISOString().slice(0, 10);
 			/>
 		</div>
 
-		<div>
-			<label for={`${formId}-data-entrada`} class="tuki-type-small mb-1 block font-medium text-tuki-ink">
-				Data de entrada *
-			</label>
-			<input
-				id={`${formId}-data-entrada`}
-				name="data_entrada"
-				type="date"
-				required
-				min={today}
-				maxlength={LEAD_FIELD_MAX_LENGTH}
-				class="w-full tuki-input"
-			/>
-		</div>
-
-		<div>
-			<label for={`${formId}-data-saida`} class="tuki-type-small mb-1 block font-medium text-tuki-ink">
-				Data de saída *
-			</label>
-			<input
-				id={`${formId}-data-saida`}
-				name="data_saida"
-				type="date"
-				required
-				min={today}
-				maxlength={LEAD_FIELD_MAX_LENGTH}
-				class="w-full tuki-input"
-			/>
-		</div>
+		<LeadDateRangePicker formId={formId} />
 
 		<div>
 			<label for={`${formId}-adultos`} class="tuki-type-small mb-1 block font-medium text-tuki-ink">
 				Adultos *
 			</label>
-			<input
-				id={`${formId}-adultos`}
-				name="adultos"
-				type="number"
-				required
-				min="1"
-				max={LEAD_FIELD_MAX_LENGTH}
-				class="w-full tuki-input"
-				placeholder="2"
-			/>
+			<select id={`${formId}-adultos`} name="adultos" required class="tuki-input tuki-select">
+				<option value="" disabled selected>Selecione</option>
+				{adultOptions.map((count) => (
+					<option value={count}>
+						{count} {count === 1 ? 'adulto' : 'adultos'}
+					</option>
+				))}
+			</select>
 		</div>
 
 		<div>
 			<label for={`${formId}-criancas`} class="tuki-type-small mb-1 block font-medium text-tuki-ink">
 				Crianças (até 12 anos) *
 			</label>
-			<input
-				id={`${formId}-criancas`}
-				name="criancas"
-				type="number"
-				required
-				min="0"
-				max={LEAD_FIELD_MAX_LENGTH}
-				class="w-full tuki-input"
-				placeholder="0"
-			/>
+			<select id={`${formId}-criancas`} name="criancas" required class="tuki-input tuki-select">
+				{childOptions.map((count) => (
+					<option value={count} selected={count === 0}>
+						{count === 0 ? 'Nenhuma criança' : `${count} ${count === 1 ? 'criança' : 'crianças'}`}
+					</option>
+				))}
+			</select>
 		</div>
 	</div>
 

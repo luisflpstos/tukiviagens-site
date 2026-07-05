@@ -1,5 +1,11 @@
 import { z } from 'zod';
-import { LEAD_FIELD_MAX_LENGTH } from './lead-config';
+import {
+	MIN_STAY_DAYS,
+	daysBetween,
+	getMinCheckInDate,
+	parseDateISO,
+} from './date-rules';
+import { LEAD_FIELD_MAX_LENGTH, MAX_ADULTS, MAX_CHILDREN } from './lead-config';
 
 const dateString = z
 	.string()
@@ -8,8 +14,7 @@ const dateString = z
 	.regex(/^\d{4}-\d{2}-\d{2}$/, 'Data inválida.');
 
 function parseDateOnly(value: string): Date {
-	const [year, month, day] = value.split('-').map(Number);
-	return new Date(year, month - 1, day);
+	return parseDateISO(value);
 }
 
 function phoneDigits(phone: string): string {
@@ -36,6 +41,9 @@ export const leadAttributionSchema = z
 	})
 	.strict();
 
+const pageUrlString = z.string().max(2048);
+const pageMetaString = z.string().max(512);
+
 export const leadContextSchema = z
 	.object({
 		hotel: z.string().max(LEAD_FIELD_MAX_LENGTH).optional(),
@@ -44,6 +52,9 @@ export const leadContextSchema = z
 		campaign: z.string().max(LEAD_FIELD_MAX_LENGTH).optional(),
 		form_id: z.string().max(LEAD_FIELD_MAX_LENGTH).optional(),
 		landing_slug: z.string().max(LEAD_FIELD_MAX_LENGTH).optional(),
+		h1: pageMetaString.optional(),
+		page_url: pageUrlString.optional(),
+		page_title: pageMetaString.optional(),
 	})
 	.strict();
 
@@ -72,12 +83,12 @@ export const leadFormFieldsSchema = z
 			.number({ error: 'Informe a quantidade de adultos.' })
 			.int('Informe a quantidade de adultos.')
 			.min(1, 'Informe pelo menos 1 adulto.')
-			.max(LEAD_FIELD_MAX_LENGTH, 'Quantidade de adultos inválida.'),
+			.max(MAX_ADULTS, `Máximo de ${MAX_ADULTS} adultos.`),
 		criancas: z.coerce
 			.number({ error: 'Informe a quantidade de crianças.' })
 			.int('Informe a quantidade de crianças.')
 			.min(0, 'Quantidade de crianças inválida.')
-			.max(LEAD_FIELD_MAX_LENGTH, 'Quantidade de crianças inválida.'),
+			.max(MAX_CHILDREN, `Máximo de ${MAX_CHILDREN} crianças.`),
 	})
 	.superRefine((data, ctx) => {
 		const entrada = parseDateOnly(data.data_entrada);
@@ -97,13 +108,24 @@ export const leadFormFieldsSchema = z
 			});
 		}
 
-		const today = new Date();
-		today.setHours(0, 0, 0, 0);
-		if (!Number.isNaN(entrada.getTime()) && entrada < today) {
+		const minCheckIn = getMinCheckInDate();
+		if (!Number.isNaN(entrada.getTime()) && entrada < minCheckIn) {
 			ctx.addIssue({
 				code: 'custom',
-				message: 'A data de entrada não pode ser no passado.',
+				message: 'A data de entrada deve ser a partir de amanhã.',
 				path: ['data_entrada'],
+			});
+		}
+
+		if (
+			!Number.isNaN(entrada.getTime()) &&
+			!Number.isNaN(saida.getTime()) &&
+			daysBetween(entrada, saida) < MIN_STAY_DAYS
+		) {
+			ctx.addIssue({
+				code: 'custom',
+				message: `Selecione no mínimo ${MIN_STAY_DAYS} dias de hospedagem.`,
+				path: ['data_saida'],
 			});
 		}
 	});

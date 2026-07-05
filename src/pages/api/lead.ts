@@ -6,9 +6,8 @@ import {
 	firstZodError,
 	leadFormFieldsSchema,
 	leadSubmissionSchema,
-	type LeadAttribution,
-	type LeadContext,
 } from '../../lib/lead-schema';
+import { buildLeadSubmitPayload } from '../../lib/tracking-payload';
 
 export const prerender = false;
 
@@ -61,24 +60,17 @@ export const POST: APIRoute = async ({ request }) => {
 	}
 
 	const geo = extractGeoFromRequest(request);
-	const attribution: LeadAttribution = envelope.data.attribution ?? {};
-	const context: LeadContext = envelope.data.context ?? {};
+	const submittedAt = new Date();
 
-	const payload = {
-		...fields.data,
-		attribution,
-		context: {
-			...context,
-			page_title: null,
-		},
+	const payload = buildLeadSubmitPayload({
+		fields: fields.data,
+		attribution: envelope.data.attribution,
+		context: envelope.data.context,
 		geo,
-		meta: {
-			submitted_at: new Date().toISOString(),
-			user_agent: request.headers.get('user-agent'),
-			referrer: request.headers.get('referer'),
-			ip_country: geo.pais,
-		},
-	};
+		submittedAt,
+		userAgent: request.headers.get('user-agent'),
+		referrer: request.headers.get('referer'),
+	});
 
 	const headers: Record<string, string> = {
 		'Content-Type': 'application/json',
