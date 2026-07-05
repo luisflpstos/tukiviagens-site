@@ -53,7 +53,7 @@ Os resorts de Olímpia foram pensados para quem visita os **parques aquáticos**
 | [Carpe Diem Eco Resort](/olimpia/carpe-diem-eco-resort-olimpia/) | — | 3 km do centro | Eco resort familiar | Consulte |
 | [Enjoy Olímpia Park Resort](/olimpia/enjoy-olimpia-park-resort/) | — | Colado no Thermas | Suítes, famílias, Villa Mall | Consulte |
 | [Mercure Olímpia](/olimpia/thermas-olimpia-resorts-mercure/) | 7,9 (3.892) | 0,1 km | Acesso Thermas, pet friendly | R$ 428 |
-| [Enjoy Solar das Águas](/olimpia/enjoy-solar-das-aguas/) | 7,8 | 2,1 km | Resort novo, flats amplos | R$ 579 |
+| [Enjoy Solar das Águas](/olimpia/enjoy-solar-das-aguas/) | — | Colado no Thermas | 1.000 suítes, parque aquático interno | Consulte |
 | [Hot Beach Suites](/olimpia/hot-beach-suites/) | 8,0 | Próximo Hot Beach | Apartamento + cozinha | R$ 831 |
 | [Wyndham Royal Star](/olimpia/wyndham-royal-star-thermas-resort/) | — | 1,4 km | 10 piscinas, funcional | — |
 

@@ -170,14 +170,6 @@ export const SITE_ROUTES: SiteRoute[] = [
 		{ silo: 'olimpia', parent: '/olimpia/hoteis/' },
 	),
 	route(
-		'/olimpia/carpe-diem-park-hotel/',
-		'Carpe Diem Park Hotel',
-		'hotel',
-		'published',
-		['carpe diem park hotel', 'carpe diem olimpia'],
-		{ silo: 'olimpia', parent: '/olimpia/hoteis/' },
-	),
-	route(
 		'/olimpia/hotel-fazenda-haras/',
 		'Hotel Fazenda Haras',
 		'hotel',

@@ -27,7 +27,6 @@ export const IMAGE_PATHS = {
 			'/images/hoteis/wyndham-royal-star-thermas-resort/capa.jpg',
 		'villa-italia-olimpia': '/images/hoteis/villa-italia-olimpia/capa.jpg',
 		'parque-das-aguas': '/images/hoteis/parque-das-aguas/capa.jpg',
-		'carpe-diem-park-hotel': '/images/hoteis/carpe-diem-park-hotel/capa.jpg',
 		'hotel-fazenda-haras': '/images/hoteis/hotel-fazenda-haras/capa.jpg',
 		'hotel-dolce-dulce': '/images/hoteis/hotel-dolce-dulce/capa.jpg',
 		'agua-viva-hotel': '/images/hoteis/agua-viva-hotel/capa.jpg',

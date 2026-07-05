@@ -9,7 +9,6 @@ export function isHospitalityPage(pageType: PageType): pageType is HospitalityPa
 export const OLIMPIA_HOTEL_SLUGS = new Set([
 	'villa-italia-olimpia',
 	'parque-das-aguas',
-	'carpe-diem-park-hotel',
 	'hotel-fazenda-haras',
 	'hotel-dolce-dulce',
 	'agua-viva-hotel',

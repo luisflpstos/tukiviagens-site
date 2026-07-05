@@ -61,11 +61,11 @@ Nota **8,8** em **800 avaliações**. Diária de referência a partir de **R$ 26
 | Hospedagem | Perfil | Diferencial |
 | --- | --- | --- |
 | Hotel Fazenda Haras | Fazenda e pets | Passeios a cavalo, clima rural |
-| [Carpe Diem Park Hotel](/olimpia/carpe-diem-park-hotel/) | Lazer hoteleiro | Lago e restaurante |
+| [Parque das Águas](/olimpia/parque-das-aguas/) | Pousada com piscina | Piscinas e área verde |
 | [Tiffany Hotel](/olimpia/tiffany-hotel/) | Proximidade do parque | 400 m do Thermas |
 | [JS Thermas Hotel](/olimpia/js-thermas-hotel/) | Econômico urbano | Piscina e pet friendly |
 
-Contra Carpe Diem, é mais fazenda e pet friendly. Contra Tiffany, perde em proximidade, mas ganha em área rural. Contra JS Thermas, é menos urbano e mais familiar.
+Contra Parque das Águas, é mais fazenda e pet friendly. Contra Tiffany, perde em proximidade, mas ganha em área rural. Contra JS Thermas, é menos urbano e mais familiar.
 
 Veja também [hotéis em Olímpia](/olimpia/hoteis/), [resorts em Olímpia](/olimpia/resorts/) e [hotéis perto do Thermas](/olimpia/hoteis-perto-thermas-dos-laranjais/).
 

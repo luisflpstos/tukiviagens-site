@@ -67,9 +67,9 @@ Nota **9,5** em **361 avaliações**. Diária de referência a partir de **R$ 37
 | Villa Itália Olímpia | Lazer familiar completo | Nota 9,5, tobogã e parquinho |
 | [Água Viva Hotel](/olimpia/agua-viva-hotel/) | Proximidade do Thermas | 500 m do parque |
 | [Hotel Villa Rebellato](/olimpia/villa-rebellato/) | Econômico e simples | Diária a partir de R$ 244 |
-| [Carpe Diem Park Hotel](/olimpia/carpe-diem-park-hotel/) | Natureza e descanso | 5,5 km do Thermas |
+| [Hotel Dolce Dulce](/olimpia/hotel-dolce-dulce/) | Lazer com piscinas | 7 piscinas, 1,3 km do Thermas |
 
-Contra Água Viva, perde em proximidade do Thermas, mas ganha em lazer interno. Contra Villa Rebellato, é menos econômico, mas mais completo. Contra Carpe Diem, é mais prático e menos afastado.
+Contra Água Viva, perde em proximidade do Thermas, mas ganha em lazer interno. Contra Villa Rebellato, é menos econômico, mas mais completo. Contra Dolce Dulce, oferece mais lazer infantil e nota superior.
 
 Veja também [hotéis em Olímpia](/olimpia/hoteis/), [resorts em Olímpia](/olimpia/resorts/) e [hotéis perto do Thermas](/olimpia/hoteis-perto-thermas-dos-laranjais/).
 

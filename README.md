@@ -57,13 +57,15 @@ public/               # Assets estáticos (logotipo, imagens, favicon)
 
 | Collection | Rota | Uso |
 |---|---|---|
-| `paginas` | `/[...path]` | Hubs de destino, páginas de venda, atrações, institucional |
+| `paginas` | `/[...path]` | Hubs de destino, páginas de venda, atrações, hotéis, resorts e institucional |
 | `hoteis` | `/hoteis/[slug]` | Fichas de hotéis |
 | `resorts` | `/resorts/[slug]` | Fichas de resorts |
 | `blog` | `/blog/[slug]` | Artigos SEO |
 | `landingpages` | `/lp/[slug]` | LPs de campanha (noindex por padrão) |
 
 Silos de conteúdo: **Olímpia**, **Rio Quente**, **Nordeste**, **Pacotes** e **Agência**.
+
+Na collection `paginas`, cada hotel ou resort usa `pageType: "hotel"` ou `pageType: "resort"` no frontmatter (não existe tipo `propriedade`).
 
 ## Imagens
 
@@ -75,7 +77,7 @@ Todas as imagens ficam em `public/images/`. Enquanto o arquivo não existir na p
 |---|---|---|
 | Hero da home | `public/images/hero/capa.jpg` | Banner fotográfico da página inicial |
 | Hubs de destino | `public/images/destinos/<slug>/` | `/olimpia/`, `/rio-quente/`, `/nordeste/`, etc. |
-| Hotéis e resorts | `public/images/hoteis/<slug>/` | Páginas de propriedade (`/olimpia/<slug>/`), `/hoteis/[slug]/`, cards da home |
+| Hotéis e resorts | `public/images/hoteis/<slug>/` | Páginas de hotel ou resort (`/olimpia/<slug>/`, `/rio-quente/<slug>/`), `/hoteis/[slug]/`, `/resorts/[slug]/`, cards da home |
 | OG padrão | `public/images/og/` | Compartilhamento social (fallback) |
 | Ícones e mascote | `public/images/icons/`, `public/images/mascot/` | Home e identidade visual |
 
@@ -84,7 +86,7 @@ Todas as imagens ficam em `public/images/`. Enquanto o arquivo não existir na p
 **Regra prática:**
 
 - Hub de destino → `public/images/destinos/<slug>/`
-- Hotel, resort ou propriedade → `public/images/hoteis/<slug>/`
+- Hotel ou resort → `public/images/hoteis/<slug>/`
 - O nome da pasta segue o **slug da galeria**, que pode ser diferente da URL (ex.: pasta `hot-beach-olimpia/` → página `/olimpia/hot-beach/`)
 
 Listas completas de pastas: [public/images/hoteis/README.md](./public/images/hoteis/README.md) e [public/images/destinos/README.md](./public/images/destinos/README.md).
@@ -121,7 +123,7 @@ A `capa.jpg` de cada hotel aparece no **carrossel** (4:3) e nos **cards da home*
 
 #### SEO / compartilhamento (Open Graph)
 
-A primeira foto do carrossel (`capa.jpg`) vira `og:image` nas páginas de propriedade. Redes sociais preferem **1200×630** (~1,91:1). Uma imagem 4:3 será recortada no WhatsApp/Facebook — opcional exportar versão dedicada para OG.
+A primeira foto do carrossel (`capa.jpg`) vira `og:image` nas páginas de hotel ou resort. Redes sociais preferem **1200×630** (~1,91:1). Uma imagem 4:3 será recortada no WhatsApp/Facebook — opcional exportar versão dedicada para OG.
 
 ### Frontmatter opcional
 

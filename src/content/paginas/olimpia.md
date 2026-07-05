@@ -35,7 +35,7 @@ faq:
 
 seo:
   title: "Olímpia SP | Hotéis, resorts e Thermas dos Laranjais"
-  description: "Guia de Olímpia: 10 hotéis e 10 resorts comparados por proximidade do Thermas, Hot Beach, família e custo-benefício. Cotação Tuki Viagens."
+  description: "Guia de Olímpia: 9 hotéis e 10 resorts comparados por proximidade do Thermas, Hot Beach, família e custo-benefício. Cotação Tuki Viagens."
 ---
 
 ## Por que visitar Olímpia?

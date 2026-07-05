@@ -4,10 +4,10 @@ pageType: "venda"
 silo: "olimpia"
 
 headline: "Hotéis em Olímpia para quem vai ao Thermas dos Laranjais"
-description: "Compare os 10 principais hotéis em Olímpia SP por proximidade ao Thermas, lazer interno, custo-benefício e pet friendly. Cotação consultiva com datas e hóspedes."
+description: "Compare os 9 principais hotéis em Olímpia SP por proximidade ao Thermas, lazer interno, custo-benefício e pet friendly. Cotação consultiva com datas e hóspedes."
 
 highlights:
-  - 10 hotéis comparados por perfil e distância do Thermas
+  - 9 hotéis comparados por perfil e distância do Thermas
   - Opções desde R$ 109 (JS Thermas) até pousadas com nota 9,5
   - Tiffany e Água Viva a 400–500 m do parque
   - Diária sob consulta com atendimento humano
@@ -23,7 +23,7 @@ cta: "Cotar hotel em Olímpia"
 
 faq:
   - question: "Quanto custa a diária de hotel em Olímpia?"
-    answer: "Varia de R$ 109 (JS Thermas Hotel) a R$ 706 (Carpe Diem Park Hotel) nas diárias de referência. Férias e feriados alteram os valores — envie datas para cotação atualizada."
+    answer: "Varia de R$ 109 (JS Thermas Hotel) a R$ 470 (Hotel Dolce Dulce) nas diárias de referência. Férias e feriados alteram os valores — envie datas para cotação atualizada."
   - question: "Qual o melhor hotel em Olímpia para família?"
     answer: "Villa Itália Olímpia (nota 9,5, lazer infantil) e Parque das Águas (nota 9,2, piscinas) são fortes fora dos resorts. Para proximidade: Tiffany, Água Viva e Glória."
   - question: "Existe hotel barato perto do Thermas dos Laranjais?"
@@ -34,21 +34,20 @@ faq:
     answer: "Envie datas, adultos, crianças (com idades) e preferência de hotel. Retornamos opções comparadas com preço sob consulta."
 
 seo:
-  title: "Hotéis em Olímpia SP | 10 opções perto do Thermas"
-  description: "Os 10 hotéis de Olímpia comparados: proximidade do Thermas, lazer, custo-benefício e pet friendly. Cotação consultiva Tuki Viagens."
+  title: "Hotéis em Olímpia SP | 9 opções perto do Thermas"
+  description: "Os 9 hotéis de Olímpia comparados: proximidade do Thermas, lazer, custo-benefício e pet friendly. Cotação consultiva Tuki Viagens."
 ---
 
 ## Hotéis em Olímpia: o que considerar
 
 Olímpia concentra hospedagem voltada para quem visita o **Thermas dos Laranjais** e o **Hot Beach**. A escolha do hotel impacta tempo de deslocamento, conforto entre um dia de parque e outro e o custo total da viagem.
 
-## Comparativo dos 10 hotéis
+## Comparativo dos 9 hotéis
 
 | Hotel | Nota | Distância do Thermas | Perfil | Diária ref. |
 | --- | --- | --- | --- | --- |
 | [Villa Itália Olímpia](/olimpia/villa-italia-olimpia/) | 9,5 (361) | 3,4 km | Lazer familiar | R$ 377 |
 | [Parque das Águas](/olimpia/parque-das-aguas/) | 9,2 (265) | 3,5 km | Pousada com piscina | R$ 406 |
-| [Carpe Diem Park Hotel](/olimpia/carpe-diem-park-hotel/) | 9,2 (118) | 5,5 km | Natureza e lazer | R$ 706 |
 | [Hotel Fazenda Haras](/olimpia/hotel-fazenda-haras/) | 8,8 (800) | 5 km | Fazenda e pets | R$ 263 |
 | [Hotel Dolce Dulce](/olimpia/hotel-dolce-dulce/) | 8,9 (356) | 1,3 km | 7 piscinas | R$ 470 |
 | [Água Viva Hotel](/olimpia/agua-viva-hotel/) | 9,0 (207) | 500 m | Proximidade + cozinha | R$ 263 |
@@ -64,7 +63,7 @@ Olímpia concentra hospedagem voltada para quem visita o **Thermas dos Laranjais
 | Proximidade do Thermas | Tiffany, Água Viva, Glória | 400 m a 800 m do parque |
 | Lazer interno (sem resort) | Villa Itália, Dolce Dulce | Tobogã, 7 piscinas, parquinho |
 | Custo-benefício | JS Thermas, Glória, Villa Rebellato | Diárias desde R$ 109 a R$ 244 |
-| Natureza e descanso | Carpe Diem Park, Fazenda Haras | Verde, fazenda, pets |
+| Natureza e descanso | Fazenda Haras, [Carpe Diem Eco Resort](/olimpia/carpe-diem-eco-resort-olimpia/) | Verde, fazenda, pets |
 | Pet friendly | Fazenda Haras, JS Thermas | Aceita pets |
 
 Para resorts com acesso ao Thermas ou Hot Beach, consulte [resorts em Olímpia](/olimpia/resorts/) e [hotéis perto do Thermas](/olimpia/hoteis-perto-thermas-dos-laranjais/).

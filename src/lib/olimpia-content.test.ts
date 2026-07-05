@@ -7,7 +7,6 @@ import { SITE_ROUTES } from './site-routes';
 const OLIMPIA_HOTELS = [
 	'villa-italia-olimpia',
 	'parque-das-aguas',
-	'carpe-diem-park-hotel',
 	'hotel-fazenda-haras',
 	'hotel-dolce-dulce',
 	'agua-viva-hotel',

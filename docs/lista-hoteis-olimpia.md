@@ -1,17 +1,16 @@
-# 1. Os 10 hotéis de Olímpia
+# 1. Os 9 hotéis de Olímpia
 
 | # | Hotel | Nota e avaliações citadas | Localização relevante | Perfil principal |
 |---|---|---:|---|---|
 | 1 | Hotel Pousada Villa Itália Olímpia | 9,5, 361 avaliações | 3,4 km do Thermas dos Laranjais | Família que quer lazer interno |
 | 2 | Hotel Pousada Parque das Águas | 9,2, 265 avaliações | 3,5 km do Thermas dos Laranjais | Família que quer pousada com piscina |
-| 3 | Carpe Diem Park Hotel | 9,2, 118 avaliações | 5,5 km do Thermas dos Laranjais | Descanso, natureza e estrutura de lazer |
-| 4 | Hotel Fazenda Haras | 8,8, 800 avaliações | 5 km do Thermas dos Laranjais | Fazenda, verde e pets |
-| 5 | Hotel Dolce Dulce | 8,9, 356 avaliações | 1,3 km do Thermas dos Laranjais | Piscinas e custo-benefício |
-| 6 | Água Viva Hotel | 9,0, 207 avaliações | 500 m do Thermas dos Laranjais | Proximidade do parque |
-| 7 | Tiffany Hotel | 8,7, 2.188 avaliações | 400 m do Thermas dos Laranjais | Pequenas famílias perto do parque |
-| 8 | Hotel Villa Rebellato | 8,7, 344 avaliações | 1,9 km do Thermas dos Laranjais | Econômico e simples |
-| 9 | Glória Hotel | 9,3, 105 avaliações | 800 m do Thermas dos Laranjais | Econômico perto do parque |
-| 10 | JS Thermas Hotel | 8,5, 1.545 avaliações | 1 km do Thermas dos Laranjais | Econômico com piscina e pet friendly |
+| 3 | Hotel Fazenda Haras | 8,8, 800 avaliações | 5 km do Thermas dos Laranjais | Fazenda, verde e pets |
+| 4 | Hotel Dolce Dulce | 8,9, 356 avaliações | 1,3 km do Thermas dos Laranjais | Piscinas e custo-benefício |
+| 5 | Água Viva Hotel | 9,0, 207 avaliações | 500 m do Thermas dos Laranjais | Proximidade do parque |
+| 6 | Tiffany Hotel | 8,7, 2.188 avaliações | 400 m do Thermas dos Laranjais | Pequenas famílias perto do parque |
+| 7 | Hotel Villa Rebellato | 8,7, 344 avaliações | 1,9 km do Thermas dos Laranjais | Econômico e simples |
+| 8 | Glória Hotel | 9,3, 105 avaliações | 800 m do Thermas dos Laranjais | Econômico perto do parque |
+| 9 | JS Thermas Hotel | 8,5, 1.545 avaliações | 1 km do Thermas dos Laranjais | Econômico com piscina e pet friendly |
 
 ## 1. Hotel Pousada Villa Itália Olímpia
 
@@ -20,7 +19,7 @@
 - **Estrutura e diferenciais:** piscinas ao ar livre e climatizadas, tobogã, brinquedos aquáticos, parquinho infantil, mesa de bilhar, café da manhã variado, estacionamento privativo gratuito.
 - **Localização:** cerca de **3,4 km do Thermas dos Laranjais**.
 - **Dados reais citados:** nota 9,5 em 361 avaliações, diária de referência a partir de R$ 377.
-- **Comparativo com 3 exemplos:** contra Água Viva, perde em proximidade do Thermas, mas ganha em lazer interno. Contra Villa Rebellato, é menos econômico, mas mais completo. Contra Carpe Diem, é mais prático e menos afastado.
+- **Comparativo com 3 exemplos:** contra Água Viva, perde em proximidade do Thermas, mas ganha em lazer interno. Contra Villa Rebellato, é menos econômico, mas mais completo. Contra Dolce Dulce, oferece mais lazer infantil e nota superior.
 
 ## 2. Hotel Pousada Parque das Águas
 
@@ -31,25 +30,16 @@
 - **Dados reais citados:** nota 9,2 em 265 avaliações, diária de referência a partir de R$ 406.
 - **Comparativo com 3 exemplos:** contra Villa Itália, tem proposta parecida, mas nota menor. Contra Tiffany, fica mais longe do parque, mas tem área externa mais forte. Contra JS Thermas, é mais cara, porém mais confortável.
 
-## 3. Carpe Diem Park Hotel
-
-- **Sobre:** hotel de lazer com clima de descanso, área verde e estrutura que se aproxima de resort.
-- **Vale para quem:** famílias que querem natureza, crianças que gostam de área aberta e casais que querem tranquilidade.
-- **Estrutura e diferenciais:** piscina ao ar livre, lago para pesca, banheira de hidromassagem, salão de jogos, academia, restaurante, bar, café da manhã, suítes família, chalés e apartamentos.
-- **Localização:** cerca de **3 km do centro** e **5,5 km do Thermas dos Laranjais**.
-- **Dados reais citados:** nota 9,2 em 118 avaliações, diária de referência a partir de R$ 706.
-- **Comparativo com 3 exemplos:** contra Água Viva, fica mais longe, mas entrega mais lazer. Contra Hotel Fazenda Haras, tem estrutura mais hoteleira. Contra Hot Beach Resort, não tem parque integrado, mas é mais calmo.
-
-## 4. Hotel Fazenda Haras
+## 3. Hotel Fazenda Haras
 
 - **Sobre:** hotel fazenda para descanso, verde e experiência rural.
 - **Vale para quem:** famílias com crianças, hóspedes com pets e viajantes que querem fugir do agito dos parques.
 - **Estrutura e diferenciais:** piscina, passeios a cavalo, salão de jogos, parquinho infantil, café da manhã elogiado, quartos para até 5 pessoas, estacionamento gratuito, aceita pets segundo a fonte.
 - **Localização:** cerca de **5 km do Thermas dos Laranjais**.
 - **Dados reais citados:** nota 8,8 em 800 avaliações, diária de referência a partir de R$ 263.
-- **Comparativo com 3 exemplos:** contra Carpe Diem, é mais fazenda e pet friendly. Contra Tiffany, perde em proximidade, mas ganha em área rural. Contra JS Thermas, é menos urbano e mais familiar.
+- **Comparativo com 3 exemplos:** contra Parque das Águas, é mais fazenda e pet friendly. Contra Tiffany, perde em proximidade, mas ganha em área rural. Contra JS Thermas, é menos urbano e mais familiar.
 
-## 5. Hotel Dolce Dulce
+## 4. Hotel Dolce Dulce
 
 - **Sobre:** hotel com estrutura aquática forte, apresentado como alternativa econômica para quem quer experiência parecida com resort.
 - **Vale para quem:** famílias com crianças e hóspedes que querem piscinas sem pagar por um grande resort.
@@ -58,7 +48,7 @@
 - **Dados reais citados:** nota 8,9 em 356 avaliações, diária de referência a partir de R$ 470.
 - **Comparativo com 3 exemplos:** contra Água Viva, perde em proximidade, mas ganha em piscinas. Contra Villa Itália, tem mais piscinas, mas nota menor. Contra Enjoy Olímpia Park, é menor, mas pode ser mais simples e econômico.
 
-## 6. Água Viva Hotel
+## 5. Água Viva Hotel
 
 - **Sobre:** hotel moderno e prático, muito forte em localização para quem vai ao Thermas.
 - **Vale para quem:** famílias que querem deslocamento curto até o parque, casais em viagem rápida e hóspedes que valorizam restaurantes e supermercado perto.
@@ -67,7 +57,7 @@
 - **Dados reais citados:** nota 9,0 em 207 avaliações, diária de referência a partir de R$ 263.
 - **Comparativo com 3 exemplos:** contra Tiffany, ambos são próximos do parque, mas o Água Viva tem opção com cozinha. Contra Villa Itália, tem menos lazer, mas localização melhor. Contra Mercure, é menor e mais simples.
 
-## 7. Tiffany Hotel
+## 6. Tiffany Hotel
 
 - **Sobre:** hotel de alta demanda, bem posicionado para Thermas, com estrutura prática e recepção 24h.
 - **Vale para quem:** pequenas famílias de até 4 pessoas e viajantes que priorizam proximidade do parque.
@@ -76,7 +66,7 @@
 - **Dados reais citados:** nota 8,7 em 2.188 avaliações, diária de referência a partir de R$ 270.
 - **Comparativo com 3 exemplos:** contra Água Viva, tem mais avaliações, mas nota menor. Contra Glória Hotel, fica mais perto, mas tem nota menor. Contra JS Thermas, é mais caro, porém mais próximo e completo.
 
-## 8. Hotel Villa Rebellato
+## 7. Hotel Villa Rebellato
 
 - **Sobre:** hotel simples, bom e barato, focado em conforto básico e localização.
 - **Vale para quem:** viajante econômico, família pequena e quem passa o dia nos parques e usa o hotel mais para dormir.
@@ -85,7 +75,7 @@
 - **Dados reais citados:** nota 8,7 em 344 avaliações, diária de referência a partir de R$ 244.
 - **Comparativo com 3 exemplos:** contra JS Thermas, tem menos lazer, mas boa proposta urbana. Contra Glória, fica mais longe do parque. Contra Dolce Dulce, é mais econômico, mas sem complexo de piscinas.
 
-## 9. Glória Hotel
+## 8. Glória Hotel
 
 - **Sobre:** hotel econômico e bem avaliado, forte em café da manhã e proximidade do Thermas.
 - **Vale para quem:** famílias e casais que querem custo-benefício perto do parque.
@@ -94,7 +84,7 @@
 - **Dados reais citados:** nota 9,3 em 105 avaliações, diária de referência a partir de R$ 240.
 - **Comparativo com 3 exemplos:** contra Tiffany, tem nota maior, mas menor volume de avaliações. Contra Água Viva, fica um pouco mais longe. Contra Villa Rebellato, tem proximidade melhor do parque.
 
-## 10. JS Thermas Hotel
+## 9. JS Thermas Hotel
 
 - **Sobre:** hotel econômico com estrutura suficiente para família e boa proximidade do parque.
 - **Vale para quem:** viajante sensível a preço, família com pet e hóspedes que querem piscina sem pagar mais caro.
@@ -238,7 +228,7 @@
 
 1. **Carpe Diem Eco Resort Olímpia:** natureza, fazenda, animais, lago e estrutura de lazer.
 2. **Hotel Fazenda Haras:** verde, passeios a cavalo, pets e clima rural.
-3. **Carpe Diem Park Hotel:** hotel de lazer com pesca, hidromassagem e restaurante.
+3. **Parque das Águas:** pousada com piscinas e área verde a 3,5 km do Thermas.
 
 # Leitura estratégica para marketing turístico
 

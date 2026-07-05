@@ -36,7 +36,6 @@ Usado em:
 | `wyndham-royal-star-thermas-resort/` | `/olimpia/wyndham-royal-star-thermas-resort/` |
 | `villa-italia-olimpia/` | `/olimpia/villa-italia-olimpia/` |
 | `parque-das-aguas/` | `/olimpia/parque-das-aguas/` |
-| `carpe-diem-park-hotel/` | `/olimpia/carpe-diem-park-hotel/` |
 | `hotel-fazenda-haras/` | `/olimpia/hotel-fazenda-haras/` |
 | `hotel-dolce-dulce/` | `/olimpia/hotel-dolce-dulce/` |
 | `agua-viva-hotel/` | `/olimpia/agua-viva-hotel/` |
