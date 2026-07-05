@@ -1,4 +1,5 @@
 import { describe, expect, it } from 'vitest';
+import { GALLERY_MAX_IMAGES } from './gallery-images';
 import {
 	hasDedicatedPropertyGallery,
 	resolvePageGalleryImages,
@@ -66,7 +67,7 @@ describe('resolvePageGalleryImages', () => {
 			basePath: '/images/_missing-gallery',
 		});
 
-		expect(result).toHaveLength(3);
+		expect(result).toHaveLength(GALLERY_MAX_IMAGES);
 		expect(result[0]?.src).toContain('unsplash');
 	});
 
@@ -79,8 +80,22 @@ describe('resolvePageGalleryImages', () => {
 			basePath: '/images/_missing-gallery',
 		});
 
-		expect(result).toHaveLength(3);
+		expect(result).toHaveLength(GALLERY_MAX_IMAGES);
 		expect(result[0]?.alt).toContain('Enjoy Olímpia Park Resort');
+	});
+
+	it('resolves up to six local images for olimpia hub', () => {
+		const result = resolvePageGalleryImages({
+			entryId: 'olimpia',
+			pageType: 'hub',
+			explicitImages: [],
+			label: 'Olímpia',
+		});
+
+		expect(result).toHaveLength(GALLERY_MAX_IMAGES);
+		expect(result[0]?.src).toBe('/images/destinos/olimpia/capa.png');
+		expect(result[1]?.src).toBe('/images/destinos/olimpia/01.png');
+		expect(result[2]?.src).toBe('/images/destinos/olimpia/02.JPG');
 	});
 
 	it('uses destination gallery for atracao without dedicated hotel folder', () => {
@@ -92,7 +107,7 @@ describe('resolvePageGalleryImages', () => {
 			basePath: '/images/_missing-gallery',
 		});
 
-		expect(result).toHaveLength(3);
+		expect(result).toHaveLength(GALLERY_MAX_IMAGES);
 		expect(result[0]?.src).toContain('unsplash');
 	});
 });

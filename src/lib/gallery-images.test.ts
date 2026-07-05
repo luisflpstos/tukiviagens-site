@@ -3,6 +3,7 @@ import { join } from 'node:path';
 import { afterEach, beforeEach, describe, expect, it } from 'vitest';
 import {
 	buildGalleryImageCandidates,
+	GALLERY_MAX_IMAGES,
 	resolveGalleryImages,
 	shouldShowGallery,
 } from './gallery-images';
@@ -95,9 +96,50 @@ describe('resolveGalleryImages', () => {
 			basePath: '/images/_test-gallery',
 		});
 
-		expect(result).toHaveLength(3);
+		expect(result).toHaveLength(GALLERY_MAX_IMAGES);
 		expect(result[0]?.src).toBe('https://example.com/fallback-1.jpg');
 		expect(result[0]?.alt).toBe('Hotel exemplo — foto 1');
+	});
+
+	it('discovers gallery files with alternate extensions', () => {
+		writeFixture('destinos/olimpia/capa.png');
+		writeFixture('destinos/olimpia/01.png');
+		writeFixture('destinos/olimpia/02.JPG');
+		writeFixture('destinos/olimpia/03.jpg');
+
+		const result = resolveGalleryImages({
+			slug: 'olimpia',
+			category: 'destinos',
+			explicitImages: [],
+			fallbacks: ['https://example.com/fallback.jpg'],
+			label: 'Olímpia',
+			basePath: '/images/_test-gallery',
+		});
+
+		expect(result.map((image) => image.src)).toEqual([
+			'/images/_test-gallery/destinos/olimpia/capa.png',
+			'/images/_test-gallery/destinos/olimpia/01.png',
+			'/images/_test-gallery/destinos/olimpia/02.JPG',
+			'/images/_test-gallery/destinos/olimpia/03.jpg',
+		]);
+	});
+
+	it('caps explicit frontmatter images at gallery max', () => {
+		const explicitImages = Array.from({ length: 8 }, (_, index) => {
+			const slot = String(index).padStart(2, '0');
+			writeFixture(`hoteis/sample-hotel/${slot}.jpg`);
+			return `/images/_test-gallery/hoteis/sample-hotel/${slot}.jpg`;
+		});
+
+		const result = resolveGalleryImages({
+			slug: 'sample-hotel',
+			category: 'hoteis',
+			explicitImages,
+			fallbacks: ['https://example.com/fallback.jpg'],
+			label: 'Hotel exemplo',
+		});
+
+		expect(result).toHaveLength(GALLERY_MAX_IMAGES);
 	});
 });
 

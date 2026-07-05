@@ -18,8 +18,10 @@ export interface ResolveGalleryImagesOptions {
 	basePath?: string;
 }
 
-const GALLERY_SLOTS = ['capa', '01', '02', '03', '04', '05'] as const;
-const PLACEHOLDER_COUNT = 3;
+export const GALLERY_SLOTS = ['capa', '01', '02', '03', '04', '05'] as const;
+export const GALLERY_MAX_IMAGES = GALLERY_SLOTS.length;
+
+const GALLERY_EXTENSIONS = ['.jpg', '.jpeg', '.JPG', '.JPEG', '.webp', '.png'] as const;
 
 export function buildGalleryImageCandidates(slug: string, category: GalleryCategory): string[] {
 	const base = `/images/${category}/${slug}`;
@@ -39,8 +41,19 @@ function resolvePublicImagePath(
 	return publicFileExists(publicPath, publicRoot) ? publicPath : fallback;
 }
 
-function toPublicPath(basePath: string, category: GalleryCategory, slug: string, slot: string): string {
-	return `${basePath}/${category}/${slug}/${slot}.jpg`;
+function resolveSlotImagePath(
+	basePath: string,
+	category: GalleryCategory,
+	slug: string,
+	slot: string,
+	publicRoot = join(process.cwd(), 'public'),
+): string | undefined {
+	for (const extension of GALLERY_EXTENSIONS) {
+		const imagePath = `${basePath}/${category}/${slug}/${slot}${extension}`;
+		if (publicFileExists(imagePath, publicRoot)) return imagePath;
+	}
+
+	return undefined;
 }
 
 function uniqueImages(images: GalleryImage[]): GalleryImage[] {
@@ -74,12 +87,12 @@ export function resolveGalleryImages({
 	}
 
 	if (resolved.length > 0) {
-		return resolved;
+		return resolved.slice(0, GALLERY_MAX_IMAGES);
 	}
 
 	for (const slot of GALLERY_SLOTS) {
-		const imagePath = toPublicPath(basePath, category, slug, slot);
-		if (!publicFileExists(imagePath, publicRoot)) continue;
+		const imagePath = resolveSlotImagePath(basePath, category, slug, slot, publicRoot);
+		if (!imagePath) continue;
 
 		resolved.push({
 			src: imagePath,
@@ -88,10 +101,10 @@ export function resolveGalleryImages({
 	}
 
 	if (resolved.length > 0) {
-		return resolved;
+		return resolved.slice(0, GALLERY_MAX_IMAGES);
 	}
 
-	return Array.from({ length: PLACEHOLDER_COUNT }, (_, index) => ({
+	return Array.from({ length: GALLERY_MAX_IMAGES }, (_, index) => ({
 		src: fallbacks[index % fallbacks.length] ?? fallbacks[0] ?? '',
 		alt: `${label} — foto ${index + 1}`,
 	})).filter((image) => image.src.length > 0);

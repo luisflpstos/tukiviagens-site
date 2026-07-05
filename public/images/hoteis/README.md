@@ -16,7 +16,7 @@ Usado em:
 | `02.jpg` | Terceira foto |
 | `03.jpg` … `05.jpg` | Fotos adicionais (até 6 no total) |
 
-**Formato:** `.jpg` ou `.webp` (ajuste o frontmatter se usar `.webp`).  
+**Formato:** `.jpg`, `.jpeg`, `.webp` ou `.png` (maiúsculas/minúsculas aceitas). Ajuste o frontmatter se usar extensão diferente de `.jpg`.  
 **Dimensões:** 1200×900 ou 1600×1200 (proporção **4:3**). Ver [README principal](../../../README.md#imagens).
 
 ## Pastas — Olímpia

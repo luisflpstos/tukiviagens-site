@@ -11,7 +11,7 @@ Uma pasta por destino. O **nome da pasta** deve ser o slug do hub (ex.: `olimpia
 | `02.jpg` | Terceira foto |
 | `03.jpg` … `05.jpg` | Fotos adicionais (até 6 no total) |
 
-**Formato:** `.jpg` ou `.webp`.  
+**Formato:** `.jpg`, `.jpeg`, `.webp` ou `.png` (maiúsculas/minúsculas aceitas, ex.: `02.JPG`).  
 **Dimensões:** 1200×900 ou 1600×1200 (proporção **4:3**). Ver [README principal](../../../README.md#imagens).
 
 ## Pastas preparadas
