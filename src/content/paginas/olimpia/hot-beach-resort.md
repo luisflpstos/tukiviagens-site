@@ -1,6 +1,6 @@
 ---
 title: "Hot Beach Resort"
-pageType: "propriedade"
+pageType: "resort"
 silo: "olimpia"
 
 headline: "Hot Beach Resort: experiência integrada ao parque em Olímpia"
@@ -57,7 +57,7 @@ Nota **8,4** em **477 avaliações**. Diária de referência a partir de **R$ 63
 
 ## Comparativo com outras opções
 
-| Propriedade | Perfil | Diferencial |
+| Hospedagem | Perfil | Diferencial |
 | --- | --- | --- |
 | Hot Beach Resort | Experiência integrada | Praia artificial, pé na areia |
 | [Celebration Resort Olímpia](/olimpia/celebration-resort-olimpia/) | Recreação familiar | Acesso Hot Beach |

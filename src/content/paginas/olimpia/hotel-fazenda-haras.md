@@ -1,6 +1,6 @@
 ---
 title: "Hotel Fazenda Haras"
-pageType: "propriedade"
+pageType: "hotel"
 silo: "olimpia"
 
 headline: "Hotel Fazenda Haras: verde, pets e clima rural em Olímpia"
@@ -58,7 +58,7 @@ Nota **8,8** em **800 avaliações**. Diária de referência a partir de **R$ 26
 
 ## Comparativo com outras opções
 
-| Propriedade | Perfil | Diferencial |
+| Hospedagem | Perfil | Diferencial |
 | --- | --- | --- |
 | Hotel Fazenda Haras | Fazenda e pets | Passeios a cavalo, clima rural |
 | [Carpe Diem Park Hotel](/olimpia/carpe-diem-park-hotel/) | Lazer hoteleiro | Lago e restaurante |

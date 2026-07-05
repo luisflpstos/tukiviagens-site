@@ -1,6 +1,6 @@
 ---
 title: "Tiffany Hotel"
-pageType: "propriedade"
+pageType: "hotel"
 silo: "olimpia"
 
 headline: "Tiffany Hotel: 400 m do Thermas dos Laranjais"
@@ -56,7 +56,7 @@ Nota **8,7** em **2.188 avaliações**. Diária de referência a partir de **R$ 
 
 ## Comparativo com outras opções
 
-| Propriedade | Perfil | Diferencial |
+| Hospedagem | Perfil | Diferencial |
 | --- | --- | --- |
 | Tiffany Hotel | Proximidade do parque | 400 m do Thermas, 2.188 avaliações |
 | [Água Viva Hotel](/olimpia/agua-viva-hotel/) | Cozinha funcional | 500 m do Thermas |

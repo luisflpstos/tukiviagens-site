@@ -8,6 +8,7 @@ import Faq from '../components/sections/Faq.astro';
 import LeadCaptureSection from '../components/sections/LeadCaptureSection.astro';
 import PageHero from '../components/sections/PageHero.astro';
 import { type GalleryImage } from '../lib/gallery-images';
+import { isHospitalityPage } from '../lib/hospitality';
 import { shouldShowPageCarousel } from '../lib/property-gallery';
 import { buildCanonical } from '../lib/seo';
 import { getChildRoutes, getRouteByPath, normalizePath } from '../lib/site-routes';
@@ -21,7 +22,7 @@ interface Props {
 	title: string;
 	description: string;
 	path: string;
-	pageType: 'hub' | 'venda' | 'atracao' | 'propriedade' | 'institucional';
+	pageType: 'hub' | 'venda' | 'atracao' | 'hotel' | 'resort' | 'institucional';
 	headline: string;
 	pageTitle?: string;
 	highlights: string[];
@@ -63,7 +64,8 @@ const pageTypeLabels: Record<Props['pageType'], string> = {
 	hub: 'Destino',
 	venda: 'Hospedagem',
 	atracao: 'Atração',
-	propriedade: 'Propriedade',
+	hotel: 'Hotel',
+	resort: 'Resort',
 	institucional: 'Tuki Viagens',
 };
 
@@ -88,7 +90,7 @@ const breadcrumbItems = [
 ];
 
 const structuredPage =
-	pageType === 'propriedade'
+	isHospitalityPage(pageType)
 		? {
 				'@context': 'https://schema.org',
 				'@type': 'Hotel',
@@ -137,10 +139,16 @@ const jsonLd = [
 ];
 
 const benefitsTitle =
-	pageType === 'propriedade' ? 'Destaques da propriedade' : pageType === 'atracao' ? 'Destaques' : 'Destaques';
+	pageType === 'hotel'
+		? 'Destaques do hotel'
+		: pageType === 'resort'
+			? 'Destaques do resort'
+			: pageType === 'atracao'
+				? 'Destaques'
+				: 'Destaques';
 
 const leadTitle =
-	pageType === 'propriedade'
+	isHospitalityPage(pageType)
 		? 'Consulte hospedagem'
 		: pageType === 'atracao'
 			? 'Cotar hospedagem no destino'
@@ -234,11 +242,11 @@ const leadDestination = destinationHubRoute?.title ?? parentRoute?.title ?? titl
 	<Faq items={faq} />
 	<LeadCaptureSection
 		formId="pagina-lead-form"
-		hotel={pageType === 'propriedade' ? title : undefined}
+		hotel={isHospitalityPage(pageType) ? title : undefined}
 		destination={leadDestination}
 		title={leadTitle}
 		subtitle={
-			pageType === 'propriedade'
+			isHospitalityPage(pageType)
 				? `${title} · ${leadDestination}`
 				: 'Preencha o formulário e nossa equipe retorna rapidamente.'
 		}

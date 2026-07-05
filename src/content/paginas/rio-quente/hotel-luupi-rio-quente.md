@@ -1,6 +1,6 @@
 ---
 title: "Hotel Luupi, Rio Quente Resorts"
-pageType: "propriedade"
+pageType: "hotel"
 silo: "rio-quente"
 
 headline: "Hotel Luupi: famílias grandes com Hot Park incluso"
@@ -60,7 +60,7 @@ Nota **8,3** em **343 avaliações** e diária desde **R$ 1.200**. Em outra base
 
 ## Comparativo com outras opções
 
-| Propriedade | Perfil | Diferencial |
+| Hospedagem | Perfil | Diferencial |
 | --- | --- | --- |
 | Hotel Luupi | Grupos e meia pensão | Hot Park incluso, duplex |
 | [Hotel Giardino](/rio-quente/hotel-giardino-rio-quente/) | Custo-benefício oficial | Arquitetura italiana |

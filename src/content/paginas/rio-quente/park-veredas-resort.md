@@ -1,6 +1,6 @@
 ---
 title: "Park Veredas Resort"
-pageType: "propriedade"
+pageType: "resort"
 silo: "rio-quente"
 
 headline: "Park Veredas Resort: apart-hotel com estrutura de resort"
@@ -59,7 +59,7 @@ Nota **8,5** em **545 avaliações** e diária desde **R$ 315**. Em outra base d
 
 ## Comparativo com outras opções
 
-| Propriedade | Perfil | Diferencial |
+| Hospedagem | Perfil | Diferencial |
 | --- | --- | --- |
 | Park Veredas Resort | Apart-hotel resort | Piscinas, espaço kids, 900 m |
 | [Thermas Paradise](/rio-quente/thermas-paradise/) | Banho termal | Mais apartamento/condomínio |

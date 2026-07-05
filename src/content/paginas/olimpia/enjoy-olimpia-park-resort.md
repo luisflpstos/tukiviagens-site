@@ -1,6 +1,6 @@
 ---
 title: "Enjoy Olímpia Park Resort"
-pageType: "propriedade"
+pageType: "resort"
 silo: "olimpia"
 
 headline: "Enjoy Olímpia Park Resort: suítes para famílias colado no Thermas"
@@ -75,7 +75,7 @@ Todas as suítes incluem ar-condicionado, Smart TV, micro-ondas, frigobar e Wi-F
 
 ## Comparativo com outras opções
 
-| Propriedade | Perfil | Diferencial |
+| Hospedagem | Perfil | Diferencial |
 | --- | --- | --- |
 | Enjoy Olímpia Park Resort | Suítes para famílias | Colado no Thermas, Villa Mall |
 | [Wyndham Olímpia Royal Hotels](/olimpia/wyndham-olimpia-royal-hotels/) | Grande complexo | 11 piscinas, acesso Thermas |

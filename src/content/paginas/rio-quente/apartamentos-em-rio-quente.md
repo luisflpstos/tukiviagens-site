@@ -1,6 +1,6 @@
 ---
 title: "Apartamentos em Rio Quente"
-pageType: "propriedade"
+pageType: "hotel"
 silo: "rio-quente"
 
 headline: "Apartamentos em Rio Quente: melhor preço a 400 m do Hot Park"
@@ -57,7 +57,7 @@ Nota **8,9** em **334 avaliações** e diária desde **R$ 177**.
 
 ## Comparativo com outras opções
 
-| Propriedade | Perfil | Diferencial |
+| Hospedagem | Perfil | Diferencial |
 | --- | --- | --- |
 | Apartamentos em Rio Quente | Melhor preço | 400 m, R$ 177 |
 | [Prime Hotel Águas da Serra](/rio-quente/prime-hotel-aguas-da-serra/) | Custo-benefício | Mais estruturado como hotel |

@@ -1,6 +1,6 @@
 ---
 title: "Refúgio Grand Premium"
-pageType: "propriedade"
+pageType: "resort"
 silo: "rio-quente"
 
 headline: "Refúgio Grand Premium: premium a passos do Hot Park"
@@ -63,7 +63,7 @@ Hotel **5 estrelas**. Nota **8,3** em **309 avaliações** (antigo Hotel Turismo
 
 ## Comparativo com outras opções
 
-| Propriedade | Perfil | Diferencial |
+| Hospedagem | Perfil | Diferencial |
 | --- | --- | --- |
 | Refúgio Grand Premium | Premium, a passos do Hot Park | 5 estrelas, reformado |
 | [Hotel Pousada](/rio-quente/hotel-pousada-rio-quente/) | Tradição | 50 m do Parque das Fontes |

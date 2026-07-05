@@ -42,9 +42,9 @@ seo:
 
 O **Hot Beach** é um dos principais parques aquáticos de Olímpia. A rede construiu **ecossistema de hospedagem segmentado por perfil**: Hot Beach Resort, Celebration, Thermas Park/Hot Beach Raízes e Hot Beach Suites.
 
-## Propriedades da rede Hot Beach
+## Hotéis e resorts da rede Hot Beach
 
-| Propriedade | Perfil | Destaque |
+| Hospedagem | Perfil | Destaque |
 | --- | --- | --- |
 | [Hot Beach Resort](/olimpia/hot-beach-resort/) | Experiência integrada | Praia artificial, pé na areia |
 | [Celebration Resort Olímpia](/olimpia/celebration-resort-olimpia/) | Família e recreação | Acesso ilimitado Hot Beach |
@@ -56,7 +56,7 @@ O **Hot Beach** é um dos principais parques aquáticos de Olímpia. A rede cons
 | Critério | Hot Beach | Thermas dos Laranjais |
 | --- | --- | --- |
 | Perfil | Resort + parque integrado | Maior parque da América Latina |
-| Hospedagem | Ecossistema Hot Beach (4 propriedades) | Wyndham, Mercure, Enjoy e hotéis na região |
+| Hospedagem | Ecossistema Hot Beach (4 unidades) | Wyndham, Mercure, Enjoy e hotéis na região |
 | Indicado para | Quem quer tudo no complexo Hot Beach | Quem prioriza escala e variedade de atrações |
 
 Muitas famílias combinam os dois parques em uma viagem de 3 a 4 dias. Veja o guia do [Thermas dos Laranjais](/olimpia/thermas-dos-laranjais/) para planejar o roteiro completo.

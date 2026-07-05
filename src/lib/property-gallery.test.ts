@@ -20,7 +20,7 @@ describe('resolvePropertyImageSlug', () => {
 		);
 	});
 
-	it('falls back to leaf slug for unmapped propriedade pages', () => {
+	it('falls back to leaf slug for unmapped hospitality pages', () => {
 		expect(resolvePropertyImageSlug('olimpia/custom-resort')).toBe('custom-resort');
 	});
 });
@@ -37,10 +37,11 @@ describe('hasDedicatedPropertyGallery', () => {
 });
 
 describe('shouldShowPageCarousel', () => {
-	it('shows carousel for hub, propriedade and atracao with images', () => {
+	it('shows carousel for hub, hotel, resort and atracao with images', () => {
 		const images = [{ src: '/images/hoteis/x/capa.jpg', alt: 'x' }];
 		expect(shouldShowPageCarousel('hub', images)).toBe(true);
-		expect(shouldShowPageCarousel('propriedade', images)).toBe(true);
+		expect(shouldShowPageCarousel('hotel', images)).toBe(true);
+		expect(shouldShowPageCarousel('resort', images)).toBe(true);
 		expect(shouldShowPageCarousel('atracao', images)).toBe(true);
 	});
 
@@ -51,7 +52,7 @@ describe('shouldShowPageCarousel', () => {
 	});
 
 	it('hides carousel when gallery is empty', () => {
-		expect(shouldShowPageCarousel('propriedade', [])).toBe(false);
+		expect(shouldShowPageCarousel('resort', [])).toBe(false);
 	});
 });
 
@@ -69,10 +70,10 @@ describe('resolvePageGalleryImages', () => {
 		expect(result[0]?.src).toContain('unsplash');
 	});
 
-	it('resolves hotel gallery for propriedade pages', () => {
+	it('resolves hotel gallery for resort pages', () => {
 		const result = resolvePageGalleryImages({
 			entryId: 'olimpia/enjoy-olimpia-park-resort',
-			pageType: 'propriedade',
+			pageType: 'resort',
 			explicitImages: [],
 			label: 'Enjoy Olímpia Park Resort',
 			basePath: '/images/_missing-gallery',

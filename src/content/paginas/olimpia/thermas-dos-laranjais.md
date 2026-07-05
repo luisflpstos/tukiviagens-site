@@ -27,7 +27,7 @@ faq:
   - question: "Onde ficar perto do Thermas dos Laranjais?"
     answer: "Wyndham Olímpia Royal Hotels, Enjoy Olímpia Park Resort e Enjoy Solar das Águas estão entre as melhores opções de hospedagem próxima. Veja nossa página de hotéis perto do parque."
   - question: "Qual a distância do Thermas dos Laranjais aos hotéis?"
-    answer: "Os principais resorts ficam a poucos minutos de carro — geralmente entre 2 e 10 minutos, dependendo da propriedade e do trânsito local."
+    answer: "Os principais resorts ficam a poucos minutos de carro — geralmente entre 2 e 10 minutos, dependendo do hotel ou resort e do trânsito local."
   - question: "Thermas dos Laranjais é bom para crianças?"
     answer: "Sim. O parque tem atrações para todas as idades, áreas infantis e estrutura para famílias. Olímpia é um dos destinos mais procurados por famílias com crianças no interior de SP."
   - question: "Como reservar hospedagem para ir ao Thermas dos Laranjais?"
@@ -50,9 +50,9 @@ Muitas buscas por "Thermas dos Laranjais" são sobre ingresso, horário ou preç
 
 | Resort | Perfil | Link |
 | --- | --- | --- |
-| Wyndham Olímpia Royal Hotels | All inclusive premium | [Ver propriedade](/olimpia/wyndham-olimpia-royal-hotels/) |
-| Enjoy Olímpia Park Resort | Família, parque no resort | [Ver propriedade](/olimpia/enjoy-olimpia-park-resort/) |
-| Enjoy Solar das Águas | Custo-benefício | [Ver propriedade](/olimpia/enjoy-solar-das-aguas/) |
+| Wyndham Olímpia Royal Hotels | All inclusive premium | [Ver resort](/olimpia/wyndham-olimpia-royal-hotels/) |
+| Enjoy Olímpia Park Resort | Família, parque no resort | [Ver resort](/olimpia/enjoy-olimpia-park-resort/) |
+| Enjoy Solar das Águas | Custo-benefício | [Ver resort](/olimpia/enjoy-solar-das-aguas/) |
 
 Para comparar distância e diária, acesse [hotéis perto do Thermas dos Laranjais](/olimpia/hoteis-perto-thermas-dos-laranjais/).
 

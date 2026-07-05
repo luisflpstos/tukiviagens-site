@@ -1,6 +1,6 @@
 ---
 title: "Glória Hotel"
-pageType: "propriedade"
+pageType: "hotel"
 silo: "olimpia"
 
 headline: "Glória Hotel: nota 9,3 perto do Thermas em Olímpia"
@@ -55,7 +55,7 @@ Nota **9,3** em **105 avaliações**. Diária de referência a partir de **R$ 24
 
 ## Comparativo com outras opções
 
-| Propriedade | Perfil | Diferencial |
+| Hospedagem | Perfil | Diferencial |
 | --- | --- | --- |
 | Glória Hotel | Nota alta e café farto | 800 m do Thermas, nota 9,3 |
 | [Tiffany Hotel](/olimpia/tiffany-hotel/) | Mais próximo | 400 m do Thermas |

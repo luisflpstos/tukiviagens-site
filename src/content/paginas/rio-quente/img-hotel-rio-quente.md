@@ -1,6 +1,6 @@
 ---
 title: "IMG Hotel Rio Quente"
-pageType: "propriedade"
+pageType: "hotel"
 silo: "rio-quente"
 
 headline: "IMG Hotel Rio Quente: parque aquático próprio a 650 m do Hot Park"
@@ -58,7 +58,7 @@ Nota **8,1** em **1.038 avaliações** e diária desde **R$ 256**. Em outra base
 
 ## Comparativo com outras opções
 
-| Propriedade | Perfil | Diferencial |
+| Hospedagem | Perfil | Diferencial |
 | --- | --- | --- |
 | IMG Hotel Rio Quente | Família, parque aquático | 3 piscinas, 650 m do Hot Park |
 | [Prime Hotel Águas da Serra](/rio-quente/prime-hotel-aguas-da-serra/) | Custo-benefício | Compete em preço e localização |

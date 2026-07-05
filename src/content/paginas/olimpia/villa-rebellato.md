@@ -1,6 +1,6 @@
 ---
 title: "Hotel Villa Rebellato"
-pageType: "propriedade"
+pageType: "hotel"
 silo: "olimpia"
 
 headline: "Hotel Villa Rebellato: econômico e simples em Olímpia"
@@ -57,7 +57,7 @@ Nota **8,7** em **344 avaliações**. Diária de referência a partir de **R$ 24
 
 ## Comparativo com outras opções
 
-| Propriedade | Perfil | Diferencial |
+| Hospedagem | Perfil | Diferencial |
 | --- | --- | --- |
 | Villa Rebellato | Econômico urbano | Diária desde R$ 244 |
 | [JS Thermas Hotel](/olimpia/js-thermas-hotel/) | Piscina e pet | 1 km do Thermas |

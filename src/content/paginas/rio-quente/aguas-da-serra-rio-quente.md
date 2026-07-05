@@ -1,6 +1,6 @@
 ---
 title: "Águas da Serra"
-pageType: "propriedade"
+pageType: "hotel"
 silo: "rio-quente"
 
 headline: "Águas da Serra: apart-hotel para grupos a 650 m do Hot Park"
@@ -61,7 +61,7 @@ Nota **9,1** em **145 avaliações** e diária desde **R$ 420**. Águas da Serra
 
 ## Comparativo com outras opções
 
-| Propriedade | Perfil | Diferencial |
+| Hospedagem | Perfil | Diferencial |
 | --- | --- | --- |
 | Águas da Serra | Grupos até 7 | Nota 9,1, banho termal |
 | [Prime Hotel Águas da Serra](/rio-quente/prime-hotel-aguas-da-serra/) | Custo-benefício | Mais econômico, até 6 pessoas |

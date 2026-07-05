@@ -1,6 +1,6 @@
 ---
 title: "Thermas Park Resort & Spa, Hot Beach Raízes"
-pageType: "propriedade"
+pageType: "resort"
 silo: "olimpia"
 
 headline: "Thermas Park Resort & Spa: premium tranquilo da rede Hot Beach"
@@ -58,7 +58,7 @@ Nota **9,1** em **136 avaliações**. Como Hot Beach Raízes, nota **9,5** em **
 
 ## Comparativo com outras opções
 
-| Propriedade | Perfil | Diferencial |
+| Hospedagem | Perfil | Diferencial |
 | --- | --- | --- |
 | Thermas Park Resort & Spa | Premium tranquilo | Chalés, spa, Hot Beach Raízes |
 | [Hot Beach Resort](/olimpia/hot-beach-resort/) | Experiência integrada | Praia artificial no complexo |

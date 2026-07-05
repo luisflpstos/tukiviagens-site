@@ -91,7 +91,7 @@ const paginas = defineCollection({
 	loader: glob({ base: './src/content/paginas', pattern: '**/*.{md,mdx}' }),
 	schema: z.object({
 		title: z.string(),
-		pageType: z.enum(['hub', 'venda', 'atracao', 'propriedade', 'institucional']),
+		pageType: z.enum(['hub', 'venda', 'atracao', 'hotel', 'resort', 'institucional']),
 		silo: z.enum(['olimpia', 'rio-quente', 'nordeste', 'pacotes', 'agencia']).optional(),
 		headline: z.string(),
 		description: z.string(),

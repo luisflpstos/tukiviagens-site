@@ -1,6 +1,6 @@
 ---
 title: "Hotel Dolce Dulce"
-pageType: "propriedade"
+pageType: "hotel"
 silo: "olimpia"
 
 headline: "Hotel Dolce Dulce: 7 piscinas perto do Thermas em Olímpia"
@@ -55,7 +55,7 @@ Nota **8,9** em **356 avaliações**. Diária de referência a partir de **R$ 47
 
 ## Comparativo com outras opções
 
-| Propriedade | Perfil | Diferencial |
+| Hospedagem | Perfil | Diferencial |
 | --- | --- | --- |
 | Hotel Dolce Dulce | 7 piscinas | Custo-benefício aquático |
 | [Água Viva Hotel](/olimpia/agua-viva-hotel/) | Proximidade do Thermas | 500 m do parque |

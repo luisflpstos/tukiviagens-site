@@ -1,6 +1,6 @@
 ---
 title: "Carpe Diem Park Hotel"
-pageType: "propriedade"
+pageType: "hotel"
 silo: "olimpia"
 
 headline: "Carpe Diem Park Hotel: descanso e natureza em Olímpia"
@@ -58,7 +58,7 @@ Nota **9,2** em **118 avaliações**. Diária de referência a partir de **R$ 70
 
 ## Comparativo com outras opções
 
-| Propriedade | Perfil | Diferencial |
+| Hospedagem | Perfil | Diferencial |
 | --- | --- | --- |
 | Carpe Diem Park Hotel | Natureza e lazer | Lago, pesca e hidromassagem |
 | [Água Viva Hotel](/olimpia/agua-viva-hotel/) | Proximidade do Thermas | 500 m do parque |

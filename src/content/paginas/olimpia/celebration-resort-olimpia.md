@@ -1,6 +1,6 @@
 ---
 title: "Celebration Resort Olímpia"
-pageType: "propriedade"
+pageType: "resort"
 silo: "olimpia"
 
 headline: "Celebration Resort Olímpia: família, recreação e Hot Beach"
@@ -56,7 +56,7 @@ Nota **8,4** em **979 avaliações**. Diária de referência a partir de **R$ 49
 
 ## Comparativo com outras opções
 
-| Propriedade | Perfil | Diferencial |
+| Hospedagem | Perfil | Diferencial |
 | --- | --- | --- |
 | Celebration Resort Olímpia | Recreação Hot Beach | Espaço kids e sala teen |
 | [Hot Beach Resort](/olimpia/hot-beach-resort/) | Imersivo no parque | Praia artificial privativa |

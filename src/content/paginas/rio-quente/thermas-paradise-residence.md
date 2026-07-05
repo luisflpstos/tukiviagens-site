@@ -1,6 +1,6 @@
 ---
 title: "Thermas Paradise Residence"
-pageType: "propriedade"
+pageType: "resort"
 silo: "rio-quente"
 
 headline: "Thermas Paradise Residence: condomínio com banho termal perto do Hot Park"
@@ -56,7 +56,7 @@ Thermas Paradise: nota **9,0** em **456 avaliações**, diária desde **R$ 333**
 
 ## Comparativo com outras opções
 
-| Propriedade | Perfil | Diferencial |
+| Hospedagem | Perfil | Diferencial |
 | --- | --- | --- |
 | Thermas Paradise Residence | Banho termal, apartamento | Condomínio resort, 700 m |
 | [Park Veredas Resort](/rio-quente/park-veredas-resort/) | Apart-hotel resort | Mais cara de resort |

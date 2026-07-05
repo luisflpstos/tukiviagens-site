@@ -1,6 +1,6 @@
 ---
 title: "Wyndham Royal Star Thermas Resort"
-pageType: "propriedade"
+pageType: "resort"
 silo: "olimpia"
 
 headline: "Wyndham Royal Star Thermas Resort: 10 piscinas perto do Thermas"
@@ -22,7 +22,7 @@ cta: "Cotar Wyndham Royal Star"
 
 faq:
   - question: "Wyndham Royal Star é o mesmo que Wyndham Olímpia Royal Hotels?"
-    answer: "Não. São propriedades distintas — o Royal Star é mais simples, a 1,4 km do Thermas; o Wyndham Olímpia Royal Hotels é o grande complexo com acesso exclusivo ao Thermas."
+    answer: "Não. São resorts distintos — o Royal Star é mais simples, a 1,4 km do Thermas; o Wyndham Olímpia Royal Hotels é o grande complexo com acesso exclusivo ao Thermas."
 
 seo:
   title: "Wyndham Royal Star Olímpia | Resort perto do Thermas"
@@ -51,11 +51,11 @@ O **Wyndham Royal Star Thermas Resort** é hotel/resort perto do Thermas, com 10
 
 ## Dados de referência
 
-Propriedade 2 estrelas com 10 piscinas, próxima ao Thermas dos Laranjais.
+Resort 2 estrelas com 10 piscinas, próximo ao Thermas dos Laranjais.
 
 ## Comparativo com outras opções
 
-| Propriedade | Perfil | Diferencial |
+| Hospedagem | Perfil | Diferencial |
 | --- | --- | --- |
 | Wyndham Royal Star | 10 piscinas, funcional | 1,4 km do Thermas |
 | [Wyndham Olímpia Royal Hotels](/olimpia/wyndham-olimpia-royal-hotels/) | Complexo principal | 950+ suítes, acesso Thermas |

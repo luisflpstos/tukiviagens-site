@@ -1,6 +1,6 @@
 ---
 title: "Hotel Pousada Villa Itália Olímpia"
-pageType: "propriedade"
+pageType: "hotel"
 silo: "olimpia"
 
 headline: "Villa Itália Olímpia: pousada com lazer familiar perto do Thermas"
@@ -62,7 +62,7 @@ Nota **9,5** em **361 avaliações**. Diária de referência a partir de **R$ 37
 
 ## Comparativo com outras opções
 
-| Propriedade | Perfil | Diferencial |
+| Hospedagem | Perfil | Diferencial |
 | --- | --- | --- |
 | Villa Itália Olímpia | Lazer familiar completo | Nota 9,5, tobogã e parquinho |
 | [Água Viva Hotel](/olimpia/agua-viva-hotel/) | Proximidade do Thermas | 500 m do parque |

@@ -1,6 +1,6 @@
 ---
 title: "Eco Chalés, Rio Quente Resorts"
-pageType: "propriedade"
+pageType: "hotel"
 silo: "rio-quente"
 
 headline: "Eco Chalés: natureza e menor preço dentro da marca Rio Quente Resorts"
@@ -58,7 +58,7 @@ Nota **7,2** em **125 avaliações**. Hotel **3 estrelas**.
 
 ## Comparativo com outras opções
 
-| Propriedade | Perfil | Diferencial |
+| Hospedagem | Perfil | Diferencial |
 | --- | --- | --- |
 | Eco Chalés | Natureza e orçamento | 3 estrelas, chalés no Cerrado |
 | [Hotel Pousada](/rio-quente/hotel-pousada-rio-quente/) | Tradição integrada | Dentro do complexo |

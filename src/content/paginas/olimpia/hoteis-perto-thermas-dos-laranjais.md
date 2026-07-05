@@ -50,7 +50,7 @@ O **Thermas dos Laranjais** é o maior parque aquático da América Latina e o p
 
 ## Comparativo por distância
 
-| Propriedade | Distância | Tipo | Acesso ao parque |
+| Hospedagem | Distância | Tipo | Acesso ao parque |
 | --- | --- | --- | --- |
 | [Mercure Olímpia](/olimpia/thermas-olimpia-resorts-mercure/) | 0,1 km | Resort | Portaria exclusiva |
 | [Thermas Park Resort & Spa](/olimpia/thermas-park-resort-hot-beach-raizes/) | 0,1 km | Resort | Hot Beach + Thermas |

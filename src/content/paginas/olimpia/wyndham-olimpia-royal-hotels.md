@@ -1,6 +1,6 @@
 ---
 title: "Wyndham Olímpia Royal Hotels"
-pageType: "propriedade"
+pageType: "resort"
 silo: "olimpia"
 
 headline: "Wyndham Olímpia Royal Hotels: maior complexo hoteleiro com acesso ao Thermas"
@@ -31,7 +31,7 @@ faq:
   - question: "Wyndham Olímpia aceita crianças?"
     answer: "Sim. O complexo tem playground, brinquedotecas, espaços kids e estrutura ampla para famílias."
   - question: "Wyndham Royal Star é o mesmo hotel?"
-    answer: "Não. O Wyndham Olímpia Royal Hotels é o grande complexo com acesso exclusivo ao Thermas. O Wyndham Royal Star Thermas Resort é propriedade distinta, mais simples, a 1,4 km do parque."
+    answer: "Não. O Wyndham Olímpia Royal Hotels é o grande complexo com acesso exclusivo ao Thermas. O Wyndham Royal Star Thermas Resort é um resort distinto, mais simples, a 1,4 km do parque."
 
 seo:
   title: "Wyndham Olímpia Royal Hotels | Resort perto do Thermas"
@@ -66,7 +66,7 @@ Nota **8,5** em **1.662 avaliações**. Diária de referência a partir de **R$ 
 
 ## Comparativo com outras opções
 
-| Propriedade | Perfil | Diferencial |
+| Hospedagem | Perfil | Diferencial |
 | --- | --- | --- |
 | Wyndham Olímpia Royal Hotels | Grande complexo | 950+ suítes, acesso Thermas |
 | [Thermas Park Resort & Spa](/olimpia/thermas-park-resort-hot-beach-raizes/) | Premium tranquilo | Chalés, spa, Hot Beach Raízes |

@@ -1,6 +1,6 @@
 ---
 title: "Thermas de Olímpia Resorts by Mercure"
-pageType: "propriedade"
+pageType: "resort"
 silo: "olimpia"
 
 headline: "Mercure Olímpia: acesso exclusivo ao Thermas dos Laranjais"
@@ -61,7 +61,7 @@ Nota **7,9** em **3.892 avaliações**. Diária de referência a partir de **R$ 
 
 ## Comparativo com outras opções
 
-| Propriedade | Perfil | Diferencial |
+| Hospedagem | Perfil | Diferencial |
 | --- | --- | --- |
 | Mercure Olímpia | Acesso ao Thermas | 0,1 km, pet friendly |
 | [Wyndham Olímpia Royal Hotels](/olimpia/wyndham-olimpia-royal-hotels/) | Complexo maior | 11 piscinas |

@@ -1,6 +1,6 @@
 ---
 title: "JS Thermas Hotel"
-pageType: "propriedade"
+pageType: "hotel"
 silo: "olimpia"
 
 headline: "JS Thermas Hotel: econômico com piscina e pet friendly"
@@ -58,7 +58,7 @@ Nota **8,5** em **1.545 avaliações**. Diária de referência a partir de **R$ 
 
 ## Comparativo com outras opções
 
-| Propriedade | Perfil | Diferencial |
+| Hospedagem | Perfil | Diferencial |
 | --- | --- | --- |
 | JS Thermas Hotel | Preço baixo e piscina | Diária desde R$ 109, pet friendly |
 | [Tiffany Hotel](/olimpia/tiffany-hotel/) | Mais próximo | 400 m do Thermas |

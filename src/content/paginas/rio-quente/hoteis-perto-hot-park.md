@@ -50,7 +50,7 @@ O **Hot Park** é o principal motivo da viagem a Rio Quente. Ficar perto do parq
 
 ## Comparativo por distância
 
-| Propriedade | Distância | Tipo | Hot Park incluso |
+| Hospedagem | Distância | Tipo | Hot Park incluso |
 | --- | --- | --- | --- |
 | [Refúgio Grand Premium](/rio-quente/refugio-grand-premium/) | A passos | Resort oficial | Sim |
 | [Hotel Cristal](/rio-quente/hotel-cristal-rio-quente/) | Dentro do complexo | Resort oficial | Sim |

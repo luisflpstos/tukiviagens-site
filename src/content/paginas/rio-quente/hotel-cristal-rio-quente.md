@@ -1,6 +1,6 @@
 ---
 title: "Hotel Cristal, Rio Quente Resorts"
-pageType: "propriedade"
+pageType: "hotel"
 silo: "rio-quente"
 
 headline: "Hotel Cristal: sofisticação e vista dentro do Rio Quente Resorts"
@@ -59,7 +59,7 @@ Hotel **4 estrelas**, o mais sofisticado do complexo. Inaugurado em 2012, com qu
 
 ## Comparativo com outras opções
 
-| Propriedade | Perfil | Diferencial |
+| Hospedagem | Perfil | Diferencial |
 | --- | --- | --- |
 | Hotel Cristal | Vista e sofisticação | Piscina de borda infinita, 4 estrelas |
 | [Refúgio Grand Premium](/rio-quente/refugio-grand-premium/) | Premium reservado | 5 estrelas, a passos do Hot Park |

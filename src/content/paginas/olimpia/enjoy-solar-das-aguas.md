@@ -1,6 +1,6 @@
 ---
 title: "Enjoy Solar das Águas"
-pageType: "propriedade"
+pageType: "resort"
 silo: "olimpia"
 
 headline: "Enjoy Solar das Águas: resort novo com flats amplos em Olímpia"
@@ -66,7 +66,7 @@ Nota **7,8**. Diária de referência a partir de **R$ 579**.
 
 ## Comparativo com outras opções
 
-| Propriedade | Perfil | Diferencial |
+| Hospedagem | Perfil | Diferencial |
 | --- | --- | --- |
 | Enjoy Solar das Águas | Resort novo e amplo | Cinema, mini golfe, flats |
 | [Enjoy Olímpia Park Resort](/olimpia/enjoy-olimpia-park-resort/) | Flats Villa Mall | 0,5 km do Thermas |

@@ -52,7 +52,7 @@ Maragogi é o destino com **maior concentração de resorts all inclusive** no N
 
 ### Porto de Galinhas (PE)
 
-Porto de Galinhas tem resorts consolidados, mas **nem todos operam all inclusive** — muitos oferecem meia pensão ou café da manhã. Antes de cotar, comparamos o que cada propriedade inclui e indicamos a opção que corresponde à expectativa do viajante.
+Porto de Galinhas tem resorts consolidados, mas **nem todos operam all inclusive** — muitos oferecem meia pensão ou café da manhã. Antes de cotar, comparamos o que cada hotel ou resort inclui e indicamos a opção que corresponde à expectativa do viajante.
 
 ### Bahia — Praia do Forte e Costa do Sauípe
 

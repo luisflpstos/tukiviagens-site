@@ -1,6 +1,6 @@
 ---
 title: "Água Viva Hotel"
-pageType: "propriedade"
+pageType: "hotel"
 silo: "olimpia"
 
 headline: "Água Viva Hotel: 500 m do Thermas dos Laranjais"
@@ -56,7 +56,7 @@ Nota **9,0** em **207 avaliações**. Diária de referência a partir de **R$ 26
 
 ## Comparativo com outras opções
 
-| Propriedade | Perfil | Diferencial |
+| Hospedagem | Perfil | Diferencial |
 | --- | --- | --- |
 | Água Viva Hotel | Proximidade e cozinha | 500 m do Thermas |
 | [Tiffany Hotel](/olimpia/tiffany-hotel/) | Pequenas famílias | 400 m do Thermas |

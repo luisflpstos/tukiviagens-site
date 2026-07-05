@@ -5,13 +5,14 @@ import {
 	type GalleryImage,
 } from './gallery-images';
 import { IMAGE_PATHS } from './image-paths';
+import { isHospitalityPage } from './hospitality';
 import type { PageType } from './site-routes';
 
 const PROPERTY_IMAGE_SLUG_OVERRIDES: Record<string, string> = {
 	'olimpia/hot-beach': 'hot-beach-olimpia',
 };
 
-const CAROUSEL_PAGE_TYPES = new Set<PageType>(['hub', 'propriedade', 'atracao']);
+const CAROUSEL_PAGE_TYPES = new Set<PageType>(['hub', 'hotel', 'resort', 'atracao']);
 
 export function resolvePropertyImageSlug(entryId: string): string {
 	const override = PROPERTY_IMAGE_SLUG_OVERRIDES[entryId];
@@ -60,8 +61,8 @@ export function resolvePageGalleryImages({
 		});
 	}
 
-	if (pageType === 'propriedade' || pageType === 'atracao') {
-		const useHotelGallery = pageType === 'propriedade' || hasDedicatedPropertyGallery(entryId);
+	if (isHospitalityPage(pageType) || pageType === 'atracao') {
+		const useHotelGallery = isHospitalityPage(pageType) || hasDedicatedPropertyGallery(entryId);
 
 		return resolveGalleryImages({
 			slug: useHotelGallery ? resolvePropertyImageSlug(entryId) : destinationSlug,

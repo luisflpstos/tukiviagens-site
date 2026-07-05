@@ -3,7 +3,7 @@
  * status: published = conteúdo ativo; planned = rota reservada na estrutura.
  */
 
-export type PageType = 'hub' | 'venda' | 'atracao' | 'propriedade' | 'institucional';
+export type PageType = 'hub' | 'venda' | 'atracao' | 'hotel' | 'resort' | 'institucional';
 export type PageStatus = 'published' | 'planned';
 export type Silo = 'olimpia' | 'rio-quente' | 'nordeste' | 'pacotes' | 'agencia';
 
@@ -36,7 +36,7 @@ function route(
 	};
 }
 
-/** Todas as rotas planejadas — hubs, venda, atrações e propriedades. */
+/** Todas as rotas planejadas — hubs, venda, atrações, hotéis e resorts. */
 export const SITE_ROUTES: SiteRoute[] = [
 	// Olímpia
 	route('/olimpia/', 'Guia de Olímpia', 'hub', 'published', [
@@ -76,7 +76,7 @@ export const SITE_ROUTES: SiteRoute[] = [
 	route(
 		'/olimpia/wyndham-olimpia-royal-hotels/',
 		'Wyndham Olímpia Royal Hotels',
-		'propriedade',
+		'hotel',
 		'published',
 		['wyndham olimpia royal hotels', 'hotel wyndham olimpia'],
 		{ silo: 'olimpia', parent: '/olimpia/resorts/' },
@@ -84,7 +84,7 @@ export const SITE_ROUTES: SiteRoute[] = [
 	route(
 		'/olimpia/enjoy-olimpia-park-resort/',
 		'Enjoy Olímpia Park Resort',
-		'propriedade',
+		'hotel',
 		'published',
 		['enjoy olimpia park resort', 'olimpia park resort'],
 		{ silo: 'olimpia', parent: '/olimpia/resorts/' },
@@ -92,7 +92,7 @@ export const SITE_ROUTES: SiteRoute[] = [
 	route(
 		'/olimpia/enjoy-solar-das-aguas/',
 		'Enjoy Solar das Águas',
-		'propriedade',
+		'hotel',
 		'published',
 		['enjoy solar das aguas', 'solar das aguas olimpia'],
 		{ silo: 'olimpia', parent: '/olimpia/resorts/' },
@@ -100,7 +100,7 @@ export const SITE_ROUTES: SiteRoute[] = [
 	route(
 		'/olimpia/thermas-park-resort-hot-beach-raizes/',
 		'Thermas Park Resort & Spa',
-		'propriedade',
+		'hotel',
 		'published',
 		['thermas park resort olimpia', 'hot beach raizes'],
 		{ silo: 'olimpia', parent: '/olimpia/resorts/' },
@@ -108,7 +108,7 @@ export const SITE_ROUTES: SiteRoute[] = [
 	route(
 		'/olimpia/celebration-resort-olimpia/',
 		'Celebration Resort Olímpia',
-		'propriedade',
+		'hotel',
 		'published',
 		['celebration resort olimpia', 'resort celebration olimpia'],
 		{ silo: 'olimpia', parent: '/olimpia/resorts/' },
@@ -116,7 +116,7 @@ export const SITE_ROUTES: SiteRoute[] = [
 	route(
 		'/olimpia/hot-beach-resort/',
 		'Hot Beach Resort',
-		'propriedade',
+		'hotel',
 		'published',
 		['hot beach resort olimpia', 'resort hot beach'],
 		{ silo: 'olimpia', parent: '/olimpia/resorts/' },
@@ -124,7 +124,7 @@ export const SITE_ROUTES: SiteRoute[] = [
 	route(
 		'/olimpia/carpe-diem-eco-resort-olimpia/',
 		'Carpe Diem Eco Resort Olímpia',
-		'propriedade',
+		'hotel',
 		'published',
 		['carpe diem eco resort olimpia', 'carpe diem resort olimpia'],
 		{ silo: 'olimpia', parent: '/olimpia/resorts/' },
@@ -132,7 +132,7 @@ export const SITE_ROUTES: SiteRoute[] = [
 	route(
 		'/olimpia/thermas-olimpia-resorts-mercure/',
 		'Thermas de Olímpia Resorts by Mercure',
-		'propriedade',
+		'hotel',
 		'published',
 		['mercure olimpia', 'thermas olimpia resorts mercure'],
 		{ silo: 'olimpia', parent: '/olimpia/resorts/' },
@@ -140,7 +140,7 @@ export const SITE_ROUTES: SiteRoute[] = [
 	route(
 		'/olimpia/hot-beach-suites/',
 		'Hot Beach Suites',
-		'propriedade',
+		'hotel',
 		'published',
 		['hot beach suites olimpia', 'suites hot beach'],
 		{ silo: 'olimpia', parent: '/olimpia/resorts/' },
@@ -148,7 +148,7 @@ export const SITE_ROUTES: SiteRoute[] = [
 	route(
 		'/olimpia/wyndham-royal-star-thermas-resort/',
 		'Wyndham Royal Star Thermas Resort',
-		'propriedade',
+		'hotel',
 		'published',
 		['wyndham royal star olimpia', 'royal star thermas resort'],
 		{ silo: 'olimpia', parent: '/olimpia/resorts/' },
@@ -156,7 +156,7 @@ export const SITE_ROUTES: SiteRoute[] = [
 	route(
 		'/olimpia/villa-italia-olimpia/',
 		'Hotel Pousada Villa Itália Olímpia',
-		'propriedade',
+		'hotel',
 		'published',
 		['villa italia olimpia', 'hotel pousada villa italia'],
 		{ silo: 'olimpia', parent: '/olimpia/hoteis/' },
@@ -164,7 +164,7 @@ export const SITE_ROUTES: SiteRoute[] = [
 	route(
 		'/olimpia/parque-das-aguas/',
 		'Hotel Pousada Parque das Águas',
-		'propriedade',
+		'hotel',
 		'published',
 		['parque das aguas olimpia', 'hotel pousada parque das aguas'],
 		{ silo: 'olimpia', parent: '/olimpia/hoteis/' },
@@ -172,7 +172,7 @@ export const SITE_ROUTES: SiteRoute[] = [
 	route(
 		'/olimpia/carpe-diem-park-hotel/',
 		'Carpe Diem Park Hotel',
-		'propriedade',
+		'hotel',
 		'published',
 		['carpe diem park hotel', 'carpe diem olimpia'],
 		{ silo: 'olimpia', parent: '/olimpia/hoteis/' },
@@ -180,7 +180,7 @@ export const SITE_ROUTES: SiteRoute[] = [
 	route(
 		'/olimpia/hotel-fazenda-haras/',
 		'Hotel Fazenda Haras',
-		'propriedade',
+		'hotel',
 		'published',
 		['hotel fazenda haras olimpia', 'fazenda haras olimpia'],
 		{ silo: 'olimpia', parent: '/olimpia/hoteis/' },
@@ -188,7 +188,7 @@ export const SITE_ROUTES: SiteRoute[] = [
 	route(
 		'/olimpia/hotel-dolce-dulce/',
 		'Hotel Dolce Dulce',
-		'propriedade',
+		'hotel',
 		'published',
 		['hotel dolce dulce olimpia', 'dolce dulce olimpia'],
 		{ silo: 'olimpia', parent: '/olimpia/hoteis/' },
@@ -196,7 +196,7 @@ export const SITE_ROUTES: SiteRoute[] = [
 	route(
 		'/olimpia/agua-viva-hotel/',
 		'Água Viva Hotel',
-		'propriedade',
+		'hotel',
 		'published',
 		['agua viva hotel olimpia', 'hotel perto thermas dos laranjais'],
 		{ silo: 'olimpia', parent: '/olimpia/hoteis/' },
@@ -204,7 +204,7 @@ export const SITE_ROUTES: SiteRoute[] = [
 	route(
 		'/olimpia/tiffany-hotel/',
 		'Tiffany Hotel',
-		'propriedade',
+		'hotel',
 		'published',
 		['tiffany hotel olimpia', 'hotel tiffany olimpia'],
 		{ silo: 'olimpia', parent: '/olimpia/hoteis/' },
@@ -212,7 +212,7 @@ export const SITE_ROUTES: SiteRoute[] = [
 	route(
 		'/olimpia/villa-rebellato/',
 		'Hotel Villa Rebellato',
-		'propriedade',
+		'hotel',
 		'published',
 		['villa rebellato olimpia', 'hotel villa rebellato'],
 		{ silo: 'olimpia', parent: '/olimpia/hoteis/' },
@@ -220,7 +220,7 @@ export const SITE_ROUTES: SiteRoute[] = [
 	route(
 		'/olimpia/gloria-hotel/',
 		'Glória Hotel',
-		'propriedade',
+		'hotel',
 		'published',
 		['gloria hotel olimpia', 'hotel gloria olimpia'],
 		{ silo: 'olimpia', parent: '/olimpia/hoteis/' },
@@ -228,7 +228,7 @@ export const SITE_ROUTES: SiteRoute[] = [
 	route(
 		'/olimpia/js-thermas-hotel/',
 		'JS Thermas Hotel',
-		'propriedade',
+		'hotel',
 		'published',
 		['js thermas hotel olimpia', 'hotel barato olimpia'],
 		{ silo: 'olimpia', parent: '/olimpia/hoteis/' },
@@ -258,7 +258,7 @@ export const SITE_ROUTES: SiteRoute[] = [
 	route(
 		'/rio-quente/prime-hotel-aguas-da-serra/',
 		'Prime Hotel Águas da Serra',
-		'propriedade',
+		'hotel',
 		'published',
 		['prime hotel aguas da serra', 'prime hotel rio quente'],
 		{ silo: 'rio-quente', parent: '/rio-quente/hoteis/' },
@@ -266,7 +266,7 @@ export const SITE_ROUTES: SiteRoute[] = [
 	route(
 		'/rio-quente/serra-madre-hotel/',
 		'Serra Madre Hotel',
-		'propriedade',
+		'hotel',
 		'published',
 		['serra madre hotel rio quente', 'serra madre hotel'],
 		{ silo: 'rio-quente', parent: '/rio-quente/hoteis/' },
@@ -274,7 +274,7 @@ export const SITE_ROUTES: SiteRoute[] = [
 	route(
 		'/rio-quente/thermas-paradise/',
 		'Thermas Paradise',
-		'propriedade',
+		'hotel',
 		'published',
 		['thermas paradise rio quente', 'thermas paradise'],
 		{ silo: 'rio-quente', parent: '/rio-quente/hoteis/' },
@@ -282,7 +282,7 @@ export const SITE_ROUTES: SiteRoute[] = [
 	route(
 		'/rio-quente/aguas-da-serra-rio-quente/',
 		'Águas da Serra',
-		'propriedade',
+		'hotel',
 		'published',
 		['aguas da serra rio quente', 'aguas da serra apart hotel'],
 		{ silo: 'rio-quente', parent: '/rio-quente/hoteis/' },
@@ -290,7 +290,7 @@ export const SITE_ROUTES: SiteRoute[] = [
 	route(
 		'/rio-quente/hotel-giardino-rio-quente/',
 		'Hotel Giardino, Rio Quente Resorts',
-		'propriedade',
+		'hotel',
 		'published',
 		['hotel giardino rio quente', 'rio quente resorts hotel giardino'],
 		{ silo: 'rio-quente', parent: '/rio-quente/resorts/' },
@@ -298,7 +298,7 @@ export const SITE_ROUTES: SiteRoute[] = [
 	route(
 		'/rio-quente/img-hotel-rio-quente/',
 		'IMG Hotel Rio Quente',
-		'propriedade',
+		'hotel',
 		'published',
 		['img hotel rio quente', 'img rio quente'],
 		{ silo: 'rio-quente', parent: '/rio-quente/hoteis/' },
@@ -306,7 +306,7 @@ export const SITE_ROUTES: SiteRoute[] = [
 	route(
 		'/rio-quente/park-veredas-resort/',
 		'Park Veredas Resort',
-		'propriedade',
+		'hotel',
 		'published',
 		['park veredas resort rio quente', 'park veredas resort'],
 		{ silo: 'rio-quente', parent: '/rio-quente/resorts/' },
@@ -314,7 +314,7 @@ export const SITE_ROUTES: SiteRoute[] = [
 	route(
 		'/rio-quente/apartamentos-em-rio-quente/',
 		'Apartamentos em Rio Quente',
-		'propriedade',
+		'hotel',
 		'published',
 		['apartamentos em rio quente', 'apartamento rio quente'],
 		{ silo: 'rio-quente', parent: '/rio-quente/hoteis/' },
@@ -322,7 +322,7 @@ export const SITE_ROUTES: SiteRoute[] = [
 	route(
 		'/rio-quente/hotel-luupi-rio-quente/',
 		'Hotel Luupi, Rio Quente Resorts',
-		'propriedade',
+		'hotel',
 		'published',
 		['hotel luupi rio quente', 'rio quente resorts hotel luupi'],
 		{ silo: 'rio-quente', parent: '/rio-quente/resorts/' },
@@ -330,7 +330,7 @@ export const SITE_ROUTES: SiteRoute[] = [
 	route(
 		'/rio-quente/refugio-grand-premium/',
 		'Refúgio Grand Premium',
-		'propriedade',
+		'hotel',
 		'published',
 		['refugio grand premium rio quente', 'hotel turismo rio quente'],
 		{ silo: 'rio-quente', parent: '/rio-quente/resorts/' },
@@ -338,7 +338,7 @@ export const SITE_ROUTES: SiteRoute[] = [
 	route(
 		'/rio-quente/hotel-cristal-rio-quente/',
 		'Hotel Cristal, Rio Quente Resorts',
-		'propriedade',
+		'hotel',
 		'published',
 		['hotel cristal rio quente', 'rio quente resorts hotel cristal'],
 		{ silo: 'rio-quente', parent: '/rio-quente/resorts/' },
@@ -346,7 +346,7 @@ export const SITE_ROUTES: SiteRoute[] = [
 	route(
 		'/rio-quente/hotel-pousada-rio-quente/',
 		'Hotel Pousada, Rio Quente Resorts',
-		'propriedade',
+		'hotel',
 		'published',
 		['hotel pousada rio quente', 'pousada do rio quente'],
 		{ silo: 'rio-quente', parent: '/rio-quente/resorts/' },
@@ -354,7 +354,7 @@ export const SITE_ROUTES: SiteRoute[] = [
 	route(
 		'/rio-quente/eco-chales-rio-quente/',
 		'Eco Chalés, Rio Quente Resorts',
-		'propriedade',
+		'hotel',
 		'published',
 		['eco chales rio quente', 'rio quente resorts eco chales'],
 		{ silo: 'rio-quente', parent: '/rio-quente/resorts/' },
@@ -362,7 +362,7 @@ export const SITE_ROUTES: SiteRoute[] = [
 	route(
 		'/rio-quente/thermas-paradise-residence/',
 		'Thermas Paradise Residence',
-		'propriedade',
+		'hotel',
 		'published',
 		['thermas paradise residence', 'thermas paradise residence rio quente'],
 		{ silo: 'rio-quente', parent: '/rio-quente/resorts/' },

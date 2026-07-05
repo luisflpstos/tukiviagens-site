@@ -1,6 +1,6 @@
 ---
 title: "Hotel Pousada Parque das Águas"
-pageType: "propriedade"
+pageType: "hotel"
 silo: "olimpia"
 
 headline: "Parque das Águas: pousada com piscina a 3,5 km do Thermas"
@@ -59,7 +59,7 @@ Nota **9,2** em **265 avaliações**. Diária de referência a partir de **R$ 40
 
 ## Comparativo com outras opções
 
-| Propriedade | Perfil | Diferencial |
+| Hospedagem | Perfil | Diferencial |
 | --- | --- | --- |
 | Parque das Águas | Pousada com piscina | Nota 9,2, área externa forte |
 | [Villa Itália Olímpia](/olimpia/villa-italia-olimpia/) | Lazer familiar completo | Nota 9,5 |

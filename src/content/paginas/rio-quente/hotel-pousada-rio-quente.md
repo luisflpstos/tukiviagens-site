@@ -1,6 +1,6 @@
 ---
 title: "Hotel Pousada, Rio Quente Resorts"
-pageType: "propriedade"
+pageType: "hotel"
 silo: "rio-quente"
 
 headline: "Hotel Pousada: tradição e natureza a 50 m do Parque das Fontes"
@@ -59,7 +59,7 @@ Nota média **9,0/10** e apartamentos para até 4 pessoas. Em outra base de aval
 
 ## Comparativo com outras opções
 
-| Propriedade | Perfil | Diferencial |
+| Hospedagem | Perfil | Diferencial |
 | --- | --- | --- |
 | Hotel Pousada | Tradição e Parque das Fontes | 50 m das fontes, histórico |
 | [Refúgio Grand Premium](/rio-quente/refugio-grand-premium/) | Premium moderno | Reformado, a passos do Hot Park |

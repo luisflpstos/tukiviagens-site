@@ -1,6 +1,6 @@
 ---
 title: "Prime Hotel Águas da Serra"
-pageType: "propriedade"
+pageType: "hotel"
 silo: "rio-quente"
 
 headline: "Prime Hotel Águas da Serra: custo-benefício a 650 m do Hot Park"
@@ -61,7 +61,7 @@ Nota **8,5** em **1.697 avaliações** e diária desde **R$ 237**. Em outra base
 
 ## Comparativo com outras opções
 
-| Propriedade | Perfil | Diferencial |
+| Hospedagem | Perfil | Diferencial |
 | --- | --- | --- |
 | Prime Hotel Águas da Serra | Custo-benefício | Nota 8,5, 650 m do Hot Park |
 | [Hotel Giardino](/rio-quente/hotel-giardino-rio-quente/) | Oficial RQR | Hot Park incluso, mais caro |

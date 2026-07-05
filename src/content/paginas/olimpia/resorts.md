@@ -27,11 +27,11 @@ faq:
   - question: "Qual resort tem acesso ao Thermas dos Laranjais?"
     answer: "Wyndham Olímpia Royal Hotels (acesso exclusivo, 0,4 km) e Thermas de Olímpia Resorts by Mercure (portaria exclusiva, 0,1 km) são as principais referências."
   - question: "Qual resort tem acesso ao Hot Beach?"
-    answer: "Hot Beach Resort, Celebration Resort, Thermas Park Resort & Spa (Hot Beach Raízes) e Hot Beach Suites oferecem acesso ao Hot Beach Olímpia, conforme política de cada propriedade."
+    answer: "Hot Beach Resort, Celebration Resort, Thermas Park Resort & Spa (Hot Beach Raízes) e Hot Beach Suites oferecem acesso ao Hot Beach Olímpia, conforme política de cada resort."
   - question: "Resort em Olímpia com cozinha para grupos?"
     answer: "Enjoy Olímpia Park Resort, Enjoy Solar das Águas e Hot Beach Suites têm flats/suítes com cozinha para até 7 pessoas."
   - question: "Wyndham Royal Star é o mesmo que Wyndham Olímpia Royal Hotels?"
-    answer: "Não. São propriedades distintas — o Royal Star é mais simples (1,4 km do Thermas); o Wyndham Olímpia Royal Hotels é o grande complexo com 950+ suítes."
+    answer: "Não. São resorts distintos — o Royal Star é mais simples (1,4 km do Thermas); o Wyndham Olímpia Royal Hotels é o grande complexo com 950+ suítes."
 
 seo:
   title: "Resorts em Olímpia | 10 opções Hot Beach, Wyndham e Enjoy"

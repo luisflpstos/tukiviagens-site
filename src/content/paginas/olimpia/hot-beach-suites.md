@@ -1,6 +1,6 @@
 ---
 title: "Hot Beach Suites"
-pageType: "propriedade"
+pageType: "resort"
 silo: "olimpia"
 
 headline: "Hot Beach Suites: apartamentos com cozinha e Hot Beach"
@@ -31,7 +31,7 @@ seo:
 
 ## Sobre
 
-O **Hot Beach Suites** é propriedade da rede Hot Beach com apartamentos/suítes para famílias, com acesso exclusivo e ilimitado ao Hot Beach.
+O **Hot Beach Suites** faz parte da rede Hot Beach com apartamentos/suítes para famílias, com acesso exclusivo e ilimitado ao Hot Beach.
 
 ## Vale para quem?
 
@@ -57,7 +57,7 @@ Nota **8,0** em **191 avaliações**. Diária de referência a partir de **R$ 83
 
 ## Comparativo com outras opções
 
-| Propriedade | Perfil | Diferencial |
+| Hospedagem | Perfil | Diferencial |
 | --- | --- | --- |
 | Hot Beach Suites | Apartamento + Hot Beach | Cozinha e varanda gourmet |
 | [Hot Beach Resort](/olimpia/hot-beach-resort/) | Resort clássico | Praia artificial |

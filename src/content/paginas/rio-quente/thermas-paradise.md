@@ -1,6 +1,6 @@
 ---
 title: "Thermas Paradise"
-pageType: "propriedade"
+pageType: "hotel"
 silo: "rio-quente"
 
 headline: "Thermas Paradise: apartamentos com banho termal perto do Hot Park"
@@ -60,7 +60,7 @@ Nota **9,0** em **456 avaliações** e diária desde **R$ 333**. Thermas Paradis
 
 ## Comparativo com outras opções
 
-| Propriedade | Perfil | Diferencial |
+| Hospedagem | Perfil | Diferencial |
 | --- | --- | --- |
 | Thermas Paradise | Apartamento termal | Nota 9,0, banho termal |
 | [Serra Madre Hotel](/rio-quente/serra-madre-hotel/) | Hotel tradicional | Proposta mais hoteleira |

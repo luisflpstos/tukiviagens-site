@@ -1,6 +1,6 @@
 ---
 title: "Carpe Diem Eco Resort Olímpia"
-pageType: "propriedade"
+pageType: "resort"
 silo: "olimpia"
 
 headline: "Carpe Diem Eco Resort: refúgio eco em Olímpia para famílias"
@@ -24,7 +24,7 @@ faq:
   - question: "Quais acomodações o Carpe Diem Eco Resort oferece?"
     answer: "O resort tem 33 unidades em 7 categorias: Suíte Premium (até 5 pessoas), Chalé Luxo (até 4), Chalé Conjugado (até 5 em 2 quartos), Suíte Família (até 4), Suíte Família Plus (até 5) e Casa com 2 quartos, sala e cozinha (até 6). Todas com acesso à área de lazer."
   - question: "O Carpe Diem Eco Resort fica perto do centro de Olímpia?"
-    answer: "Sim. O resort fica a cerca de 3 km do centro de Olímpia. A propriedade também divulga roteiros para os parques aquáticos da cidade, como Thermas dos Laranjais e Hot Beach."
+    answer: "Sim. O resort fica a cerca de 3 km do centro de Olímpia. O resort também divulga roteiros para os parques aquáticos da cidade, como Thermas dos Laranjais e Hot Beach."
   - question: "O Carpe Diem Eco Resort é bom para crianças?"
     answer: "Sim. Há playground, fazendinha com animais, piscinas para crianças, recreação de segunda a sábado (14h às 22h) e programação sazonal para famílias."
 
@@ -65,7 +65,7 @@ O **Carpe Diem Eco Resort Olímpia** é resort de lazer com foco em natureza, co
 | Suíte Família Plus | Até 5 pessoas |
 | Casa (2 quartos, sala e cozinha) | Até 6 pessoas |
 
-Há também casa de temporada no centro de Olímpia (cerca de 5 km do resort), com acesso à área de lazer mediante regras da propriedade.
+Há também casa de temporada no centro de Olímpia (cerca de 5 km do resort), com acesso à área de lazer mediante regras do resort.
 
 ## Localização
 
@@ -73,11 +73,11 @@ Cerca de **3 km do centro de Olímpia**. O resort divulga pacotes e roteiros par
 
 ## Dados de referência
 
-Recomendado no **TripAdvisor** e no **Google**. Em 2026, o resort aparece entre os **25 melhores hotéis para famílias do mundo** na divulgação da propriedade. Valores de diária variam por categoria, temporada e ocupação — envie datas para cotação atualizada.
+Recomendado no **TripAdvisor** e no **Google**. Em 2026, o resort aparece entre os **25 melhores hotéis para famílias do mundo** na divulgação oficial do resort. Valores de diária variam por categoria, temporada e ocupação — envie datas para cotação atualizada.
 
 ## Comparativo com outras opções
 
-| Propriedade | Perfil | Diferencial |
+| Hospedagem | Perfil | Diferencial |
 | --- | --- | --- |
 | Carpe Diem Eco Resort | Eco resort familiar | Fazendinha, piscina natural, até 6 pessoas |
 | [Wyndham Olímpia Royal Hotels](/olimpia/wyndham-olimpia-royal-hotels/) | Proximidade do Thermas | 0,4 km do parque |

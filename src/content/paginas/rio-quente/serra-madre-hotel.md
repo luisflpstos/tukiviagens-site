@@ -1,6 +1,6 @@
 ---
 title: "Serra Madre Hotel"
-pageType: "propriedade"
+pageType: "hotel"
 silo: "rio-quente"
 
 headline: "Serra Madre Hotel: conforto a 650 m do Hot Park"
@@ -60,7 +60,7 @@ Nota **8,8** em **800 avaliações** e diária desde **R$ 250**. Em outra base d
 
 ## Comparativo com outras opções
 
-| Propriedade | Perfil | Diferencial |
+| Hospedagem | Perfil | Diferencial |
 | --- | --- | --- |
 | Serra Madre Hotel | Conforto hoteleiro | Nota 8,8, hidromassagem |
 | [Prime Hotel Águas da Serra](/rio-quente/prime-hotel-aguas-da-serra/) | Custo-benefício | Mais avaliações, menor preço |

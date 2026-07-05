@@ -1,6 +1,6 @@
 ---
 title: "Hotel Giardino, Rio Quente Resorts"
-pageType: "propriedade"
+pageType: "hotel"
 silo: "rio-quente"
 
 headline: "Hotel Giardino: custo-benefício oficial do Rio Quente Resorts"
@@ -63,7 +63,7 @@ Nota **8,2** em **1.353 avaliações** e diária desde **R$ 1.500**. Em outra ba
 
 ## Comparativo com outras opções
 
-| Propriedade | Perfil | Diferencial |
+| Hospedagem | Perfil | Diferencial |
 | --- | --- | --- |
 | Hotel Giardino | Custo-benefício oficial | Hot Park incluso, arquitetura italiana |
 | [Prime Hotel Águas da Serra](/rio-quente/prime-hotel-aguas-da-serra/) | Fora do complexo | Mais barato, sem Hot Park |
