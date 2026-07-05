@@ -1,0 +1,123 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Container from '../components/common/Container.astro';
+import { BRAND, SITE } from '../lib/constants';
+import { buildWhatsAppUrl } from '../lib/seo';
+import { buildThanksWhatsAppMessage } from '../lib/lead-handoff';
+
+const defaultMessage = buildThanksWhatsAppMessage(null, {});
+const defaultHref = buildWhatsAppUrl(SITE.phone, defaultMessage);
+---
+
+<BaseLayout
+	title="Obrigado"
+	description="Recebemos sua solicitação. Em breve nossa equipe entrará em contato pelo WhatsApp."
+	path="/obrigado/"
+	noindex={true}
+>
+	<div id="conteudo">
+		<section class="tuki-gradient-purple section-padding text-white">
+			<Container size="narrow">
+				<div class="mx-auto max-w-xl text-center">
+					<div class="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-white/15 ring-4 ring-white/20">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="h-10 w-10 text-white"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2.5"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							aria-hidden="true"
+						>
+							<path d="M20 6 9 17l-5-5"></path>
+						</svg>
+					</div>
+					<h1 class="tuki-type-display">Obrigado!</h1>
+					<p class="tuki-type-lead tuki-type-inverse tuki-measure mx-auto mt-4 text-white/90">
+						Recebemos sua solicitação. Nossa equipe vai entrar em contato com você pelo WhatsApp em breve.
+					</p>
+				</div>
+			</Container>
+		</section>
+
+		<section class="section-padding">
+			<Container size="narrow">
+				<div class="tuki-surface-panel text-center">
+					<img
+						src={BRAND.mascot.selfie}
+						alt=""
+						width="160"
+						height="160"
+						class="mx-auto h-40 w-40 object-contain"
+						loading="lazy"
+					/>
+					<h2 class="tuki-type-headline mt-6 text-tuki-ink">Quer agilizar o atendimento?</h2>
+					<p class="tuki-type-body tuki-measure mx-auto mt-3 text-tuki-muted">
+						Se preferir, clique no botão abaixo e envie uma mensagem pelo WhatsApp. Vamos preparar sua cotação
+						mais rápido.
+					</p>
+					<a
+						id="obrigado-whatsapp"
+						href={defaultHref}
+						target="_blank"
+						rel="noopener noreferrer"
+						class="tuki-btn-motion mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-green-500 px-8 py-4 text-lg font-semibold text-white shadow-lg transition hover:bg-green-600"
+						data-whatsapp-link
+						data-phone={SITE.phone}
+						data-product="Tuki Viagens"
+						data-button-label="Agilizar pelo WhatsApp"
+						data-h1="Obrigado"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="h-7 w-7"
+							viewBox="0 0 24 24"
+							fill="currentColor"
+							aria-hidden="true"
+						>
+							<path
+								d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"
+							></path>
+							<path
+								d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.75.75 0 00.918.918l4.458-1.495A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.374l-.358-.213-2.642.886.886-2.577-.233-.375A9.818 9.818 0 1112 21.818z"
+							></path>
+						</svg>
+						Agilizar pelo WhatsApp
+					</a>
+					<p class="tuki-type-small mt-6 text-tuki-muted">
+						Ou aguarde — retornaremos pelo número informado no formulário.
+					</p>
+				</div>
+			</Container>
+		</section>
+	</div>
+</BaseLayout>
+
+<script>
+	import { SITE } from '../lib/constants';
+	import { getStoredAttribution } from '../scripts/utm';
+	import { buildWhatsAppUrl } from '../lib/seo';
+	import { buildThanksWhatsAppMessage, readLeadHandoff } from '../lib/lead-handoff';
+	import { trackLeadThanksView } from '../scripts/tracking';
+
+	const handoff = readLeadHandoff();
+	const attribution = getStoredAttribution();
+	const message = buildThanksWhatsAppMessage(handoff, attribution);
+	const whatsappLink = document.getElementById('obrigado-whatsapp');
+
+	if (whatsappLink instanceof HTMLAnchorElement) {
+		whatsappLink.href = buildWhatsAppUrl(SITE.phone, message);
+
+		const product = handoff?.hotel || handoff?.resort || 'Tuki Viagens';
+		whatsappLink.dataset.product = product;
+	}
+
+	trackLeadThanksView({
+		has_handoff: Boolean(handoff),
+		utm_source: attribution.utm_source,
+		utm_campaign: attribution.utm_campaign,
+		destination: handoff?.destination,
+	});
+</script>

@@ -1,4 +1,6 @@
 import { getStoredAttribution } from './utm';
+import { resolveLeadDestination } from '../lib/lead-destination';
+import { saveLeadHandoff } from '../lib/lead-handoff';
 import { bindPhoneMask } from './masks';
 import { validateLeadForm } from './validators';
 import { trackFormError, trackFormStart, trackFormSuccess } from './tracking';
@@ -12,6 +14,7 @@ export interface LeadFormOptions {
 }
 
 const LEAD_API_PATH = '/api/lead/';
+const THANKS_PAGE_PATH = '/obrigado/';
 
 export function initLeadForm(options: LeadFormOptions): void {
 	const form = document.getElementById(options.formId) as HTMLFormElement | null;
@@ -88,7 +91,9 @@ export function initLeadForm(options: LeadFormOptions): void {
 					context: {
 						hotel: options.hotel,
 						resort: options.resort,
-						destination: options.destination,
+						destination:
+							options.destination ||
+							resolveLeadDestination({ path: window.location.pathname }),
 						campaign: options.campaign,
 						form_id: options.formId,
 						landing_slug: window.location.pathname,
@@ -105,13 +110,28 @@ export function initLeadForm(options: LeadFormOptions): void {
 				throw new Error(result?.error ?? `HTTP ${response.status}`);
 			}
 
-			setStatus('Recebemos seu contato! Em breve retornaremos.', false);
+			const resolvedDestination =
+				options.destination || resolveLeadDestination({ path: window.location.pathname });
+
+			saveLeadHandoff({
+				nome: values.nome,
+				hotel: options.hotel,
+				resort: options.resort,
+				destination: resolvedDestination,
+				data_entrada: values.data_entrada,
+				data_saida: values.data_saida,
+				adultos: Number(values.adultos),
+				criancas: Number(values.criancas),
+			});
+
 			trackFormSuccess(options.formId, {
 				landing_page: attribution.landing_page,
 				utm_source: attribution.utm_source,
 				utm_campaign: attribution.utm_campaign,
 			});
-			form.reset();
+
+			window.location.assign(THANKS_PAGE_PATH);
+			return;
 		} catch {
 			setStatus('Não foi possível enviar agora. Tente pelo WhatsApp.', true);
 			trackFormError(options.formId, 'network');

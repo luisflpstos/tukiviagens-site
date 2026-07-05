@@ -8,6 +8,7 @@ import Faq from '../components/sections/Faq.astro';
 import LeadCaptureSection from '../components/sections/LeadCaptureSection.astro';
 import PageHero from '../components/sections/PageHero.astro';
 import { formatLocation } from '../lib/formatters';
+import { resolveLeadDestination } from '../lib/lead-destination';
 import { shouldShowGallery, type GalleryImage } from '../lib/gallery-images';
 
 interface Props {
@@ -100,7 +101,7 @@ const jsonLd = {
 	<LeadCaptureSection
 		formId="hotel-lead-form"
 		hotel={title}
-		destination={formatLocation(cidade, estado)}
+		destination={resolveLeadDestination({ cidade }) ?? cidade}
 		title="Consulte hospedagem"
 	/>
 	</div>

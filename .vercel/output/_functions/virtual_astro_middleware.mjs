@@ -67,7 +67,7 @@ Object.entries(TUKI_ICONS).map(([key, src]) => ({
 ({
 	name: "Tuki Viagens",
 	tagline: "Hospedagens, hotéis, resorts e parques no Brasil — segurança, rapidez e preço justo.",
-	url: "https://seudominio.com.br",
+	url: "http://localhost:4321",
 	location: "Olímpia, São Paulo",
 	email: "contato@tukiviagens.com.br",
 	phone: "551721901358",
@@ -99,9 +99,7 @@ var onRequest = sequence(defineMiddleware(async (context, next) => {
 	if (isStaticAssetPath(pathname)) {
 		if (!existsSync(join(process.cwd(), "public", pathname))) return new Response(null, { status: 404 });
 	}
-	const response = await next();
-	response.headers.set("X-Robots-Tag", "noindex, nofollow");
-	return response;
+	return await next();
 }));
 //#endregion
 export { onRequest };

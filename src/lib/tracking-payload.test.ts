@@ -28,7 +28,7 @@ describe('buildLeadSubmitPayload', () => {
 
 	const context = {
 		hotel: 'Hot Beach Resort',
-		destination: 'Olímpia, SP',
+		destination: 'Olímpia',
 		campaign: 'hotel-hot-beach',
 		form_id: 'hotel-lead-form',
 		h1: 'Hot Beach Resort de Olímpia',
@@ -85,7 +85,7 @@ describe('buildLeadSubmitPayload', () => {
 			product: 'Hot Beach Resort',
 			campaign: 'hotel-hot-beach',
 			form_id: 'hotel-lead-form',
-			destination: 'Olímpia, SP',
+			destination: 'Olímpia',
 			cidade: 'São Paulo',
 			regiao: 'SP',
 			pais: 'BR',

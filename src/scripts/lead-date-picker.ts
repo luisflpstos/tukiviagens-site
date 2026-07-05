@@ -65,6 +65,7 @@ export function initLeadDatePicker(root: HTMLElement): void {
 		open = false;
 		calendar.hidden = true;
 		delete calendar.dataset.step;
+		calendar.setAttribute('aria-label', 'Selecionar datas da hospedagem');
 		entradaTrigger.setAttribute('aria-expanded', 'false');
 		saidaTrigger.setAttribute('aria-expanded', 'false');
 		entradaTrigger.classList.remove('tuki-date-trigger--active');
@@ -76,6 +77,12 @@ export function initLeadDatePicker(root: HTMLElement): void {
 		step = nextStep;
 		calendar.hidden = false;
 		calendar.dataset.step = nextStep;
+		calendar.setAttribute(
+			'aria-label',
+			nextStep === 'entrada'
+				? 'Selecionar data de entrada da hospedagem'
+				: 'Selecionar data de saída da hospedagem',
+		);
 		entradaTrigger.setAttribute('aria-expanded', String(nextStep === 'entrada'));
 		saidaTrigger.setAttribute('aria-expanded', String(nextStep === 'saida'));
 
@@ -88,6 +95,10 @@ export function initLeadDatePicker(root: HTMLElement): void {
 		} else if (nextStep === 'saida' && saidaInput.value) {
 			saidaDate = parseDateISO(saidaInput.value);
 			viewMonth = new Date(saidaDate.getFullYear(), saidaDate.getMonth(), 1);
+		} else if (nextStep === 'saida' && entradaInput.value) {
+			entradaDate = parseDateISO(entradaInput.value);
+			const minCheckout = getMinCheckOutDate(entradaDate);
+			viewMonth = new Date(minCheckout.getFullYear(), minCheckout.getMonth(), 1);
 		} else if (entradaInput.value) {
 			entradaDate = parseDateISO(entradaInput.value);
 			viewMonth = new Date(entradaDate.getFullYear(), entradaDate.getMonth(), 1);
@@ -117,6 +128,14 @@ export function initLeadDatePicker(root: HTMLElement): void {
 		});
 	};
 
+	const focusCheckoutCalendar = (preferredDate: Date) => {
+		const preferredButton = gridEl.querySelector<HTMLButtonElement>(
+			`button[data-date="${formatDateISO(preferredDate)}"]:not(:disabled)`,
+		);
+		const firstEnabledButton = gridEl.querySelector<HTMLButtonElement>('button:not(:disabled)');
+		(preferredButton ?? firstEnabledButton)?.focus({ preventScroll: true });
+	};
+
 	const switchToSaidaStep = (checkIn: Date) => {
 		entradaDate = checkIn;
 		entradaInput.value = formatDateISO(checkIn);
@@ -126,6 +145,7 @@ export function initLeadDatePicker(root: HTMLElement): void {
 		open = true;
 		calendar.hidden = false;
 		calendar.dataset.step = 'saida';
+		calendar.setAttribute('aria-label', 'Selecionar data de saída da hospedagem');
 		entradaTrigger.setAttribute('aria-expanded', 'false');
 		saidaTrigger.setAttribute('aria-expanded', 'true');
 
@@ -139,6 +159,7 @@ export function initLeadDatePicker(root: HTMLElement): void {
 		syncTriggers();
 		renderCalendar();
 		playCheckoutTransition();
+		window.requestAnimationFrame(() => focusCheckoutCalendar(minCheckout));
 	};
 
 	const applySelection = (date: Date) => {
@@ -209,6 +230,8 @@ export function initLeadDatePicker(root: HTMLElement): void {
 			const disabled = isDayDisabled(date);
 			const isEntrada = entradaDate ? isSameDay(date, entradaDate) : false;
 			const isSaida = saidaDate ? isSameDay(date, saidaDate) : false;
+			const isSuggestedCheckout =
+				step === 'saida' && entradaDate ? isSameDay(date, getMinCheckOutDate(entradaDate)) : false;
 			const inRange =
 				entradaDate && saidaDate ? isDateInRange(date, entradaDate, saidaDate) : false;
 
@@ -220,6 +243,7 @@ export function initLeadDatePicker(root: HTMLElement): void {
 			if (disabled) button.classList.add('tuki-date-picker__day--disabled');
 			if (isEntrada) button.classList.add('tuki-date-picker__day--start');
 			if (isSaida) button.classList.add('tuki-date-picker__day--end');
+			if (isSuggestedCheckout && !isSaida) button.classList.add('tuki-date-picker__day--suggested');
 			if (inRange && !isEntrada && !isSaida) button.classList.add('tuki-date-picker__day--in-range');
 			if (disabled) button.disabled = true;
 

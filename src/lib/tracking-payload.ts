@@ -1,4 +1,5 @@
 import type { LeadGeoData } from './lead-geo';
+import { resolveLeadDestination } from './lead-destination';
 import type { LeadAttribution, LeadContext, LeadFormFields } from './lead-schema';
 
 export function formatLocalTimestamp(
@@ -103,6 +104,11 @@ export function buildLeadSubmitPayload({
 }: BuildLeadSubmitPayloadInput): LeadSubmitPayload {
 	const tracking = buildTrackingFields(attribution);
 	const product = empty(context.hotel) || empty(context.resort) || undefined;
+	const destination =
+		resolveLeadDestination({
+			cidade: context.destination,
+			path: context.landing_slug,
+		}) || undefined;
 
 	return {
 		event: 'lead_submit',
@@ -124,7 +130,7 @@ export function buildLeadSubmitPayload({
 		...(product ? { product } : {}),
 		...(context.campaign ? { campaign: context.campaign } : {}),
 		...(context.form_id ? { form_id: context.form_id } : {}),
-		...(context.destination ? { destination: context.destination } : {}),
+		...(destination ? { destination } : {}),
 		...(geo?.cidade ? { cidade: geo.cidade } : {}),
 		...(geo?.regiao ? { regiao: geo.regiao } : {}),
 		...(geo?.pais ? { pais: geo.pais } : {}),

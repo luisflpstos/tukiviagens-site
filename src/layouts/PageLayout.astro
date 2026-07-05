@@ -11,6 +11,7 @@ import { type GalleryImage } from '../lib/gallery-images';
 import { isHospitalityPage } from '../lib/hospitality';
 import { shouldShowPageCarousel } from '../lib/property-gallery';
 import { buildCanonical } from '../lib/seo';
+import { resolveLeadDestination } from '../lib/lead-destination';
 import { getChildRoutes, getRouteByPath, normalizePath } from '../lib/site-routes';
 
 interface RelatedPage {
@@ -154,7 +155,10 @@ const leadTitle =
 			? 'Cotar hospedagem no destino'
 			: 'Peça sua cotação';
 
-const leadDestination = destinationHubRoute?.title ?? parentRoute?.title ?? title;
+const leadDestination =
+	resolveLeadDestination({ path, silo: currentRoute?.silo }) ??
+	resolveLeadDestination({ fallback: destinationHubRoute?.title }) ??
+	title;
 ---
 
 <BaseLayout title={title} description={description} path={path} image={image} jsonLd={jsonLd}>

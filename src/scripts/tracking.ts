@@ -28,3 +28,7 @@ export function trackFormSuccess(formId: string, data: Record<string, unknown> =
 export function trackFormError(formId: string, error: string): void {
 	pushEvent('lead_form_error', { form_id: formId, error });
 }
+
+export function trackLeadThanksView(data: Record<string, unknown> = {}): void {
+	pushEvent('lead_thanks_view', data);
+}

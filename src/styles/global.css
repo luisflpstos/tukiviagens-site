@@ -412,6 +412,11 @@
 		background: color-mix(in srgb, var(--color-tuki-orange) 14%, transparent);
 	}
 
+	.tuki-date-picker__day:focus-visible {
+		outline: 2px solid var(--color-tuki-purple);
+		outline-offset: 2px;
+	}
+
 	.tuki-date-picker__day--empty {
 		pointer-events: none;
 	}
@@ -424,6 +429,11 @@
 	.tuki-date-picker__day--in-range {
 		background: color-mix(in srgb, var(--color-tuki-orange) 16%, transparent);
 		border-radius: 0;
+	}
+
+	.tuki-date-picker__day--suggested {
+		background: color-mix(in srgb, var(--color-tuki-orange) 10%, transparent);
+		box-shadow: inset 0 0 0 2px color-mix(in srgb, var(--color-tuki-orange) 72%, white);
 	}
 
 	.tuki-date-picker__day--start,
