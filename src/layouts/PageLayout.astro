@@ -158,6 +158,7 @@ const leadDestination = destinationHubRoute?.title ?? parentRoute?.title ?? titl
 ---
 
 <BaseLayout title={title} description={description} path={path} image={image} jsonLd={jsonLd}>
+	<div id="conteudo">
 	<PageHero image={image}>
 			<nav aria-label="Breadcrumb" class="tuki-type-small text-white/70">
 				<ol class="flex flex-wrap items-center gap-2">
@@ -251,4 +252,5 @@ const leadDestination = destinationHubRoute?.title ?? parentRoute?.title ?? titl
 				: 'Preencha o formulário e nossa equipe retorna rapidamente.'
 		}
 	/>
+	</div>
 </BaseLayout>

@@ -58,6 +58,7 @@ const jsonLd = {
 ---
 
 <BaseLayout title={title} description={description} path={path} image={heroImage} jsonLd={jsonLd}>
+	<div id="conteudo">
 	<PageHero image={heroImage}>
 			<p class="tuki-eyebrow-light">{categoria}</p>
 			<h1 class="tuki-type-display mt-2">{headline}</h1>
@@ -102,4 +103,5 @@ const jsonLd = {
 		destination={formatLocation(cidade, estado)}
 		title="Consulte hospedagem"
 	/>
+	</div>
 </BaseLayout>

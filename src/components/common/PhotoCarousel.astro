@@ -38,8 +38,11 @@ const { images, label } = Astro.props;
 										src={image.src}
 										alt={image.alt}
 										class="h-full w-full object-cover transition group-hover:brightness-95"
-										loading="lazy"
-										decoding="async"
+										width={1200}
+										height={900}
+										loading={index === 0 ? 'eager' : 'lazy'}
+										decoding={index === 0 ? 'sync' : 'async'}
+										fetchpriority={index === 0 ? 'high' : undefined}
 									/>
 								</button>
 							</figure>
@@ -52,31 +55,47 @@ const { images, label } = Astro.props;
 				<div class="mt-4 flex items-center justify-center gap-3">
 					<button
 						type="button"
-						class="flex h-9 w-9 items-center justify-center rounded-full border border-tuki-purple/15 bg-white text-tuki-purple transition hover:border-tuki-purple/30 hover:bg-tuki-purple/5"
+						class="flex h-11 w-11 items-center justify-center rounded-full border border-tuki-purple/15 bg-white text-lg text-tuki-purple transition hover:border-tuki-purple/30 hover:bg-tuki-purple/5"
 						data-carousel-prev
 						aria-label="Foto anterior"
 					>
 						<span aria-hidden="true">‹</span>
 					</button>
 
-					<div class="flex gap-2" data-carousel-dots>
-						{images.map((_, index) => (
-							<button
-								type="button"
-								class:list={[
-									'h-2.5 w-2.5 rounded-full transition',
-									index === 0 ? 'bg-tuki-purple' : 'bg-tuki-purple/25 hover:bg-tuki-purple/40',
-								]}
-								data-carousel-dot={index}
-								aria-label={`Ir para foto ${index + 1}`}
-								aria-current={index === 0 ? 'true' : undefined}
-							/>
-						))}
+					<div
+						class:list={[
+							images.length > 4 && 'w-[calc(4*1.25rem+3*0.375rem)] overflow-hidden',
+						]}
+						data-carousel-dots-viewport
+					>
+						<div
+							class="flex gap-1.5 transition-transform duration-300 ease-out"
+							data-carousel-dots-track
+						>
+							{images.map((_, index) => (
+								<button
+									type="button"
+									class="flex h-5 w-5 shrink-0 items-center justify-center rounded-full"
+									data-carousel-dot={index}
+									aria-label={`Ir para foto ${index + 1}`}
+									aria-current={index === 0 ? 'true' : undefined}
+								>
+									<span
+										class:list={[
+											'block h-1.5 w-1.5 rounded-full transition-colors',
+											index === 0 ? 'bg-tuki-purple' : 'bg-tuki-purple/25',
+										]}
+										data-carousel-dot-indicator
+										aria-hidden="true"
+									/>
+								</button>
+							))}
+						</div>
 					</div>
 
 					<button
 						type="button"
-						class="flex h-9 w-9 items-center justify-center rounded-full border border-tuki-purple/15 bg-white text-tuki-purple transition hover:border-tuki-purple/30 hover:bg-tuki-purple/5"
+						class="flex h-11 w-11 items-center justify-center rounded-full border border-tuki-purple/15 bg-white text-lg text-tuki-purple transition hover:border-tuki-purple/30 hover:bg-tuki-purple/5"
 						data-carousel-next
 						aria-label="Próxima foto"
 					>

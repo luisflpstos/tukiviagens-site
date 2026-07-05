@@ -93,9 +93,9 @@ describe('resolvePageGalleryImages', () => {
 		});
 
 		expect(result).toHaveLength(GALLERY_MAX_IMAGES);
-		expect(result[0]?.src).toBe('/images/destinos/olimpia/capa.png');
-		expect(result[1]?.src).toBe('/images/destinos/olimpia/01.png');
-		expect(result[2]?.src).toBe('/images/destinos/olimpia/02.JPG');
+		expect(result[0]?.src).toBe('/images/destinos/olimpia/capa.webp');
+		expect(result[1]?.src).toBe('/images/destinos/olimpia/01.webp');
+		expect(result[2]?.src).toBe('/images/destinos/olimpia/02.webp');
 	});
 
 	it('uses destination gallery for atracao without dedicated hotel folder', () => {

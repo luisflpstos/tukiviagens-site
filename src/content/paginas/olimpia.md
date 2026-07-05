@@ -3,51 +3,92 @@ title: "Olímpia"
 pageType: "hub"
 silo: "olimpia"
 
-headline: "Olímpia: guia para viajar, se hospedar e aproveitar os parques aquáticos"
-description: "Planeje sua viagem para Olímpia com hotéis perto do Thermas dos Laranjais, resorts Hot Beach, Wyndham, Enjoy e Mercure. Cotação consultiva pela Tuki Viagens."
+headline: "Olímpia SP: o que fazer, por que visitar e onde se hospedar"
+description: "Descubra por que visitar Olímpia SP, o que fazer na cidade das águas termais, principais parques aquáticos e atrações para famílias. Cotação de hotéis e resorts pela Tuki Viagens."
 
 highlights:
-  - "Thermas dos Laranjais — maior parque aquático da América Latina"
-  - "Ecossistema Hot Beach: Resort, Celebration, Thermas Park e Suites"
-  - "Resorts Wyndham, Enjoy, Mercure e Solar das Águas"
-  - "Ideal para famílias, grupos e viagens com pet"
+  - "Thermas dos Laranjais — parque aquático mais visitado do Brasil"
+  - "Hot Beach Olímpia — parques, resorts e lazer para toda a família"
+  - "Capital Nacional do Folclore e das Águas Termais"
+  - "Vale dos Dinossauros, Vila Guarani e rotas turísticas oficiais"
 
 keywords:
+  - olimpia sp
+  - turismo em olimpia
+  - o que fazer em olimpia
+  - por que visitar olimpia
+  - parques aquaticos em olimpia
   - thermas dos laranjais
+  - hot beach olimpia
+  - aguas termais sao paulo
   - hotel em olimpia
   - resort olimpia
-  - hospedagem olimpia
 
 whatsapp: "551721901358"
 cta: "Cotar hospedagem em Olímpia"
 
 faq:
+  - question: "Olímpia fica onde?"
+    answer: "Olímpia fica no noroeste do estado de São Paulo, a cerca de 430 km da capital paulista. A cidade está situada sobre o Aquífero Guarani e é reconhecida como Estância Turística."
+  - question: "Por que Olímpia é famosa?"
+    answer: "Olímpia é famosa pelas águas termais, pelos parques aquáticos, pelos resorts e pelo turismo familiar. A cidade também é reconhecida oficialmente como Capital Nacional do Folclore, por sua tradição na preservação da cultura popular brasileira."
+  - question: "Qual é o principal parque aquático de Olímpia?"
+    answer: "O principal parque aquático de Olímpia é o Thermas dos Laranjais, destacado pelo portal oficial como o parque aquático mais visitado do Brasil, com mais de 60 atrações e águas quentes."
+  - question: "Olímpia é boa para viajar com crianças?"
+    answer: "Sim. Olímpia é um destino muito indicado para famílias com crianças, porque reúne parques aquáticos, atrações temáticas, área kids, resorts, hotéis, restaurantes e opções de lazer para diferentes idades. O Vale dos Dinossauros, por exemplo, é uma das atrações voltadas para diversão em família."
+  - question: "O que fazer em Olímpia além dos parques aquáticos?"
+    answer: "Além dos parques aquáticos, o visitante pode conhecer o Vale dos Dinossauros, a Vila Guarani, a Praia do Mirante, o Dreams Ice Bar, a Igreja Matriz de São João Batista, eventos culturais e as rotas turísticas oficiais da cidade."
+  - question: "Quantos dias ficar em Olímpia?"
+    answer: "Para uma primeira viagem, o ideal é ficar de 2 a 4 dias em Olímpia. Em um fim de semana é possível conhecer um parque aquático e uma atração complementar. Para aproveitar com mais calma, especialmente com crianças, 3 ou 4 dias permitem visitar parques, descansar no hotel ou resort e conhecer outros atrativos da cidade."
+  - question: "Olímpia é um destino para família?"
+    answer: "Sim. Olímpia é um destino forte para turismo familiar porque oferece águas termais, parques, resorts, hotéis, gastronomia, segurança, entretenimento e atrações para crianças, adultos e idosos. A própria comunicação oficial do turismo destaca hospitalidade, segurança, gastronomia e experiências para o ano todo."
+  - question: "Olímpia tem águas termais?"
+    answer: "Sim. Olímpia é conhecida pelas águas termais naturalmente quentes, usadas como um dos principais diferenciais turísticos da cidade. O destino é associado a parques aquáticos, resorts e experiências de relaxamento com águas quentes."
+  - question: "Qual é a melhor época para visitar Olímpia?"
+    answer: "Olímpia pode ser visitada durante o ano todo, especialmente por quem busca parques aquáticos, resorts e lazer em família. Períodos de férias, feriados e eventos costumam ter maior movimento, então é recomendável reservar hospedagem com antecedência."
   - question: "Qual o melhor hotel perto do Thermas dos Laranjais?"
     answer: "Para acesso exclusivo: Mercure (0,1 km) e Wyndham (0,4 km). Para hotel econômico próximo: Tiffany (400 m), Água Viva (500 m) e Glória (800 m). Informe datas e hóspedes para cotação personalizada."
-  - question: "Hot Beach ou Thermas dos Laranjais: qual hotel escolher?"
-    answer: "Wyndham e Mercure focam em acesso ao Thermas. Hot Beach Resort, Celebration e Thermas Park vendem acesso ao Hot Beach. Muitas famílias visitam os dois parques em 3 a 4 dias."
-  - question: "Qual resort em Olímpia é melhor para famílias com crianças pequenas?"
-    answer: "Hot Beach Resort (experiência integrada ao parque), Celebration Resort (recreação Hot Beach) e Villa Itália Olímpia (lazer infantil fora dos grandes resorts) são nossa indicação para famílias com crianças pequenas."
-  - question: "Existe hotel barato perto do Thermas em Olímpia?"
-    answer: "Sim. JS Thermas Hotel (diária desde R$ 109), Glória Hotel (R$ 240), Villa Rebellato (R$ 244) e Água Viva (R$ 263) são opções com boa proximidade ou custo-benefício."
   - question: "Como a Tuki pode ajudar na hospedagem em Olímpia?"
     answer: "Informe datas, adultos, crianças e preferências (proximidade do Thermas, Hot Beach, grupo grande, pet friendly ou custo-benefício). Cotamos com atendimento consultivo."
 
 seo:
-  title: "Olímpia SP | Hotéis, resorts e Thermas dos Laranjais"
-  description: "Guia de Olímpia: 9 hotéis e 10 resorts comparados por proximidade do Thermas, Hot Beach, família e custo-benefício. Cotação Tuki Viagens."
+  title: "Olímpia SP: o que fazer, por que visitar e principais atrações"
+  description: "Descubra por que visitar Olímpia SP, o que fazer na cidade das águas termais, principais parques aquáticos, atrações para famílias e perguntas frequentes."
 ---
 
 ## Por que visitar Olímpia?
 
-Olímpia, no noroeste paulista, é conhecida como a **capital dos parques aquáticos do Brasil**. O Thermas dos Laranjais atrai milhões de visitantes por ano — e a escolha da hospedagem certa faz toda a diferença na experiência da viagem.
+Olímpia, no interior de São Paulo, é um dos principais destinos turísticos do Brasil para quem busca águas termais, parques aquáticos, resorts, lazer em família e experiências culturais. Localizada no noroeste paulista, a cidade fica sobre o Aquífero Guarani e se consolidou como Estância Turística, recebendo milhões de visitantes por ano.
 
-## O que fazer em Olímpia
+Conhecida como **Capital Nacional do Folclore e das Águas Termais**, Olímpia combina diversão, descanso e tradição. A cidade abriga grandes parques aquáticos, como o Thermas dos Laranjais e o Hot Beach Olímpia, além de atrações temáticas, gastronomia, eventos culturais e uma ampla rede de hotéis, pousadas, resorts e casas de temporada.
 
-- **Thermas dos Laranjais** — maior parque aquático da América Latina
-- **Hot Beach** — parque com ecossistema de resorts integrados (Resort, Celebration, Thermas Park, Suites)
-- **Gastronomia e compras** — centro comercial, Villa Mall e restaurantes para a família
-- **Resorts com estrutura completa** — piscinas, lazer, flats com cozinha e acesso aos parques
+Olímpia é uma excelente escolha para famílias, casais e grupos que querem viajar com segurança, conforto e programação para todas as idades. A cidade oferece estrutura turística forte, com milhares de leitos, dezenas de restaurantes, operadoras de turismo e opções de lazer durante o ano todo.
+
+## O que fazer em Olímpia?
+
+### 1. Curtir os parques aquáticos de águas termais
+
+A principal experiência de Olímpia está nos parques aquáticos. A cidade é sede do **Thermas dos Laranjais**, citado pela Prefeitura como o parque aquático mais visitado do Brasil, com mais de 60 atrações e águas quentes circulantes com temperaturas entre 26 °C e 38 °C.
+
+Outra opção é o **Hot Beach Olímpia**, parque aquático com piscinas, escorregadores, bares, restaurantes e atrações para diferentes perfis de visitantes, de famílias com crianças a casais e grupos de amigos.
+
+### 2. Visitar o Vale dos Dinossauros
+
+O **Vale dos Dinossauros** é uma atração temática indicada para famílias e crianças. O espaço conta com dinossauros em tamanho real, atrações interativas, área kids, loja temática e funcionamento diário, segundo o portal oficial de turismo.
+
+### 3. Conhecer a cultura e o folclore de Olímpia
+
+Olímpia também é reconhecida como **Capital Nacional do Folclore**. A cidade realiza o Festival Nacional do Folclore há mais de 60 anos, reunindo grupos de dança, manifestações culturais e visitantes de várias regiões do Brasil.
+
+### 4. Passear pelas rotas turísticas da cidade
+
+O portal oficial organiza os atrativos de Olímpia em rotas temáticas, como **Rota das Águas**, **Rota do Lazer**, **Rota Cultural**, **Rota Religiosa** e **Rota Passando pela História**. Essa organização ajuda o visitante a montar roteiros de acordo com o perfil da viagem.
+
+### 5. Aproveitar gastronomia, resorts e lazer em família
+
+Além dos parques, Olímpia oferece uma estrutura completa para o turista, com hotéis, pousadas, resorts, casas de temporada, restaurantes, bares, cafeterias, sorveterias, comércio e operadoras de turismo.
+
+A **Vila Guarani**, por exemplo, reúne opções de alimentação, bebidas, artesanato, sorveterias, lojas, farmácia e área kids, sendo uma alternativa para passeios fora dos parques. Outros atrativos incluem a Praia do Mirante, o Dreams Ice Bar e a Igreja Matriz de São João Batista.
 
 ## Onde se hospedar
 

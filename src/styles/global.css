@@ -8,6 +8,7 @@
 	--color-tuki-purple-light: #6b2fd4;
 	--color-tuki-orange: #fc7b04;
 	--color-tuki-orange-dark: #e94f1b;
+	--color-tuki-orange-button: #c45700;
 	--color-tuki-white: #ffffff;
 	--color-tuki-dark: #201e1e;
 	--color-tuki-ink: #1f1545;
@@ -266,7 +267,7 @@
 	}
 
 	.tuki-floating-badge-orange {
-		@apply rounded-full bg-tuki-orange px-3.5 py-1.5 text-xs font-bold text-white;
+		@apply rounded-full bg-tuki-orange-button px-3.5 py-1.5 text-xs font-bold text-white;
 		box-shadow: 0 16px 35px color-mix(in srgb, var(--color-tuki-purple-dark) 18%, transparent);
 	}
 
@@ -352,6 +353,16 @@
 
 	.content-markdown a {
 		@apply text-tuki-purple underline;
+	}
+
+	.content-markdown a.tuki-markdown-cta {
+		text-decoration: none;
+		color: #fff;
+	}
+
+	.content-markdown a.tuki-markdown-cta:hover,
+	.content-markdown a.tuki-markdown-cta:focus-visible {
+		color: #fff;
 	}
 
 	.tuki-comparison-table-wrap {

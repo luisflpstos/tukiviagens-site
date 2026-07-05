@@ -23,6 +23,7 @@ const { title, description, path, noindex = true, whatsapp, campaign, whatsappPr
 	showHeader={false}
 	showFooter={false}
 >
+	<div id="conteudo">
 	<slot />
 	<WhatsAppButton
 		phone={whatsapp}
@@ -34,4 +35,5 @@ const { title, description, path, noindex = true, whatsapp, campaign, whatsappPr
 		showLabel={false}
 		class="!px-4"
 	/>
+	</div>
 </BaseLayout>

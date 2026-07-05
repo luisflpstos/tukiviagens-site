@@ -30,7 +30,16 @@ const hiddenFields = [
 ];
 ---
 
-<form id={formId} class="space-y-4" novalidate>
+<form
+	id={formId}
+	class="space-y-4"
+	novalidate
+	data-lead-form
+	data-hotel={hotel}
+	data-resort={resort}
+	data-destination={destination}
+	data-campaign={campaign}
+>
 	<div class="grid gap-4 sm:grid-cols-2">
 		<div class="sm:col-span-2">
 			<label for={`${formId}-nome`} class="tuki-type-small mb-1 block font-medium text-tuki-ink">Nome *</label>
@@ -120,7 +129,7 @@ const hiddenFields = [
 	<button
 		type="submit"
 		data-default-label={submitLabel}
-		class="w-full rounded-full bg-tuki-orange px-6 py-3 font-semibold text-white transition hover:bg-tuki-orange-dark disabled:opacity-60"
+		class="w-full rounded-full bg-tuki-orange-button px-6 py-3 font-semibold text-white transition hover:bg-tuki-orange-dark disabled:opacity-60"
 	>
 		{submitLabel}
 	</button>
@@ -128,7 +137,16 @@ const hiddenFields = [
 	<p data-form-status class="tuki-type-small min-h-5 text-center" role="status" aria-live="polite"></p>
 </form>
 
-<script define:vars={{ formId, hotel, resort, destination, campaign }}>
+<script>
 	import { initLeadForm } from '../../scripts/lead-form';
-	initLeadForm({ formId, hotel, resort, destination, campaign });
+
+	document.querySelectorAll<HTMLFormElement>('[data-lead-form]').forEach((form) => {
+		initLeadForm({
+			formId: form.id,
+			hotel: form.dataset.hotel,
+			resort: form.dataset.resort,
+			destination: form.dataset.destination,
+			campaign: form.dataset.campaign,
+		});
+	});
 </script>

@@ -70,7 +70,7 @@ import { TESTIMONIALS, BRAND } from '../../lib/constants';
 				<div class="mt-5 flex items-center justify-center gap-3">
 					<button
 						type="button"
-						class="flex h-9 w-9 items-center justify-center rounded-full border border-tuki-purple/15 bg-white text-tuki-purple transition hover:border-tuki-purple/30 hover:bg-tuki-purple/5"
+						class="flex h-11 w-11 items-center justify-center rounded-full border border-tuki-purple/15 bg-white text-lg text-tuki-purple transition hover:border-tuki-purple/30 hover:bg-tuki-purple/5"
 						data-carousel-prev
 						aria-label="Depoimento anterior"
 					>
@@ -82,23 +82,26 @@ import { TESTIMONIALS, BRAND } from '../../lib/constants';
 							TESTIMONIALS.map((_, index) => (
 								<button
 									type="button"
-									class:list={[
-										'h-2.5 w-2.5 rounded-full transition',
-										index === 0
-											? 'bg-tuki-purple'
-											: 'bg-tuki-purple/25 hover:bg-tuki-purple/40',
-									]}
+									class="flex h-11 w-11 items-center justify-center rounded-full transition"
 									data-carousel-dot={index}
 									aria-label={`Ir para depoimento ${index + 1}`}
 									aria-current={index === 0 ? 'true' : undefined}
-								/>
+								>
+									<span
+										class:list={[
+											'block h-2.5 w-2.5 rounded-full',
+											index === 0 ? 'bg-tuki-purple' : 'bg-tuki-purple/25',
+										]}
+										aria-hidden="true"
+									/>
+								</button>
 							))
 						}
 					</div>
 
 					<button
 						type="button"
-						class="flex h-9 w-9 items-center justify-center rounded-full border border-tuki-purple/15 bg-white text-tuki-purple transition hover:border-tuki-purple/30 hover:bg-tuki-purple/5"
+						class="flex h-11 w-11 items-center justify-center rounded-full border border-tuki-purple/15 bg-white text-lg text-tuki-purple transition hover:border-tuki-purple/30 hover:bg-tuki-purple/5"
 						data-carousel-next
 						aria-label="Próximo depoimento"
 					>

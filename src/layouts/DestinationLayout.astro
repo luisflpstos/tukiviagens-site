@@ -21,6 +21,7 @@ const { title, description, path, headline, estado, highlights, whatsapp, cta } 
 ---
 
 <BaseLayout title={title} description={description} path={path}>
+	<div id="conteudo">
 	<section class="tuki-gradient-purple section-padding text-white">
 		<Container>
 			<p class="tuki-eyebrow-light">Destino</p>
@@ -51,4 +52,5 @@ const { title, description, path, headline, estado, highlights, whatsapp, cta } 
 
 	<BenefitsList items={highlights} title="Destaques" />
 	<LeadCaptureSection formId="destino-lead-form" destination={title} title="Planeje sua viagem" />
+	</div>
 </BaseLayout>

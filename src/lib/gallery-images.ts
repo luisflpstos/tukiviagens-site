@@ -21,7 +21,7 @@ export interface ResolveGalleryImagesOptions {
 export const GALLERY_SLOTS = ['capa', '01', '02', '03', '04', '05'] as const;
 export const GALLERY_MAX_IMAGES = GALLERY_SLOTS.length;
 
-const GALLERY_EXTENSIONS = ['.jpg', '.jpeg', '.JPG', '.JPEG', '.webp', '.png'] as const;
+const GALLERY_EXTENSIONS = ['.webp', '.jpg', '.jpeg', '.JPG', '.JPEG', '.png'] as const;
 
 export function buildGalleryImageCandidates(slug: string, category: GalleryCategory): string[] {
 	const base = `/images/${category}/${slug}`;
