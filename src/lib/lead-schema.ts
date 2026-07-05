@@ -1,0 +1,132 @@
+import { z } from 'zod';
+import { LEAD_FIELD_MAX_LENGTH } from './lead-config';
+
+const dateString = z
+	.string()
+	.trim()
+	.max(LEAD_FIELD_MAX_LENGTH)
+	.regex(/^\d{4}-\d{2}-\d{2}$/, 'Data inválida.');
+
+function parseDateOnly(value: string): Date {
+	const [year, month, day] = value.split('-').map(Number);
+	return new Date(year, month - 1, day);
+}
+
+function phoneDigits(phone: string): string {
+	return phone.replace(/\D/g, '');
+}
+
+export const leadAttributionSchema = z
+	.object({
+		utm_source: z.string().max(LEAD_FIELD_MAX_LENGTH).optional(),
+		utm_medium: z.string().max(LEAD_FIELD_MAX_LENGTH).optional(),
+		utm_campaign: z.string().max(LEAD_FIELD_MAX_LENGTH).optional(),
+		utm_content: z.string().max(LEAD_FIELD_MAX_LENGTH).optional(),
+		utm_term: z.string().max(LEAD_FIELD_MAX_LENGTH).optional(),
+		gclid: z.string().max(LEAD_FIELD_MAX_LENGTH).optional(),
+		gbraid: z.string().max(LEAD_FIELD_MAX_LENGTH).optional(),
+		wbraid: z.string().max(LEAD_FIELD_MAX_LENGTH).optional(),
+		fbclid: z.string().max(LEAD_FIELD_MAX_LENGTH).optional(),
+		msclkid: z.string().max(LEAD_FIELD_MAX_LENGTH).optional(),
+		referrer: z.string().max(LEAD_FIELD_MAX_LENGTH).optional(),
+		landing_page: z.string().max(LEAD_FIELD_MAX_LENGTH).optional(),
+		first_landing_page: z.string().max(LEAD_FIELD_MAX_LENGTH).optional(),
+		current_url: z.string().max(LEAD_FIELD_MAX_LENGTH).optional(),
+		timestamp: z.string().max(LEAD_FIELD_MAX_LENGTH).optional(),
+	})
+	.strict();
+
+export const leadContextSchema = z
+	.object({
+		hotel: z.string().max(LEAD_FIELD_MAX_LENGTH).optional(),
+		resort: z.string().max(LEAD_FIELD_MAX_LENGTH).optional(),
+		destination: z.string().max(LEAD_FIELD_MAX_LENGTH).optional(),
+		campaign: z.string().max(LEAD_FIELD_MAX_LENGTH).optional(),
+		form_id: z.string().max(LEAD_FIELD_MAX_LENGTH).optional(),
+		landing_slug: z.string().max(LEAD_FIELD_MAX_LENGTH).optional(),
+	})
+	.strict();
+
+export const leadFormFieldsSchema = z
+	.object({
+		nome: z
+			.string()
+			.trim()
+			.min(2, 'Informe seu nome completo.')
+			.max(LEAD_FIELD_MAX_LENGTH, 'Nome muito longo.'),
+		telefone: z
+			.string()
+			.trim()
+			.min(1, 'Informe seu telefone (WhatsApp).')
+			.max(LEAD_FIELD_MAX_LENGTH, 'Telefone muito longo.')
+			.refine((value) => phoneDigits(value).length >= 10, 'Informe um telefone válido com DDD.'),
+		email: z
+			.string()
+			.trim()
+			.min(1, 'Informe seu e-mail.')
+			.max(LEAD_FIELD_MAX_LENGTH, 'E-mail muito longo.')
+			.email('Informe um e-mail válido.'),
+		data_entrada: dateString,
+		data_saida: dateString,
+		adultos: z.coerce
+			.number({ error: 'Informe a quantidade de adultos.' })
+			.int('Informe a quantidade de adultos.')
+			.min(1, 'Informe pelo menos 1 adulto.')
+			.max(LEAD_FIELD_MAX_LENGTH, 'Quantidade de adultos inválida.'),
+		criancas: z.coerce
+			.number({ error: 'Informe a quantidade de crianças.' })
+			.int('Informe a quantidade de crianças.')
+			.min(0, 'Quantidade de crianças inválida.')
+			.max(LEAD_FIELD_MAX_LENGTH, 'Quantidade de crianças inválida.'),
+	})
+	.superRefine((data, ctx) => {
+		const entrada = parseDateOnly(data.data_entrada);
+		const saida = parseDateOnly(data.data_saida);
+
+		if (Number.isNaN(entrada.getTime())) {
+			ctx.addIssue({ code: 'custom', message: 'Data de entrada inválida.', path: ['data_entrada'] });
+		}
+		if (Number.isNaN(saida.getTime())) {
+			ctx.addIssue({ code: 'custom', message: 'Data de saída inválida.', path: ['data_saida'] });
+		}
+		if (!Number.isNaN(entrada.getTime()) && !Number.isNaN(saida.getTime()) && saida <= entrada) {
+			ctx.addIssue({
+				code: 'custom',
+				message: 'A data de saída deve ser posterior à data de entrada.',
+				path: ['data_saida'],
+			});
+		}
+
+		const today = new Date();
+		today.setHours(0, 0, 0, 0);
+		if (!Number.isNaN(entrada.getTime()) && entrada < today) {
+			ctx.addIssue({
+				code: 'custom',
+				message: 'A data de entrada não pode ser no passado.',
+				path: ['data_entrada'],
+			});
+		}
+	});
+
+export const leadSubmissionSchema = z
+	.object({
+		nome: z.string(),
+		telefone: z.string(),
+		email: z.string(),
+		data_entrada: z.string(),
+		data_saida: z.string(),
+		adultos: z.union([z.string(), z.number()]),
+		criancas: z.union([z.string(), z.number()]),
+		_hp: z.string().max(LEAD_FIELD_MAX_LENGTH).optional(),
+		attribution: leadAttributionSchema.optional(),
+		context: leadContextSchema.optional(),
+	})
+	.strict();
+
+export type LeadFormFields = z.infer<typeof leadFormFieldsSchema>;
+export type LeadAttribution = z.infer<typeof leadAttributionSchema>;
+export type LeadContext = z.infer<typeof leadContextSchema>;
+
+export function firstZodError(error: z.ZodError): string {
+	return error.issues[0]?.message ?? 'Verifique os campos do formulário.';
+}

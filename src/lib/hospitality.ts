@@ -28,7 +28,6 @@ export const OLIMPIA_RESORT_SLUGS = new Set([
 	'thermas-olimpia-resorts-mercure',
 	'enjoy-solar-das-aguas',
 	'hot-beach-suites',
-	'wyndham-royal-star-thermas-resort',
 ]);
 
 export const RIO_QUENTE_HOTEL_SLUGS = new Set([

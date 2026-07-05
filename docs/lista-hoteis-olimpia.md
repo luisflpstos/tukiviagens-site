@@ -93,7 +93,7 @@
 - **Dados reais citados:** nota 8,5 em 1.545 avaliações, diária de referência a partir de R$ 109.
 - **Comparativo com 3 exemplos:** contra Tiffany, é mais barato, mas menos próximo. Contra Hotel Fazenda Haras, é mais urbano. Contra Villa Rebellato, tem piscina e pet friendly como vantagem.
 
-# 2. Os 10 resorts e complexos de lazer em Olímpia
+# 2. Os 9 resorts e complexos de lazer em Olímpia
 
 | # | Resort | Nota e avaliações citadas | Localização relevante | Perfil principal |
 |---|---|---:|---|---|
@@ -106,7 +106,6 @@
 | 7 | Thermas de Olímpia Resorts by Mercure | 7,9, 3.892 avaliações | 0,1 km do Thermas | Acesso ao Thermas e pet friendly |
 | 8 | Enjoy Solar das Águas Park Resort | 7,8 na fonte editorial | 2,1 km do Thermas | Resort novo com flats e estrutura ampla |
 | 9 | Hot Beach Suites | 8,0 na fonte Viajando com Lívia, página oficial com 191 avaliações | Próximo ao Hot Beach e Vila Guarani | Apartamentos com cozinha e varanda gourmet |
-| 10 | Wyndham Royal Star Thermas Resort | Hotels.com lista 10 piscinas | 1,4 km do Thermas | Aparthotel/resort funcional com piscinas |
 
 ## 1. Thermas Park Resort & Spa, Hot Beach Raízes
 
@@ -188,15 +187,6 @@
 - **Localização:** próximo ao Hot Beach Olímpia e à Vila Guarani. A página oficial informa Olímpia a cerca de 50 minutos do aeroporto de São José do Rio Preto.
 - **Dados reais citados:** Viajando com Lívia cita avaliação 8,0. Página oficial mostra 191 avaliações e diária de referência a partir de R$ 831 para Suíte e R$ 955 para Suíte Premier no momento consultado.
 - **Comparativo com 3 exemplos:** contra Hot Beach Resort, é mais apartamento e autonomia. Contra Enjoy Olímpia Park, tem conexão mais forte com Hot Beach. Contra Celebration, tem mais perfil de suíte com cozinha/varanda.
-
-## 10. Wyndham Royal Star Thermas Resort
-
-- **Sobre:** propriedade listada em Hotels.com e Booking como hotel/resort perto do Thermas, com 10 piscinas externas e serviços de spa. Entrou como 10ª referência porque Olímpia tem menos de 10 resorts independentes claramente consolidados em listas editoriais.
-- **Vale para quem:** famílias que querem piscina e proximidade do Thermas, hóspedes que buscam apartamento simples com estrutura de lazer e viajantes que aceitam uma opção mais funcional.
-- **Estrutura e diferenciais:** 10 piscinas externas, piscina infantil, spa services, Wi-Fi gratuito, estacionamento gratuito, recepção 24h, frigobar, cozinha compartilhada e cofre no quarto.
-- **Localização:** **Rua Guarani, 01, Parque das Águas, Olímpia, SP, 15405-275**. Hotels.com informa 1,4 km do Thermas dos Laranjais, 1,8 km do Hot Beach e 2,6 km do Vale dos Dinossauros.
-- **Dados reais citados:** Hotels.com lista como propriedade 2 estrelas com 10 piscinas, próxima ao Thermas. Booking lista como “Resort Whyndham Royal Star Hotels Olímpia - Thermas dos Laranjais”.
-- **Comparativo com 3 exemplos:** contra Wyndham Olímpia Royal Hotels, é mais simples e não deve ser confundido com o complexo principal. Contra Mercure, tem 10 piscinas listadas, mas menos força editorial. Contra Solar das Águas, parece mais funcional e menos complexo.
 
 # Comparativos por decisão de compra
 

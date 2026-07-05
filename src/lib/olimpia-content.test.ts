@@ -26,7 +26,6 @@ const OLIMPIA_RESORTS = [
 	'thermas-olimpia-resorts-mercure',
 	'enjoy-solar-das-aguas',
 	'hot-beach-suites',
-	'wyndham-royal-star-thermas-resort',
 ] as const;
 
 const OLIMPIA_PROPERTIES = [...OLIMPIA_HOTELS, ...OLIMPIA_RESORTS] as const;

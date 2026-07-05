@@ -1,4 +1,6 @@
 ---
+import { LEAD_FIELD_MAX_LENGTH } from '../../lib/lead-config';
+
 interface Props {
 	formId?: string;
 	hotel?: string;
@@ -6,9 +8,6 @@ interface Props {
 	destination?: string;
 	campaign?: string;
 	submitLabel?: string;
-	showMessage?: boolean;
-	showDate?: boolean;
-	showGuests?: boolean;
 }
 
 const {
@@ -18,16 +17,9 @@ const {
 	destination,
 	campaign,
 	submitLabel = 'Enviar',
-	showMessage = true,
-	showDate = true,
-	showGuests = true,
 } = Astro.props;
 
-const hiddenFields = [
-	'utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term',
-	'gclid', 'gbraid', 'wbraid', 'fbclid', 'msclkid',
-	'referrer', 'landing_page', 'first_landing_page', 'current_url', 'page_title',
-];
+const today = new Date().toISOString().slice(0, 10);
 ---
 
 <form
@@ -42,12 +34,15 @@ const hiddenFields = [
 >
 	<div class="grid gap-4 sm:grid-cols-2">
 		<div class="sm:col-span-2">
-			<label for={`${formId}-nome`} class="tuki-type-small mb-1 block font-medium text-tuki-ink">Nome *</label>
+			<label for={`${formId}-nome`} class="tuki-type-small mb-1 block font-medium text-tuki-ink">
+				Nome completo *
+			</label>
 			<input
 				id={`${formId}-nome`}
 				name="nome"
 				type="text"
 				required
+				maxlength={LEAD_FIELD_MAX_LENGTH}
 				autocomplete="name"
 				class="w-full tuki-input"
 				placeholder="Seu nome completo"
@@ -55,76 +50,104 @@ const hiddenFields = [
 		</div>
 
 		<div>
-			<label for={`${formId}-telefone`} class="tuki-type-small mb-1 block font-medium text-tuki-ink">Telefone *</label>
+			<label for={`${formId}-telefone`} class="tuki-type-small mb-1 block font-medium text-tuki-ink">
+				Telefone (WhatsApp) *
+			</label>
 			<input
 				id={`${formId}-telefone`}
 				name="telefone"
 				type="tel"
 				required
+				maxlength={LEAD_FIELD_MAX_LENGTH}
 				autocomplete="tel"
 				class="w-full tuki-input"
 				placeholder="(00) 00000-0000"
 			/>
 		</div>
 
-		{
-			showGuests && (
-				<div>
-					<label for={`${formId}-pessoas`} class="tuki-type-small mb-1 block font-medium text-tuki-ink">
-						Pessoas
-					</label>
-					<input
-						id={`${formId}-pessoas`}
-						name="pessoas"
-						type="number"
-						min="1"
-						class="w-full tuki-input"
-						placeholder="2"
-					/>
-				</div>
-			)
-		}
+		<div>
+			<label for={`${formId}-email`} class="tuki-type-small mb-1 block font-medium text-tuki-ink">
+				E-mail *
+			</label>
+			<input
+				id={`${formId}-email`}
+				name="email"
+				type="email"
+				required
+				maxlength={LEAD_FIELD_MAX_LENGTH}
+				autocomplete="email"
+				class="w-full tuki-input"
+				placeholder="seu@email.com"
+			/>
+		</div>
 
-		{
-			showDate && (
-				<div class="sm:col-span-2">
-					<label for={`${formId}-data`} class="tuki-type-small mb-1 block font-medium text-tuki-ink">
-						Data desejada
-					</label>
-					<input
-						id={`${formId}-data`}
-						name="data"
-						type="date"
-						class="w-full tuki-input"
-					/>
-				</div>
-			)
-		}
+		<div>
+			<label for={`${formId}-data-entrada`} class="tuki-type-small mb-1 block font-medium text-tuki-ink">
+				Data de entrada *
+			</label>
+			<input
+				id={`${formId}-data-entrada`}
+				name="data_entrada"
+				type="date"
+				required
+				min={today}
+				maxlength={LEAD_FIELD_MAX_LENGTH}
+				class="w-full tuki-input"
+			/>
+		</div>
 
-		{
-			showMessage && (
-				<div class="sm:col-span-2">
-					<label for={`${formId}-mensagem`} class="tuki-type-small mb-1 block font-medium text-tuki-ink">
-						Mensagem
-					</label>
-					<textarea
-						id={`${formId}-mensagem`}
-						name="mensagem"
-						rows="3"
-						class="w-full tuki-input"
-						placeholder="Conte-nos sobre sua viagem..."
-					/>
-				</div>
-			)
-		}
+		<div>
+			<label for={`${formId}-data-saida`} class="tuki-type-small mb-1 block font-medium text-tuki-ink">
+				Data de saída *
+			</label>
+			<input
+				id={`${formId}-data-saida`}
+				name="data_saida"
+				type="date"
+				required
+				min={today}
+				maxlength={LEAD_FIELD_MAX_LENGTH}
+				class="w-full tuki-input"
+			/>
+		</div>
+
+		<div>
+			<label for={`${formId}-adultos`} class="tuki-type-small mb-1 block font-medium text-tuki-ink">
+				Adultos *
+			</label>
+			<input
+				id={`${formId}-adultos`}
+				name="adultos"
+				type="number"
+				required
+				min="1"
+				max={LEAD_FIELD_MAX_LENGTH}
+				class="w-full tuki-input"
+				placeholder="2"
+			/>
+		</div>
+
+		<div>
+			<label for={`${formId}-criancas`} class="tuki-type-small mb-1 block font-medium text-tuki-ink">
+				Crianças (até 12 anos) *
+			</label>
+			<input
+				id={`${formId}-criancas`}
+				name="criancas"
+				type="number"
+				required
+				min="0"
+				max={LEAD_FIELD_MAX_LENGTH}
+				class="w-full tuki-input"
+				placeholder="0"
+			/>
+		</div>
 	</div>
 
-	{hiddenFields.map((name) => <input type="hidden" name={name} />)}
-	{hotel && <input type="hidden" name="hotel" value={hotel} />}
-	{resort && <input type="hidden" name="resort" value={resort} />}
-	{destination && <input type="hidden" name="destination" value={destination} />}
-	{campaign && <input type="hidden" name="campaign" value={campaign} />}
-	<input type="hidden" name="landing_slug" value={Astro.url.pathname} />
+	<div class="absolute -left-[9999px] h-0 w-0 overflow-hidden" aria-hidden="true">
+		<label for={`${formId}-hp`}>Não preencha este campo</label>
+		<input id={`${formId}-hp`} name="_hp" type="text" tabindex="-1" autocomplete="off" />
+	</div>
 
 	<button
 		type="submit"

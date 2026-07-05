@@ -1,16 +1,17 @@
-import { fillHiddenTrackingFields, getStoredAttribution } from './utm';
+import { getStoredAttribution } from './utm';
 import { bindPhoneMask } from './masks';
-import { validateName, validatePhone } from './validators';
+import { validateLeadForm } from './validators';
 import { trackFormError, trackFormStart, trackFormSuccess } from './tracking';
 
 export interface LeadFormOptions {
 	formId: string;
-	webhookUrl?: string;
 	hotel?: string;
 	resort?: string;
 	destination?: string;
 	campaign?: string;
 }
+
+const LEAD_API_PATH = '/api/lead';
 
 export function initLeadForm(options: LeadFormOptions): void {
 	const form = document.getElementById(options.formId) as HTMLFormElement | null;
@@ -29,14 +30,17 @@ export function initLeadForm(options: LeadFormOptions): void {
 
 	form.addEventListener('submit', async (event) => {
 		event.preventDefault();
-		fillHiddenTrackingFields(form);
 
 		const formData = new FormData(form);
-		const nome = String(formData.get('nome') ?? '');
-		const telefone = String(formData.get('telefone') ?? '');
-
-		const nameError = validateName(nome);
-		const phoneError = validatePhone(telefone);
+		const values = {
+			nome: String(formData.get('nome') ?? ''),
+			telefone: String(formData.get('telefone') ?? ''),
+			email: String(formData.get('email') ?? ''),
+			data_entrada: String(formData.get('data_entrada') ?? ''),
+			data_saida: String(formData.get('data_saida') ?? ''),
+			adultos: String(formData.get('adultos') ?? ''),
+			criancas: String(formData.get('criancas') ?? ''),
+		};
 
 		const statusEl = form.querySelector('[data-form-status]');
 		const setStatus = (message: string, isError: boolean) => {
@@ -47,16 +51,21 @@ export function initLeadForm(options: LeadFormOptions): void {
 			}
 		};
 
-		if (nameError || phoneError) {
-			setStatus(nameError ?? phoneError ?? 'Verifique os campos.', true);
-			trackFormError(options.formId, nameError ?? phoneError ?? 'validation');
+		const validationError = validateLeadForm(values);
+		if (validationError) {
+			setStatus(validationError, true);
+			trackFormError(options.formId, validationError);
 			return;
 		}
 
-		const payload = Object.fromEntries(formData.entries());
-		const attribution = getStoredAttribution();
-		const webhookUrl = options.webhookUrl || import.meta.env.PUBLIC_LEAD_WEBHOOK_URL;
+		const honeypot = String(formData.get('_hp') ?? '').trim();
+		if (honeypot) {
+			setStatus('Recebemos seu contato! Em breve retornaremos.', false);
+			form.reset();
+			return;
+		}
 
+		const attribution = getStoredAttribution();
 		const submitBtn = form.querySelector<HTMLButtonElement>('button[type="submit"]');
 		if (submitBtn) {
 			submitBtn.disabled = true;
@@ -64,23 +73,33 @@ export function initLeadForm(options: LeadFormOptions): void {
 		}
 
 		try {
-			if (webhookUrl) {
-				const response = await fetch(webhookUrl, {
-					method: 'POST',
-					headers: { 'Content-Type': 'application/json' },
-					body: JSON.stringify({
-						...payload,
-						...attribution,
+			const response = await fetch(LEAD_API_PATH, {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+					Accept: 'application/json',
+				},
+				body: JSON.stringify({
+					...values,
+					adultos: Number(values.adultos),
+					criancas: Number(values.criancas),
+					_hp: honeypot,
+					attribution,
+					context: {
 						hotel: options.hotel,
 						resort: options.resort,
 						destination: options.destination,
 						campaign: options.campaign,
 						form_id: options.formId,
-						submitted_at: new Date().toISOString(),
-					}),
-				});
+						landing_slug: window.location.pathname,
+					},
+				}),
+			});
 
-				if (!response.ok) throw new Error(`HTTP ${response.status}`);
+			const result = (await response.json().catch(() => null)) as { ok?: boolean; error?: string } | null;
+
+			if (!response.ok || !result?.ok) {
+				throw new Error(result?.error ?? `HTTP ${response.status}`);
 			}
 
 			setStatus('Recebemos seu contato! Em breve retornaremos.', false);

@@ -146,14 +146,6 @@ export const SITE_ROUTES: SiteRoute[] = [
 		{ silo: 'olimpia', parent: '/olimpia/resorts/' },
 	),
 	route(
-		'/olimpia/wyndham-royal-star-thermas-resort/',
-		'Wyndham Royal Star Thermas Resort',
-		'hotel',
-		'published',
-		['wyndham royal star olimpia', 'royal star thermas resort'],
-		{ silo: 'olimpia', parent: '/olimpia/resorts/' },
-	),
-	route(
 		'/olimpia/villa-italia-olimpia/',
 		'Hotel Pousada Villa Itália Olímpia',
 		'hotel',

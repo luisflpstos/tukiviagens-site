@@ -1,6 +1,7 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import { unified } from '@astrojs/markdown-remark';
+import vercel from '@astrojs/vercel';
 
 import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
@@ -12,6 +13,8 @@ const blockIndexing = process.env.PUBLIC_BLOCK_INDEXING === 'true';
 export default defineConfig({
   site: process.env.PUBLIC_SITE_URL ?? 'http://localhost:4321',
   trailingSlash: 'always',
+  output: 'static',
+  adapter: vercel(),
 
   markdown: {
     processor: unified({

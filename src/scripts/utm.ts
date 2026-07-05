@@ -58,31 +58,3 @@ export function captureUtmParams(): void {
 		localStorage.setItem(STORAGE_KEY, JSON.stringify(captured));
 	}
 }
-
-export function fillHiddenTrackingFields(form: HTMLFormElement): void {
-	const data = getStoredAttribution();
-	const fields: Record<string, string | undefined> = {
-		utm_source: data.utm_source,
-		utm_medium: data.utm_medium,
-		utm_campaign: data.utm_campaign,
-		utm_content: data.utm_content,
-		utm_term: data.utm_term,
-		gclid: data.gclid,
-		gbraid: data.gbraid,
-		wbraid: data.wbraid,
-		fbclid: data.fbclid,
-		msclkid: data.msclkid,
-		referrer: data.referrer,
-		landing_page: data.landing_page,
-		first_landing_page: data.first_landing_page,
-		current_url: data.current_url,
-	};
-
-	for (const [name, value] of Object.entries(fields)) {
-		const input = form.querySelector<HTMLInputElement>(`input[name="${name}"]`);
-		if (input && value) input.value = value;
-	}
-
-	const pageInput = form.querySelector<HTMLInputElement>('input[name="page_title"]');
-	if (pageInput) pageInput.value = document.title;
-}

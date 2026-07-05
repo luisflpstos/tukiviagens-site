@@ -33,7 +33,6 @@ Usado em:
 | `carpe-diem-eco-resort-olimpia/` | `/olimpia/carpe-diem-eco-resort-olimpia/` |
 | `thermas-olimpia-resorts-mercure/` | `/olimpia/thermas-olimpia-resorts-mercure/` |
 | `hot-beach-suites/` | `/olimpia/hot-beach-suites/` |
-| `wyndham-royal-star-thermas-resort/` | `/olimpia/wyndham-royal-star-thermas-resort/` |
 | `villa-italia-olimpia/` | `/olimpia/villa-italia-olimpia/` |
 | `parque-das-aguas/` | `/olimpia/parque-das-aguas/` |
 | `hotel-fazenda-haras/` | `/olimpia/hotel-fazenda-haras/` |

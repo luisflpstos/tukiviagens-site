@@ -4,10 +4,10 @@ pageType: "venda"
 silo: "olimpia"
 
 headline: "Resorts em Olímpia: compare Hot Beach, Wyndham, Enjoy e Mercure"
-description: "Compare os 10 resorts de Olímpia por acesso ao Thermas, Hot Beach, flats para grupos e perfil de viagem. Cotação consultiva com datas e hóspedes."
+description: "Compare os 9 resorts de Olímpia por acesso ao Thermas, Hot Beach, flats para grupos e perfil de viagem. Cotação consultiva com datas e hóspedes."
 
 highlights:
-  - "10 resorts: Hot Beach, Wyndham, Enjoy, Mercure e mais"
+  - "9 resorts: Hot Beach, Wyndham, Enjoy, Mercure e mais"
   - Acesso exclusivo ao Thermas (Wyndham, Mercure)
   - Flats com cozinha (Enjoy, Hot Beach Suites)
   - Ideal para famílias e viagens em grupo
@@ -30,12 +30,10 @@ faq:
     answer: "Hot Beach Resort, Hot Beach Celebration, Hot Beach Raízes (Thermas Park Resort & Spa) e Hot Beach Suites oferecem acesso gratuito ao Hot Beach Olímpia, conforme política de cada resort."
   - question: "Resort em Olímpia com cozinha para grupos?"
     answer: "Enjoy Olímpia Park Resort, Enjoy Solar das Águas e Hot Beach Suites têm flats/suítes com cozinha para até 7 pessoas."
-  - question: "Wyndham Royal Star é o mesmo que Wyndham Olímpia Royal Hotels?"
-    answer: "Não. São resorts distintos — o Royal Star é mais simples (1,4 km do Thermas); o Wyndham Olímpia Royal Hotels é o grande complexo anexo ao Thermas dos Laranjais, com portaria exclusiva ao parque."
 
 seo:
-  title: "Resorts em Olímpia | 10 opções Hot Beach, Wyndham e Enjoy"
-  description: "Os 10 resorts de Olímpia comparados: Thermas, Hot Beach, flats, família e perfil de viagem. Cotação consultiva Tuki Viagens."
+  title: "Resorts em Olímpia | 9 opções Hot Beach, Wyndham e Enjoy"
+  description: "Os 9 resorts de Olímpia comparados: Thermas, Hot Beach, flats, família e perfil de viagem. Cotação consultiva Tuki Viagens."
   image: /images/destinos/olimpia/capa.webp
 ---
 
@@ -43,7 +41,7 @@ seo:
 
 Os resorts de Olímpia foram pensados para quem visita os **parques aquáticos** — especialmente o Thermas dos Laranjais e o Hot Beach. A **Hot Beach construiu ecossistema**: Hot Beach Resort, Hot Beach Celebration, Hot Beach Raízes e Hot Beach Suites segmentam por perfil. Wyndham, Enjoy e Mercure completam o mapa com opções para Thermas, flats e grupos.
 
-## Comparativo dos 10 resorts
+## Comparativo dos 9 resorts
 
 | Resort | Distância do Thermas | Acesso parque | Perfil |
 | --- | --- | --- | --- |
@@ -56,7 +54,6 @@ Os resorts de Olímpia foram pensados para quem visita os **parques aquáticos**
 | [Enjoy Solar das Águas](/olimpia/enjoy-solar-das-aguas/) | Colado | Traslado Thermas | 1.000 suítes, parque aquático interno |
 | [Hot Beach Suites](/olimpia/hot-beach-suites/) | Próximo Hot Beach | Hot Beach exclusivo | Apartamento + cozinha, até 7 pessoas |
 | [Carpe Diem Eco Resort](/olimpia/carpe-diem-eco-resort-olimpia/) | 3 km do centro | Roteiros para parques | Eco resort, fazendinha, chalés |
-| [Wyndham Royal Star](/olimpia/wyndham-royal-star-thermas-resort/) | 1,4 km | — | 10 piscinas, aparthotel funcional |
 
 ## Comparativo por perfil
 

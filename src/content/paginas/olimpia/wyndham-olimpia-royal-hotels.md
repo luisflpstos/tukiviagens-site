@@ -30,8 +30,6 @@ faq:
     answer: "São 11 piscinas climatizadas (2 cobertas), das 8h às 20h, além de 8 ofurôs, saunas, jacuzzis, spa, 4 salas de jogos, 2 academias (24h), 2 brinquedotecas, bar molhado e quadras esportivas — incluindo a única quadra de tênis entre os hotéis de Olímpia."
   - question: "Quais acomodações o Wyndham Olímpia oferece?"
     answer: "Suítes nas torres Thermas e Star, em categorias Luxo, Super Luxo e Master (com hidromassagem). Todas com 40m² ou 50m², dois ambientes, sacada, ar-condicionado, TV a cabo, frigobar e cofre digital. Capacidade varia de 2 a 4 adultos, com opções para crianças de 0 a 12 anos conforme a categoria."
-  - question: "Wyndham Royal Star é o mesmo hotel?"
-    answer: "Não. O Wyndham Olímpia Royal Hotels é o grande complexo anexo ao Thermas dos Laranjais, com portaria exclusiva ao parque. O Wyndham Royal Star Thermas Resort é um resort distinto da mesma rede, com estrutura e localização próprias."
 
 seo:
   title: "Wyndham Olímpia Royal Hotels | Resort anexo ao Thermas"

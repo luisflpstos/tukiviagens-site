@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /lp/
+
+Sitemap: https://www.tukiviagens.com.br/sitemap-index.xml

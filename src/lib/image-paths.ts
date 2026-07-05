@@ -23,8 +23,6 @@ export const IMAGE_PATHS = {
 		'carpe-diem-eco-resort-olimpia': '/images/hoteis/carpe-diem-eco-resort-olimpia/capa.jpg',
 		'thermas-olimpia-resorts-mercure': '/images/hoteis/thermas-olimpia-resorts-mercure/capa.jpg',
 		'hot-beach-suites': '/images/hoteis/hot-beach-suites/capa.jpg',
-		'wyndham-royal-star-thermas-resort':
-			'/images/hoteis/wyndham-royal-star-thermas-resort/capa.jpg',
 		'villa-italia-olimpia': '/images/hoteis/villa-italia-olimpia/capa.jpg',
 		'parque-das-aguas': '/images/hoteis/parque-das-aguas/capa.jpg',
 		'hotel-fazenda-haras': '/images/hoteis/hotel-fazenda-haras/capa.jpg',
