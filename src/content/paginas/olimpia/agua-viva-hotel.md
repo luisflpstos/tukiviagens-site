@@ -59,11 +59,10 @@ Nota **9,0** em **207 avaliações**. Diária de referência a partir de **R$ 26
 | Hospedagem | Perfil | Diferencial |
 | --- | --- | --- |
 | Água Viva Hotel | Proximidade e cozinha | 500 m do Thermas |
-| [Tiffany Hotel](/olimpia/tiffany-hotel/) | Pequenas famílias | 400 m do Thermas |
 | [Villa Itália Olímpia](/olimpia/villa-italia-olimpia/) | Lazer interno | Nota 9,5 |
 | [Thermas de Olímpia Resorts by Mercure](/olimpia/thermas-olimpia-resorts-mercure/) | Acesso ao Thermas | 0,1 km do parque |
 
-Contra Tiffany, ambos são próximos do parque, mas o Água Viva tem opção com cozinha. Contra Villa Itália, tem menos lazer, mas localização melhor. Contra Mercure, é menor e mais simples.
+Contra Villa Itália, tem menos lazer, mas localização melhor. Contra Mercure, é menor e mais simples.
 
 Veja também [hotéis em Olímpia](/olimpia/hoteis/), [resorts em Olímpia](/olimpia/resorts/) e [hotéis perto do Thermas](/olimpia/hoteis-perto-thermas-dos-laranjais/).
 

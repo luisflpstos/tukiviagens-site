@@ -2,14 +2,16 @@
 import { getCollection, render } from 'astro:content';
 import PageLayout from '../layouts/PageLayout.astro';
 import { resolvePageGalleryImages } from '../lib/property-gallery';
-import { slugToPath } from '../lib/site-routes';
+import { isRoutePublished, slugToPath } from '../lib/site-routes';
 
 export async function getStaticPaths() {
 	const entries = await getCollection('paginas');
-	return entries.map((entry) => ({
-		params: { path: entry.id },
-		props: { entry },
-	}));
+	return entries
+		.filter((entry) => isRoutePublished(slugToPath(entry.id)))
+		.map((entry) => ({
+			params: { path: entry.id },
+			props: { entry },
+		}));
 }
 
 const { entry } = Astro.props;

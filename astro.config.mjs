@@ -6,6 +6,7 @@ import vercel from '@astrojs/vercel';
 import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
 import { rehypeComparisonTables } from './src/lib/rehype-comparison-tables.ts';
+import { getRouteByPath } from './src/lib/site-routes.ts';
 
 const blockIndexing = process.env.PUBLIC_BLOCK_INDEXING === 'true';
 
@@ -31,7 +32,16 @@ export default defineConfig({
       ? []
       : [
           sitemap({
-            filter: (page) => !page.includes('/lp/'),
+            filter: (page) => {
+              if (page.includes('/lp/')) return false;
+              try {
+                const route = getRouteByPath(new URL(page).pathname);
+                if (route?.status === 'planned') return false;
+              } catch {
+                /* ignore malformed URLs */
+              }
+              return true;
+            },
           }),
         ]),
   ],

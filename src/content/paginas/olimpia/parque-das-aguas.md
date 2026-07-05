@@ -76,10 +76,9 @@ Nota **9,2** em **265 avaliações**. Diária de referência a partir de **R$ 40
 | --- | --- | --- |
 | Parque das Águas | Pousada com lazer | Piscina climatizada, churrasco e playground |
 | [Villa Itália Olímpia](/olimpia/villa-italia-olimpia/) | Lazer familiar completo | 4 estrelas, piscinas climatizadas e brinquedoteca |
-| [Tiffany Hotel](/olimpia/tiffany-hotel/) | Proximidade do parque | 400 m do Thermas |
-| [Villa Rebellato](/olimpia/villa-rebellato/) | Econômico | Diária a partir de R$ 244 |
+| [Água Viva Hotel](/olimpia/agua-viva-hotel/) | Proximidade do parque | 500 m do Thermas |
 
-Contra Villa Itália, tem proposta parecida de lazer familiar, mas estrutura menor. Contra Tiffany, fica mais longe do Thermas, mas oferece área externa com piscina climatizada e churrasco. Contra Villa Rebellato, é mais cara, porém mais confortável e com lazer mais completo.
+Contra Villa Itália, tem proposta parecida de lazer familiar, mas estrutura menor. Contra Água Viva, fica mais longe do Thermas, mas oferece área externa com piscina climatizada e churrasco.
 
 Veja também [hotéis em Olímpia](/olimpia/hoteis/), [resorts em Olímpia](/olimpia/resorts/) e [hotéis perto do Thermas](/olimpia/hoteis-perto-thermas-dos-laranjais/).
 

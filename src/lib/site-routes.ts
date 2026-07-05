@@ -173,7 +173,7 @@ export const SITE_ROUTES: SiteRoute[] = [
 		'/olimpia/tiffany-hotel/',
 		'Tiffany Hotel',
 		'hotel',
-		'published',
+		'planned',
 		['tiffany hotel olimpia', 'hotel tiffany olimpia'],
 		{ silo: 'olimpia', parent: '/olimpia/hoteis/' },
 	),
@@ -181,7 +181,7 @@ export const SITE_ROUTES: SiteRoute[] = [
 		'/olimpia/villa-rebellato/',
 		'Hotel Villa Rebellato',
 		'hotel',
-		'published',
+		'planned',
 		['villa rebellato olimpia', 'hotel villa rebellato'],
 		{ silo: 'olimpia', parent: '/olimpia/hoteis/' },
 	),
@@ -361,6 +361,11 @@ export function slugToPath(slug: string): string {
 export function getRouteByPath(path: string): SiteRoute | undefined {
 	const normalized = normalizePath(path);
 	return SITE_ROUTES.find((r) => normalizePath(r.path) === normalized);
+}
+
+export function isRoutePublished(path: string): boolean {
+	const route = getRouteByPath(path);
+	return !route || route.status === 'published';
 }
 
 export function getChildRoutes(parentPath: string): SiteRoute[] {

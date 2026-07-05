@@ -80,10 +80,9 @@ O hotel fica dentro da cidade, com localização privilegiada e fácil acesso ao
 | --- | --- | --- |
 | Villa Itália Olímpia | Lazer familiar completo | 4 estrelas, piscinas climatizadas e brinquedoteca |
 | [Água Viva Hotel](/olimpia/agua-viva-hotel/) | Proximidade do Thermas | 500 m do parque |
-| [Hotel Villa Rebellato](/olimpia/villa-rebellato/) | Econômico e simples | Diária a partir de R$ 244 |
 | [Parque das Águas](/olimpia/parque-das-aguas/) | Pousada com piscina | Nota 9,2, 3,5 km do Thermas |
 
-Contra Água Viva, perde em proximidade do Thermas, mas ganha em lazer interno. Contra Villa Rebellato, é menos econômico, mas muito mais completo em estrutura. Contra Parque das Águas, oferece mais lazer infantil e categorias de suíte mais amplas.
+Contra Água Viva, perde em proximidade do Thermas, mas ganha em lazer interno. Contra Parque das Águas, oferece mais lazer infantil e categorias de suíte mais amplas.
 
 Veja também [hotéis em Olímpia](/olimpia/hoteis/), [resorts em Olímpia](/olimpia/resorts/) e [hotéis perto do Thermas](/olimpia/hoteis-perto-thermas-dos-laranjais/).
 

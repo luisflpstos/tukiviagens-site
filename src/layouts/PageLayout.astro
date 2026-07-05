@@ -77,8 +77,6 @@ const childRoutes = getChildRoutes(path)
 		href: route.path,
 	}));
 
-const plannedChildRoutes = getChildRoutes(path).filter((route) => route.status === 'planned');
-
 const navPages = relatedPages.length > 0 ? relatedPages : childRoutes;
 
 const breadcrumbItems = [
@@ -200,28 +198,20 @@ const leadDestination =
 	</PageHero>
 
 	{
-		(navPages.length > 0 || plannedChildRoutes.length > 0) && (
+		navPages.length > 0 && (
 			<section class="border-b border-tuki-purple/8 bg-tuki-lavender/50 py-8">
 				<Container>
 					<h2 class="tuki-type-title text-tuki-ink">Neste destino</h2>
-					{navPages.length > 0 && (
-						<div class="mt-4 flex flex-wrap gap-3">
-							{navPages.map((page) => (
-								<a
-									href={normalizePath(page.href)}
-									class="tuki-type-small rounded-full bg-white px-4 py-2 font-medium text-tuki-purple shadow-sm transition hover:bg-tuki-purple/5"
-								>
-									{page.label}
-								</a>
-							))}
-						</div>
-					)}
-					{plannedChildRoutes.length > 0 && (
-						<p class="tuki-type-small mt-4 text-tuki-muted">
-							Em breve:{' '}
-							{plannedChildRoutes.map((route) => route.title.toLowerCase()).join(', ')}.
-						</p>
-					)}
+					<div class="mt-4 flex flex-wrap gap-3">
+						{navPages.map((page) => (
+							<a
+								href={normalizePath(page.href)}
+								class="tuki-type-small rounded-full bg-white px-4 py-2 font-medium text-tuki-purple shadow-sm transition hover:bg-tuki-purple/5"
+							>
+								{page.label}
+							</a>
+						))}
+					</div>
 				</Container>
 			</section>
 		)
