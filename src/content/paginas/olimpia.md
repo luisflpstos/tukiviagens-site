@@ -54,6 +54,7 @@ faq:
 seo:
   title: "Olímpia SP: o que fazer, por que visitar e principais atrações"
   description: "Descubra por que visitar Olímpia SP, o que fazer na cidade das águas termais, principais parques aquáticos, atrações para famílias e perguntas frequentes."
+  image: /images/destinos/olimpia/capa.webp
 ---
 
 ## Por que visitar Olímpia?

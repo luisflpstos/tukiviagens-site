@@ -36,6 +36,7 @@ faq:
 seo:
   title: "Hotéis no Rio Quente | 10 opções perto do Hot Park"
   description: "Os 10 hotéis de Rio Quente comparados: proximidade do Hot Park, custo-benefício e perfil de viagem. Cotação consultiva Tuki Viagens."
+  image: /images/destinos/rio-quente/capa.webp
 ---
 
 ## Hotéis em Rio Quente: o que considerar

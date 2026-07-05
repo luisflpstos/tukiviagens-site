@@ -36,6 +36,7 @@ faq:
 seo:
   title: "Resorts em Olímpia | 10 opções Hot Beach, Wyndham e Enjoy"
   description: "Os 10 resorts de Olímpia comparados: Thermas, Hot Beach, flats, família e perfil de viagem. Cotação consultiva Tuki Viagens."
+  image: /images/destinos/olimpia/capa.webp
 ---
 
 ## Resorts em Olímpia: visão geral

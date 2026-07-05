@@ -36,6 +36,7 @@ faq:
 seo:
   title: "Hotéis perto do Thermas dos Laranjais | Olímpia"
   description: "Hotéis e resorts perto do Thermas dos Laranjais: Mercure 0,1 km, Tiffany 400 m, Água Viva 500 m. Compare distância e perfil. Cotação Tuki."
+  image: /images/destinos/olimpia/capa.webp
 ---
 
 ## Por que se hospedar perto do Thermas dos Laranjais?

@@ -36,6 +36,7 @@ faq:
 seo:
   title: "Hotéis em Olímpia SP | 9 opções perto do Thermas"
   description: "Os 9 hotéis de Olímpia comparados: proximidade do Thermas, lazer, custo-benefício e pet friendly. Cotação consultiva Tuki Viagens."
+  image: /images/destinos/olimpia/capa.webp
 ---
 
 ## Hotéis em Olímpia: o que considerar

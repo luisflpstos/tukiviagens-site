@@ -34,6 +34,7 @@ faq:
 seo:
   title: "Nordeste | Resorts e hotéis com escolha Tuki"
   description: "Resorts e hotéis no Nordeste para família, praia e all inclusive. Cotação consultiva com hotéis selecionados pela Tuki Viagens."
+  image: /images/destinos/nordeste/capa.webp
 ---
 
 ## Por que viajar ao Nordeste?

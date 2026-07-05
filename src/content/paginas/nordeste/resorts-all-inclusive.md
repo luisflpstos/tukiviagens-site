@@ -36,6 +36,7 @@ faq:
 seo:
   title: "Resorts all inclusive no Nordeste | Maragogi, PE, BA e AL"
   description: "Resorts e hotéis all inclusive no Nordeste com escolha Tuki. Maragogi, Porto de Galinhas, Bahia e Maceió — cotação rápida, pagamento seguro e preço justo."
+  image: /images/destinos/nordeste/capa.webp
 ---
 
 ## O que buscar em um resort all inclusive no Nordeste?

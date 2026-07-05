@@ -68,16 +68,16 @@
 
 	.tuki-hero-ref {
 		background:
-			radial-gradient(circle at 18% 12%, color-mix(in srgb, var(--color-tuki-orange-dark) 35%, transparent), transparent 28%),
-			radial-gradient(circle at 74% 38%, color-mix(in srgb, var(--color-tuki-orange) 28%, transparent), transparent 35%),
-			linear-gradient(135deg, color-mix(in srgb, var(--color-tuki-purple-dark) 92%, transparent) 0%, color-mix(in srgb, var(--color-tuki-purple) 88%, transparent) 48%, color-mix(in srgb, var(--color-tuki-purple-dark) 94%, transparent) 100%);
+			linear-gradient(to top, color-mix(in srgb, var(--color-tuki-purple-dark) 58%, transparent) 0%, transparent 42%),
+			radial-gradient(circle at 18% 12%, color-mix(in srgb, var(--color-tuki-orange-dark) 18%, transparent), transparent 30%),
+			radial-gradient(circle at 74% 38%, color-mix(in srgb, var(--color-tuki-orange) 14%, transparent), transparent 36%),
+			linear-gradient(135deg, color-mix(in srgb, var(--color-tuki-purple-dark) 42%, transparent) 0%, color-mix(in srgb, var(--color-tuki-purple) 36%, transparent) 50%, color-mix(in srgb, var(--color-tuki-purple-dark) 48%, transparent) 100%);
 	}
 
 	.tuki-hero-photo-overlay {
 		position: absolute;
 		inset: 0;
-		background-color: color-mix(in srgb, var(--color-tuki-purple-dark) 0.15%, transparent);
-		mix-blend-mode: multiply;
+		pointer-events: none;
 	}
 
 	.tuki-gradient-purple {

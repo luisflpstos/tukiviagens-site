@@ -36,6 +36,7 @@ faq:
 seo:
   title: "Hotel perto do Hot Park | Hospedagem Rio Quente"
   description: "Hotéis perto do Hot Park: Refúgio a passos, Apartamentos 400 m, Prime e IMG 650 m. Compare distância e perfil. Cotação Tuki Viagens."
+  image: /images/destinos/rio-quente/capa.webp
 ---
 
 ## Por que se hospedar perto do Hot Park?

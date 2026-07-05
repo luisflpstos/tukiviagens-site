@@ -36,6 +36,7 @@ faq:
 seo:
   title: "Rio Quente e Hot Park | Hotéis e resorts"
   description: "Guia de Rio Quente: 10 hotéis e 10 resorts comparados por Hot Park, Parque das Fontes, família e custo-benefício. Cotação Tuki Viagens."
+  image: /images/destinos/rio-quente/capa.webp
 ---
 
 ## Por que visitar Rio Quente?

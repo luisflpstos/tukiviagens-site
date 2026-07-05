@@ -36,6 +36,7 @@ faq:
 seo:
   title: "Resorts no Rio Quente | 10 opções Rio Quente Resorts"
   description: "Os 10 resorts de Rio Quente comparados: Hot Park, Parque das Fontes, família e custo-benefício. Cotação consultiva Tuki Viagens."
+  image: /images/destinos/rio-quente/capa.webp
 ---
 
 ## Resorts em Rio Quente: visão geral
