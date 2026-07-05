@@ -6,6 +6,7 @@ import BenefitsList from '../components/sections/BenefitsList.astro';
 import ContentWithCarousel from '../components/sections/ContentWithCarousel.astro';
 import Faq from '../components/sections/Faq.astro';
 import LeadCaptureSection from '../components/sections/LeadCaptureSection.astro';
+import PageHero from '../components/sections/PageHero.astro';
 import { formatLocation } from '../lib/formatters';
 import { shouldShowGallery, type GalleryImage } from '../lib/gallery-images';
 
@@ -40,6 +41,7 @@ const {
 } = Astro.props;
 
 const showGallery = shouldShowGallery(galleryImages);
+const heroImage = galleryImages[0]?.src.startsWith('/images/') ? galleryImages[0].src : undefined;
 
 const jsonLd = {
 	'@context': 'https://schema.org',
@@ -55,9 +57,8 @@ const jsonLd = {
 };
 ---
 
-<BaseLayout title={title} description={description} path={path} jsonLd={jsonLd}>
-	<section class="tuki-gradient-purple section-padding text-white">
-		<Container>
+<BaseLayout title={title} description={description} path={path} image={heroImage} jsonLd={jsonLd}>
+	<PageHero image={heroImage}>
 			<p class="tuki-eyebrow-light">{categoria}</p>
 			<h1 class="tuki-type-display mt-2">{headline}</h1>
 			<p class="tuki-type-body tuki-type-inverse mt-2 text-white/85">{formatLocation(cidade, estado)}</p>
@@ -75,8 +76,7 @@ const jsonLd = {
 					WhatsApp
 				</Button>
 			</div>
-		</Container>
-	</section>
+	</PageHero>
 
 	<article class:list={[!showGallery && 'section-padding']}>
 		{

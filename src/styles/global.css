@@ -16,7 +16,7 @@
 	--color-tuki-lavender: #f4f1ff;
 	--font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
 	--font-display: "Nunito", "Inter", ui-sans-serif, system-ui, sans-serif;
-	--text-display: clamp(2rem, 5vw, 3.25rem);
+	--text-display: clamp(1.5rem, 5vw, 2.5rem);
 	--text-headline: clamp(1.875rem, 3vw, 2.25rem);
 	--text-title: 1.125rem;
 	--text-lead: clamp(1rem, 1.5vw + 0.5rem, 1.125rem);
@@ -73,7 +73,19 @@
 	}
 
 	.tuki-hero-photo-overlay {
-		@apply absolute inset-0 bg-tuki-purple-dark/55 mix-blend-multiply;
+		position: absolute;
+		inset: 0;
+		background-color: color-mix(in srgb, var(--color-tuki-purple-dark) 0.15%, transparent);
+		mix-blend-mode: multiply;
+	}
+
+	.tuki-gradient-purple {
+		background: linear-gradient(
+			135deg,
+			var(--color-tuki-purple-dark) 0%,
+			var(--color-tuki-purple) 60%,
+			var(--color-tuki-purple-dark) 100%
+		);
 	}
 
 	.tuki-mascot-ref {

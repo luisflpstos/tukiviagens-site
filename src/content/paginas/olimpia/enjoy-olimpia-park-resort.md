@@ -3,14 +3,14 @@ title: "Enjoy Olímpia Park Resort"
 pageType: "propriedade"
 silo: "olimpia"
 
-headline: "Enjoy Olímpia Park Resort: flats para famílias e grupos em Olímpia"
-description: "Enjoy Olímpia Park Resort em Olímpia: flats com cozinha para até 7 pessoas, a 0,5 km do Thermas dos Laranjais e ao lado do Villa Mall. Diária desde R$ 473."
+headline: "Enjoy Olímpia Park Resort: suítes para famílias colado no Thermas"
+description: "Enjoy Olímpia Park Resort em Olímpia: 912 suítes com cozinha americana para até 7 pessoas, colado no Thermas dos Laranjais e anexo ao Villa Mall. Cotação consultiva."
 
 highlights:
-  - Nota 8,2 em 1.755 avaliações
-  - Flats com sala, cozinha e até 7 pessoas
-  - 0,5 km do Thermas dos Laranjais
-  - Ao lado do Villa Mall
+  - 912 suítes com sala, cozinha americana e varanda
+  - Colado no Thermas dos Laranjais
+  - Suíte Família para até 7 pessoas
+  - Anexo ao Shopping Villa Mall
 
 keywords:
   - enjoy olimpia park resort
@@ -22,59 +22,67 @@ whatsapp: "551721901358"
 cta: "Cotar Enjoy Olímpia Park"
 
 faq:
-  - question: "Quanto custa a diária no Enjoy Olímpia Park Resort?"
-    answer: "A diária de referência começa em R$ 473, variando por tipo de flat, temporada e ocupação. Envie datas e hóspedes para cotação atualizada."
-  - question: "O Enjoy Olímpia Park tem cozinha nos flats?"
-    answer: "Sim. Flats com sala de estar, cozinha com micro-ondas e frigobar, suíte e opção de dois quartos para até 7 pessoas."
+  - question: "Quais apartamentos o Enjoy Olímpia Park Resort oferece?"
+    answer: "Há Suíte Luxo I (1 quarto, sala com sofá-cama, cozinha americana e varanda — até 5 pessoas) e Suíte Família (2 quartos, sala com sofá-cama, cozinha americana e varanda — até 7 pessoas). Todas com micro-ondas, frigobar, ar-condicionado, Smart TV e Wi-Fi."
   - question: "O Enjoy Olímpia Park fica perto do Thermas dos Laranjais?"
-    answer: "Sim. Cerca de 0,5 km do Thermas dos Laranjais, ao lado do Villa Mall."
-  - question: "Enjoy Olímpia Park é bom para grupos grandes?"
-    answer: "Sim. Flats com opção de dois quartos para até 7 pessoas, com sala e cozinha — uma das melhores opções para grupos em Olímpia."
+    answer: "Sim. O resort fica na Av. Aurora Forti Neves, na principal avenida de Olímpia, colado no Parque Aquático Thermas dos Laranjais, com traslado disponível para o parque."
+  - question: "O Enjoy Olímpia Park tem cozinha nas suítes?"
+    answer: "Sim. Todas as suítes têm cozinha tipo americana, micro-ondas e frigobar, além de sala, varanda e ar-condicionado em todos os ambientes."
+  - question: "Enjoy Olímpia Park é bom para famílias?"
+    answer: "Sim. A estrutura inclui piscinas de águas quentes e frias, brinquedoteca, playground, brinquedos aquáticos, espaço teen, recreação, spa com ofurô, sala de jogos, sala de cinema e 2 quadras."
   - question: "Enjoy Olímpia Park ou Solar das Águas: qual escolher?"
-    answer: "Enjoy Olímpia Park fica mais perto do Thermas e do Villa Mall. Solar das Águas é mais novo e amplo, mas a 2,1 km do parque."
+    answer: "Enjoy Olímpia Park fica colado no Thermas dos Laranjais e anexo ao Villa Mall. Enjoy Solar das Águas é mais amplo e moderno, porém mais afastado do Thermas."
 
 seo:
-  title: "Enjoy Olímpia Park Resort | Flats em Olímpia"
-  description: "Enjoy Olímpia Park Resort: flats com cozinha a 0,5 km do Thermas dos Laranjais. Ideal para grupos. Cotação Tuki Viagens."
+  title: "Enjoy Olímpia Park Resort | Suítes em Olímpia"
+  description: "Enjoy Olímpia Park Resort: suítes com cozinha colado no Thermas dos Laranjais. Ideal para famílias. Cotação Tuki Viagens."
 ---
 
 ## Sobre
 
-O **Enjoy Olímpia Park Resort** é resort de flats/apartamentos muito procurado, com forte apelo para famílias e grupos.
+O **Enjoy Olímpia Park Resort** reúne **912 suítes** espaçosas e modernas, com sala, 1 ou 2 quartos, 1 ou 2 banheiros, cozinha tipo americana e varanda. O resort fica na principal avenida de Olímpia e **colado no Parque Aquático Thermas dos Laranjais**, com programação de lazer para todas as idades.
 
 ## Vale para quem?
 
-- Famílias grandes e grupos que querem apartamento com sala e cozinha
-- Hóspedes que buscam proximidade do parque e do Villa Mall
-- Viajantes que valorizam flats com autonomia na estadia
+- Famílias que querem suíte com sala, cozinha e autonomia na estadia
+- Grupos de até 7 pessoas na Suíte Família
+- Hóspedes que priorizam localização ao lado do Thermas e do Villa Mall
+
+## Apartamentos
+
+| Categoria | Configuração | Capacidade |
+| --- | --- | --- |
+| Suíte Luxo I | 1 quarto (cama de casal + solteiro), sala com sofá bicama, cozinha americana e varanda | Até 5 pessoas |
+| Suíte Família | 1 quarto com cama de casal, 1 quarto com 2 solteiros + cama extra, sala com sofá-cama, cozinha americana e varanda | Até 7 pessoas |
+
+Todas as suítes incluem ar-condicionado, Smart TV, micro-ondas, frigobar e Wi-Fi. Há apartamentos adaptados para PNE.
 
 ## Estrutura e diferenciais
 
-- Flats com sala de estar, cozinha com micro-ondas e frigobar e suíte
-- Opção de dois quartos para até 7 pessoas
-- Espaço kids, recreação e sala teen
-- Spa com hidromassagem, solário e salão de jogos
-- Piscinas, academia, estacionamento com manobrista
-- Café da manhã, bar e restaurante
+- Piscinas de águas quentes e frias, brinquedos aquáticos e spa com ofurô
+- Restaurante principal, pizzaria forno a lenha, bar da piscina e lounge
+- Playground, brinquedoteca, espaço teen, sala de jogos e sala de cinema
+- 2 quadras, academia, equipe de recreação e traslado para o Thermas dos Laranjais
+- Estacionamento, copa baby, toalhas para piscina, lojas e recepção 24h
 
 ## Localização
 
-Cerca de **0,5 km do Thermas dos Laranjais**, ao lado do Villa Mall.
+**Av. Aurora Forti Neves, 1030** — Jardim Santa Efigênia, Olímpia (SP). O resort é **anexo ao Shopping Villa Mall** e fica **colado no Thermas dos Laranjais**.
 
 ## Dados de referência
 
-Nota **8,2** em **1.755 avaliações**. Diária de referência a partir de **R$ 473**.
+912 suítes em duas categorias principais (Luxo I e Família). Valores de diária variam por tipo de suíte, temporada e ocupação — envie datas para cotação atualizada.
 
 ## Comparativo com outras opções
 
 | Propriedade | Perfil | Diferencial |
 | --- | --- | --- |
-| Enjoy Olímpia Park Resort | Flats para grupos | Cozinha, Villa Mall, 0,5 km Thermas |
+| Enjoy Olímpia Park Resort | Suítes para famílias | Colado no Thermas, Villa Mall |
 | [Wyndham Olímpia Royal Hotels](/olimpia/wyndham-olimpia-royal-hotels/) | Grande complexo | 11 piscinas, acesso Thermas |
-| [Thermas de Olímpia Resorts by Mercure](/olimpia/thermas-olimpia-resorts-mercure/) | Acesso ao Thermas | Pet friendly, 0,1 km |
-| [Enjoy Solar das Águas](/olimpia/enjoy-solar-das-aguas/) | Resort novo e amplo | Flats modernos, 2,1 km Thermas |
+| [Thermas de Olímpia Resorts by Mercure](/olimpia/thermas-olimpia-resorts-mercure/) | Acesso ao Thermas | Pet friendly, portaria exclusiva |
+| [Enjoy Solar das Águas](/olimpia/enjoy-solar-das-aguas/) | Resort amplo | Flats modernos, mais afastado do Thermas |
 
-Contra Wyndham, é mais forte para grupo com cozinha. Contra Mercure, tem flats fortes para famílias grandes. Contra Solar das Águas, fica mais perto do Thermas e do Villa Mall.
+Contra Wyndham, é mais forte para família com cozinha na suíte. Contra Mercure, oferece suítes amplas com varanda e mall anexo. Contra Solar das Águas, fica colado no Thermas e no Villa Mall.
 
 Veja também [resorts em Olímpia](/olimpia/resorts/) e [hotéis perto do Thermas](/olimpia/hoteis-perto-thermas-dos-laranjais/).
 

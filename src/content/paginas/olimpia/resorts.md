@@ -50,8 +50,8 @@ Os resorts de Olímpia foram pensados para quem visita os **parques aquáticos**
 | [Wyndham Olímpia Royal Hotels](/olimpia/wyndham-olimpia-royal-hotels/) | 8,5 (1.662) | 0,4 km | Grande complexo, Thermas | R$ 499 |
 | [Celebration Resort Olímpia](/olimpia/celebration-resort-olimpia/) | 8,4 (979) | 0,4 km | Família, recreação Hot Beach | R$ 497 |
 | [Hot Beach Resort](/olimpia/hot-beach-resort/) | 8,4 (477) | 0,9 km | Experiência integrada Hot Beach | R$ 630 |
-| [Carpe Diem Eco Resort](/olimpia/carpe-diem-eco-resort-olimpia/) | 8,8 (133) | 7,3 km | Natureza e fazenda | R$ 952 |
-| [Enjoy Olímpia Park Resort](/olimpia/enjoy-olimpia-park-resort/) | 8,2 (1.755) | 0,5 km | Flats, grupos, Villa Mall | R$ 473 |
+| [Carpe Diem Eco Resort](/olimpia/carpe-diem-eco-resort-olimpia/) | — | 3 km do centro | Eco resort familiar | Consulte |
+| [Enjoy Olímpia Park Resort](/olimpia/enjoy-olimpia-park-resort/) | — | Colado no Thermas | Suítes, famílias, Villa Mall | Consulte |
 | [Mercure Olímpia](/olimpia/thermas-olimpia-resorts-mercure/) | 7,9 (3.892) | 0,1 km | Acesso Thermas, pet friendly | R$ 428 |
 | [Enjoy Solar das Águas](/olimpia/enjoy-solar-das-aguas/) | 7,8 | 2,1 km | Resort novo, flats amplos | R$ 579 |
 | [Hot Beach Suites](/olimpia/hot-beach-suites/) | 8,0 | Próximo Hot Beach | Apartamento + cozinha | R$ 831 |
@@ -65,7 +65,7 @@ Os resorts de Olímpia foram pensados para quem visita os **parques aquáticos**
 | Acesso ao Hot Beach | Hot Beach Resort, Celebration, Thermas Park | Ecossistema Hot Beach |
 | Grupos com cozinha | Enjoy Olímpia Park, Solar das Águas, Hot Beach Suites | Flats até 7 pessoas |
 | Premium familiar | Hot Beach Resort, Thermas Park, Wyndham | Nossa indicação principal |
-| Natureza e descanso | Carpe Diem Eco Resort | Fazenda, animais, 7,3 km Thermas |
+| Natureza e descanso | Carpe Diem Eco Resort | Fazendinha, piscina natural, 3 km do centro |
 
 ## Pacote premium familiar
 

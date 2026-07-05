@@ -1,0 +1,36 @@
+---
+import Container from '../common/Container.astro';
+
+interface Props {
+	image?: string;
+}
+
+const { image } = Astro.props;
+const heroImage = image?.startsWith('/images/') ? image : undefined;
+---
+
+<section
+	class:list={['relative overflow-hidden section-padding text-white', !heroImage && 'tuki-gradient-purple']}
+>
+	{
+		heroImage && (
+			<div class="absolute inset-0 -z-10 overflow-hidden" aria-hidden="true">
+				<img
+					src={heroImage}
+					alt=""
+					class="h-full w-full object-cover"
+					width={1600}
+					height={900}
+					loading="eager"
+					decoding="async"
+					fetchpriority="high"
+				/>
+				<div class="tuki-hero-photo-overlay" />
+				<div class="tuki-hero-ref absolute inset-0" />
+			</div>
+		)
+	}
+	<Container class="relative">
+		<slot />
+	</Container>
+</section>

@@ -6,6 +6,7 @@ import BenefitsList from '../components/sections/BenefitsList.astro';
 import ContentWithCarousel from '../components/sections/ContentWithCarousel.astro';
 import Faq from '../components/sections/Faq.astro';
 import LeadCaptureSection from '../components/sections/LeadCaptureSection.astro';
+import PageHero from '../components/sections/PageHero.astro';
 import { type GalleryImage } from '../lib/gallery-images';
 import { shouldShowPageCarousel } from '../lib/property-gallery';
 import { buildCanonical } from '../lib/seo';
@@ -149,8 +150,7 @@ const leadDestination = destinationHubRoute?.title ?? parentRoute?.title ?? titl
 ---
 
 <BaseLayout title={title} description={description} path={path} image={image} jsonLd={jsonLd}>
-	<section class="tuki-gradient-purple section-padding text-white">
-		<Container>
+	<PageHero image={image}>
 			<nav aria-label="Breadcrumb" class="tuki-type-small text-white/70">
 				<ol class="flex flex-wrap items-center gap-2">
 					{breadcrumbItems.map((item, index) => (
@@ -184,8 +184,7 @@ const leadDestination = destinationHubRoute?.title ?? parentRoute?.title ?? titl
 			>
 				{cta}
 			</Button>
-		</Container>
-	</section>
+	</PageHero>
 
 	{
 		(navPages.length > 0 || plannedChildRoutes.length > 0) && (
