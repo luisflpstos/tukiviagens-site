@@ -1,5 +1,11 @@
 import { TUKI_ICONS } from './icons';
 
+/** Rotas desativadas na UI e no build estático (conteúdo preservado). */
+export const INACTIVE_ROUTE_PATHS = new Set(['/pacotes-de-viagem-brasil/']);
+
+/** Slugs de destinos desativados nos cards da home e no rodapé. */
+export const INACTIVE_DESTINATION_SLUGS = new Set(['pacotes', 'rio-de-janeiro', 'gramado']);
+
 export const SITE = {
 	name: 'Tuki Viagens',
 	tagline: 'Hospedagens, hotéis, resorts e parques no Brasil — segurança, rapidez e preço justo.',
@@ -33,7 +39,7 @@ export const BRAND = {
 	},
 } as const;
 
-export const NAV_LINKS = [
+const NAV_LINKS_ALL = [
 	{ label: 'Olímpia', href: '/olimpia/' },
 	{ label: 'Rio Quente', href: '/rio-quente/' },
 	{ label: 'Nordeste', href: '/nordeste/' },
@@ -41,6 +47,8 @@ export const NAV_LINKS = [
 	{ label: 'Agência', href: '/agencia-de-viagens/' },
 	{ label: 'Contato', href: '/contato' },
 ] as const;
+
+export const NAV_LINKS = NAV_LINKS_ALL.filter((link) => !INACTIVE_ROUTE_PATHS.has(link.href));
 
 export const HOME_NAV_LINKS = [
 	{ label: 'Como funciona', href: '/#como-funciona' },
@@ -156,12 +164,16 @@ export const DESTINATIONS_EYEBROW = 'Viagem de ponta a ponta';
 
 export const PARTNERS_TITLE = 'Autoridades e empresas que confiam na Tuki';
 
-export const FOOTER_DESTINATIONS = [
+const FOOTER_DESTINATIONS_ALL = [
 	{ label: 'Olímpia', href: '/olimpia/' },
 	{ label: 'Rio Quente', href: '/rio-quente/' },
 	{ label: 'Nordeste', href: '/nordeste/' },
 	{ label: 'Pacotes Brasil', href: '/pacotes-de-viagem-brasil/' },
 ] as const;
+
+export const FOOTER_DESTINATIONS = FOOTER_DESTINATIONS_ALL.filter(
+	(link) => !INACTIVE_ROUTE_PATHS.has(link.href),
+);
 
 export const HERO_STATS = [
 	{ value: '+5 mil', label: 'viagens realizadas' },
@@ -281,7 +293,8 @@ export const PARTNERS = [
 	{ name: 'Rio Quente', href: '/rio-quente/' },
 ] as const;
 
-export const HOME_DESTINATIONS = [
+/** Todos os destinos da home — inclui slugs em `INACTIVE_DESTINATION_SLUGS`. */
+export const HOME_DESTINATIONS_ALL = [
 	{
 		name: 'Nordeste',
 		slug: 'nordeste',
@@ -325,3 +338,7 @@ export const HOME_DESTINATIONS = [
 		iconAlt: 'Ícone de Gramado e Serra Gaúcha',
 	},
 ] as const;
+
+export const HOME_DESTINATIONS = HOME_DESTINATIONS_ALL.filter(
+	(dest) => !INACTIVE_DESTINATION_SLUGS.has(dest.slug),
+);

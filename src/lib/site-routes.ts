@@ -334,7 +334,7 @@ export const SITE_ROUTES: SiteRoute[] = [
 	),
 
 	// Pacotes e institucional
-	route('/pacotes-de-viagem-brasil/', 'Pacotes de viagem no Brasil', 'hub', 'published', [
+	route('/pacotes-de-viagem-brasil/', 'Pacotes de viagem no Brasil', 'hub', 'planned', [
 		'pacotes de viagem brasil',
 		'pacotes de viagem nacionais',
 	], { silo: 'pacotes' }),

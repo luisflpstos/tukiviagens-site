@@ -64,6 +64,14 @@ Object.entries(TUKI_ICONS).map(([key, src]) => ({
 	src,
 	alt: MARQUEE_ICON_ALTS[key]
 }));
+//#endregion
+//#region src/lib/constants.ts
+var INACTIVE_ROUTE_PATHS = /* @__PURE__ */ new Set(["/pacotes-de-viagem-brasil/"]);
+var INACTIVE_DESTINATION_SLUGS = /* @__PURE__ */ new Set([
+	"pacotes",
+	"rio-de-janeiro",
+	"gramado"
+]);
 ({
 	name: "Tuki Viagens",
 	tagline: "Hospedagens, hotéis, resorts e parques no Brasil — segurança, rapidez e preço justo.",
@@ -76,10 +84,97 @@ Object.entries(TUKI_ICONS).map(([key, src]) => ({
 	cnpj: "58.614.051/0001-93",
 	cadastro: "CNPJ 58.614.051/0001-93"
 }).name, TUKI_ICONS.aviao;
+[
+	{
+		label: "Olímpia",
+		href: "/olimpia/"
+	},
+	{
+		label: "Rio Quente",
+		href: "/rio-quente/"
+	},
+	{
+		label: "Nordeste",
+		href: "/nordeste/"
+	},
+	{
+		label: "Pacotes",
+		href: "/pacotes-de-viagem-brasil/"
+	},
+	{
+		label: "Agência",
+		href: "/agencia-de-viagens/"
+	},
+	{
+		label: "Contato",
+		href: "/contato"
+	}
+].filter((link) => !INACTIVE_ROUTE_PATHS.has(link.href));
+[
+	{
+		label: "Olímpia",
+		href: "/olimpia/"
+	},
+	{
+		label: "Rio Quente",
+		href: "/rio-quente/"
+	},
+	{
+		label: "Nordeste",
+		href: "/nordeste/"
+	},
+	{
+		label: "Pacotes Brasil",
+		href: "/pacotes-de-viagem-brasil/"
+	}
+].filter((link) => !INACTIVE_ROUTE_PATHS.has(link.href));
 TUKI_ICONS.contePlano, TUKI_ICONS.recebaOpcoes, TUKI_ICONS.viajarSeguranca;
 TUKI_ICONS.seguranca, TUKI_ICONS.atendimento, TUKI_ICONS.hotel, TUKI_ICONS.mapa;
 TUKI_ICONS.seguranca, TUKI_ICONS.atendimento, TUKI_ICONS.calendario, TUKI_ICONS.pacote;
-TUKI_ICONS.nordeste, TUKI_ICONS.olimpia, TUKI_ICONS.rioQuente, TUKI_ICONS.pacotesBrasil, TUKI_ICONS.rioDeJaneiro, TUKI_ICONS.gramado;
+[
+	{
+		name: "Nordeste",
+		slug: "nordeste",
+		href: "/nordeste/",
+		icon: TUKI_ICONS.nordeste,
+		iconAlt: "Ícone do Nordeste"
+	},
+	{
+		name: "Olímpia",
+		slug: "olimpia",
+		href: "/olimpia/",
+		icon: TUKI_ICONS.olimpia,
+		iconAlt: "Ícone de Olímpia — parques e resorts"
+	},
+	{
+		name: "Rio Quente",
+		slug: "rio-quente",
+		href: "/rio-quente/",
+		icon: TUKI_ICONS.rioQuente,
+		iconAlt: "Ícone de Rio Quente"
+	},
+	{
+		name: "Pacotes Brasil",
+		slug: "pacotes",
+		href: "/pacotes-de-viagem-brasil/",
+		icon: TUKI_ICONS.pacotesBrasil,
+		iconAlt: "Ícone de pacotes pelo Brasil"
+	},
+	{
+		name: "Rio de Janeiro",
+		slug: "rio-de-janeiro",
+		href: "/pacotes-de-viagem-brasil/",
+		icon: TUKI_ICONS.rioDeJaneiro,
+		iconAlt: "Ícone do Rio de Janeiro"
+	},
+	{
+		name: "Gramado",
+		slug: "gramado",
+		href: "/pacotes-de-viagem-brasil/",
+		icon: TUKI_ICONS.gramado,
+		iconAlt: "Ícone de Gramado e Serra Gaúcha"
+	}
+].filter((dest) => !INACTIVE_DESTINATION_SLUGS.has(dest.slug));
 //#endregion
 //#region src/middleware.ts
 var STATIC_ASSET_PREFIXES = [
