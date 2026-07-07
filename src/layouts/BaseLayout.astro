@@ -6,6 +6,7 @@ import Footer from '../components/common/Footer.astro';
 import { BRAND } from '../lib/constants';
 import type { SeoProps } from '../lib/seo';
 import Analytics from '@vercel/analytics/astro'
+import Ga4 from '../components/common/Ga4.astro';
 
 interface Props extends SeoProps {
 	showHeader?: boolean;
@@ -44,6 +45,7 @@ const gtmId = import.meta.env.PUBLIC_GTM_ID;
 			rel="stylesheet"
 		/>
 		<Seo title={title} description={description} path={path} image={image} noindex={noindex} type={type} jsonLd={jsonLd} />
+		<Ga4 />
 		{
 			gtmId && (
 				<script is:inline define:vars={{ gtmId }}>

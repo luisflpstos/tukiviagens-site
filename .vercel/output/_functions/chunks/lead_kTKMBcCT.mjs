@@ -5,7 +5,7 @@ function getLeadWebhookUrl() {
 	return "https://flow-webhook-prd.kortex.app.br/webhook/olimtour/campanhas";
 }
 function getLeadWebhookSecret() {
-	return "d11bddcb337963161e5d40ede1742b141d70950fdc0699903e2d91a124d958f1";
+	return "d11bddcb337963161e5d40ede1742";
 }
 //#endregion
 //#region src/lib/lead-geo.ts
