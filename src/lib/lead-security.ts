@@ -6,7 +6,7 @@ export function isAllowedOrigin(request: Request): boolean {
 
 	if (LOCAL_ORIGINS.has(origin)) return true;
 
-	const siteUrl = import.meta.env.PUBLIC_SITE_URL;
+	const siteUrl = process.env.PUBLIC_SITE_URL ?? import.meta.env.PUBLIC_SITE_URL;
 	if (!siteUrl) return true;
 
 	try {

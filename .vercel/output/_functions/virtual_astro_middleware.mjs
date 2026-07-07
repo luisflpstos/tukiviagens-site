@@ -1,6 +1,4 @@
 import { A as sequence, V as defineMiddleware } from "./chunks/render_C4aeKM4T.mjs";
-import { existsSync } from "node:fs";
-import { join } from "node:path";
 //#region src/lib/icons.ts
 /**
 * Ícones 3D da marca Tuki Viagens (`public/images/icons/`).
@@ -75,7 +73,7 @@ var INACTIVE_DESTINATION_SLUGS = /* @__PURE__ */ new Set([
 ({
 	name: "Tuki Viagens",
 	tagline: "Hospedagens, hotéis, resorts e parques no Brasil — segurança, rapidez e preço justo.",
-	url: "https://www.tukiviagens.com.br",
+	url: "http://localhost:4321",
 	location: "Olímpia, São Paulo",
 	email: "contato@tukiviagens.com.br",
 	phone: "551721901358",
@@ -176,24 +174,8 @@ TUKI_ICONS.seguranca, TUKI_ICONS.atendimento, TUKI_ICONS.calendario, TUKI_ICONS.
 	}
 ].filter((dest) => !INACTIVE_DESTINATION_SLUGS.has(dest.slug));
 //#endregion
-//#region src/middleware.ts
-var STATIC_ASSET_PREFIXES = [
-	"/images/",
-	"/icons/",
-	"/logotipo/",
-	"/Logotipo/"
-];
-var STATIC_ASSET_EXTENSIONS = /\.(avif|gif|ico|jpe?g|png|svg|webp)$/i;
-function isStaticAssetPath(pathname) {
-	return STATIC_ASSET_PREFIXES.some((prefix) => pathname.startsWith(prefix)) || STATIC_ASSET_EXTENSIONS.test(pathname);
-}
-//#endregion
 //#region \0virtual:astro:middleware
-var onRequest = sequence(defineMiddleware(async (context, next) => {
-	const { pathname } = context.url;
-	if (isStaticAssetPath(pathname)) {
-		if (!existsSync(join(process.cwd(), "public", pathname))) return new Response(null, { status: 404 });
-	}
+var onRequest = sequence(defineMiddleware(async (_context, next) => {
 	return await next();
 }));
 //#endregion

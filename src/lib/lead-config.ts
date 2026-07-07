@@ -10,10 +10,10 @@ export const MAX_CHILDREN = 4;
  * Configure `LEAD_WEBHOOK_URL` no painel da Vercel ou em `.env`.
  */
 export function getLeadWebhookUrl(): string | undefined {
-	return import.meta.env.LEAD_WEBHOOK_URL;
+	return process.env.LEAD_WEBHOOK_URL ?? import.meta.env.LEAD_WEBHOOK_URL;
 }
 
 /** Segredo opcional enviado ao webhook como Bearer token. */
 export function getLeadWebhookSecret(): string | undefined {
-	return import.meta.env.LEAD_WEBHOOK_SECRET;
+	return process.env.LEAD_WEBHOOK_SECRET ?? import.meta.env.LEAD_WEBHOOK_SECRET;
 }
