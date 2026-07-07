@@ -163,17 +163,17 @@ Se `images` estiver vazio, o site descobre os arquivos na pasta automaticamente.
 ## Deploy (Vercel)
 
 1. Importe o repositório [luisflpstos/tukiviagens-site](https://github.com/luisflpstos/tukiviagens-site) na [Vercel](https://vercel.com).
-2. O `vercel.json` já define build e output. No painel da Vercel, confirme:
+2. No painel da Vercel, confirme:
    - **Framework Preset:** Astro
    - **Build Command:** `pnpm build`
-   - **Output Directory:** `dist`
+   - **Output Directory:** deixe vazio (o adapter `@astrojs/vercel` gera `.vercel/output` automaticamente)
    - **Install Command:** `pnpm install`
    - **Node.js:** 22.x
-   - **Start Command:** deixe vazio (site estático, sem `pnpm preview`)
-3. Configure as variáveis de ambiente (`PUBLIC_SITE_URL` é obrigatória em produção).
+   - **Start Command:** deixe vazio
+3. Configure as variáveis de ambiente (`PUBLIC_SITE_URL`, `LEAD_WEBHOOK_URL` e `LEAD_WEBHOOK_SECRET` são obrigatórias em produção).
 4. Cada push em `main` dispara deploy automático.
 
-O site é gerado estaticamente em `dist/`.
+O site estático fica em `dist/client/`; a rota `/api/lead/` roda como função serverless via adapter Vercel.
 
 ### Domínio na Cloudflare
 

@@ -1,9 +1,5 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "framework": "astro",
-  "buildCommand": "pnpm build",
-  "installCommand": "pnpm install",
-  "outputDirectory": "dist",
   "env": {
     "PUBLIC_SITE_URL": "https://www.tukiviagens.com.br"
   },
