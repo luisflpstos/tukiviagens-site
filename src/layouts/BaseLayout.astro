@@ -48,6 +48,13 @@ const gtmId = import.meta.env.PUBLIC_GTM_ID;
 		<Seo title={title} description={description} path={path} image={image} noindex={noindex} type={type} jsonLd={jsonLd} />
 		<Ga4 />
 		<MetaPixel />
+		<script
+			is:inline
+			src="https://bff.kortex.app.br/public/lead-tracker.js"
+			data-project-key="ed4a306b-5aa4-4369-a2dc-3dbda29d9c73"
+			data-api-base="https://bff.kortex.app.br"
+			defer
+		></script>
 		{
 			gtmId && (
 				<script is:inline define:vars={{ gtmId }}>
