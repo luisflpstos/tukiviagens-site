@@ -7,12 +7,14 @@ import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
 import { rehypeComparisonTables } from './src/lib/rehype-comparison-tables.ts';
 import { getRouteByPath } from './src/lib/site-routes.ts';
+import { resolveSiteUrl } from './src/lib/site-url.ts';
 
 const blockIndexing = process.env.PUBLIC_BLOCK_INDEXING === 'true';
+const siteUrl = resolveSiteUrl();
 
 // https://astro.build/config
 export default defineConfig({
-  site: process.env.PUBLIC_SITE_URL ?? 'http://localhost:4321',
+  site: siteUrl,
   trailingSlash: 'always',
   output: 'static',
   adapter: vercel(),
@@ -24,6 +26,9 @@ export default defineConfig({
   },
 
   vite: {
+    define: {
+      'import.meta.env.PUBLIC_SITE_URL': JSON.stringify(siteUrl),
+    },
     plugins: [tailwindcss()],
   },
 

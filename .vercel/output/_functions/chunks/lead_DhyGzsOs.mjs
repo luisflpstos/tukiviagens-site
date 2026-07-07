@@ -33,7 +33,7 @@ function isAllowedOrigin(request) {
 	const origin = request.headers.get("origin");
 	if (!origin) return true;
 	if (LOCAL_ORIGINS.has(origin)) return true;
-	const siteUrl = "http://localhost:4321";
+	const siteUrl = "https://www.tukiviagens.com.br";
 	try {
 		return new URL(origin).origin === new URL(siteUrl).origin;
 	} catch {

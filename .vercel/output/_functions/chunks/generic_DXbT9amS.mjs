@@ -235,7 +235,7 @@ async function peekRemoteFormatForStaticEmit(options, imageConfig, service) {
 Function.prototype.toString.call(Object);
 //#endregion
 //#region node_modules/.pnpm/astro@7.0.4_@astrojs+markdown-remark@7.2.1_@emnapi+core@1.11.1_@emnapi+runtime@1.11.1_@_1f77dd621d531eaaf4bff245e705f30b/node_modules/astro/components/Image.astro
-createAstro("http://localhost:4321");
+createAstro("https://www.tukiviagens.com.br");
 var $$Image = createComponent(async ($$result, $$props, $$slots) => {
 	const Astro2 = $$result.createAstro($$props, $$slots);
 	Astro2.self = $$Image;
@@ -709,7 +709,7 @@ function lookup(extn) {
 }
 //#endregion
 //#region node_modules/.pnpm/astro@7.0.4_@astrojs+markdown-remark@7.2.1_@emnapi+core@1.11.1_@emnapi+runtime@1.11.1_@_1f77dd621d531eaaf4bff245e705f30b/node_modules/astro/components/Picture.astro
-createAstro("http://localhost:4321");
+createAstro("https://www.tukiviagens.com.br");
 var $$Picture = createComponent(async ($$result, $$props, $$slots) => {
 	const Astro2 = $$result.createAstro($$props, $$slots);
 	Astro2.self = $$Picture;
@@ -792,7 +792,7 @@ function checkWeight(input, target) {
 }
 //#endregion
 //#region node_modules/.pnpm/astro@7.0.4_@astrojs+markdown-remark@7.2.1_@emnapi+core@1.11.1_@emnapi+runtime@1.11.1_@_1f77dd621d531eaaf4bff245e705f30b/node_modules/astro/components/Font.astro
-createAstro("http://localhost:4321");
+createAstro("https://www.tukiviagens.com.br");
 var $$Font = createComponent(($$result, $$props, $$slots) => {
 	const Astro = $$result.createAstro($$props, $$slots);
 	Astro.self = $$Font;

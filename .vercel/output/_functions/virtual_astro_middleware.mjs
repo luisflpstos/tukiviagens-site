@@ -75,7 +75,7 @@ var INACTIVE_DESTINATION_SLUGS = /* @__PURE__ */ new Set([
 ({
 	name: "Tuki Viagens",
 	tagline: "Hospedagens, hotéis, resorts e parques no Brasil — segurança, rapidez e preço justo.",
-	url: "http://localhost:4321",
+	url: "https://www.tukiviagens.com.br",
 	location: "Olímpia, São Paulo",
 	email: "contato@tukiviagens.com.br",
 	phone: "551721901358",
