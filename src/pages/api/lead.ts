@@ -8,6 +8,7 @@ import {
 	leadSubmissionSchema,
 } from '../../lib/lead-schema';
 import { buildLeadSubmitPayload } from '../../lib/tracking-payload';
+import { extractClientIp, sendMetaEvent } from '../../lib/meta-capi';
 
 export const prerender = false;
 
@@ -98,6 +99,36 @@ export const POST: APIRoute = async ({ request }) => {
 		console.error('[lead] Falha ao encaminhar lead:', error);
 		return jsonResponse({ ok: false, error: 'Não foi possível enviar agora.' }, 502);
 	}
+
+	// Meta CAPI: evento Lead servidor→servidor, deduplicado com o Pixel via event_id.
+	// Nunca lança — falhas não impactam a resposta ao usuário.
+	await sendMetaEvent({
+		eventName: 'Lead',
+		eventId: envelope.data.meta?.event_id ?? crypto.randomUUID(),
+		eventTime: Math.floor(submittedAt.getTime() / 1000),
+		eventSourceUrl: envelope.data.context?.page_url ?? envelope.data.attribution?.current_url,
+		userData: {
+			email: fields.data.email,
+			phone: fields.data.telefone,
+			fullName: fields.data.nome,
+			city: geo.cidade ?? undefined,
+			state: geo.regiao ?? undefined,
+			country: geo.pais ?? undefined,
+			clientIpAddress: extractClientIp(request),
+			clientUserAgent: request.headers.get('user-agent') ?? undefined,
+			fbp: envelope.data.meta?.fbp,
+			fbc: envelope.data.meta?.fbc,
+			fbclid: envelope.data.attribution?.fbclid,
+		},
+		customData: {
+			...(envelope.data.context?.hotel || envelope.data.context?.resort
+				? { content_name: envelope.data.context.hotel || envelope.data.context.resort }
+				: {}),
+			...(envelope.data.context?.destination
+				? { content_category: envelope.data.context.destination }
+				: {}),
+		},
+	});
 
 	return jsonResponse({ ok: true });
 };

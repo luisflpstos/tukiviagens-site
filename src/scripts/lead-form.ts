@@ -4,6 +4,7 @@ import { saveLeadHandoff } from '../lib/lead-handoff';
 import { bindPhoneMask } from './masks';
 import { validateLeadForm } from './validators';
 import { trackFormError, trackFormStart, trackFormSubmit } from './tracking';
+import { buildMetaBrowserContext, trackMetaPixelEvent } from './meta-pixel';
 
 export interface LeadFormOptions {
 	formId: string;
@@ -69,6 +70,7 @@ export function initLeadForm(options: LeadFormOptions): void {
 		}
 
 		const attribution = getStoredAttribution();
+		const metaContext = buildMetaBrowserContext();
 		const submitBtn = form.querySelector<HTMLButtonElement>('button[type="submit"]');
 		if (submitBtn) {
 			submitBtn.disabled = true;
@@ -88,6 +90,7 @@ export function initLeadForm(options: LeadFormOptions): void {
 					criancas: Number(values.criancas),
 					_hp: honeypot,
 					attribution,
+					meta: metaContext,
 					context: {
 						hotel: options.hotel,
 						resort: options.resort,
@@ -128,6 +131,11 @@ export function initLeadForm(options: LeadFormOptions): void {
 				landing_page: attribution.landing_page,
 				utm_source: attribution.utm_source,
 				utm_campaign: attribution.utm_campaign,
+			});
+
+			// Meta Pixel: mesmo event_id enviado ao servidor (CAPI) para deduplicação.
+			trackMetaPixelEvent('Lead', metaContext.event_id, {
+				content_name: options.hotel || options.resort || undefined,
 			});
 
 			window.location.assign(THANKS_PAGE_PATH);

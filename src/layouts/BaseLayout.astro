@@ -7,6 +7,7 @@ import { BRAND } from '../lib/constants';
 import type { SeoProps } from '../lib/seo';
 import Analytics from '@vercel/analytics/astro'
 import Ga4 from '../components/common/Ga4.astro';
+import MetaPixel from '../components/common/MetaPixel.astro';
 
 interface Props extends SeoProps {
 	showHeader?: boolean;
@@ -46,6 +47,7 @@ const gtmId = import.meta.env.PUBLIC_GTM_ID;
 		/>
 		<Seo title={title} description={description} path={path} image={image} noindex={noindex} type={type} jsonLd={jsonLd} />
 		<Ga4 />
+		<MetaPixel />
 		{
 			gtmId && (
 				<script is:inline define:vars={{ gtmId }}>

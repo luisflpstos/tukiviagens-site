@@ -6,6 +6,9 @@ import {
 	type WhatsAppClickPayload,
 } from '../lib/whatsapp';
 import { buildWhatsAppUrl } from '../lib/seo';
+import { buildMetaBrowserContext, trackMetaPixelEvent } from './meta-pixel';
+
+const META_EVENT_API_PATH = '/api/meta-event/';
 
 function getWebhookUrl(): string | undefined {
 	return import.meta.env.PUBLIC_WHATSAPP_WEBHOOK_URL || import.meta.env.PUBLIC_LEAD_WEBHOOK_URL;
@@ -23,6 +26,38 @@ export function sendWhatsAppClickPayload(payload: WhatsAppClickPayload): void {
 	}
 
 	fetch(webhookUrl, {
+		method: 'POST',
+		headers: { 'Content-Type': 'application/json' },
+		body,
+		keepalive: true,
+	}).catch(() => {});
+}
+
+/**
+ * Dispara o evento Contact na Meta: Pixel no browser + CAPI via endpoint próprio,
+ * ambos com o mesmo event_id para deduplicação.
+ */
+function sendMetaContactEvent(product: string, fbclid?: string): void {
+	const metaContext = buildMetaBrowserContext();
+
+	trackMetaPixelEvent('Contact', metaContext.event_id, { content_name: product });
+
+	const body = JSON.stringify({
+		event_name: 'Contact',
+		event_id: metaContext.event_id,
+		event_source_url: window.location.href,
+		fbp: metaContext.fbp,
+		fbc: metaContext.fbc,
+		fbclid,
+		content_name: product,
+	});
+
+	if (navigator.sendBeacon) {
+		navigator.sendBeacon(META_EVENT_API_PATH, new Blob([body], { type: 'application/json' }));
+		return;
+	}
+
+	fetch(META_EVENT_API_PATH, {
 		method: 'POST',
 		headers: { 'Content-Type': 'application/json' },
 		body,
@@ -62,6 +97,7 @@ function handleWhatsAppClick(event: Event): void {
 
 	sendWhatsAppClickPayload(payload);
 	trackWhatsAppClick(payload);
+	sendMetaContactEvent(product, attribution.fbclid);
 }
 
 export function initWhatsAppLinks(): void {

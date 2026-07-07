@@ -36,6 +36,9 @@ Copie `.env.example` para `.env` e ajuste os valores:
 | `PUBLIC_GOOGLE_ADS_ID` | ID da conta Google Ads (`AW-…`) para tag de conversão |
 | `PUBLIC_GOOGLE_ADS_LEAD_LABEL` | Rótulo da conversão de formulário (pareado com `PUBLIC_GOOGLE_ADS_ID`) |
 | `PUBLIC_GOOGLE_ADS_WHATSAPP_LABEL` | Rótulo da conversão de clique no WhatsApp |
+| `PUBLIC_META_PIXEL_ID` | ID do Pixel / conjunto de dados da Meta (Gerenciador de Eventos) |
+| `META_CAPI_TOKEN` | Token da API de Conversões e Dataset Quality API (somente servidor) |
+| `META_TEST_EVENT_CODE` | Opcional: código de “Testar eventos” do Gerenciador de Eventos |
 | `PUBLIC_BLOCK_INDEXING` | `true` bloqueia indexação (meta noindex, header X-Robots-Tag, sem sitemap). O `public/robots.txt` também deve estar com `Disallow: /` enquanto o bloqueio estiver ativo. |
 
 ### Conversões (GA4 + Google Ads)
@@ -55,6 +58,25 @@ Eventos disparados automaticamente pelo site:
 PUBLIC_GOOGLE_ADS_ID=AW-123456789
 PUBLIC_GOOGLE_ADS_LEAD_LABEL=AbCdEfGhIj
 PUBLIC_GOOGLE_ADS_WHATSAPP_LABEL=KlMnOpQrSt
+```
+
+### Meta (Pixel + API de Conversões)
+
+Integração direta com deduplicação browser/servidor via `event_id` compartilhado:
+
+| Ação | Pixel (browser) | CAPI (servidor) |
+|---|---|---|
+| Envio do formulário | `Lead` | `Lead` em `POST /api/lead/` |
+| Clique no WhatsApp | `Contact` | `Contact` em `POST /api/meta-event/` |
+
+Configure `PUBLIC_META_PIXEL_ID` e `META_CAPI_TOKEN` no `.env` e na Vercel. Para validar antes de ir a produção, defina `META_TEST_EVENT_CODE` com o código exibido em *Gerenciador de Eventos → Testar eventos*.
+
+Monitorar qualidade da integração (EMQ, match keys, diagnósticos):
+
+```bash
+pnpm meta:quality
+# ou com dataset específico:
+pnpm meta:quality -- 1202037289650493
 ```
 
 ## Estrutura do projeto

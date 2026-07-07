@@ -44,6 +44,15 @@ export const leadAttributionSchema = z
 const pageUrlString = z.string().max(2048);
 const pageMetaString = z.string().max(512);
 
+/** Contexto do Meta Pixel para deduplicação browser/servidor (CAPI). */
+export const leadMetaContextSchema = z
+	.object({
+		event_id: z.string().max(LEAD_FIELD_MAX_LENGTH).optional(),
+		fbp: z.string().max(LEAD_FIELD_MAX_LENGTH).optional(),
+		fbc: z.string().max(512).optional(),
+	})
+	.strict();
+
 export const leadContextSchema = z
 	.object({
 		hotel: z.string().max(LEAD_FIELD_MAX_LENGTH).optional(),
@@ -142,12 +151,14 @@ export const leadSubmissionSchema = z
 		_hp: z.string().max(LEAD_FIELD_MAX_LENGTH).optional(),
 		attribution: leadAttributionSchema.optional(),
 		context: leadContextSchema.optional(),
+		meta: leadMetaContextSchema.optional(),
 	})
 	.strict();
 
 export type LeadFormFields = z.infer<typeof leadFormFieldsSchema>;
 export type LeadAttribution = z.infer<typeof leadAttributionSchema>;
 export type LeadContext = z.infer<typeof leadContextSchema>;
+export type LeadMetaContext = z.infer<typeof leadMetaContextSchema>;
 
 export function firstZodError(error: z.ZodError): string {
 	return error.issues[0]?.message ?? 'Verifique os campos do formulário.';
