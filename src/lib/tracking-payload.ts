@@ -57,30 +57,36 @@ export function buildTrackingFields(attribution: LeadAttribution = {}): Tracking
 	};
 }
 
+function formatPhoneE164Br(phone: string): string {
+	const digits = phone.replace(/\D/g, '');
+	if (digits.startsWith('55')) return digits;
+	return `55${digits}`;
+}
+
 export interface LeadSubmitPayload extends TrackingFields {
 	event: 'lead_submit';
 	h1: string;
 	page_url: string;
 	page_title: string;
 	referrer: string;
-	horario_local: string;
+	local_time: string;
 	timestamp_iso: string;
 	user_agent: string;
-	nome: string;
-	telefone: string;
+	name: string;
+	phone: string;
 	email: string;
-	data_entrada: string;
-	data_saida: string;
-	adultos: number;
-	criancas: number;
+	check_in_date: string;
+	check_out_date: string;
+	adults: number;
+	children: number;
 	product?: string;
 	campaign?: string;
 	form_id?: string;
 	destination?: string;
-	cidade?: string;
-	regiao?: string;
-	pais?: string;
-	cep?: string;
+	city?: string;
+	state?: string;
+	country?: string;
+	postal_code?: string;
 }
 
 export interface BuildLeadSubmitPayloadInput {
@@ -117,23 +123,23 @@ export function buildLeadSubmitPayload({
 		page_url: empty(context.page_url) || empty(attribution.current_url),
 		page_title: empty(context.page_title),
 		referrer: empty(referrer) || empty(attribution.referrer),
-		horario_local: formatLocalTimestamp(submittedAt),
+		local_time: formatLocalTimestamp(submittedAt),
 		timestamp_iso: submittedAt.toISOString(),
 		user_agent: empty(userAgent),
-		nome: fields.nome,
-		telefone: fields.telefone,
+		name: fields.nome,
+		phone: formatPhoneE164Br(fields.telefone),
 		email: fields.email,
-		data_entrada: fields.data_entrada,
-		data_saida: fields.data_saida,
-		adultos: fields.adultos,
-		criancas: fields.criancas,
+		check_in_date: fields.data_entrada,
+		check_out_date: fields.data_saida,
+		adults: fields.adultos,
+		children: fields.criancas,
 		...(product ? { product } : {}),
 		...(context.campaign ? { campaign: context.campaign } : {}),
 		...(context.form_id ? { form_id: context.form_id } : {}),
 		...(destination ? { destination } : {}),
-		...(geo?.cidade ? { cidade: geo.cidade } : {}),
-		...(geo?.regiao ? { regiao: geo.regiao } : {}),
-		...(geo?.pais ? { pais: geo.pais } : {}),
-		...(geo?.cep ? { cep: geo.cep } : {}),
+		...(geo?.cidade ? { city: geo.cidade } : {}),
+		...(geo?.regiao ? { state: geo.regiao } : {}),
+		...(geo?.pais ? { country: geo.pais } : {}),
+		...(geo?.cep ? { postal_code: geo.cep } : {}),
 	};
 }
