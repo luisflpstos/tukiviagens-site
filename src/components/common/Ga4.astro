@@ -1,18 +1,23 @@
 ---
 const ga4Id = import.meta.env.PUBLIC_GA4_ID;
+const googleAdsId = import.meta.env.PUBLIC_GOOGLE_ADS_ID;
 ---
 
 {
-	ga4Id && (
+	(ga4Id || googleAdsId) && (
 		<>
-			<script async src={`https://www.googletagmanager.com/gtag/js?id=${ga4Id}`} />
-			<script is:inline define:vars={{ ga4Id }}>
+			<script
+				async
+				src={`https://www.googletagmanager.com/gtag/js?id=${ga4Id || googleAdsId}`}
+			/>
+			<script is:inline define:vars={{ ga4Id, googleAdsId }}>
 				window.dataLayer = window.dataLayer || [];
 				function gtag() {
 					dataLayer.push(arguments);
 				}
 				gtag('js', new Date());
-				gtag('config', ga4Id);
+				if (ga4Id) gtag('config', ga4Id);
+				if (googleAdsId) gtag('config', googleAdsId);
 			</script>
 		</>
 	)

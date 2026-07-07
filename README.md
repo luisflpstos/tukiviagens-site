@@ -33,7 +33,29 @@ Copie `.env.example` para `.env` e ajuste os valores:
 | `PUBLIC_WHATSAPP_WEBHOOK_URL` | Webhook para cliques no WhatsApp (fallback: `PUBLIC_LEAD_WEBHOOK_URL`) |
 | `PUBLIC_GTM_ID` | ID do Google Tag Manager (opcional) |
 | `PUBLIC_GA4_ID` | ID de medição do Google Analytics 4 (opcional) |
+| `PUBLIC_GOOGLE_ADS_ID` | ID da conta Google Ads (`AW-…`) para tag de conversão |
+| `PUBLIC_GOOGLE_ADS_LEAD_LABEL` | Rótulo da conversão de formulário (pareado com `PUBLIC_GOOGLE_ADS_ID`) |
+| `PUBLIC_GOOGLE_ADS_WHATSAPP_LABEL` | Rótulo da conversão de clique no WhatsApp |
 | `PUBLIC_BLOCK_INDEXING` | `true` bloqueia indexação (meta noindex, header X-Robots-Tag, sem sitemap). O `public/robots.txt` também deve estar com `Disallow: /` enquanto o bloqueio estiver ativo. |
+
+### Conversões (GA4 + Google Ads)
+
+Eventos disparados automaticamente pelo site:
+
+| Ação | Evento GA4 | Google Ads |
+|---|---|---|
+| Envio do formulário (página `/obrigado/`) | `generate_lead` | conversão com `PUBLIC_GOOGLE_ADS_LEAD_LABEL` |
+| Clique em botão WhatsApp | `whatsapp_click` | conversão com `PUBLIC_GOOGLE_ADS_WHATSAPP_LABEL` |
+
+**GA4:** em *Admin → Eventos*, marque `generate_lead` e `whatsapp_click` como conversões (ou importe `generate_lead` no Google Ads via vínculo GA4).
+
+**Google Ads:** crie duas ações de conversão (*Site* → tag gtag), copie o ID `AW-…` e os rótulos para `.env` / Vercel. Exemplo:
+
+```env
+PUBLIC_GOOGLE_ADS_ID=AW-123456789
+PUBLIC_GOOGLE_ADS_LEAD_LABEL=AbCdEfGhIj
+PUBLIC_GOOGLE_ADS_WHATSAPP_LABEL=KlMnOpQrSt
+```
 
 ## Estrutura do projeto
 

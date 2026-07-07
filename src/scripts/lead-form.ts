@@ -3,7 +3,7 @@ import { resolveLeadDestination } from '../lib/lead-destination';
 import { saveLeadHandoff } from '../lib/lead-handoff';
 import { bindPhoneMask } from './masks';
 import { validateLeadForm } from './validators';
-import { trackFormError, trackFormStart, trackFormSuccess } from './tracking';
+import { trackFormError, trackFormStart, trackFormSubmit } from './tracking';
 
 export interface LeadFormOptions {
 	formId: string;
@@ -124,7 +124,7 @@ export function initLeadForm(options: LeadFormOptions): void {
 				criancas: Number(values.criancas),
 			});
 
-			trackFormSuccess(options.formId, {
+			trackFormSubmit(options.formId, {
 				landing_page: attribution.landing_page,
 				utm_source: attribution.utm_source,
 				utm_campaign: attribution.utm_campaign,
