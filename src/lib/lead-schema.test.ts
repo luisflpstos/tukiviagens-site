@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { MIN_STAY_DAYS } from './date-rules';
-import { leadFormFieldsSchema } from './lead-schema';
+import { leadFormFieldsSchema, leadSubmissionSchema } from './lead-schema';
 
 function futureDate(daysFromNow: number): string {
 	const date = new Date();
@@ -83,5 +83,35 @@ describe('leadFormFieldsSchema', () => {
 			nome: 'a'.repeat(121),
 		});
 		expect(result.success).toBe(false);
+	});
+});
+
+describe('leadSubmissionSchema', () => {
+	const basePayload = {
+		nome: 'Maria Silva',
+		telefone: '(11) 98765-4321',
+		email: 'maria@email.com',
+		data_entrada: '2026-08-01',
+		data_saida: '2026-08-05',
+		adultos: 2,
+		criancas: 0,
+	};
+
+	it('aceita attribution com URL longa e click IDs', () => {
+		const longUrl =
+			'https://www.tukiviagens.com.br/olimpia/hot-beach-resort/?utm_source=google&utm_medium=cpc&utm_campaign=' +
+			'resorts-olimpia-2024&utm_content=ad-variant-a&gclid=' +
+			'CjwKCAjw'.repeat(20);
+
+		const result = leadSubmissionSchema.safeParse({
+			...basePayload,
+			attribution: {
+				current_url: longUrl,
+				referrer: longUrl,
+				gclid: 'CjwKCAjw'.repeat(30),
+			},
+		});
+
+		expect(result.success).toBe(true);
 	});
 });

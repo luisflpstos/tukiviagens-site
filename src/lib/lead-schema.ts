@@ -21,28 +21,29 @@ function phoneDigits(phone: string): string {
 	return phone.replace(/\D/g, '');
 }
 
+const pageUrlString = z.string().max(2048);
+const pageMetaString = z.string().max(512);
+const clickIdString = z.string().max(512);
+
 export const leadAttributionSchema = z
 	.object({
-		utm_source: z.string().max(LEAD_FIELD_MAX_LENGTH).optional(),
-		utm_medium: z.string().max(LEAD_FIELD_MAX_LENGTH).optional(),
-		utm_campaign: z.string().max(LEAD_FIELD_MAX_LENGTH).optional(),
-		utm_content: z.string().max(LEAD_FIELD_MAX_LENGTH).optional(),
-		utm_term: z.string().max(LEAD_FIELD_MAX_LENGTH).optional(),
-		gclid: z.string().max(LEAD_FIELD_MAX_LENGTH).optional(),
-		gbraid: z.string().max(LEAD_FIELD_MAX_LENGTH).optional(),
-		wbraid: z.string().max(LEAD_FIELD_MAX_LENGTH).optional(),
-		fbclid: z.string().max(LEAD_FIELD_MAX_LENGTH).optional(),
-		msclkid: z.string().max(LEAD_FIELD_MAX_LENGTH).optional(),
-		referrer: z.string().max(LEAD_FIELD_MAX_LENGTH).optional(),
-		landing_page: z.string().max(LEAD_FIELD_MAX_LENGTH).optional(),
-		first_landing_page: z.string().max(LEAD_FIELD_MAX_LENGTH).optional(),
-		current_url: z.string().max(LEAD_FIELD_MAX_LENGTH).optional(),
+		utm_source: pageMetaString.optional(),
+		utm_medium: pageMetaString.optional(),
+		utm_campaign: pageMetaString.optional(),
+		utm_content: pageMetaString.optional(),
+		utm_term: pageMetaString.optional(),
+		gclid: clickIdString.optional(),
+		gbraid: clickIdString.optional(),
+		wbraid: clickIdString.optional(),
+		fbclid: clickIdString.optional(),
+		msclkid: clickIdString.optional(),
+		referrer: pageUrlString.optional(),
+		landing_page: pageUrlString.optional(),
+		first_landing_page: pageUrlString.optional(),
+		current_url: pageUrlString.optional(),
 		timestamp: z.string().max(LEAD_FIELD_MAX_LENGTH).optional(),
 	})
 	.strict();
-
-const pageUrlString = z.string().max(2048);
-const pageMetaString = z.string().max(512);
 
 /** Contexto do Meta Pixel para deduplicação browser/servidor (CAPI). */
 export const leadMetaContextSchema = z
