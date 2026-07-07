@@ -1,4 +1,5 @@
 const STORAGE_KEY = 'tuki_attribution';
+export const ATTRIBUTION_TTL_MS = 24 * 60 * 60 * 1000;
 
 export const TRACKING_PARAMS = [
 	'utm_source',
@@ -23,9 +24,33 @@ export interface StoredAttribution extends TrackingParams {
 	timestamp?: string;
 }
 
+function isAttributionExpired(stored: StoredAttribution): boolean {
+	if (!stored.timestamp) {
+		return Object.keys(stored).length > 0;
+	}
+
+	const storedAt = Date.parse(stored.timestamp);
+	if (Number.isNaN(storedAt)) return true;
+
+	return Date.now() - storedAt > ATTRIBUTION_TTL_MS;
+}
+
+function clearStoredAttribution(): void {
+	try {
+		localStorage.removeItem(STORAGE_KEY);
+	} catch {
+		// ignore storage errors (private mode, quota, etc.)
+	}
+}
+
 export function getStoredAttribution(): StoredAttribution {
 	try {
-		return JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}') as StoredAttribution;
+		const stored = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}') as StoredAttribution;
+		if (isAttributionExpired(stored)) {
+			clearStoredAttribution();
+			return {};
+		}
+		return stored;
 	} catch {
 		return {};
 	}
