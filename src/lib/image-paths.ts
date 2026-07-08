@@ -7,6 +7,7 @@ import { HERO_BACKGROUND, HOTEL_FALLBACK_IMAGES } from './constants';
  * Enquanto o arquivo não existir na pasta, os componentes usam fallback (Unsplash).
  *
  * Convenção por hotel: `public/images/hoteis/<slug>/capa.jpg` (ou .webp)
+ * Página de venda: `public/images/paginas/<silo>/<slug>/capa.jpg` (ex.: rio-quente/resorts)
  * Hero: `public/images/hero/capa.jpg`
  */
 export const IMAGE_PATHS = {
@@ -42,12 +43,15 @@ export const IMAGE_PATHS = {
 		'hotel-pousada-rio-quente': '/images/hoteis/hotel-pousada-rio-quente/capa.jpg',
 		'eco-chales-rio-quente': '/images/hoteis/eco-chales-rio-quente/capa.jpg',
 		'thermas-paradise-residence': '/images/hoteis/thermas-paradise-residence/capa.jpg',
-		'rio-quente-resorts': '/images/hoteis/rio-quente-resorts/capa.jpg',
+		'rio-quente-resorts': '/images/paginas/rio-quente/resorts/capa.jpg',
 		'nordeste-all-inclusive': '/images/hoteis/nordeste-all-inclusive/capa.jpg',
+	},
+	paginas: {
+		'rio-quente/resorts': '/images/paginas/rio-quente/resorts/capa.jpg',
 	},
 	destinos: {
 		olimpia: '/images/destinos/olimpia/capa.jpg',
-		'rio-quente': '/images/destinos/rio-quente/capa.jpg',
+		'rio-quente': '/images/destinos/rio-quente/capa.jpeg',
 		nordeste: '/images/destinos/nordeste/capa.jpg',
 		pacotes: '/images/destinos/pacotes-brasil/capa.jpg',
 		'rio-de-janeiro': '/images/destinos/rio-de-janeiro/capa.jpg',
