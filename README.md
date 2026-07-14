@@ -29,8 +29,10 @@ Copie `.env.example` para `.env` e ajuste os valores:
 | Variável | Descrição |
 |---|---|
 | `PUBLIC_SITE_URL` | URL canônica do site (SEO, sitemap, links absolutos) |
-| `PUBLIC_LEAD_WEBHOOK_URL` | Webhook para envio de leads do formulário |
-| `PUBLIC_WHATSAPP_WEBHOOK_URL` | Webhook para cliques no WhatsApp (fallback: `PUBLIC_LEAD_WEBHOOK_URL`) |
+| `LEAD_WEBHOOK_URL` | Webhook servidor→servidor para leads (`/api/lead`) |
+| `LEAD_WEBHOOK_SECRET` | Opcional: Bearer token enviado ao webhook |
+| `WHATSAPP_WEBHOOK_URL` | Opcional: webhook para cliques WhatsApp (`/api/whatsapp-click`; fallback: `PUBLIC_WHATSAPP_WEBHOOK_URL` → `LEAD_WEBHOOK_URL`) |
+| `PUBLIC_WHATSAPP_WEBHOOK_URL` | Compat: ainda lido pelo proxy de WhatsApp (prefira variável server-only) |
 | `PUBLIC_GTM_ID` | ID do Google Tag Manager (opcional) |
 | `PUBLIC_GA4_ID` | ID de medição do Google Analytics 4 (opcional) |
 | `PUBLIC_GOOGLE_ADS_ID` | ID da conta Google Ads (`AW-…`) para tag de conversão |

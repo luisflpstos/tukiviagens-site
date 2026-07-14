@@ -10,22 +10,18 @@ import { buildMetaBrowserContext, trackMetaPixelEvent } from './meta-pixel';
 
 const META_EVENT_API_PATH = '/api/meta-event/';
 
-function getWebhookUrl(): string | undefined {
-	return import.meta.env.PUBLIC_WHATSAPP_WEBHOOK_URL || import.meta.env.PUBLIC_LEAD_WEBHOOK_URL;
-}
+/** Proxy same-origin — evita CORS do sendBeacon (credentials:include) no webhook externo. */
+export const WHATSAPP_CLICK_API_PATH = '/api/whatsapp-click/';
 
 export function sendWhatsAppClickPayload(payload: WhatsAppClickPayload): void {
-	const webhookUrl = getWebhookUrl();
-	if (!webhookUrl) return;
-
 	const body = JSON.stringify(payload);
 
 	if (navigator.sendBeacon) {
-		navigator.sendBeacon(webhookUrl, new Blob([body], { type: 'application/json' }));
+		navigator.sendBeacon(WHATSAPP_CLICK_API_PATH, new Blob([body], { type: 'application/json' }));
 		return;
 	}
 
-	fetch(webhookUrl, {
+	fetch(WHATSAPP_CLICK_API_PATH, {
 		method: 'POST',
 		headers: { 'Content-Type': 'application/json' },
 		body,
