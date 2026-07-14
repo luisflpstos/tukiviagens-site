@@ -20,7 +20,7 @@ interface Props {
 const { title, description, path, headline, estado, highlights, whatsapp, cta } = Astro.props;
 ---
 
-<BaseLayout title={title} description={description} path={path}>
+<BaseLayout title={title} description={description} path={path} includeLeadTracker>
 	<div id="conteudo">
 	<section class="tuki-gradient-purple section-padding text-white">
 		<Container>

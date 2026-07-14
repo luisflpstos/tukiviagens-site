@@ -1,3 +1,10 @@
+/** Script público do Kortex Lead Tracker (páginas com formulário). */
+export const LEAD_TRACKER_SRC =
+	'https://bff.kortex.app.br/api/v1/public/lead-tracker.js';
+
+/** Project key do Lead Tracker para páginas com formulário de contato. */
+export const LEAD_TRACKER_PROJECT_KEY = 'f82b922f-91a1-4586-8447-b4944ecfd694';
+
 /** Tamanho máximo permitido para campos de texto do formulário de lead. */
 export const LEAD_FIELD_MAX_LENGTH = 120;
 

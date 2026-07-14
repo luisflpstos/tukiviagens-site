@@ -7,11 +7,14 @@ import { BRAND } from '../lib/constants';
 import type { SeoProps } from '../lib/seo';
 import Analytics from '@vercel/analytics/astro'
 import Ga4 from '../components/common/Ga4.astro';
+import LeadTracker from '../components/common/LeadTracker.astro';
 import MetaPixel from '../components/common/MetaPixel.astro';
 
 interface Props extends SeoProps {
 	showHeader?: boolean;
 	showFooter?: boolean;
+	/** Inclui o Kortex Lead Tracker antes de </body> (páginas com formulário). */
+	includeLeadTracker?: boolean;
 	jsonLd?: Record<string, unknown> | Record<string, unknown>[];
 }
 
@@ -24,6 +27,7 @@ const {
 	type = 'website',
 	showHeader = true,
 	showFooter = true,
+	includeLeadTracker = false,
 	jsonLd,
 } = Astro.props;
 
@@ -64,12 +68,6 @@ const gtmId = import.meta.env.PUBLIC_GTM_ID;
 		<Seo title={title} description={description} path={path} image={image} noindex={noindex} type={type} jsonLd={jsonLd} />
 		<Ga4 />
 		<MetaPixel />
-		<script
-			is:inline
-			src="https://bff.kortex.app.br/api/v1/public/lead-tracker.js"
-			data-project-key="424155fb-b82f-4dd2-bbc3-e0dd095ad20d"
-			defer
-		></script>
 	</head>
 	<body>
 		{
@@ -89,6 +87,8 @@ const gtmId = import.meta.env.PUBLIC_GTM_ID;
 			<slot />
 		</main>
 		{showFooter && <Footer />}
+
+		{includeLeadTracker && <LeadTracker />}
 
 		<script>
 			import { captureUtmParams } from '../scripts/utm';
