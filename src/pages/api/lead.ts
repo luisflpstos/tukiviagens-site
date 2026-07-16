@@ -4,12 +4,8 @@ import { extractGeoFromRequest } from '../../lib/lead-geo';
 import { isAllowedOrigin, jsonResponse } from '../../lib/lead-security';
 import {
 	firstZodError,
-	hasLeadStayFields,
-	leadContactFieldsSchema,
-	leadFormFieldsSchema,
 	leadSubmissionSchema,
-	type LeadContactFields,
-	type LeadFormFields,
+	parseLeadSubmissionFields,
 } from '../../lib/lead-schema';
 import { buildLeadSubmitPayload } from '../../lib/tracking-payload';
 import { extractClientIp, sendMetaEvent } from '../../lib/meta-capi';
@@ -53,24 +49,11 @@ export const POST: APIRoute = async ({ request }) => {
 		return jsonResponse({ ok: true });
 	}
 
-	let fields: LeadFormFields | LeadContactFields;
-	if (hasLeadStayFields(envelope.data)) {
-		const full = leadFormFieldsSchema.safeParse(envelope.data);
-		if (!full.success) {
-			return jsonResponse({ ok: false, error: firstZodError(full.error) }, 400);
-		}
-		fields = full.data;
-	} else {
-		const contact = leadContactFieldsSchema.safeParse({
-			nome: envelope.data.nome,
-			telefone: envelope.data.telefone,
-			email: envelope.data.email,
-		});
-		if (!contact.success) {
-			return jsonResponse({ ok: false, error: firstZodError(contact.error) }, 400);
-		}
-		fields = contact.data;
+	const fieldsResult = parseLeadSubmissionFields(envelope.data);
+	if (!fieldsResult.success) {
+		return jsonResponse({ ok: false, error: firstZodError(fieldsResult.error) }, 400);
 	}
+	const fields = fieldsResult.data;
 
 	const webhookUrl = getLeadWebhookUrl();
 	if (!webhookUrl) {

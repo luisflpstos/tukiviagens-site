@@ -184,6 +184,36 @@ export function hasLeadStayFields(data: {
 	);
 }
 
+export type LeadSubmissionEnvelope = z.infer<typeof leadSubmissionSchema>;
+
+/**
+ * Valida só os campos de contato/estadia do envelope.
+ * Não passa `_hp` / `attribution` / `context` / `meta` aos schemas `.strict()` de fields.
+ */
+export function parseLeadSubmissionFields(
+	data: LeadSubmissionEnvelope,
+):
+	| { success: true; data: LeadFormFields | LeadContactFields }
+	| { success: false; error: z.ZodError } {
+	if (hasLeadStayFields(data)) {
+		return leadFormFieldsSchema.safeParse({
+			nome: data.nome,
+			telefone: data.telefone,
+			email: data.email,
+			data_entrada: data.data_entrada,
+			data_saida: data.data_saida,
+			adultos: data.adultos,
+			criancas: data.criancas,
+		});
+	}
+
+	return leadContactFieldsSchema.safeParse({
+		nome: data.nome,
+		telefone: data.telefone,
+		email: data.email,
+	});
+}
+
 export function firstZodError(error: z.ZodError): string {
 	return error.issues[0]?.message ?? 'Verifique os campos do formulário.';
 }
