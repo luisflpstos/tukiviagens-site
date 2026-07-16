@@ -21,6 +21,22 @@ export function stickyLeadPanelBudgetPx(input: StickyLeadFitBudgetInput): number
 	);
 }
 
+/**
+ * Docked carousel frame size: keep full column width and shorten via aspect-ratio.
+ * Do NOT use max-height on a width-definite aspect box — browsers shrink width
+ * to preserve 4/3, which collapses the image into a thumbnail.
+ */
+export function stickyLeadDockedStageSizePx(input: {
+	columnWidthPx: number;
+	viewportHeightPx: number;
+}): { widthPx: number; heightPx: number } {
+	const aspectRatio = input.viewportHeightPx <= 800 ? 2 : 16 / 9;
+	return {
+		widthPx: input.columnWidthPx,
+		heightPx: input.columnWidthPx / aspectRatio,
+	};
+}
+
 export function shouldDockStickyLead(input: StickyLeadDockStateInput): boolean {
 	return input.isDesktop && input.isStickyStuck && !input.isReleaseVisible;
 }

@@ -1,16 +1,10 @@
 ---
-import {
-	LEAD_TRACKER_API_BASE,
-	LEAD_TRACKER_PROJECT_KEY,
-	LEAD_TRACKER_SRC,
-} from '../../lib/lead-config';
+import { LEAD_TRACKER_PROJECT_KEY, LEAD_TRACKER_SRC } from '../../lib/lead-config';
 ---
 
-<!-- data-api-base: same-origin proxy — sendBeacon + ACAO:* no BFF quebram CORS. -->
 <script
 	is:inline
 	src={LEAD_TRACKER_SRC}
 	data-project-key={LEAD_TRACKER_PROJECT_KEY}
-	data-api-base={LEAD_TRACKER_API_BASE}
 	defer
 ></script>

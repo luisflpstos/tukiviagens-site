@@ -504,14 +504,21 @@
 			margin-top: 0.75rem;
 		}
 
+		/*
+			Shorten the docked carousel with a wider aspect-ratio, not max-height.
+			max-height on a width-definite aspect-[4/3] box collapses width to keep
+			4/3 (thumbnail ~280px) and looks broken. object-cover crops cleanly.
+		*/
 		[data-sticky-lead-column]:has(.is-sticky-lead-docked) .photo-carousel [data-carousel-stage] {
-			max-height: clamp(10rem, 32vh, 18rem);
+			width: 100%;
+			max-height: none;
+			aspect-ratio: 16 / 9;
 		}
 	}
 
 	@media (min-width: 1024px) and (max-height: 800px) {
 		[data-sticky-lead-column]:has(.is-sticky-lead-docked) .photo-carousel [data-carousel-stage] {
-			max-height: clamp(9rem, 28vh, 14rem);
+			aspect-ratio: 2 / 1;
 		}
 	}
 

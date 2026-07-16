@@ -4,8 +4,31 @@ import {
 	isStickyStuckFromTop,
 	nextStickyLeadMotionAction,
 	shouldDockStickyLead,
+	stickyLeadDockedStageSizePx,
 	stickyLeadPanelBudgetPx,
 } from './sticky-lead-dock';
+
+describe('stickyLeadDockedStageSizePx', () => {
+	it('keeps full column width on short viewports (no max-height width collapse)', () => {
+		const size = stickyLeadDockedStageSizePx({
+			columnWidthPx: 463,
+			viewportHeightPx: 750,
+		});
+		expect(size.widthPx).toBe(463);
+		expect(size.heightPx).toBeCloseTo(231.5, 1);
+		expect(size.widthPx / size.heightPx).toBeCloseTo(2, 5);
+	});
+
+	it('uses 16/9 on taller desktop viewports while staying full width', () => {
+		const size = stickyLeadDockedStageSizePx({
+			columnWidthPx: 463,
+			viewportHeightPx: 900,
+		});
+		expect(size.widthPx).toBe(463);
+		expect(size.heightPx).toBeCloseTo(463 * (9 / 16), 1);
+		expect(size.widthPx / size.heightPx).toBeCloseTo(16 / 9, 5);
+	});
+});
 
 describe('stickyLeadPanelBudgetPx', () => {
 	const TARGET_DOCKED_PANEL_HEIGHT_PX = 280;
