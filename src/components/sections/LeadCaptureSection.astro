@@ -28,8 +28,22 @@ const { mascotSrc, mascotAlt } = getLeadCaptureSectionAssets();
 
 <section id="formulario" class="section-padding overflow-visible bg-white">
 	<Container size="default" class="overflow-visible">
-		<div class="grid items-start gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(22rem,32rem)] lg:gap-14">
-			<div class="tuki-surface-panel order-2 min-w-0 lg:order-1">
+		<div class="relative ml-auto w-full max-w-xl overflow-visible lg:max-w-2xl">
+			<figure
+				class="pointer-events-none absolute top-1/2 left-0 z-20 hidden -translate-x-[93%] -translate-y-1/2 sm:block"
+			>
+				<img
+					src={mascotSrc}
+					alt={mascotAlt}
+					class="tuki-mascot-glide h-[34rem] w-auto max-w-[30rem] object-contain drop-shadow-2xl md:h-[40rem] md:max-w-[34rem] lg:h-[46rem] lg:max-w-[38rem]"
+					width={608}
+					height={604}
+					loading="lazy"
+					decoding="async"
+				/>
+			</figure>
+
+			<div class="tuki-surface-panel relative z-10">
 				<h2 class="tuki-type-headline text-tuki-ink">{title}</h2>
 				<p class="tuki-type-body mt-2 text-tuki-muted">{subtitle}</p>
 				<div class="mt-8">
@@ -43,18 +57,6 @@ const { mascotSrc, mascotAlt } = getLeadCaptureSectionAssets();
 					/>
 				</div>
 			</div>
-
-			<figure class="relative order-1 mx-auto flex w-full max-w-md justify-center lg:sticky lg:top-28 lg:order-2 lg:mx-0 lg:max-w-none lg:justify-end">
-				<img
-					src={mascotSrc}
-					alt={mascotAlt}
-					class="tuki-mascot-glide pointer-events-none h-auto w-full max-w-[24rem] object-contain drop-shadow-2xl sm:max-w-[28rem] lg:max-w-none lg:w-full"
-					width={512}
-					height={508}
-					loading="lazy"
-					decoding="async"
-				/>
-			</figure>
 		</div>
 	</Container>
 </section>
