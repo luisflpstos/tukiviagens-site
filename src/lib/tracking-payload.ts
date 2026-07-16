@@ -1,6 +1,6 @@
 import type { LeadGeoData } from './lead-geo';
 import { resolveLeadDestination } from './lead-destination';
-import type { LeadAttribution, LeadContext, LeadFormFields } from './lead-schema';
+import type { LeadAttribution, LeadContactFields, LeadContext, LeadFormFields } from './lead-schema';
 
 export function formatLocalTimestamp(
 	date: Date,
@@ -90,13 +90,17 @@ export interface LeadSubmitPayload extends TrackingFields {
 }
 
 export interface BuildLeadSubmitPayloadInput {
-	fields: LeadFormFields;
+	fields: LeadFormFields | LeadContactFields;
 	attribution?: LeadAttribution;
 	context?: LeadContext;
 	geo?: LeadGeoData;
 	submittedAt?: Date;
 	userAgent?: string | null;
 	referrer?: string | null;
+}
+
+function isFullLeadFields(fields: LeadFormFields | LeadContactFields): fields is LeadFormFields {
+	return 'data_entrada' in fields && 'data_saida' in fields && 'adultos' in fields && 'criancas' in fields;
 }
 
 export function buildLeadSubmitPayload({
@@ -129,10 +133,10 @@ export function buildLeadSubmitPayload({
 		name: fields.nome,
 		phone: formatPhoneE164Br(fields.telefone),
 		email: fields.email,
-		check_in_date: fields.data_entrada,
-		check_out_date: fields.data_saida,
-		adults: fields.adultos,
-		children: fields.criancas,
+		check_in_date: isFullLeadFields(fields) ? fields.data_entrada : '',
+		check_out_date: isFullLeadFields(fields) ? fields.data_saida : '',
+		adults: isFullLeadFields(fields) ? fields.adultos : 0,
+		children: isFullLeadFields(fields) ? fields.criancas : 0,
 		...(product ? { product } : {}),
 		...(context.campaign ? { campaign: context.campaign } : {}),
 		...(context.form_id ? { form_id: context.form_id } : {}),

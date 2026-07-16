@@ -68,7 +68,7 @@ export const leadContextSchema = z
 	})
 	.strict();
 
-export const leadFormFieldsSchema = z
+export const leadContactFieldsSchema = z
 	.object({
 		nome: z
 			.string()
@@ -87,6 +87,11 @@ export const leadFormFieldsSchema = z
 			.min(1, 'Informe seu e-mail.')
 			.max(LEAD_FIELD_MAX_LENGTH, 'E-mail muito longo.')
 			.email('Informe um e-mail válido.'),
+	})
+	.strict();
+
+export const leadFormFieldsSchema = leadContactFieldsSchema
+	.extend({
 		data_entrada: dateString,
 		data_saida: dateString,
 		adultos: z.coerce
@@ -145,10 +150,10 @@ export const leadSubmissionSchema = z
 		nome: z.string(),
 		telefone: z.string(),
 		email: z.string(),
-		data_entrada: z.string(),
-		data_saida: z.string(),
-		adultos: z.union([z.string(), z.number()]),
-		criancas: z.union([z.string(), z.number()]),
+		data_entrada: z.string().optional(),
+		data_saida: z.string().optional(),
+		adultos: z.union([z.string(), z.number()]).optional(),
+		criancas: z.union([z.string(), z.number()]).optional(),
 		_hp: z.string().max(LEAD_FIELD_MAX_LENGTH).optional(),
 		attribution: leadAttributionSchema.optional(),
 		context: leadContextSchema.optional(),
@@ -156,10 +161,28 @@ export const leadSubmissionSchema = z
 	})
 	.strict();
 
+export type LeadContactFields = z.infer<typeof leadContactFieldsSchema>;
 export type LeadFormFields = z.infer<typeof leadFormFieldsSchema>;
 export type LeadAttribution = z.infer<typeof leadAttributionSchema>;
 export type LeadContext = z.infer<typeof leadContextSchema>;
 export type LeadMetaContext = z.infer<typeof leadMetaContextSchema>;
+
+/** True when the submission includes stay details (full form), not contact-only. */
+export function hasLeadStayFields(data: {
+	data_entrada?: string;
+	data_saida?: string;
+	adultos?: string | number;
+	criancas?: string | number;
+}): boolean {
+	return (
+		Boolean(data.data_entrada?.trim()) &&
+		Boolean(data.data_saida?.trim()) &&
+		data.adultos !== undefined &&
+		data.adultos !== '' &&
+		data.criancas !== undefined &&
+		data.criancas !== ''
+	);
+}
 
 export function firstZodError(error: z.ZodError): string {
 	return error.issues[0]?.message ?? 'Verifique os campos do formulário.';

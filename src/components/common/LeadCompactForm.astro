@@ -1,0 +1,98 @@
+---
+import { LEAD_FIELD_MAX_LENGTH } from '../../lib/lead-config';
+
+interface Props {
+	formId?: string;
+	hotel?: string;
+	resort?: string;
+	destination?: string;
+	campaign?: string;
+	submitLabel?: string;
+}
+
+const {
+	formId = 'lead-compact-form',
+	hotel,
+	resort,
+	destination,
+	campaign,
+	submitLabel = 'Consultar disponibilidade',
+} = Astro.props;
+---
+
+<form
+	id={formId}
+	class="space-y-4"
+	novalidate
+	data-lead-form
+	data-lead-form-variant="compact"
+	data-hotel={hotel}
+	data-resort={resort}
+	data-destination={destination}
+	data-campaign={campaign}
+>
+	<div class="grid gap-4 sm:grid-cols-2">
+		<div class="sm:col-span-2">
+			<label for={`${formId}-nome`} class="tuki-type-small mb-1 block font-medium text-tuki-ink">
+				Nome completo *
+			</label>
+			<input
+				id={`${formId}-nome`}
+				name="nome"
+				type="text"
+				required
+				maxlength={LEAD_FIELD_MAX_LENGTH}
+				autocomplete="name"
+				class="w-full tuki-input"
+				placeholder="Seu nome completo"
+			/>
+		</div>
+
+		<div>
+			<label for={`${formId}-telefone`} class="tuki-type-small mb-1 block font-medium text-tuki-ink">
+				Telefone (WhatsApp) *
+			</label>
+			<input
+				id={`${formId}-telefone`}
+				name="telefone"
+				type="tel"
+				required
+				maxlength={LEAD_FIELD_MAX_LENGTH}
+				autocomplete="tel"
+				class="w-full tuki-input"
+				placeholder="(00) 00000-0000"
+			/>
+		</div>
+
+		<div>
+			<label for={`${formId}-email`} class="tuki-type-small mb-1 block font-medium text-tuki-ink">
+				E-mail *
+			</label>
+			<input
+				id={`${formId}-email`}
+				name="email"
+				type="email"
+				required
+				maxlength={LEAD_FIELD_MAX_LENGTH}
+				autocomplete="email"
+				class="w-full tuki-input"
+				placeholder="seu@email.com"
+			/>
+		</div>
+	</div>
+
+	<div class="absolute -left-[9999px] h-0 w-0 overflow-hidden" aria-hidden="true">
+		<label for={`${formId}-hp`}>Não preencha este campo</label>
+		<input id={`${formId}-hp`} name="_hp" type="text" tabindex="-1" autocomplete="off" />
+	</div>
+
+	<button
+		type="submit"
+		data-default-label={submitLabel}
+		class="w-full rounded-full bg-tuki-orange-button px-6 py-3 font-semibold text-white transition hover:bg-tuki-orange-dark disabled:opacity-60"
+	>
+		{submitLabel}
+	</button>
+
+	<p data-form-status class="tuki-type-small min-h-5 text-center" role="status" aria-live="polite"></p>
+</form>

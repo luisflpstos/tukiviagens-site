@@ -51,4 +51,19 @@ describe('buildThanksWhatsAppMessage', () => {
 		expect(message).toContain('Vi no Google');
 		expect(message).toContain('agilizar meu atendimento');
 	});
+
+	it('omite datas e hóspedes quando handoff é só contato', () => {
+		const message = buildThanksWhatsAppMessage(
+			{
+				nome: 'Maria Silva',
+				hotel: 'Prime Hotel',
+				destination: 'Rio Quente',
+				saved_at: new Date().toISOString(),
+			},
+			{ utm_source: 'google' },
+		);
+		expect(message).toContain('Prime Hotel em Rio Quente');
+		expect(message).not.toContain('entrada');
+		expect(message).not.toContain('adulto');
+	});
 });

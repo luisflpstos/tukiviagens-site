@@ -3,8 +3,10 @@ import Container from '../common/Container.astro';
 import Button from '../common/Button.astro';
 import { SITE, HERO_STATS, BRAND, HERO_EYEBROW, HERO_FLOATING_BADGES } from '../../lib/constants';
 import { resolveHeroImagePath } from '../../lib/image-paths';
+import { resolveMascotImagePath } from '../../lib/mascot-paths';
 
 const heroBackground = resolveHeroImagePath();
+const heroMascot = resolveMascotImagePath(BRAND.mascot.hero);
 ---
 
 <section class="tuki-hero relative overflow-hidden text-white">
@@ -89,7 +91,7 @@ const heroBackground = resolveHeroImagePath();
 					<div class="absolute inset-5 rounded-full border border-white/20"></div>
 					
 					<img
-						src={BRAND.mascot.hero}
+						src={heroMascot}
 						alt="Tuki, o tucano viajante da Tuki Viagens"
 						class="tuki-hero-mascot-img relative z-10 mt-6 h-[90%] w-auto object-contain drop-shadow-2xl"
 						width={800}

@@ -4,8 +4,12 @@ import { extractGeoFromRequest } from '../../lib/lead-geo';
 import { isAllowedOrigin, jsonResponse } from '../../lib/lead-security';
 import {
 	firstZodError,
+	hasLeadStayFields,
+	leadContactFieldsSchema,
 	leadFormFieldsSchema,
 	leadSubmissionSchema,
+	type LeadContactFields,
+	type LeadFormFields,
 } from '../../lib/lead-schema';
 import { buildLeadSubmitPayload } from '../../lib/tracking-payload';
 import { extractClientIp, sendMetaEvent } from '../../lib/meta-capi';
@@ -49,9 +53,23 @@ export const POST: APIRoute = async ({ request }) => {
 		return jsonResponse({ ok: true });
 	}
 
-	const fields = leadFormFieldsSchema.safeParse(envelope.data);
-	if (!fields.success) {
-		return jsonResponse({ ok: false, error: firstZodError(fields.error) }, 400);
+	let fields: LeadFormFields | LeadContactFields;
+	if (hasLeadStayFields(envelope.data)) {
+		const full = leadFormFieldsSchema.safeParse(envelope.data);
+		if (!full.success) {
+			return jsonResponse({ ok: false, error: firstZodError(full.error) }, 400);
+		}
+		fields = full.data;
+	} else {
+		const contact = leadContactFieldsSchema.safeParse({
+			nome: envelope.data.nome,
+			telefone: envelope.data.telefone,
+			email: envelope.data.email,
+		});
+		if (!contact.success) {
+			return jsonResponse({ ok: false, error: firstZodError(contact.error) }, 400);
+		}
+		fields = contact.data;
 	}
 
 	const webhookUrl = getLeadWebhookUrl();
@@ -64,7 +82,7 @@ export const POST: APIRoute = async ({ request }) => {
 	const submittedAt = new Date();
 
 	const payload = buildLeadSubmitPayload({
-		fields: fields.data,
+		fields,
 		attribution: envelope.data.attribution,
 		context: envelope.data.context,
 		geo,
@@ -108,9 +126,9 @@ export const POST: APIRoute = async ({ request }) => {
 		eventTime: Math.floor(submittedAt.getTime() / 1000),
 		eventSourceUrl: envelope.data.context?.page_url ?? envelope.data.attribution?.current_url,
 		userData: {
-			email: fields.data.email,
-			phone: fields.data.telefone,
-			fullName: fields.data.nome,
+			email: fields.email,
+			phone: fields.telefone,
+			fullName: fields.nome,
 			city: geo.cidade ?? undefined,
 			state: geo.regiao ?? undefined,
 			country: geo.pais ?? undefined,

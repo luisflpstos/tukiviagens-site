@@ -3,6 +3,9 @@ import Container from '../common/Container.astro';
 import Button from '../common/Button.astro';
 import TukiIcon from '../common/TukiIcon.astro';
 import { SITE, BRAND } from '../../lib/constants';
+import { resolveMascotImagePath } from '../../lib/mascot-paths';
+
+const mascotProfile = resolveMascotImagePath(BRAND.mascot.profile);
 ---
 
 <section class="relative overflow-hidden tuki-mascot-ref section-padding text-white">
@@ -17,7 +20,7 @@ import { SITE, BRAND } from '../../lib/constants';
 					</span>
 					<div class="flex h-full w-full items-center justify-center overflow-hidden rounded-full border-4 border-white/20 bg-white/5">
 						<img
-							src={BRAND.mascot.profile}
+							src={mascotProfile}
 							alt="Tuki, o tucano viajante"
 							class="tuki-mascot-glide h-[102%] w-auto max-w-none translate-y-3 object-contain drop-shadow-2xl"
 							width={256}

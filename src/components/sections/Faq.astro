@@ -1,5 +1,6 @@
 ---
 import Container from '../common/Container.astro';
+import { getFaqSectionAssets } from '../../lib/faq-section';
 
 interface FaqItem {
 	question: string;
@@ -12,22 +13,38 @@ interface Props {
 }
 
 const { items, title = 'Perguntas frequentes' } = Astro.props;
+const { mascotSrc, mascotAlt } = getFaqSectionAssets();
 ---
 
 {
 	items.length > 0 && (
-		<section class="section-padding tuki-section-lavender">
-			<Container size="narrow">
+		<section id="perguntas-frequentes" class="section-padding overflow-visible tuki-section-lavender">
+			<Container size="default" class="overflow-visible">
 				<h2 class="tuki-type-headline text-tuki-ink">{title}</h2>
-				<div class="mt-8 space-y-4">
-					{items.map((item) => (
-						<details class="tuki-card-ref group bg-white p-5">
-							<summary class="tuki-type-title cursor-pointer list-none text-tuki-ink marker:content-none">
-								{item.question}
-							</summary>
-							<p class="tuki-type-body mt-3 text-tuki-muted">{item.answer}</p>
-						</details>
-					))}
+
+				<div class="mt-8 grid items-start gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(22rem,32rem)] lg:gap-14">
+					<div class="order-2 min-w-0 space-y-4 lg:order-1">
+						{items.map((item) => (
+							<details class="tuki-card-ref group bg-white p-5">
+								<summary class="tuki-type-title cursor-pointer list-none text-tuki-ink marker:content-none">
+									{item.question}
+								</summary>
+								<p class="tuki-type-body mt-3 text-tuki-muted">{item.answer}</p>
+							</details>
+						))}
+					</div>
+
+					<figure class="relative order-1 mx-auto flex w-full max-w-md justify-center lg:sticky lg:top-28 lg:order-2 lg:mx-0 lg:max-w-none lg:justify-end">
+						<img
+							src={mascotSrc}
+							alt={mascotAlt}
+							class="tuki-mascot-glide pointer-events-none h-auto w-full max-w-[24rem] object-contain drop-shadow-2xl sm:max-w-[28rem] lg:max-w-none lg:w-full"
+							width={512}
+							height={508}
+							loading="lazy"
+							decoding="async"
+						/>
+					</figure>
 				</div>
 			</Container>
 		</section>

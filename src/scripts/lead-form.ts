@@ -2,12 +2,13 @@ import { getStoredAttribution } from './utm';
 import { resolveLeadDestination } from '../lib/lead-destination';
 import { saveLeadHandoff } from '../lib/lead-handoff';
 import { bindPhoneMask } from './masks';
-import { validateLeadForm } from './validators';
+import { validateLeadContactForm, validateLeadForm } from './validators';
 import { trackFormError, trackFormStart, trackFormSubmit } from './tracking';
 import { buildMetaBrowserContext, trackMetaPixelEvent } from './meta-pixel';
 
 export interface LeadFormOptions {
 	formId: string;
+	variant?: 'full' | 'compact';
 	hotel?: string;
 	resort?: string;
 	destination?: string;
@@ -21,6 +22,7 @@ export function initLeadForm(options: LeadFormOptions): void {
 	const form = document.getElementById(options.formId) as HTMLFormElement | null;
 	if (!form) return;
 
+	const variant = options.variant ?? 'full';
 	const phoneInput = form.querySelector<HTMLInputElement>('input[name="telefone"]');
 	if (phoneInput) bindPhoneMask(phoneInput);
 
@@ -36,14 +38,10 @@ export function initLeadForm(options: LeadFormOptions): void {
 		event.preventDefault();
 
 		const formData = new FormData(form);
-		const values = {
+		const contact = {
 			nome: String(formData.get('nome') ?? ''),
 			telefone: String(formData.get('telefone') ?? ''),
 			email: String(formData.get('email') ?? ''),
-			data_entrada: String(formData.get('data_entrada') ?? ''),
-			data_saida: String(formData.get('data_saida') ?? ''),
-			adultos: String(formData.get('adultos') ?? ''),
-			criancas: String(formData.get('criancas') ?? ''),
 		};
 
 		const statusEl = form.querySelector('[data-form-status]');
@@ -55,7 +53,17 @@ export function initLeadForm(options: LeadFormOptions): void {
 			}
 		};
 
-		const validationError = validateLeadForm(values);
+		const validationError =
+			variant === 'compact'
+				? validateLeadContactForm(contact)
+				: validateLeadForm({
+						...contact,
+						data_entrada: String(formData.get('data_entrada') ?? ''),
+						data_saida: String(formData.get('data_saida') ?? ''),
+						adultos: String(formData.get('adultos') ?? ''),
+						criancas: String(formData.get('criancas') ?? ''),
+					});
+
 		if (validationError) {
 			setStatus(validationError, true);
 			trackFormError(options.formId, validationError);
@@ -77,6 +85,16 @@ export function initLeadForm(options: LeadFormOptions): void {
 			submitBtn.textContent = 'Enviando...';
 		}
 
+		const stayFields =
+			variant === 'full'
+				? {
+						data_entrada: String(formData.get('data_entrada') ?? ''),
+						data_saida: String(formData.get('data_saida') ?? ''),
+						adultos: Number(formData.get('adultos')),
+						criancas: Number(formData.get('criancas')),
+					}
+				: {};
+
 		try {
 			const response = await fetch(LEAD_API_PATH, {
 				method: 'POST',
@@ -85,9 +103,8 @@ export function initLeadForm(options: LeadFormOptions): void {
 					Accept: 'application/json',
 				},
 				body: JSON.stringify({
-					...values,
-					adultos: Number(values.adultos),
-					criancas: Number(values.criancas),
+					...contact,
+					...stayFields,
 					_hp: honeypot,
 					attribution,
 					meta: metaContext,
@@ -117,14 +134,18 @@ export function initLeadForm(options: LeadFormOptions): void {
 				options.destination || resolveLeadDestination({ path: window.location.pathname });
 
 			saveLeadHandoff({
-				nome: values.nome,
+				nome: contact.nome,
 				hotel: options.hotel,
 				resort: options.resort,
 				destination: resolvedDestination,
-				data_entrada: values.data_entrada,
-				data_saida: values.data_saida,
-				adultos: Number(values.adultos),
-				criancas: Number(values.criancas),
+				...(variant === 'full'
+					? {
+							data_entrada: String(formData.get('data_entrada') ?? ''),
+							data_saida: String(formData.get('data_saida') ?? ''),
+							adultos: Number(formData.get('adultos')),
+							criancas: Number(formData.get('criancas')),
+						}
+					: {}),
 			});
 
 			trackFormSubmit(options.formId, {

@@ -4,9 +4,11 @@ import Container from '../components/common/Container.astro';
 import { BRAND, SITE } from '../lib/constants';
 import { buildWhatsAppUrl } from '../lib/seo';
 import { buildThanksWhatsAppMessage } from '../lib/lead-handoff';
+import { resolveMascotImagePath } from '../lib/mascot-paths';
 
 const defaultMessage = buildThanksWhatsAppMessage(null, {});
 const defaultHref = buildWhatsAppUrl(SITE.phone, defaultMessage);
+const mascotSelfie = resolveMascotImagePath(BRAND.mascot.selfie);
 ---
 
 <BaseLayout
@@ -46,7 +48,7 @@ const defaultHref = buildWhatsAppUrl(SITE.phone, defaultMessage);
 			<Container size="narrow">
 				<div class="tuki-surface-panel text-center">
 					<img
-						src={BRAND.mascot.selfie}
+						src={mascotSelfie}
 						alt=""
 						width="160"
 						height="160"

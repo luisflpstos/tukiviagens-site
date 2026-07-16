@@ -1,6 +1,62 @@
 import { describe, expect, it } from 'vitest';
 import { MIN_STAY_DAYS } from './date-rules';
-import { leadFormFieldsSchema, leadSubmissionSchema } from './lead-schema';
+import {
+	hasLeadStayFields,
+	leadContactFieldsSchema,
+	leadFormFieldsSchema,
+	leadSubmissionSchema,
+} from './lead-schema';
+
+describe('leadContactFieldsSchema', () => {
+	const validContact = {
+		nome: 'Maria Silva',
+		telefone: '(11) 98765-4321',
+		email: 'maria@email.com',
+	};
+
+	it('aceita contato válido sem datas nem hóspedes', () => {
+		expect(leadContactFieldsSchema.safeParse(validContact).success).toBe(true);
+	});
+
+	it('rejeita nome curto', () => {
+		expect(leadContactFieldsSchema.safeParse({ ...validContact, nome: 'A' }).success).toBe(false);
+	});
+
+	it('rejeita telefone inválido', () => {
+		expect(leadContactFieldsSchema.safeParse({ ...validContact, telefone: '123' }).success).toBe(
+			false,
+		);
+	});
+
+	it('rejeita e-mail inválido', () => {
+		expect(leadContactFieldsSchema.safeParse({ ...validContact, email: 'x' }).success).toBe(false);
+	});
+});
+
+describe('hasLeadStayFields', () => {
+	it('detecta formulário completo', () => {
+		expect(
+			hasLeadStayFields({
+				data_entrada: '2026-08-01',
+				data_saida: '2026-08-05',
+				adultos: 2,
+				criancas: 0,
+			}),
+		).toBe(true);
+	});
+
+	it('detecta formulário só de contato', () => {
+		expect(hasLeadStayFields({})).toBe(false);
+		expect(
+			hasLeadStayFields({
+				data_entrada: '',
+				data_saida: '',
+				adultos: '',
+				criancas: '',
+			}),
+		).toBe(false);
+	});
+});
 
 function futureDate(daysFromNow: number): string {
 	const date = new Date();

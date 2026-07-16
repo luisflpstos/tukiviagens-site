@@ -10,10 +10,10 @@ export interface LeadHandoff {
 	hotel?: string;
 	resort?: string;
 	destination?: string;
-	data_entrada: string;
-	data_saida: string;
-	adultos: number;
-	criancas: number;
+	data_entrada?: string;
+	data_saida?: string;
+	adultos?: number;
+	criancas?: number;
 	saved_at: string;
 }
 
@@ -22,10 +22,10 @@ export interface SaveLeadHandoffInput {
 	hotel?: string;
 	resort?: string;
 	destination?: string;
-	data_entrada: string;
-	data_saida: string;
-	adultos: number;
-	criancas: number;
+	data_entrada?: string;
+	data_saida?: string;
+	adultos?: number;
+	criancas?: number;
 }
 
 function formatGuestSummary(adultos: number, criancas: number): string {
@@ -53,9 +53,12 @@ export function buildThanksWhatsAppMessage(
 		handoff.data_entrada && handoff.data_saida
 			? `, entrada ${formatDateDisplay(handoff.data_entrada)} e saída ${formatDateDisplay(handoff.data_saida)}`
 			: '';
-	const guests = formatGuestSummary(handoff.adultos, handoff.criancas);
+	const guests =
+		typeof handoff.adultos === 'number'
+			? `, ${formatGuestSummary(handoff.adultos, handoff.criancas ?? 0)}`
+			: '';
 
-	return `Olá! Acabei de enviar uma cotação pelo site: ${product}${destination}${dates}, ${guests}. Vi ${source}. Pode agilizar meu atendimento?`;
+	return `Olá! Acabei de enviar uma cotação pelo site: ${product}${destination}${dates}${guests}. Vi ${source}. Pode agilizar meu atendimento?`;
 }
 
 export function saveLeadHandoff(input: SaveLeadHandoffInput): void {

@@ -7,6 +7,7 @@ import ContentWithCarousel from '../components/sections/ContentWithCarousel.astr
 import Faq from '../components/sections/Faq.astro';
 import LeadCaptureSection from '../components/sections/LeadCaptureSection.astro';
 import PageHero from '../components/sections/PageHero.astro';
+import StickyLeadCapture from '../components/sections/StickyLeadCapture.astro';
 import { type GalleryImage } from '../lib/gallery-images';
 import { isHospitalityPage } from '../lib/hospitality';
 import { shouldShowPageCarousel } from '../lib/property-gallery';
@@ -235,6 +236,21 @@ const leadDestination =
 
 	{highlights.length > 0 && <BenefitsList items={highlights} title={benefitsTitle} />}
 	<Faq items={faq} />
+	{
+		showGallery && (
+			<StickyLeadCapture
+				formId="pagina-sticky-lead-form"
+				hotel={isHospitalityPage(pageType) ? title : undefined}
+				destination={leadDestination}
+				title={leadTitle}
+				subtitle={
+					isHospitalityPage(pageType)
+						? `${title} · ${leadDestination}`
+						: 'Deixe seus dados e retornamos rápido.'
+				}
+			/>
+		)
+	}
 	<LeadCaptureSection
 		formId="pagina-lead-form"
 		hotel={isHospitalityPage(pageType) ? title : undefined}

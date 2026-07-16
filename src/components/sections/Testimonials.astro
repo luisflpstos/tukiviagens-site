@@ -1,6 +1,9 @@
 ---
 import Container from '../common/Container.astro';
 import { TESTIMONIALS, BRAND } from '../../lib/constants';
+import { resolveMascotImagePath } from '../../lib/mascot-paths';
+
+const mascotBoia = resolveMascotImagePath(BRAND.mascot.boia);
 ---
 
 <section id="depoimentos" class="section-padding overflow-visible tuki-section-soft">
@@ -13,7 +16,7 @@ import { TESTIMONIALS, BRAND } from '../../lib/constants';
 
 		<div class="relative mx-auto mt-10 max-w-[32.4rem] overflow-visible sm:max-w-[37.8rem]">
 			<img
-				src={BRAND.mascot.boia}
+				src={mascotBoia}
 				alt="Tuki relaxando na boia"
 				class="pointer-events-none absolute top-1/2 right-0 z-20 hidden h-auto w-auto max-w-[36rem] translate-x-[58%] -translate-y-1/2 object-contain drop-shadow-lg sm:block md:max-w-[25rem]"
 				width={220}

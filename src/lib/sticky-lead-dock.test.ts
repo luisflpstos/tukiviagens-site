@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import {
+	isStickyPhaseActive,
 	isStickyStuckFromTop,
 	nextStickyLeadMotionAction,
 	shouldDockStickyLead,
@@ -48,17 +49,67 @@ describe('shouldDockStickyLead', () => {
 });
 
 describe('isStickyStuckFromTop', () => {
-	it('returns true when bounding top is at or above sticky top', () => {
+	it('returns true when bounding top is pinned at sticky top', () => {
 		expect(isStickyStuckFromTop(112, 112)).toBe(true);
-		expect(isStickyStuckFromTop(112, 100)).toBe(true);
 	});
 
 	it('returns true within epsilon of sticky top', () => {
 		expect(isStickyStuckFromTop(112, 113, 1)).toBe(true);
+		expect(isStickyStuckFromTop(112, 111, 1)).toBe(true);
 	});
 
-	it('returns false when clearly below sticky top', () => {
+	it('returns false when still below sticky top (not stuck yet)', () => {
 		expect(isStickyStuckFromTop(112, 200)).toBe(false);
+	});
+
+	it('returns false when scrolled past sticky release (top above pin)', () => {
+		// After sticky unsticks, the column scrolls up — top becomes < stickyTop.
+		// Treating that as "stuck" kept the form docked off-screen and never
+		// restored it above the footer.
+		expect(isStickyStuckFromTop(112, 100)).toBe(false);
+		expect(isStickyStuckFromTop(112, -40)).toBe(false);
+	});
+});
+
+describe('isStickyPhaseActive', () => {
+	it('is active on desktop when sentinel left and root still in view', () => {
+		expect(
+			isStickyPhaseActive({
+				isDesktop: true,
+				isSentinelOutOfView: true,
+				isRootInView: true,
+			}),
+		).toBe(true);
+	});
+
+	it('is inactive when sentinel still in view (page top)', () => {
+		expect(
+			isStickyPhaseActive({
+				isDesktop: true,
+				isSentinelOutOfView: false,
+				isRootInView: true,
+			}),
+		).toBe(false);
+	});
+
+	it('is inactive when root left the viewport (past carousel section)', () => {
+		expect(
+			isStickyPhaseActive({
+				isDesktop: true,
+				isSentinelOutOfView: true,
+				isRootInView: false,
+			}),
+		).toBe(false);
+	});
+
+	it('is inactive on mobile', () => {
+		expect(
+			isStickyPhaseActive({
+				isDesktop: false,
+				isSentinelOutOfView: true,
+				isRootInView: true,
+			}),
+		).toBe(false);
 	});
 });
 

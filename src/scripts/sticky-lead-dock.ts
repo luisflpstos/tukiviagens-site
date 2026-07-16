@@ -1,5 +1,5 @@
 import {
-	isStickyStuckFromTop,
+	isStickyPhaseActive,
 	nextStickyLeadMotionAction,
 	shouldDockStickyLead,
 	type StickyLeadMotionPhase,
@@ -7,16 +7,16 @@ import {
 
 const DESKTOP_MQ = '(min-width: 1024px)';
 const REDUCE_MOTION_MQ = '(prefers-reduced-motion: reduce)';
-/** Matches Tailwind `lg:top-28` (7rem). Stuck detection via geometry. */
-const STICKY_TOP_PX = 112;
-const ENTER_MS = 360;
-const EXIT_MS = 280;
-const ANIM_FALLBACK_BUFFER_MS = 50;
+const ENTER_MS = 420;
+const EXIT_MS = 320;
+const ANIM_FALLBACK_BUFFER_MS = 80;
+/** Ignore brief IO flips while the form teleports into the sticky column. */
+const STABLE_MS = 60;
 
 const ENTER_CLASS = 'tuki-sticky-lead-enter';
 const EXIT_CLASS = 'tuki-sticky-lead-exit';
+const PENDING_CLASS = 'tuki-sticky-lead-pending';
 const DOCKED_CLASS = 'is-sticky-lead-docked';
-const HOME_VACATED_CLASS = 'is-lead-home-vacated';
 
 let booted = false;
 
@@ -25,29 +25,19 @@ function prefersReducedMotion(mq: MediaQueryList): boolean {
 }
 
 function clearMotionClasses(panel: HTMLElement): void {
-	panel.classList.remove(ENTER_CLASS, EXIT_CLASS);
+	panel.classList.remove(ENTER_CLASS, EXIT_CLASS, PENDING_CLASS);
 }
 
-function vacateHome(home: HTMLElement): void {
-	home.classList.add(HOME_VACATED_CLASS);
-}
-
-function restoreHome(home: HTMLElement): void {
-	home.classList.remove(HOME_VACATED_CLASS);
-}
-
-function moveToSlot(panel: HTMLElement, slot: HTMLElement, home: HTMLElement): void {
-	vacateHome(home);
+function moveToSlot(panel: HTMLElement, slot: HTMLElement): void {
 	slot.appendChild(panel);
 	slot.setAttribute('aria-hidden', 'false');
 	panel.classList.add(DOCKED_CLASS);
 }
 
-function moveToHome(panel: HTMLElement, homeHost: HTMLElement, slot: HTMLElement, home: HTMLElement): void {
+function moveToHome(panel: HTMLElement, homeHost: HTMLElement, slot: HTMLElement): void {
 	homeHost.appendChild(panel);
 	panel.classList.remove(DOCKED_CLASS);
 	slot.setAttribute('aria-hidden', 'true');
-	restoreHome(home);
 }
 
 export function initStickyLeadDock(): void {
@@ -60,21 +50,26 @@ export function initStickyLeadDock(): void {
 	roots.forEach((root) => {
 		const column = root.querySelector<HTMLElement>('[data-sticky-lead-column]');
 		const slot = root.querySelector<HTMLElement>('[data-sticky-lead-slot]');
+		const sentinel = root.querySelector<HTMLElement>('[data-sticky-lead-sentinel]');
 		const home = document.querySelector<HTMLElement>('[data-sticky-lead-home]');
 		const panel = document.querySelector<HTMLElement>('[data-sticky-lead-panel]');
 		const release = document.querySelector<HTMLElement>('[data-sticky-lead-release]');
 
 		if (!column || !slot || !home || !panel) return;
 
-		const homeHost = panel.parentElement;
-		if (!homeHost) return;
+		const homeHost = home;
+		if (panel.parentElement !== homeHost) {
+			homeHost.appendChild(panel);
+		}
 
-		let isStickyStuck = false;
+		let isSentinelOutOfView = false;
+		let isRootInView = true;
 		let isReleaseVisible = false;
 		let isDocked = false;
 		let phase: StickyLeadMotionPhase = 'idle';
 		let animTimer: ReturnType<typeof setTimeout> | undefined;
-		let rafId = 0;
+		let stableTimer: ReturnType<typeof setTimeout> | undefined;
+		let pendingWantsDock: boolean | null = null;
 
 		const clearAnimTimer = () => {
 			if (animTimer !== undefined) {
@@ -83,95 +78,25 @@ export function initStickyLeadDock(): void {
 			}
 		};
 
-		const finishEnter = () => {
-			clearAnimTimer();
-			clearMotionClasses(panel);
-			phase = 'idle';
-			isDocked = true;
-			evaluate();
-		};
-
-		const finishExit = () => {
-			clearAnimTimer();
-			clearMotionClasses(panel);
-			moveToHome(panel, homeHost, slot, home);
-			phase = 'idle';
-			isDocked = false;
-			evaluate();
-		};
-
-		const forceDock = () => {
-			clearAnimTimer();
-			clearMotionClasses(panel);
-			if (panel.parentElement !== slot) {
-				moveToSlot(panel, slot, home);
-			} else {
-				panel.classList.add(DOCKED_CLASS);
-				slot.setAttribute('aria-hidden', 'false');
-				vacateHome(home);
-			}
-			phase = 'idle';
-			isDocked = true;
-		};
-
-		const forceUndock = () => {
-			clearAnimTimer();
-			clearMotionClasses(panel);
-			if (panel.parentElement !== homeHost) {
-				moveToHome(panel, homeHost, slot, home);
-			} else {
-				panel.classList.remove(DOCKED_CLASS);
-				restoreHome(home);
-			}
-			phase = 'idle';
-			isDocked = false;
-		};
-
-		const startEnter = () => {
-			clearAnimTimer();
-			clearMotionClasses(panel);
-			if (panel.parentElement !== slot) {
-				moveToSlot(panel, slot, home);
-			}
-			phase = 'entering';
-			isDocked = false;
-			// Force reflow so enter animation runs after teleport.
-			panel.getBoundingClientRect();
-			panel.classList.add(ENTER_CLASS);
-			animTimer = setTimeout(finishEnter, ENTER_MS + ANIM_FALLBACK_BUFFER_MS);
-		};
-
-		const startExit = () => {
-			clearAnimTimer();
-			clearMotionClasses(panel);
-			if (panel.parentElement !== slot) {
-				forceUndock();
-				return;
-			}
-			phase = 'exiting';
-			panel.classList.add(EXIT_CLASS);
-			animTimer = setTimeout(finishExit, EXIT_MS + ANIM_FALLBACK_BUFFER_MS);
-		};
-
-		const onAnimationEnd = (event: AnimationEvent) => {
-			if (event.target !== panel) return;
-			const name = event.animationName;
-			if (name.includes('tuki-sticky-lead-enter') && phase === 'entering') {
-				finishEnter();
-			} else if (name.includes('tuki-sticky-lead-exit') && phase === 'exiting') {
-				finishExit();
+		const clearStableTimer = () => {
+			if (stableTimer !== undefined) {
+				clearTimeout(stableTimer);
+				stableTimer = undefined;
 			}
 		};
 
-		panel.addEventListener('animationend', onAnimationEnd);
-
-		const evaluate = () => {
-			const wantsDock = shouldDockStickyLead({
+		const readWantsDock = () =>
+			shouldDockStickyLead({
 				isDesktop: desktopMq.matches,
-				isStickyStuck,
+				isStickyStuck: isStickyPhaseActive({
+					isDesktop: desktopMq.matches,
+					isSentinelOutOfView,
+					isRootInView,
+				}),
 				isReleaseVisible,
 			});
 
+		const runAction = (wantsDock: boolean) => {
 			const action = nextStickyLeadMotionAction({
 				wantsDock,
 				isDocked,
@@ -198,57 +123,186 @@ export function initStickyLeadDock(): void {
 			}
 		};
 
-		const updateStuck = () => {
-			const top = column.getBoundingClientRect().top;
-			isStickyStuck = desktopMq.matches && isStickyStuckFromTop(STICKY_TOP_PX, top);
+		const evaluate = () => {
+			const wantsDock = readWantsDock();
+
+			// While animating, apply immediately (cancel rules).
+			if (phase !== 'idle') {
+				pendingWantsDock = null;
+				clearStableTimer();
+				runAction(wantsDock);
+				return;
+			}
+
+			// Debounce idle transitions so IO/layout noise cannot flicker dock.
+			if (wantsDock === isDocked) {
+				pendingWantsDock = null;
+				clearStableTimer();
+				return;
+			}
+
+			if (pendingWantsDock === wantsDock && stableTimer !== undefined) {
+				return;
+			}
+
+			pendingWantsDock = wantsDock;
+			clearStableTimer();
+			stableTimer = setTimeout(() => {
+				stableTimer = undefined;
+				const stableWant = pendingWantsDock;
+				pendingWantsDock = null;
+				if (stableWant === null) return;
+				runAction(stableWant);
+			}, STABLE_MS);
+		};
+
+		const finishEnter = () => {
+			clearAnimTimer();
+			clearMotionClasses(panel);
+			phase = 'idle';
+			isDocked = true;
 			evaluate();
 		};
 
-		const scheduleStuckCheck = () => {
-			if (rafId) return;
-			rafId = window.requestAnimationFrame(() => {
-				rafId = 0;
-				updateStuck();
+		const finishExit = () => {
+			clearAnimTimer();
+			clearMotionClasses(panel);
+			moveToHome(panel, homeHost, slot);
+			phase = 'idle';
+			isDocked = false;
+			evaluate();
+		};
+
+		const forceDock = () => {
+			clearAnimTimer();
+			clearMotionClasses(panel);
+			if (panel.parentElement !== slot) {
+				moveToSlot(panel, slot);
+			} else {
+				panel.classList.add(DOCKED_CLASS);
+				slot.setAttribute('aria-hidden', 'false');
+			}
+			phase = 'idle';
+			isDocked = true;
+		};
+
+		const forceUndock = () => {
+			clearAnimTimer();
+			clearMotionClasses(panel);
+			if (panel.parentElement !== homeHost) {
+				moveToHome(panel, homeHost, slot);
+			} else {
+				panel.classList.remove(DOCKED_CLASS);
+			}
+			phase = 'idle';
+			isDocked = false;
+		};
+
+		const startEnter = () => {
+			clearAnimTimer();
+			clearMotionClasses(panel);
+			panel.classList.add(PENDING_CLASS);
+			if (panel.parentElement !== slot) {
+				moveToSlot(panel, slot);
+			}
+			phase = 'entering';
+			isDocked = false;
+			// Double rAF: wait until layout after teleport before revealing.
+			requestAnimationFrame(() => {
+				requestAnimationFrame(() => {
+					if (phase !== 'entering') return;
+					panel.classList.remove(PENDING_CLASS);
+					panel.classList.add(ENTER_CLASS);
+					animTimer = setTimeout(finishEnter, ENTER_MS + ANIM_FALLBACK_BUFFER_MS);
+				});
 			});
 		};
 
-		window.addEventListener('scroll', scheduleStuckCheck, { passive: true });
-		window.addEventListener('resize', scheduleStuckCheck);
-
-		const onDesktopChange = () => {
-			if (!desktopMq.matches && (isDocked || phase !== 'idle')) {
+		const startExit = () => {
+			clearAnimTimer();
+			clearMotionClasses(panel);
+			if (panel.parentElement !== slot) {
 				forceUndock();
+				return;
 			}
-			updateStuck();
+			phase = 'exiting';
+			panel.classList.add(EXIT_CLASS);
+			animTimer = setTimeout(finishExit, EXIT_MS + ANIM_FALLBACK_BUFFER_MS);
 		};
-		desktopMq.addEventListener('change', onDesktopChange);
-		reduceMq.addEventListener('change', evaluate);
 
-		let releaseObserver: IntersectionObserver | undefined;
+		const onAnimationEnd = (event: AnimationEvent) => {
+			if (event.target !== panel) return;
+			const name = event.animationName;
+			if (name.includes('tuki-sticky-lead-enter') && phase === 'entering') {
+				finishEnter();
+			} else if (name.includes('tuki-sticky-lead-exit') && phase === 'exiting') {
+				finishExit();
+			}
+		};
+
+		panel.addEventListener('animationend', onAnimationEnd);
+
+		const observers: IntersectionObserver[] = [];
+
+		if (sentinel) {
+			const sentinelObserver = new IntersectionObserver(
+				(entries) => {
+					const entry = entries[0];
+					if (!entry) return;
+					isSentinelOutOfView = !entry.isIntersecting;
+					evaluate();
+				},
+				{ threshold: 0, rootMargin: '-1px 0px 0px 0px' },
+			);
+			sentinelObserver.observe(sentinel);
+			observers.push(sentinelObserver);
+		}
+
+		const rootObserver = new IntersectionObserver(
+			(entries) => {
+				const entry = entries[0];
+				if (!entry) return;
+				isRootInView = entry.isIntersecting;
+				evaluate();
+			},
+			{ threshold: 0 },
+		);
+		rootObserver.observe(root);
+		observers.push(rootObserver);
+
 		if (release) {
-			releaseObserver = new IntersectionObserver(
+			const releaseObserver = new IntersectionObserver(
 				(entries) => {
 					isReleaseVisible = entries.some((entry) => entry.isIntersecting);
 					evaluate();
 				},
-				{ threshold: 0.01, rootMargin: '0px 0px -10% 0px' },
+				{ threshold: 0.01, rootMargin: '0px 0px -12% 0px' },
 			);
 			releaseObserver.observe(release);
+			observers.push(releaseObserver);
 		}
 
+		const onDesktopChange = () => {
+			if (!desktopMq.matches && (isDocked || phase !== 'idle')) {
+				clearStableTimer();
+				forceUndock();
+			}
+			evaluate();
+		};
+		desktopMq.addEventListener('change', onDesktopChange);
+		reduceMq.addEventListener('change', evaluate);
+
 		const onPageHide = () => {
-			window.removeEventListener('scroll', scheduleStuckCheck);
-			window.removeEventListener('resize', scheduleStuckCheck);
 			desktopMq.removeEventListener('change', onDesktopChange);
 			reduceMq.removeEventListener('change', evaluate);
 			panel.removeEventListener('animationend', onAnimationEnd);
-			releaseObserver?.disconnect();
+			for (const observer of observers) observer.disconnect();
 			clearAnimTimer();
-			if (rafId) window.cancelAnimationFrame(rafId);
+			clearStableTimer();
 		};
 		window.addEventListener('pagehide', onPageHide, { once: true });
 
-		updateStuck();
+		evaluate();
 	});
 }
 

@@ -3,12 +3,13 @@ import '../styles/global.css';
 import Seo from '../components/common/Seo.astro';
 import Header from '../components/common/Header.astro';
 import Footer from '../components/common/Footer.astro';
+import DeferredAnalytics from '../components/common/DeferredAnalytics.astro';
+import LeadTracker from '../components/common/LeadTracker.astro';
 import { BRAND } from '../lib/constants';
 import type { SeoProps } from '../lib/seo';
-import Analytics from '@vercel/analytics/astro'
-import Ga4 from '../components/common/Ga4.astro';
-import LeadTracker from '../components/common/LeadTracker.astro';
-import MetaPixel from '../components/common/MetaPixel.astro';
+import Analytics from '@vercel/analytics/astro';
+import { resolveHeroImagePath } from '../lib/image-paths';
+import { resolveMascotImagePath } from '../lib/mascot-paths';
 
 interface Props extends SeoProps {
 	showHeader?: boolean;
@@ -31,7 +32,11 @@ const {
 	jsonLd,
 } = Astro.props;
 
-const gtmId = import.meta.env.PUBLIC_GTM_ID;
+const isHome = path === '/' || path === '';
+const homeHeroPreload = isHome ? resolveHeroImagePath() : undefined;
+const homeMascotPreload = isHome ? resolveMascotImagePath(BRAND.mascot.hero) : undefined;
+const fontStylesheet =
+	'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Nunito:wght@700;800;900&display=swap';
 ---
 
 <!doctype html>
@@ -43,45 +48,31 @@ const gtmId = import.meta.env.PUBLIC_GTM_ID;
 		<link rel="apple-touch-icon" href={BRAND.appleTouchIcon} />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="generator" content={Astro.generator} />
-		{
-			gtmId && (
-				<script is:inline define:vars={{ gtmId }}>
-					(function (w, d, s, l, i) {
-						w[l] = w[l] || [];
-						w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
-						var f = d.getElementsByTagName(s)[0],
-							j = d.createElement(s),
-							dl = l != 'dataLayer' ? '&l=' + l : '';
-						j.async = true;
-						j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-						f.parentNode.insertBefore(j, f);
-					})(window, document, 'script', 'dataLayer', gtmId);
-				</script>
-			)
-		}
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-			rel="stylesheet"
-		/>
-		<Seo title={title} description={description} path={path} image={image} noindex={noindex} type={type} jsonLd={jsonLd} />
-		<Ga4 />
-		<MetaPixel />
-	</head>
-	<body>
 		{
-			gtmId && (
-				<noscript>
-					<iframe
-						src={`https://www.googletagmanager.com/ns.html?id=${gtmId}`}
-						height="0"
-						width="0"
-						style="display:none;visibility:hidden"
-					/>
-				</noscript>
+			homeHeroPreload && (
+				<link rel="preload" as="image" href={homeHeroPreload} fetchpriority="high" />
 			)
 		}
+		{
+			homeMascotPreload && (
+				<link rel="preload" as="image" href={homeMascotPreload} fetchpriority="high" />
+			)
+		}
+		<link
+			href={fontStylesheet}
+			rel="stylesheet"
+			media="print"
+			onload="this.media='all'"
+		/>
+		<noscript>
+			<link href={fontStylesheet} rel="stylesheet" />
+		</noscript>
+		<Seo title={title} description={description} path={path} image={image} noindex={noindex} type={type} jsonLd={jsonLd} />
+	</head>
+	<body>
+		<DeferredAnalytics />
 		{showHeader && <Header />}
 		<main>
 			<slot />
@@ -98,4 +89,4 @@ const gtmId = import.meta.env.PUBLIC_GTM_ID;
 		</script>
 	</body>
 </html>
-<Analytics/>
+<Analytics />

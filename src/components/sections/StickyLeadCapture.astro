@@ -1,0 +1,44 @@
+---
+import LeadCompactForm from '../common/LeadCompactForm.astro';
+
+interface Props {
+	title?: string;
+	subtitle?: string;
+	formId?: string;
+	hotel?: string;
+	resort?: string;
+	destination?: string;
+	campaign?: string;
+}
+
+const {
+	title = 'Consulte disponibilidade',
+	subtitle = 'Deixe seus dados e retornamos rápido.',
+	formId = 'sticky-lead-form',
+	hotel,
+	resort,
+	destination,
+	campaign,
+} = Astro.props;
+---
+
+<!--
+	Parking host for the compact sticky form. Hidden when undocked; the sticky
+	dock script moves [data-sticky-lead-panel] into the carousel slot on desktop.
+-->
+<div data-sticky-lead-home class="hidden" hidden>
+	<div class="tuki-surface-panel" data-sticky-lead-panel>
+		<h2 class="tuki-type-headline text-tuki-ink">{title}</h2>
+		<p class="tuki-type-body mt-2 text-tuki-muted">{subtitle}</p>
+		<div class="mt-6">
+			<LeadCompactForm
+				formId={formId}
+				hotel={hotel}
+				resort={resort}
+				destination={destination}
+				campaign={campaign}
+				submitLabel="Consultar disponibilidade"
+			/>
+		</div>
+	</div>
+</div>

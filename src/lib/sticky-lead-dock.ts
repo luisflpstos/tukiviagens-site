@@ -13,7 +13,23 @@ export function isStickyStuckFromTop(
 	boundingClientTop: number,
 	epsilonPx = 1,
 ): boolean {
-	return boundingClientTop <= stickyTopPx + epsilonPx;
+	// Sticky is pinned only while top sits at the sticky offset.
+	// `top < stickyTop` means the column has unstuck and scrolled away —
+	// that must NOT count as stuck, or the lead form never returns home.
+	return Math.abs(boundingClientTop - stickyTopPx) <= epsilonPx;
+}
+
+/**
+ * Dock phase from IntersectionObservers — independent of sticky column height.
+ * Measuring getBoundingClientRect on the sticky column flickers when the compact
+ * form is teleported in (column grows → sticky unpins → form undocks → loop).
+ */
+export function isStickyPhaseActive(input: {
+	isDesktop: boolean;
+	isSentinelOutOfView: boolean;
+	isRootInView: boolean;
+}): boolean {
+	return input.isDesktop && input.isSentinelOutOfView && input.isRootInView;
 }
 
 export type StickyLeadMotionPhase = 'idle' | 'entering' | 'exiting';

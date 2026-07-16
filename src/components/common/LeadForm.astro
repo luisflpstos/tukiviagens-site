@@ -135,6 +135,7 @@ const childOptions = Array.from({ length: MAX_CHILDREN + 1 }, (_, index) => inde
 	document.querySelectorAll<HTMLFormElement>('[data-lead-form]').forEach((form) => {
 		initLeadForm({
 			formId: form.id,
+			variant: form.dataset.leadFormVariant === 'compact' ? 'compact' : 'full',
 			hotel: form.dataset.hotel,
 			resort: form.dataset.resort,
 			destination: form.dataset.destination,

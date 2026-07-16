@@ -1,20 +1,20 @@
 import { LEAD_FIELD_MAX_LENGTH } from '../lib/lead-config';
-import { leadFormFieldsSchema } from '../lib/lead-schema';
+import { leadContactFieldsSchema, leadFormFieldsSchema } from '../lib/lead-schema';
 
 export { LEAD_FIELD_MAX_LENGTH };
 
 export function validateName(name: string): string | null {
-	const result = leadFormFieldsSchema.shape.nome.safeParse(name);
+	const result = leadContactFieldsSchema.shape.nome.safeParse(name);
 	return result.success ? null : (result.error.issues[0]?.message ?? 'Nome inválido.');
 }
 
 export function validatePhone(phone: string): string | null {
-	const result = leadFormFieldsSchema.shape.telefone.safeParse(phone);
+	const result = leadContactFieldsSchema.shape.telefone.safeParse(phone);
 	return result.success ? null : (result.error.issues[0]?.message ?? 'Telefone inválido.');
 }
 
 export function validateEmail(email: string): string | null {
-	const result = leadFormFieldsSchema.shape.email.safeParse(email);
+	const result = leadContactFieldsSchema.shape.email.safeParse(email);
 	return result.success ? null : (result.error.issues[0]?.message ?? 'E-mail inválido.');
 }
 
@@ -48,5 +48,14 @@ export function validateLeadForm(values: {
 		criancas: values.criancas === '' ? NaN : Number(values.criancas),
 	});
 
+	return result.success ? null : (result.error.issues[0]?.message ?? 'Verifique os campos.');
+}
+
+export function validateLeadContactForm(values: {
+	nome: string;
+	telefone: string;
+	email: string;
+}): string | null {
+	const result = leadContactFieldsSchema.safeParse(values);
 	return result.success ? null : (result.error.issues[0]?.message ?? 'Verifique os campos.');
 }

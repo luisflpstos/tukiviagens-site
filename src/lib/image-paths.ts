@@ -1,6 +1,7 @@
 import { existsSync } from 'node:fs';
 import { join } from 'node:path';
 import { HERO_BACKGROUND, HOTEL_FALLBACK_IMAGES } from './constants';
+import { preferWebpPublicPath } from './prefer-webp-path';
 
 /**
  * Caminhos canônicos para imagens locais em `public/`.
@@ -77,7 +78,9 @@ export function resolvePublicImagePath(publicPath: string, fallback: string): st
 }
 
 export function resolveHeroImagePath(): string {
-	return resolvePublicImagePath(IMAGE_PATHS.hero, HERO_BACKGROUND);
+	const resolved = resolvePublicImagePath(IMAGE_PATHS.hero, HERO_BACKGROUND);
+	if (resolved === HERO_BACKGROUND) return resolved;
+	return preferWebpPublicPath(resolved);
 }
 
 export function getHotelImagePath(propertyId: string, index = 0): string {
@@ -86,5 +89,7 @@ export function getHotelImagePath(propertyId: string, index = 0): string {
 	const fallback = HOTEL_FALLBACK_IMAGES[index % HOTEL_FALLBACK_IMAGES.length];
 
 	if (!localPath) return fallback;
-	return resolvePublicImagePath(localPath, fallback);
+	const resolved = resolvePublicImagePath(localPath, fallback);
+	if (resolved === fallback) return resolved;
+	return preferWebpPublicPath(resolved);
 }

@@ -1,13 +1,14 @@
 import { readdir, stat } from 'node:fs/promises';
 import { join, extname, basename, dirname } from 'node:path';
 import sharp from 'sharp';
+import {
+	IMAGE_DIRS,
+	resolveMaxWidth,
+	resolveWebpQuality,
+} from './optimize-images-policy.mjs';
 
 const PUBLIC_ROOT = join(process.cwd(), 'public');
-const IMAGE_DIRS = ['images/hoteis', 'images/destinos', 'images/resorts', 'images/icons'];
 const SOURCE_EXTENSIONS = new Set(['.jpg', '.jpeg', '.png', '.JPG', '.JPEG', '.PNG']);
-const MAX_WIDTH = { capa: 1600, icons: 304, default: 1200 };
-const WEBP_QUALITY = 82;
-const ICONS_WEBP_QUALITY = 85;
 
 async function walk(dir) {
 	const entries = await readdir(dir, { withFileTypes: true });
@@ -25,17 +26,6 @@ async function walk(dir) {
 	}
 
 	return files;
-}
-
-function resolveMaxWidth(relativePath, slot) {
-	if (relativePath.startsWith('images/icons/')) {
-		return MAX_WIDTH.icons;
-	}
-	return slot === 'capa' ? MAX_WIDTH.capa : MAX_WIDTH.default;
-}
-
-function resolveWebpQuality(relativePath) {
-	return relativePath.startsWith('images/icons/') ? ICONS_WEBP_QUALITY : WEBP_QUALITY;
 }
 
 async function optimizeImage(filePath) {
