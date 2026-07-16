@@ -13,14 +13,14 @@ export const MAX_ADULTS = 7;
 export const MAX_CHILDREN = 4;
 
 /**
- * Endpoint externo que recebe os leads (somente servidor).
- * Configure `LEAD_WEBHOOK_URL` no painel da Vercel ou em `.env`.
+ * Webhook servidor→servidor (WhatsApp click / fallback).
+ * Formulários de contato NÃO usam este endpoint — só o Kortex lead-tracker.js.
  */
 export function getLeadWebhookUrl(): string | undefined {
 	return process.env.LEAD_WEBHOOK_URL ?? import.meta.env.LEAD_WEBHOOK_URL;
 }
 
-/** Segredo opcional enviado ao webhook como Bearer token. */
+/** Segredo opcional enviado ao webhook WhatsApp como Bearer token. */
 export function getLeadWebhookSecret(): string | undefined {
 	return process.env.LEAD_WEBHOOK_SECRET ?? import.meta.env.LEAD_WEBHOOK_SECRET;
 }

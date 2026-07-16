@@ -16,7 +16,12 @@ export interface LeadFormOptions {
   campaign?: string;
 }
 
-const LEAD_API_PATH = "/api/lead/";
+/**
+ * Formulário não chama `/api/lead` nem o webhook n8n.
+ * Ingestão: Kortex `lead-tracker.js` (auto-capture no submit).
+ */
+export const LEAD_FORM_USES_SERVER_API = false;
+
 const THANKS_PAGE_PATH = "/obrigado/";
 
 export function initLeadForm(options: LeadFormOptions): void {
@@ -39,7 +44,7 @@ export function initLeadForm(options: LeadFormOptions): void {
     }
   });
 
-  form.addEventListener("submit", async (event) => {
+  form.addEventListener("submit", (event) => {
     event.preventDefault();
 
     const formData = new FormData(form);
@@ -88,54 +93,7 @@ export function initLeadForm(options: LeadFormOptions): void {
       submitBtn.textContent = "Enviando...";
     }
 
-    const stayFields =
-      variant === "full"
-        ? {
-            data_entrada: String(formData.get("data_entrada") ?? ""),
-            data_saida: String(formData.get("data_saida") ?? ""),
-            adultos: Number(formData.get("adultos")),
-            criancas: Number(formData.get("criancas")),
-          }
-        : {};
-
     try {
-      const response = await fetch(LEAD_API_PATH, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify({
-          ...contact,
-          ...stayFields,
-          _hp: honeypot,
-          attribution,
-          meta: metaContext,
-          context: {
-            hotel: options.hotel,
-            resort: options.resort,
-            destination:
-              options.destination ||
-              resolveLeadDestination({ path: window.location.pathname }),
-            campaign: options.campaign,
-            form_id: options.formId,
-            landing_slug: window.location.pathname,
-            h1: document.querySelector("h1")?.textContent?.trim() ?? "",
-            page_url: window.location.href,
-            page_title: document.title,
-          },
-        }),
-      });
-
-      const result = (await response.json().catch(() => null)) as {
-        ok?: boolean;
-        error?: string;
-      } | null;
-
-      if (!response.ok || !result?.ok) {
-        throw new Error(result?.error ?? `HTTP ${response.status}`);
-      }
-
       const resolvedDestination =
         options.destination ||
         resolveLeadDestination({ path: window.location.pathname });
@@ -161,17 +119,14 @@ export function initLeadForm(options: LeadFormOptions): void {
         utm_campaign: attribution.utm_campaign,
       });
 
-      // Meta Pixel: mesmo event_id enviado ao servidor (CAPI) para deduplicação.
       trackMetaPixelEvent("Lead", metaContext.event_id, {
         content_name: options.hotel || options.resort || undefined,
       });
 
       window.location.assign(THANKS_PAGE_PATH);
-      return;
     } catch {
       setStatus("Não foi possível enviar agora. Tente pelo WhatsApp.", true);
       trackFormError(options.formId, "network");
-    } finally {
       if (submitBtn) {
         submitBtn.disabled = false;
         submitBtn.textContent = submitBtn.dataset.defaultLabel ?? "Enviar";

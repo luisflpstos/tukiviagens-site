@@ -4,7 +4,7 @@ import { isAllowedOrigin } from './lead-security';
 function requestWithOrigin(origin: string | null): Request {
 	const headers = new Headers();
 	if (origin) headers.set('origin', origin);
-	return new Request('http://localhost:4321/api/lead/', { headers });
+	return new Request('http://localhost:4321/api/whatsapp-click/', { headers });
 }
 
 describe('isAllowedOrigin', () => {
