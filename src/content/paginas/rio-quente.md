@@ -31,7 +31,7 @@ faq:
   - question: "O Rio Quente Resorts é all inclusive?"
     answer: "Não. A rede trabalha com meia pensão: café e almoço nos hotéis dentro do complexo; café e jantar nos hotéis de fora (exceto Eco Chalés, sem meia pensão). Bebidas, petiscos e refeições extras são pagos à parte."
   - question: "Qual hotel fica mais perto do Hot Park?"
-    answer: "Dentro do complexo, Refúgio Grand Premium tem entrada exclusiva ao Hot Park. Hotel Pousada também fica a poucos passos. Fora do complexo, Hotel Giardino é o mais próximo (transfer ou a pé). Apartamentos em Rio Quente (400 m), Prime Hotel e IMG (650 m) são as opções independentes mais próximas."
+    answer: "Dentro do complexo, Refúgio Grand Premium tem entrada exclusiva ao Hot Park. Hotel Pousada também fica a poucos passos. Fora do complexo, Hotel Giardino é o mais próximo (transfer ou a pé). Prime Hotel, IMG e Serra Madre (cerca de 650 m) são as opções independentes mais próximas."
   - question: "Vale a pena ficar dentro do Rio Quente Resorts?"
     answer: "Sim, se você quer aproveitar o Parque das Fontes de dia e de madrugada sem depender de carro. Hot Park e Parque das Fontes vêm inclusos na diária. O Resort Pass avulso (day use completo) custa cerca de R$ 759 — quase o preço de uma diária nos hotéis mais baratos da rede."
   - question: "Qual o melhor custo-benefício em Rio Quente?"
@@ -48,7 +48,7 @@ faq:
 seo:
   title: "Rio Quente e Hot Park | Guia completo e hotéis"
   description: "Guia de Rio Quente: Rio Quente Resorts, Hot Park, Parque das Fontes, comparativo de hotéis, preços e opções fora do complexo. Cotação Tuki Viagens."
-  image: /images/destinos/rio-quente/capa.webp
+  image: /images/destinos/rio-quente/capa.jpeg
 ---
 
 ## O que é Rio Quente?

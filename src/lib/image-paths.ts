@@ -36,7 +36,6 @@ export const IMAGE_PATHS = {
 		'hotel-giardino-rio-quente': '/images/hoteis/hotel-giardino-rio-quente/capa.jpg',
 		'img-hotel-rio-quente': '/images/hoteis/img-hotel-rio-quente/capa.jpg',
 		'park-veredas-resort': '/images/hoteis/park-veredas-resort/capa.jpg',
-		'apartamentos-em-rio-quente': '/images/hoteis/apartamentos-em-rio-quente/capa.jpg',
 		'hotel-luupi-rio-quente': '/images/hoteis/hotel-luupi-rio-quente/capa.jpg',
 		'refugio-grand-premium': '/images/hoteis/refugio-grand-premium/capa.jpg',
 		'hotel-cristal-rio-quente': '/images/hoteis/hotel-cristal-rio-quente/capa.jpg',

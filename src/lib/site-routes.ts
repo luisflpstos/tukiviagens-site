@@ -263,14 +263,6 @@ export const SITE_ROUTES: SiteRoute[] = [
 		{ silo: 'rio-quente', parent: '/rio-quente/resorts/' },
 	),
 	route(
-		'/rio-quente/apartamentos-em-rio-quente/',
-		'Apartamentos em Rio Quente',
-		'hotel',
-		'published',
-		['apartamentos em rio quente', 'apartamento rio quente'],
-		{ silo: 'rio-quente', parent: '/rio-quente/hoteis/' },
-	),
-	route(
 		'/rio-quente/hotel-luupi-rio-quente/',
 		'Hotel Luupi, Rio Quente Resorts',
 		'hotel',

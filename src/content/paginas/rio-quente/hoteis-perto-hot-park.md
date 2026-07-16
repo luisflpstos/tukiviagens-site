@@ -4,12 +4,12 @@ pageType: "venda"
 silo: "rio-quente"
 
 headline: "Hotel perto do Hot Park: hospedagem em Rio Quente com máxima proximidade"
-description: "Hospedagem perto do Hot Park em Rio Quente (GO): compare Refúgio, Apartamentos em Rio Quente, Prime, IMG e oficiais Rio Quente Resorts por distância e perfil."
+description: "Hospedagem perto do Hot Park em Rio Quente (GO): compare Refúgio, Prime, IMG, Serra Madre e oficiais Rio Quente Resorts por distância e perfil."
 
 highlights:
   - Refúgio Grand Premium a passos do Hot Park
-  - Apartamentos em Rio Quente a 400 m do parque
-  - Prime, IMG e Serra Madre a 650 m
+  - Prime, IMG e Serra Madre a 650 m do parque
+  - Oficiais com transfer 24h (Giardino e Luupi)
   - Cotação com datas, adultos e crianças
 
 keywords:
@@ -23,20 +23,20 @@ cta: "Cotar hospedagem perto do Hot Park"
 
 faq:
   - question: "Qual hotel fica mais perto do Hot Park?"
-    answer: "Refúgio Grand Premium fica dentro do complexo, a passos do Hot Park. Fora do complexo, Apartamentos em Rio Quente (400 m) é a opção mais próxima, seguido por Prime, IMG e Serra Madre (650 m)."
+    answer: "Refúgio Grand Premium fica dentro do complexo, a passos do Hot Park. Fora do complexo, Prime, IMG e Serra Madre (cerca de 650 m) são as opções independentes mais próximas."
   - question: "Quanto tempo leva do hotel ao Hot Park?"
-    answer: "Dentro do complexo, o deslocamento pode ser a pé em poucos minutos. Fora do complexo, hotéis entre 400 m e 900 m permitem caminhada; Giardino e Luupi oferecem transfer gratuito 24h."
+    answer: "Dentro do complexo, o deslocamento pode ser a pé em poucos minutos. Fora do complexo, hotéis entre 650 m e 900 m permitem caminhada; Giardino e Luupi oferecem transfer gratuito 24h."
   - question: "Hot Park incluso vale a pena?"
     answer: "Oficiais Rio Quente Resorts (Giardino, Luupi, Refúgio, Cristal, Pousada) incluem Hot Park na diária. Fora do complexo, hotéis como Prime e IMG são mais baratos, mas exigem ingresso à parte."
   - question: "Hotel barato perto do Hot Park?"
-    answer: "Apartamentos em Rio Quente (R$ 177, 400 m), Prime Hotel (R$ 237, 650 m) e IMG Hotel (R$ 256, 650 m) são referências de custo-benefício com boa proximidade."
+    answer: "Prime Hotel (R$ 237, 650 m) e IMG Hotel (R$ 256, 650 m) são referências de custo-benefício com boa proximidade."
   - question: "Hotel perto do Hot Park para crianças: o que considerar?"
     answer: "Priorize Refúgio ou Pousada dentro do complexo, ou IMG e Park Veredas fora — piscinas, espaço kids e menos deslocamento com crianças cansadas."
 
 seo:
   title: "Hotel perto do Hot Park | Hospedagem Rio Quente"
-  description: "Hotéis perto do Hot Park: Refúgio a passos, Apartamentos 400 m, Prime e IMG 650 m. Compare distância e perfil. Cotação Tuki Viagens."
-  image: /images/destinos/rio-quente/capa.webp
+  description: "Hotéis perto do Hot Park: Refúgio a passos, Prime, IMG e Serra Madre a 650 m. Compare distância e perfil. Cotação Tuki Viagens."
+  image: /images/destinos/rio-quente/capa.jpeg
 ---
 
 ## Por que se hospedar perto do Hot Park?
@@ -47,7 +47,7 @@ O **Hot Park** é o principal motivo da viagem a Rio Quente. Ficar perto do parq
 
 1. **[Refúgio Grand Premium](/rio-quente/refugio-grand-premium/)** — dentro do complexo, a passos do Hot Park
 2. **[Hotel Pousada](/rio-quente/hotel-pousada-rio-quente/)** — dentro do complexo, cerca de 50 m do Parque das Fontes
-3. **[Apartamentos em Rio Quente](/rio-quente/apartamentos-em-rio-quente/)**, **[Prime Hotel](/rio-quente/prime-hotel-aguas-da-serra/)** e **[IMG Hotel](/rio-quente/img-hotel-rio-quente/)** — 400 m a 650 m, fora do complexo
+3. **[Prime Hotel](/rio-quente/prime-hotel-aguas-da-serra/)** e **[IMG Hotel](/rio-quente/img-hotel-rio-quente/)** — cerca de 650 m, fora do complexo
 
 ## Comparativo por distância
 
@@ -56,7 +56,6 @@ O **Hot Park** é o principal motivo da viagem a Rio Quente. Ficar perto do parq
 | [Refúgio Grand Premium](/rio-quente/refugio-grand-premium/) | A passos | Resort oficial | Sim |
 | [Hotel Cristal](/rio-quente/hotel-cristal-rio-quente/) | Dentro do complexo | Resort oficial | Sim |
 | [Hotel Pousada](/rio-quente/hotel-pousada-rio-quente/) | 50 m Parque das Fontes | Resort oficial | Sim |
-| [Apartamentos em Rio Quente](/rio-quente/apartamentos-em-rio-quente/) | 400 m | Apartamento | Não |
 | [Prime Hotel Águas da Serra](/rio-quente/prime-hotel-aguas-da-serra/) | 650 m | Hotel/apart-hotel | Não |
 | [IMG Hotel Rio Quente](/rio-quente/img-hotel-rio-quente/) | 650 m | Hotel | Não |
 | [Serra Madre Hotel](/rio-quente/serra-madre-hotel/) | 650 m | Hotel | Não |

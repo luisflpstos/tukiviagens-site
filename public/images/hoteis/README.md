@@ -50,7 +50,6 @@ Usado em:
 | `hotel-giardino-rio-quente/` | `/rio-quente/hotel-giardino-rio-quente/` |
 | `img-hotel-rio-quente/` | `/rio-quente/img-hotel-rio-quente/` |
 | `park-veredas-resort/` | `/rio-quente/park-veredas-resort/` |
-| `apartamentos-em-rio-quente/` | `/rio-quente/apartamentos-em-rio-quente/` |
 | `hotel-luupi-rio-quente/` | `/rio-quente/hotel-luupi-rio-quente/` |
 | `refugio-grand-premium/` | `/rio-quente/refugio-grand-premium/` |
 | `hotel-cristal-rio-quente/` | `/rio-quente/hotel-cristal-rio-quente/` |

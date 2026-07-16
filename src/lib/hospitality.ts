@@ -33,7 +33,6 @@ export const RIO_QUENTE_HOTEL_SLUGS = new Set([
 	'aguas-da-serra-rio-quente',
 	'hotel-giardino-rio-quente',
 	'img-hotel-rio-quente',
-	'apartamentos-em-rio-quente',
 	'hotel-luupi-rio-quente',
 	'hotel-pousada-rio-quente',
 	'hotel-cristal-rio-quente',
