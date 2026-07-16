@@ -453,6 +453,68 @@
 		@apply rounded-3xl border border-tuki-purple/8 bg-tuki-lavender/40 p-8 md:p-10;
 	}
 
+	@media (min-width: 1024px) {
+		.is-sticky-lead-docked {
+			padding: 0.75rem 1rem;
+			border-radius: 1rem;
+			max-height: min(100%, calc(100dvh - 7rem));
+			overflow-x: hidden;
+			overflow-y: auto;
+		}
+
+		.is-sticky-lead-docked > h2 {
+			font-size: var(--text-title);
+			line-height: var(--leading-title);
+			letter-spacing: normal;
+			font-weight: 800;
+		}
+
+		.is-sticky-lead-docked > p {
+			display: none;
+		}
+
+		.is-sticky-lead-docked > div {
+			margin-top: 0.5rem;
+		}
+
+		.is-sticky-lead-docked form {
+			gap: 0.5rem;
+		}
+
+		.is-sticky-lead-docked form > :not([hidden]) + :not([hidden]) {
+			margin-top: 0.5rem;
+		}
+
+		.is-sticky-lead-docked .tuki-input {
+			padding: 0.5rem 0.75rem;
+			border-radius: 0.75rem;
+			font-size: var(--text-small);
+		}
+
+		.is-sticky-lead-docked button[type='submit'] {
+			padding-top: 0.5rem;
+			padding-bottom: 0.5rem;
+		}
+
+		.is-sticky-lead-docked [data-form-status] {
+			min-height: 0;
+		}
+
+		[data-sticky-lead-column]:has(.is-sticky-lead-docked) [data-sticky-lead-slot] {
+			margin-top: 0.75rem;
+		}
+
+		[data-sticky-lead-column]:has(.is-sticky-lead-docked) .photo-carousel [data-carousel-stage] {
+			max-height: clamp(10rem, 32vh, 18rem);
+		}
+	}
+
+	@media (min-width: 1024px) and (max-height: 800px) {
+		[data-sticky-lead-column]:has(.is-sticky-lead-docked) .photo-carousel [data-carousel-stage] {
+			max-height: clamp(9rem, 28vh, 14rem);
+		}
+	}
+
 	.tuki-eyebrow {
 		font-size: var(--text-label);
 		font-weight: 700;

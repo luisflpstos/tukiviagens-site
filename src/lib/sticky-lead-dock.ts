@@ -4,6 +4,23 @@ export type StickyLeadDockStateInput = {
 	isReleaseVisible: boolean;
 };
 
+export type StickyLeadFitBudgetInput = {
+	viewportHeightPx: number;
+	stickyTopPx: number;
+	carouselHeightPx: number;
+	slotGapPx: number;
+};
+
+/** Remaining px under the carousel for the docked panel inside the sticky column. */
+export function stickyLeadPanelBudgetPx(input: StickyLeadFitBudgetInput): number {
+	return (
+		input.viewportHeightPx -
+		input.stickyTopPx -
+		input.carouselHeightPx -
+		input.slotGapPx
+	);
+}
+
 export function shouldDockStickyLead(input: StickyLeadDockStateInput): boolean {
 	return input.isDesktop && input.isStickyStuck && !input.isReleaseVisible;
 }

@@ -204,11 +204,6 @@ html.tuki-motion-ready [data-tuki-reveal].is-revealed .tuki-stagger-item {
 	pointer-events: none;
 }
 
-.is-sticky-lead-docked {
-	max-height: calc(100vh - 9rem);
-	overflow-y: auto;
-}
-
 @media (prefers-reduced-motion: reduce) {
 	/* Apenas efeitos contínuos de grande amplitude — mantém marquee, entradas e reveals */
 	.tuki-hero-bg-zoom {

@@ -4,7 +4,45 @@ import {
 	isStickyStuckFromTop,
 	nextStickyLeadMotionAction,
 	shouldDockStickyLead,
+	stickyLeadPanelBudgetPx,
 } from './sticky-lead-dock';
+
+describe('stickyLeadPanelBudgetPx', () => {
+	const TARGET_DOCKED_PANEL_HEIGHT_PX = 280;
+
+	it('computes cramped budget at 1100×750 measured reality', () => {
+		expect(
+			stickyLeadPanelBudgetPx({
+				viewportHeightPx: 750,
+				stickyTopPx: 112,
+				carouselHeightPx: 407,
+				slotGapPx: 24,
+			}),
+		).toBe(207);
+	});
+
+	it('shows target panel height does not fit pre-fix budget (carousel must shrink)', () => {
+		const budget = stickyLeadPanelBudgetPx({
+			viewportHeightPx: 750,
+			stickyTopPx: 112,
+			carouselHeightPx: 407,
+			slotGapPx: 24,
+		});
+		expect(budget).toBeLessThan(TARGET_DOCKED_PANEL_HEIGHT_PX);
+		expect(TARGET_DOCKED_PANEL_HEIGHT_PX > budget).toBe(true);
+	});
+
+	it('fits target panel after carousel shrink and tighter slot gap', () => {
+		const budget = stickyLeadPanelBudgetPx({
+			viewportHeightPx: 750,
+			stickyTopPx: 112,
+			carouselHeightPx: 280,
+			slotGapPx: 12,
+		});
+		expect(budget).toBeGreaterThanOrEqual(TARGET_DOCKED_PANEL_HEIGHT_PX);
+		expect(budget).toBe(346);
+	});
+});
 
 describe('shouldDockStickyLead', () => {
 	it('does not dock on mobile even when sticky and release hidden', () => {
