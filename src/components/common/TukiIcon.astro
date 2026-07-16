@@ -1,5 +1,6 @@
 ---
 import {
+	resolveTukiIconFetchPriority,
 	resolveTukiIconLoading,
 	type TukiIconLoadingContext,
 } from '../../lib/tuki-icon-loading';
@@ -23,6 +24,7 @@ const {
 } = Astro.props;
 
 const loading = resolveTukiIconLoading(loadingContext);
+const fetchpriority = resolveTukiIconFetchPriority(loadingContext);
 
 const sizes = {
 	xs: 'h-8 w-8',
@@ -51,5 +53,6 @@ const dimensions = {
 	width={dimensions[size]}
 	height={dimensions[size]}
 	loading={loading}
+	fetchpriority={fetchpriority}
 	decoding="async"
 />

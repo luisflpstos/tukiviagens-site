@@ -9,11 +9,12 @@ interface Props {
 const { images, label } = Astro.props;
 ---
 
-<section class="section-padding">
+<section class="section-padding" data-sticky-lead-root>
 	<div class="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
 		<div class="grid items-start gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)] lg:gap-12">
-			<div class="lg:sticky lg:top-28">
+			<div class="lg:sticky lg:top-28" data-sticky-lead-column>
 				<PhotoCarousel images={images} label={label} />
+				<div data-sticky-lead-slot class="mt-6 hidden lg:block" aria-hidden="true"></div>
 			</div>
 
 			<article class="content-markdown max-w-none">
@@ -22,3 +23,7 @@ const { images, label } = Astro.props;
 		</div>
 	</div>
 </section>
+
+<script>
+	import '../../scripts/sticky-lead-dock';
+</script>

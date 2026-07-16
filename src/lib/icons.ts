@@ -1,8 +1,11 @@
+import { toTukiIconWebpPath } from './tuki-icon-paths';
+
 /**
  * Ícones 3D da marca Tuki Viagens (`public/images/icons/`).
+ * Paths apontam para WebP otimizado (gerado no prebuild a partir dos PNG fonte).
  * Usar estes caminhos em vez de emojis ou SVGs genéricos.
  */
-export const TUKI_ICONS = {
+const TUKI_ICON_SOURCES = {
 	aviao: '/images/icons/icone-aviao-tuki-viagens.png',
 	cadeiraPraia: '/images/icons/icone-cadeira-praia-tuki-viagens.png',
 	cama: '/images/icons/icone-cama-tuki-viagens.png',
@@ -30,7 +33,14 @@ export const TUKI_ICONS = {
 	viajarSeguranca: '/images/icons/icone-viajar-com-seguranca-tuki-viajens.png',
 } as const;
 
-export type TukiIconKey = keyof typeof TUKI_ICONS;
+export type TukiIconKey = keyof typeof TUKI_ICON_SOURCES;
+
+export const TUKI_ICONS = Object.fromEntries(
+	(Object.entries(TUKI_ICON_SOURCES) as [TukiIconKey, string][]).map(([key, src]) => [
+		key,
+		toTukiIconWebpPath(src),
+	]),
+) as { readonly [K in TukiIconKey]: string };
 
 const MARQUEE_ICON_ALTS: Record<TukiIconKey, string> = {
 	aviao: 'Avião',
@@ -60,10 +70,23 @@ const MARQUEE_ICON_ALTS: Record<TukiIconKey, string> = {
 	viajarSeguranca: 'Viaje com segurança',
 };
 
-/** Todos os ícones da marca para a faixa marquee da home. */
-export const MARQUEE_ICONS = (Object.entries(TUKI_ICONS) as [TukiIconKey, string][]).map(
-	([key, src]) => ({
-		src,
-		alt: MARQUEE_ICON_ALTS[key],
-	}),
-);
+/** Subconjunto decorativo da faixa marquee (evita eager-load de todos os ícones). */
+const MARQUEE_ICON_KEYS = [
+	'aviao',
+	'cadeiraPraia',
+	'cama',
+	'carro',
+	'mala',
+	'oculosBoia',
+	'passaporte',
+	'piscina',
+	'placaFerias',
+	'sol',
+	'mapa',
+	'hotel',
+] as const satisfies readonly TukiIconKey[];
+
+export const MARQUEE_ICONS = MARQUEE_ICON_KEYS.map((key) => ({
+	src: TUKI_ICONS[key],
+	alt: MARQUEE_ICON_ALTS[key],
+}));

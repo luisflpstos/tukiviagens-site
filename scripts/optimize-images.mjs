@@ -3,10 +3,11 @@ import { join, extname, basename, dirname } from 'node:path';
 import sharp from 'sharp';
 
 const PUBLIC_ROOT = join(process.cwd(), 'public');
-const IMAGE_DIRS = ['images/hoteis', 'images/destinos', 'images/resorts'];
+const IMAGE_DIRS = ['images/hoteis', 'images/destinos', 'images/resorts', 'images/icons'];
 const SOURCE_EXTENSIONS = new Set(['.jpg', '.jpeg', '.png', '.JPG', '.JPEG', '.PNG']);
-const MAX_WIDTH = { capa: 1600, default: 1200 };
+const MAX_WIDTH = { capa: 1600, icons: 304, default: 1200 };
 const WEBP_QUALITY = 82;
+const ICONS_WEBP_QUALITY = 85;
 
 async function walk(dir) {
 	const entries = await readdir(dir, { withFileTypes: true });
@@ -26,10 +27,22 @@ async function walk(dir) {
 	return files;
 }
 
+function resolveMaxWidth(relativePath, slot) {
+	if (relativePath.startsWith('images/icons/')) {
+		return MAX_WIDTH.icons;
+	}
+	return slot === 'capa' ? MAX_WIDTH.capa : MAX_WIDTH.default;
+}
+
+function resolveWebpQuality(relativePath) {
+	return relativePath.startsWith('images/icons/') ? ICONS_WEBP_QUALITY : WEBP_QUALITY;
+}
+
 async function optimizeImage(filePath) {
 	const relative = filePath.slice(PUBLIC_ROOT.length + 1);
 	const slot = basename(filePath, extname(filePath));
-	const maxWidth = slot === 'capa' ? MAX_WIDTH.capa : MAX_WIDTH.default;
+	const maxWidth = resolveMaxWidth(relative, slot);
+	const webpQuality = resolveWebpQuality(relative);
 	const webpPath = join(dirname(filePath), `${slot}.webp`);
 
 	const sourceStat = await stat(filePath);
@@ -46,7 +59,7 @@ async function optimizeImage(filePath) {
 
 	await image
 		.resize(targetWidth, null, { withoutEnlargement: true, fit: 'inside' })
-		.webp({ quality: WEBP_QUALITY, effort: 4 })
+		.webp({ quality: webpQuality, effort: 4 })
 		.toFile(webpPath);
 
 	const outputStat = await stat(webpPath);
