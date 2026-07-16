@@ -1,10 +1,18 @@
-const LOCAL_ORIGINS = new Set(['http://localhost:4321', 'http://127.0.0.1:4321']);
+function isLocalHttpOrigin(origin: string): boolean {
+	try {
+		const url = new URL(origin);
+		const host = url.hostname;
+		return url.protocol === 'http:' && (host === 'localhost' || host === '127.0.0.1');
+	} catch {
+		return false;
+	}
+}
 
 export function isAllowedOrigin(request: Request): boolean {
 	const origin = request.headers.get('origin');
 	if (!origin) return true;
 
-	if (LOCAL_ORIGINS.has(origin)) return true;
+	if (isLocalHttpOrigin(origin)) return true;
 
 	const siteUrl = process.env.PUBLIC_SITE_URL ?? import.meta.env.PUBLIC_SITE_URL;
 	if (!siteUrl) return true;

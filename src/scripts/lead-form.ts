@@ -2,6 +2,7 @@ import { getStoredAttribution } from "./utm";
 import { resolveLeadDestination } from "../lib/lead-destination";
 import { saveLeadHandoff } from "../lib/lead-handoff";
 import { bindPhoneMask } from "./masks";
+import { LEAD_PHONE_FIELD_NAME, readLeadContactFromFormData } from "./lead-form-fields";
 import { validateLeadContactForm, validateLeadForm } from "./validators";
 import { trackFormError, trackFormStart, trackFormSubmit } from "./tracking";
 import { buildMetaBrowserContext, trackMetaPixelEvent } from "./meta-pixel";
@@ -26,7 +27,7 @@ export function initLeadForm(options: LeadFormOptions): void {
 
   const variant = options.variant ?? "full";
   const phoneInput = form.querySelector<HTMLInputElement>(
-    'input[name="phone"]',
+    `input[name="${LEAD_PHONE_FIELD_NAME}"]`,
   );
   if (phoneInput) bindPhoneMask(phoneInput);
 
@@ -42,11 +43,7 @@ export function initLeadForm(options: LeadFormOptions): void {
     event.preventDefault();
 
     const formData = new FormData(form);
-    const contact = {
-      nome: String(formData.get("nome") ?? ""),
-      telefone: String(formData.get("telefone") ?? ""),
-      email: String(formData.get("email") ?? ""),
-    };
+    const contact = readLeadContactFromFormData(formData);
 
     const statusEl = form.querySelector("[data-form-status]");
     const setStatus = (message: string, isError: boolean) => {

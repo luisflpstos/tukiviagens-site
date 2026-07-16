@@ -1,5 +1,6 @@
 ---
 import { LEAD_FIELD_MAX_LENGTH } from '../../lib/lead-config';
+import { LEAD_PHONE_FIELD_NAME } from '../../scripts/lead-form-fields';
 
 interface Props {
 	formId?: string;
@@ -54,11 +55,11 @@ const {
 			</label>
 			<input
 				id={`${formId}-telefone`}
-				name="phone"
-				type="phone"
+				name={LEAD_PHONE_FIELD_NAME}
+				type="tel"
 				required
 				maxlength={LEAD_FIELD_MAX_LENGTH}
-				autocomplete="phone"
+				autocomplete="tel"
 				class="w-full tuki-input"
 				placeholder="(00) 00000-0000"
 			/>
