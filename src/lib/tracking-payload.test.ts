@@ -2,37 +2,76 @@ import { describe, expect, it } from 'vitest';
 import { buildLeadFormSubmitPayload, buildLeadSubmitPayload } from './tracking-payload';
 
 describe('buildLeadFormSubmitPayload', () => {
-	it('monta payload limpo com dados do formulário e UTMs para dataLayer', () => {
+	const contact = {
+		nome: 'Maria Silva',
+		telefone: '(11) 98765-4321',
+		email: 'maria@email.com',
+	};
+
+	const attribution = {
+		utm_source: 'google',
+		utm_medium: 'cpc',
+		utm_campaign: 'SEARCH-LEADS-OLIMPIA',
+		utm_content: 'agencia-cotacao',
+		utm_term: 'hot beach olimpia',
+		gclid: 'CjwKCAjwGclid',
+		gbraid: '0AAAABBQgbraid',
+		wbraid: '0AAAABBQwbraid',
+		fbclid: 'IwAR0fbclid',
+		referrer: 'https://www.google.com/',
+		landing_page: '/olimpia/',
+	};
+
+	const context = {
+		h1: 'Hot Beach Resort de Olímpia',
+		pageUrl: 'https://tukiviagens.com.br/olimpia/hot-beach-resort/?utm_source=google',
+		pageTitle: 'Hot Beach Resort – Tuki Viagens',
+		userAgent: 'Mozilla/5.0 Test',
+		product: 'Hot Beach Resort',
+		campaign: 'hotel-hot-beach',
+		submittedAt: new Date('2026-07-03T20:05:13.912Z'),
+	};
+
+	it('espelha a estrutura completa do whatsapp_click com dados do formulário', () => {
 		const payload = buildLeadFormSubmitPayload({
 			formId: 'home-lead-form',
-			contact: {
-				nome: 'Maria Silva',
-				telefone: '(11) 98765-4321',
-				email: 'maria@email.com',
-			},
-			attribution: {
-				utm_source: 'google',
-				utm_medium: 'cpc',
-				utm_campaign: 'SEARCH-LEADS-OLIMPIA',
-				utm_term: 'hot beach olimpia',
-				landing_page: '/olimpia/',
-			},
+			contact,
+			attribution,
+			context,
 		});
 
 		expect(payload).toEqual({
-			form_id: 'home-lead-form',
-			nome: 'Maria Silva',
-			telefone: '(11) 98765-4321',
-			email: 'maria@email.com',
+			event: 'lead_form_submit',
+			source: 'google',
+			h1: 'Hot Beach Resort de Olímpia',
 			utm_source: 'google',
 			utm_medium: 'cpc',
 			utm_campaign: 'SEARCH-LEADS-OLIMPIA',
+			utm_content: 'agencia-cotacao',
 			utm_term: 'hot beach olimpia',
+			gclid: 'CjwKCAjwGclid',
+			gbraid: '0AAAABBQgbraid',
+			wbraid: '0AAAABBQwbraid',
+			fbclid: 'IwAR0fbclid',
+			page_url: 'https://tukiviagens.com.br/olimpia/hot-beach-resort/?utm_source=google',
+			page_title: 'Hot Beach Resort – Tuki Viagens',
+			referrer: 'https://www.google.com/',
+			horario_local: '03/07/2026 17:05:13',
+			timestamp_iso: '2026-07-03T20:05:13.912Z',
+			user_agent: 'Mozilla/5.0 Test',
+			nome: 'Maria Silva',
+			telefone: '(11) 98765-4321',
+			email: 'maria@email.com',
+			form_id: 'home-lead-form',
+			product: 'Hot Beach Resort',
+			campaign: 'hotel-hot-beach',
+			currency: 'BRL',
+			value: 1.0,
 		});
 		expect(payload).not.toHaveProperty('landing_page');
 	});
 
-	it('usa string vazia quando UTM estiver ausente', () => {
+	it('usa source direct e strings vazias quando atribuição estiver ausente', () => {
 		const payload = buildLeadFormSubmitPayload({
 			formId: 'contato-lead-form',
 			contact: {
@@ -40,18 +79,23 @@ describe('buildLeadFormSubmitPayload', () => {
 				telefone: '(17) 99999-0000',
 				email: 'joao@email.com',
 			},
+			context: {
+				h1: 'Contato',
+				pageUrl: 'https://tukiviagens.com.br/contato/',
+				pageTitle: 'Contato',
+				userAgent: 'Mozilla/5.0 Test',
+				submittedAt: new Date('2026-07-03T20:05:13.912Z'),
+			},
 		});
 
-		expect(payload).toEqual({
-			form_id: 'contato-lead-form',
-			nome: 'João',
-			telefone: '(17) 99999-0000',
-			email: 'joao@email.com',
-			utm_source: '',
-			utm_medium: '',
-			utm_campaign: '',
-			utm_term: '',
-		});
+		expect(payload.source).toBe('direct');
+		expect(payload.utm_source).toBe('');
+		expect(payload.gclid).toBe('');
+		expect(payload.fbclid).toBe('');
+		expect(payload.product).toBeUndefined();
+		expect(payload.campaign).toBeUndefined();
+		expect(payload.currency).toBe('BRL');
+		expect(payload.value).toBe(1.0);
 	});
 });
 

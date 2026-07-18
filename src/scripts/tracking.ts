@@ -1,7 +1,4 @@
-import {
-	getGoogleAdsLeadSendTo,
-	getGoogleAdsWhatsAppSendTo,
-} from '../lib/tracking-config';
+import { getGoogleAdsLeadSendTo } from '../lib/tracking-config';
 import type { LeadFormSubmitTrackingPayload } from '../lib/tracking-payload';
 
 declare global {
@@ -40,7 +37,6 @@ export function pushEvent(event: string, data: Record<string, unknown> = {}): vo
 export function trackWhatsAppClick(data: Record<string, unknown> = {}): void {
 	const params = { method: 'whatsapp', ...data };
 	trackGa4Event('whatsapp_click', params);
-	trackGoogleAdsConversion(getGoogleAdsWhatsAppSendTo());
 }
 
 export function trackCtaClick(label: string, data: Record<string, unknown> = {}): void {
@@ -52,7 +48,7 @@ export function trackFormStart(formId: string): void {
 }
 
 export function trackFormSubmit(payload: LeadFormSubmitTrackingPayload): void {
-	pushEvent('lead_form_submit', payload);
+	pushEvent('lead_form_submit', { method: 'form', ...payload });
 }
 
 export function trackFormError(formId: string, error: string): void {

@@ -57,38 +57,71 @@ export function buildTrackingFields(attribution: LeadAttribution = {}): Tracking
 	};
 }
 
-export interface LeadFormSubmitTrackingPayload {
-	form_id: string;
+export interface LeadFormSubmitContext {
+	h1: string;
+	pageUrl: string;
+	pageTitle: string;
+	userAgent: string;
+	referrer?: string;
+	product?: string;
+	campaign?: string;
+	submittedAt?: Date;
+}
+
+export interface LeadFormSubmitTrackingPayload extends TrackingFields {
+	event: 'lead_form_submit';
+	h1: string;
+	page_url: string;
+	page_title: string;
+	referrer: string;
+	horario_local: string;
+	timestamp_iso: string;
+	user_agent: string;
 	nome: string;
 	telefone: string;
 	email: string;
-	utm_source: string;
-	utm_medium: string;
-	utm_campaign: string;
-	utm_term: string;
+	form_id: string;
+	currency: string;
+	value: number;
+	product?: string;
+	campaign?: string;
 }
 
 export interface BuildLeadFormSubmitPayloadInput {
 	formId: string;
 	contact: LeadContactFields;
 	attribution?: LeadAttribution;
+	context: LeadFormSubmitContext;
 }
 
-/** Payload enxuto para `lead_form_submit` no dataLayer (GTM). */
+/** Payload de `lead_form_submit` espelhando a estrutura completa do `whatsapp_click`. */
 export function buildLeadFormSubmitPayload({
 	formId,
 	contact,
 	attribution = {},
+	context,
 }: BuildLeadFormSubmitPayloadInput): LeadFormSubmitTrackingPayload {
+	const submittedAt = context.submittedAt ?? new Date();
+	const tracking = buildTrackingFields(attribution);
+
 	return {
-		form_id: formId,
+		event: 'lead_form_submit',
+		...tracking,
+		h1: context.h1,
+		page_url: context.pageUrl,
+		page_title: context.pageTitle,
+		referrer: empty(context.referrer) || empty(attribution.referrer),
+		horario_local: formatLocalTimestamp(submittedAt),
+		timestamp_iso: submittedAt.toISOString(),
+		user_agent: context.userAgent,
 		nome: contact.nome,
 		telefone: contact.telefone,
 		email: contact.email,
-		utm_source: empty(attribution.utm_source),
-		utm_medium: empty(attribution.utm_medium),
-		utm_campaign: empty(attribution.utm_campaign),
-		utm_term: empty(attribution.utm_term),
+		form_id: formId,
+		currency: 'BRL',
+		value: 1.0,
+		...(context.product ? { product: context.product } : {}),
+		...(context.campaign ? { campaign: context.campaign } : {}),
 	};
 }
 

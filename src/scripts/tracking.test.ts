@@ -2,7 +2,6 @@ import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 
 vi.mock('../lib/tracking-config', () => ({
 	getGoogleAdsLeadSendTo: () => 'AW-123456789/lead-label',
-	getGoogleAdsWhatsAppSendTo: () => 'AW-123456789/whatsapp-label',
 }));
 
 import {
@@ -42,7 +41,7 @@ describe('tracking conversions', () => {
 		vi.unstubAllGlobals();
 	});
 
-	it('tracks whatsapp as GA4 event and pushes Google Ads conversion for GTM', () => {
+	it('tracks whatsapp_click without Google Ads send_to conversion', () => {
 		trackWhatsAppClick({ product: 'Hot Beach' });
 
 		expect(gtag).toHaveBeenCalledWith('event', 'whatsapp_click', {
@@ -50,12 +49,9 @@ describe('tracking conversions', () => {
 			product: 'Hot Beach',
 		});
 		expect(gtag).not.toHaveBeenCalledWith('event', 'conversion', expect.anything());
-		expect(window.dataLayer).toContainEqual({
-			event: 'google_ads_conversion',
-			send_to: 'AW-123456789/whatsapp-label',
-			currency: 'BRL',
-			value: 1.0,
-		});
+		expect(
+			window.dataLayer.filter((entry) => entry.event === 'google_ads_conversion'),
+		).toHaveLength(0);
 	});
 
 	it('tracks lead conversion as generate_lead and pushes Google Ads conversion for GTM', () => {
@@ -96,22 +92,45 @@ describe('tracking conversions', () => {
 		);
 	});
 
-	it('tracks form submit with clean payload in dataLayer without firing conversion', () => {
+	it('tracks form submit with WhatsApp-mirrored payload in dataLayer without firing conversion', () => {
 		const payload = {
-			form_id: 'contato-lead-form',
-			nome: 'Maria Silva',
-			telefone: '(11) 98765-4321',
-			email: 'maria@email.com',
+			event: 'lead_form_submit' as const,
+			source: 'google',
+			h1: 'Contato',
 			utm_source: 'google',
 			utm_medium: 'cpc',
 			utm_campaign: 'SEARCH-LEADS',
+			utm_content: 'ad-a',
 			utm_term: 'olimpia',
+			gclid: 'gclid-1',
+			gbraid: 'gbraid-1',
+			wbraid: 'wbraid-1',
+			fbclid: 'fbclid-1',
+			page_url: 'https://tukiviagens.com.br/contato/',
+			page_title: 'Contato',
+			referrer: 'https://www.google.com/',
+			horario_local: '03/07/2026 17:05:13',
+			timestamp_iso: '2026-07-03T20:05:13.912Z',
+			user_agent: 'Mozilla/5.0 Test',
+			nome: 'Maria Silva',
+			telefone: '(11) 98765-4321',
+			email: 'maria@email.com',
+			form_id: 'contato-lead-form',
+			currency: 'BRL',
+			value: 1.0,
 		};
 
 		trackFormSubmit(payload);
 
-		expect(gtag).toHaveBeenCalledWith('event', 'lead_form_submit', payload);
-		expect(window.dataLayer).toContainEqual({ event: 'lead_form_submit', ...payload });
+		expect(gtag).toHaveBeenCalledWith('event', 'lead_form_submit', {
+			method: 'form',
+			...payload,
+		});
+		expect(window.dataLayer).toContainEqual({
+			event: 'lead_form_submit',
+			method: 'form',
+			...payload,
+		});
 		expect(gtag).not.toHaveBeenCalledWith('event', 'generate_lead', expect.anything());
 		expect(gtag).not.toHaveBeenCalledWith('event', 'conversion', expect.anything());
 	});

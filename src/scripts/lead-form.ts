@@ -119,6 +119,15 @@ export function initLeadForm(options: LeadFormOptions): void {
           formId: options.formId,
           contact,
           attribution,
+          context: {
+            h1: document.querySelector("h1")?.textContent?.trim() ?? "",
+            pageUrl: window.location.href,
+            pageTitle: document.title,
+            userAgent: navigator.userAgent,
+            referrer: document.referrer || attribution.referrer,
+            product: options.hotel || options.resort,
+            campaign: options.campaign,
+          },
         }),
       );
 
