@@ -29,7 +29,6 @@ function trackGoogleAdsConversion(
 	if (!sendTo) return;
 
 	const payload = { send_to: sendTo, currency: 'BRL', value: 1.0, ...params };
-	window.gtag?.('event', 'conversion', payload);
 	pushDataLayer('google_ads_conversion', payload);
 }
 

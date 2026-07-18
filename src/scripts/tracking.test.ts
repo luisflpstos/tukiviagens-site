@@ -42,21 +42,23 @@ describe('tracking conversions', () => {
 		vi.unstubAllGlobals();
 	});
 
-	it('tracks whatsapp as GA4 event and Google Ads conversion', () => {
+	it('tracks whatsapp as GA4 event and pushes Google Ads conversion for GTM', () => {
 		trackWhatsAppClick({ product: 'Hot Beach' });
 
 		expect(gtag).toHaveBeenCalledWith('event', 'whatsapp_click', {
 			method: 'whatsapp',
 			product: 'Hot Beach',
 		});
-		expect(gtag).toHaveBeenCalledWith('event', 'conversion', {
+		expect(gtag).not.toHaveBeenCalledWith('event', 'conversion', expect.anything());
+		expect(window.dataLayer).toContainEqual({
+			event: 'google_ads_conversion',
 			send_to: 'AW-123456789/whatsapp-label',
 			currency: 'BRL',
 			value: 1.0,
 		});
 	});
 
-	it('tracks lead conversion as generate_lead and Google Ads conversion', () => {
+	it('tracks lead conversion as generate_lead and pushes Google Ads conversion for GTM', () => {
 		trackLeadConversion({ form_id: 'home-lead-form', destination: 'olimpia' });
 
 		expect(gtag).toHaveBeenCalledWith('event', 'generate_lead', {
@@ -65,7 +67,9 @@ describe('tracking conversions', () => {
 			form_id: 'home-lead-form',
 			destination: 'olimpia',
 		});
-		expect(gtag).toHaveBeenCalledWith('event', 'conversion', {
+		expect(gtag).not.toHaveBeenCalledWith('event', 'conversion', expect.anything());
+		expect(window.dataLayer).toContainEqual({
+			event: 'google_ads_conversion',
 			send_to: 'AW-123456789/lead-label',
 			currency: 'BRL',
 			value: 1.0,
