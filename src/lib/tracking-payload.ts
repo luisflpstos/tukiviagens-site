@@ -57,6 +57,41 @@ export function buildTrackingFields(attribution: LeadAttribution = {}): Tracking
 	};
 }
 
+export interface LeadFormSubmitTrackingPayload {
+	form_id: string;
+	nome: string;
+	telefone: string;
+	email: string;
+	utm_source: string;
+	utm_medium: string;
+	utm_campaign: string;
+	utm_term: string;
+}
+
+export interface BuildLeadFormSubmitPayloadInput {
+	formId: string;
+	contact: LeadContactFields;
+	attribution?: LeadAttribution;
+}
+
+/** Payload enxuto para `lead_form_submit` no dataLayer (GTM). */
+export function buildLeadFormSubmitPayload({
+	formId,
+	contact,
+	attribution = {},
+}: BuildLeadFormSubmitPayloadInput): LeadFormSubmitTrackingPayload {
+	return {
+		form_id: formId,
+		nome: contact.nome,
+		telefone: contact.telefone,
+		email: contact.email,
+		utm_source: empty(attribution.utm_source),
+		utm_medium: empty(attribution.utm_medium),
+		utm_campaign: empty(attribution.utm_campaign),
+		utm_term: empty(attribution.utm_term),
+	};
+}
+
 function formatPhoneE164Br(phone: string): string {
 	const digits = phone.replace(/\D/g, '');
 	if (digits.startsWith('55')) return digits;

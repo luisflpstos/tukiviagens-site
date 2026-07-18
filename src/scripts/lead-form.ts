@@ -4,6 +4,7 @@ import { saveLeadHandoff } from "../lib/lead-handoff";
 import { bindPhoneMask } from "./masks";
 import { LEAD_PHONE_FIELD_NAME, readLeadContactFromFormData } from "./lead-form-fields";
 import { validateLeadContactForm, validateLeadForm } from "./validators";
+import { buildLeadFormSubmitPayload } from "../lib/tracking-payload";
 import { trackFormError, trackFormStart, trackFormSubmit } from "./tracking";
 import { buildMetaBrowserContext, trackMetaPixelEvent } from "./meta-pixel";
 
@@ -113,11 +114,13 @@ export function initLeadForm(options: LeadFormOptions): void {
           : {}),
       });
 
-      trackFormSubmit(options.formId, {
-        landing_page: attribution.landing_page,
-        utm_source: attribution.utm_source,
-        utm_campaign: attribution.utm_campaign,
-      });
+      trackFormSubmit(
+        buildLeadFormSubmitPayload({
+          formId: options.formId,
+          contact,
+          attribution,
+        }),
+      );
 
       trackMetaPixelEvent("Lead", metaContext.event_id, {
         content_name: options.hotel || options.resort || undefined,

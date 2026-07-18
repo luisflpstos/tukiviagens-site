@@ -1,5 +1,59 @@
 import { describe, expect, it } from 'vitest';
-import { buildLeadSubmitPayload } from './tracking-payload';
+import { buildLeadFormSubmitPayload, buildLeadSubmitPayload } from './tracking-payload';
+
+describe('buildLeadFormSubmitPayload', () => {
+	it('monta payload limpo com dados do formulário e UTMs para dataLayer', () => {
+		const payload = buildLeadFormSubmitPayload({
+			formId: 'home-lead-form',
+			contact: {
+				nome: 'Maria Silva',
+				telefone: '(11) 98765-4321',
+				email: 'maria@email.com',
+			},
+			attribution: {
+				utm_source: 'google',
+				utm_medium: 'cpc',
+				utm_campaign: 'SEARCH-LEADS-OLIMPIA',
+				utm_term: 'hot beach olimpia',
+				landing_page: '/olimpia/',
+			},
+		});
+
+		expect(payload).toEqual({
+			form_id: 'home-lead-form',
+			nome: 'Maria Silva',
+			telefone: '(11) 98765-4321',
+			email: 'maria@email.com',
+			utm_source: 'google',
+			utm_medium: 'cpc',
+			utm_campaign: 'SEARCH-LEADS-OLIMPIA',
+			utm_term: 'hot beach olimpia',
+		});
+		expect(payload).not.toHaveProperty('landing_page');
+	});
+
+	it('usa string vazia quando UTM estiver ausente', () => {
+		const payload = buildLeadFormSubmitPayload({
+			formId: 'contato-lead-form',
+			contact: {
+				nome: 'João',
+				telefone: '(17) 99999-0000',
+				email: 'joao@email.com',
+			},
+		});
+
+		expect(payload).toEqual({
+			form_id: 'contato-lead-form',
+			nome: 'João',
+			telefone: '(17) 99999-0000',
+			email: 'joao@email.com',
+			utm_source: '',
+			utm_medium: '',
+			utm_campaign: '',
+			utm_term: '',
+		});
+	});
+});
 
 describe('buildLeadSubmitPayload', () => {
 	const fields = {

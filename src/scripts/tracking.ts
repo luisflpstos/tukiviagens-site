@@ -2,6 +2,7 @@ import {
 	getGoogleAdsLeadSendTo,
 	getGoogleAdsWhatsAppSendTo,
 } from '../lib/tracking-config';
+import type { LeadFormSubmitTrackingPayload } from '../lib/tracking-payload';
 
 declare global {
 	interface Window {
@@ -50,8 +51,8 @@ export function trackFormStart(formId: string): void {
 	pushEvent('lead_form_start', { form_id: formId });
 }
 
-export function trackFormSubmit(formId: string, data: Record<string, unknown> = {}): void {
-	pushEvent('lead_form_submit', { form_id: formId, ...data });
+export function trackFormSubmit(payload: LeadFormSubmitTrackingPayload): void {
+	pushEvent('lead_form_submit', payload);
 }
 
 export function trackFormError(formId: string, error: string): void {

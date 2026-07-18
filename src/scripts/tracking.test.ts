@@ -96,10 +96,22 @@ describe('tracking conversions', () => {
 		);
 	});
 
-	it('tracks form submit without firing conversion', () => {
-		trackFormSubmit('contato-lead-form');
+	it('tracks form submit with clean payload in dataLayer without firing conversion', () => {
+		const payload = {
+			form_id: 'contato-lead-form',
+			nome: 'Maria Silva',
+			telefone: '(11) 98765-4321',
+			email: 'maria@email.com',
+			utm_source: 'google',
+			utm_medium: 'cpc',
+			utm_campaign: 'SEARCH-LEADS',
+			utm_term: 'olimpia',
+		};
 
-		expect(gtag).toHaveBeenCalledWith('event', 'lead_form_submit', { form_id: 'contato-lead-form' });
+		trackFormSubmit(payload);
+
+		expect(gtag).toHaveBeenCalledWith('event', 'lead_form_submit', payload);
+		expect(window.dataLayer).toContainEqual({ event: 'lead_form_submit', ...payload });
 		expect(gtag).not.toHaveBeenCalledWith('event', 'generate_lead', expect.anything());
 		expect(gtag).not.toHaveBeenCalledWith('event', 'conversion', expect.anything());
 	});
