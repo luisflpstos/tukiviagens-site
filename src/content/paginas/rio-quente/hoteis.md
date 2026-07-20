@@ -4,10 +4,10 @@ pageType: "venda"
 silo: "rio-quente"
 
 headline: "Hotéis no Rio Quente: compare opções perto do Hot Park"
-description: "Em Rio Quente, a escolha do hotel começa por uma decisão: hospedagem oficial do Rio Quente Resorts (Hot Park e Parque das Fontes inclusos) ou hotel independente no entorno (mais autonomia, ingresso à parte). Compare 9 opções por distância, perfil e acesso aos parques."
+description: "Em Rio Quente, a escolha do hotel começa por uma decisão: hospedagem oficial do Rio Quente Resorts (Hot Park e Parque das Fontes inclusos) ou hotel independente no entorno (mais autonomia, ingresso à parte). Compare 8 opções por distância, perfil e acesso aos parques."
 
 highlights:
-  - 9 hotéis comparados por perfil e distância do Hot Park
+  - 8 hotéis comparados por perfil e distância do Hot Park
   - Oficiais com Hot Park incluso vs independentes no entorno
   - Prime, IMG e Serra Madre a 650 m do parque
   - Cotação consultiva com datas e hóspedes
@@ -61,7 +61,7 @@ Para o panorama do destino, parques e como chegar, comece pelo [guia de Rio Quen
 
 Se a comparação for mais “resort completo” do que “hotel”, veja também [resorts no Rio Quente](/rio-quente/resorts/).
 
-## Comparativo dos 9 hotéis
+## Comparativo dos 8 hotéis
 
 Notas de referência em plataformas de reserva. Distâncias aproximadas em relação ao Hot Park.
 
@@ -73,7 +73,6 @@ Notas de referência em plataformas de reserva. Distâncias aproximadas em rela�
 | [Águas da Serra](/rio-quente/aguas-da-serra-rio-quente/)              | 9,1 (145)   | 650 m                 | À parte                | Grupos até 7 pessoas                   |
 | [Hotel Giardino](/rio-quente/hotel-giardino-rio-quente/)              | 8,2 (1.353) | 700–800 m             | Incluso (transfer 24h) | Custo-benefício oficial                |
 | [IMG Hotel Rio Quente](/rio-quente/img-hotel-rio-quente/)             | 8,1 (1.038) | 650 m                 | À parte                | Família, piscina e lazer no hotel      |
-| [Park Veredas Resort](/rio-quente/park-veredas-resort/)               | 8,5 (545)   | 900 m                 | À parte                | Apart-hotel com estrutura de resort    |
 | [Hotel Luupi](/rio-quente/hotel-luupi-rio-quente/)                    | 8,3 (343)   | 800–900 m             | Incluso (transfer 24h) | Famílias grandes, meia pensão          |
 | [Refúgio Grand Premium](/rio-quente/refugio-grand-premium/)           | 8,3 (309)   | Dentro do complexo    | Incluso (a pé)         | Premium, acesso facilitado aos parques |
 

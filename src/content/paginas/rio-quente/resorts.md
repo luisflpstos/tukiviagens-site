@@ -3,12 +3,12 @@ title: "Resorts no Rio Quente"
 pageType: "venda"
 silo: "rio-quente"
 
-headline: "Resorts no Rio Quente: compare os 10 melhores por perfil, pensão e acesso ao Hot Park"
-description: "Compare os 6 resorts oficiais do Rio Quente Resorts e 4 opções independentes por Hot Park incluso, meia pensão, capacidade e diária. Cotação consultiva Tuki Viagens."
+headline: "Resorts no Rio Quente: compare os 8 melhores por perfil, pensão e acesso ao Hot Park"
+description: "Compare os 6 resorts oficiais do Rio Quente Resorts e 2 opções independentes por Hot Park incluso, meia pensão, capacidade e diária. Cotação consultiva Tuki Viagens."
 
 highlights:
   - "6 resorts oficiais com Hot Park e Parque das Fontes inclusos"
-  - "4 resorts independentes a 650–900 m do Hot Park, diárias desde R$ 237"
+  - "2 resorts independentes a 650 m do Hot Park, diárias desde R$ 237"
   - "Apartamentos para até 7–10 pessoas em Luupi, Giardino e Cristal"
   - "Meia pensão varia por hotel — compare antes de reservar"
 
@@ -25,33 +25,33 @@ cta: "Cotar resort no Rio Quente"
 
 faq:
   - question: "Qual o melhor resort em Rio Quente?"
-    answer: "Depende do perfil: Refúgio Grand Premium para premium com entrada exclusiva ao Hot Park; Pousada para família na primeira viagem; Cristal para casais com piscina infinita; Luupi para grupos de até 7 pessoas; Giardino para melhor custo-benefício oficial; Eco Chalés para orçamento apertado com carro. Fora da marca, Park Veredas e IMG têm estrutura de resort sem ingresso incluso."
+    answer: "Depende do perfil: Refúgio Grand Premium para premium com entrada exclusiva ao Hot Park; Pousada para família na primeira viagem; Cristal para casais com piscina infinita; Luupi para grupos de até 7 pessoas; Giardino para melhor custo-benefício oficial; Eco Chalés para orçamento apertado com carro. Fora da marca, IMG tem estrutura de resort sem ingresso incluso."
   - question: "Qual resort tem Hot Park incluso?"
-    answer: "Os seis hotéis oficiais — Cristal, Refúgio, Pousada, Giardino, Luupi e Eco Chalés — incluem Hot Park e Parque das Fontes na diária. Park Veredas, IMG, Prime e Thermas Paradise vendem hospedagem separada; o ingresso é comprado à parte."
+    answer: "Os seis hotéis oficiais — Cristal, Refúgio, Pousada, Giardino, Luupi e Eco Chalés — incluem Hot Park e Parque das Fontes na diária. IMG e Prime vendem hospedagem separada; o ingresso é comprado à parte."
   - question: "Resort oficial ou hotel independente: qual compensa?"
     answer: "Oficial compensa se você vai usar os parques 2–3 dias seguidos — o Resort Pass avulso custa ~R$ 759 e o Hot Park ~R$ 159/dia. Independente compensa para estadias curtas, grupos grandes com cozinha ou quem prefere explorar restaurantes fora do complexo."
   - question: "Qual resort é melhor para famílias com crianças?"
-    answer: "Dentro do complexo: Hotel Pousada (brinquedoteca, pizzaria, Parque das Fontes colado). Fora com transfer: Hotel Luupi (até 7 pessoas, piscina termal própria). Independentes: Park Veredas (espaço kids, piscina coberta) e IMG Hotel (parque aquático próprio)."
+    answer: "Dentro do complexo: Hotel Pousada (brinquedoteca, pizzaria, Parque das Fontes colado). Fora com transfer: Hotel Luupi (até 7 pessoas, piscina termal própria). Independente: IMG Hotel (parque aquático próprio)."
   - question: "Qual resort tem apartamento para grupo grande?"
-    answer: "Hotel Cristal (até 10 pessoas), Hotel Luupi e Hotel Giardino (até 7 pessoas). Fora da marca: Thermas Paradise Residence e Águas da Serra também recebem grupos com cozinha."
+    answer: "Hotel Cristal (até 10 pessoas), Hotel Luupi e Hotel Giardino (até 7 pessoas). Fora da marca: Águas da Serra também recebe grupos com cozinha."
   - question: "Eco Chalés tem transfer para o complexo?"
     answer: "Não. É o único resort oficial sem transfer gratuito — fica a ~4 km do complexo. Carro próprio ou táxi são necessários para ir ao Hot Park e Parque das Fontes."
   - question: "Os resorts oficiais estão em reforma?"
     answer: "Sim. Os três hotéis internos (Pousada, Refúgio e Cristal) passam por renovação até 2028. Refúgio Grand Premium já está finalizado; Pousada e Cristal operam com obras por etapas. Confira disponibilidade antes de reservar."
 
 seo:
-  title: "Resorts no Rio Quente | Compare 10 opções"
-  description: "Compare os 10 resorts de Rio Quente: Hot Park incluso, meia pensão, capacidade e diária. Oficiais e independentes. Cotação Tuki Viagens."
+  title: "Resorts no Rio Quente | Compare 8 opções"
+  description: "Compare os 8 resorts de Rio Quente: Hot Park incluso, meia pensão, capacidade e diária. Oficiais e independentes. Cotação Tuki Viagens."
   image: /images/paginas/rio-quente/resorts/capa.jpg
 ---
 
 ## Qual resort escolher em Rio Quente?
 
-Em Rio Quente existem **dois tipos de resort**: os **seis oficiais do Rio Quente Resorts** (Hot Park e Parque das Fontes inclusos, meia pensão e transfer na maioria) e **quatro opções independentes** no entorno (estrutura de resort, diária menor, ingresso pago à parte). A escolha certa depende de quantos dias você vai usar os parques, quantas pessoas vão e se prefere conveniência ou economia na hospedagem.
+Em Rio Quente existem **dois tipos de resort**: os **seis oficiais do Rio Quente Resorts** (Hot Park e Parque das Fontes inclusos, meia pensão e transfer na maioria) e **duas opções independentes** no entorno (estrutura de resort, diária menor, ingresso pago à parte). A escolha certa depende de quantos dias você vai usar os parques, quantas pessoas vão e se prefere conveniência ou economia na hospedagem.
 
 Para contexto sobre o destino, parques e como chegar, veja o [guia completo de Rio Quente](/rio-quente/).
 
-## Comparativo dos 10 resorts
+## Comparativo dos 8 resorts
 
 | Resort | Tipo | Nota ref. | Hot Park | Meia pensão | Transfer | Capacidade | Diária ref. |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -61,10 +61,8 @@ Para contexto sobre o destino, parques e como chegar, veja o [guia completo de R
 | [Hotel Luupi](/rio-quente/hotel-luupi-rio-quente/) | Oficial, fora | 8,4 | Incluso | Café + jantar | 24h | Até 7 | ~R$ 1.300 |
 | [Hotel Giardino](/rio-quente/hotel-giardino-rio-quente/) | Oficial, fora | 8,3 | Incluso | Café + jantar | 24h | Até 7 | ~R$ 1.240 |
 | [Eco Chalés](/rio-quente/eco-chales-rio-quente/) | Oficial, fora | 7,3 | Incluso | Só café | Não | Casal/família | ~R$ 645 |
-| [Park Veredas Resort](/rio-quente/park-veredas-resort/) | Independente | 8,5 | À parte | Não | — | Até 4 | ~R$ 315 |
 | [IMG Hotel](/rio-quente/img-hotel-rio-quente/) | Independente | 8,3 | À parte | Não | — | Família | ~R$ 256 |
 | [Prime Hotel](/rio-quente/prime-hotel-aguas-da-serra/) | Independente | 8,5 | À parte | Não | — | Família | ~R$ 237 |
-| [Thermas Paradise](/rio-quente/thermas-paradise-residence/) | Independente | 8,4 | À parte | Não | — | Grupo | ~R$ 333 |
 
 Notas de referência em plataformas de reserva. Diárias para casal em baixa temporada — envie datas para cotação atualizada.
 
@@ -75,7 +73,7 @@ Notas de referência em plataformas de reserva. Diárias para casal em baixa tem
 | Hot Park + Parque das Fontes | Inclusos na diária | ~R$ 159/dia + Resort Pass ~R$ 759 |
 | Meia pensão | Sim (varia por hotel) | Não — refeições à parte |
 | Transfer | 24h ou a pé (exceto Eco Chalés) | Por conta do hóspede |
-| Diária casal | ~R$ 645–2.200 | ~R$ 237–333 |
+| Diária casal | ~R$ 645–2.200 | ~R$ 237–256 |
 | Melhor para | 3+ dias nos parques, família com crianças | 1–2 dias no parque, grupo com cozinha, orçamento apertado |
 
 **Conta rápida:** três dias de Hot Park avulso (~R$ 477) + Resort Pass (~R$ 759) = **~R$ 1.236 só em ingressos**. Um Giardino ou Luupi com parques inclusos e meia pensão pode sair na mesma faixa — mas com transfer, pulseira de acesso e banho noturno no Parque das Fontes.
@@ -108,10 +106,6 @@ Chalés simples no cerrado, **~4 km do complexo**. Único oficial **sem transfer
 
 ## Perfil dos resorts independentes
 
-### Park Veredas Resort — apart-hotel com estrutura completa
-
-Piscina coberta e ao ar livre, espaço kids, spa e suítes família a **900 m do Hot Park**. Nota 8,5. Para quem quer resort sem pagar tarifa oficial — aceita comprar ingresso separado.
-
 ### IMG Hotel — parque aquático próprio
 
 Parque aquático interno, piscinas e estrutura de lazer a **650 m do Hot Park**. Diária desde R$ 256. Boa opção se quiser diversão no hotel nos dias em que o Hot Park fecha (quintas-feiras).
@@ -119,10 +113,6 @@ Parque aquático interno, piscinas e estrutura de lazer a **650 m do Hot Park**.
 ### Prime Hotel — menor diária do entorno
 
 Apart-hotel econômico a **650 m do Hot Park**, nota 8,5. Desde R$ 237. Funcional para quem passa o dia no parque e quer hotel barato à noite.
-
-### Thermas Paradise Residence — condomínio termal
-
-Condomínio com banho termal próprio a **700 m do Hot Park**. Indicado para grupos que querem cozinha e flexibilidade de horário.
 
 ## Comparativo por intenção
 
@@ -135,7 +125,7 @@ Condomínio com banho termal próprio a **700 m do Hot Park**. Indicado para gru
 | Grupo de 8–10 pessoas | Hotel Cristal | Maior capacidade do complexo |
 | Melhor custo-benefício oficial | Hotel Giardino | Parques + transfer + jantar por ~R$ 1.240 |
 | Orçamento mínimo com parques | Eco Chalés | ~R$ 645 com Hot Park incluso (precisa de carro) |
-| Resort sem tarifa oficial | Park Veredas, IMG | Estrutura de resort, diária ~R$ 256–315 |
+| Resort sem tarifa oficial | IMG Hotel | Estrutura de resort, diária ~R$ 256 |
 | Hotel barato perto do parque | Prime Hotel | Desde R$ 237, 650 m do Hot Park |
 
 ## Meia pensão: o que cada resort inclui
@@ -166,7 +156,7 @@ Para experiência premium com parques inclusos, priorizamos **[Refúgio Grand Pr
 
 Para custo-benefício oficial, **[Hotel Giardino](/rio-quente/hotel-giardino-rio-quente/)** e **[Hotel Luupi](/rio-quente/hotel-luupi-rio-quente/)**.
 
-Para resort independente perto do parque, **[Park Veredas](/rio-quente/park-veredas-resort/)** e **[IMG Hotel](/rio-quente/img-hotel-rio-quente/)**.
+Para resort independente perto do parque, **[IMG Hotel](/rio-quente/img-hotel-rio-quente/)**.
 
 Veja também [hotéis no Rio Quente](/rio-quente/hoteis/) e [hotéis perto do Hot Park](/rio-quente/hoteis-perto-hot-park/).
 
@@ -181,7 +171,7 @@ Informe datas, adultos, crianças e perfil da viagem — premium, família, grup
     data-whatsapp-link
     data-phone="551721901358"
     data-product="Resorts no Rio Quente"
-    data-h1="Resorts no Rio Quente: compare os 10 melhores por perfil, pensão e acesso ao Hot Park"
+    data-h1="Resorts no Rio Quente: compare os 8 melhores por perfil, pensão e acesso ao Hot Park"
   >
     Cotar resort no Rio Quente
   </a>

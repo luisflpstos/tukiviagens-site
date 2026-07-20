@@ -103,11 +103,10 @@ Na prática: você volta do parque caminhando, toma banho, usa a cozinha ou a hi
 | --- | --- | --- |
 | Serra Madre Hotel | Conforto + cozinha | Nota 8,8, hidromassagem, 650 m do Hot Park |
 | [Prime Hotel Águas da Serra](/rio-quente/prime-hotel-aguas-da-serra/) | Custo-benefício | Mais avaliações, mesma faixa de proximidade |
-| [Park Veredas Resort](/rio-quente/park-veredas-resort/) | Apart-hotel resort | Mais estrutura de resort, um pouco mais longe |
 | [Thermas Paradise](/rio-quente/thermas-paradise/) | Apartamento termal | Condomínio com banho termal no empreendimento |
 | [Hotel Giardino](/rio-quente/hotel-giardino-rio-quente/) | Oficial RQR | Hot Park incluso, com transfer |
 
-Contra o [Prime Hotel Águas da Serra](/rio-quente/prime-hotel-aguas-da-serra/), o Serra Madre costuma atrair quem quer proposta mais “hotel + flat” (cozinha, hidromassagem, sauna). Contra o Park Veredas, tem menos cara de resort, porém fica mais perto do Hot Park. Contra o Thermas Paradise, vence quem prefere recepção e rotina de hotel a condomínio/apartamento. Contra o Giardino, o Serra Madre é independente: mais autonomia no entorno, mas **sem Hot Park incluso**.
+Contra o [Prime Hotel Águas da Serra](/rio-quente/prime-hotel-aguas-da-serra/), o Serra Madre costuma atrair quem quer proposta mais “hotel + flat” (cozinha, hidromassagem, sauna). Contra o Thermas Paradise, vence quem prefere recepção e rotina de hotel a condomínio/apartamento. Contra o Giardino, o Serra Madre é independente: mais autonomia no entorno, mas **sem Hot Park incluso**.
 
 ## Erros comuns ao escolher o Serra Madre
 

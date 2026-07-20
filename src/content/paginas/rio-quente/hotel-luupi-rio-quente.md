@@ -162,11 +162,10 @@ Ficar no Esplanada muda a rotina: você não está “dentro” das ruas do reso
 | [Hotel Giardino](/rio-quente/hotel-giardino-rio-quente/) | Oficial RQR | Incluso + transfer | Custo-benefício da marca, arquitetura italiana |
 | [Refúgio Grand Premium](/rio-quente/refugio-grand-premium/) | Oficial premium | Incluso (a pé) | Dentro do complexo, acesso facilitado aos parques |
 | [Hotel Cristal](/rio-quente/hotel-cristal-rio-quente/) | Oficial premium | Incluso | Vista, piscina infinita, tipologias amplas |
-| [Park Veredas Resort](/rio-quente/park-veredas-resort/) | Independente | À parte | Estrutura de resort sem ingresso embutido |
 | [Águas da Serra](/rio-quente/aguas-da-serra-rio-quente/) | Independente / flat | À parte | Rio termal + autonomia de apartamento a pé do parque |
 | [Prime Hotel Águas da Serra](/rio-quente/prime-hotel-aguas-da-serra/) | Independente | À parte | Proximidade a pé do Hot Park, apart-hotel |
 
-**Contra Giardino:** mesma lógica oficial externa; o Luupi pesa mais em grupo/duplex e piscina própria; o Giardino pesa em custo-benefício e proximidade relativa ao complexo. **Contra Refúgio:** Luupi fica fora e usa transfer; Refúgio ganha em estar dentro a pé, com posicionamento mais premium. **Contra independentes (Park Veredas, Águas da Serra, Prime):** oficiais embutem Hot Park + Parque das Fontes + transfer; independentes costumam ganhar em autonomia de flat e caminhada, com ingresso à parte.
+**Contra Giardino:** mesma lógica oficial externa; o Luupi pesa mais em grupo/duplex e piscina própria; o Giardino pesa em custo-benefício e proximidade relativa ao complexo. **Contra Refúgio:** Luupi fica fora e usa transfer; Refúgio ganha em estar dentro a pé, com posicionamento mais premium. **Contra independentes (Águas da Serra, Prime):** oficiais embutem Hot Park + Parque das Fontes + transfer; independentes costumam ganhar em autonomia de flat e caminhada, com ingresso à parte.
 
 Veja também a visão geral de [resorts no Rio Quente](/rio-quente/resorts/) se a busca for “parque incluso” em qualquer hotel da marca.
 

@@ -31,7 +31,7 @@ faq:
   - question: "Hotel barato perto do Hot Park?"
     answer: "Prime Hotel (R$ 237, 650 m) e IMG Hotel (R$ 256, 650 m) são referências de custo-benefício com boa proximidade."
   - question: "Hotel perto do Hot Park para crianças: o que considerar?"
-    answer: "Priorize Refúgio ou Pousada dentro do complexo, ou IMG e Park Veredas fora — piscinas, espaço kids e menos deslocamento com crianças cansadas."
+    answer: "Priorize Refúgio ou Pousada dentro do complexo, ou IMG fora — piscinas, espaço kids e menos deslocamento com crianças cansadas."
 
 seo:
   title: "Hotel perto do Hot Park | Hospedagem Rio Quente"
@@ -61,7 +61,6 @@ O **Hot Park** é o principal motivo da viagem a Rio Quente. Ficar perto do parq
 | [Serra Madre Hotel](/rio-quente/serra-madre-hotel/) | 650 m | Hotel | Não |
 | [Thermas Paradise](/rio-quente/thermas-paradise/) | 700 m | Apartamento | Não |
 | [Hotel Giardino](/rio-quente/hotel-giardino-rio-quente/) | 700–800 m | Resort oficial | Sim (transfer 24h) |
-| [Park Veredas Resort](/rio-quente/park-veredas-resort/) | 900 m | Apart-hotel | Não |
 | [Hotel Luupi](/rio-quente/hotel-luupi-rio-quente/) | 800–900 m | Resort oficial | Sim (transfer 24h) |
 
 ## O que considerar além da distância

@@ -11,12 +11,21 @@ const RIO_QUENTE_HOTELS = [
 	'aguas-da-serra-rio-quente',
 	'hotel-giardino-rio-quente',
 	'img-hotel-rio-quente',
-	'park-veredas-resort',
 	'hotel-luupi-rio-quente',
 	'refugio-grand-premium',
 ] as const;
 
-const REMOVED_RIO_QUENTE_SLUG = 'apartamentos-em-rio-quente';
+const REMOVED_RIO_QUENTE_SLUGS = [
+	'apartamentos-em-rio-quente',
+	'park-veredas-resort',
+	'thermas-paradise-residence',
+] as const;
+
+const REMOVED_RIO_QUENTE_LABELS: Record<(typeof REMOVED_RIO_QUENTE_SLUGS)[number], RegExp> = {
+	'apartamentos-em-rio-quente': /Apartamentos em Rio Quente/i,
+	'park-veredas-resort': /Park Veredas/i,
+	'thermas-paradise-residence': /Thermas Paradise Residence/i,
+};
 
 const RIO_QUENTE_RESORTS = [
 	'hotel-cristal-rio-quente',
@@ -25,10 +34,8 @@ const RIO_QUENTE_RESORTS = [
 	'hotel-giardino-rio-quente',
 	'hotel-luupi-rio-quente',
 	'eco-chales-rio-quente',
-	'park-veredas-resort',
 	'img-hotel-rio-quente',
 	'prime-hotel-aguas-da-serra',
-	'thermas-paradise-residence',
 ] as const;
 
 const RIO_QUENTE_PROPERTIES = [...new Set([...RIO_QUENTE_HOTELS, ...RIO_QUENTE_RESORTS])] as const;
@@ -67,29 +74,40 @@ describe('Rio Quente content coverage', () => {
 		}
 	});
 
-	it('fully removes apartamentos-em-rio-quente from routes, content and citations', () => {
-		const removedPath = routePath(REMOVED_RIO_QUENTE_SLUG);
+	it('fully removes retired Rio Quente properties from routes, content and citations', () => {
 		const paths = new Set(SITE_ROUTES.map((route) => route.path));
 		const citationPages = [
 			'hoteis',
 			'hoteis-perto-hot-park',
+			'resorts',
 			'prime-hotel-aguas-da-serra',
 			'thermas-paradise',
+			'serra-madre-hotel',
+			'img-hotel-rio-quente',
+			'hotel-luupi-rio-quente',
 			'../rio-quente',
 		] as const;
 
-		expect(paths.has(removedPath)).toBe(false);
-		expect(existsSync(contentPath(REMOVED_RIO_QUENTE_SLUG))).toBe(false);
-		expect(REMOVED_RIO_QUENTE_SLUG in IMAGE_PATHS.hoteis).toBe(false);
+		for (const slug of REMOVED_RIO_QUENTE_SLUGS) {
+			const removedPath = routePath(slug);
+			expect(paths.has(removedPath), `route still registered: ${removedPath}`).toBe(false);
+			expect(existsSync(contentPath(slug)), `content still exists: ${slug}.md`).toBe(false);
+			expect(slug in IMAGE_PATHS.hoteis, `image path still mapped: ${slug}`).toBe(false);
+			expect(existsSync(imageFolderPath(slug)), `image folder still exists: ${slug}`).toBe(
+				false,
+			);
 
-		for (const page of citationPages) {
-			const file =
-				page === '../rio-quente'
-					? join(process.cwd(), 'src/content/paginas/rio-quente.md')
-					: contentPath(page);
-			const body = readFileSync(file, 'utf8');
-			expect(body).not.toContain(removedPath);
-			expect(body).not.toMatch(/Apartamentos em Rio Quente/i);
+			for (const page of citationPages) {
+				const file =
+					page === '../rio-quente'
+						? join(process.cwd(), 'src/content/paginas/rio-quente.md')
+						: contentPath(page);
+				const body = readFileSync(file, 'utf8');
+				expect(body, `${page} still cites ${removedPath}`).not.toContain(removedPath);
+				expect(body, `${page} still mentions ${slug}`).not.toMatch(
+					REMOVED_RIO_QUENTE_LABELS[slug],
+				);
+			}
 		}
 	});
 });
@@ -499,7 +517,8 @@ describe('/rio-quente/thermas-paradise/ SEO hotel page', () => {
 		expect(thermasParadisePage).toContain('/rio-quente/hoteis/');
 		expect(thermasParadisePage).toContain('/rio-quente/hoteis-perto-hot-park/');
 		expect(thermasParadisePage).toContain('/rio-quente/serra-madre-hotel/');
-		expect(thermasParadisePage).toContain('/rio-quente/thermas-paradise-residence/');
+		expect(thermasParadisePage).not.toContain('/rio-quente/thermas-paradise-residence/');
+		expect(thermasParadisePage).not.toContain('/rio-quente/park-veredas-resort/');
 	});
 
 	it('covers conversational FAQs without price answers', () => {
@@ -508,63 +527,6 @@ describe('/rio-quente/thermas-paradise/ SEO hotel page', () => {
 		expect(thermasParadisePage).toMatch(/família|grupo|casal/i);
 		expect(thermasParadisePage).toMatch(/rio|termal|piscinas/i);
 		expect(thermasParadisePage).not.toMatch(/R\$\s*\d/);
-	});
-});
-
-describe('/rio-quente/thermas-paradise-residence/ SEO resort page', () => {
-	const residencePage = readFileSync(contentPath('thermas-paradise-residence'), 'utf8');
-
-	it('does not expose currency values or daily-rate pricing', () => {
-		expect(residencePage).not.toMatch(/R\$\s*\d/);
-		expect(residencePage).not.toMatch(/desde R\$/i);
-		expect(residencePage).not.toMatch(/Diária/i);
-		expect(residencePage).not.toMatch(/Quanto custa/i);
-		expect(residencePage).not.toMatch(/a partir de R\$/i);
-		expect(residencePage).not.toMatch(/preço|tarifas?/i);
-	});
-
-	it('answers the main intent early with extractable structure', () => {
-		expect(residencePage).toMatch(/## O que é o Thermas Paradise Residence/i);
-		expect(residencePage).toMatch(/## Para quem vale a pena|## Vale a pena/i);
-		expect(residencePage).toMatch(/## Estrutura/i);
-		expect(residencePage).toMatch(/## Localização/i);
-		expect(residencePage).toMatch(/## O que está incluso/i);
-		expect(residencePage).toMatch(/## Erros comuns/i);
-		expect(residencePage).toMatch(/Hot Park/i);
-		expect(residencePage).toMatch(/rio|termal|piscinas/i);
-		expect(residencePage).toMatch(/apartamento|condomínio|cozinha/i);
-		expect(residencePage).toMatch(/Esplanada/i);
-		expect(residencePage).toMatch(/## Comparativo/i);
-		expect(residencePage).toMatch(/\|\s*Hospedagem\s*\|/i);
-		expect(residencePage).toMatch(/\|\s*Perfil\s*\|/i);
-	});
-
-	it('connects the Rio Quente hotel cluster with internal links', () => {
-		expect(residencePage).toContain('/rio-quente/');
-		expect(residencePage).toContain('/rio-quente/hoteis/');
-		expect(residencePage).toContain('/rio-quente/hoteis-perto-hot-park/');
-		expect(residencePage).toContain('/rio-quente/resorts/');
-		expect(residencePage).toContain('/rio-quente/thermas-paradise/');
-		expect(residencePage).toContain('/rio-quente/park-veredas-resort/');
-		expect(residencePage).toContain('/rio-quente/aguas-da-serra-rio-quente/');
-	});
-
-	it('covers conversational FAQs without price answers', () => {
-		expect(residencePage).toMatch(/Thermas Paradise Residence é o mesmo|são a mesma/i);
-		expect(residencePage).toMatch(/Hot Park/i);
-		expect(residencePage).toMatch(/perto|próximo|700 m|500|menos de 1 km|1 km/i);
-		expect(residencePage).toMatch(/família|grupo|casal/i);
-		expect(residencePage).toMatch(/rio|termal|piscinas|cozinha/i);
-		expect(residencePage).toMatch(/incluso|incluíd|à parte/i);
-		expect(residencePage).not.toMatch(/R\$\s*\d/);
-	});
-
-	it('documents residence profile, tipologias and condominium leisure', () => {
-		expect(residencePage).toMatch(/1 quarto|2 quartos/i);
-		expect(residencePage).toMatch(/cinco piscinas|5 piscinas/i);
-		expect(residencePage).toMatch(/Ribeirão Água Quente|rio de águas termais|rio termal/i);
-		expect(residencePage).toMatch(/independente|não.*oficial|fora do complexo/i);
-		expect(residencePage).toMatch(/## Peça sua cotação|## Cotação|## Como cotar/i);
 	});
 });
 
@@ -749,64 +711,5 @@ describe('/rio-quente/eco-chales-rio-quente/ SEO hotel page', () => {
 		expect(ecoChalesPage).toMatch(/4 km/i);
 		expect(ecoChalesPage).toMatch(/\|\s*Tipo\s*\|\s*Capacidade/i);
 		expect(ecoChalesPage).toMatch(/## Como cotar/i);
-	});
-});
-
-describe('/rio-quente/park-veredas-resort/ SEO hotel page', () => {
-	const parkVeredasPage = readFileSync(contentPath('park-veredas-resort'), 'utf8');
-
-	it('does not expose currency values or daily-rate pricing', () => {
-		expect(parkVeredasPage).not.toMatch(/R\$\s*\d/);
-		expect(parkVeredasPage).not.toMatch(/desde R\$/i);
-		expect(parkVeredasPage).not.toMatch(/Diária/i);
-		expect(parkVeredasPage).not.toMatch(/Quanto custa/i);
-		expect(parkVeredasPage).not.toMatch(/a partir de R\$/i);
-		expect(parkVeredasPage).not.toMatch(/preço|tarifas?/i);
-	});
-
-	it('answers the main intent early with extractable structure', () => {
-		expect(parkVeredasPage).toMatch(/## O que é o Park Veredas Resort/i);
-		expect(parkVeredasPage).toMatch(/## Vale a pena/i);
-		expect(parkVeredasPage).toMatch(/## Estrutura/i);
-		expect(parkVeredasPage).toMatch(/## Localização/i);
-		expect(parkVeredasPage).toMatch(/## O que está incluso/i);
-		expect(parkVeredasPage).toMatch(/## Erros comuns/i);
-		expect(parkVeredasPage).toMatch(/Hot Park/i);
-		expect(parkVeredasPage).toMatch(/Esplanada/i);
-		expect(parkVeredasPage).toMatch(/rio|águas quentes|termal/i);
-		expect(parkVeredasPage).toMatch(/apart-hotel|apartamento|condomínio/i);
-		expect(parkVeredasPage).toMatch(/## Comparativo/i);
-		expect(parkVeredasPage).toMatch(/\|\s*Hospedagem\s*\|/i);
-		expect(parkVeredasPage).toMatch(/\|\s*Perfil\s*\|/i);
-	});
-
-	it('connects the Rio Quente hotel cluster with internal links', () => {
-		expect(parkVeredasPage).toContain('/rio-quente/');
-		expect(parkVeredasPage).toContain('/rio-quente/hoteis/');
-		expect(parkVeredasPage).toContain('/rio-quente/hoteis-perto-hot-park/');
-		expect(parkVeredasPage).toContain('/rio-quente/resorts/');
-		expect(parkVeredasPage).toContain('/rio-quente/thermas-paradise/');
-		expect(parkVeredasPage).toContain('/rio-quente/img-hotel-rio-quente/');
-		expect(parkVeredasPage).toContain('/rio-quente/hotel-luupi-rio-quente/');
-		expect(parkVeredasPage).toContain('/rio-quente/hotel-giardino-rio-quente/');
-	});
-
-	it('covers conversational FAQs without price answers', () => {
-		expect(parkVeredasPage).toMatch(/Hot Park/i);
-		expect(parkVeredasPage).toMatch(/perto|próximo|800|900 m|1,?1 km|a pé/i);
-		expect(parkVeredasPage).toMatch(/família|grupo/i);
-		expect(parkVeredasPage).toMatch(/rio|águas quentes|termal|piscinas/i);
-		expect(parkVeredasPage).toMatch(/não.*incluso|à parte|adquiridos? à parte/i);
-		expect(parkVeredasPage).not.toMatch(/R\$\s*\d/);
-	});
-
-	it('documents typologies, leisure and independence from Rio Quente Resorts', () => {
-		expect(parkVeredasPage).toMatch(/apart-hotel|condomínio|flat/i);
-		expect(parkVeredasPage).toMatch(/fora do complexo|independente/i);
-		expect(parkVeredasPage).toMatch(/cozinha|kitchenette|copa/i);
-		expect(parkVeredasPage).toMatch(/piscina/i);
-		expect(parkVeredasPage).toMatch(/sauna|espaço kids|brinquedoteca/i);
-		expect(parkVeredasPage).toMatch(/Guanabara/i);
-		expect(parkVeredasPage).toMatch(/## Como funciona a estadia/i);
 	});
 });

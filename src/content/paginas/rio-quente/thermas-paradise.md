@@ -28,8 +28,6 @@ faq:
     answer: "Sim. Fica na Esplanada do Rio Quente, fora do complexo Rio Quente Resorts, a cerca de 500–700 m do Hot Park — em geral dá para ir a pé em poucos minutos."
   - question: "O Thermas Paradise inclui ingresso do Hot Park?"
     answer: "Não. É hospedagem independente: Hot Park e Parque das Fontes são adquiridos à parte. Se você quer parque incluso na hospedagem, compare com oficiais como Hotel Giardino ou Hotel Luupi."
-  - question: "Thermas Paradise e Thermas Paradise Residence são a mesma coisa?"
-    answer: "São unidades do mesmo empreendimento/condomínio, com listagens e categorias diferentes nas plataformas. A estrutura de lazer (piscinas, rio termal, sauna) é a referência comum; confirme tipologia e capacidade na cotação."
   - question: "O Thermas Paradise tem rio de águas termais?"
     answer: "Sim. O diferencial mais citado é o Ribeirão Água Quente (rio termal) atravessando a área de lazer do condomínio, além das piscinas e da sauna."
   - question: "O Thermas Paradise vale a pena para família?"
@@ -61,8 +59,6 @@ Para o panorama do destino, comece pelo [guia de Rio Quente](/rio-quente/). Para
 | Quem quer rio termal no empreendimento | Ribeirão Água Quente na área de lazer — o diferencial mais comentado |
 
 Pense duas vezes se o plano é **vários dias de Hot Park + Parque das Fontes com tudo incluso**, meia pensão de resort oficial ou ficar **dentro** do complexo. Nesses casos, compare [Hotel Giardino](/rio-quente/hotel-giardino-rio-quente/), [Hotel Luupi](/rio-quente/hotel-luupi-rio-quente/) ou [Refúgio Grand Premium](/rio-quente/refugio-grand-premium/).
-
-Há também a página irmã [Thermas Paradise Residence](/rio-quente/thermas-paradise-residence/) — mesma lógica de condomínio/apart-hotel no empreendimento; use a cotação para bater tipologia e capacidade.
 
 ## Estrutura, acomodações e lazer
 
@@ -129,7 +125,6 @@ Ficar a pé do Hot Park muda a logística: dá para voltar ao apartamento no mei
 - Tipo: **condomínio / apart-hotel** independente
 - Local: **Esplanada do Rio Quente**
 - Reputação (listagem Thermas Paradise): nota **9,0** em cerca de **456 avaliações**
-- Relacionado: [Thermas Paradise Residence](/rio-quente/thermas-paradise-residence/) (outra listagem do empreendimento; notas podem variar por unidade)
 
 ## Comparativo com outras opções
 
@@ -138,11 +133,10 @@ Ficar a pé do Hot Park muda a logística: dá para voltar ao apartamento no mei
 | **Thermas Paradise** | Condomínio com rio termal | À parte | Cinco piscinas + rio na área de lazer + apartamento |
 | [Serra Madre Hotel](/rio-quente/serra-madre-hotel/) | Conforto hoteleiro + flat | À parte | Mais “hotel” (recepção, café); menos escala de parque aquático próprio |
 | [Prime Hotel Águas da Serra](/rio-quente/prime-hotel-aguas-da-serra/) | Apart-hotel custo-benefício | À parte | Também tem rio termal; volume alto de avaliações |
-| [Park Veredas Resort](/rio-quente/park-veredas-resort/) | Apart-hotel com cara de resort | À parte | Mais estrutura de resort; um pouco mais longe (~900 m) |
 | [IMG Hotel Rio Quente](/rio-quente/img-hotel-rio-quente/) | Família, lazer no hotel | À parte | Parque aquático próprio; proposta mais “hotel” |
 | [Hotel Giardino](/rio-quente/hotel-giardino-rio-quente/) | Oficial RQR | Incluso + transfer 24h | Parque na hospedagem; menos autonomia de condomínio |
 
-**Contra Serra Madre:** o Thermas Paradise ganha em escala de lazer termal (piscinas + rio no condomínio); o Serra Madre ganha em rotina mais hoteleira. **Contra Prime:** propostas vizinhas — compare tipologia do apto, datas e o que cada unidade inclui de enxoval/utensílios. **Contra Park Veredas:** Thermas Paradise fica mais perto do Hot Park e reforça o rio termal; Park Veredas pesa mais como resort/apart-hotel. **Contra IMG:** Thermas Paradise pesa no rio termal do condomínio; IMG pesa no lazer aquático próprio com cara de hotel. **Contra Giardino:** aqui o ingresso do Hot Park é separado; no oficial, o parque entra no pacote.
+**Contra Serra Madre:** o Thermas Paradise ganha em escala de lazer termal (piscinas + rio no condomínio); o Serra Madre ganha em rotina mais hoteleira. **Contra Prime:** propostas vizinhas — compare tipologia do apto, datas e o que cada unidade inclui de enxoval/utensílios. **Contra IMG:** Thermas Paradise pesa no rio termal do condomínio; IMG pesa no lazer aquático próprio com cara de hotel. **Contra Giardino:** aqui o ingresso do Hot Park é separado; no oficial, o parque entra no pacote.
 
 Veja também [resorts no Rio Quente](/rio-quente/resorts/) se a busca for mais “tudo no complexo” do que condomínio independente.
 

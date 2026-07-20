@@ -49,13 +49,11 @@ Usado em:
 | `aguas-da-serra-rio-quente/` | `/rio-quente/aguas-da-serra-rio-quente/` |
 | `hotel-giardino-rio-quente/` | `/rio-quente/hotel-giardino-rio-quente/` |
 | `img-hotel-rio-quente/` | `/rio-quente/img-hotel-rio-quente/` |
-| `park-veredas-resort/` | `/rio-quente/park-veredas-resort/` |
 | `hotel-luupi-rio-quente/` | `/rio-quente/hotel-luupi-rio-quente/` |
 | `refugio-grand-premium/` | `/rio-quente/refugio-grand-premium/` |
 | `hotel-cristal-rio-quente/` | `/rio-quente/hotel-cristal-rio-quente/` |
 | `hotel-pousada-rio-quente/` | `/rio-quente/hotel-pousada-rio-quente/` |
 | `eco-chales-rio-quente/` | `/rio-quente/eco-chales-rio-quente/` |
-| `thermas-paradise-residence/` | `/rio-quente/thermas-paradise-residence/` |
 | `rio-quente-resorts/` | `/rio-quente/resorts/` |
 
 ## Outras pastas

@@ -129,7 +129,6 @@ Ficar a pé do Hot Park muda a logística: dá para voltar ao flat no meio do di
 | **IMG Hotel Rio Quente** | Independente, família | À parte | Rio termal + piscinas aquecidas no hotel |
 | [Prime Hotel Águas da Serra](/rio-quente/prime-hotel-aguas-da-serra/) | Independente, apart-hotel | À parte | Rio termal + cozinha compacta |
 | [Serra Madre Hotel](/rio-quente/serra-madre-hotel/) | Conforto hoteleiro | À parte | Cozinha completa e clima mais “hotel” |
-| [Park Veredas Resort](/rio-quente/park-veredas-resort/) | Apart-hotel / resort | À parte | Estrutura ampla de condomínio |
 | [Hotel Giardino](/rio-quente/hotel-giardino-rio-quente/) | Oficial RQR | Incluso + transfer 24h | Parque na hospedagem |
 | [Águas da Serra](/rio-quente/aguas-da-serra-rio-quente/) | Apart-hotel / grupos | À parte | Unidades amplas para grupos |
 

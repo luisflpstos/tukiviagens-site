@@ -39,11 +39,7 @@ export const RIO_QUENTE_HOTEL_SLUGS = new Set([
 	'eco-chales-rio-quente',
 ]);
 
-export const RIO_QUENTE_RESORT_SLUGS = new Set([
-	'refugio-grand-premium',
-	'park-veredas-resort',
-	'thermas-paradise-residence',
-]);
+export const RIO_QUENTE_RESORT_SLUGS = new Set(['refugio-grand-premium']);
 
 export function resolveHospitalityPageType(entryId: string): HospitalityPageType | undefined {
 	const slug = entryId.split('/').pop() ?? entryId;

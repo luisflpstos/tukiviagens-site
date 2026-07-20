@@ -255,14 +255,6 @@ export const SITE_ROUTES: SiteRoute[] = [
 		{ silo: 'rio-quente', parent: '/rio-quente/hoteis/' },
 	),
 	route(
-		'/rio-quente/park-veredas-resort/',
-		'Park Veredas Resort',
-		'hotel',
-		'published',
-		['park veredas resort rio quente', 'park veredas resort'],
-		{ silo: 'rio-quente', parent: '/rio-quente/resorts/' },
-	),
-	route(
 		'/rio-quente/hotel-luupi-rio-quente/',
 		'Hotel Luupi, Rio Quente Resorts',
 		'hotel',
@@ -300,14 +292,6 @@ export const SITE_ROUTES: SiteRoute[] = [
 		'hotel',
 		'published',
 		['eco chales rio quente', 'rio quente resorts eco chales'],
-		{ silo: 'rio-quente', parent: '/rio-quente/resorts/' },
-	),
-	route(
-		'/rio-quente/thermas-paradise-residence/',
-		'Thermas Paradise Residence',
-		'hotel',
-		'published',
-		['thermas paradise residence', 'thermas paradise residence rio quente'],
 		{ silo: 'rio-quente', parent: '/rio-quente/resorts/' },
 	),
 
