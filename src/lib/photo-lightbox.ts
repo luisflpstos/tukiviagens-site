@@ -19,6 +19,23 @@ export function shouldOpenLightbox(target: EventTarget | null): boolean {
 	return (target as HTMLElement).closest('[data-carousel-open-lightbox]') !== null;
 }
 
+export function shouldCloseOnLightboxClick(target: EventTarget | null): boolean {
+	if (!target || typeof (target as HTMLElement).closest !== 'function') return false;
+	const el = target as HTMLElement;
+	if (el.closest('img')) return false;
+	if (el.closest('[data-lightbox-close]')) return false;
+	if (el.closest('[data-lightbox-prev]')) return false;
+	if (el.closest('[data-lightbox-next]')) return false;
+	return (
+		el.closest('[data-lightbox-slide]') !== null ||
+		el.closest('[data-lightbox-track]') !== null
+	);
+}
+
+export function shouldCloseAfterPointerGesture(dragOffset: number, threshold = 50): boolean {
+	return Math.abs(dragOffset) < threshold;
+}
+
 export function initPhotoLightbox(carousel: HTMLElement): void {
 	const lightbox = carousel.querySelector('[data-photo-lightbox]') as HTMLElement | null;
 	const track = lightbox?.querySelector('[data-lightbox-track]') as HTMLElement | null;
@@ -35,6 +52,7 @@ export function initPhotoLightbox(carousel: HTMLElement): void {
 	let pointerStartX: number | null = null;
 	let pointerId: number | null = null;
 	let dragOffset = 0;
+	let lastGestureDragOffset = 0;
 	let previousBodyOverflow = '';
 
 	const total = slides.length;
@@ -71,11 +89,13 @@ export function initPhotoLightbox(carousel: HTMLElement): void {
 		pointerStartX = null;
 		pointerId = null;
 		dragOffset = 0;
+		lastGestureDragOffset = 0;
 	};
 
 	const finishDrag = () => {
 		if (pointerStartX === null) return;
 
+		lastGestureDragOffset = dragOffset;
 		const direction = getSwipeDirection(dragOffset);
 		if (direction === 'next') goTo(index + 1);
 		else if (direction === 'prev') goTo(index - 1);
@@ -105,6 +125,13 @@ export function initPhotoLightbox(carousel: HTMLElement): void {
 		if (isBackdropClick(event.target, backdrop)) close();
 	});
 
+	track.addEventListener('click', (event) => {
+		if (!isOpen) return;
+		if (!shouldCloseOnLightboxClick(event.target)) return;
+		if (!shouldCloseAfterPointerGesture(lastGestureDragOffset)) return;
+		close();
+	});
+
 	prev?.addEventListener('click', (event) => {
 		event.stopPropagation();
 		goTo(index - 1);
@@ -117,6 +144,7 @@ export function initPhotoLightbox(carousel: HTMLElement): void {
 
 	track.addEventListener('pointerdown', (event) => {
 		if (!isOpen || event.button !== 0) return;
+		lastGestureDragOffset = 0;
 		pointerStartX = event.clientX;
 		pointerId = event.pointerId;
 		track.setPointerCapture(event.pointerId);
