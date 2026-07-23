@@ -6,6 +6,6 @@ describe('Kortex lead tracker', () => {
 		expect(LEAD_TRACKER_SRC).toBe(
 			'https://bff.kortex.app.br/api/v1/public/lead-tracker.js',
 		);
-		expect(LEAD_TRACKER_PROJECT_KEY).toBe('f82b922f-91a1-4586-8447-b4944ecfd694');
+		expect(LEAD_TRACKER_PROJECT_KEY).toBe('4142ee56-cbe6-4c6f-ba30-42acfc67768f');
 	});
 });
