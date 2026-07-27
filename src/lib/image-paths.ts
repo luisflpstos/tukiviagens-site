@@ -43,6 +43,7 @@ export const IMAGE_PATHS = {
 		'eco-chales-rio-quente': '/images/hoteis/eco-chales-rio-quente/capa.jpg',
 		'rio-quente-resorts': '/images/paginas/rio-quente/resorts/capa.jpg',
 		'lacqua-diroma-iii': '/images/hoteis/lacqua-diroma-iii/capa.jpg',
+		'riviera-park-hotel': '/images/hoteis/riviera-park-hotel/capa.jpg',
 		'nordeste-all-inclusive': '/images/hoteis/nordeste-all-inclusive/capa.jpg',
 	},
 	paginas: {

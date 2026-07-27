@@ -11,6 +11,7 @@ highlights:
   - "Parques aquáticos e hotéis com lazer no complexo"
   - "Cidade vizinha de Rio Quente, onde fica o Hot Park"
   - "L'acqua diRoma III: Jardins Acqua Park e acessos ao diRoma Acqua Park"
+  - "Riviera Park Hotel by WAM: 780 apartamentos ao lado do Water Park"
 
 keywords:
   - caldas novas
@@ -37,7 +38,7 @@ faq:
   - question: "Qual a melhor época para ir a Caldas Novas?"
     answer: "O destino funciona o ano todo. De maio a setembro o cerrado tem período mais seco. Julho e janeiro concentram férias escolares e mais movimento; reserve com antecedência nesses períodos."
   - question: "Onde ficar em Caldas Novas?"
-    answer: "Uma opção publicada pela Tuki é o L'acqua diRoma III, no complexo L'acqua diRoma, com Jardins Acqua Park e dois acessos por dia ao diRoma Acqua Park nas regras oficiais do Grupo diRoma. Compare também resorts em Caldas e hotéis em Rio Quente se o Hot Park for o foco."
+    answer: "Opções publicadas pela Tuki incluem o L'acqua diRoma III (complexo diRoma, com Jardins Acqua Park e acessos ao diRoma Acqua Park) e o Riviera Park Hotel by WAM Experience (780 apartamentos, 12 piscinas, ao lado do Water Park e Clube Privé). Compare também resorts em Caldas e hotéis em Rio Quente se o Hot Park for o foco."
   - question: "Como chegar a Caldas Novas?"
     answer: "A forma mais prática é voar para o Aeroporto de Caldas Novas (CLV). Também dá para chegar de carro a partir de Goiânia (cerca de 170 km) ou de Brasília. Rio Quente é cidade vizinha."
   - question: "Como cotar hospedagem em Caldas Novas pela Tuki?"
@@ -101,14 +102,20 @@ Se o foco é **Hot Park todos os dias**, compare [hotéis no Rio Quente](/rio-qu
 
 ## Onde se hospedar em Caldas Novas
 
-A hospedagem publicada pela Tuki neste destino é o **[L'acqua diRoma III](/caldas-novas/lacqua-diroma-iii/)**: unidade do complexo L'acqua diRoma (Grupo diRoma), com acomodações para casal, solteiro e família, lazer no **Jardins Acqua Park** e dois acessos por dia ao **diRoma Acqua Park** nas regras oficiais do grupo.
+A Tuki publica neste destino:
+
+| Hotel | Perfil | Destaque |
+| --- | --- | --- |
+| [L'acqua diRoma III](/caldas-novas/lacqua-diroma-iii/) | Família, casal e grupos | Jardins Acqua Park e acessos ao diRoma Acqua Park (Grupo diRoma) |
+| [Riviera Park Hotel](/caldas-novas/riviera-park-hotel/) | Família, pet e grupos | 780 apartamentos, 12 piscinas, ao lado do Water Park (WAM Experience) |
 
 Na hora de escolher, alinhe:
 
-1. **Grupo e tipologia:** apartamento casal, solteiro ou suíte familiar
-2. **O que entra na diária:** refeições, bebidas, parque do complexo e acessos ao Acqua Park
-3. **Roteiro:** só Caldas, ou Caldas com Hot Park
-4. **Época:** julho, janeiro e feriados pedem antecedência
+1. **Grupo e tipologia:** apartamento casal, solteiro, luxo ou família
+2. **O que entra na diária:** refeições, bebidas, parque do complexo e acessos a parques
+3. **Pet:** o Riviera Park Hotel aceita animais de pequeno porte mediante taxa
+4. **Roteiro:** só Caldas, ou Caldas com Hot Park
+5. **Época:** julho, janeiro e feriados pedem antecedência
 
 ## Quando ir a Caldas Novas
 
@@ -126,4 +133,4 @@ Caldas Novas recebe visitantes **o ano todo**. Águas quentes e parques aquátic
 
 ## Como a Tuki pode ajudar
 
-Informe datas, adultos, crianças e o que importa mais: hotel com parque no complexo, foco em relaxar nas termais ou combinar com Hot Park. Comparamos opções em Caldas Novas, a começar pelo [L'acqua diRoma III](/caldas-novas/lacqua-diroma-iii/), e, se fizer sentido, cruzamos com [Rio Quente](/rio-quente/).
+Informe datas, adultos, crianças e o que importa mais: hotel com parque no complexo, WAM no centro turístico, pet, foco em relaxar nas termais ou combinar com Hot Park. Comparamos opções em Caldas Novas, como [L'acqua diRoma III](/caldas-novas/lacqua-diroma-iii/) e [Riviera Park Hotel](/caldas-novas/riviera-park-hotel/), e, se fizer sentido, cruzamos com [Rio Quente](/rio-quente/).

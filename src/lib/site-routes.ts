@@ -317,6 +317,19 @@ export const SITE_ROUTES: SiteRoute[] = [
 		['lacqua diroma iii', 'lacqua diroma 3', 'hotel lacqua caldas novas'],
 		{ silo: 'caldas-novas', parent: '/caldas-novas/hoteis/' },
 	),
+	route(
+		'/caldas-novas/riviera-park-hotel/',
+		'Riviera Park Hotel by WAM Experience',
+		'hotel',
+		'published',
+		[
+			'riviera park hotel',
+			'riviera park hotel caldas novas',
+			'riviera park hotel wam',
+			'hotel riviera caldas novas',
+		],
+		{ silo: 'caldas-novas', parent: '/caldas-novas/hoteis/' },
+	),
 
 	// Nordeste (desativado na UI/build — conteúdo preservado)
 	route('/nordeste/', 'Resorts e hotéis no Nordeste', 'hub', 'planned', [

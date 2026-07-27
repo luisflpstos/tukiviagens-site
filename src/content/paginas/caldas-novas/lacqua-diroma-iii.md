@@ -122,10 +122,11 @@ Telefone da recepção informado pelo grupo: **(64) 3456-1700**.
 | Opção | Onde fica | Parque principal |
 | --- | --- | --- |
 | **L'acqua diRoma III** | Caldas Novas (complexo diRoma) | Jardins Acqua Park e diRoma Acqua Park |
+| [Riviera Park Hotel](/caldas-novas/riviera-park-hotel/) | Centro turístico de Caldas Novas (WAM) | 12 piscinas no hotel; Water Park e Clube Privé ao lado |
 | [Resorts em Caldas Novas](/caldas-novas/resorts/) | Caldas Novas | Varia por propriedade |
 | [Rio Quente Resorts](/rio-quente/resorts/) | Rio Quente | Hot Park e Parque das Fontes |
 
-No L'acqua diRoma III o eixo é Caldas Novas e o complexo diRoma. Em Rio Quente o eixo é Hot Park e Parque das Fontes. A escolha depende do parque que você quer priorizar.
+No L'acqua diRoma III o eixo é Caldas Novas e o complexo diRoma. No Riviera o eixo é o centro turístico e os parques WAM. Em Rio Quente o eixo é Hot Park e Parque das Fontes. A escolha depende do parque que você quer priorizar.
 
 ## Erros comuns ao reservar
 

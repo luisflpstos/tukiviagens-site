@@ -4,7 +4,7 @@ import { describe, expect, it } from 'vitest';
 import { IMAGE_PATHS } from './image-paths';
 import { SITE_ROUTES } from './site-routes';
 
-const CALDAS_NOVAS_PROPERTIES = ['lacqua-diroma-iii'] as const;
+const CALDAS_NOVAS_PROPERTIES = ['lacqua-diroma-iii', 'riviera-park-hotel'] as const;
 
 const CALDAS_NOVAS_LISTING_PAGES = ['hoteis', 'resorts'] as const;
 
@@ -68,6 +68,7 @@ describe('/caldas-novas/ hub SEO page', () => {
 		expect(body).toMatch(/Caldas Novas/);
 		expect(body).toMatch(/águas termais/i);
 		expect(body).toContain('/caldas-novas/lacqua-diroma-iii/');
+		expect(body).toContain('/caldas-novas/riviera-park-hotel/');
 		expect(body).toContain('/caldas-novas/hoteis/');
 		expect(body).toContain('/rio-quente/');
 		expect(body).not.toMatch(/R\$\s*\d/);
@@ -87,10 +88,12 @@ describe('/caldas-novas/ hub SEO page', () => {
 });
 
 describe('/caldas-novas/resorts/ SEO listing page', () => {
-	it('lists Lacqua diRoma III and links related pages without currency values', () => {
+	it('lists Lacqua diRoma III and Riviera Park Hotel without currency values', () => {
 		const body = readFileSync(contentPath('resorts'), 'utf8');
 		expect(body).toMatch(/L'?acqua diRoma III/i);
+		expect(body).toMatch(/Riviera Park Hotel/i);
 		expect(body).toContain('/caldas-novas/lacqua-diroma-iii/');
+		expect(body).toContain('/caldas-novas/riviera-park-hotel/');
 		expect(body).toContain('/caldas-novas/');
 		expect(body).toContain('/caldas-novas/hoteis/');
 		expect(body).toContain('/rio-quente/');
@@ -112,10 +115,12 @@ describe('/caldas-novas/resorts/ SEO listing page', () => {
 });
 
 describe('/caldas-novas/hoteis/ SEO listing page', () => {
-	it('lists Lacqua diRoma III and links the destination without currency values', () => {
+	it('lists Lacqua diRoma III and Riviera Park Hotel without currency values', () => {
 		const body = readFileSync(contentPath('hoteis'), 'utf8');
 		expect(body).toMatch(/L'?acqua diRoma III/i);
+		expect(body).toMatch(/Riviera Park Hotel/i);
 		expect(body).toContain('/caldas-novas/lacqua-diroma-iii/');
+		expect(body).toContain('/caldas-novas/riviera-park-hotel/');
 		expect(body).toContain('/caldas-novas/');
 		expect(body).toContain('/rio-quente/');
 		expect(body).toMatch(/## Como cotar/);
@@ -158,5 +163,34 @@ describe('/caldas-novas/lacqua-diroma-iii/ hotel SEO page', () => {
 		expect(visible).not.toMatch(/também escrito\s+Lacqua/i);
 		expect(visible).not.toMatch(/costumam|costuma|provavelmente|pode ser|em geral|tipicamente/i);
 		expect(visible).not.toMatch(/não assuma|não trate como|não assumir/i);
+	});
+});
+
+describe('/caldas-novas/riviera-park-hotel/ hotel SEO page', () => {
+	it('covers structure, park access and internal links without currency values', () => {
+		const body = readFileSync(contentPath('riviera-park-hotel'), 'utf8');
+		expect(body).toMatch(/Riviera Park Hotel/i);
+		expect(body).toMatch(/WAM Experience/i);
+		expect(body).toMatch(/780/);
+		expect(body).toMatch(/12 piscinas/i);
+		expect(body).toMatch(/Water Park/i);
+		expect(body).toContain('/caldas-novas/');
+		expect(body).toContain('/caldas-novas/hoteis/');
+		expect(body).toMatch(/## Localização/);
+		expect(body).toMatch(/## Como cotar/);
+		expect(body).not.toMatch(/R\$\s*\d/);
+	});
+
+	it('avoids uncertain phrasing, em dashes and meta jargon in visible copy', () => {
+		const body = readFileSync(contentPath('riviera-park-hotel'), 'utf8');
+		const visible = body.replace(/^---[\s\S]*?---\n/, '');
+
+		expect(visible).not.toContain('—');
+		expect(visible).not.toMatch(/\bsilo\b/i);
+		expect(visible).not.toMatch(/\bcluster\b/i);
+		expect(visible).not.toMatch(/costumam|costuma|provavelmente|pode ser|em geral|tipicamente|geralmente/i);
+		expect(visible).not.toMatch(/não assuma|não trate como|não assumir/i);
+		expect(visible).not.toMatch(/\b382\b/);
+		expect(visible).not.toMatch(/14 piscinas/i);
 	});
 });
