@@ -53,5 +53,6 @@ export default defineConfig({
 
   redirects: {
     '/destinos/olimpia/': '/olimpia/',
+    '/destinos/caldas-novas/': '/caldas-novas/',
   },
 });

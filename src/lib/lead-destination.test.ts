@@ -8,10 +8,12 @@ describe('resolveLeadDestination', () => {
 
 	it('resolve destino pelo silo', () => {
 		expect(resolveLeadDestination({ silo: 'rio-quente' })).toBe('Rio Quente');
+		expect(resolveLeadDestination({ silo: 'caldas-novas' })).toBe('Caldas Novas');
 	});
 
 	it('resolve destino pelo primeiro segmento da URL', () => {
 		expect(resolveLeadDestination({ path: '/olimpia/hot-beach-resort/' })).toBe('Olímpia');
 		expect(resolveLeadDestination({ path: '/rio-quente/hotel-giardino-rio-quente/' })).toBe('Rio Quente');
+		expect(resolveLeadDestination({ path: '/caldas-novas/lacqua-diroma-iii/' })).toBe('Caldas Novas');
 	});
 });

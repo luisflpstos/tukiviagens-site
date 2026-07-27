@@ -1,10 +1,23 @@
 import { TUKI_ICONS } from './icons';
 
 /** Rotas desativadas na UI e no build estático (conteúdo preservado). */
-export const INACTIVE_ROUTE_PATHS = new Set(['/pacotes-de-viagem-brasil/']);
+export const INACTIVE_ROUTE_PATHS = new Set(['/pacotes-de-viagem-brasil/', '/nordeste/']);
 
 /** Slugs de destinos desativados nos cards da home e no rodapé. */
-export const INACTIVE_DESTINATION_SLUGS = new Set(['pacotes', 'rio-de-janeiro', 'gramado']);
+export const INACTIVE_DESTINATION_SLUGS = new Set([
+	'nordeste',
+	'pacotes',
+	'rio-de-janeiro',
+	'gramado',
+]);
+
+function isInactiveHref(href: string): boolean {
+	if (INACTIVE_ROUTE_PATHS.has(href)) return true;
+	for (const inactive of INACTIVE_ROUTE_PATHS) {
+		if (href.startsWith(inactive)) return true;
+	}
+	return false;
+}
 
 export const SITE = {
 	name: 'Tuki Viagens',
@@ -42,6 +55,7 @@ export const BRAND = {
 const NAV_LINKS_ALL = [
 	{ label: 'Olímpia', href: '/olimpia/' },
 	{ label: 'Rio Quente', href: '/rio-quente/' },
+	{ label: 'Caldas Novas', href: '/caldas-novas/' },
 	{ label: 'Nordeste', href: '/nordeste/' },
 	{ label: 'Pacotes', href: '/pacotes-de-viagem-brasil/' },
 	{ label: 'Agência', href: '/agencia-de-viagens/' },
@@ -69,7 +83,7 @@ export const WHY_TUKI_HEADLINE =
 
 export const HOTELS_PRICE_NOTE = 'Valor por diária · 12x sem juros · sujeito a datas e disponibilidade';
 
-export const HOME_FEATURED_PROPERTIES = [
+export const HOME_FEATURED_PROPERTIES_ALL = [
 	{
 		id: 'enjoy-olimpia-park',
 		title: 'Enjoy Olímpia Park Resort',
@@ -126,6 +140,10 @@ export const HOME_FEATURED_PROPERTIES = [
 	},
 ] as const;
 
+export const HOME_FEATURED_PROPERTIES = HOME_FEATURED_PROPERTIES_ALL.filter(
+	(item) => !isInactiveHref(item.href),
+);
+
 export const HERO_BACKGROUND =
 	'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2000&q=80';
 
@@ -167,6 +185,7 @@ export const PARTNERS_TITLE = 'Autoridades e empresas que confiam na Tuki';
 const FOOTER_DESTINATIONS_ALL = [
 	{ label: 'Olímpia', href: '/olimpia/' },
 	{ label: 'Rio Quente', href: '/rio-quente/' },
+	{ label: 'Caldas Novas', href: '/caldas-novas/' },
 	{ label: 'Nordeste', href: '/nordeste/' },
 	{ label: 'Pacotes Brasil', href: '/pacotes-de-viagem-brasil/' },
 ] as const;
@@ -315,6 +334,13 @@ export const HOME_DESTINATIONS_ALL = [
 		href: '/rio-quente/',
 		icon: TUKI_ICONS.rioQuente,
 		iconAlt: 'Ícone de Rio Quente',
+	},
+	{
+		name: 'Caldas Novas',
+		slug: 'caldas-novas',
+		href: '/caldas-novas/',
+		icon: TUKI_ICONS.piscina,
+		iconAlt: 'Ícone de Caldas Novas — águas termais',
 	},
 	{
 		name: 'Pacotes Brasil',

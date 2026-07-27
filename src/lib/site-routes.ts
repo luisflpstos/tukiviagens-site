@@ -5,7 +5,7 @@
 
 export type PageType = 'hub' | 'venda' | 'atracao' | 'hotel' | 'resort' | 'institucional';
 export type PageStatus = 'published' | 'planned';
-export type Silo = 'olimpia' | 'rio-quente' | 'nordeste' | 'pacotes' | 'agencia';
+export type Silo = 'olimpia' | 'rio-quente' | 'caldas-novas' | 'nordeste' | 'pacotes' | 'agencia';
 
 export interface SiteRoute {
 	path: string;
@@ -295,8 +295,31 @@ export const SITE_ROUTES: SiteRoute[] = [
 		{ silo: 'rio-quente', parent: '/rio-quente/resorts/' },
 	),
 
-	// Nordeste
-	route('/nordeste/', 'Resorts e hotéis no Nordeste', 'hub', 'published', [
+	// Caldas Novas
+	route('/caldas-novas/', 'Guia de Caldas Novas', 'hub', 'published', [
+		'caldas novas',
+		'aguas termais caldas novas',
+		'hotel em caldas novas',
+	], { silo: 'caldas-novas' }),
+	route('/caldas-novas/hoteis/', 'Hotéis em Caldas Novas', 'venda', 'published', [
+		'hoteis caldas novas',
+		'hotel em caldas novas',
+	], { silo: 'caldas-novas', parent: '/caldas-novas/' }),
+	route('/caldas-novas/resorts/', 'Resorts em Caldas Novas', 'venda', 'published', [
+		'resort caldas novas',
+		'resorts em caldas novas',
+	], { silo: 'caldas-novas', parent: '/caldas-novas/' }),
+	route(
+		'/caldas-novas/lacqua-diroma-iii/',
+		"L'acqua diRoma III",
+		'hotel',
+		'published',
+		['lacqua diroma iii', 'lacqua diroma 3', 'hotel lacqua caldas novas'],
+		{ silo: 'caldas-novas', parent: '/caldas-novas/hoteis/' },
+	),
+
+	// Nordeste (desativado na UI/build — conteúdo preservado)
+	route('/nordeste/', 'Resorts e hotéis no Nordeste', 'hub', 'planned', [
 		'resort nordeste',
 		'hoteis no nordeste',
 	], { silo: 'nordeste' }),
@@ -304,7 +327,7 @@ export const SITE_ROUTES: SiteRoute[] = [
 		'/nordeste/resorts-all-inclusive/',
 		'Resorts all inclusive no Nordeste',
 		'venda',
-		'published',
+		'planned',
 		['resort all inclusive nordeste', 'hotel all inclusive nordeste'],
 		{ silo: 'nordeste', parent: '/nordeste/' },
 	),

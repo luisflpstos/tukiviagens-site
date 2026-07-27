@@ -20,6 +20,7 @@ Uma pasta por destino. O **nome da pasta** deve ser o slug do hub (ex.: `olimpia
 |-------|---------|
 | `olimpia/` | Hub Olímpia (`/olimpia/`) |
 | `rio-quente/` | Hub Rio Quente (`/rio-quente/`) |
+| `caldas-novas/` | Hub Caldas Novas (`/caldas-novas/`) |
 | `nordeste/` | Hub Nordeste (`/nordeste/`) |
 | `pacotes-brasil/` | Pacotes Brasil (`/pacotes-de-viagem-brasil/`) |
 | `rio-de-janeiro/` | Rio de Janeiro (futuro) |

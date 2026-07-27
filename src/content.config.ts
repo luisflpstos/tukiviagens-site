@@ -92,7 +92,9 @@ const paginas = defineCollection({
 	schema: z.object({
 		title: z.string(),
 		pageType: z.enum(['hub', 'venda', 'atracao', 'hotel', 'resort', 'institucional']),
-		silo: z.enum(['olimpia', 'rio-quente', 'nordeste', 'pacotes', 'agencia']).optional(),
+		silo: z
+			.enum(['olimpia', 'rio-quente', 'caldas-novas', 'nordeste', 'pacotes', 'agencia'])
+			.optional(),
 		headline: z.string(),
 		description: z.string(),
 		highlights: z.array(z.string()).default([]),

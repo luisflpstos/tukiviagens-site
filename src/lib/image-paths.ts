@@ -42,6 +42,7 @@ export const IMAGE_PATHS = {
 		'hotel-pousada-rio-quente': '/images/hoteis/hotel-pousada-rio-quente/capa.jpg',
 		'eco-chales-rio-quente': '/images/hoteis/eco-chales-rio-quente/capa.jpg',
 		'rio-quente-resorts': '/images/paginas/rio-quente/resorts/capa.jpg',
+		'lacqua-diroma-iii': '/images/hoteis/lacqua-diroma-iii/capa.jpg',
 		'nordeste-all-inclusive': '/images/hoteis/nordeste-all-inclusive/capa.jpg',
 	},
 	paginas: {
@@ -50,6 +51,7 @@ export const IMAGE_PATHS = {
 	destinos: {
 		olimpia: '/images/destinos/olimpia/capa.jpg',
 		'rio-quente': '/images/destinos/rio-quente/capa.jpeg',
+		'caldas-novas': '/images/destinos/caldas-novas/capa.jpg',
 		nordeste: '/images/destinos/nordeste/capa.jpg',
 		pacotes: '/images/destinos/pacotes-brasil/capa.jpg',
 		'rio-de-janeiro': '/images/destinos/rio-de-janeiro/capa.jpg',

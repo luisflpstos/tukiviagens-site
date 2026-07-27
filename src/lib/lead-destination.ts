@@ -2,6 +2,7 @@
 export const SILO_DESTINATION_NAMES: Record<string, string> = {
 	olimpia: 'Olímpia',
 	'rio-quente': 'Rio Quente',
+	'caldas-novas': 'Caldas Novas',
 	nordeste: 'Nordeste',
 	gramado: 'Gramado',
 	'rio-de-janeiro': 'Rio de Janeiro',
