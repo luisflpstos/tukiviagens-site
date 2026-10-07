@@ -68,6 +68,10 @@ export interface LeadFormSubmitContext {
 	submittedAt?: Date;
 }
 
+/**
+ * Payload de `lead_form_submit` para dataLayer/GA4.
+ * Não contém nome, telefone nem e-mail: GA4 e Google Ads proíbem PII em parâmetros de evento.
+ */
 export interface LeadFormSubmitTrackingPayload extends TrackingFields {
 	event: 'lead_form_submit';
 	h1: string;
@@ -77,9 +81,6 @@ export interface LeadFormSubmitTrackingPayload extends TrackingFields {
 	horario_local: string;
 	timestamp_iso: string;
 	user_agent: string;
-	nome: string;
-	telefone: string;
-	email: string;
 	form_id: string;
 	currency: string;
 	value: number;
@@ -89,7 +90,6 @@ export interface LeadFormSubmitTrackingPayload extends TrackingFields {
 
 export interface BuildLeadFormSubmitPayloadInput {
 	formId: string;
-	contact: LeadContactFields;
 	attribution?: LeadAttribution;
 	context: LeadFormSubmitContext;
 }
@@ -97,7 +97,6 @@ export interface BuildLeadFormSubmitPayloadInput {
 /** Payload de `lead_form_submit` espelhando a estrutura completa do `whatsapp_click`. */
 export function buildLeadFormSubmitPayload({
 	formId,
-	contact,
 	attribution = {},
 	context,
 }: BuildLeadFormSubmitPayloadInput): LeadFormSubmitTrackingPayload {
@@ -114,15 +113,64 @@ export function buildLeadFormSubmitPayload({
 		horario_local: formatLocalTimestamp(submittedAt),
 		timestamp_iso: submittedAt.toISOString(),
 		user_agent: context.userAgent,
-		nome: contact.nome,
-		telefone: contact.telefone,
-		email: contact.email,
 		form_id: formId,
 		currency: 'BRL',
 		value: 1.0,
 		...(context.product ? { product: context.product } : {}),
 		...(context.campaign ? { campaign: context.campaign } : {}),
 	};
+}
+
+/** Dados do usuário hasheados (SHA-256) no formato do Enhanced Conversions do Google. */
+export interface HashedUserData {
+	sha256_email_address?: string;
+	sha256_phone_number?: string;
+}
+
+const GMAIL_DOMAINS = new Set(['gmail.com', 'googlemail.com']);
+
+/** Normaliza e-mail como o Google exige antes do hash (minúsculas; sem pontos no usuário do Gmail). */
+export function normalizeEmailForAds(email: string): string | undefined {
+	const normalized = email.trim().toLowerCase();
+	const at = normalized.lastIndexOf('@');
+	if (at <= 0 || at === normalized.length - 1) return undefined;
+
+	const local = normalized.slice(0, at);
+	const domain = normalized.slice(at + 1);
+	return GMAIL_DOMAINS.has(domain) ? `${local.replace(/\./g, '')}@${domain}` : normalized;
+}
+
+/** Telefone BR em E.164 com "+" (ex.: +5517999998888), formato exigido pelo Google. */
+export function normalizePhoneForAds(phone: string): string | undefined {
+	const digits = phone.replace(/\D/g, '');
+	if (digits.length === 10 || digits.length === 11) return `+55${digits}`;
+	if ((digits.length === 12 || digits.length === 13) && digits.startsWith('55')) return `+${digits}`;
+	return undefined;
+}
+
+async function sha256Hex(value: string): Promise<string> {
+	const digest = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(value));
+	return Array.from(new Uint8Array(digest), (byte) => byte.toString(16).padStart(2, '0')).join('');
+}
+
+/**
+ * Hash SHA-256 de e-mail/telefone para Enhanced Conversions (variável "Dados fornecidos
+ * pelo usuário" no GTM). Retorna `{}` quando a Web Crypto não está disponível.
+ */
+export async function buildHashedUserData(
+	contact: Pick<LeadContactFields, 'email' | 'telefone'>,
+): Promise<HashedUserData> {
+	const email = normalizeEmailForAds(contact.email);
+	const phone = normalizePhoneForAds(contact.telefone);
+
+	try {
+		return {
+			...(email ? { sha256_email_address: await sha256Hex(email) } : {}),
+			...(phone ? { sha256_phone_number: await sha256Hex(phone) } : {}),
+		};
+	} catch {
+		return {};
+	}
 }
 
 function formatPhoneE164Br(phone: string): string {

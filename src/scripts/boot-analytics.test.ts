@@ -72,6 +72,23 @@ describe('bootAnalytics', () => {
 		expect(scripts.some((s) => s.src.includes('gtag/js?id=G-TEST'))).toBe(true);
 	});
 
+	it('starts the Meta Pixel with consent revoked until the visitor accepts', () => {
+		for (const [consent, expected] of [
+			[null, 'revoke'],
+			['denied', 'revoke'],
+			['granted', 'grant'],
+		] as const) {
+			const win = createWindowStub() as Window & { fbq?: { queue: unknown[][] } };
+
+			bootAnalytics({ metaPixelId: '123', consent }, createDocumentStub(), win);
+
+			expect(win.fbq?.queue.slice(0, 2)).toEqual([
+				['consent', expected],
+				['init', '123'],
+			]);
+		}
+	});
+
 	it('does nothing when config is empty', () => {
 		const doc = createDocumentStub();
 

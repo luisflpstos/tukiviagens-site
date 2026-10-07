@@ -1,5 +1,5 @@
 ---
-import { BLOCK_INDEXING, buildSeo, type SeoProps } from '../../lib/seo';
+import { BLOCK_INDEXING, buildSeo, serializeJsonLd, type SeoProps } from '../../lib/seo';
 
 interface Props extends SeoProps {
 	jsonLd?: Record<string, unknown> | Record<string, unknown>[];
@@ -29,6 +29,6 @@ const seo = buildSeo({ title, description, path, image, noindex: shouldNoindex, 
 
 {
 	jsonLd && (
-		<script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+		<script type="application/ld+json" set:html={serializeJsonLd(jsonLd)} />
 	)
 }

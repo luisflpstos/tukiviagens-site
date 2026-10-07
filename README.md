@@ -29,17 +29,18 @@ Copie `.env.example` para `.env` e ajuste os valores:
 | Variável | Descrição |
 |---|---|
 | `PUBLIC_SITE_URL` | URL canônica do site (SEO, sitemap, links absolutos) |
-| `LEAD_WEBHOOK_URL` | Webhook servidor→servidor para leads (`/api/lead`) |
-| `LEAD_WEBHOOK_SECRET` | Opcional: Bearer token enviado ao webhook |
-| `WHATSAPP_WEBHOOK_URL` | Opcional: webhook para cliques WhatsApp (`/api/whatsapp-click`; fallback: `PUBLIC_WHATSAPP_WEBHOOK_URL` → `LEAD_WEBHOOK_URL`) |
-| `PUBLIC_WHATSAPP_WEBHOOK_URL` | Compat: ainda lido pelo proxy de WhatsApp (prefira variável server-only) |
+| `LEAD_WEBHOOK_URL` | Webhook servidor→servidor (fallback dos cliques WhatsApp) |
+| `LEAD_WEBHOOK_SECRET` | Bearer token enviado ao webhook — configure o webhook para recusar chamadas sem ele |
+| `WHATSAPP_WEBHOOK_URL` | Webhook para cliques WhatsApp (`/api/whatsapp-click`; fallback: `LEAD_WEBHOOK_URL`) |
+| `PUBLIC_WHATSAPP_WEBHOOK_URL` | **Legado** — lido só em runtime; migre para `WHATSAPP_WEBHOOK_URL` (o prefixo `PUBLIC_` expõe valores ao browser) |
 | `PUBLIC_GTM_ID` | ID do Google Tag Manager (opcional) |
 | `PUBLIC_GA4_ID` | ID de medição do Google Analytics 4 (opcional) |
 | `PUBLIC_GOOGLE_ADS_ID` | ID da conta Google Ads (`AW-…`) para tag de conversão |
 | `PUBLIC_GOOGLE_ADS_LEAD_LABEL` | Rótulo da conversão de formulário (pareado com `PUBLIC_GOOGLE_ADS_ID`) |
 | `PUBLIC_GOOGLE_ADS_WHATSAPP_LABEL` | Rótulo da conversão de clique no WhatsApp |
 | `PUBLIC_META_PIXEL_ID` | ID do Pixel / conjunto de dados da Meta (Gerenciador de Eventos) |
-| `META_CAPI_TOKEN` | Token da API de Conversões e Dataset Quality API (somente servidor) |
+| `META_CAPI_TOKEN` | Token da API de Conversões (somente servidor; só permissão de envio de eventos) |
+| `META_DATASET_QUALITY_TOKEN` | Token separado, só para `pnpm meta:quality` (local) |
 | `META_TEST_EVENT_CODE` | Opcional: código de “Testar eventos” do Gerenciador de Eventos |
 | `PUBLIC_BLOCK_INDEXING` | `true` bloqueia indexação (meta noindex, header X-Robots-Tag, sem sitemap). O `public/robots.txt` também deve estar com `Disallow: /` enquanto o bloqueio estiver ativo. |
 
@@ -68,7 +69,7 @@ Integração direta com deduplicação browser/servidor via `event_id` compartil
 
 | Ação | Pixel (browser) | CAPI (servidor) |
 |---|---|---|
-| Envio do formulário | `Lead` | `Lead` em `POST /api/lead/` |
+| Envio do formulário | `Lead` | — (lead capturado pelo Kortex) |
 | Clique no WhatsApp | `Contact` | `Contact` em `POST /api/meta-event/` |
 
 Configure `PUBLIC_META_PIXEL_ID` e `META_CAPI_TOKEN` no `.env` e na Vercel. Para validar antes de ir a produção, defina `META_TEST_EVENT_CODE` com o código exibido em *Gerenciador de Eventos → Testar eventos*.
@@ -194,10 +195,17 @@ Se `images` estiver vazio, o site descobre os arquivos na pasta automaticamente.
    - **Install Command:** `pnpm install`
    - **Node.js:** 22.x
    - **Start Command:** deixe vazio
-3. Configure as variáveis de ambiente (`PUBLIC_SITE_URL`, `LEAD_WEBHOOK_URL` e `LEAD_WEBHOOK_SECRET` são obrigatórias em produção).
+3. Configure as variáveis de ambiente (`PUBLIC_SITE_URL`, `WHATSAPP_WEBHOOK_URL` (ou `LEAD_WEBHOOK_URL`) e `LEAD_WEBHOOK_SECRET` são obrigatórias em produção).
 4. Cada push em `main` dispara deploy automático.
 
-O site estático fica em `dist/client/`; a rota `/api/lead/` roda como função serverless via adapter Vercel.
+O site estático fica em `dist/client/`; as rotas `/api/whatsapp-click/` e `/api/meta-event/` rodam como funções serverless via adapter Vercel.
+
+### Segurança e privacidade
+
+- **APIs (`/api/*`)**: aceitam só requisições do próprio site (`Origin`/`Sec-Fetch-Site`), validam o payload com zod (sem links nem caracteres de controle nos textos; `page_url`/`event_source_url` precisam ser do site) e limitam 10 req/min por IP por instância. Complemente com uma regra de *Rate Limit* no Vercel Firewall para `/api/`.
+- **Headers**: definidos no `vercel.json` (o middleware não alcança páginas estáticas). A CSP completa está em `Content-Security-Policy-Report-Only` — confira o console do navegador e promova para `Content-Security-Policy` quando não houver violações.
+- **Dados pessoais no analytics**: `lead_form_submit` não leva nome, telefone nem e-mail. Para Enhanced Conversions, o dataLayer recebe só `user_data.sha256_email_address` e `user_data.sha256_phone_number` (SHA-256), para uso com a variável “Dados fornecidos pelo usuário” no GTM.
+- **Consentimento (LGPD)**: banner de cookies com Google Consent Mode v2 (tudo negado até o visitante escolher) e `fbq('consent')` no Meta Pixel. A escolha fica em `localStorage` (`tuki_consent`); incremente `CONSENT_VERSION` em `src/lib/consent.ts` para pedir de novo. Política em `/politica-de-privacidade/`.
 
 ### Domínio na Cloudflare
 

@@ -112,26 +112,59 @@ describe('tracking conversions', () => {
 			horario_local: '03/07/2026 17:05:13',
 			timestamp_iso: '2026-07-03T20:05:13.912Z',
 			user_agent: 'Mozilla/5.0 Test',
-			nome: 'Maria Silva',
-			telefone: '(11) 98765-4321',
-			email: 'maria@email.com',
 			form_id: 'contato-lead-form',
 			currency: 'BRL',
 			value: 1.0,
 		};
+		const userData = {
+			sha256_email_address: 'a'.repeat(64),
+			sha256_phone_number: 'b'.repeat(64),
+		};
 
-		trackFormSubmit(payload);
+		trackFormSubmit(payload, userData);
 
 		expect(gtag).toHaveBeenCalledWith('event', 'lead_form_submit', {
 			method: 'form',
 			...payload,
 		});
 		expect(window.dataLayer).toContainEqual({
-			event: 'lead_form_submit',
 			method: 'form',
 			...payload,
+			user_data: userData,
 		});
 		expect(gtag).not.toHaveBeenCalledWith('event', 'generate_lead', expect.anything());
 		expect(gtag).not.toHaveBeenCalledWith('event', 'conversion', expect.anything());
+	});
+
+	it('never sends hashed user_data as a gtag event parameter', () => {
+		trackFormSubmit(
+			{
+				event: 'lead_form_submit',
+				source: 'direct',
+				h1: 'Contato',
+				utm_source: '',
+				utm_medium: '',
+				utm_campaign: '',
+				utm_content: '',
+				utm_term: '',
+				gclid: '',
+				gbraid: '',
+				wbraid: '',
+				fbclid: '',
+				page_url: 'https://tukiviagens.com.br/contato/',
+				page_title: 'Contato',
+				referrer: '',
+				horario_local: '03/07/2026 17:05:13',
+				timestamp_iso: '2026-07-03T20:05:13.912Z',
+				user_agent: 'Mozilla/5.0 Test',
+				form_id: 'contato-lead-form',
+				currency: 'BRL',
+				value: 1.0,
+			},
+			{ sha256_email_address: 'a'.repeat(64) },
+		);
+
+		const [, , params] = gtag.mock.calls.at(-1)!;
+		expect(params).not.toHaveProperty('user_data');
 	});
 });

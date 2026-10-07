@@ -1,5 +1,5 @@
 import { getGoogleAdsLeadSendTo } from '../lib/tracking-config';
-import type { LeadFormSubmitTrackingPayload } from '../lib/tracking-payload';
+import type { HashedUserData, LeadFormSubmitTrackingPayload } from '../lib/tracking-payload';
 
 declare global {
 	interface Window {
@@ -47,8 +47,20 @@ export function trackFormStart(formId: string): void {
 	pushEvent('lead_form_start', { form_id: formId });
 }
 
-export function trackFormSubmit(payload: LeadFormSubmitTrackingPayload): void {
-	pushEvent('lead_form_submit', { method: 'form', ...payload });
+/**
+ * `lead_form_submit` sem PII em texto claro. E-mail/telefone só vão hasheados em `user_data`,
+ * e apenas no dataLayer (para Enhanced Conversions no GTM) — nunca como parâmetro de evento.
+ */
+export function trackFormSubmit(
+	payload: LeadFormSubmitTrackingPayload,
+	userData: HashedUserData = {},
+): void {
+	const params = { method: 'form', ...payload };
+	window.gtag?.('event', 'lead_form_submit', params);
+	pushDataLayer(
+		'lead_form_submit',
+		Object.keys(userData).length > 0 ? { ...params, user_data: userData } : params,
+	);
 }
 
 export function trackFormError(formId: string, error: string): void {

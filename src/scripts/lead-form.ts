@@ -4,7 +4,7 @@ import { saveLeadHandoff } from "../lib/lead-handoff";
 import { bindPhoneMask } from "./masks";
 import { LEAD_PHONE_FIELD_NAME, readLeadContactFromFormData } from "./lead-form-fields";
 import { validateLeadContactForm, validateLeadForm } from "./validators";
-import { buildLeadFormSubmitPayload } from "../lib/tracking-payload";
+import { buildHashedUserData, buildLeadFormSubmitPayload } from "../lib/tracking-payload";
 import { trackFormError, trackFormStart, trackFormSubmit } from "./tracking";
 import { buildMetaBrowserContext, trackMetaPixelEvent } from "./meta-pixel";
 
@@ -37,6 +37,13 @@ export function initLeadForm(options: LeadFormOptions): void {
   );
   if (phoneInput) bindPhoneMask(phoneInput);
 
+  // O botão nasce desabilitado no HTML: sem este script, o envio nativo
+  // mandaria nome/telefone/e-mail para o servidor sem passar pela validação.
+  const submitBtn = form.querySelector<HTMLButtonElement>(
+    'button[type="submit"]',
+  );
+  if (submitBtn) submitBtn.disabled = false;
+
   let started = false;
   form.addEventListener("focusin", () => {
     if (!started) {
@@ -45,7 +52,7 @@ export function initLeadForm(options: LeadFormOptions): void {
     }
   });
 
-  form.addEventListener("submit", (event) => {
+  form.addEventListener("submit", async (event) => {
     event.preventDefault();
 
     const formData = new FormData(form);
@@ -86,9 +93,6 @@ export function initLeadForm(options: LeadFormOptions): void {
 
     const attribution = getStoredAttribution();
     const metaContext = buildMetaBrowserContext();
-    const submitBtn = form.querySelector<HTMLButtonElement>(
-      'button[type="submit"]',
-    );
     if (submitBtn) {
       submitBtn.disabled = true;
       submitBtn.textContent = "Enviando...";
@@ -114,10 +118,11 @@ export function initLeadForm(options: LeadFormOptions): void {
           : {}),
       });
 
+      const userData = await buildHashedUserData(contact);
+
       trackFormSubmit(
         buildLeadFormSubmitPayload({
           formId: options.formId,
-          contact,
           attribution,
           context: {
             h1: document.querySelector("h1")?.textContent?.trim() ?? "",
@@ -129,6 +134,7 @@ export function initLeadForm(options: LeadFormOptions): void {
             campaign: options.campaign,
           },
         }),
+        userData,
       );
 
       trackMetaPixelEvent("Lead", metaContext.event_id, {

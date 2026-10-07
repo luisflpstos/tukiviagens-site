@@ -1,8 +1,12 @@
+import type { ConsentChoice } from '../lib/consent';
+
 export type AnalyticsConfig = {
 	gtmId?: string;
 	ga4Id?: string;
 	googleAdsId?: string;
 	metaPixelId?: string;
+	/** Escolha do banner de cookies; sem escolha, o Pixel começa com consentimento revogado. */
+	consent?: ConsentChoice | null;
 };
 
 export function hasAnalyticsConfig(config: AnalyticsConfig): boolean {
@@ -47,6 +51,7 @@ function bootGtag(
 
 function bootMetaPixel(
 	pixelId: string,
+	consent: ConsentChoice | null | undefined,
 	doc: Document,
 	win: Window & { fbq?: (...args: unknown[]) => void; _fbq?: unknown },
 ): void {
@@ -72,6 +77,7 @@ function bootMetaPixel(
 	win._fbq = fbq;
 
 	injectScript(doc, 'https://connect.facebook.net/en_US/fbevents.js');
+	fbq('consent', consent === 'granted' ? 'grant' : 'revoke');
 	fbq('init', pixelId);
 	fbq('track', 'PageView');
 }
@@ -97,6 +103,7 @@ export function bootAnalytics(
 	if (config.metaPixelId) {
 		bootMetaPixel(
 			config.metaPixelId,
+			config.consent,
 			doc,
 			win as Window & { fbq?: (...args: unknown[]) => void; _fbq?: unknown },
 		);

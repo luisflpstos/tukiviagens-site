@@ -1,12 +1,16 @@
 import type { APIRoute } from 'astro';
 import { z } from 'zod';
-import { isAllowedOrigin, jsonResponse } from '../../lib/lead-security';
+import { isAllowedOrigin, isSiteUrl, jsonResponse } from '../../lib/lead-security';
 import { extractClientIp, sendMetaEvent } from '../../lib/meta-capi';
 import { isMetaCapiEnabled } from '../../lib/meta-config';
+import { createRateLimiter } from '../../lib/rate-limit';
+import { plainText, tokenString } from '../../lib/safe-fields';
 
 export const prerender = false;
 
 const MAX_BODY_BYTES = 8_192;
+
+const rateLimit = createRateLimiter({ limit: 10, windowMs: 60_000 });
 
 /**
  * Recebe eventos do browser (ex.: clique no WhatsApp) e os repassa à
@@ -16,12 +20,25 @@ const MAX_BODY_BYTES = 8_192;
 const metaEventSchema = z
 	.object({
 		event_name: z.enum(['Contact']),
-		event_id: z.string().min(1).max(120),
-		event_source_url: z.string().max(2048).optional(),
-		fbp: z.string().max(120).optional(),
-		fbc: z.string().max(512).optional(),
-		fbclid: z.string().max(512).optional(),
-		content_name: z.string().max(512).optional(),
+		event_id: tokenString(120).min(1),
+		event_source_url: z
+			.string()
+			.max(2048)
+			.refine((value) => isSiteUrl(value), 'URL fora do site.')
+			.optional(),
+		// Cookies da Meta: _fbp = fb.{n}.{timestamp}.{random}; _fbc = fb.{n}.{timestamp}.{fbclid}[.extra]
+		fbp: z
+			.string()
+			.max(120)
+			.regex(/^fb\.\d\.\d+\.\d+$/)
+			.optional(),
+		fbc: z
+			.string()
+			.max(512)
+			.regex(/^fb\.\d\.\d+\.[\w.-]+$/)
+			.optional(),
+		fbclid: tokenString(512).optional(),
+		content_name: plainText(512).optional(),
 	})
 	.strict();
 
@@ -32,6 +49,17 @@ export const POST: APIRoute = async ({ request }) => {
 
 	if (!isMetaCapiEnabled()) {
 		return jsonResponse({ ok: true, skipped: true });
+	}
+
+	const rate = rateLimit(extractClientIp(request) ?? 'unknown');
+	if (rate.limited) {
+		return jsonResponse({ ok: false, error: 'Muitas requisições.' }, 429, {
+			'Retry-After': String(rate.retryAfterSeconds),
+		});
+	}
+
+	if (Number(request.headers.get('content-length') ?? 0) > MAX_BODY_BYTES) {
+		return jsonResponse({ ok: false, error: 'Requisição muito grande.' }, 413);
 	}
 
 	const rawBody = await request.text();

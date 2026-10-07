@@ -23,6 +23,7 @@ const {
 
 <form
 	id={formId}
+	method="post"
 	class="space-y-4"
 	novalidate
 	data-lead-form
@@ -89,6 +90,7 @@ const {
 
 	<button
 		type="submit"
+		disabled
 		data-default-label={submitLabel}
 		class="w-full rounded-full bg-tuki-orange-button px-6 py-3 font-semibold text-white transition hover:bg-tuki-orange-dark disabled:opacity-60"
 	>
@@ -96,4 +98,9 @@ const {
 	</button>
 
 	<p data-form-status class="tuki-type-small min-h-5 text-center" role="status" aria-live="polite"></p>
+
+	<p class="tuki-type-small text-center text-tuki-muted">
+		Usamos seus dados só para responder à sua cotação.
+		<a href="/politica-de-privacidade/" class="underline transition hover:text-tuki-purple">Política de Privacidade</a>
+	</p>
 </form>

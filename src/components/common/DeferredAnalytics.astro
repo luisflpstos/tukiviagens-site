@@ -1,8 +1,11 @@
 ---
 /**
  * Boots GTM / GA4 / Google Ads / Meta Pixel after idle so they stay off the LCP path.
- * Noscript fallbacks remain for users without JS.
+ * Consent Mode v2: o estado padrão (negado até o visitante escolher) entra no dataLayer
+ * antes de qualquer tag carregar. Noscript fallbacks remain for users without JS.
  */
+import ConsentBanner from './ConsentBanner.astro';
+
 const gtmId = import.meta.env.PUBLIC_GTM_ID as string | undefined;
 const ga4Id = import.meta.env.PUBLIC_GA4_ID as string | undefined;
 const googleAdsId = import.meta.env.PUBLIC_GOOGLE_ADS_ID as string | undefined;
@@ -16,6 +19,7 @@ const enabled = Boolean(gtmId || ga4Id || googleAdsId || metaPixelId);
 		<script>
 			import { scheduleIdle, IDLE_ANALYTICS_TIMEOUT_MS } from '../../lib/schedule-idle';
 			import { bootAnalytics, type AnalyticsConfig } from '../../scripts/boot-analytics';
+			import { pushConsentDefault, readConsent } from '../../scripts/consent';
 
 			const config = {
 				gtmId: import.meta.env.PUBLIC_GTM_ID || undefined,
@@ -24,10 +28,19 @@ const enabled = Boolean(gtmId || ga4Id || googleAdsId || metaPixelId);
 				metaPixelId: import.meta.env.PUBLIC_META_PIXEL_ID || undefined,
 			} satisfies AnalyticsConfig;
 
-			scheduleIdle(() => bootAnalytics(config), undefined, IDLE_ANALYTICS_TIMEOUT_MS);
+			pushConsentDefault(readConsent());
+
+			// Relê o consentimento no boot: o visitante pode ter escolhido antes do idle.
+			scheduleIdle(
+				() => bootAnalytics({ ...config, consent: readConsent() }),
+				undefined,
+				IDLE_ANALYTICS_TIMEOUT_MS,
+			);
 		</script>
 	)
 }
+
+{enabled && <ConsentBanner />}
 
 {
 	gtmId && (

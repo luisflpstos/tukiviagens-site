@@ -159,8 +159,10 @@ export async function sendMetaEvent(input: MetaEventInput): Promise<boolean> {
 	const token = getMetaCapiToken();
 	if (!pixelId || !token) return false;
 
+	// Token no corpo (não na query string) para não vazar em logs de URL/traces.
 	const body: Record<string, unknown> = {
 		data: [buildMetaServerEvent(input)],
+		access_token: token,
 	};
 
 	const testEventCode = getMetaTestEventCode();
@@ -168,7 +170,7 @@ export async function sendMetaEvent(input: MetaEventInput): Promise<boolean> {
 
 	try {
 		const response = await fetch(
-			`https://graph.facebook.com/${META_GRAPH_VERSION}/${pixelId}/events?access_token=${encodeURIComponent(token)}`,
+			`https://graph.facebook.com/${META_GRAPH_VERSION}/${encodeURIComponent(pixelId)}/events`,
 			{
 				method: 'POST',
 				headers: { 'Content-Type': 'application/json' },

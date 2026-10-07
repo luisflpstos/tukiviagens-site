@@ -17,7 +17,7 @@ describe('resolveWhatsAppWebhookUrl', () => {
 		).toBe('https://wa.example/hook');
 	});
 
-	it('falls back to PUBLIC_WHATSAPP then LEAD webhook', () => {
+	it('falls back to legacy PUBLIC_WHATSAPP then LEAD webhook', () => {
 		expect(
 			resolveWhatsAppWebhookUrl({
 				publicWhatsappWebhookUrl: 'https://public.example/hook',
@@ -79,6 +79,42 @@ describe('whatsappClickPayloadSchema', () => {
 			h1: 'x'.repeat(600),
 		});
 		expect(result.success).toBe(false);
+	});
+
+	it('rejects links and control characters in free-text fields sent to the CRM', () => {
+		for (const product of [
+			'Promo https://evil.example',
+			'Acesse www.evil.example',
+			'Linha 1\nLinha 2',
+		]) {
+			expect(whatsappClickPayloadSchema.safeParse({ ...validPayload, product }).success).toBe(false);
+		}
+	});
+
+	it('rejects malformed click ids, timestamps and non-http URLs', () => {
+		expect(
+			whatsappClickPayloadSchema.safeParse({ ...validPayload, gclid: 'abc<script>' }).success,
+		).toBe(false);
+		expect(
+			whatsappClickPayloadSchema.safeParse({ ...validPayload, timestamp_iso: 'ontem às 10h' }).success,
+		).toBe(false);
+		expect(
+			whatsappClickPayloadSchema.safeParse({ ...validPayload, page_url: 'javascript:alert(1)' })
+				.success,
+		).toBe(false);
+		expect(
+			whatsappClickPayloadSchema.safeParse({ ...validPayload, referrer: 'not a url' }).success,
+		).toBe(false);
+	});
+
+	it('accepts real-world click ids and user agents with URLs', () => {
+		const result = whatsappClickPayloadSchema.safeParse({
+			...validPayload,
+			gclid: 'CjwKCAjw-abc_123',
+			fbclid: 'IwAR2F4-dbP0l7Mn1IawQQ_GCIN',
+			user_agent: 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
+		});
+		expect(result.success).toBe(true);
 	});
 });
 
@@ -152,6 +188,8 @@ describe('forwardWhatsAppClickPayload', () => {
 });
 
 describe('handleWhatsAppClickRequest', () => {
+	const isAllowedPageUrl = (url: string) => url.startsWith('https://www.tukiviagens.com.br/');
+
 	const validBody = JSON.stringify({
 		event: 'whatsapp_click',
 		source: 'google',
@@ -204,10 +242,24 @@ describe('handleWhatsAppClickRequest', () => {
 		).toEqual({ status: 400, body: { ok: false, error: 'Payload inválido.' } });
 	});
 
+	it('returns 400 when page_url is not from the site', async () => {
+		const result = await handleWhatsAppClickRequest({
+			contentType: 'application/json',
+			rawBody: JSON.stringify({ ...JSON.parse(validBody), page_url: 'https://evil.example/lp/x/' }),
+			webhookUrl: 'https://flow.example/webhook',
+			isAllowedPageUrl,
+			forward: async () => {
+				throw new Error('must not forward');
+			},
+		});
+		expect(result).toEqual({ status: 400, body: { ok: false, error: 'Payload inválido.' } });
+	});
+
 	it('returns 503 when webhook URL is missing', async () => {
 		const result = await handleWhatsAppClickRequest({
 			contentType: 'application/json',
 			rawBody: validBody,
+			isAllowedPageUrl,
 		});
 		expect(result.status).toBe(503);
 		expect(result.body.ok).toBe(false);
@@ -218,6 +270,7 @@ describe('handleWhatsAppClickRequest', () => {
 			contentType: 'application/json',
 			rawBody: validBody,
 			webhookUrl: 'https://flow.example/webhook',
+			isAllowedPageUrl,
 			forward: async () => ({ ok: false, status: 500 }),
 		});
 		expect(fail.status).toBe(502);
@@ -227,6 +280,7 @@ describe('handleWhatsAppClickRequest', () => {
 			rawBody: validBody,
 			webhookUrl: 'https://flow.example/webhook',
 			secret: 'secret',
+			isAllowedPageUrl,
 			forward: async (input) => {
 				expect(input.webhookUrl).toBe('https://flow.example/webhook');
 				expect(input.secret).toBe('secret');

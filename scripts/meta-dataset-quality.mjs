@@ -8,18 +8,20 @@
  *   pnpm meta:quality                 # usa PUBLIC_META_PIXEL_ID do .env
  *   pnpm meta:quality -- <dataset_id> # consulta um dataset específico
  *
- * Requer META_CAPI_TOKEN no .env (token com permissão read_ads_dataset_quality).
+ * Requer META_DATASET_QUALITY_TOKEN no .env (token com permissão read_ads_dataset_quality).
+ * Use um token separado do META_CAPI_TOKEN de produção (menor privilégio); o fallback
+ * para META_CAPI_TOKEN existe só por compatibilidade.
  */
 import 'dotenv/config';
 
 const GRAPH_VERSION = 'v25.0';
 
-const token = process.env.META_CAPI_TOKEN;
+const token = process.env.META_DATASET_QUALITY_TOKEN || process.env.META_CAPI_TOKEN;
 const datasetId = process.argv[2] || process.env.PUBLIC_META_PIXEL_ID;
 
 if (!token || !datasetId) {
 	console.error(
-		'Configure META_CAPI_TOKEN e PUBLIC_META_PIXEL_ID no .env (ou passe o dataset_id como argumento).',
+		'Configure META_DATASET_QUALITY_TOKEN e PUBLIC_META_PIXEL_ID no .env (ou passe o dataset_id como argumento).',
 	);
 	process.exit(1);
 }

@@ -1,0 +1,68 @@
+---
+/**
+ * Aviso de cookies (LGPD + Google Consent Mode v2).
+ * Aparece até o visitante escolher; reabre por qualquer elemento com `data-consent-open`.
+ * "Recusar" tem o mesmo peso visual de "Aceitar".
+ */
+---
+
+<div class="fixed inset-x-0 bottom-0 z-[90] p-4 sm:p-6" data-consent-banner hidden>
+	<section
+		class="mx-auto flex max-w-3xl flex-col gap-4 rounded-2xl bg-white p-5 shadow-[0_12px_48px_color-mix(in_srgb,var(--color-tuki-purple)_18%,transparent)] ring-1 ring-tuki-purple/10 sm:flex-row sm:items-center sm:gap-6"
+		aria-labelledby="tuki-consent-title"
+		aria-describedby="tuki-consent-text"
+	>
+		<div class="flex-1">
+			<h2 id="tuki-consent-title" class="font-semibold text-tuki-ink">Cookies e privacidade</h2>
+			<p id="tuki-consent-text" class="tuki-type-small mt-1 text-tuki-muted">
+				Com sua permissão, usamos cookies do Google e da Meta para medir visitas e o desempenho
+				dos anúncios.
+				<a href="/politica-de-privacidade/" class="underline transition hover:text-tuki-purple">Saiba mais</a>
+			</p>
+		</div>
+		<div class="flex gap-3 sm:shrink-0">
+			<button
+				type="button"
+				data-consent-choice="denied"
+				class="flex-1 rounded-full border-2 border-tuki-purple px-5 py-2.5 font-semibold text-tuki-purple transition hover:bg-tuki-purple/5 sm:flex-none"
+			>
+				Recusar
+			</button>
+			<button
+				type="button"
+				data-consent-choice="granted"
+				class="flex-1 rounded-full border-2 border-tuki-purple bg-tuki-purple px-5 py-2.5 font-semibold text-white transition hover:border-tuki-purple-dark hover:bg-tuki-purple-dark sm:flex-none"
+			>
+				Aceitar
+			</button>
+		</div>
+	</section>
+</div>
+
+<script>
+	import { applyConsentChoice, readConsent, saveConsent } from '../../scripts/consent';
+
+	const banner = document.querySelector<HTMLElement>('[data-consent-banner]');
+
+	if (banner) {
+		if (!readConsent()) banner.hidden = false;
+
+		banner.querySelectorAll<HTMLButtonElement>('[data-consent-choice]').forEach((button) => {
+			button.addEventListener('click', () => {
+				const choice = button.dataset.consentChoice === 'granted' ? 'granted' : 'denied';
+				saveConsent(choice);
+				applyConsentChoice(choice);
+				banner.hidden = true;
+			});
+		});
+
+		document.addEventListener('click', (event) => {
+			const trigger = event.target instanceof Element ? event.target.closest('[data-consent-open]') : null;
+			if (!trigger) return;
+
+			event.preventDefault();
+			banner.hidden = false;
+			banner.querySelector<HTMLButtonElement>('[data-consent-choice]')?.focus();
+		});
+	}
+</script>

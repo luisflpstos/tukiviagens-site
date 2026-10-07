@@ -1,0 +1,139 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Container from '../components/common/Container.astro';
+import { SITE } from '../lib/constants';
+
+const updatedAt = '7 de outubro de 2026';
+---
+
+<BaseLayout
+	title="Política de Privacidade"
+	description="Como a Tuki Viagens coleta, usa e protege seus dados pessoais, conforme a LGPD."
+	path="/politica-de-privacidade/"
+>
+	<div id="conteudo">
+		<section class="tuki-gradient-purple section-padding text-white">
+			<Container size="narrow">
+				<h1 class="tuki-type-display">Política de Privacidade</h1>
+				<p class="tuki-type-lead tuki-type-inverse tuki-measure mt-4 text-white/90">
+					Como tratamos seus dados pessoais, em linha com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018).
+				</p>
+				<p class="tuki-type-small mt-4 text-white/75">Última atualização: {updatedAt}</p>
+			</Container>
+		</section>
+
+		<section class="section-padding">
+			<Container size="narrow">
+				<div class="content-markdown max-w-none">
+					<h2>Quem somos</h2>
+					<p>
+						{SITE.name}, {SITE.cadastro}, com sede em {SITE.location}, é a controladora dos dados pessoais
+						tratados neste site. Para qualquer assunto de privacidade, fale com a gente em
+						<a href={`mailto:${SITE.email}`}>{SITE.email}</a>.
+					</p>
+
+					<h2>Quais dados coletamos</h2>
+					<ul>
+						<li>
+							<strong>Formulário de cotação:</strong> nome, telefone (WhatsApp), e-mail e, quando você informa, datas
+							de entrada e saída e quantidade de adultos e crianças.
+						</li>
+						<li>
+							<strong>Cliques no WhatsApp:</strong> a página em que você estava, a origem da visita (parâmetros de
+							campanha como <code>utm_source</code> e identificadores de clique de anúncios), o navegador usado e o
+							horário do clique.
+						</li>
+						<li>
+							<strong>Navegação, se você aceitar cookies:</strong> identificadores e cookies do Google (Tag Manager,
+							Analytics e Ads) e da Meta (Pixel).
+						</li>
+						<li>
+							<strong>Dados técnicos:</strong> endereço IP e dados do navegador, registrados pela hospedagem do site.
+						</li>
+					</ul>
+
+					<h2>Para que usamos e com qual base legal</h2>
+					<ul>
+						<li>
+							<strong>Responder sua cotação e prestar o atendimento</strong> por WhatsApp, telefone ou e-mail —
+							procedimentos preliminares a um contrato, a seu pedido (art. 7º, V, da LGPD).
+						</li>
+						<li>
+							<strong>Medir visitas e o desempenho dos anúncios</strong> — somente com o seu consentimento (art. 7º,
+							I), dado no aviso de cookies.
+						</li>
+						<li>
+							<strong>Manter o site seguro e evitar abusos e fraudes</strong> — legítimo interesse (art. 7º, IX).
+						</li>
+					</ul>
+
+					<h2>Com quem compartilhamos</h2>
+					<ul>
+						<li>
+							<strong>Kortex</strong>, plataforma de atendimento que recebe as solicitações de cotação e os cliques no
+							WhatsApp para que nossa equipe responda.
+						</li>
+						<li>
+							<strong>Google e Meta</strong>, para medição e anúncios, apenas se você aceitar cookies. Quando e-mail ou
+							telefone são usados para medir conversões, seguem somente em formato irreversível (hash SHA-256) — nunca
+							em texto aberto.
+						</li>
+						<li><strong>Vercel</strong>, empresa que hospeda o site e gera estatísticas de acesso sem cookies.</li>
+						<li><strong>WhatsApp</strong>, quando você escolhe conversar com a gente por lá.</li>
+						<li>
+							<strong>Hotéis, resorts e fornecedores</strong>, somente com os dados necessários para a reserva que você
+							solicitar.
+						</li>
+					</ul>
+					<p>
+						Alguns desses fornecedores podem armazenar dados fora do Brasil. Nesses casos, a transferência segue as
+						hipóteses do art. 33 da LGPD.
+					</p>
+
+					<h2>Cookies e como mudar sua escolha</h2>
+					<p>
+						Cookies de medição e de anúncios só são ativados se você clicar em “Aceitar” no aviso de cookies. Sem
+						consentimento, as ferramentas do Google funcionam em modo restrito, sem gravar cookies de análise ou de
+						publicidade. Você pode mudar sua escolha a qualquer momento:
+						<button type="button" data-consent-open class="cursor-pointer text-tuki-purple underline">
+							abrir preferências de cookies
+						</button>.
+					</p>
+
+					<h2>Por quanto tempo guardamos</h2>
+					<p>
+						Mantemos os dados pelo tempo necessário para o atendimento e para cumprir obrigações legais e
+						regulatórias. Dados de navegação seguem os prazos de retenção configurados nas ferramentas de medição.
+					</p>
+
+					<h2>Seus direitos</h2>
+					<p>Pela LGPD (art. 18), você pode, a qualquer momento:</p>
+					<ul>
+						<li>confirmar se tratamos seus dados e acessá-los;</li>
+						<li>corrigir dados incompletos, inexatos ou desatualizados;</li>
+						<li>pedir anonimização, bloqueio ou eliminação de dados desnecessários ou tratados em desconformidade;</li>
+						<li>pedir a portabilidade dos dados;</li>
+						<li>saber com quem compartilhamos seus dados;</li>
+						<li>revogar o consentimento e pedir a eliminação dos dados tratados com base nele.</li>
+					</ul>
+					<p>
+						Para exercer seus direitos, escreva para <a href={`mailto:${SITE.email}`}>{SITE.email}</a>. Você também pode
+						apresentar reclamação à Autoridade Nacional de Proteção de Dados (ANPD).
+					</p>
+
+					<h2>Segurança</h2>
+					<p>
+						Usamos conexão criptografada (HTTPS), restringimos o acesso aos dados à equipe que faz o atendimento e
+						aplicamos controles contra uso indevido dos nossos canais.
+					</p>
+
+					<h2>Alterações nesta política</h2>
+					<p>
+						Podemos atualizar esta política para refletir mudanças no site ou na legislação. A data da última
+						atualização fica sempre no topo desta página.
+					</p>
+				</div>
+			</Container>
+		</section>
+	</div>
+</BaseLayout>

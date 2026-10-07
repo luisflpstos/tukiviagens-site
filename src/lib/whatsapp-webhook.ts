@@ -1,34 +1,39 @@
 import { z } from 'zod';
 import type { WhatsAppClickPayload } from './whatsapp';
 import { getLeadWebhookUrl } from './lead-config';
+import { isSiteUrl } from './lead-security';
+import { httpUrlOrEmpty, isHttpUrl, plainText, printableText, tokenString } from './safe-fields';
 
-const field = z.string().max(512);
-const pageUrl = z.string().max(2048);
+const text = plainText(512);
+const clickId = tokenString(512);
 
-/** Schema do payload de clique WhatsApp enviado pelo browser ao proxy. */
+/**
+ * Schema do payload de clique WhatsApp enviado pelo browser ao proxy.
+ * Campos de texto não aceitam links nem caracteres de controle: o conteúdo chega ao CRM.
+ */
 export const whatsappClickPayloadSchema = z
 	.object({
 		event: z.literal('whatsapp_click'),
-		source: field,
-		h1: field,
-		utm_source: field,
-		utm_medium: field,
-		utm_campaign: field,
-		utm_content: field,
-		utm_term: field,
-		gclid: field,
-		gbraid: field,
-		wbraid: field,
-		fbclid: field,
-		page_url: pageUrl,
-		page_title: field,
-		referrer: pageUrl,
-		horario_local: field,
-		timestamp_iso: field,
-		user_agent: z.string().max(1024),
-		product: field.optional(),
-		campaign: field.optional(),
-		button_label: field.optional(),
+		source: text,
+		h1: text,
+		utm_source: text,
+		utm_medium: text,
+		utm_campaign: text,
+		utm_content: text,
+		utm_term: text,
+		gclid: clickId,
+		gbraid: clickId,
+		wbraid: clickId,
+		fbclid: clickId,
+		page_url: z.string().max(2048).refine(isHttpUrl, 'URL inválida.'),
+		page_title: text,
+		referrer: httpUrlOrEmpty(2048),
+		horario_local: z.string().max(32).regex(/^[\d/: ]*$/),
+		timestamp_iso: z.string().max(40).regex(/^[\dTZ:.+-]*$/),
+		user_agent: printableText(1024),
+		product: text.optional(),
+		campaign: text.optional(),
+		button_label: text.optional(),
 	})
 	.strict();
 
@@ -40,7 +45,7 @@ export type WhatsAppWebhookEnv = {
 
 /**
  * Resolve a URL do webhook de WhatsApp (somente servidor).
- * Ordem: WHATSAPP_WEBHOOK_URL → PUBLIC_WHATSAPP_WEBHOOK_URL → LEAD_WEBHOOK_URL.
+ * Ordem: WHATSAPP_WEBHOOK_URL → PUBLIC_WHATSAPP_WEBHOOK_URL (legado) → LEAD_WEBHOOK_URL.
  */
 export function resolveWhatsAppWebhookUrl(env: WhatsAppWebhookEnv): string | undefined {
 	return (
@@ -56,8 +61,9 @@ export function getWhatsAppWebhookUrl(): string | undefined {
 	return resolveWhatsAppWebhookUrl({
 		whatsappWebhookUrl:
 			process.env.WHATSAPP_WEBHOOK_URL ?? import.meta.env.WHATSAPP_WEBHOOK_URL,
-		publicWhatsappWebhookUrl:
-			process.env.PUBLIC_WHATSAPP_WEBHOOK_URL ?? import.meta.env.PUBLIC_WHATSAPP_WEBHOOK_URL,
+		// Legado: lido só em runtime via process.env para nunca ser embutido em bundles.
+		// Migre o valor para WHATSAPP_WEBHOOK_URL na Vercel.
+		publicWhatsappWebhookUrl: process.env.PUBLIC_WHATSAPP_WEBHOOK_URL,
 		leadWebhookUrl: getLeadWebhookUrl(),
 	});
 }
@@ -121,6 +127,8 @@ export type HandleWhatsAppClickInput = {
 	secret?: string;
 	maxBodyBytes?: number;
 	forward?: typeof forwardWhatsAppClickPayload;
+	/** Valida que `page_url` é do próprio site (padrão: origens de `getAllowedOrigins`). */
+	isAllowedPageUrl?: (url: string) => boolean;
 };
 
 export type HandleWhatsAppClickOutput = {
@@ -151,7 +159,8 @@ export async function handleWhatsAppClickRequest(
 	}
 
 	const result = whatsappClickPayloadSchema.safeParse(parsed);
-	if (!result.success) {
+	const isAllowedPageUrl = input.isAllowedPageUrl ?? ((url: string) => isSiteUrl(url));
+	if (!result.success || !isAllowedPageUrl(result.data.page_url)) {
 		return { status: 400, body: { ok: false, error: 'Payload inválido.' } };
 	}
 
