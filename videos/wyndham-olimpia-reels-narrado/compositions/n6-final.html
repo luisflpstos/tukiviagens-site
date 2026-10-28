@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template id="n6-final-template">
+      <style>
+        @font-face { font-family: "Montserrat"; font-style: normal; font-weight: 700 900; src: url("assets/fonts/montserrat-latin.woff2") format("woff2"); }
+        @font-face { font-family: "Montserrat"; font-style: italic; font-weight: 900; src: url("assets/fonts/montserrat-italic-latin.woff2") format("woff2"); }
+        @font-face { font-family: "Kaushan Script"; font-style: normal; font-weight: 400; src: url("assets/fonts/kaushan-latin.woff2") format("woff2"); }
+        #n6-root {
+          position: absolute;
+          inset: 0;
+          overflow: hidden;
+          background: #2a0b6b;
+          font-family: "Montserrat", sans-serif;
+        }
+        #n6-root .vwrap {
+          position: absolute;
+          inset: 0;
+        }
+        #n6-root video {
+          position: absolute;
+          inset: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: 50% 30%;
+        }
+        #n6-shade {
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(180deg, rgba(42, 11, 107, 0.78) 0%, rgba(42, 11, 107, 0.6) 40%, rgba(42, 11, 107, 0.72) 100%);
+        }
+        #n6-panel-edge {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 712px;
+          height: 150px;
+          background: #4b14ae;
+          clip-path: polygon(0 110px, 100% 0, 100% 22px, 0 132px);
+        }
+        #n6-panel {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 732px;
+          bottom: 0;
+          background: #e8620a;
+          clip-path: polygon(0 110px, 100% 0, 100% 100%, 0 100%);
+        }
+        /* header: logo + "APROVEITE E COMPRE AGORA!" lettering */
+        #n6-head {
+          position: absolute;
+          left: 60px;
+          top: 84px;
+          width: 960px;
+          height: 160px;
+          border-radius: 34px;
+          background: #fffdf8;
+          box-shadow: 0 10px 0 #4b14ae, 0 24px 40px rgba(20, 4, 60, 0.35);
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0 40px 0 30px;
+        }
+        #n6-logo {
+          width: 250px;
+          height: 140px;
+          object-fit: contain;
+        }
+        #n6-aprov {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          color: #1c1a3a;
+        }
+        #n6-aprov-1 {
+          display: block;
+          font-weight: 900;
+          font-size: 36px;
+          line-height: 1;
+        }
+        #n6-aprov-2 {
+          display: flex;
+          align-items: baseline;
+          gap: 12px;
+          margin-top: 2px;
+        }
+        #n6-compre {
+          font-weight: 900;
+          font-size: 54px;
+          line-height: 1;
+          letter-spacing: -0.02em;
+        }
+        #n6-agora {
+          display: inline-block;
+          font-family: "Kaushan Script", cursive;
+          font-size: 66px;
+          line-height: 1;
+          color: #d4560a;
+          transform-origin: 30% 70%;
+        }
+        .n6-dim {
+          display: block;
+          font-weight: 900;
+          font-style: italic;
+          line-height: 0.9;
+          letter-spacing: -0.04em;
+          color: #ffffff;
+          -webkit-text-stroke: 0.03em #ffd400;
+          paint-order: stroke fill;
+          white-space: nowrap;
+          text-shadow:
+            0.01em 0.01em 0 #6a58d8,
+            0.02em 0.02em 0 #6a58d8,
+            0.03em 0.03em 0 #5f47cf,
+            0.04em 0.04em 0 #5a35c4,
+            0.05em 0.05em 0 #5a35c4,
+            0.06em 0.06em 0 #4b14ae,
+            0.07em 0.07em 0 #4b14ae,
+            0.08em 0.085em 0 #3d0f92,
+            0.09em 0.1em 0 #2a0b6b,
+            0.11em 0.15em 0.14em rgba(20, 4, 60, 0.5);
+        }
+        #n6-offer {
+          position: absolute;
+          left: 50px;
+          top: 318px;
+          width: 600px;
+          height: 440px;
+        }
+        #n6-oferta-rot {
+          position: absolute;
+          left: 0;
+          top: 0;
+          transform: rotate(-5deg);
+          transform-origin: 0 50%;
+        }
+        #n6-oferta {
+          font-size: 56px;
+        }
+        #n6-ate {
+          position: absolute;
+          left: 10px;
+          top: 84px;
+          padding: 8px 22px 10px;
+          border-radius: 18px;
+          background: #ffd400;
+          color: #2a0b6b;
+          font-weight: 900;
+          font-style: italic;
+          font-size: 58px;
+          line-height: 1;
+          box-shadow: 6px 8px 0 #4b14ae;
+        }
+        #n6-pct {
+          position: absolute;
+          left: 0;
+          top: 150px;
+          font-size: 214px;
+        }
+        #n6-off {
+          position: absolute;
+          left: 200px;
+          top: 336px;
+          font-size: 112px;
+        }
+        #n6-bolt {
+          position: absolute;
+          left: 540px;
+          top: 300px;
+          width: 100px;
+          height: 200px;
+          filter: drop-shadow(6px 8px 0 #4b14ae);
+        }
+        #n6-tuki-wrap {
+          position: absolute;
+          right: -50px;
+          top: 280px;
+          width: 470px;
+          height: 470px;
+        }
+        #n6-tuki {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          filter: drop-shadow(0 22px 26px rgba(20, 4, 60, 0.45));
+          transform-origin: 50% 85%;
+        }
+        #n6-hotel {
+          position: absolute;
+          left: 90px;
+          right: 90px;
+          top: 812px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        #n6-wyndham {
+          font-weight: 900;
+          font-size: 112px;
+          line-height: 1;
+          letter-spacing: -0.02em;
+          color: #ffffff;
+          text-shadow: 0.025em 0.03em 0 #b84303;
+        }
+        #n6-script {
+          margin-top: -12px;
+          font-family: "Kaushan Script", cursive;
+          font-size: 68px;
+          line-height: 1.15;
+          color: #3a0e8c;
+          white-space: nowrap;
+        }
+        #n6-script-wipe {
+          display: block;
+          padding: 0 14px;
+          transform: rotate(-3deg);
+        }
+        #n6-dates {
+          position: absolute;
+          left: 90px;
+          right: 90px;
+          top: 1010px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 12px;
+        }
+        .n6-date {
+          display: block;
+          padding: 12px 32px 14px;
+          border-radius: 20px;
+          font-weight: 800;
+          font-size: 38px;
+          line-height: 1;
+          color: #ffffff;
+          white-space: nowrap;
+          font-variant-numeric: tabular-nums;
+        }
+        #n6-d1 {
+          background: #4b14ae;
+        }
+        #n6-d2 {
+          background: #b8360a;
+        }
+        /* primary CTA */
+        #n6-ctagroup {
+          position: absolute;
+          left: 60px;
+          top: 1160px;
+          width: 960px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        #n6-cta {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 940px;
+          padding: 26px 0 30px;
+          border-radius: 44px;
+          background: #ffd400;
+          border: 8px solid #ffffff;
+          box-shadow: 0 14px 0 #4b14ae, 0 30px 50px rgba(20, 4, 60, 0.45);
+        }
+        .n6-cta-line {
+          display: block;
+          font-weight: 900;
+          font-size: 92px;
+          line-height: 1;
+          letter-spacing: -0.02em;
+          color: #2a0b6b;
+          white-space: nowrap;
+        }
+        #n6-cta-2 {
+          margin-top: 6px;
+        }
+        #n6-transf {
+          display: block;
+          margin-top: 26px;
+          font-weight: 900;
+          font-style: italic;
+          font-size: 45px;
+          line-height: 1.1;
+          color: #ffffff;
+          white-space: nowrap;
+          text-shadow: 0 3px 0 #4b14ae, 0 8px 18px rgba(20, 4, 60, 0.45);
+        }
+        #n6-cond {
+          position: absolute;
+          left: 90px;
+          top: 1500px;
+          width: 900px;
+          padding: 12px 28px 14px;
+          border-radius: 20px;
+          background: #4b14ae;
+          color: #ffffff;
+          font-weight: 700;
+          font-size: 27px;
+          line-height: 1.25;
+          text-align: center;
+        }
+      </style>
+
+      <div data-hf-id="hf-jdnu" id="n6-root" data-composition-id="n6-final" data-width="1080" data-height="1920" data-duration="6.25">
+        <div data-hf-id="hf-rjmo" class="vwrap" id="n6-vw">
+          <video data-hf-id="hf-a50k" id="n6-v1" class="clip" src="assets/video/hotel.mp4" muted playsinline
+            data-start="0" data-duration="6.25" data-media-start="10.3" data-playback-rate="0.45" data-track-index="0"></video>
+        </div>
+        <div data-hf-id="hf-srh9" id="n6-shade"></div>
+        <div data-hf-id="hf-5wb6" id="n6-panel-edge"></div>
+        <div data-hf-id="hf-mzx8" id="n6-panel"></div>
+
+        <div data-hf-id="hf-yjeg" id="n6-head">
+          <img data-hf-id="hf-3fmn" id="n6-logo" src="assets/img/logo-tuki.svg" alt="Tuki Viagens" />
+          <div data-hf-id="hf-2upq" id="n6-aprov">
+            <span data-hf-id="hf-zlfb" id="n6-aprov-1">APROVEITE E</span>
+            <span data-hf-id="hf-0b2s" id="n6-aprov-2"><span data-hf-id="hf-pdrn" id="n6-compre">COMPRE</span><span data-hf-id="hf-55ty" id="n6-agora">Agora!</span></span>
+          </div>
+        </div>
+
+        <svg data-hf-id="hf-25n2" id="n6-bolt" viewBox="0 0 200 400" aria-hidden="true">
+          <polygon data-hf-id="hf-6nev" points="128,6 28,228 96,228 58,396 178,148 110,148 156,6" fill="#ffd400" stroke="#ffffff" stroke-width="12" stroke-linejoin="round" />
+        </svg>
+
+        <div data-hf-id="hf-fj5w" id="n6-offer" data-layout-allow-overlap>
+          <span data-hf-id="hf-dntg" id="n6-oferta-rot" data-layout-allow-occlusion><span data-hf-id="hf-fy7u" class="n6-dim" id="n6-oferta" data-layout-allow-occlusion>OFERTA RELÂMPAGO</span></span>
+          <span data-hf-id="hf-u43t" class="n6-dim" id="n6-pct">20%</span>
+          <span data-hf-id="hf-jigv" class="n6-dim" id="n6-off">OFF</span>
+          <span data-hf-id="hf-ec8n" id="n6-ate">ATÉ</span>
+        </div>
+
+        <div data-hf-id="hf-cock" id="n6-tuki-wrap">
+          <img data-hf-id="hf-87ur" id="n6-tuki" src="assets/img/tuki-boia.png" alt="Tuki, o tucano da Tuki Viagens, na boia" />
+        </div>
+
+        <div data-hf-id="hf-ifdc" id="n6-hotel">
+          <div data-hf-id="hf-mf36" id="n6-wyndham">WYNDHAM</div>
+          <div data-hf-id="hf-nqxj" id="n6-script"><span data-hf-id="hf-497v" id="n6-script-wipe">Olímpia Royal Hotels</span></div>
+        </div>
+
+        <div data-hf-id="hf-qz9t" id="n6-dates">
+          <span data-hf-id="hf-aokr" class="n6-date" id="n6-d1">RESERVE ATÉ 31/10/2026</span>
+          <span data-hf-id="hf-lf5b" class="n6-date" id="n6-d2">HOSPEDAGENS ATÉ 03/01/2027</span>
+        </div>
+
+        <div data-hf-id="hf-qbup" id="n6-ctagroup">
+          <div data-hf-id="hf-3xko" id="n6-cta">
+            <span data-hf-id="hf-zm1g" class="n6-cta-line" id="n6-cta-1">FALE AGORA</span>
+            <span data-hf-id="hf-56yk" class="n6-cta-line" id="n6-cta-2">COM A TUKI</span>
+          </div>
+          <span data-hf-id="hf-6y6t" id="n6-transf">Transforme essa vontade em viagem!</span>
+        </div>
+
+        <div data-hf-id="hf-77j4" id="n6-cond">Oferta sujeita à disponibilidade e às condições da promoção.</div>
+      </div>
+
+      <script>
+        (function () {
+          const tl = gsap.timeline({ paused: true });
+          tl.fromTo("#n6-vw", { scale: 1.12 }, { scale: 1.0, duration: 6.25, ease: "power1.out" }, 0);
+
+          // 1 — "Fale agora com a Tuki": the CTA lands alone, centred and dominant
+          tl.fromTo("#n6-ctagroup", { y: -400, scale: 1.08 }, { y: -400, scale: 1.08, duration: 0.01 }, 0);
+          tl.fromTo("#n6-cta", { scale: 0.4, rotation: -6, opacity: 0 }, { scale: 1, rotation: 0, opacity: 1, duration: 0.5, ease: "back.out(1.7)" }, 0.22);
+          tl.fromTo(".n6-cta-line", { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.32, ease: "power3.out", stagger: 0.32 }, 0.3);
+          // 2 — "transforme essa vontade em viagem"
+          tl.fromTo("#n6-transf", { y: 30, opacity: 0 }, { y: 0, opacity: 1, duration: 0.4, ease: "power2.out" }, 1.52);
+
+          // 3 — the CTA settles into the closing layout while the lockup assembles (complete by 3.25 = 27.0s)
+          tl.to("#n6-ctagroup", { y: 0, scale: 1, duration: 0.55, ease: "power3.inOut" }, 2.0);
+          tl.fromTo("#n6-panel", { yPercent: 100 }, { yPercent: 0, duration: 0.5, ease: "power3.out" }, 2.0);
+          tl.fromTo("#n6-panel-edge", { yPercent: 500, opacity: 0 }, { yPercent: 0, opacity: 1, duration: 0.52, ease: "power3.out" }, 2.02);
+          tl.fromTo("#n6-head", { y: -260, opacity: 0 }, { y: 0, opacity: 1, duration: 0.45, ease: "back.out(1.4)" }, 2.1);
+          tl.fromTo("#n6-oferta", { x: -700, opacity: 0 }, { x: 0, opacity: 1, duration: 0.3, ease: "expo.out" }, 2.25);
+          tl.fromTo("#n6-pct", { scale: 2.2, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.28, ease: "expo.out", transformOrigin: "40% 60%" }, 2.3);
+          tl.fromTo("#n6-ate", { scale: 0, rotation: -20 }, { scale: 1, rotation: -6, duration: 0.32, ease: "back.out(2.2)" }, 2.42);
+          tl.fromTo("#n6-off", { y: 100, opacity: 0 }, { y: 0, opacity: 1, duration: 0.28, ease: "power4.out" }, 2.48);
+          tl.fromTo("#n6-bolt", { scaleY: 0, opacity: 0 }, { scaleY: 1, opacity: 1, duration: 0.16, ease: "power4.out", transformOrigin: "50% 0%" }, 2.52);
+          tl.fromTo("#n6-tuki-wrap", { x: 600, rotation: 12 }, { x: 0, rotation: -3, duration: 0.55, ease: "back.out(1.4)" }, 2.4);
+          tl.fromTo("#n6-wyndham", { y: 60, opacity: 0 }, { y: 0, opacity: 1, duration: 0.34, ease: "power3.out" }, 2.6);
+          tl.fromTo("#n6-script-wipe", { clipPath: "inset(0% 100% 0% 0%)" }, { clipPath: "inset(0% 0% 0% 0%)", duration: 0.42, ease: "power2.inOut" }, 2.72);
+          tl.fromTo(".n6-date", { x: (i) => (i ? 900 : -900), opacity: 0 }, { x: 0, opacity: 1, duration: 0.34, ease: "power3.out", stagger: 0.1 }, 2.78);
+          tl.fromTo("#n6-cond", { y: 30, opacity: 0 }, { y: 0, opacity: 1, duration: 0.3, ease: "power2.out" }, 2.95);
+
+          // hold: light life only, the CTA keeps the strongest pulse
+          tl.to("#n6-cta", { scale: 1.04, duration: 0.5, ease: "sine.inOut", yoyo: true, repeat: 5 }, 3.25);
+          tl.to("#n6-agora", { rotation: -5, scale: 1.06, duration: 0.5, ease: "sine.inOut", yoyo: true, repeat: 5 }, 3.3);
+          tl.fromTo("#n6-tuki", { y: 0, rotation: 0 }, { y: -14, rotation: 2, duration: 0.9, ease: "sine.inOut", yoyo: true, repeat: 3 }, 2.95);
+          tl.to("#n6-bolt", { opacity: 0.45, duration: 0.05, yoyo: true, repeat: 3, ease: "none" }, 4.2);
+          window.__timelines["n6-final"] = tl;
+        })();
+      </script>
+    </template>
+  </body>
+</html>

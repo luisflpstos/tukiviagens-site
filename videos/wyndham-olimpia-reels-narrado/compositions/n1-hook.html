@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template id="n1-hook-template">
+      <style>
+        @font-face { font-family: "Montserrat"; font-style: normal; font-weight: 700 900; src: url("assets/fonts/montserrat-latin.woff2") format("woff2"); }
+        @font-face { font-family: "Montserrat"; font-style: italic; font-weight: 900; src: url("assets/fonts/montserrat-italic-latin.woff2") format("woff2"); }
+        #n1-root {
+          position: absolute;
+          inset: 0;
+          overflow: hidden;
+          background: #2a0b6b;
+          font-family: "Montserrat", sans-serif;
+        }
+        #n1-root .vwrap {
+          position: absolute;
+          inset: 0;
+          transform-origin: 50% 45%;
+        }
+        #n1-root video {
+          position: absolute;
+          inset: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        #n1-v2 {
+          object-position: 42% 50%;
+        }
+        #n1-shade {
+          position: absolute;
+          inset: 0;
+          background:
+            linear-gradient(0deg, rgba(42, 11, 107, 0.86) 0%, rgba(42, 11, 107, 0.55) 26%, rgba(42, 11, 107, 0) 50%),
+            linear-gradient(180deg, rgba(42, 11, 107, 0.5) 0%, rgba(42, 11, 107, 0) 16%);
+        }
+        #n1-stripe {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          height: 14px;
+          background: linear-gradient(90deg, #4b14ae 0%, #4b14ae 25%, #fc7b04 50%, #ffd400 75%, #fc7b04 100%);
+        }
+        #n1-logo {
+          position: absolute;
+          left: 70px;
+          top: 110px;
+          width: 220px;
+          height: 147px;
+          object-fit: contain;
+          filter: drop-shadow(0 4px 12px rgba(20, 4, 60, 0.45));
+        }
+        #n1-copy {
+          position: absolute;
+          left: 80px;
+          right: 80px;
+          top: 1000px;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        #n1-q {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 0 13px;
+          padding: 14px 28px 18px;
+          border-radius: 24px;
+          background: rgba(42, 11, 107, 0.78);
+          color: #fffdf8;
+          font-weight: 700;
+          font-size: 46px;
+          line-height: 1.15;
+        }
+        #n1-q .w,
+        #n1-b1 .w {
+          display: inline-block;
+        }
+        #n1-b1 {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 0 22px;
+          width: 920px;
+          margin-top: 34px;
+          font-weight: 900;
+          font-size: 86px;
+          line-height: 1.04;
+          letter-spacing: -0.02em;
+          color: #ffffff;
+          text-shadow: 0 5px 20px rgba(20, 4, 60, 0.6);
+        }
+        #n1-b2-wrap {
+          position: relative;
+          width: 920px;
+          margin-top: 26px;
+        }
+        #n1-b2 {
+          display: block;
+          width: 760px;
+          font-weight: 900;
+          font-style: italic;
+          font-size: 116px;
+          line-height: 0.98;
+          letter-spacing: -0.035em;
+          color: #ffd400;
+          -webkit-text-stroke: 0.03em #ffffff;
+          paint-order: stroke fill;
+          text-shadow:
+            0.012em 0.012em 0 #fc7b04,
+            0.024em 0.024em 0 #fc7b04,
+            0.036em 0.036em 0 #e8620a,
+            0.048em 0.048em 0 #4b14ae,
+            0.06em 0.06em 0 #4b14ae,
+            0.072em 0.075em 0 #2a0b6b,
+            0.09em 0.12em 0.12em rgba(20, 4, 60, 0.5);
+          transform-origin: 10% 60%;
+        }
+        #n1-bolt {
+          position: absolute;
+          right: 20px;
+          top: 10px;
+          width: 120px;
+          height: 240px;
+          filter: drop-shadow(6px 8px 0 #4b14ae);
+        }
+      </style>
+
+      <div data-hf-id="hf-633x" id="n1-root" data-composition-id="n1-hook" data-width="1080" data-height="1920" data-duration="5.2">
+        <div data-hf-id="hf-7ld6" class="vwrap" id="n1-vw1">
+          <video data-hf-id="hf-l2c1" id="n1-v1" class="clip" src="assets/video/hotel.mp4" muted playsinline
+            data-start="0" data-duration="1.95" data-media-start="0.2" data-playback-rate="0.85" data-track-index="0"></video>
+        </div>
+        <div data-hf-id="hf-zla1" class="vwrap" id="n1-vw2">
+          <video data-hf-id="hf-5kte" id="n1-v2" class="clip" src="assets/video/hotel.mp4" muted playsinline
+            data-start="1.6" data-duration="1.95" data-media-start="15.8" data-playback-rate="0.75" data-track-index="0"></video>
+        </div>
+        <div data-hf-id="hf-2vlc" class="vwrap" id="n1-vw3">
+          <video data-hf-id="hf-xlft" id="n1-v3" class="clip" src="assets/video/hotel.mp4" muted playsinline
+            data-start="3.2" data-duration="2.0" data-media-start="28.95" data-playback-rate="0.85" data-track-index="0"></video>
+        </div>
+        <div data-hf-id="hf-ht1m" id="n1-shade"></div>
+        <div data-hf-id="hf-g314" id="n1-stripe"></div>
+        <img data-hf-id="hf-o9bs" id="n1-logo" src="assets/img/logo-tuki-white.svg" alt="Tuki Viagens" />
+
+        <div data-hf-id="hf-aysw" id="n1-copy">
+          <div data-hf-id="hf-nyuw" id="n1-q">
+            <span data-hf-id="hf-ierg" class="w">Quando</span><span data-hf-id="hf-o3gy" class="w">foi</span><span data-hf-id="hf-b7a3" class="w">a</span><span data-hf-id="hf-70sr" class="w">última</span><span data-hf-id="hf-uxs5" class="w">vez</span><span data-hf-id="hf-4sct" class="w">que</span><span data-hf-id="hf-9fxw" class="w">você…</span>
+          </div>
+          <div data-hf-id="hf-nrqg" id="n1-b1">
+            <span data-hf-id="hf-ydud" class="w">Deixe</span><span data-hf-id="hf-v9ma" class="w">os</span><span data-hf-id="hf-gczf" class="w">problemas</span><span data-hf-id="hf-99nn" class="w">de</span><span data-hf-id="hf-exlw" class="w">lado.</span>
+          </div>
+          <div data-hf-id="hf-mg14" id="n1-b2-wrap">
+            <span data-hf-id="hf-ef7f" id="n1-b2">Curta sua família.</span>
+            <svg data-hf-id="hf-m9br" id="n1-bolt" viewBox="0 0 200 400" aria-hidden="true">
+              <polygon data-hf-id="hf-6nev" points="128,6 28,228 96,228 58,396 178,148 110,148 156,6" fill="#ffd400" stroke="#ffffff" stroke-width="12" stroke-linejoin="round" />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        (function () {
+          const tl = gsap.timeline({ paused: true });
+          // calm footage: slow pushes and soft dissolves between the three shots
+          tl.fromTo("#n1-vw1", { scale: 1.1 }, { scale: 1.0, duration: 1.95, ease: "sine.out" }, 0);
+          tl.fromTo("#n1-vw2", { scale: 1.0 }, { scale: 1.07, duration: 1.95, ease: "sine.inOut" }, 1.6);
+          tl.fromTo("#n1-vw2", { opacity: 0 }, { opacity: 1, duration: 0.35, ease: "sine.inOut" }, 1.6);
+          tl.fromTo("#n1-vw3", { scale: 1.08 }, { scale: 1.0, duration: 2.0, ease: "sine.out" }, 3.2);
+          tl.fromTo("#n1-vw3", { opacity: 0 }, { opacity: 1, duration: 0.35, ease: "sine.inOut" }, 3.2);
+          tl.fromTo("#n1-shade", { opacity: 0.5 }, { opacity: 1, duration: 0.8, ease: "sine.out" }, 0);
+
+          // discreet brand marks
+          tl.fromTo("#n1-stripe", { scaleX: 0, transformOrigin: "0% 50%" }, { scaleX: 1, duration: 0.9, ease: "power2.out" }, 0.1);
+          tl.fromTo("#n1-logo", { opacity: 0, y: -16 }, { opacity: 0.92, y: 0, duration: 0.6, ease: "power2.out" }, 0.35);
+
+          // caption of the question, word by word with the voice
+          tl.fromTo("#n1-q", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.45, ease: "power2.out" }, 0.22);
+          tl.fromTo("#n1-q .w", { opacity: 0.25 }, { opacity: 1, duration: 0.18, ease: "none", stagger: 0.19 }, 0.3);
+
+          // beat 1 — on "deixou os problemas de lado"
+          tl.fromTo("#n1-b1 .w", { y: 50, opacity: 0 }, { y: 0, opacity: 1, duration: 0.55, ease: "power3.out", stagger: 0.1 }, 1.72);
+
+          // beat 2 — on "curtiu sua família", a warmer, bigger landing
+          tl.fromTo("#n1-b2", { scale: 0.82, y: 46, opacity: 0, rotation: -2 }, { scale: 1, y: 0, opacity: 1, rotation: -3, duration: 0.6, ease: "back.out(1.5)" }, 3.42);
+          tl.fromTo("#n1-bolt", { scale: 0, rotation: -25, opacity: 0 }, { scale: 1, rotation: 8, opacity: 1, duration: 0.4, ease: "back.out(2)" }, 3.8);
+          tl.to("#n1-b2", { y: -8, duration: 1.1, ease: "sine.inOut" }, 4.05);
+          window.__timelines["n1-hook"] = tl;
+        })();
+      </script>
+    </template>
+  </body>
+</html>

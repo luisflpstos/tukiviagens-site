@@ -1,0 +1,1223 @@
+{
+  "version": 1,
+  "historyId": "6938024f-647c-47df-ac9c-932079f5c0c4",
+  "currentRevision": "0fb8b3ff-7952-45e8-87fc-fbe9b312ce44",
+  "pendingChanges": false,
+  "files": {
+    ".media/manifest.jsonl": {
+      "hash": "ddb0dae9188de7ab60904ede84b7a7cdc38a92eba1d1ac513bba89d7593f730c",
+      "content": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/dd/ddb0dae9188de7ab60904ede84b7a7cdc38a92eba1d1ac513bba89d7593f730c"
+    },
+    "AGENTS.md": {
+      "hash": "1d4f0c8ca2507b94fd7c9df709fff01416adbd51a0f922b9d6ed2f40129147d5",
+      "content": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/1d/1d4f0c8ca2507b94fd7c9df709fff01416adbd51a0f922b9d6ed2f40129147d5"
+    },
+    "BRIEF.md": {
+      "hash": "910f568b33ce5d5ea188ee7ee4babcafd93c26b02690fffdcf2bc6a8c2385235",
+      "content": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/91/910f568b33ce5d5ea188ee7ee4babcafd93c26b02690fffdcf2bc6a8c2385235"
+    },
+    "CLAUDE.md": {
+      "hash": "1d4f0c8ca2507b94fd7c9df709fff01416adbd51a0f922b9d6ed2f40129147d5",
+      "content": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/1d/1d4f0c8ca2507b94fd7c9df709fff01416adbd51a0f922b9d6ed2f40129147d5"
+    },
+    "STORYBOARD.md": {
+      "hash": "e2f6e926b97d25860b8e7dba9865e1eea0e638d15c87b85c790eeffaea1ae1bc",
+      "content": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/e2/e2f6e926b97d25860b8e7dba9865e1eea0e638d15c87b85c790eeffaea1ae1bc"
+    },
+    "assets/audio/narracao-v2.mp3": {
+      "hash": "85f41dd5787b3ca44826840dc4a8017d7ae9963406cc1235e6024e7c716dc608",
+      "content": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/85/85f41dd5787b3ca44826840dc4a8017d7ae9963406cc1235e6024e7c716dc608"
+    },
+    "assets/audio/transcript-v2.json": {
+      "hash": "253ebdd06df16c2efbbfb3cc6477845bf3b658b590b5413a9d3e259652605b65",
+      "content": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/25/253ebdd06df16c2efbbfb3cc6477845bf3b658b590b5413a9d3e259652605b65"
+    },
+    "assets/fonts/kaushan-latin.woff2": {
+      "hash": "addcc80ddcc170ff8c97140ab37ac380ac4e6d0b8fd14e5d107b4cb87ffd778f",
+      "content": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/ad/addcc80ddcc170ff8c97140ab37ac380ac4e6d0b8fd14e5d107b4cb87ffd778f"
+    },
+    "assets/fonts/montserrat-italic-latin.woff2": {
+      "hash": "7084156f0b371b854c9fd3a84bc1006315b153898e75c20b1dfd5aa80a62c769",
+      "content": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/70/7084156f0b371b854c9fd3a84bc1006315b153898e75c20b1dfd5aa80a62c769"
+    },
+    "assets/fonts/montserrat-latin.woff2": {
+      "hash": "06b16db7a969135d48d38c49183be7fb88d4452e2a3011957c7851941f4e4879",
+      "content": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/06/06b16db7a969135d48d38c49183be7fb88d4452e2a3011957c7851941f4e4879"
+    },
+    "assets/icons/calendario.png": {
+      "hash": "f76d0149f84b75cd784bfb7a21e665a94dbcea63e1e450812a4cfaccab2dc97d",
+      "content": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/f7/f76d0149f84b75cd784bfb7a21e665a94dbcea63e1e450812a4cfaccab2dc97d"
+    },
+    "assets/icons/hotel.png": {
+      "hash": "dac02555cabd8fec0afcd53e5ffd9cfa1dd4ff6c559b6607f0fee33f00c11b31",
+      "content": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/da/dac02555cabd8fec0afcd53e5ffd9cfa1dd4ff6c559b6607f0fee33f00c11b31"
+    },
+    "assets/icons/oculos-boia.png": {
+      "hash": "43455c86cf8f3a44d3e016afd7ec904f0aaa4879a9ce7204280dbe202b21b908",
+      "content": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/43/43455c86cf8f3a44d3e016afd7ec904f0aaa4879a9ce7204280dbe202b21b908"
+    },
+    "assets/icons/olimpia.png": {
+      "hash": "7caa99d0f1801bebc95beb0696eccf3230b162bf3833fb75ff07aec30338bc84",
+      "content": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/7c/7caa99d0f1801bebc95beb0696eccf3230b162bf3833fb75ff07aec30338bc84"
+    },
+    "assets/icons/piscina.png": {
+      "hash": "8e03e5a1dbfb996403f7e7abd4321aab8d239bc79cc3772cc912152ac697d484",
+      "content": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/8e/8e03e5a1dbfb996403f7e7abd4321aab8d239bc79cc3772cc912152ac697d484"
+    },
+    "assets/icons/sol.png": {
+      "hash": "ceb1f11a13f4d73c5e655004b5576a2679348ad6c627a18740e6c3af2775ce8b",
+      "content": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/ce/ceb1f11a13f4d73c5e655004b5576a2679348ad6c627a18740e6c3af2775ce8b"
+    },
+    "assets/img/diversao-familia.jpg": {
+      "hash": "50bf442677e6aeb797eee1e8499e0c084ec350831bf049e7c7e42f4816899ca9",
+      "content": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/50/50bf442677e6aeb797eee1e8499e0c084ec350831bf049e7c7e42f4816899ca9"
+    },
+    "assets/img/espaco-kids.jpg": {
+      "hash": "96bedbd8ff3c8ac2b7d7e5ef3afc931b7b223d7eb0e3508a7cc92667c5d924b6",
+      "content": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/96/96bedbd8ff3c8ac2b7d7e5ef3afc931b7b223d7eb0e3508a7cc92667c5d924b6"
+    },
+    "assets/img/hotel-principal.jpg": {
+      "hash": "f9f8c281a41166dc42f7605be06bd934708704c60e0fbd5ce3a8d13012a2812e",
+      "content": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/f9/f9f8c281a41166dc42f7605be06bd934708704c60e0fbd5ce3a8d13012a2812e"
+    },
+    "assets/img/logo-tuki-white.svg": {
+      "hash": "e0082b4e3b2c60aef3b07515edd3415fa1cd336e86f7b613dc0cbde695e00677",
+      "content": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/e0/e0082b4e3b2c60aef3b07515edd3415fa1cd336e86f7b613dc0cbde695e00677"
+    },
+    "assets/img/logo-tuki.svg": {
+      "hash": "765f8c1fa47551987e6693fe1fe5bcfcf87c85c26e055e040eff8c88bd030d6a",
+      "content": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/76/765f8c1fa47551987e6693fe1fe5bcfcf87c85c26e055e040eff8c88bd030d6a"
+    },
+    "assets/img/piscina-coberta-blur.jpg": {
+      "hash": "f3bf957b99f34220ed7a2a8092ab2d6384a5f673f93a53dda0601f7a88349acd",
+      "content": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/f3/f3bf957b99f34220ed7a2a8092ab2d6384a5f673f93a53dda0601f7a88349acd"
+    },
+    "assets/img/piscina-coberta.jpg": {
+      "hash": "626f3537307b99fbd8fa756ca6d11247d06d3ad2ec12b206c498a1b53ebd941c",
+      "content": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/62/626f3537307b99fbd8fa756ca6d11247d06d3ad2ec12b206c498a1b53ebd941c"
+    },
+    "compositions/components/motion-blur.html": {
+      "hash": "b604aa760009d6966241f3ea47e24c92b52bd807e99d52e38239c2466b782eef",
+      "content": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/b6/b604aa760009d6966241f3ea47e24c92b52bd807e99d52e38239c2466b782eef"
+    },
+    "compositions/fx-bolts.html": {
+      "hash": "f360323ab946c9f7b47cddf2707f8285a9e4bfc14ebc210d89d7bc92b29ce072",
+      "content": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/f3/f360323ab946c9f7b47cddf2707f8285a9e4bfc14ebc210d89d7bc92b29ce072"
+    },
+    "compositions/n1-hook.html": {
+      "hash": "597108e0c0c95d92cdb9a685adf59daf93bf4b3ceb723abca8ca2c70bd211a86",
+      "content": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/59/597108e0c0c95d92cdb9a685adf59daf93bf4b3ceb723abca8ca2c70bd211a86"
+    },
+    "compositions/n2-destino.html": {
+      "hash": "80d1ab9ac0f026f30daa50a67a09b23e091447933e1d2027f8645d631ed9c48c",
+      "content": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/80/80d1ab9ac0f026f30daa50a67a09b23e091447933e1d2027f8645d631ed9c48c"
+    },
+    "compositions/n3-oferta.html": {
+      "hash": "da9928d6f501bf89e2989cc2558a1b8354abc826dc13fde6ec83b7e6e444183d",
+      "content": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/da/da9928d6f501bf89e2989cc2558a1b8354abc826dc13fde6ec83b7e6e444183d"
+    },
+    "compositions/n4-familia.html": {
+      "hash": "3cd64766510ac0c71d3002e31201ea41800898f28b63b2711272805711ff86cb",
+      "content": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/3c/3cd64766510ac0c71d3002e31201ea41800898f28b63b2711272805711ff86cb"
+    },
+    "compositions/n5-datas.html": {
+      "hash": "2866e6e842733afddad9be33acfc57c58d2aeaaafd71dfb0847ff385981bb999",
+      "content": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/28/2866e6e842733afddad9be33acfc57c58d2aeaaafd71dfb0847ff385981bb999"
+    },
+    "compositions/n6-final.html": {
+      "hash": "204bc3f92339f61038229c62a0f86d4982c50390df90e29cb0cdfc2a0a40221c",
+      "content": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/20/204bc3f92339f61038229c62a0f86d4982c50390df90e29cb0cdfc2a0a40221c"
+    },
+    "hyperframes.json": {
+      "hash": "0672211d78282f3484bebc95590b5d55dd470709999bc9474031f11c15edac08",
+      "content": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/06/0672211d78282f3484bebc95590b5d55dd470709999bc9474031f11c15edac08"
+    },
+    "hyperframes.lock.json": {
+      "hash": "d4a36b0aa64ee061a6d86b45b4e992cf58b768882651f5b6410b32800b395339",
+      "content": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/d4/d4a36b0aa64ee061a6d86b45b4e992cf58b768882651f5b6410b32800b395339"
+    },
+    "index.html": {
+      "hash": "7b7354a63c2fc812abb4ad0aa8c27d5b4555e373267d8badbd383a9a636f2c75",
+      "content": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/7b/7b7354a63c2fc812abb4ad0aa8c27d5b4555e373267d8badbd383a9a636f2c75"
+    },
+    "meta.json": {
+      "hash": "e3321da1ee41c4d77f9cd726b1c9dc327012d2c9e0a6482fd9d8f6e5023602bc",
+      "content": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/e3/e3321da1ee41c4d77f9cd726b1c9dc327012d2c9e0a6482fd9d8f6e5023602bc"
+    },
+    "package.json": {
+      "hash": "9acc58cf434be076e8fa0a354db67d910f0d529688e591ee89557b97450ebf38",
+      "content": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/9a/9acc58cf434be076e8fa0a354db67d910f0d529688e591ee89557b97450ebf38"
+    },
+    "assets/audio/trilha-30s-v2.wav": {
+      "hash": "0d6ba2732492d326a6ca35c59f1fb3b192a244bc64d3afe02c852aace6db4a10",
+      "content": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/0d/0d6ba2732492d326a6ca35c59f1fb3b192a244bc64d3afe02c852aace6db4a10"
+    },
+    "assets/audio/trilha-30s.wav": {
+      "hash": "d62e385da4d891205bb733339dad060d50b328ac98c4391b5de100b96d414091",
+      "content": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/d6/d62e385da4d891205bb733339dad060d50b328ac98c4391b5de100b96d414091"
+    },
+    "assets/audio/trilha-narrado.wav": {
+      "hash": "e695d7d173ea2c47f465e240a4dfcf80e7ddd116dc2b280649101338aade0c94",
+      "content": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/e6/e695d7d173ea2c47f465e240a4dfcf80e7ddd116dc2b280649101338aade0c94"
+    },
+    "assets/img/tuki-boia.png": {
+      "hash": "a71f1624bc04838ac19e1a4d313fb2e6421c74b1dbc22940726d0eaf1a923294",
+      "content": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/a7/a71f1624bc04838ac19e1a4d313fb2e6421c74b1dbc22940726d0eaf1a923294"
+    },
+    "assets/video/hotel.mp4": {
+      "hash": "2ccb34cb771f4d3ccae8c7de0eedd3e2472b055211947a3a938c23f90205dd18",
+      "content": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/2c/2ccb34cb771f4d3ccae8c7de0eedd3e2472b055211947a3a938c23f90205dd18"
+    }
+  },
+  "revisions": {
+    "8f4c6a52-673b-40ab-bb18-fee83aa1e24f": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792765224935,
+      "endedAt": 1792765224943,
+      "files": {
+        "compositions/n1-hook.html": {
+          "before": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/53/53b7d391ad0ff5e94b92489736dc4cdeed3e17326944f5e6333f12bffd7c7055",
+          "after": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/ea/ea1b76c41728b8022edb637bd71b5d233089a62cc085ea452ffd5c86a2363422"
+        },
+        "compositions/n2-destino.html": {
+          "before": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/e6/e60d2c708da2676793d26533197beebe66ed04974f28aba267ab42d144b1812a",
+          "after": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/12/12f9383fda493f5dc31a7a5086d841343aaaacc145cbecc2b482eab804fe7046"
+        },
+        "compositions/n5-datas.html": {
+          "before": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/59/59380c38309dff9bd25f5e4f4591548a149277deca4b80b7b9055d50eb2410e4",
+          "after": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/f3/f31c80810e0f60a772f7488a9863f792d7479cd07cf7b8ea8dd78199dd1f178b"
+        },
+        "compositions/n6-final.html": {
+          "before": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/70/704b2f93a05acc4e645b854be63e4b652cf896a59e35c348a631405d6a27f483",
+          "after": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/0c/0cc6748d8eba070ff7cb968f18ac00ca0777e2703a053da46cffa67c7b0ad613"
+        }
+      }
+    },
+    "5a6961ff-1bac-421c-b9de-3457f544a1b5": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792765291922,
+      "endedAt": 1792765291923,
+      "files": {
+        "compositions/n6-final.html": {
+          "before": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/0c/0cc6748d8eba070ff7cb968f18ac00ca0777e2703a053da46cffa67c7b0ad613",
+          "after": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/bb/bbc1e36d51c33460d20b044ea69fe585bc6304bafca943330570037ae4c24839"
+        }
+      }
+    },
+    "7d38d8eb-4673-45d0-91f8-4e2843c35ff8": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792765346260,
+      "endedAt": 1792765346272,
+      "files": {
+        "compositions/n1-hook.html": {
+          "before": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/ea/ea1b76c41728b8022edb637bd71b5d233089a62cc085ea452ffd5c86a2363422",
+          "after": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/59/597108e0c0c95d92cdb9a685adf59daf93bf4b3ceb723abca8ca2c70bd211a86"
+        },
+        "compositions/n2-destino.html": {
+          "before": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/12/12f9383fda493f5dc31a7a5086d841343aaaacc145cbecc2b482eab804fe7046",
+          "after": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/80/80d1ab9ac0f026f30daa50a67a09b23e091447933e1d2027f8645d631ed9c48c"
+        },
+        "compositions/n3-oferta.html": {
+          "before": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/fc/fc171ebd873f65ee0baff27e8e021cf0844cf7d39f15be661579dbe50d53d2ba",
+          "after": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/da/da9928d6f501bf89e2989cc2558a1b8354abc826dc13fde6ec83b7e6e444183d"
+        },
+        "compositions/n4-familia.html": {
+          "before": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/1c/1ce3cac0db28501890496f82b09f296ef802d0f74929383090e66c8162a65ca6",
+          "after": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/3c/3cd64766510ac0c71d3002e31201ea41800898f28b63b2711272805711ff86cb"
+        },
+        "compositions/n5-datas.html": {
+          "before": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/f3/f31c80810e0f60a772f7488a9863f792d7479cd07cf7b8ea8dd78199dd1f178b",
+          "after": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/28/2866e6e842733afddad9be33acfc57c58d2aeaaafd71dfb0847ff385981bb999"
+        },
+        "compositions/n6-final.html": {
+          "before": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/bb/bbc1e36d51c33460d20b044ea69fe585bc6304bafca943330570037ae4c24839",
+          "after": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/20/204bc3f92339f61038229c62a0f86d4982c50390df90e29cb0cdfc2a0a40221c"
+        },
+        "index.html": {
+          "before": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/0a/0a3d5b3efd9fddd39d890ed253bf51748b9bbe013b41efaa4a85d543c3a40b75",
+          "after": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/78/786a40bdb96071faf4976c4e0c0f5d3d604ff58f8377165e669c287cdb9d8b7f"
+        }
+      }
+    },
+    "700e5cb3-869d-4ccd-a2cc-28b8c9790e43": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792765699145,
+      "endedAt": 1792765701809,
+      "files": {
+        "index.html": {
+          "before": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/78/786a40bdb96071faf4976c4e0c0f5d3d604ff58f8377165e669c287cdb9d8b7f",
+          "after": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/47/475b2ee3d9435f64448426fb59652b446c7b00e599d35b12d8c3009a24c39b1c"
+        }
+      }
+    },
+    "2d66a8c8-1111-456b-8b38-9840db949f07": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792765766479,
+      "endedAt": 1792765768481,
+      "files": {
+        "index.html": {
+          "before": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/47/475b2ee3d9435f64448426fb59652b446c7b00e599d35b12d8c3009a24c39b1c",
+          "after": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/e7/e795c0d65429b6ae6479924810934271984b2a3c638324ce7f0cfd28311e4368"
+        }
+      }
+    },
+    "3098d0ad-43ab-46e0-af01-b89d129bc537": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792765812878,
+      "endedAt": 1792765814880,
+      "files": {
+        "index.html": {
+          "before": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/e7/e795c0d65429b6ae6479924810934271984b2a3c638324ce7f0cfd28311e4368",
+          "after": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/5f/5feb51009ee8080cc5ba59b75d16f9a71d5bbcaa763ea366328e99fb8179c79c"
+        }
+      }
+    },
+    "304532a9-88f2-4a76-b53e-980327b3e64f": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792765867300,
+      "endedAt": 1792765869300,
+      "files": {
+        "index.html": {
+          "before": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/5f/5feb51009ee8080cc5ba59b75d16f9a71d5bbcaa763ea366328e99fb8179c79c",
+          "after": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/a2/a2005d8275341294b80c8a1717e355edc4cd5b76b880da3f46f55a25e03943d9"
+        }
+      }
+    },
+    "144836e5-1a26-49a0-a59b-efbfbcf60001": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792765906014,
+      "endedAt": 1792765908014,
+      "files": {
+        "index.html": {
+          "before": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/a2/a2005d8275341294b80c8a1717e355edc4cd5b76b880da3f46f55a25e03943d9",
+          "after": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/f9/f938cd829e65ede2ca21c7ba95e71904f2cc0122a6986c269277283abad9e499"
+        }
+      }
+    },
+    "5346eb93-2711-4aab-bd37-f16f7d45d0d3": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792765943464,
+      "endedAt": 1792765945466,
+      "files": {
+        "index.html": {
+          "before": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/f9/f938cd829e65ede2ca21c7ba95e71904f2cc0122a6986c269277283abad9e499",
+          "after": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/a2/a2005d8275341294b80c8a1717e355edc4cd5b76b880da3f46f55a25e03943d9"
+        }
+      }
+    },
+    "69a7554c-a17e-4553-93f5-e18c53ee51fd": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792765957244,
+      "endedAt": 1792765959244,
+      "files": {
+        "index.html": {
+          "before": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/a2/a2005d8275341294b80c8a1717e355edc4cd5b76b880da3f46f55a25e03943d9",
+          "after": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/2d/2d91df986be63cc21fce848e96fd32b0fd5ed4d0b65d8ea28c9b7f4eaed44b32"
+        }
+      }
+    },
+    "7f353c0e-f6d3-49f4-a8d1-02d6e52d8c9d": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792765994107,
+      "endedAt": 1792765996108,
+      "files": {
+        "index.html": {
+          "before": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/2d/2d91df986be63cc21fce848e96fd32b0fd5ed4d0b65d8ea28c9b7f4eaed44b32",
+          "after": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/a2/a2005d8275341294b80c8a1717e355edc4cd5b76b880da3f46f55a25e03943d9"
+        }
+      }
+    },
+    "a02dcf69-429c-496c-accc-439f30fe6eac": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792766015549,
+      "endedAt": 1792766017551,
+      "files": {
+        "index.html": {
+          "before": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/a2/a2005d8275341294b80c8a1717e355edc4cd5b76b880da3f46f55a25e03943d9",
+          "after": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/05/05c7affd687caf3b5dcdb0e0b037c0bc6b325ed099c802a353b1b64589a45940"
+        }
+      }
+    },
+    "05dff228-c8e7-406e-a32d-0ce991f26b0c": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792766049886,
+      "endedAt": 1792766051887,
+      "files": {
+        "index.html": {
+          "before": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/05/05c7affd687caf3b5dcdb0e0b037c0bc6b325ed099c802a353b1b64589a45940",
+          "after": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/a2/a2005d8275341294b80c8a1717e355edc4cd5b76b880da3f46f55a25e03943d9"
+        }
+      }
+    },
+    "4df01316-2b49-49f7-8f3a-ae3e1da222ac": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792766067776,
+      "endedAt": 1792766070444,
+      "files": {
+        "assets/audio/trilha-narrado.wav": {
+          "before": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/02/02d67efb164d81ae082be52e1f3340cd9e99c1c984be27bde8dde489fd9ed333",
+          "after": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/e6/e695d7d173ea2c47f465e240a4dfcf80e7ddd116dc2b280649101338aade0c94"
+        },
+        "index.html": {
+          "before": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/a2/a2005d8275341294b80c8a1717e355edc4cd5b76b880da3f46f55a25e03943d9",
+          "after": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/7b/7b7354a63c2fc812abb4ad0aa8c27d5b4555e373267d8badbd383a9a636f2c75"
+        }
+      }
+    },
+    "162a5ff0-31a1-444c-927a-ae677dcce762": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792766112447,
+      "endedAt": 1792766114447,
+      "files": {
+        "index.html": {
+          "before": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/7b/7b7354a63c2fc812abb4ad0aa8c27d5b4555e373267d8badbd383a9a636f2c75",
+          "after": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/c4/c4a40ee658b6afcacbefe4d0de7535bba023f156a3a532f00d6ad882aa2f1417"
+        }
+      }
+    },
+    "c0959e31-4e25-4952-b3e3-7a34f9f73775": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792766147070,
+      "endedAt": 1792766149070,
+      "files": {
+        "index.html": {
+          "before": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/c4/c4a40ee658b6afcacbefe4d0de7535bba023f156a3a532f00d6ad882aa2f1417",
+          "after": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/7b/7b7354a63c2fc812abb4ad0aa8c27d5b4555e373267d8badbd383a9a636f2c75"
+        }
+      }
+    },
+    "0fb8b3ff-7952-45e8-87fc-fbe9b312ce44": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792766224510,
+      "endedAt": 1792766226512,
+      "files": {
+        "BRIEF.md": {
+          "before": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/1a/1a05b539ad9d99ddd8782b3de8b2dd01ff300564647dacf4ffa224878aa18ae1",
+          "after": "/root/.cache/hyperframes/history/6938024f-647c-47df-ac9c-932079f5c0c4/blobs/91/910f568b33ce5d5ea188ee7ee4babcafd93c26b02690fffdcf2bc6a8c2385235"
+        }
+      }
+    }
+  },
+  "checks": {
+    "latest": {
+      "revision": "c0959e31-4e25-4952-b3e3-7a34f9f73775",
+      "id": "292a1ba1-c07e-44f2-b3e3-7b6f9e9f438a"
+    },
+    "revisions": {
+      "8f4c6a52-673b-40ab-bb18-fee83aa1e24f": [
+        {
+          "id": "6c52cfed-e664-4abf-9ee0-4e22be1b9b99",
+          "scope": "project",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 3000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1792765264858,
+          "contentHash": "a4a67279fb62c6285b0b54a66b121aef1a24284537df0c8bcb4312ff94191f7e",
+          "revision": "8f4c6a52-673b-40ab-bb18-fee83aa1e24f",
+          "inputFingerprint": "004172b393e59d85b221195494d1a037d9dd4babf2462a707f41c6874939ded0",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "e31899ca-3546-4378-9bc9-e058f5f11214"
+        }
+      ],
+      "5a6961ff-1bac-421c-b9de-3457f544a1b5": [
+        {
+          "id": "ec99749d-8ccc-4a25-af81-98c8e526c010",
+          "scope": "project",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 3000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1792765292031,
+          "contentHash": "2e9bd7153ac748dfe05a05dbbe864c1c8edfd332b8495fa7988589db8aba2191",
+          "revision": "5a6961ff-1bac-421c-b9de-3457f544a1b5",
+          "inputFingerprint": "16e7aaa9b92becb5cc82933f91a4057584332f4324244cebfc805180b02690d3",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "e31899ca-3546-4378-9bc9-e058f5f11214"
+        }
+      ],
+      "700e5cb3-869d-4ccd-a2cc-28b8c9790e43": [
+        {
+          "id": "9c08f94f-8541-4067-b8f7-cd9d7ea30e41",
+          "scope": "project",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 3000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1792765718677,
+          "contentHash": "0e28c3ede9432001f03ea3539a9bbb1c6258821bfb5b3c76b730a8ca42c373f9",
+          "revision": "700e5cb3-869d-4ccd-a2cc-28b8c9790e43",
+          "inputFingerprint": "7c196988588c0e5b09edbde2531a29bb0c8121d2e796c8be0175c55751063c38",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "3ba48870-5c4b-4d9e-b1c0-9efb4c6522ba"
+        }
+      ],
+      "c0959e31-4e25-4952-b3e3-7a34f9f73775": [
+        {
+          "id": "292a1ba1-c07e-44f2-b3e3-7b6f9e9f438a",
+          "scope": "project",
+          "report": "/home/felipe/orca/tukiviagens-site/videos/wyndham-olimpia-reels-narrado/.hyperframes/artifacts/checks/292a1ba1-c07e-44f2-b3e3-7b6f9e9f438a.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 3000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1792766168328,
+          "contentHash": "0e28c3ede9432001f03ea3539a9bbb1c6258821bfb5b3c76b730a8ca42c373f9",
+          "revision": "c0959e31-4e25-4952-b3e3-7a34f9f73775",
+          "inputFingerprint": "8bdd40e246142f7b2a5db6a91ad46fc34ae5285262d919c51b1e213e21b93df6",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ]
+    },
+    "unversioned": []
+  },
+  "snapshots": {
+    "latest": {
+      "revision": "8f4c6a52-673b-40ab-bb18-fee83aa1e24f",
+      "id": "ab995e9a-dcfd-4770-bcd0-ad393f8600d1-14"
+    },
+    "revisions": {
+      "8f4c6a52-673b-40ab-bb18-fee83aa1e24f": [
+        {
+          "scope": "full",
+          "id": "ab995e9a-dcfd-4770-bcd0-ad393f8600d1-0",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-olimpia-reels-narrado/.hyperframes/snapB/frame-00-at-3.5s.png",
+          "time": 3.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792765238783,
+          "contentHash": "187094fc1235fef8ed2004c00d360c6a9c818051e407a1d9f8fa363a5a588b75",
+          "revision": "8f4c6a52-673b-40ab-bb18-fee83aa1e24f",
+          "inputFingerprint": "004172b393e59d85b221195494d1a037d9dd4babf2462a707f41c6874939ded0",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "ab995e9a-dcfd-4770-bcd0-ad393f8600d1-1",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-olimpia-reels-narrado/.hyperframes/snapB/frame-01-at-4.5s.png",
+          "time": 4.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792765238783,
+          "contentHash": "336f37b1cd5eed66decf5e2e66944c1eb31756ee607952ece521741ade16e4b0",
+          "revision": "8f4c6a52-673b-40ab-bb18-fee83aa1e24f",
+          "inputFingerprint": "004172b393e59d85b221195494d1a037d9dd4babf2462a707f41c6874939ded0",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "ab995e9a-dcfd-4770-bcd0-ad393f8600d1-2",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-olimpia-reels-narrado/.hyperframes/snapB/frame-02-at-5.05s.png",
+          "time": 5.05,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792765238783,
+          "contentHash": "58d915abde261247fa2c8744356e978d76b1ad4490b80c6f7d94a73119a87754",
+          "revision": "8f4c6a52-673b-40ab-bb18-fee83aa1e24f",
+          "inputFingerprint": "004172b393e59d85b221195494d1a037d9dd4babf2462a707f41c6874939ded0",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "ab995e9a-dcfd-4770-bcd0-ad393f8600d1-3",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-olimpia-reels-narrado/.hyperframes/snapB/frame-03-at-5.15s.png",
+          "time": 5.15,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792765238783,
+          "contentHash": "6e57a908b4e70e6f17fd18ab54e9d20678b706bf88d923ebd98cafbeca5feb82",
+          "revision": "8f4c6a52-673b-40ab-bb18-fee83aa1e24f",
+          "inputFingerprint": "004172b393e59d85b221195494d1a037d9dd4babf2462a707f41c6874939ded0",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "ab995e9a-dcfd-4770-bcd0-ad393f8600d1-4",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-olimpia-reels-narrado/.hyperframes/snapB/frame-04-at-7.6s.png",
+          "time": 7.6,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792765238783,
+          "contentHash": "1156a7986944ac4df35ae2fdf5132736545a3fb526470f4ff1bf85e932f4fb45",
+          "revision": "8f4c6a52-673b-40ab-bb18-fee83aa1e24f",
+          "inputFingerprint": "004172b393e59d85b221195494d1a037d9dd4babf2462a707f41c6874939ded0",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "ab995e9a-dcfd-4770-bcd0-ad393f8600d1-5",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-olimpia-reels-narrado/.hyperframes/snapB/frame-05-at-7.7s.png",
+          "time": 7.7,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792765238783,
+          "contentHash": "6f4a1c61d6d04dd38c66c32f55753f8d01abf67e20bed471a667b4294d81cb29",
+          "revision": "8f4c6a52-673b-40ab-bb18-fee83aa1e24f",
+          "inputFingerprint": "004172b393e59d85b221195494d1a037d9dd4babf2462a707f41c6874939ded0",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "ab995e9a-dcfd-4770-bcd0-ad393f8600d1-6",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-olimpia-reels-narrado/.hyperframes/snapB/frame-06-at-7.82s.png",
+          "time": 7.82,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792765238783,
+          "contentHash": "d4a58c1306aed4b37709b9b8decf2bef7d39e21a9e05e3925e50f82777144963",
+          "revision": "8f4c6a52-673b-40ab-bb18-fee83aa1e24f",
+          "inputFingerprint": "004172b393e59d85b221195494d1a037d9dd4babf2462a707f41c6874939ded0",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "ab995e9a-dcfd-4770-bcd0-ad393f8600d1-7",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-olimpia-reels-narrado/.hyperframes/snapB/frame-07-at-8.3s.png",
+          "time": 8.3,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792765238783,
+          "contentHash": "cb33707e8d9a8bcd0a39fbacd3affc6ba535c9c4a19fa41112dd1346aa7fedbf",
+          "revision": "8f4c6a52-673b-40ab-bb18-fee83aa1e24f",
+          "inputFingerprint": "004172b393e59d85b221195494d1a037d9dd4babf2462a707f41c6874939ded0",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "ab995e9a-dcfd-4770-bcd0-ad393f8600d1-8",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-olimpia-reels-narrado/.hyperframes/snapB/frame-08-at-13.55s.png",
+          "time": 13.55,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792765238783,
+          "contentHash": "1e38cdb2c9109d454897212fc0b7212c5f41f6f0734648719f9bca6c8b438dc2",
+          "revision": "8f4c6a52-673b-40ab-bb18-fee83aa1e24f",
+          "inputFingerprint": "004172b393e59d85b221195494d1a037d9dd4babf2462a707f41c6874939ded0",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "ab995e9a-dcfd-4770-bcd0-ad393f8600d1-9",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-olimpia-reels-narrado/.hyperframes/snapB/frame-09-at-13.7s.png",
+          "time": 13.7,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792765238783,
+          "contentHash": "4d1d25a1d7a792aafc6d6af8bf2c25f53f9c57aebbf9e71832e24db460e14608",
+          "revision": "8f4c6a52-673b-40ab-bb18-fee83aa1e24f",
+          "inputFingerprint": "004172b393e59d85b221195494d1a037d9dd4babf2462a707f41c6874939ded0",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "ab995e9a-dcfd-4770-bcd0-ad393f8600d1-10",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-olimpia-reels-narrado/.hyperframes/snapB/frame-10-at-17.9s.png",
+          "time": 17.9,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792765238784,
+          "contentHash": "354ba8c4febdf8f3c82ad21e8b98441ac0393d90742ccbcd79c2e9e80feb758f",
+          "revision": "8f4c6a52-673b-40ab-bb18-fee83aa1e24f",
+          "inputFingerprint": "004172b393e59d85b221195494d1a037d9dd4babf2462a707f41c6874939ded0",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "ab995e9a-dcfd-4770-bcd0-ad393f8600d1-11",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-olimpia-reels-narrado/.hyperframes/snapB/frame-11-at-18.05s.png",
+          "time": 18.05,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792765238784,
+          "contentHash": "57dfb27de44e9a1f74f10cf49fa5595d180ece2924bfb0278cd63b1715486087",
+          "revision": "8f4c6a52-673b-40ab-bb18-fee83aa1e24f",
+          "inputFingerprint": "004172b393e59d85b221195494d1a037d9dd4babf2462a707f41c6874939ded0",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "ab995e9a-dcfd-4770-bcd0-ad393f8600d1-12",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-olimpia-reels-narrado/.hyperframes/snapB/frame-12-at-23.7s.png",
+          "time": 23.7,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792765238784,
+          "contentHash": "ae58147126e0d9ced8a8482fb6d6da0b0e25a7f9c28b1e506d6f4bb00da10b1c",
+          "revision": "8f4c6a52-673b-40ab-bb18-fee83aa1e24f",
+          "inputFingerprint": "004172b393e59d85b221195494d1a037d9dd4babf2462a707f41c6874939ded0",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "ab995e9a-dcfd-4770-bcd0-ad393f8600d1-13",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-olimpia-reels-narrado/.hyperframes/snapB/frame-13-at-23.85s.png",
+          "time": 23.85,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792765238784,
+          "contentHash": "14ebd36568c35d21b00d7f9bf5a8ccd73c73607e7fdd26e044aa75879fbcec25",
+          "revision": "8f4c6a52-673b-40ab-bb18-fee83aa1e24f",
+          "inputFingerprint": "004172b393e59d85b221195494d1a037d9dd4babf2462a707f41c6874939ded0",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "ab995e9a-dcfd-4770-bcd0-ad393f8600d1-14",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-olimpia-reels-narrado/.hyperframes/snapB/frame-14-at-28.5s.png",
+          "time": 28.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792765238784,
+          "contentHash": "203f894625854a94623ba1c5afaf327547f31b74a1393de1af330a640e33b9b6",
+          "revision": "8f4c6a52-673b-40ab-bb18-fee83aa1e24f",
+          "inputFingerprint": "004172b393e59d85b221195494d1a037d9dd4babf2462a707f41c6874939ded0",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ]
+    },
+    "unversioned": [
+      {
+        "scope": "full",
+        "id": "27d355dc-f5fb-4aeb-9607-a08cb8e41125-0",
+        "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-olimpia-reels-narrado/.hyperframes/snapA/frame-00-at-1.2s.png",
+        "time": 1.2,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1792765175334,
+        "contentHash": "6cd0d4d62415c49f4dc0a6912545832edc172e444de35c1559cf5a2a4ca62e94",
+        "revision": null,
+        "inputFingerprint": "f50b768873e308c2a762a458c535d170cefff042bccb469bbd5f9db3ff5980b8",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "27d355dc-f5fb-4aeb-9607-a08cb8e41125-1",
+        "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-olimpia-reels-narrado/.hyperframes/snapA/frame-01-at-2.9s.png",
+        "time": 2.9,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1792765175334,
+        "contentHash": "1b88a4c5cdd65c41fb1e288b7ad3a6b3061065020feaf7d55d368165b1ef3a4f",
+        "revision": null,
+        "inputFingerprint": "f50b768873e308c2a762a458c535d170cefff042bccb469bbd5f9db3ff5980b8",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "27d355dc-f5fb-4aeb-9607-a08cb8e41125-2",
+        "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-olimpia-reels-narrado/.hyperframes/snapA/frame-02-at-4.8s.png",
+        "time": 4.8,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1792765175334,
+        "contentHash": "d22be2821bc5716a6279af79ec1370ec95a27a7f57448a2bb135ca3c891bef4c",
+        "revision": null,
+        "inputFingerprint": "f50b768873e308c2a762a458c535d170cefff042bccb469bbd5f9db3ff5980b8",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "27d355dc-f5fb-4aeb-9607-a08cb8e41125-3",
+        "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-olimpia-reels-narrado/.hyperframes/snapA/frame-03-at-6s.png",
+        "time": 6,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1792765175334,
+        "contentHash": "992701d4ad59cf4a0f762253d309619ef344ec0051f8cd0840dc3083f5ef065a",
+        "revision": null,
+        "inputFingerprint": "f50b768873e308c2a762a458c535d170cefff042bccb469bbd5f9db3ff5980b8",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "27d355dc-f5fb-4aeb-9607-a08cb8e41125-4",
+        "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-olimpia-reels-narrado/.hyperframes/snapA/frame-04-at-7.3s.png",
+        "time": 7.3,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1792765175334,
+        "contentHash": "72f622a4022c99fa3634609dfefcb31e450c48ffa735773ea15b077a2ed65f95",
+        "revision": null,
+        "inputFingerprint": "f50b768873e308c2a762a458c535d170cefff042bccb469bbd5f9db3ff5980b8",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "27d355dc-f5fb-4aeb-9607-a08cb8e41125-5",
+        "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-olimpia-reels-narrado/.hyperframes/snapA/frame-05-at-9s.png",
+        "time": 9,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1792765175334,
+        "contentHash": "022bf908fb11e6c26917f4da2ae899423b2750cc19e6800005a496799416f464",
+        "revision": null,
+        "inputFingerprint": "f50b768873e308c2a762a458c535d170cefff042bccb469bbd5f9db3ff5980b8",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "27d355dc-f5fb-4aeb-9607-a08cb8e41125-6",
+        "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-olimpia-reels-narrado/.hyperframes/snapA/frame-06-at-11s.png",
+        "time": 11,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1792765175334,
+        "contentHash": "7671dbdaad37abdae152ac9b51cef5a625627479886f734856f43cd12cc5dd74",
+        "revision": null,
+        "inputFingerprint": "f50b768873e308c2a762a458c535d170cefff042bccb469bbd5f9db3ff5980b8",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "27d355dc-f5fb-4aeb-9607-a08cb8e41125-7",
+        "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-olimpia-reels-narrado/.hyperframes/snapA/frame-07-at-13.3s.png",
+        "time": 13.3,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1792765175334,
+        "contentHash": "8f5b5d1326476ba1ca6efc0859af951aa7ac864bbe271e37da2abc3a6cd52b64",
+        "revision": null,
+        "inputFingerprint": "f50b768873e308c2a762a458c535d170cefff042bccb469bbd5f9db3ff5980b8",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "27d355dc-f5fb-4aeb-9607-a08cb8e41125-8",
+        "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-olimpia-reels-narrado/.hyperframes/snapA/frame-08-at-15.2s.png",
+        "time": 15.2,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1792765175334,
+        "contentHash": "0b8375be5b1d9f8c7e4112920576b760d9666b54cc48f7b230076328f9445fbe",
+        "revision": null,
+        "inputFingerprint": "f50b768873e308c2a762a458c535d170cefff042bccb469bbd5f9db3ff5980b8",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "27d355dc-f5fb-4aeb-9607-a08cb8e41125-9",
+        "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-olimpia-reels-narrado/.hyperframes/snapA/frame-09-at-17.5s.png",
+        "time": 17.5,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1792765175334,
+        "contentHash": "764b8ab8f2059f8f9ea165e5a34f071d5e6e19ce9b74c4571ed64a8df4449aa7",
+        "revision": null,
+        "inputFingerprint": "f50b768873e308c2a762a458c535d170cefff042bccb469bbd5f9db3ff5980b8",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "27d355dc-f5fb-4aeb-9607-a08cb8e41125-10",
+        "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-olimpia-reels-narrado/.hyperframes/snapA/frame-10-at-19.8s.png",
+        "time": 19.8,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1792765175334,
+        "contentHash": "6403fef052eac0eb116a963c5dfba546581bd1edef9f78cb3e284f578204541c",
+        "revision": null,
+        "inputFingerprint": "f50b768873e308c2a762a458c535d170cefff042bccb469bbd5f9db3ff5980b8",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "27d355dc-f5fb-4aeb-9607-a08cb8e41125-11",
+        "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-olimpia-reels-narrado/.hyperframes/snapA/frame-11-at-23s.png",
+        "time": 23,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1792765175334,
+        "contentHash": "cb1ad2048d5e82f7b9715fcdc0bb2176674bf0aa62dc08aa5512721dafe36dea",
+        "revision": null,
+        "inputFingerprint": "f50b768873e308c2a762a458c535d170cefff042bccb469bbd5f9db3ff5980b8",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "27d355dc-f5fb-4aeb-9607-a08cb8e41125-12",
+        "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-olimpia-reels-narrado/.hyperframes/snapA/frame-12-at-24.8s.png",
+        "time": 24.8,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1792765175334,
+        "contentHash": "7e5dc78f169644481720daac4773854e90514037e5bb51b5f91235b1a6638374",
+        "revision": null,
+        "inputFingerprint": "f50b768873e308c2a762a458c535d170cefff042bccb469bbd5f9db3ff5980b8",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "27d355dc-f5fb-4aeb-9607-a08cb8e41125-13",
+        "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-olimpia-reels-narrado/.hyperframes/snapA/frame-13-at-26s.png",
+        "time": 26,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1792765175334,
+        "contentHash": "735afabb309ace5973cc591f5ac003950bcc91b0e0a0a03fea47a55d589caa56",
+        "revision": null,
+        "inputFingerprint": "f50b768873e308c2a762a458c535d170cefff042bccb469bbd5f9db3ff5980b8",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "27d355dc-f5fb-4aeb-9607-a08cb8e41125-14",
+        "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-olimpia-reels-narrado/.hyperframes/snapA/frame-14-at-28.5s.png",
+        "time": 28.5,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1792765175334,
+        "contentHash": "000f86fbf1e1d854109f73b3aa7582d85244848445e152a5306325054ea9f704",
+        "revision": null,
+        "inputFingerprint": "f50b768873e308c2a762a458c535d170cefff042bccb469bbd5f9db3ff5980b8",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      }
+    ]
+  },
+  "renders": {
+    "latest": {
+      "id": "2e02b626-9a20-4023-9c12-63e2574340a9",
+      "completedAt": 1792766217830,
+      "output": "/home/felipe/orca/tukiviagens-site/videos/wyndham-olimpia-reels-narrado/renders/tuki-wyndham-olimpia-reels-30s.mp4",
+      "status": "completed",
+      "revision": "c0959e31-4e25-4952-b3e3-7a34f9f73775"
+    },
+    "retainedRevisions": [
+      "c0959e31-4e25-4952-b3e3-7a34f9f73775",
+      "162a5ff0-31a1-444c-927a-ae677dcce762"
+    ]
+  },
+  "pendingArtifactCleanup": []
+}

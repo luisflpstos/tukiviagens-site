@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template id="n4-familia-template">
+      <style>
+        @font-face { font-family: "Montserrat"; font-style: normal; font-weight: 700 900; src: url("assets/fonts/montserrat-latin.woff2") format("woff2"); }
+        #n4-root {
+          position: absolute;
+          inset: 0;
+          overflow: hidden;
+          background: #4b14ae;
+          font-family: "Montserrat", sans-serif;
+        }
+        #n4-root .vwrap {
+          position: absolute;
+          inset: 0;
+        }
+        #n4-root video {
+          position: absolute;
+          inset: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        #n4-bg1 {
+          position: absolute;
+          inset: 0;
+          overflow: hidden;
+        }
+        #n4-bg1-img {
+          position: absolute;
+          inset: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        #n4-shade {
+          position: absolute;
+          inset: 0;
+          background:
+            radial-gradient(80% 55% at 50% 48%, rgba(75, 20, 174, 0.35) 0%, rgba(42, 11, 107, 0.72) 100%);
+        }
+        .n4-card {
+          position: absolute;
+          width: 460px;
+          height: 460px;
+          border-radius: 48px;
+          border: 12px solid #ffffff;
+          overflow: hidden;
+          background: #4b14ae;
+          box-shadow: 16px 20px 0 #2a0b6b, 0 36px 56px rgba(20, 4, 60, 0.45);
+        }
+        .n4-card img {
+          position: absolute;
+          left: -24px;
+          top: -24px;
+          width: 484px;
+          height: 484px;
+          object-fit: cover;
+        }
+        #n4-c1 { left: 70px; top: 230px; }
+        #n4-c2 { left: 550px; top: 650px; }
+        #n4-c3 { left: 70px; top: 1070px; }
+        .n4-label {
+          position: absolute;
+          width: 440px;
+          display: flex;
+        }
+        #n4-lw1 { left: 570px; top: 390px; justify-content: flex-start; }
+        #n4-lw2 { left: 70px; top: 810px; justify-content: flex-end; }
+        #n4-lw3 { left: 570px; top: 1190px; justify-content: flex-start; }
+        .n4-pill {
+          display: block;
+          max-width: 440px;
+          padding: 20px 28px 24px;
+          border-radius: 30px;
+          background: #e8620a;
+          color: #ffffff;
+          font-weight: 900;
+          font-size: 58px;
+          line-height: 1.04;
+          letter-spacing: -0.02em;
+          box-shadow: 0 10px 0 #2a0b6b, 0 22px 36px rgba(20, 4, 60, 0.35);
+        }
+        #n4-l3 {
+          font-size: 54px;
+        }
+        .n4-icon {
+          position: absolute;
+          width: 170px;
+          height: 170px;
+          object-fit: contain;
+          filter: drop-shadow(0 12px 16px rgba(20, 4, 60, 0.4));
+        }
+        #n4-ic1 { left: 420px; top: 160px; }
+        #n4-ic2 { left: 480px; top: 580px; }
+        #n4-ic3 { left: 420px; top: 1000px; }
+      </style>
+
+      <div data-hf-id="hf-ybtc" id="n4-root" data-composition-id="n4-familia" data-width="1080" data-height="1920" data-duration="4.35">
+        <!-- beat 1 background: the indoor-pool photo, softened (the film has no indoor-pool shot) -->
+        <div data-hf-id="hf-x4tj" id="n4-bg1" class="clip" data-start="0" data-duration="1.34" data-track-index="0">
+          <img data-hf-id="hf-1ne2" id="n4-bg1-img" src="assets/img/piscina-coberta-blur.jpg" alt="" />
+        </div>
+        <!-- beat 2 background: kids room footage -->
+        <div data-hf-id="hf-e6bk" class="vwrap" id="n4-vw2">
+          <video data-hf-id="hf-fusj" id="n4-v2" class="clip" src="assets/video/hotel.mp4" muted playsinline
+            data-start="1.34" data-duration="0.8" data-media-start="25.52" data-playback-rate="0.6" data-track-index="0"></video>
+        </div>
+        <!-- beat 3 background: kids and family in the pool -->
+        <div data-hf-id="hf-y2ua" class="vwrap" id="n4-vw3a">
+          <video data-hf-id="hf-hr5x" id="n4-v3a" class="clip" src="assets/video/hotel.mp4" muted playsinline
+            data-start="2.14" data-duration="1.2" data-media-start="17.97" data-playback-rate="0.6" data-track-index="0"></video>
+        </div>
+        <div data-hf-id="hf-u4q9" class="vwrap" id="n4-vw3b">
+          <video data-hf-id="hf-4jtt" id="n4-v3b" class="clip" src="assets/video/hotel.mp4" muted playsinline
+            data-start="3.34" data-duration="1.01" data-media-start="26.08" data-playback-rate="0.45" data-track-index="0"></video>
+        </div>
+        <div data-hf-id="hf-8aoj" id="n4-shade"></div>
+
+        <div data-hf-id="hf-uzoe" class="n4-card" id="n4-c1"><img data-hf-id="hf-pxs0" id="n4-p1" src="assets/img/piscina-coberta.jpg" alt="Piscina coberta do Wyndham Olímpia" /></div>
+        <div data-hf-id="hf-r1kd" class="n4-card" id="n4-c2"><img data-hf-id="hf-z02x" id="n4-p2" src="assets/img/espaco-kids.jpg" alt="Espaço kids do Wyndham Olímpia" /></div>
+        <div data-hf-id="hf-q9wk" class="n4-card" id="n4-c3"><img data-hf-id="hf-skem" id="n4-p3" src="assets/img/diversao-familia.jpg" alt="Parque aquático infantil do Wyndham Olímpia" /></div>
+
+        <img data-hf-id="hf-9yw8" class="n4-icon" id="n4-ic1" src="assets/icons/piscina.png" alt="" />
+        <img data-hf-id="hf-dd95" class="n4-icon" id="n4-ic2" src="assets/icons/oculos-boia.png" alt="" />
+        <img data-hf-id="hf-3t4r" class="n4-icon" id="n4-ic3" src="assets/icons/sol.png" alt="" />
+
+        <div data-hf-id="hf-2804" class="n4-label" id="n4-lw1"><span data-hf-id="hf-9mxk" class="n4-pill" id="n4-l1">Piscina coberta</span></div>
+        <div data-hf-id="hf-avvz" class="n4-label" id="n4-lw2"><span data-hf-id="hf-m17a" class="n4-pill" id="n4-l2">Espaço kids</span></div>
+        <div data-hf-id="hf-6xry" class="n4-label" id="n4-lw3"><span data-hf-id="hf-h9km" class="n4-pill" id="n4-l3">Diversão para toda a família</span></div>
+      </div>
+
+      <script>
+        (function () {
+          const tl = gsap.timeline({ paused: true });
+          const END = 4.35;
+          // each card is dealt into its slot on the spoken word, then they hold together
+          const beats = [
+            { i: 1, t: 0.2, fromX: -700, rot: -4, drift: -10 },
+            { i: 2, t: 1.3, fromX: 700, rot: 3, drift: -18 },
+            { i: 3, t: 2.1, fromX: -700, rot: -2, drift: -26 },
+          ];
+          beats.forEach((b) => {
+            const id = (p) => `#n4-${p}${b.i}`;
+            tl.fromTo(id("c"), { x: b.fromX, y: 120, rotation: b.rot * 5, scale: 0.7, opacity: 0 },
+              { x: 0, y: 0, rotation: b.rot, scale: 1, opacity: 1, duration: 0.55, ease: "back.out(1.3)" }, b.t);
+            // gentle parallax inside the photo
+            tl.fromTo(id("p"), { x: 18, y: 10, scale: 1.08 }, { x: -18, y: -10, scale: 1.0, duration: END - b.t, ease: "none" }, b.t);
+            tl.fromTo(id("l"), { scale: 0.3, y: 30, opacity: 0 }, { scale: 1, y: 0, opacity: 1, duration: 0.42, ease: "back.out(1.8)" }, b.t + 0.18);
+            tl.fromTo(id("ic"), { scale: 0, rotation: -30 }, { scale: 1, rotation: 0, duration: 0.42, ease: "back.out(2)" }, b.t + 0.32);
+            // depth: the three layers drift at different speeds while held together
+            tl.to([id("c"), id("ic"), id("lw")], { y: b.drift, duration: END - (b.t + 0.6), ease: "sine.inOut" }, b.t + 0.6);
+          });
+
+          tl.fromTo("#n4-bg1-img", { scale: 1.1 }, { scale: 1.18, duration: 1.34, ease: "none" }, 0);
+          tl.fromTo("#n4-vw2", { scale: 1.08 }, { scale: 1.0, duration: 0.8, ease: "none" }, 1.34);
+          tl.fromTo("#n4-vw3a", { scale: 1.08 }, { scale: 1.0, duration: 1.2, ease: "none" }, 2.14);
+          tl.fromTo("#n4-vw3b", { scale: 1.06 }, { scale: 1.0, duration: 1.01, ease: "none" }, 3.34);
+          window.__timelines["n4-familia"] = tl;
+        })();
+      </script>
+    </template>
+  </body>
+</html>

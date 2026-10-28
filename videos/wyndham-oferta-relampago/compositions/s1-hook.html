@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template id="s1-hook-template">
+      <style>
+        @font-face { font-family: "Montserrat"; font-style: normal; font-weight: 700 900; src: url("assets/fonts/montserrat-latin.woff2") format("woff2"); }
+        @font-face { font-family: "Montserrat"; font-style: italic; font-weight: 900; src: url("assets/fonts/montserrat-italic-latin.woff2") format("woff2"); }
+        #s1-root {
+          position: absolute;
+          inset: 0;
+          overflow: hidden;
+          background: #2a0b6b;
+          font-family: "Montserrat", sans-serif;
+        }
+        #s1-root .vwrap {
+          position: absolute;
+          inset: 0;
+          transform-origin: 50% 46%;
+        }
+        #s1-root video {
+          position: absolute;
+          inset: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: 50% 50%;
+        }
+        #s1-shade {
+          position: absolute;
+          inset: 0;
+          background:
+            linear-gradient(180deg, rgba(42, 11, 107, 0.78) 0%, rgba(42, 11, 107, 0.35) 34%, rgba(42, 11, 107, 0) 55%),
+            linear-gradient(0deg, rgba(42, 11, 107, 0.45) 0%, rgba(42, 11, 107, 0) 30%);
+        }
+        #s1-copy {
+          position: absolute;
+          left: 90px;
+          right: 90px;
+          top: 300px;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        #s1-kicker {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 0 22px;
+          width: 900px;
+          font-weight: 800;
+          font-size: 76px;
+          line-height: 1.08;
+          letter-spacing: -0.02em;
+          color: #fffdf8;
+          text-shadow: 0 4px 18px rgba(20, 4, 60, 0.55);
+        }
+        #s1-kicker .w {
+          display: inline-block;
+        }
+        #s1-olimpia-wrap {
+          position: relative;
+          margin-top: 56px;
+          width: 900px;
+          height: 230px;
+        }
+        #s1-olimpia {
+          position: absolute;
+          left: -6px;
+          top: 0;
+          display: block;
+          font-weight: 900;
+          font-style: italic;
+          font-size: 196px;
+          line-height: 1;
+          letter-spacing: -0.035em;
+          color: #ffd400;
+          -webkit-text-stroke: 0.035em #ffffff;
+          paint-order: stroke fill;
+          text-shadow:
+            0.012em 0.012em 0 #fc7b04,
+            0.024em 0.024em 0 #fc7b04,
+            0.036em 0.036em 0 #e8620a,
+            0.048em 0.048em 0 #4b14ae,
+            0.06em 0.06em 0 #4b14ae,
+            0.072em 0.072em 0 #3d0f92,
+            0.084em 0.09em 0 #2a0b6b,
+            0.1em 0.14em 0.12em rgba(20, 4, 60, 0.5);
+          transform-origin: 20% 60%;
+        }
+        #s1-sun {
+          position: absolute;
+          right: 40px;
+          top: 120px;
+          width: 170px;
+          height: auto;
+          filter: drop-shadow(0 10px 18px rgba(20, 4, 60, 0.35));
+        }
+      </style>
+
+      <div data-hf-id="hf-7jpn" id="s1-root" data-composition-id="s1-hook" data-width="1080" data-height="1920" data-duration="2.92">
+        <div data-hf-id="hf-sn84" class="vwrap" id="s1-vw">
+          <video data-hf-id="hf-8z2h" id="s1-v1" class="clip" src="assets/video/hotel.mp4" muted playsinline
+            data-start="0" data-duration="2.92" data-media-start="10.3" data-track-index="0"></video>
+        </div>
+        <div data-hf-id="hf-1pst" id="s1-shade"></div>
+        <img data-hf-id="hf-ju8r" id="s1-sun" src="assets/icons/sol.png" alt="" />
+        <div data-hf-id="hf-5js1" id="s1-copy">
+          <div data-hf-id="hf-gtfh" id="s1-kicker">
+            <span data-hf-id="hf-fzo7" class="w">Sua</span><span data-hf-id="hf-6bpi" class="w">próxima</span><span data-hf-id="hf-l5ta" class="w">pausa</span><span data-hf-id="hf-p2u2" class="w">tem</span><span data-hf-id="hf-34ii" class="w">destino:</span>
+          </div>
+          <div data-hf-id="hf-uj2y" id="s1-olimpia-wrap">
+            <span data-hf-id="hf-qlfu" id="s1-olimpia" data-hf-motion-blur='{"shutterAngle": 360}'>OLÍMPIA!</span>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        (function () {
+          const tl = gsap.timeline({ paused: true });
+          // quick fluid camera push across the whole hook, accelerating into the bolt
+          tl.fromTo("#s1-vw", { scale: 1.0 }, { scale: 1.16, duration: 2.92, ease: "power1.in" }, 0);
+          tl.fromTo("#s1-shade", { opacity: 0.6 }, { opacity: 1, duration: 0.5, ease: "power2.out" }, 0);
+          // kicker words rise in quickly — readable by ~0.6s
+          tl.fromTo("#s1-kicker .w",
+            { y: 60, opacity: 0, rotation: 3 },
+            { y: 0, opacity: 1, rotation: 0, duration: 0.42, ease: "power3.out", stagger: 0.07 }, 0.05);
+          // OLÍMPIA! slams on the music hit at 1.22s
+          tl.fromTo("#s1-olimpia",
+            { scale: 2.4, x: 260, opacity: 0, rotation: -8 },
+            { scale: 1, x: 0, opacity: 1, rotation: -4, duration: 0.3, ease: "expo.out" }, 1.0);
+          tl.fromTo("#s1-olimpia", { y: 0 }, { y: -10, duration: 0.9, ease: "sine.inOut" }, 1.3);
+          // playful sun accent, gentle drift
+          tl.fromTo("#s1-sun", { scale: 0, rotation: -40, opacity: 0 }, { scale: 1, rotation: 0, opacity: 1, duration: 0.5, ease: "back.out(1.6)" }, 1.32);
+          tl.to("#s1-sun", { rotation: 14, y: -12, duration: 1.1, ease: "sine.inOut" }, 1.82);
+          window.__timelines["s1-hook"] = tl;
+        })();
+      </script>
+    </template>
+  </body>
+</html>

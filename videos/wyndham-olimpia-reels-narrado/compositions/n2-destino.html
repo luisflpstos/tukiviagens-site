@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template id="n2-destino-template">
+      <style>
+        @font-face { font-family: "Montserrat"; font-style: normal; font-weight: 700 900; src: url("assets/fonts/montserrat-latin.woff2") format("woff2"); }
+        @font-face { font-family: "Montserrat"; font-style: italic; font-weight: 900; src: url("assets/fonts/montserrat-italic-latin.woff2") format("woff2"); }
+        #n2-root {
+          position: absolute;
+          inset: 0;
+          overflow: hidden;
+          font-family: "Montserrat", sans-serif;
+        }
+        #n2-all {
+          position: absolute;
+          inset: 0;
+          background: #2a0b6b;
+        }
+        #n2-root .vwrap {
+          position: absolute;
+          inset: 0;
+          transform-origin: 50% 40%;
+        }
+        #n2-root video {
+          position: absolute;
+          inset: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        #n2-shade {
+          position: absolute;
+          inset: 0;
+          background:
+            linear-gradient(180deg, rgba(42, 11, 107, 0.82) 0%, rgba(42, 11, 107, 0.45) 36%, rgba(42, 11, 107, 0) 52%),
+            linear-gradient(0deg, rgba(42, 11, 107, 0.6) 0%, rgba(42, 11, 107, 0) 30%);
+        }
+        #n2-head {
+          position: absolute;
+          left: 60px;
+          right: 60px;
+          top: 250px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .n2-line {
+          display: block;
+          font-weight: 900;
+          font-size: 100px;
+          line-height: 1.02;
+          letter-spacing: -0.02em;
+          color: #ffffff;
+          text-shadow: 0 5px 18px rgba(20, 4, 60, 0.55);
+          white-space: nowrap;
+        }
+        #n2-l2 {
+          color: #ffd400;
+        }
+        #n2-olimpia-wrap {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 510px;
+          height: 240px;
+          display: flex;
+          justify-content: center;
+        }
+        #n2-olimpia {
+          display: block;
+          font-weight: 900;
+          font-style: italic;
+          font-size: 188px;
+          line-height: 1;
+          letter-spacing: -0.035em;
+          color: #ffd400;
+          -webkit-text-stroke: 0.035em #ffffff;
+          paint-order: stroke fill;
+          text-shadow:
+            0.012em 0.012em 0 #fc7b04,
+            0.024em 0.024em 0 #fc7b04,
+            0.036em 0.036em 0 #e8620a,
+            0.048em 0.048em 0 #4b14ae,
+            0.06em 0.06em 0 #4b14ae,
+            0.072em 0.072em 0 #3d0f92,
+            0.084em 0.09em 0 #2a0b6b,
+            0.1em 0.14em 0.12em rgba(20, 4, 60, 0.5);
+          transform-origin: 50% 60%;
+        }
+        #n2-card {
+          position: absolute;
+          left: 110px;
+          top: 930px;
+          width: 860px;
+          height: 574px;
+          border-radius: 48px;
+          border: 14px solid #ffffff;
+          overflow: hidden;
+          background: #4b14ae;
+          box-shadow: 18px 22px 0 #4b14ae, 0 40px 60px rgba(20, 4, 60, 0.45);
+        }
+        #n2-card img {
+          position: absolute;
+          left: -20px;
+          top: -14px;
+          width: 872px;
+          height: 581px;
+          object-fit: cover;
+        }
+      </style>
+
+      <div data-hf-id="hf-5wt5" id="n2-root" data-composition-id="n2-destino" data-width="1080" data-height="1920" data-duration="2.8">
+        <div data-hf-id="hf-406j" id="n2-all">
+          <div data-hf-id="hf-1k4c" class="vwrap" id="n2-vw">
+            <video data-hf-id="hf-55dn" id="n2-v1" class="clip" src="assets/video/hotel.mp4" muted playsinline
+              data-start="0" data-duration="2.8" data-media-start="10.35" data-playback-rate="0.95" data-track-index="0"></video>
+          </div>
+          <div data-hf-id="hf-tz1t" id="n2-shade"></div>
+
+          <div data-hf-id="hf-s0fo" id="n2-head">
+            <span data-hf-id="hf-wpdk" class="n2-line" id="n2-l1">ESSA PAUSA</span>
+            <span data-hf-id="hf-rc0x" class="n2-line" id="n2-l2">TEM DESTINO</span>
+          </div>
+          <div data-hf-id="hf-o3ge" id="n2-olimpia-wrap">
+            <span data-hf-id="hf-9pzy" id="n2-olimpia" data-hf-motion-blur='{"shutterAngle": 360}'>OLÍMPIA!</span>
+          </div>
+
+          <div data-hf-id="hf-jya0" id="n2-card"><img data-hf-id="hf-ddxw" id="n2-photo" src="assets/img/hotel-principal.jpg" alt="Wyndham Olímpia Royal Hotels — piscinas e torres" /></div>
+        </div>
+      </div>
+
+      <script>
+        (function () {
+          const tl = gsap.timeline({ paused: true });
+          // soft dissolve over the hook, then the wide aerial drifts forward
+          tl.fromTo("#n2-all", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "sine.inOut" }, 0);
+          tl.fromTo("#n2-vw", { scale: 1.0 }, { scale: 1.12, duration: 2.8, ease: "power1.in" }, 0);
+
+          // "Essa pausa…" — the destination line
+          tl.fromTo("#n2-l1", { y: 60, opacity: 0 }, { y: 0, opacity: 1, duration: 0.42, ease: "power3.out" }, 0.4);
+          tl.fromTo("#n2-l2", { y: 60, opacity: 0 }, { y: 0, opacity: 1, duration: 0.42, ease: "power3.out" }, 0.62);
+
+          // main hotel photo as a layered card
+          tl.fromTo("#n2-card", { y: 520, rotation: 10, scale: 0.8, opacity: 0 },
+            { y: 0, rotation: -4, scale: 1, opacity: 1, duration: 0.6, ease: "back.out(1.3)" }, 0.95);
+          tl.fromTo("#n2-photo", { scale: 1.12 }, { scale: 1.0, duration: 1.85, ease: "none" }, 0.95);
+
+          // OLÍMPIA! slams on the music drop (global 6.86)
+          tl.fromTo("#n2-olimpia", { scale: 2.3, opacity: 0, rotation: -10 },
+            { scale: 1, opacity: 1, rotation: -4, duration: 0.3, ease: "expo.out" }, 1.82);
+          tl.fromTo("#n2-card", { x: 0 }, { x: 10, duration: 0.05, yoyo: true, repeat: 3, ease: "none" }, 1.94);
+          tl.to("#n2-olimpia", { scale: 1.05, duration: 0.6, ease: "sine.inOut" }, 2.15);
+          // card leans toward camera into the bolt zoom-through
+          tl.to("#n2-card", { scale: 1.12, rotation: 0, y: -40, duration: 0.4, ease: "power2.in" }, 2.4);
+          window.__timelines["n2-destino"] = tl;
+        })();
+      </script>
+    </template>
+  </body>
+</html>

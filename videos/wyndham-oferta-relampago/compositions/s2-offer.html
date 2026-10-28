@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template id="s2-offer-template">
+      <style>
+        @font-face { font-family: "Montserrat"; font-style: normal; font-weight: 700 900; src: url("assets/fonts/montserrat-latin.woff2") format("woff2"); }
+        @font-face { font-family: "Montserrat"; font-style: italic; font-weight: 900; src: url("assets/fonts/montserrat-italic-latin.woff2") format("woff2"); }
+        #s2-root {
+          position: absolute;
+          inset: 0;
+          overflow: hidden;
+          background: #2a0b6b;
+          font-family: "Montserrat", sans-serif;
+        }
+        #s2-root .vwrap {
+          position: absolute;
+          inset: 0;
+        }
+        #s2-root video {
+          position: absolute;
+          inset: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        #s2-tint {
+          position: absolute;
+          inset: 0;
+          background:
+            radial-gradient(70% 45% at 40% 40%, rgba(75, 20, 174, 0.15) 0%, rgba(42, 11, 107, 0.6) 100%),
+            linear-gradient(180deg, rgba(42, 11, 107, 0.55) 0%, rgba(42, 11, 107, 0.15) 60%);
+        }
+        #s2-panel {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 1060px;
+          bottom: 0;
+          background: #e8620a;
+          clip-path: polygon(0 120px, 100% 0, 100% 100%, 0 100%);
+        }
+        #s2-panel-edge {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 1040px;
+          height: 160px;
+          background: #4b14ae;
+          clip-path: polygon(0 120px, 100% 0, 100% 22px, 0 142px);
+        }
+        .s2-dim {
+          display: block;
+          font-weight: 900;
+          font-style: italic;
+          line-height: 0.9;
+          letter-spacing: -0.04em;
+          color: #ffffff;
+          -webkit-text-stroke: 0.03em #ffd400;
+          paint-order: stroke fill;
+          text-shadow:
+            0.01em 0.01em 0 #6a58d8,
+            0.02em 0.02em 0 #6a58d8,
+            0.03em 0.03em 0 #5f47cf,
+            0.04em 0.04em 0 #5a35c4,
+            0.05em 0.05em 0 #5a35c4,
+            0.06em 0.06em 0 #4b14ae,
+            0.07em 0.07em 0 #4b14ae,
+            0.08em 0.085em 0 #3d0f92,
+            0.09em 0.1em 0 #2a0b6b,
+            0.11em 0.15em 0.14em rgba(20, 4, 60, 0.5);
+        }
+        #s2-headline {
+          position: absolute;
+          left: 80px;
+          top: 300px;
+          width: 920px;
+          transform: rotate(-7deg);
+          transform-origin: 0 50%;
+        }
+        #s2-oferta {
+          font-size: 150px;
+        }
+        #s2-relampago {
+          font-size: 128px;
+          margin-top: 6px;
+          margin-left: 40px;
+        }
+        #s2-discount {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 600px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        #s2-ate {
+          display: block;
+          margin-left: -250px;
+          padding: 8px 26px 12px;
+          border-radius: 22px;
+          background: #ffd400;
+          color: #2a0b6b;
+          font-weight: 900;
+          font-style: italic;
+          font-size: 66px;
+          line-height: 1;
+          letter-spacing: -0.02em;
+          box-shadow: 7px 9px 0 #4b14ae;
+          transform-origin: 50% 100%;
+        }
+        #s2-pct {
+          margin-top: 6px;
+          font-size: 260px;
+          transform-origin: 50% 55%;
+        }
+        #s2-off {
+          margin-top: 4px;
+          font-size: 150px;
+        }
+        .s2-bolt {
+          position: absolute;
+          width: 190px;
+          height: 380px;
+          filter: drop-shadow(10px 12px 0 #4b14ae);
+        }
+        #s2-bolt-l {
+          left: 40px;
+          top: 600px;
+          transform-origin: 50% 0%;
+        }
+        #s2-bolt-r {
+          right: 40px;
+          top: 600px;
+          transform-origin: 50% 0%;
+        }
+        #s2-tuki-wrap {
+          position: absolute;
+          right: -40px;
+          top: 1110px;
+          width: 640px;
+          height: 640px;
+        }
+        #s2-tuki {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          filter: drop-shadow(0 26px 30px rgba(20, 4, 60, 0.4));
+          transform-origin: 50% 85%;
+        }
+      </style>
+
+      <div data-hf-id="hf-ilgo" id="s2-root" data-composition-id="s2-offer" data-width="1080" data-height="1920" data-duration="3.88">
+        <div data-hf-id="hf-3tt5" class="vwrap" id="s2-vw">
+          <video data-hf-id="hf-j63k" id="s2-v1" class="clip" src="assets/video/hotel.mp4" muted playsinline
+            data-start="0" data-duration="3.88" data-media-start="18.69" data-playback-rate="0.48" data-track-index="0"></video>
+        </div>
+        <div data-hf-id="hf-b0ec" id="s2-tint"></div>
+        <div data-hf-id="hf-hua7" id="s2-panel-edge"></div>
+        <div data-hf-id="hf-26cn" id="s2-panel"></div>
+
+        <svg data-hf-id="hf-1y3e" class="s2-bolt" id="s2-bolt-l" viewBox="0 0 200 400" aria-hidden="true">
+          <polygon data-hf-id="hf-yr6t" points="128,6 28,228 96,228 58,396 178,148 110,148 156,6" fill="#ffd400" stroke="#ffffff" stroke-width="10" stroke-linejoin="round" />
+        </svg>
+        <svg data-hf-id="hf-k610" class="s2-bolt" id="s2-bolt-r" viewBox="0 0 200 400" aria-hidden="true">
+          <polygon data-hf-id="hf-q92x" points="128,6 28,228 96,228 58,396 178,148 110,148 156,6" fill="#ffd400" stroke="#ffffff" stroke-width="10" stroke-linejoin="round" />
+        </svg>
+
+        <div data-hf-id="hf-fopj" id="s2-headline" data-layout-allow-overlap>
+          <span data-hf-id="hf-8tc1" class="s2-dim" id="s2-oferta" data-hf-motion-blur='{"shutterAngle": 360}'>OFERTA</span>
+          <span data-hf-id="hf-3nao" class="s2-dim" id="s2-relampago" data-hf-motion-blur='{"shutterAngle": 360}'>RELÂMPAGO</span>
+        </div>
+
+        <div data-hf-id="hf-fm4q" id="s2-discount">
+          <span data-hf-id="hf-4hiq" id="s2-ate">ATÉ</span>
+          <span data-hf-id="hf-3cz9" class="s2-dim" id="s2-pct">20%</span>
+          <span data-hf-id="hf-lfaj" class="s2-dim" id="s2-off">OFF</span>
+        </div>
+
+        <div data-hf-id="hf-2koz" id="s2-tuki-wrap">
+          <img data-hf-id="hf-fyzg" id="s2-tuki" src="assets/img/tuki-boia.png" alt="Tuki, o tucano da Tuki Viagens, na boia" />
+        </div>
+      </div>
+
+      <script>
+        (function () {
+          const tl = gsap.timeline({ paused: true });
+          // footage settles out of the bolt flash
+          tl.fromTo("#s2-vw", { scale: 1.25 }, { scale: 1.05, duration: 3.88, ease: "power2.out" }, 0);
+          tl.fromTo("#s2-panel", { yPercent: 100 }, { yPercent: 0, duration: 0.5, ease: "power3.out" }, 0.08);
+          tl.fromTo("#s2-panel-edge", { yPercent: 400, opacity: 0 }, { yPercent: 0, opacity: 1, duration: 0.55, ease: "power3.out" }, 0.1);
+
+          // 1 — OFERTA RELÂMPAGO, built in sequence
+          tl.fromTo("#s2-oferta", { x: -900, skewX: 18, opacity: 0 }, { x: 0, skewX: 0, opacity: 1, duration: 0.34, ease: "expo.out" }, 0.08);
+          tl.fromTo("#s2-relampago", { x: 1000, skewX: -18, opacity: 0 }, { x: 0, skewX: 0, opacity: 1, duration: 0.34, ease: "expo.out" }, 0.3);
+
+          // lightning bolts strike down and flicker
+          tl.fromTo("#s2-bolt-r", { scaleY: 0, opacity: 0 }, { scaleY: 1, opacity: 1, duration: 0.16, ease: "power4.out" }, 1.0);
+          tl.fromTo("#s2-bolt-l", { scaleY: 0, opacity: 0 }, { scaleY: 1, opacity: 1, duration: 0.16, ease: "power4.out" }, 1.08);
+          tl.to(["#s2-bolt-r", "#s2-bolt-l"], { opacity: 0.35, duration: 0.05, yoyo: true, repeat: 3, ease: "none" }, 1.26);
+          tl.to("#s2-bolt-r", { rotation: 4, duration: 1.2, ease: "sine.inOut", yoyo: true, repeat: 1 }, 1.3);
+          tl.to("#s2-bolt-l", { rotation: -4, duration: 1.2, ease: "sine.inOut", yoyo: true, repeat: 1 }, 1.3);
+
+          // 2 — ATÉ 20% OFF: the discount is the hero, slammed on the beat (global 3.89)
+          tl.fromTo("#s2-pct", { scale: 2.6, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.28, ease: "expo.out" }, 1.88);
+          tl.fromTo("#s2-pct", { rotation: -2 }, { rotation: 0, duration: 0.6, ease: "elastic.out(1, 0.5)" }, 2.04);
+          tl.fromTo("#s2-ate", { scale: 0, rotation: -20 }, { scale: 1, rotation: -6, duration: 0.36, ease: "back.out(2.2)" }, 1.74);
+          tl.fromTo("#s2-off", { y: 160, opacity: 0, skewX: -14 }, { y: 0, opacity: 1, skewX: 0, duration: 0.32, ease: "power4.out" }, 2.22);
+          tl.to("#s2-discount", { scale: 1.03, duration: 1.3, ease: "sine.inOut", transformOrigin: "50% 50%" }, 2.5);
+
+          // Tuki slides in with a gentle bounce, then floats
+          tl.fromTo("#s2-tuki-wrap", { x: 760, rotation: 14 }, { x: 0, rotation: -3, duration: 0.6, ease: "back.out(1.5)" }, 2.56);
+          tl.fromTo("#s2-tuki", { y: 0, rotation: 0 }, { y: -18, rotation: 2.5, duration: 0.36, ease: "sine.inOut", yoyo: true, repeat: 1 }, 3.12);
+          window.__timelines["s2-offer"] = tl;
+        })();
+      </script>
+    </template>
+  </body>
+</html>

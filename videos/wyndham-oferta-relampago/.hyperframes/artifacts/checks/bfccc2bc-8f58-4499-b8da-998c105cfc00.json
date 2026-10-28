@@ -1,0 +1,985 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 7,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "composition_file_too_large",
+        "severity": "warning",
+        "message": "This HTML composition file has 696 lines. Smaller sub-compositions are easier to read, iterate on, and diff.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Split coherent scenes or layers into separate .html files under compositions/, then mount them from the parent with data-composition-src so each file stays small enough to inspect, revise, and validate independently."
+      },
+      {
+        "code": "nested_media_start_basis_ambiguous",
+        "severity": "warning",
+        "message": "<video id=\"s3-v1\"> has data-start=\"0.97\" inside a sub-composition. Nested media timing is local to its composition by default; a nonzero value can be confused with a legacy root-global timestamp.",
+        "selector": "#s3-v1",
+        "dataAttributes": {},
+        "sourceFile": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/compositions/s3-hotel.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Keep data-start=\"0.97\" if it is composition-local. If this is a legacy root-global timestamp, add data-hf-media-start-basis=\"global\"; otherwise convert it to local time by subtracting the host start."
+      },
+      {
+        "code": "nested_media_start_basis_ambiguous",
+        "severity": "warning",
+        "message": "<video id=\"s4-v2a\"> has data-start=\"2.43\" inside a sub-composition. Nested media timing is local to its composition by default; a nonzero value can be confused with a legacy root-global timestamp.",
+        "selector": "#s4-v2a",
+        "dataAttributes": {},
+        "sourceFile": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/compositions/s4-experience.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Keep data-start=\"2.43\" if it is composition-local. If this is a legacy root-global timestamp, add data-hf-media-start-basis=\"global\"; otherwise convert it to local time by subtracting the host start."
+      },
+      {
+        "code": "nested_media_start_basis_ambiguous",
+        "severity": "warning",
+        "message": "<video id=\"s4-v2b\"> has data-start=\"3.5\" inside a sub-composition. Nested media timing is local to its composition by default; a nonzero value can be confused with a legacy root-global timestamp.",
+        "selector": "#s4-v2b",
+        "dataAttributes": {},
+        "sourceFile": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/compositions/s4-experience.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Keep data-start=\"3.5\" if it is composition-local. If this is a legacy root-global timestamp, add data-hf-media-start-basis=\"global\"; otherwise convert it to local time by subtracting the host start."
+      },
+      {
+        "code": "nested_media_start_basis_ambiguous",
+        "severity": "warning",
+        "message": "<video id=\"s4-v2c\"> has data-start=\"4.24\" inside a sub-composition. Nested media timing is local to its composition by default; a nonzero value can be confused with a legacy root-global timestamp.",
+        "selector": "#s4-v2c",
+        "dataAttributes": {},
+        "sourceFile": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/compositions/s4-experience.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Keep data-start=\"4.24\" if it is composition-local. If this is a legacy root-global timestamp, add data-hf-media-start-basis=\"global\"; otherwise convert it to local time by subtracting the host start."
+      },
+      {
+        "code": "nested_media_start_basis_ambiguous",
+        "severity": "warning",
+        "message": "<video id=\"s4-v3\"> has data-start=\"4.86\" inside a sub-composition. Nested media timing is local to its composition by default; a nonzero value can be confused with a legacy root-global timestamp.",
+        "selector": "#s4-v3",
+        "dataAttributes": {},
+        "sourceFile": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/compositions/s4-experience.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Keep data-start=\"4.86\" if it is composition-local. If this is a legacy root-global timestamp, add data-hf-media-start-basis=\"global\"; otherwise convert it to local time by subtracting the host start."
+      },
+      {
+        "code": "nested_media_start_basis_ambiguous",
+        "severity": "warning",
+        "message": "<video id=\"s5-v2\"> has data-start=\"2.27\" inside a sub-composition. Nested media timing is local to its composition by default; a nonzero value can be confused with a legacy root-global timestamp.",
+        "selector": "#s5-v2",
+        "dataAttributes": {},
+        "sourceFile": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/compositions/s5-dates.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Keep data-start=\"2.27\" if it is composition-local. If this is a legacy root-global timestamp, add data-hf-media-start-basis=\"global\"; otherwise convert it to local time by subtracting the host start."
+      }
+    ],
+    "filesScanned": 8
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 3,
+    "infoCount": 14,
+    "findings": [
+      {
+        "code": "container_overflow",
+        "severity": "warning",
+        "time": 11.667,
+        "selector": "#s4-vw3",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -54,
+          "top": -96,
+          "right": 1134,
+          "bottom": 2016,
+          "width": 1188,
+          "height": 2112
+        },
+        "containerSelector": "#el-experience > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 54,
+          "right": 54,
+          "top": 96,
+          "bottom": 96
+        },
+        "dataAttributes": {
+          "data-hf-id": "hf-ohfy"
+        },
+        "sourceFile": "compositions/s4-experience.html",
+        "bbox": {
+          "x": -54,
+          "y": -96,
+          "width": 1188,
+          "height": 2112
+        },
+        "firstSeen": 11.667,
+        "lastSeen": 15,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          11.667,
+          15
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "warning",
+        "time": 15,
+        "selector": "#s4-p1",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -1232.22,
+          "top": 334.2,
+          "right": -158.63,
+          "bottom": 1407.79,
+          "width": 1073.58,
+          "height": 1073.58
+        },
+        "containerSelector": "#s4-c1",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": -1164.03,
+          "top": 365.97,
+          "right": -155.97,
+          "bottom": 1374.03,
+          "width": 1008.06,
+          "height": 1008.06
+        },
+        "overflow": {
+          "left": 68.19,
+          "top": 31.77,
+          "bottom": 33.76
+        },
+        "dataAttributes": {
+          "data-hf-id": "hf-yo6n",
+          "data-hf-authored-opacity": ""
+        },
+        "sourceFile": "compositions/s4-experience.html",
+        "bbox": {
+          "x": -1232.22,
+          "y": 334.2,
+          "width": 1073.58,
+          "height": 1073.58
+        },
+        "firstSeen": 11.667,
+        "lastSeen": 18.333,
+        "occurrences": 3,
+        "heldMs": 0,
+        "times": [
+          11.667,
+          15,
+          18.333
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "warning",
+        "time": 25,
+        "selector": "#s6-tuki-wrap",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 602.75,
+          "top": 286.75,
+          "right": 1149.25,
+          "bottom": 833.25,
+          "width": 546.5,
+          "height": 546.5
+        },
+        "containerSelector": "#el-final > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "right": 69.25
+        },
+        "dataAttributes": {
+          "data-hf-id": "hf-wa1z"
+        },
+        "sourceFile": "compositions/s6-final.html",
+        "bbox": {
+          "x": 602.75,
+          "y": 286.75,
+          "width": 546.5,
+          "height": 546.5
+        },
+        "firstSeen": 25,
+        "lastSeen": 28.333,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          25,
+          28.333
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 1.667,
+        "selector": "#s1-vw",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -28.13,
+          "top": -46.01,
+          "right": 1108.13,
+          "bottom": 1974.02,
+          "width": 1136.27,
+          "height": 2020.03
+        },
+        "containerSelector": "#el-hook > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 28.13,
+          "right": 28.13,
+          "top": 46.01,
+          "bottom": 54.02
+        },
+        "dataAttributes": {
+          "data-hf-id": "hf-sn84"
+        },
+        "sourceFile": "compositions/s1-hook.html",
+        "bbox": {
+          "x": -28.13,
+          "y": -46.01,
+          "width": 1136.27,
+          "height": 2020.03
+        },
+        "firstSeen": 1.667,
+        "lastSeen": 1.667,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          1.667
+        ]
+      },
+      {
+        "code": "text_occluded",
+        "severity": "info",
+        "time": 5,
+        "selector": "#s2-oferta",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 61.46,
+          "top": 202.46,
+          "right": 691.96,
+          "bottom": 458.77,
+          "width": 630.5,
+          "height": 256.31
+        },
+        "containerSelector": "#s2-tint",
+        "text": "OFERTA",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 0.15,
+        "dataAttributes": {
+          "data-hf-id": "hf-8tc1",
+          "data-hf-motion-blur": "{\"shutterAngle\": 360}"
+        },
+        "sourceFile": "compositions/s2-offer.html",
+        "bbox": {
+          "x": 61.46,
+          "y": 202.46,
+          "width": 630.5,
+          "height": 256.31
+        },
+        "firstSeen": 5,
+        "lastSeen": 5,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          5
+        ]
+      },
+      {
+        "code": "text_occluded",
+        "severity": "info",
+        "time": 5,
+        "selector": "#s2-relampago",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 118.72,
+          "top": 312.92,
+          "right": 970.64,
+          "bottom": 570.02,
+          "width": 851.93,
+          "height": 257.11
+        },
+        "containerSelector": "#s2-tint",
+        "text": "RELÂMPAGO",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 0.19,
+        "dataAttributes": {
+          "data-hf-id": "hf-3nao",
+          "data-hf-motion-blur": "{\"shutterAngle\": 360}"
+        },
+        "sourceFile": "compositions/s2-offer.html",
+        "bbox": {
+          "x": 118.72,
+          "y": 312.92,
+          "width": 851.93,
+          "height": 257.11
+        },
+        "firstSeen": 5,
+        "lastSeen": 5,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          5
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 5,
+        "selector": "#s2-vw",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -37.8,
+          "top": -67.2,
+          "right": 1117.8,
+          "bottom": 1987.2,
+          "width": 1155.6,
+          "height": 2054.4
+        },
+        "containerSelector": "#el-offer > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 37.8,
+          "right": 37.8,
+          "top": 67.2,
+          "bottom": 67.2
+        },
+        "dataAttributes": {
+          "data-hf-id": "hf-3tt5"
+        },
+        "sourceFile": "compositions/s2-offer.html",
+        "bbox": {
+          "x": -37.8,
+          "y": -67.2,
+          "width": 1155.6,
+          "height": 2054.4
+        },
+        "firstSeen": 5,
+        "lastSeen": 5,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          5
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 5,
+        "selector": "#s2-tuki-wrap",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 1172.09,
+          "top": 1042.09,
+          "right": 1947.91,
+          "bottom": 1817.91,
+          "width": 775.82,
+          "height": 775.82
+        },
+        "containerSelector": "#el-offer > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "right": 867.91
+        },
+        "dataAttributes": {
+          "data-hf-id": "hf-2koz"
+        },
+        "sourceFile": "compositions/s2-offer.html",
+        "bbox": {
+          "x": 1172.09,
+          "y": 1042.09,
+          "width": 775.82,
+          "height": 775.82
+        },
+        "firstSeen": 5,
+        "lastSeen": 5,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          5
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 8.333,
+        "selector": "#s3-vw1",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -39.64,
+          "top": -70.46,
+          "right": 1119.64,
+          "bottom": 1990.46,
+          "width": 1159.27,
+          "height": 2060.93
+        },
+        "containerSelector": "#el-hotel > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 39.64,
+          "right": 39.64,
+          "top": 70.46,
+          "bottom": 70.46
+        },
+        "dataAttributes": {
+          "data-hf-id": "hf-agcn"
+        },
+        "sourceFile": "compositions/s3-hotel.html",
+        "bbox": {
+          "x": -39.64,
+          "y": -70.46,
+          "width": 1159.27,
+          "height": 2060.93
+        },
+        "firstSeen": 8.333,
+        "lastSeen": 8.333,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          8.333
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 11.667,
+        "selector": "#s4-vw2a",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -32.4,
+          "top": -57.6,
+          "right": 1112.4,
+          "bottom": 1977.6,
+          "width": 1144.8,
+          "height": 2035.2
+        },
+        "containerSelector": "#el-experience > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 32.4,
+          "right": 32.4,
+          "top": 57.6,
+          "bottom": 57.6
+        },
+        "dataAttributes": {
+          "data-hf-id": "hf-m6kc"
+        },
+        "sourceFile": "compositions/s4-experience.html",
+        "bbox": {
+          "x": -32.4,
+          "y": -57.6,
+          "width": 1144.8,
+          "height": 2035.2
+        },
+        "firstSeen": 11.667,
+        "lastSeen": 11.667,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          11.667
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 11.667,
+        "selector": "#s4-bg1-img",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -108.99,
+          "top": -161.57,
+          "right": 1152.78,
+          "bottom": 2081.57,
+          "width": 1261.76,
+          "height": 2243.14
+        },
+        "containerSelector": "#s4-bg1",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 108.99,
+          "right": 72.78,
+          "top": 161.57,
+          "bottom": 161.57
+        },
+        "dataAttributes": {
+          "data-hf-id": "hf-d6dt",
+          "data-hf-authored-opacity": ""
+        },
+        "sourceFile": "compositions/s4-experience.html",
+        "bbox": {
+          "x": -108.99,
+          "y": -161.57,
+          "width": 1261.76,
+          "height": 2243.14
+        },
+        "firstSeen": 11.667,
+        "lastSeen": 11.667,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          11.667
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 15,
+        "selector": "#s4-p2",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -233.6,
+          "top": 418.77,
+          "right": 652.36,
+          "bottom": 1304.72,
+          "width": 885.95,
+          "height": 885.95
+        },
+        "containerSelector": "#s4-c2",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": -173.08,
+          "top": 454.85,
+          "right": 657.22,
+          "bottom": 1285.15,
+          "width": 830.3,
+          "height": 830.3
+        },
+        "overflow": {
+          "left": 60.52,
+          "top": 36.08,
+          "bottom": 19.57
+        },
+        "dataAttributes": {
+          "data-hf-id": "hf-ttde",
+          "data-hf-authored-opacity": ""
+        },
+        "sourceFile": "compositions/s4-experience.html",
+        "bbox": {
+          "x": -233.6,
+          "y": 418.77,
+          "width": 885.95,
+          "height": 885.95
+        },
+        "firstSeen": 15,
+        "lastSeen": 18.333,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          15,
+          18.333
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 15,
+        "selector": "#s4-c2",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": -173.08,
+          "top": 454.85,
+          "right": 657.22,
+          "bottom": 1285.15,
+          "width": 830.3,
+          "height": 830.3
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 173.08
+        },
+        "dataAttributes": {
+          "data-hf-id": "hf-ye2n"
+        },
+        "sourceFile": "compositions/s4-experience.html",
+        "bbox": {
+          "x": -173.08,
+          "y": 454.85,
+          "width": 830.3,
+          "height": 830.3
+        },
+        "firstSeen": 15,
+        "lastSeen": 15,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          15
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 18.333,
+        "selector": "#s4-p3",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 66.63,
+          "top": 419.77,
+          "right": 951.1,
+          "bottom": 1304.25,
+          "width": 884.48,
+          "height": 884.48
+        },
+        "containerSelector": "#s4-c3",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 126.28,
+          "top": 456.28,
+          "right": 953.72,
+          "bottom": 1283.72,
+          "width": 827.43,
+          "height": 827.43
+        },
+        "overflow": {
+          "left": 59.65,
+          "top": 36.51,
+          "bottom": 20.53
+        },
+        "dataAttributes": {
+          "data-hf-id": "hf-70c3",
+          "data-hf-authored-opacity": ""
+        },
+        "sourceFile": "compositions/s4-experience.html",
+        "bbox": {
+          "x": 66.63,
+          "y": 419.77,
+          "width": 884.48,
+          "height": 884.48
+        },
+        "firstSeen": 18.333,
+        "lastSeen": 18.333,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          18.333
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 18.333,
+        "selector": "#s4-l3",
+        "message": "Nowrap text is wider than its container.",
+        "rect": {
+          "left": 82.13,
+          "top": 1330,
+          "right": 997.88,
+          "bottom": 1456,
+          "width": 915.75,
+          "height": 126
+        },
+        "containerSelector": "#s4-i3 > div:nth-of-type(3)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 90,
+          "top": 1330,
+          "right": 990,
+          "bottom": 1456,
+          "width": 900,
+          "height": 126
+        },
+        "overflow": {
+          "left": 7.87,
+          "right": 7.88
+        },
+        "dataAttributes": {
+          "data-hf-id": "hf-kr3l"
+        },
+        "sourceFile": "compositions/s4-experience.html",
+        "bbox": {
+          "x": 82.13,
+          "y": 1330,
+          "width": 915.75,
+          "height": 126
+        },
+        "firstSeen": 18.333,
+        "lastSeen": 18.333,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          18.333
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 21.667,
+        "selector": "#s5-vw2",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -22.52,
+          "top": -40.03,
+          "right": 1102.52,
+          "bottom": 1960.03,
+          "width": 1125.04,
+          "height": 2000.06
+        },
+        "containerSelector": "#el-dates > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 22.52,
+          "right": 22.52,
+          "top": 40.03,
+          "bottom": 40.03
+        },
+        "dataAttributes": {
+          "data-hf-id": "hf-0nnu"
+        },
+        "sourceFile": "compositions/s5-dates.html",
+        "bbox": {
+          "x": -22.52,
+          "y": -40.03,
+          "width": 1125.04,
+          "height": 2000.06
+        },
+        "firstSeen": 21.667,
+        "lastSeen": 21.667,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          21.667
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 25,
+        "selector": "#s6-vw",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -42.12,
+          "top": -74.88,
+          "right": 1122.12,
+          "bottom": 1994.88,
+          "width": 1164.24,
+          "height": 2069.76
+        },
+        "containerSelector": "#el-final > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 42.12,
+          "right": 42.12,
+          "top": 74.88,
+          "bottom": 74.88
+        },
+        "dataAttributes": {
+          "data-hf-id": "hf-ljq5"
+        },
+        "sourceFile": "compositions/s6-final.html",
+        "bbox": {
+          "x": -42.12,
+          "y": -74.88,
+          "width": 1164.24,
+          "height": 2069.76
+        },
+        "firstSeen": 25,
+        "lastSeen": 28.333,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          25,
+          28.333
+        ]
+      }
+    ],
+    "duration": 30,
+    "samples": [
+      1.667,
+      5,
+      8.333,
+      11.667,
+      15,
+      18.333,
+      21.667,
+      25,
+      28.333
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 17,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      1.667,
+      8.333,
+      15,
+      21.667,
+      28.333
+    ],
+    "checked": 45,
+    "passed": 45
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}

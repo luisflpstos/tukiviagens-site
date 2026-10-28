@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template id="s3-hotel-template">
+      <style>
+        @font-face { font-family: "Montserrat"; font-style: normal; font-weight: 700 900; src: url("assets/fonts/montserrat-latin.woff2") format("woff2"); }
+        @font-face { font-family: "Montserrat"; font-style: italic; font-weight: 900; src: url("assets/fonts/montserrat-italic-latin.woff2") format("woff2"); }
+        @font-face { font-family: "Kaushan Script"; font-style: normal; font-weight: 400; src: url("assets/fonts/kaushan-latin.woff2") format("woff2"); }
+        #s3-root {
+          position: absolute;
+          inset: 0;
+          overflow: hidden;
+          background: #4b14ae;
+          font-family: "Montserrat", sans-serif;
+        }
+        #s3-ghost {
+          position: absolute;
+          left: -40px;
+          top: 1380px;
+          font-weight: 900;
+          font-style: italic;
+          font-size: 330px;
+          line-height: 1;
+          letter-spacing: -0.04em;
+          color: rgba(255, 255, 255, 0.14);
+          white-space: nowrap;
+        }
+        #s3-ghost-2 {
+          position: absolute;
+          left: -300px;
+          top: 160px;
+          font-weight: 900;
+          font-style: italic;
+          font-size: 330px;
+          line-height: 1;
+          letter-spacing: -0.04em;
+          color: rgba(255, 212, 0, 0.16);
+          white-space: nowrap;
+        }
+        #s3-root .vwrap {
+          position: absolute;
+          inset: 0;
+        }
+        #s3-root video {
+          position: absolute;
+          inset: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        #s3-photo {
+          position: absolute;
+          inset: 0;
+          filter: drop-shadow(0 30px 40px rgba(20, 4, 60, 0.45));
+        }
+        #s3-photo-in {
+          position: absolute;
+          inset: 0;
+          overflow: hidden;
+        }
+        #s3-photo-img {
+          position: absolute;
+          left: -900px;
+          top: 0;
+          width: 2880px;
+          height: 1920px;
+          transform-origin: 50% 50%;
+        }
+        #s3-topshade {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          height: 760px;
+          background: linear-gradient(180deg, rgba(42, 11, 107, 0.55) 0%, rgba(42, 11, 107, 0) 100%);
+        }
+        #s3-sign {
+          position: absolute;
+          left: 50px;
+          right: 50px;
+          top: 250px;
+          height: 350px;
+          border-radius: 44px;
+          background: #e8620a;
+          box-shadow: 0 14px 0 #4b14ae, 0 30px 50px rgba(20, 4, 60, 0.35);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding-bottom: 14px;
+        }
+        #s3-wyndham {
+          display: flex;
+          font-weight: 900;
+          font-size: 156px;
+          line-height: 1;
+          letter-spacing: -0.02em;
+          color: #ffffff;
+          text-shadow: 0.025em 0.03em 0 #c24a05;
+        }
+        #s3-wyndham span {
+          display: inline-block;
+        }
+        #s3-script {
+          margin-top: -18px;
+          font-family: "Kaushan Script", cursive;
+          font-size: 96px;
+          line-height: 1.15;
+          color: #3a0e8c;
+          white-space: nowrap;
+          transform: rotate(-3deg);
+        }
+        #s3-script-wipe {
+          display: block;
+          padding: 0 16px;
+        }
+      </style>
+
+      <div data-hf-id="hf-l8lj" id="s3-root" data-composition-id="s3-hotel" data-width="1080" data-height="1920" data-duration="3.4">
+        <div data-hf-id="hf-ncrz" id="s3-ghost-2" data-layout-ignore aria-hidden="true">OLÍMPIA</div>
+        <div data-hf-id="hf-fm40" id="s3-ghost" data-layout-ignore aria-hidden="true">OLÍMPIA</div>
+
+        <div data-hf-id="hf-agcn" class="vwrap" id="s3-vw1">
+          <video data-hf-id="hf-lkmi" id="s3-v1" class="clip" src="assets/video/hotel.mp4" muted playsinline
+            data-start="0.97" data-duration="2.43" data-media-start="5.34" data-track-index="0"></video>
+        </div>
+
+        <!-- main hotel photograph: rounded card that opens into the footage -->
+        <div data-hf-id="hf-typw" id="s3-photo">
+          <div data-hf-id="hf-cksw" id="s3-photo-in">
+            <img data-hf-id="hf-wtx5" id="s3-photo-img" src="assets/img/hotel-principal.jpg" alt="Wyndham Olímpia Royal Hotels — piscina e torres" />
+          </div>
+        </div>
+
+        <div data-hf-id="hf-5ddc" id="s3-topshade"></div>
+        <div data-hf-id="hf-u7wz" id="s3-sign">
+          <div data-hf-id="hf-ukkk" id="s3-wyndham"><span data-hf-id="hf-e1fm">W</span><span data-hf-id="hf-d8tk">Y</span><span data-hf-id="hf-gtkt">N</span><span data-hf-id="hf-ksn3">D</span><span data-hf-id="hf-j7ez">H</span><span data-hf-id="hf-ms68">A</span><span data-hf-id="hf-i0hw">M</span></div>
+          <div data-hf-id="hf-tvsx" id="s3-script"><span data-hf-id="hf-r3pp" id="s3-script-wipe">Olímpia Royal Hotels</span></div>
+        </div>
+      </div>
+
+      <script>
+        (function () {
+          const tl = gsap.timeline({ paused: true });
+          // Card geometry: photo (3:2) cover-fit is 2880x1920 at scale 1; a 940px-wide card = scale 0.3264.
+          const S0 = 940 / 2880;
+          const cardH = 1920 * S0; // 626.7
+          const insetX = (1080 - 940) / 2; // 70
+          const insetY = (1920 - cardH) / 2; // ~646.7
+          const cardClip = `inset(${insetY}px ${insetX}px ${insetY}px ${insetX}px round 48px)`;
+          const fullClip = "inset(0px 0px 0px 0px round 0px)";
+
+          tl.fromTo("#s3-ghost", { x: 0 }, { x: -200, duration: 3.4, ease: "none" }, 0);
+          tl.fromTo("#s3-ghost-2", { x: 0 }, { x: 170, duration: 3.4, ease: "none" }, 0);
+
+          // pop the card in
+          tl.fromTo("#s3-photo", { scale: 0.55, rotation: -9, y: 160, opacity: 0 },
+            { scale: 1, rotation: -3, y: 0, opacity: 1, duration: 0.42, ease: "back.out(1.4)" }, 0.02);
+          tl.fromTo("#s3-photo-in", { clipPath: cardClip }, { clipPath: cardClip, duration: 0.01 }, 0);
+          tl.fromTo("#s3-photo-img", { scale: S0 }, { scale: S0 * 1.06, duration: 0.6, ease: "none" }, 0.02);
+          // open the card to full frame, landing exactly on the footage cut (0.97)
+          tl.to("#s3-photo", { rotation: 0, duration: 0.36, ease: "power3.inOut" }, 0.62);
+          tl.to("#s3-photo-in", { clipPath: fullClip, duration: 0.36, ease: "power3.inOut" }, 0.62);
+          tl.to("#s3-photo-img", { scale: 1, duration: 0.36, ease: "power3.inOut" }, 0.62);
+          tl.to("#s3-photo", { opacity: 0, duration: 0.3, ease: "power1.out" }, 0.98);
+
+          // footage: generous, slow settle
+          tl.fromTo("#s3-vw1", { scale: 1.12 }, { scale: 1.0, duration: 2.43, ease: "power1.out" }, 0.97);
+    
+          // hotel name sign
+          tl.fromTo("#s3-topshade", { opacity: 0 }, { opacity: 1, duration: 0.4 }, 0.3);
+          tl.fromTo("#s3-sign", { y: -720, rotation: -4 }, { y: 0, rotation: 0, duration: 0.5, ease: "back.out(1.3)" }, 0.28);
+          tl.fromTo("#s3-wyndham span", { y: 90, opacity: 0 }, { y: 0, opacity: 1, duration: 0.34, ease: "power3.out", stagger: 0.045 }, 0.45);
+          tl.fromTo("#s3-script-wipe", { clipPath: "inset(0% 100% 0% 0%)" }, { clipPath: "inset(0% 0% 0% 0%)", duration: 0.6, ease: "power2.inOut" }, 0.76);
+          tl.to("#s3-sign", { y: -8, duration: 1.0, ease: "sine.inOut", yoyo: true, repeat: 1 }, 1.4);
+          window.__timelines["s3-hotel"] = tl;
+        })();
+      </script>
+    </template>
+  </body>
+</html>

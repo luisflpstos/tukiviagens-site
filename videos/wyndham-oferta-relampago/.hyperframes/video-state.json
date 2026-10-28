@@ -1,0 +1,2107 @@
+{
+  "version": 1,
+  "historyId": "5bdf0d6f-2062-4582-8827-85ca94d178da",
+  "currentRevision": "57cd8ec4-4b6c-43ba-b0df-7a6a551e8542",
+  "pendingChanges": false,
+  "files": {
+    ".media/manifest.jsonl": {
+      "hash": "ddb0dae9188de7ab60904ede84b7a7cdc38a92eba1d1ac513bba89d7593f730c",
+      "content": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/dd/ddb0dae9188de7ab60904ede84b7a7cdc38a92eba1d1ac513bba89d7593f730c"
+    },
+    "AGENTS.md": {
+      "hash": "1d4f0c8ca2507b94fd7c9df709fff01416adbd51a0f922b9d6ed2f40129147d5",
+      "content": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/1d/1d4f0c8ca2507b94fd7c9df709fff01416adbd51a0f922b9d6ed2f40129147d5"
+    },
+    "BRIEF.md": {
+      "hash": "454b620e75e778ef6fbf12820caf52a7f2eb8dcb2c88e12138e3e39dbf64bd35",
+      "content": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/45/454b620e75e778ef6fbf12820caf52a7f2eb8dcb2c88e12138e3e39dbf64bd35"
+    },
+    "CLAUDE.md": {
+      "hash": "1d4f0c8ca2507b94fd7c9df709fff01416adbd51a0f922b9d6ed2f40129147d5",
+      "content": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/1d/1d4f0c8ca2507b94fd7c9df709fff01416adbd51a0f922b9d6ed2f40129147d5"
+    },
+    "assets/fonts/kaushan-latin.woff2": {
+      "hash": "addcc80ddcc170ff8c97140ab37ac380ac4e6d0b8fd14e5d107b4cb87ffd778f",
+      "content": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/ad/addcc80ddcc170ff8c97140ab37ac380ac4e6d0b8fd14e5d107b4cb87ffd778f"
+    },
+    "assets/fonts/montserrat-italic-latin.woff2": {
+      "hash": "7084156f0b371b854c9fd3a84bc1006315b153898e75c20b1dfd5aa80a62c769",
+      "content": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/70/7084156f0b371b854c9fd3a84bc1006315b153898e75c20b1dfd5aa80a62c769"
+    },
+    "assets/fonts/montserrat-latin.woff2": {
+      "hash": "06b16db7a969135d48d38c49183be7fb88d4452e2a3011957c7851941f4e4879",
+      "content": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/06/06b16db7a969135d48d38c49183be7fb88d4452e2a3011957c7851941f4e4879"
+    },
+    "assets/icons/calendario.png": {
+      "hash": "f76d0149f84b75cd784bfb7a21e665a94dbcea63e1e450812a4cfaccab2dc97d",
+      "content": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/f7/f76d0149f84b75cd784bfb7a21e665a94dbcea63e1e450812a4cfaccab2dc97d"
+    },
+    "assets/icons/hotel.png": {
+      "hash": "dac02555cabd8fec0afcd53e5ffd9cfa1dd4ff6c559b6607f0fee33f00c11b31",
+      "content": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/da/dac02555cabd8fec0afcd53e5ffd9cfa1dd4ff6c559b6607f0fee33f00c11b31"
+    },
+    "assets/icons/oculos-boia.png": {
+      "hash": "43455c86cf8f3a44d3e016afd7ec904f0aaa4879a9ce7204280dbe202b21b908",
+      "content": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/43/43455c86cf8f3a44d3e016afd7ec904f0aaa4879a9ce7204280dbe202b21b908"
+    },
+    "assets/icons/olimpia.png": {
+      "hash": "7caa99d0f1801bebc95beb0696eccf3230b162bf3833fb75ff07aec30338bc84",
+      "content": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/7c/7caa99d0f1801bebc95beb0696eccf3230b162bf3833fb75ff07aec30338bc84"
+    },
+    "assets/icons/piscina.png": {
+      "hash": "8e03e5a1dbfb996403f7e7abd4321aab8d239bc79cc3772cc912152ac697d484",
+      "content": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/8e/8e03e5a1dbfb996403f7e7abd4321aab8d239bc79cc3772cc912152ac697d484"
+    },
+    "assets/icons/sol.png": {
+      "hash": "ceb1f11a13f4d73c5e655004b5576a2679348ad6c627a18740e6c3af2775ce8b",
+      "content": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/ce/ceb1f11a13f4d73c5e655004b5576a2679348ad6c627a18740e6c3af2775ce8b"
+    },
+    "assets/img/diversao-familia.jpg": {
+      "hash": "50bf442677e6aeb797eee1e8499e0c084ec350831bf049e7c7e42f4816899ca9",
+      "content": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/50/50bf442677e6aeb797eee1e8499e0c084ec350831bf049e7c7e42f4816899ca9"
+    },
+    "assets/img/espaco-kids.jpg": {
+      "hash": "96bedbd8ff3c8ac2b7d7e5ef3afc931b7b223d7eb0e3508a7cc92667c5d924b6",
+      "content": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/96/96bedbd8ff3c8ac2b7d7e5ef3afc931b7b223d7eb0e3508a7cc92667c5d924b6"
+    },
+    "assets/img/hotel-principal.jpg": {
+      "hash": "f9f8c281a41166dc42f7605be06bd934708704c60e0fbd5ce3a8d13012a2812e",
+      "content": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/f9/f9f8c281a41166dc42f7605be06bd934708704c60e0fbd5ce3a8d13012a2812e"
+    },
+    "assets/img/logo-tuki.svg": {
+      "hash": "765f8c1fa47551987e6693fe1fe5bcfcf87c85c26e055e040eff8c88bd030d6a",
+      "content": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/76/765f8c1fa47551987e6693fe1fe5bcfcf87c85c26e055e040eff8c88bd030d6a"
+    },
+    "assets/img/piscina-coberta-blur.jpg": {
+      "hash": "f3bf957b99f34220ed7a2a8092ab2d6384a5f673f93a53dda0601f7a88349acd",
+      "content": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/f3/f3bf957b99f34220ed7a2a8092ab2d6384a5f673f93a53dda0601f7a88349acd"
+    },
+    "assets/img/piscina-coberta.jpg": {
+      "hash": "626f3537307b99fbd8fa756ca6d11247d06d3ad2ec12b206c498a1b53ebd941c",
+      "content": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/62/626f3537307b99fbd8fa756ca6d11247d06d3ad2ec12b206c498a1b53ebd941c"
+    },
+    "compositions/components/motion-blur.html": {
+      "hash": "b604aa760009d6966241f3ea47e24c92b52bd807e99d52e38239c2466b782eef",
+      "content": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/b6/b604aa760009d6966241f3ea47e24c92b52bd807e99d52e38239c2466b782eef"
+    },
+    "compositions/fx-bolts.html": {
+      "hash": "fdcfba151e710f8959b210910bb0ae1f0ddb51de362da687d5e1ea07e679b4ba",
+      "content": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/fd/fdcfba151e710f8959b210910bb0ae1f0ddb51de362da687d5e1ea07e679b4ba"
+    },
+    "compositions/s1-hook.html": {
+      "hash": "6b01f8f5b379bbddd2408c1558dcdc3c06eeb067288e92341a2284f4ce2522a5",
+      "content": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/6b/6b01f8f5b379bbddd2408c1558dcdc3c06eeb067288e92341a2284f4ce2522a5"
+    },
+    "compositions/s2-offer.html": {
+      "hash": "901dee713a0f38de42dcf284177599880f1030959d6f3154ef7b0fabddb5b11b",
+      "content": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/90/901dee713a0f38de42dcf284177599880f1030959d6f3154ef7b0fabddb5b11b"
+    },
+    "compositions/s3-hotel.html": {
+      "hash": "316aaa9ba416d7f034658eac0da59b500885469623419d34a9f32bb6d1297560",
+      "content": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/31/316aaa9ba416d7f034658eac0da59b500885469623419d34a9f32bb6d1297560"
+    },
+    "compositions/s4-experience.html": {
+      "hash": "dd2045d695f24b7a03da3e97438a1eec03f3b58a7e66b68d3350268e1d63cb9a",
+      "content": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/dd/dd2045d695f24b7a03da3e97438a1eec03f3b58a7e66b68d3350268e1d63cb9a"
+    },
+    "compositions/s5-dates.html": {
+      "hash": "bb22f08541acdf68b44bc4d5b0fdcaafc459683a0a4e4e10188170a1c79bce65",
+      "content": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/bb/bb22f08541acdf68b44bc4d5b0fdcaafc459683a0a4e4e10188170a1c79bce65"
+    },
+    "compositions/s6-final.html": {
+      "hash": "54517fbb640d0b467fd9813f9b7c341ef9555bfd39d4237913658881bb8f6838",
+      "content": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/54/54517fbb640d0b467fd9813f9b7c341ef9555bfd39d4237913658881bb8f6838"
+    },
+    "hyperframes.json": {
+      "hash": "0672211d78282f3484bebc95590b5d55dd470709999bc9474031f11c15edac08",
+      "content": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/06/0672211d78282f3484bebc95590b5d55dd470709999bc9474031f11c15edac08"
+    },
+    "hyperframes.lock.json": {
+      "hash": "d4a36b0aa64ee061a6d86b45b4e992cf58b768882651f5b6410b32800b395339",
+      "content": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/d4/d4a36b0aa64ee061a6d86b45b4e992cf58b768882651f5b6410b32800b395339"
+    },
+    "index.html": {
+      "hash": "9d63cbf122aa81836c4408b44a34d4c32e83758f302496352324ed190c228ff4",
+      "content": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/9d/9d63cbf122aa81836c4408b44a34d4c32e83758f302496352324ed190c228ff4"
+    },
+    "meta.json": {
+      "hash": "e3321da1ee41c4d77f9cd726b1c9dc327012d2c9e0a6482fd9d8f6e5023602bc",
+      "content": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/e3/e3321da1ee41c4d77f9cd726b1c9dc327012d2c9e0a6482fd9d8f6e5023602bc"
+    },
+    "package.json": {
+      "hash": "9acc58cf434be076e8fa0a354db67d910f0d529688e591ee89557b97450ebf38",
+      "content": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/9a/9acc58cf434be076e8fa0a354db67d910f0d529688e591ee89557b97450ebf38"
+    },
+    "assets/audio/trilha-30s.wav": {
+      "hash": "d62e385da4d891205bb733339dad060d50b328ac98c4391b5de100b96d414091",
+      "content": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/d6/d62e385da4d891205bb733339dad060d50b328ac98c4391b5de100b96d414091"
+    },
+    "assets/img/tuki-boia.png": {
+      "hash": "a71f1624bc04838ac19e1a4d313fb2e6421c74b1dbc22940726d0eaf1a923294",
+      "content": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/a7/a71f1624bc04838ac19e1a4d313fb2e6421c74b1dbc22940726d0eaf1a923294"
+    },
+    "assets/video/hotel.mp4": {
+      "hash": "2ccb34cb771f4d3ccae8c7de0eedd3e2472b055211947a3a938c23f90205dd18",
+      "content": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/2c/2ccb34cb771f4d3ccae8c7de0eedd3e2472b055211947a3a938c23f90205dd18"
+    },
+    "STORYBOARD.md": {
+      "hash": "1cec96c99deaa9d6748a4bfea6fcd6ccef5c0179973063e0b8e8fb000f44aa6c",
+      "content": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/1c/1cec96c99deaa9d6748a4bfea6fcd6ccef5c0179973063e0b8e8fb000f44aa6c"
+    },
+    "assets/audio/narracao.mp3": {
+      "hash": "a7f98fedd7af0cb768ea7b7819cd547fed01aec250efe72530b72a925a089565",
+      "content": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/a7/a7f98fedd7af0cb768ea7b7819cd547fed01aec250efe72530b72a925a089565"
+    },
+    "assets/audio/transcript.json": {
+      "hash": "f90249a63a43dc8c90d3d4179aee1547f91b9ea4d3423cc9c297284b5f7b1541",
+      "content": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/f9/f90249a63a43dc8c90d3d4179aee1547f91b9ea4d3423cc9c297284b5f7b1541"
+    },
+    "assets/audio/trilha-30s-v2.wav": {
+      "hash": "0d6ba2732492d326a6ca35c59f1fb3b192a244bc64d3afe02c852aace6db4a10",
+      "content": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/0d/0d6ba2732492d326a6ca35c59f1fb3b192a244bc64d3afe02c852aace6db4a10"
+    }
+  },
+  "revisions": {
+    "60961c18-16fa-42be-9f68-ef95cf19d5dd": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792763148022,
+      "endedAt": 1792763148030,
+      "files": {
+        "compositions/s1-hook.html": {
+          "before": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/c5/c59df74770bcf1a17f298e4c6c3547e906793c405319441a098c079bd6581b0c",
+          "after": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/38/38bb1ad91c1bbbd87cef96960cbab2fba226d7ef7c00f8b8f67fd4959ae74dfa"
+        },
+        "compositions/s3-hotel.html": {
+          "before": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/23/2395c605c2da3468dceb5124fa29f10149a152c5ec5f596d9d026ca6a7f16dec",
+          "after": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/15/155a4a0bad4cc5e34a5352c22e24a429b0fe7ace2784f3158a45f6c700d4f823"
+        },
+        "compositions/s6-final.html": {
+          "before": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/32/325534ec1346cbc4806da74878bebb0efca30a3a32455675d20443f7aa13fc62",
+          "after": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/a2/a21b117924b491cf077fd2aab2a9d18147f5875fa613e9d87de23f3fa3e57ff6"
+        }
+      }
+    },
+    "9a06d19c-5be6-4648-99ad-3bd9067d9565": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792763189556,
+      "endedAt": 1792763189556,
+      "files": {
+        "compositions/s3-hotel.html": {
+          "before": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/15/155a4a0bad4cc5e34a5352c22e24a429b0fe7ace2784f3158a45f6c700d4f823",
+          "after": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/be/be00a8a7f24f932ca386299f2e3273dd608a603eb4feed43b4e0fc2cff053c03"
+        }
+      }
+    },
+    "71b405d8-ea74-48ba-8333-bcb4256d4fa5": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792763242947,
+      "endedAt": 1792763242954,
+      "files": {
+        "compositions/s1-hook.html": {
+          "before": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/38/38bb1ad91c1bbbd87cef96960cbab2fba226d7ef7c00f8b8f67fd4959ae74dfa",
+          "after": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/1d/1dba830a903f002c0e713cc072b62f161d2a6b9a1ed25f7267d58d914915a3af"
+        },
+        "compositions/s2-offer.html": {
+          "before": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/81/81df6c2530ad8bc53d81fd0dbd1144321e8bc8009b963ce3bcc5f6e9b3febaf1",
+          "after": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/0a/0adfd32857734377c7f9d3a2dcba594d514656a543a84256c6b0d218fe16ae3f"
+        },
+        "compositions/s3-hotel.html": {
+          "before": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/be/be00a8a7f24f932ca386299f2e3273dd608a603eb4feed43b4e0fc2cff053c03",
+          "after": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/b2/b27ca0eeea7db8ddd8335f2025b74aa5a7f736b4e68c76f240ee3dbd6e7f88c0"
+        },
+        "compositions/s6-final.html": {
+          "before": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/a2/a21b117924b491cf077fd2aab2a9d18147f5875fa613e9d87de23f3fa3e57ff6",
+          "after": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/26/260d229a866dbd0626f3cb7680a902288f55c9e83d88ae95c03dc3277d2803c3"
+        }
+      }
+    },
+    "d30a2378-a958-45ce-808d-1a3b10812af1": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792763271713,
+      "endedAt": 1792763271718,
+      "files": {
+        "compositions/s2-offer.html": {
+          "before": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/0a/0adfd32857734377c7f9d3a2dcba594d514656a543a84256c6b0d218fe16ae3f",
+          "after": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/a5/a5e85d71d90b3ba78bc22be268b6fa8be49218badfb885e0064b983d85e39669"
+        },
+        "compositions/s6-final.html": {
+          "before": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/26/260d229a866dbd0626f3cb7680a902288f55c9e83d88ae95c03dc3277d2803c3",
+          "after": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/be/bece46e91d838bb5887cfef69108af436a8f66cf159058fa4980c965f4f619c8"
+        }
+      }
+    },
+    "14bf9da0-1134-406f-86d7-1b49b421f29d": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792763295376,
+      "endedAt": 1792763295376,
+      "files": {
+        "compositions/s6-final.html": {
+          "before": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/be/bece46e91d838bb5887cfef69108af436a8f66cf159058fa4980c965f4f619c8",
+          "after": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/cf/cf4aa4c0fc918fd558ad39e92462347d2d0bcef57546c686ae677422afe6bcb0"
+        }
+      }
+    },
+    "8bed5ef4-bf4b-403c-ab84-c20f83c56d40": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792763337170,
+      "endedAt": 1792763337170,
+      "files": {
+        "compositions/s6-final.html": {
+          "before": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/cf/cf4aa4c0fc918fd558ad39e92462347d2d0bcef57546c686ae677422afe6bcb0",
+          "after": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/0b/0b0fe114f68ddb3f1401eb5bd7a3e4fa8540d3ce18e2e096b293e79575e62bdd"
+        }
+      }
+    },
+    "70eb497f-5b84-4d94-a817-392cab1c5a60": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792763383117,
+      "endedAt": 1792763383134,
+      "files": {
+        "compositions/fx-bolts.html": {
+          "before": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/5c/5c53fd0d7a80b8c95318aaf3985877ff5509036b7574255dd0addcb43b0f2ed4",
+          "after": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/e0/e008d86c3549f2cd441eeed39369b43e439a61b145f3fe000a1dfc76a06f63e8"
+        },
+        "compositions/s1-hook.html": {
+          "before": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/1d/1dba830a903f002c0e713cc072b62f161d2a6b9a1ed25f7267d58d914915a3af",
+          "after": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/6b/6b01f8f5b379bbddd2408c1558dcdc3c06eeb067288e92341a2284f4ce2522a5"
+        },
+        "compositions/s2-offer.html": {
+          "before": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/a5/a5e85d71d90b3ba78bc22be268b6fa8be49218badfb885e0064b983d85e39669",
+          "after": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/fa/fa7d8ea77d15e97b781c04a6393a6d7b7c8809e8065c0ef6d5327d2cc3b80ab6"
+        },
+        "compositions/s3-hotel.html": {
+          "before": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/b2/b27ca0eeea7db8ddd8335f2025b74aa5a7f736b4e68c76f240ee3dbd6e7f88c0",
+          "after": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/2c/2c453dc596aecb6f16a778b46333f05490d4191205160c4c892e949d4a63cf77"
+        },
+        "compositions/s4-experience.html": {
+          "before": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/43/435e0549c955e995d6292d079b284f089a59d3ef2d74a609f959802dc558ce68",
+          "after": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/a1/a10499d172fa15aeeb8b1262b10c4f9f5a5685befa93248dc995fb42523f2efa"
+        },
+        "compositions/s5-dates.html": {
+          "before": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/04/0426ac2bc1745b966566767502628ae2c202dbb3b3d1933d6447a8b12dfbfed5",
+          "after": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/eb/ebf60e9a4bbad3cf304a98cb7c9c800a1414cacd26d9f60f266829504d50a4b6"
+        },
+        "compositions/s6-final.html": {
+          "before": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/0b/0b0fe114f68ddb3f1401eb5bd7a3e4fa8540d3ce18e2e096b293e79575e62bdd",
+          "after": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/92/92ab2bcb8cc2462ed3418b864ce91cc76626025358c4c7cbe3a3222ede4acdce"
+        },
+        "index.html": {
+          "before": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/5f/5f1bfdbbcdea000901c0ba1e93877cf5c672c69373f420cdc503c8ff41d4c073",
+          "after": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/b8/b8f4b8e7f4564d8fb56771d7eb86c3f5a15f197fee17932415ade26988adbebe"
+        }
+      }
+    },
+    "d2151f81-6136-4e10-ad57-6a7c29b9eb64": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792763398505,
+      "endedAt": 1792763400805,
+      "files": {
+        "STORYBOARD.md": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/1c/1cec96c99deaa9d6748a4bfea6fcd6ccef5c0179973063e0b8e8fb000f44aa6c"
+        }
+      }
+    },
+    "55033cd0-709e-49e5-ae87-ba8f2a1bf0d9": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792763629226,
+      "endedAt": 1792763631226,
+      "files": {
+        "compositions/s2-offer.html": {
+          "before": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/fa/fa7d8ea77d15e97b781c04a6393a6d7b7c8809e8065c0ef6d5327d2cc3b80ab6",
+          "after": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/55/557bceac4bb451cdfe8c88d901def1eecc9451dfd2559366617adc2a49d3eaf1"
+        }
+      }
+    },
+    "ede6f513-1949-42b9-bcf3-470c00aa7de3": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792763794734,
+      "endedAt": 1792763796736,
+      "files": {
+        "assets/audio/narracao.mp3": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/a7/a7f98fedd7af0cb768ea7b7819cd547fed01aec250efe72530b72a925a089565"
+        }
+      }
+    },
+    "51e1fe9a-ff65-420f-bcf0-ce74e97abe7e": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792763862215,
+      "endedAt": 1792763864217,
+      "files": {
+        "assets/audio/transcript.json": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/f9/f90249a63a43dc8c90d3d4179aee1547f91b9ea4d3423cc9c297284b5f7b1541"
+        }
+      }
+    },
+    "ce19af52-d1a9-4be6-80dd-b61939211a44": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792763996447,
+      "endedAt": 1792763998856,
+      "files": {
+        "assets/audio/trilha-30s-v2.wav": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/0d/0d6ba2732492d326a6ca35c59f1fb3b192a244bc64d3afe02c852aace6db4a10"
+        },
+        "index.html": {
+          "before": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/b8/b8f4b8e7f4564d8fb56771d7eb86c3f5a15f197fee17932415ade26988adbebe",
+          "after": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/1e/1e4c9309bee26d0508b4e7414d3b04e2a25224b5fe6ed8c9face5b5fcaf33e8e"
+        }
+      }
+    },
+    "5ae6bc31-b2bf-4dd8-935b-0d9531653113": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792764035190,
+      "endedAt": 1792764037201,
+      "files": {
+        "compositions/s2-offer.html": {
+          "before": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/55/557bceac4bb451cdfe8c88d901def1eecc9451dfd2559366617adc2a49d3eaf1",
+          "after": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/90/901dee713a0f38de42dcf284177599880f1030959d6f3154ef7b0fabddb5b11b"
+        },
+        "compositions/s3-hotel.html": {
+          "before": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/2c/2c453dc596aecb6f16a778b46333f05490d4191205160c4c892e949d4a63cf77",
+          "after": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/31/316aaa9ba416d7f034658eac0da59b500885469623419d34a9f32bb6d1297560"
+        },
+        "compositions/s4-experience.html": {
+          "before": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/a1/a10499d172fa15aeeb8b1262b10c4f9f5a5685befa93248dc995fb42523f2efa",
+          "after": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/fa/fa7cd41d00c966434e7ef6a6433b851ef3969f751d2eebddde3f05b28cc963cd"
+        },
+        "compositions/s5-dates.html": {
+          "before": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/eb/ebf60e9a4bbad3cf304a98cb7c9c800a1414cacd26d9f60f266829504d50a4b6",
+          "after": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/bb/bb22f08541acdf68b44bc4d5b0fdcaafc459683a0a4e4e10188170a1c79bce65"
+        },
+        "index.html": {
+          "before": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/1e/1e4c9309bee26d0508b4e7414d3b04e2a25224b5fe6ed8c9face5b5fcaf33e8e",
+          "after": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/eb/ebec86b14ef2814d8c921793fb2b6e04871e8feec6329a1be8152abb103897b7"
+        }
+      }
+    },
+    "a7ab665e-041a-407c-931b-ea3cbb4de113": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792764049157,
+      "endedAt": 1792764051157,
+      "files": {
+        "compositions/fx-bolts.html": {
+          "before": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/e0/e008d86c3549f2cd441eeed39369b43e439a61b145f3fe000a1dfc76a06f63e8",
+          "after": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/fd/fdcfba151e710f8959b210910bb0ae1f0ddb51de362da687d5e1ea07e679b4ba"
+        },
+        "compositions/s6-final.html": {
+          "before": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/92/92ab2bcb8cc2462ed3418b864ce91cc76626025358c4c7cbe3a3222ede4acdce",
+          "after": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/54/54517fbb640d0b467fd9813f9b7c341ef9555bfd39d4237913658881bb8f6838"
+        }
+      }
+    },
+    "e2a83a09-8c4e-451f-861f-2e34a2b102a1": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792764078570,
+      "endedAt": 1792764080571,
+      "files": {
+        "index.html": {
+          "before": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/eb/ebec86b14ef2814d8c921793fb2b6e04871e8feec6329a1be8152abb103897b7",
+          "after": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/ef/ef56c91bb8252d1964c605e5f5a14da1dee5885e3cc6ef0e452d9b2afb641eea"
+        }
+      }
+    },
+    "61e9c149-ed10-4f9d-96db-cd1900b59a0a": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792764177683,
+      "endedAt": 1792764179684,
+      "files": {
+        "compositions/s4-experience.html": {
+          "before": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/fa/fa7cd41d00c966434e7ef6a6433b851ef3969f751d2eebddde3f05b28cc963cd",
+          "after": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/dd/dd2045d695f24b7a03da3e97438a1eec03f3b58a7e66b68d3350268e1d63cb9a"
+        }
+      }
+    },
+    "4cb7b076-6484-4279-aa6a-e9badfe4da80": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792764200560,
+      "endedAt": 1792764202560,
+      "files": {
+        "assets/audio/narracao-v2.mp3": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/85/85f41dd5787b3ca44826840dc4a8017d7ae9963406cc1235e6024e7c716dc608"
+        }
+      }
+    },
+    "e62a1763-a06d-40f3-afdd-272838bdac0d": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792764219777,
+      "endedAt": 1792764221777,
+      "files": {
+        "assets/audio/transcript.json": {
+          "before": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/f9/f90249a63a43dc8c90d3d4179aee1547f91b9ea4d3423cc9c297284b5f7b1541",
+          "after": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/25/253ebdd06df16c2efbbfb3cc6477845bf3b658b590b5413a9d3e259652605b65"
+        }
+      }
+    },
+    "d7ba0320-3512-4eca-988f-1c26f05022b7": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792764281641,
+      "endedAt": 1792764283642,
+      "files": {
+        "assets/audio/narracao-v2.mp3": {
+          "before": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/85/85f41dd5787b3ca44826840dc4a8017d7ae9963406cc1235e6024e7c716dc608",
+          "after": null
+        },
+        "assets/audio/transcript.json": {
+          "before": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/25/253ebdd06df16c2efbbfb3cc6477845bf3b658b590b5413a9d3e259652605b65",
+          "after": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/f9/f90249a63a43dc8c90d3d4179aee1547f91b9ea4d3423cc9c297284b5f7b1541"
+        }
+      }
+    },
+    "211f3b06-719e-4407-a8fc-370a063d70dd": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792764676857,
+      "endedAt": 1792764678858,
+      "files": {
+        "index.html": {
+          "before": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/ef/ef56c91bb8252d1964c605e5f5a14da1dee5885e3cc6ef0e452d9b2afb641eea",
+          "after": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/78/788d657b5104835d24b95b6ab7667818d087c1a2a7cebbd81ae9f304006deedd"
+        }
+      }
+    },
+    "b5c5c3e0-d017-41e3-9b4e-cf9e97822ad3": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792764897538,
+      "endedAt": 1792764899539,
+      "files": {
+        "index.html": {
+          "before": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/78/788d657b5104835d24b95b6ab7667818d087c1a2a7cebbd81ae9f304006deedd",
+          "after": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/d5/d5eb0fcd1db65ae36e8abbe0d836d52dca5a210238a8b7283d54fa169ca1a932"
+        }
+      }
+    },
+    "57cd8ec4-4b6c-43ba-b0df-7a6a551e8542": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792765074717,
+      "endedAt": 1792765076718,
+      "files": {
+        "index.html": {
+          "before": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/d5/d5eb0fcd1db65ae36e8abbe0d836d52dca5a210238a8b7283d54fa169ca1a932",
+          "after": "/root/.cache/hyperframes/history/5bdf0d6f-2062-4582-8827-85ca94d178da/blobs/9d/9d63cbf122aa81836c4408b44a34d4c32e83758f302496352324ed190c228ff4"
+        }
+      }
+    }
+  },
+  "checks": {
+    "latest": {
+      "revision": "b5c5c3e0-d017-41e3-9b4e-cf9e97822ad3",
+      "id": "bfccc2bc-8f58-4499-b8da-998c105cfc00"
+    },
+    "revisions": {
+      "9a06d19c-5be6-4648-99ad-3bd9067d9565": [
+        {
+          "id": "3ead9c9e-275d-4572-a687-4c3f3eb341d1",
+          "scope": "project",
+          "metadata": {
+            "ok": false,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 3000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1792763189656,
+          "contentHash": "7daaca151721ed0c22ffa9318e096034bb52ee223b3c5a629ef2ee69b6a73daf",
+          "revision": "9a06d19c-5be6-4648-99ad-3bd9067d9565",
+          "inputFingerprint": "e4809dfc58e4c0b9464d114248e7045be33da376e2c552ebb3e5bcb2013825a7",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "a3a784ea-1f3f-4757-8ec5-1055b5dfe94e"
+        },
+        {
+          "id": "9dd43f0c-425d-405e-b100-35cfd6e4ac91",
+          "scope": "project",
+          "metadata": {
+            "ok": false,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 3000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1792763207396,
+          "contentHash": "7daaca151721ed0c22ffa9318e096034bb52ee223b3c5a629ef2ee69b6a73daf",
+          "revision": "9a06d19c-5be6-4648-99ad-3bd9067d9565",
+          "inputFingerprint": "e4809dfc58e4c0b9464d114248e7045be33da376e2c552ebb3e5bcb2013825a7",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "a3a784ea-1f3f-4757-8ec5-1055b5dfe94e"
+        }
+      ],
+      "71b405d8-ea74-48ba-8333-bcb4256d4fa5": [
+        {
+          "id": "271d1afa-b1f7-4414-a14a-03be9401c151",
+          "scope": "project",
+          "metadata": {
+            "ok": false,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 3000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1792763243036,
+          "contentHash": "325a3f7cd830aedd19489611b28d6df9181c1a652e7854479ec45f94b58d5896",
+          "revision": "71b405d8-ea74-48ba-8333-bcb4256d4fa5",
+          "inputFingerprint": "153f9cc029b2c13f8968e809d4b9ae19bd393adca886abae21f9efeed212e656",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "a3a784ea-1f3f-4757-8ec5-1055b5dfe94e"
+        }
+      ],
+      "d30a2378-a958-45ce-808d-1a3b10812af1": [
+        {
+          "id": "1b5e6206-2455-4638-950e-3b97ecc1e928",
+          "scope": "project",
+          "metadata": {
+            "ok": false,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 3000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1792763271816,
+          "contentHash": "bb875e0ed45a2c648a367f39998c021bbcf60e62a9d0d7f7eb55c8e73d2743df",
+          "revision": "d30a2378-a958-45ce-808d-1a3b10812af1",
+          "inputFingerprint": "d19bb07c20ec81ca543f9358f8772f20e1e209d583104716e482a3f25870cbb1",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "a3a784ea-1f3f-4757-8ec5-1055b5dfe94e"
+        }
+      ],
+      "14bf9da0-1134-406f-86d7-1b49b421f29d": [
+        {
+          "id": "186fe7c8-dac8-4c5e-87d6-4a564bf3e842",
+          "scope": "project",
+          "metadata": {
+            "ok": false,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 3000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1792763313260,
+          "contentHash": "bb875e0ed45a2c648a367f39998c021bbcf60e62a9d0d7f7eb55c8e73d2743df",
+          "revision": "14bf9da0-1134-406f-86d7-1b49b421f29d",
+          "inputFingerprint": "de1f39013fee67422acf0804bf08deaac2e98d8f65e9768d3fb410e38ce499c8",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "a3a784ea-1f3f-4757-8ec5-1055b5dfe94e"
+        }
+      ],
+      "8bed5ef4-bf4b-403c-ab84-c20f83c56d40": [
+        {
+          "id": "6dc5014d-73fd-4af7-8647-46af4c1b9afa",
+          "scope": "project",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 3000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1792763337311,
+          "contentHash": "270becfb600c057eab7cded50f73524bc30806c9fbccb6a69a85943ad3a5e127",
+          "revision": "8bed5ef4-bf4b-403c-ab84-c20f83c56d40",
+          "inputFingerprint": "ca871951e410aace88affe60f927a778dfc44d76756a713630703c126115937c",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "a3a784ea-1f3f-4757-8ec5-1055b5dfe94e"
+        }
+      ],
+      "55033cd0-709e-49e5-ae87-ba8f2a1bf0d9": [
+        {
+          "id": "cb07a441-9a2f-4016-ae2e-41f944c5117d",
+          "scope": "project",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 3000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1792763650883,
+          "contentHash": "14872610040149a44ad44a1088ce3ea511e3164c172a6fa22d04b1e73248927b",
+          "revision": "55033cd0-709e-49e5-ae87-ba8f2a1bf0d9",
+          "inputFingerprint": "36e4699eb3587593734535343ade14fa603cb5981e3f115f291e11639196d99b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "a3a784ea-1f3f-4757-8ec5-1055b5dfe94e"
+        }
+      ],
+      "e2a83a09-8c4e-451f-861f-2e34a2b102a1": [
+        {
+          "id": "e3d162f2-d549-4c75-9942-fbf9a22266eb",
+          "scope": "project",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 3000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1792764099274,
+          "contentHash": "df29f876c93e9eea6a107ca2831d97f7268024d44414b743d3d113aba858ed46",
+          "revision": "e2a83a09-8c4e-451f-861f-2e34a2b102a1",
+          "inputFingerprint": "1257d41d7ed8a68e2357ec7de82e53e2be6457e6e9ddb7c2cb5b285970495f99",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "a3a784ea-1f3f-4757-8ec5-1055b5dfe94e"
+        }
+      ],
+      "61e9c149-ed10-4f9d-96db-cd1900b59a0a": [
+        {
+          "id": "c3eb2a50-b6ff-4c13-ab08-961ecc769382",
+          "scope": "project",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 3000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1792764199303,
+          "contentHash": "df29f876c93e9eea6a107ca2831d97f7268024d44414b743d3d113aba858ed46",
+          "revision": "61e9c149-ed10-4f9d-96db-cd1900b59a0a",
+          "inputFingerprint": "73b4a203b0c3d5050693c50f8fe9172ecf07266caefcb359cb6e63c3da689a8c",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "a3a784ea-1f3f-4757-8ec5-1055b5dfe94e"
+        }
+      ],
+      "211f3b06-719e-4407-a8fc-370a063d70dd": [
+        {
+          "id": "ac7b2bb8-208a-4793-9615-14d4bfbdffd5",
+          "scope": "project",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 3000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1792764683069,
+          "contentHash": "df29f876c93e9eea6a107ca2831d97f7268024d44414b743d3d113aba858ed46",
+          "revision": "211f3b06-719e-4407-a8fc-370a063d70dd",
+          "inputFingerprint": "da78fe19b905513d10e4a0455cf504e19dd30ea78af8a2e723831666cc371f5b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "55ffd4cb-f7fe-4f4b-8286-2a9eaebe1aa5"
+        }
+      ],
+      "b5c5c3e0-d017-41e3-9b4e-cf9e97822ad3": [
+        {
+          "id": "bfccc2bc-8f58-4499-b8da-998c105cfc00",
+          "scope": "project",
+          "report": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/artifacts/checks/bfccc2bc-8f58-4499-b8da-998c105cfc00.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 3000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1792764913673,
+          "contentHash": "df29f876c93e9eea6a107ca2831d97f7268024d44414b743d3d113aba858ed46",
+          "revision": "b5c5c3e0-d017-41e3-9b4e-cf9e97822ad3",
+          "inputFingerprint": "d397ebe1bde19f24f8f9f54bbeeb5680d2fa056da2f22cc73e6c86862e058350",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ]
+    },
+    "unversioned": []
+  },
+  "snapshots": {
+    "latest": {
+      "revision": "61e9c149-ed10-4f9d-96db-cd1900b59a0a",
+      "id": "0fe35ef8-da9a-4b35-8135-e3debc90c835-1"
+    },
+    "revisions": {
+      "60961c18-16fa-42be-9f68-ef95cf19d5dd": [
+        {
+          "scope": "full",
+          "id": "5ceb0c3a-8040-4680-9885-aac29a9626b0-0",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/snap2/frame-00-at-0.6s.png",
+          "time": 0.6,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792763160665,
+          "contentHash": "34b5468e8013a5d877342029be54fe2a34dabb45cc5a76042add22382e664e0a",
+          "revision": "60961c18-16fa-42be-9f68-ef95cf19d5dd",
+          "inputFingerprint": "3aa76e663539850c305743ac899cab6c4c5cda5574377337328b045d43ced625",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "5ceb0c3a-8040-4680-9885-aac29a9626b0-1",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/snap2/frame-01-at-2.8s.png",
+          "time": 2.8,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792763160666,
+          "contentHash": "6520217672e4d85aa4d47fa71f4539aac7c101b1c11aefa14b157825b631f792",
+          "revision": "60961c18-16fa-42be-9f68-ef95cf19d5dd",
+          "inputFingerprint": "3aa76e663539850c305743ac899cab6c4c5cda5574377337328b045d43ced625",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "5ceb0c3a-8040-4680-9885-aac29a9626b0-2",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/snap2/frame-02-at-2.93s.png",
+          "time": 2.93,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792763160666,
+          "contentHash": "2bd4ccb5ab7e4e53aa8f72f38a4cf93aed8a2f56b9971854854bdca472a49bc7",
+          "revision": "60961c18-16fa-42be-9f68-ef95cf19d5dd",
+          "inputFingerprint": "3aa76e663539850c305743ac899cab6c4c5cda5574377337328b045d43ced625",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "5ceb0c3a-8040-4680-9885-aac29a9626b0-3",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/snap2/frame-03-at-3.3s.png",
+          "time": 3.3,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792763160666,
+          "contentHash": "0f0bcc68ff11486522978e14aa4b8b95cfbba89aacd8f9667c5fea34993fe552",
+          "revision": "60961c18-16fa-42be-9f68-ef95cf19d5dd",
+          "inputFingerprint": "3aa76e663539850c305743ac899cab6c4c5cda5574377337328b045d43ced625",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "5ceb0c3a-8040-4680-9885-aac29a9626b0-4",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/snap2/frame-04-at-6.75s.png",
+          "time": 6.75,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792763160666,
+          "contentHash": "303b9fad57745db75ed5e34f33bd7810a29b7c3f3c4cbb8df5633b4bc9fd300c",
+          "revision": "60961c18-16fa-42be-9f68-ef95cf19d5dd",
+          "inputFingerprint": "3aa76e663539850c305743ac899cab6c4c5cda5574377337328b045d43ced625",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "5ceb0c3a-8040-4680-9885-aac29a9626b0-5",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/snap2/frame-05-at-6.83s.png",
+          "time": 6.83,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792763160666,
+          "contentHash": "a480b9b443829766a0adb846582f7b8ad8919bdb75a2b353c53ed9d6a93b670b",
+          "revision": "60961c18-16fa-42be-9f68-ef95cf19d5dd",
+          "inputFingerprint": "3aa76e663539850c305743ac899cab6c4c5cda5574377337328b045d43ced625",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "5ceb0c3a-8040-4680-9885-aac29a9626b0-6",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/snap2/frame-06-at-7.25s.png",
+          "time": 7.25,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792763160666,
+          "contentHash": "1a59b38b0b418a5369cebaa341b47dcec5c0175c1b5fa1389d85d08ae0e4553f",
+          "revision": "60961c18-16fa-42be-9f68-ef95cf19d5dd",
+          "inputFingerprint": "3aa76e663539850c305743ac899cab6c4c5cda5574377337328b045d43ced625",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "5ceb0c3a-8040-4680-9885-aac29a9626b0-7",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/snap2/frame-07-at-7.6s.png",
+          "time": 7.6,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792763160666,
+          "contentHash": "6271f24451c642e37be5ea068797e86294828a19886eeb5693adff75dd638be6",
+          "revision": "60961c18-16fa-42be-9f68-ef95cf19d5dd",
+          "inputFingerprint": "3aa76e663539850c305743ac899cab6c4c5cda5574377337328b045d43ced625",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "5ceb0c3a-8040-4680-9885-aac29a9626b0-8",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/snap2/frame-08-at-8s.png",
+          "time": 8,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792763160666,
+          "contentHash": "3fbe0c63373b55bb54b3864d9002f1035f36b6e4f19fda769133b6278aaf8dd9",
+          "revision": "60961c18-16fa-42be-9f68-ef95cf19d5dd",
+          "inputFingerprint": "3aa76e663539850c305743ac899cab6c4c5cda5574377337328b045d43ced625",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "5ceb0c3a-8040-4680-9885-aac29a9626b0-9",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/snap2/frame-09-at-11.62s.png",
+          "time": 11.62,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792763160666,
+          "contentHash": "8a7aa5cf2d09fb741a5aee10113e3ff09af9e52e07a1468f21efd5aa1e8bd28f",
+          "revision": "60961c18-16fa-42be-9f68-ef95cf19d5dd",
+          "inputFingerprint": "3aa76e663539850c305743ac899cab6c4c5cda5574377337328b045d43ced625",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "5ceb0c3a-8040-4680-9885-aac29a9626b0-10",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/snap2/frame-10-at-11.75s.png",
+          "time": 11.75,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792763160666,
+          "contentHash": "02ea6740ab8b1006e3bde0219bfa97e43c57648aff77301e8892ed65153ab3b6",
+          "revision": "60961c18-16fa-42be-9f68-ef95cf19d5dd",
+          "inputFingerprint": "3aa76e663539850c305743ac899cab6c4c5cda5574377337328b045d43ced625",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "5ceb0c3a-8040-4680-9885-aac29a9626b0-11",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/snap2/frame-11-at-19.35s.png",
+          "time": 19.35,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792763160666,
+          "contentHash": "40951058d7779dc2f021d5b436212701e29c6b7ee0fdbff6ec5eeba7a1fd54dd",
+          "revision": "60961c18-16fa-42be-9f68-ef95cf19d5dd",
+          "inputFingerprint": "3aa76e663539850c305743ac899cab6c4c5cda5574377337328b045d43ced625",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "5ceb0c3a-8040-4680-9885-aac29a9626b0-12",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/snap2/frame-12-at-19.48s.png",
+          "time": 19.48,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792763160666,
+          "contentHash": "b450d072df093bc95c6cbf94fbad26d0904475296238f9b3285d73a830f9de63",
+          "revision": "60961c18-16fa-42be-9f68-ef95cf19d5dd",
+          "inputFingerprint": "3aa76e663539850c305743ac899cab6c4c5cda5574377337328b045d43ced625",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "5ceb0c3a-8040-4680-9885-aac29a9626b0-13",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/snap2/frame-13-at-24.22s.png",
+          "time": 24.22,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792763160666,
+          "contentHash": "76a46fdb53d901b537a0634a1b54893f05eac4ea93e95b6f849d962782440fba",
+          "revision": "60961c18-16fa-42be-9f68-ef95cf19d5dd",
+          "inputFingerprint": "3aa76e663539850c305743ac899cab6c4c5cda5574377337328b045d43ced625",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "5ceb0c3a-8040-4680-9885-aac29a9626b0-14",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/snap2/frame-14-at-24.32s.png",
+          "time": 24.32,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792763160666,
+          "contentHash": "12cda62b643b4f5e6a4ed1a62a355707d8e2217f579c58c94843a602267cfa24",
+          "revision": "60961c18-16fa-42be-9f68-ef95cf19d5dd",
+          "inputFingerprint": "3aa76e663539850c305743ac899cab6c4c5cda5574377337328b045d43ced625",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "5ceb0c3a-8040-4680-9885-aac29a9626b0-15",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/snap2/frame-15-at-26s.png",
+          "time": 26,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792763160666,
+          "contentHash": "5f89c8e53d17194a347df3a08a0fbe06cfe5669b9e14431e2adc206272844faa",
+          "revision": "60961c18-16fa-42be-9f68-ef95cf19d5dd",
+          "inputFingerprint": "3aa76e663539850c305743ac899cab6c4c5cda5574377337328b045d43ced625",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "5ceb0c3a-8040-4680-9885-aac29a9626b0-16",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/snap2/frame-16-at-29.9s.png",
+          "time": 29.9,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792763160666,
+          "contentHash": "7c3585d3d337356087381ad753cebee0038447ee858faaf85c963f618279afe1",
+          "revision": "60961c18-16fa-42be-9f68-ef95cf19d5dd",
+          "inputFingerprint": "3aa76e663539850c305743ac899cab6c4c5cda5574377337328b045d43ced625",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "14bf9da0-1134-406f-86d7-1b49b421f29d": [
+        {
+          "scope": "full",
+          "id": "504545cf-efb2-4109-8407-6645cf9eb4de-0",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/snap3/frame-00-at-4.6s.png",
+          "time": 4.6,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792763300129,
+          "contentHash": "585b54ed6f580215afca38b4086dc2876091a7600dcacc859e729197e3e01c1d",
+          "revision": "14bf9da0-1134-406f-86d7-1b49b421f29d",
+          "inputFingerprint": "de1f39013fee67422acf0804bf08deaac2e98d8f65e9768d3fb410e38ce499c8",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "504545cf-efb2-4109-8407-6645cf9eb4de-1",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/snap3/frame-01-at-9s.png",
+          "time": 9,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792763300130,
+          "contentHash": "2d8735d8e55e5c9607bdf969dc0107db00a753e98d6f1daf49688bacb5a06364",
+          "revision": "14bf9da0-1134-406f-86d7-1b49b421f29d",
+          "inputFingerprint": "de1f39013fee67422acf0804bf08deaac2e98d8f65e9768d3fb410e38ce499c8",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "504545cf-efb2-4109-8407-6645cf9eb4de-2",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/snap3/frame-02-at-13.3s.png",
+          "time": 13.3,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792763300130,
+          "contentHash": "1f2ebd0f675c47a78903e42a4293de5000186f6ce11e50ec71db7fd3e76024a5",
+          "revision": "14bf9da0-1134-406f-86d7-1b49b421f29d",
+          "inputFingerprint": "de1f39013fee67422acf0804bf08deaac2e98d8f65e9768d3fb410e38ce499c8",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "504545cf-efb2-4109-8407-6645cf9eb4de-3",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/snap3/frame-03-at-22.5s.png",
+          "time": 22.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792763300130,
+          "contentHash": "b4e9f092a79ffac5f10512e3ec7ae1a0efa97bd1f877b7fb943f516d1f71e943",
+          "revision": "14bf9da0-1134-406f-86d7-1b49b421f29d",
+          "inputFingerprint": "de1f39013fee67422acf0804bf08deaac2e98d8f65e9768d3fb410e38ce499c8",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "504545cf-efb2-4109-8407-6645cf9eb4de-4",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/snap3/frame-04-at-28s.png",
+          "time": 28,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792763300130,
+          "contentHash": "9eb56ac8274235b8f36f9fe2fc8e55f491a89e21e52acf67f410d4141bb04795",
+          "revision": "14bf9da0-1134-406f-86d7-1b49b421f29d",
+          "inputFingerprint": "de1f39013fee67422acf0804bf08deaac2e98d8f65e9768d3fb410e38ce499c8",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "d2151f81-6136-4e10-ad57-6a7c29b9eb64": [],
+      "55033cd0-709e-49e5-ae87-ba8f2a1bf0d9": [
+        {
+          "scope": "full",
+          "id": "0697a02b-8bbd-47e0-8406-a66bef1076f5-0",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/snap4/frame-00-at-4.3s.png",
+          "time": 4.3,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792763635598,
+          "contentHash": "9d651f664c207dbbbd28c5110be853a57a7f9ce9147c42b7c225386e9f1ccd42",
+          "revision": "55033cd0-709e-49e5-ae87-ba8f2a1bf0d9",
+          "inputFingerprint": "36e4699eb3587593734535343ade14fa603cb5981e3f115f291e11639196d99b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "0697a02b-8bbd-47e0-8406-a66bef1076f5-1",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/snap4/frame-01-at-5.9s.png",
+          "time": 5.9,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792763635599,
+          "contentHash": "2f4eb7f23163b12d8cc704b911c02b38062ec7116631e0cd5f6ad6e92bba4ea6",
+          "revision": "55033cd0-709e-49e5-ae87-ba8f2a1bf0d9",
+          "inputFingerprint": "36e4699eb3587593734535343ade14fa603cb5981e3f115f291e11639196d99b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "0697a02b-8bbd-47e0-8406-a66bef1076f5-2",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/snap4/frame-02-at-6.5s.png",
+          "time": 6.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792763635599,
+          "contentHash": "28a894bdf7b65dc31e44798700a5ad26945e42ffabdb49b44da7a7e33ea52cc1",
+          "revision": "55033cd0-709e-49e5-ae87-ba8f2a1bf0d9",
+          "inputFingerprint": "36e4699eb3587593734535343ade14fa603cb5981e3f115f291e11639196d99b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "e2a83a09-8c4e-451f-861f-2e34a2b102a1": [
+        {
+          "scope": "full",
+          "id": "29ea30da-c81b-4b18-89ed-cd9cca9a3da4-0",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/snap5/frame-00-at-4s.png",
+          "time": 4,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792764110848,
+          "contentHash": "b382ee14aa634b8d9f82459ce03f0bf903900b51e14db9e0bb13d1d8d3e7efb4",
+          "revision": "e2a83a09-8c4e-451f-861f-2e34a2b102a1",
+          "inputFingerprint": "1257d41d7ed8a68e2357ec7de82e53e2be6457e6e9ddb7c2cb5b285970495f99",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "29ea30da-c81b-4b18-89ed-cd9cca9a3da4-1",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/snap5/frame-01-at-5.1s.png",
+          "time": 5.1,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792764110848,
+          "contentHash": "be94d5484b040b38d7d1732a210b32c024eb6d405683b4cc33d078c58f6bc2c5",
+          "revision": "e2a83a09-8c4e-451f-861f-2e34a2b102a1",
+          "inputFingerprint": "1257d41d7ed8a68e2357ec7de82e53e2be6457e6e9ddb7c2cb5b285970495f99",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "29ea30da-c81b-4b18-89ed-cd9cca9a3da4-2",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/snap5/frame-02-at-7.6s.png",
+          "time": 7.6,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792764110848,
+          "contentHash": "28b0775f269c9e637bbaaae82ec8469d84c881d43f96c9c39fe800cdbd19d11e",
+          "revision": "e2a83a09-8c4e-451f-861f-2e34a2b102a1",
+          "inputFingerprint": "1257d41d7ed8a68e2357ec7de82e53e2be6457e6e9ddb7c2cb5b285970495f99",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "29ea30da-c81b-4b18-89ed-cd9cca9a3da4-3",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/snap5/frame-03-at-9.5s.png",
+          "time": 9.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792764110848,
+          "contentHash": "60a5529d990fdebb3bbd298eb7302fb05df75da28da60eec52e39f1dd0897a50",
+          "revision": "e2a83a09-8c4e-451f-861f-2e34a2b102a1",
+          "inputFingerprint": "1257d41d7ed8a68e2357ec7de82e53e2be6457e6e9ddb7c2cb5b285970495f99",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "29ea30da-c81b-4b18-89ed-cd9cca9a3da4-4",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/snap5/frame-04-at-10.9s.png",
+          "time": 10.9,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792764110848,
+          "contentHash": "5215a2e0dc57b7fd87e947cbff4391251db4d625dcbbe1e7e2e884805fff8d4e",
+          "revision": "e2a83a09-8c4e-451f-861f-2e34a2b102a1",
+          "inputFingerprint": "1257d41d7ed8a68e2357ec7de82e53e2be6457e6e9ddb7c2cb5b285970495f99",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "29ea30da-c81b-4b18-89ed-cd9cca9a3da4-5",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/snap5/frame-05-at-13.4s.png",
+          "time": 13.4,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792764110848,
+          "contentHash": "721387fb54986664cf6a8eb1351ce3c393a9797f6ac80ef5d607b5401cd0c4cb",
+          "revision": "e2a83a09-8c4e-451f-861f-2e34a2b102a1",
+          "inputFingerprint": "1257d41d7ed8a68e2357ec7de82e53e2be6457e6e9ddb7c2cb5b285970495f99",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "29ea30da-c81b-4b18-89ed-cd9cca9a3da4-6",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/snap5/frame-06-at-16.2s.png",
+          "time": 16.2,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792764110848,
+          "contentHash": "1b40040d82b5be8ef94d34d55e6f9e4bf56f25dbe9a5df40395eaeb548839bc8",
+          "revision": "e2a83a09-8c4e-451f-861f-2e34a2b102a1",
+          "inputFingerprint": "1257d41d7ed8a68e2357ec7de82e53e2be6457e6e9ddb7c2cb5b285970495f99",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "29ea30da-c81b-4b18-89ed-cd9cca9a3da4-7",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/snap5/frame-07-at-19.5s.png",
+          "time": 19.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792764110848,
+          "contentHash": "2aca9f0f110054455f30db51a5219cca53b89c6317869f4438ec2baa22da9034",
+          "revision": "e2a83a09-8c4e-451f-861f-2e34a2b102a1",
+          "inputFingerprint": "1257d41d7ed8a68e2357ec7de82e53e2be6457e6e9ddb7c2cb5b285970495f99",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "29ea30da-c81b-4b18-89ed-cd9cca9a3da4-8",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/snap5/frame-08-at-21.6s.png",
+          "time": 21.6,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792764110848,
+          "contentHash": "0fc7b9e9c28d3063da9573b841e526f584e52dd4288df3c15d06da1b01f7fd90",
+          "revision": "e2a83a09-8c4e-451f-861f-2e34a2b102a1",
+          "inputFingerprint": "1257d41d7ed8a68e2357ec7de82e53e2be6457e6e9ddb7c2cb5b285970495f99",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "29ea30da-c81b-4b18-89ed-cd9cca9a3da4-9",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/snap5/frame-09-at-25.6s.png",
+          "time": 25.6,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792764110848,
+          "contentHash": "47d1d1042bbdee9531bd9bca2d8e623b418a16ffbc37bc5058a9838aa54b4c09",
+          "revision": "e2a83a09-8c4e-451f-861f-2e34a2b102a1",
+          "inputFingerprint": "1257d41d7ed8a68e2357ec7de82e53e2be6457e6e9ddb7c2cb5b285970495f99",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "29ea30da-c81b-4b18-89ed-cd9cca9a3da4-10",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/snap5/frame-10-at-28.5s.png",
+          "time": 28.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792764110848,
+          "contentHash": "6b66202ea535a9b86942fd680b49ee8bab637e4d6ecbee3cae477795a25f74fc",
+          "revision": "e2a83a09-8c4e-451f-861f-2e34a2b102a1",
+          "inputFingerprint": "1257d41d7ed8a68e2357ec7de82e53e2be6457e6e9ddb7c2cb5b285970495f99",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "250e9456-6a17-48ca-9eae-8c8813ee7150-0",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/snap6/frame-00-at-12.7s.png",
+          "time": 12.7,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792764138159,
+          "contentHash": "17bffda1f01078483dc4fe68e32eca122897e38dab705c30de1ad34ef53e20bf",
+          "revision": "e2a83a09-8c4e-451f-861f-2e34a2b102a1",
+          "inputFingerprint": "1257d41d7ed8a68e2357ec7de82e53e2be6457e6e9ddb7c2cb5b285970495f99",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "250e9456-6a17-48ca-9eae-8c8813ee7150-1",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/snap6/frame-01-at-13s.png",
+          "time": 13,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792764138159,
+          "contentHash": "39e946be7b935a2a8a9421c1fe1118195dcae88b1c21cc6635273736278daba5",
+          "revision": "e2a83a09-8c4e-451f-861f-2e34a2b102a1",
+          "inputFingerprint": "1257d41d7ed8a68e2357ec7de82e53e2be6457e6e9ddb7c2cb5b285970495f99",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "250e9456-6a17-48ca-9eae-8c8813ee7150-2",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/snap6/frame-02-at-13.3s.png",
+          "time": 13.3,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792764138159,
+          "contentHash": "9b0fae7f16e859b602a533dcbbb0e3fe46cf73c5ff70987012a5a7844efd495c",
+          "revision": "e2a83a09-8c4e-451f-861f-2e34a2b102a1",
+          "inputFingerprint": "1257d41d7ed8a68e2357ec7de82e53e2be6457e6e9ddb7c2cb5b285970495f99",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "250e9456-6a17-48ca-9eae-8c8813ee7150-3",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/snap6/frame-03-at-13.6s.png",
+          "time": 13.6,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792764138159,
+          "contentHash": "37d108965c8009ad612580f877ec3ce76d4bff67bc682a9a84dc37be9b4405cb",
+          "revision": "e2a83a09-8c4e-451f-861f-2e34a2b102a1",
+          "inputFingerprint": "1257d41d7ed8a68e2357ec7de82e53e2be6457e6e9ddb7c2cb5b285970495f99",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "250e9456-6a17-48ca-9eae-8c8813ee7150-4",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/snap6/frame-04-at-13.9s.png",
+          "time": 13.9,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792764138159,
+          "contentHash": "057e8e7811d122dbd4eca548d76f13721b430195dfce594ec37f2151f2479114",
+          "revision": "e2a83a09-8c4e-451f-861f-2e34a2b102a1",
+          "inputFingerprint": "1257d41d7ed8a68e2357ec7de82e53e2be6457e6e9ddb7c2cb5b285970495f99",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "250e9456-6a17-48ca-9eae-8c8813ee7150-5",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/snap6/frame-05-at-14.4s.png",
+          "time": 14.4,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792764138159,
+          "contentHash": "a29da5a244b37a320073726084fb8bfacd930de7b9a971bc1a9a0dd992feebca",
+          "revision": "e2a83a09-8c4e-451f-861f-2e34a2b102a1",
+          "inputFingerprint": "1257d41d7ed8a68e2357ec7de82e53e2be6457e6e9ddb7c2cb5b285970495f99",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "61e9c149-ed10-4f9d-96db-cd1900b59a0a": [
+        {
+          "scope": "full",
+          "id": "0fe35ef8-da9a-4b35-8135-e3debc90c835-0",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/snap7/frame-00-at-12.8s.png",
+          "time": 12.8,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792764183535,
+          "contentHash": "3210b9380b314cbc648b5b1cd051546eaee6c4519e4d1e21a130178c8ce0f008",
+          "revision": "61e9c149-ed10-4f9d-96db-cd1900b59a0a",
+          "inputFingerprint": "73b4a203b0c3d5050693c50f8fe9172ecf07266caefcb359cb6e63c3da689a8c",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "0fe35ef8-da9a-4b35-8135-e3debc90c835-1",
+          "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/snap7/frame-01-at-13.4s.png",
+          "time": 13.4,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792764183535,
+          "contentHash": "2916efac7688529009a3d9276dc9db666564f8a196509901fe217e8daa5d8665",
+          "revision": "61e9c149-ed10-4f9d-96db-cd1900b59a0a",
+          "inputFingerprint": "73b4a203b0c3d5050693c50f8fe9172ecf07266caefcb359cb6e63c3da689a8c",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ]
+    },
+    "unversioned": [
+      {
+        "scope": "full",
+        "id": "492e5a0d-dd7b-4e24-9478-bf9e7848ef07-0",
+        "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/snap1/frame-00-at-0.3s.png",
+        "time": 0.3,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1792763091184,
+        "contentHash": "778ac19c0c951ba8f365d79a5e1faf95fccb387274068777c9151820bf5b0a41",
+        "revision": null,
+        "inputFingerprint": "a97a78569983e6d6b9a1069c469c6a0b6e23b5a7c74ab8bfefc6ac14894fe1f5",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "492e5a0d-dd7b-4e24-9478-bf9e7848ef07-1",
+        "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/snap1/frame-01-at-1s.png",
+        "time": 1,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1792763091184,
+        "contentHash": "74c57e3eed4a620acbde43beaf32b18e08dd2b3533eaf9dbbd81869da9bd515f",
+        "revision": null,
+        "inputFingerprint": "a97a78569983e6d6b9a1069c469c6a0b6e23b5a7c74ab8bfefc6ac14894fe1f5",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "492e5a0d-dd7b-4e24-9478-bf9e7848ef07-2",
+        "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/snap1/frame-02-at-2.2s.png",
+        "time": 2.2,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1792763091184,
+        "contentHash": "1a7c55f176cd1ee127be082c032ff22dd5e572fc461b11f44b7b26386dbaa583",
+        "revision": null,
+        "inputFingerprint": "a97a78569983e6d6b9a1069c469c6a0b6e23b5a7c74ab8bfefc6ac14894fe1f5",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "492e5a0d-dd7b-4e24-9478-bf9e7848ef07-3",
+        "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/snap1/frame-03-at-4s.png",
+        "time": 4,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1792763091184,
+        "contentHash": "faec91d3b41da2fe9ca0aab4bb293d7422a9060015addc0437b1a77b0813f425",
+        "revision": null,
+        "inputFingerprint": "a97a78569983e6d6b9a1069c469c6a0b6e23b5a7c74ab8bfefc6ac14894fe1f5",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "492e5a0d-dd7b-4e24-9478-bf9e7848ef07-4",
+        "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/snap1/frame-04-at-5.9s.png",
+        "time": 5.9,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1792763091184,
+        "contentHash": "a2a928778a5c796f631226f1fabb3877ba8b763a231c39a2fba48a530b234f2f",
+        "revision": null,
+        "inputFingerprint": "a97a78569983e6d6b9a1069c469c6a0b6e23b5a7c74ab8bfefc6ac14894fe1f5",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "492e5a0d-dd7b-4e24-9478-bf9e7848ef07-5",
+        "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/snap1/frame-05-at-7.2s.png",
+        "time": 7.2,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1792763091184,
+        "contentHash": "14e79362522aad27a697ecf1f1e984c66e2465c7c2747239e6423d9f85468e21",
+        "revision": null,
+        "inputFingerprint": "a97a78569983e6d6b9a1069c469c6a0b6e23b5a7c74ab8bfefc6ac14894fe1f5",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "492e5a0d-dd7b-4e24-9478-bf9e7848ef07-6",
+        "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/snap1/frame-06-at-9.5s.png",
+        "time": 9.5,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1792763091184,
+        "contentHash": "8a82f273068d245c74efd8f37d06d54c59892be77d4e2bd4c46bc203bd2bee67",
+        "revision": null,
+        "inputFingerprint": "a97a78569983e6d6b9a1069c469c6a0b6e23b5a7c74ab8bfefc6ac14894fe1f5",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "492e5a0d-dd7b-4e24-9478-bf9e7848ef07-7",
+        "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/snap1/frame-07-at-12.9s.png",
+        "time": 12.9,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1792763091184,
+        "contentHash": "7a5cb9c99b79e98e5d9225c316275199500ee879224864828d24573d6b5d9ac1",
+        "revision": null,
+        "inputFingerprint": "a97a78569983e6d6b9a1069c469c6a0b6e23b5a7c74ab8bfefc6ac14894fe1f5",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "492e5a0d-dd7b-4e24-9478-bf9e7848ef07-8",
+        "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/snap1/frame-08-at-15.5s.png",
+        "time": 15.5,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1792763091184,
+        "contentHash": "cbf4f8c497e351c550b56605af5e24770ef2f61be32573c5d276f8130cfd7e87",
+        "revision": null,
+        "inputFingerprint": "a97a78569983e6d6b9a1069c469c6a0b6e23b5a7c74ab8bfefc6ac14894fe1f5",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "492e5a0d-dd7b-4e24-9478-bf9e7848ef07-9",
+        "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/snap1/frame-09-at-18.5s.png",
+        "time": 18.5,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1792763091184,
+        "contentHash": "fe240891ec324b4454cf4acaa0ed190261c5591ba1bf48750f44690cd1d29ec1",
+        "revision": null,
+        "inputFingerprint": "a97a78569983e6d6b9a1069c469c6a0b6e23b5a7c74ab8bfefc6ac14894fe1f5",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "492e5a0d-dd7b-4e24-9478-bf9e7848ef07-10",
+        "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/snap1/frame-10-at-21.8s.png",
+        "time": 21.8,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1792763091184,
+        "contentHash": "b262005bc562456ab774a11c7512240bf421d995791f43c28f59e4392ced1c36",
+        "revision": null,
+        "inputFingerprint": "a97a78569983e6d6b9a1069c469c6a0b6e23b5a7c74ab8bfefc6ac14894fe1f5",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "492e5a0d-dd7b-4e24-9478-bf9e7848ef07-11",
+        "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/snap1/frame-11-at-24.1s.png",
+        "time": 24.1,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1792763091184,
+        "contentHash": "e5dc2a236e9cf2821f0981a2018df78c938c9543c994b1ec2f8bbd7d5d1df573",
+        "revision": null,
+        "inputFingerprint": "a97a78569983e6d6b9a1069c469c6a0b6e23b5a7c74ab8bfefc6ac14894fe1f5",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "492e5a0d-dd7b-4e24-9478-bf9e7848ef07-12",
+        "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/snap1/frame-12-at-25s.png",
+        "time": 25,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1792763091184,
+        "contentHash": "ec79b65e46652cf01e609757d8d1b72ccd1eb2e9fa63ea8dfd42cec0147a4c98",
+        "revision": null,
+        "inputFingerprint": "a97a78569983e6d6b9a1069c469c6a0b6e23b5a7c74ab8bfefc6ac14894fe1f5",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "492e5a0d-dd7b-4e24-9478-bf9e7848ef07-13",
+        "image": "/home/felipe/orca/tukiviagens-site/videos/wyndham-oferta-relampago/.hyperframes/snap1/frame-13-at-27.5s.png",
+        "time": 27.5,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1792763091184,
+        "contentHash": "572339e45f249015b78c1b127b63bf7237f89014addd206b53660ebb51886e8b",
+        "revision": null,
+        "inputFingerprint": "a97a78569983e6d6b9a1069c469c6a0b6e23b5a7c74ab8bfefc6ac14894fe1f5",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      }
+    ]
+  },
+  "renders": {
+    "latest": {
+      "id": "55ffd4cb-f7fe-4f4b-8286-2a9eaebe1aa5",
+      "completedAt": 1792765134865,
+      "output": "/tmp/claude-0/-home-felipe-orca-tukiviagens-site/2c9421e6-e367-43d1-8d4e-de09c972fdbe/scratchpad/raw-v3.mp4",
+      "status": "completed",
+      "revision": "57cd8ec4-4b6c-43ba-b0df-7a6a551e8542"
+    },
+    "retainedRevisions": [
+      "57cd8ec4-4b6c-43ba-b0df-7a6a551e8542",
+      "b5c5c3e0-d017-41e3-9b4e-cf9e97822ad3"
+    ]
+  },
+  "pendingArtifactCleanup": []
+}

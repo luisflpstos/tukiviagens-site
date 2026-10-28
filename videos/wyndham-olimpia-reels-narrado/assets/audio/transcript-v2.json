@@ -1,0 +1,434 @@
+[
+  {
+    "text": "quando",
+    "start": 0.06,
+    "end": 0.36,
+    "id": "w0"
+  },
+  {
+    "text": "foi",
+    "start": 0.36,
+    "end": 0.54,
+    "id": "w1"
+  },
+  {
+    "text": "a",
+    "start": 0.54,
+    "end": 0.6,
+    "id": "w2"
+  },
+  {
+    "text": "última",
+    "start": 0.6,
+    "end": 0.95,
+    "id": "w3"
+  },
+  {
+    "text": "vez",
+    "start": 0.96,
+    "end": 1.14,
+    "id": "w4"
+  },
+  {
+    "text": "que",
+    "start": 1.14,
+    "end": 1.29,
+    "id": "w5"
+  },
+  {
+    "text": "você",
+    "start": 1.35,
+    "end": 1.56,
+    "id": "w6"
+  },
+  {
+    "text": "deixou",
+    "start": 1.56,
+    "end": 1.92,
+    "id": "w7"
+  },
+  {
+    "text": "os",
+    "start": 1.92,
+    "end": 2.02,
+    "id": "w8"
+  },
+  {
+    "text": "problemas",
+    "start": 2.1,
+    "end": 2.59,
+    "id": "w9"
+  },
+  {
+    "text": "de",
+    "start": 2.59,
+    "end": 2.71,
+    "id": "w10"
+  },
+  {
+    "text": "lado",
+    "start": 2.71,
+    "end": 2.99,
+    "id": "w11"
+  },
+  {
+    "text": "e",
+    "start": 2.99,
+    "end": 3,
+    "id": "w12"
+  },
+  {
+    "text": "só",
+    "start": 3.1,
+    "end": 3.3,
+    "id": "w13"
+  },
+  {
+    "text": "curtiu",
+    "start": 3.3,
+    "end": 3.73,
+    "id": "w14"
+  },
+  {
+    "text": "sua",
+    "start": 3.88,
+    "end": 4.2,
+    "id": "w15"
+  },
+  {
+    "text": "família.",
+    "start": 4.2,
+    "end": 5.04,
+    "id": "w16"
+  },
+  {
+    "text": "Essa",
+    "start": 5.1,
+    "end": 5.29,
+    "id": "w17"
+  },
+  {
+    "text": "pausa",
+    "start": 5.38,
+    "end": 5.79,
+    "id": "w18"
+  },
+  {
+    "text": "pode",
+    "start": 5.79,
+    "end": 6.14,
+    "id": "w19"
+  },
+  {
+    "text": "ser",
+    "start": 6.14,
+    "end": 6.33,
+    "id": "w20"
+  },
+  {
+    "text": "em",
+    "start": 6.39,
+    "end": 6.56,
+    "id": "w21"
+  },
+  {
+    "text": "Olímpia!",
+    "start": 6.56,
+    "end": 7.44,
+    "id": "w22"
+  },
+  {
+    "text": "Com",
+    "start": 7.5,
+    "end": 7.65,
+    "id": "w23"
+  },
+  {
+    "text": "a",
+    "start": 7.65,
+    "end": 7.69,
+    "id": "w24"
+  },
+  {
+    "text": "Tuque",
+    "start": 7.78,
+    "end": 8.07,
+    "id": "w25"
+  },
+  {
+    "text": "Viagens,",
+    "start": 8.07,
+    "end": 8.73,
+    "id": "w26"
+  },
+  {
+    "text": "você",
+    "start": 8.73,
+    "end": 9.03,
+    "id": "w27"
+  },
+  {
+    "text": "tem",
+    "start": 9.03,
+    "end": 9.25,
+    "id": "w28"
+  },
+  {
+    "text": "até",
+    "start": 9.25,
+    "end": 9.46,
+    "id": "w29"
+  },
+  {
+    "text": "20%",
+    "start": 9.54,
+    "end": 9.99,
+    "id": "w30"
+  },
+  {
+    "text": "de",
+    "start": 9.99,
+    "end": 10.14,
+    "id": "w31"
+  },
+  {
+    "text": "desconto",
+    "start": 10.14,
+    "end": 10.76,
+    "id": "w32"
+  },
+  {
+    "text": "no",
+    "start": 10.76,
+    "end": 10.91,
+    "id": "w33"
+  },
+  {
+    "text": "Windham",
+    "start": 10.91,
+    "end": 11.45,
+    "id": "w34"
+  },
+  {
+    "text": "Olímpia",
+    "start": 11.45,
+    "end": 11.96,
+    "id": "w35"
+  },
+  {
+    "text": "Royal",
+    "start": 11.96,
+    "end": 12.1,
+    "id": "w36"
+  },
+  {
+    "text": "Hotels,",
+    "start": 12.58,
+    "end": 13.04,
+    "id": "w37"
+  },
+  {
+    "text": "piscina",
+    "start": 13.1,
+    "end": 13.55,
+    "id": "w38"
+  },
+  {
+    "text": "coberta,",
+    "start": 13.55,
+    "end": 14.19,
+    "id": "w39"
+  },
+  {
+    "text": "espaço",
+    "start": 14.19,
+    "end": 14.63,
+    "id": "w40"
+  },
+  {
+    "text": "kids",
+    "start": 14.63,
+    "end": 14.92,
+    "id": "w41"
+  },
+  {
+    "text": "e",
+    "start": 14.92,
+    "end": 14.99,
+    "id": "w42"
+  },
+  {
+    "text": "diversão",
+    "start": 14.99,
+    "end": 15.57,
+    "id": "w43"
+  },
+  {
+    "text": "para",
+    "start": 15.57,
+    "end": 15.86,
+    "id": "w44"
+  },
+  {
+    "text": "toda",
+    "start": 15.86,
+    "end": 16.15,
+    "id": "w45"
+  },
+  {
+    "text": "a",
+    "start": 16.15,
+    "end": 16.22,
+    "id": "w46"
+  },
+  {
+    "text": "família.",
+    "start": 16.22,
+    "end": 17.04,
+    "id": "w47"
+  },
+  {
+    "text": "Reserve",
+    "start": 17.1,
+    "end": 17.59,
+    "id": "w48"
+  },
+  {
+    "text": "até",
+    "start": 17.59,
+    "end": 17.83,
+    "id": "w49"
+  },
+  {
+    "text": "31",
+    "start": 17.83,
+    "end": 18.3,
+    "id": "w50"
+  },
+  {
+    "text": "de",
+    "start": 18.3,
+    "end": 18.43,
+    "id": "w51"
+  },
+  {
+    "text": "outubro,",
+    "start": 18.48,
+    "end": 19.17,
+    "id": "w52"
+  },
+  {
+    "text": "para",
+    "start": 19.17,
+    "end": 19.44,
+    "id": "w53"
+  },
+  {
+    "text": "hospedagens",
+    "start": 19.44,
+    "end": 20.18,
+    "id": "w54"
+  },
+  {
+    "text": "até",
+    "start": 20.18,
+    "end": 20.38,
+    "id": "w55"
+  },
+  {
+    "text": "3",
+    "start": 20.38,
+    "end": 20.53,
+    "id": "w56"
+  },
+  {
+    "text": "de",
+    "start": 20.68,
+    "end": 20.71,
+    "id": "w57"
+  },
+  {
+    "text": "janeiro",
+    "start": 20.71,
+    "end": 21.12,
+    "id": "w58"
+  },
+  {
+    "text": "de",
+    "start": 21.19,
+    "end": 21.25,
+    "id": "w59"
+  },
+  {
+    "text": "2027.",
+    "start": 21.33,
+    "end": 22.43,
+    "id": "w60"
+  },
+  {
+    "text": "Fale",
+    "start": 22.5,
+    "end": 22.69,
+    "id": "w61"
+  },
+  {
+    "text": "agora",
+    "start": 22.78,
+    "end": 23.09,
+    "id": "w62"
+  },
+  {
+    "text": "com",
+    "start": 23.09,
+    "end": 23.31,
+    "id": "w63"
+  },
+  {
+    "text": "a",
+    "start": 23.31,
+    "end": 23.38,
+    "id": "w64"
+  },
+  {
+    "text": "Tuque",
+    "start": 23.38,
+    "end": 23.73,
+    "id": "w65"
+  },
+  {
+    "text": "e",
+    "start": 23.79,
+    "end": 23.81,
+    "id": "w66"
+  },
+  {
+    "text": "transforme",
+    "start": 23.81,
+    "end": 24.54,
+    "id": "w67"
+  },
+  {
+    "text": "essa",
+    "start": 24.54,
+    "end": 24.83,
+    "id": "w68"
+  },
+  {
+    "text": "vontade",
+    "start": 24.83,
+    "end": 25.32,
+    "id": "w69"
+  },
+  {
+    "text": "em",
+    "start": 25.4,
+    "end": 25.44,
+    "id": "w70"
+  },
+  {
+    "text": "viagem!",
+    "start": 25.54,
+    "end": 26.17,
+    "id": "w71"
+  }
+]

@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template id="fx-bolts-template">
+      <style>
+        #fx-root {
+          position: absolute;
+          inset: 0;
+          overflow: hidden;
+          pointer-events: none;
+        }
+        .fx-zoom {
+          position: absolute;
+          left: 340px;
+          top: 560px;
+          width: 400px;
+          height: 800px;
+          opacity: 0;
+          transform-origin: 50% 50%;
+        }
+        .fx-slash {
+          position: absolute;
+          left: 190px;
+          top: -260px;
+          width: 700px;
+          height: 2440px;
+          opacity: 0;
+          transform-origin: 50% 0%;
+        }
+        .fx-flash {
+          position: absolute;
+          inset: 0;
+          opacity: 0;
+        }
+        .fx-yellow {
+          background: #ffd400;
+        }
+        .fx-white {
+          background: #fffdf8;
+        }
+      </style>
+
+      <div data-hf-id="hf-06r0" id="fx-root" data-composition-id="fx-bolts" data-width="1080" data-height="1920" data-duration="30">
+        <svg data-hf-id="hf-p95u" class="fx-zoom" id="fx-zoom1" viewBox="0 0 200 400" aria-hidden="true"><polygon data-hf-id="hf-rz2u" points="128,6 28,228 96,228 58,396 178,148 110,148 156,6" fill="#ffd400" stroke="#ffffff" stroke-width="8" stroke-linejoin="round" /></svg>
+        <div data-hf-id="hf-uhia" class="fx-flash fx-yellow" id="fx-yellow1"></div>
+        <svg data-hf-id="hf-jnbl" class="fx-slash" id="fx-slash2" viewBox="0 0 200 400" preserveAspectRatio="none" aria-hidden="true"><polygon data-hf-id="hf-jb6z" points="128,6 28,228 96,228 58,396 178,148 110,148 156,6" fill="#ffd400" stroke="#ffffff" stroke-width="5" stroke-linejoin="round" /></svg>
+        <div data-hf-id="hf-ray3" class="fx-flash fx-white" id="fx-white2"></div>
+        <svg data-hf-id="hf-d8ge" class="fx-slash" id="fx-slash3" viewBox="0 0 200 400" preserveAspectRatio="none" aria-hidden="true"><polygon data-hf-id="hf-n51n" points="128,6 28,228 96,228 58,396 178,148 110,148 156,6" fill="#ffd400" stroke="#ffffff" stroke-width="5" stroke-linejoin="round" /></svg>
+        <div data-hf-id="hf-ncu2" class="fx-flash fx-white" id="fx-white3"></div>
+        <svg data-hf-id="hf-luec" class="fx-slash" id="fx-slash5" viewBox="0 0 200 400" preserveAspectRatio="none" aria-hidden="true"><polygon data-hf-id="hf-mqqm" points="128,6 28,228 96,228 58,396 178,148 110,148 156,6" fill="#ffd400" stroke="#ffffff" stroke-width="5" stroke-linejoin="round" /></svg>
+        <div data-hf-id="hf-3tgk" class="fx-flash fx-white" id="fx-white5"></div>
+      </div>
+
+      <script>
+        (function () {
+          const tl = gsap.timeline({ paused: true });
+
+          // zoom THROUGH the bolt: it grows until yellow fills the frame on the cut, then the next scene opens
+          function zoomThrough(n, cut) {
+            const b = `#fx-zoom${n}`, y = `#fx-yellow${n}`;
+            tl.set(b, { opacity: 1 }, cut - 0.3);
+            tl.fromTo(b, { scale: 0.2, rotation: -25 }, { scale: 9, rotation: 0, duration: 0.3, ease: "power3.in", immediateRender: false }, cut - 0.3);
+            tl.set(y, { opacity: 1 }, cut - 0.04);
+            tl.set(b, { opacity: 0 }, cut);
+            tl.to(y, { opacity: 0, duration: 0.22, ease: "power2.out" }, cut + 0.02);
+          }
+          // a bolt strikes down across the frame with a white flash on the cut
+          function slash(n, cut, rot) {
+            const b = `#fx-slash${n}`, w = `#fx-white${n}`;
+            tl.set(b, { opacity: 1 }, cut - 0.16);
+            tl.fromTo(b, { scaleY: 0, scaleX: 1, rotation: rot }, { scaleY: 1, duration: 0.14, ease: "power4.out", immediateRender: false }, cut - 0.16);
+            tl.to(w, { opacity: 0.85, duration: 0.04, ease: "none" }, cut - 0.03);
+            tl.to(w, { opacity: 0, duration: 0.24, ease: "power2.out" }, cut + 0.02);
+            tl.to(b, { opacity: 0, scaleX: 0.4, duration: 0.18, ease: "power2.in" }, cut + 0.04);
+          }
+
+          zoomThrough(1, 7.75); // destination -> offer (into the promotional sequence)
+          slash(2, 13.6, 14); // offer -> family amenities
+          slash(3, 17.95, -12); // amenities -> dates
+          slash(5, 23.75, 10); // dates -> closing CTA
+
+          window.__timelines["fx-bolts"] = tl;
+        })();
+      </script>
+    </template>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "preferences": {
+    "destination": {
+      "value": "instagram-reels",
+      "confirmed_in": [
+        "wyndham-oferta-relampago"
+      ],
+      "updated_at": "2026-10-23T13:31:33.872Z"
+    },
+    "aspect": {
+      "value": "1080x1920",
+      "confirmed_in": [
+        "wyndham-oferta-relampago"
+      ],
+      "updated_at": "2026-10-23T13:31:33.897Z"
+    },
+    "language": {
+      "value": "pt-BR",
+      "confirmed_in": [
+        "wyndham-oferta-relampago"
+      ],
+      "updated_at": "2026-10-23T13:31:33.924Z"
+    },
+    "flow": {
+      "value": "automation",
+      "confirmed_in": [
+        "wyndham-oferta-relampago"
+      ],
+      "updated_at": "2026-10-23T13:31:33.957Z"
+    },
+    "storyboard": {
+      "value": "no",
+      "confirmed_in": [
+        "wyndham-oferta-relampago"
+      ],
+      "updated_at": "2026-10-23T13:31:33.982Z"
+    }
+  },
+  "sightings": {}
+}

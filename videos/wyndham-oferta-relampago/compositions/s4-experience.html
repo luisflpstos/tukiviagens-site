@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template id="s4-experience-template">
+      <style>
+        @font-face { font-family: "Montserrat"; font-style: normal; font-weight: 700 900; src: url("assets/fonts/montserrat-latin.woff2") format("woff2"); }
+        #s4-root {
+          position: absolute;
+          inset: 0;
+          overflow: hidden;
+          background: #4b14ae;
+          font-family: "Montserrat", sans-serif;
+        }
+        #s4-root .vwrap {
+          position: absolute;
+          inset: 0;
+        }
+        #s4-root video {
+          position: absolute;
+          inset: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        #s4-bg1 {
+          position: absolute;
+          inset: 0;
+          overflow: hidden;
+        }
+        #s4-bg1-img {
+          position: absolute;
+          inset: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        #s4-bg1-tint {
+          position: absolute;
+          inset: 0;
+          background: radial-gradient(80% 55% at 50% 50%, rgba(75, 20, 174, 0.25) 0%, rgba(42, 11, 107, 0.75) 100%);
+        }
+        #s4-shade {
+          position: absolute;
+          inset: 0;
+          background:
+            radial-gradient(75% 45% at 50% 48%, rgba(42, 11, 107, 0) 0%, rgba(42, 11, 107, 0.5) 100%),
+            linear-gradient(0deg, rgba(42, 11, 107, 0.55) 0%, rgba(42, 11, 107, 0) 35%);
+        }
+        .s4-item {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 1080px;
+          height: 1920px;
+        }
+        #s4-i2,
+        #s4-i3 {
+          opacity: 0;
+        }
+        .s4-card {
+          position: absolute;
+          left: 140px;
+          top: 470px;
+          width: 800px;
+          height: 800px;
+          border-radius: 56px;
+          border: 14px solid #ffffff;
+          overflow: hidden;
+          background: #4b14ae;
+          box-shadow: 18px 22px 0 #4b14ae, 0 40px 60px rgba(20, 4, 60, 0.45);
+        }
+        .s4-card img {
+          position: absolute;
+          left: -40px;
+          top: -40px;
+          width: 852px;
+          height: 852px;
+          object-fit: cover;
+        }
+        .s4-label {
+          position: absolute;
+          left: 90px;
+          right: 90px;
+          top: 1330px;
+          display: flex;
+          justify-content: center;
+        }
+        .s4-pill {
+          display: block;
+          padding: 22px 52px 26px;
+          border-radius: 999px;
+          background: #e8620a;
+          color: #ffffff;
+          font-weight: 900;
+          font-size: 78px;
+          line-height: 1;
+          letter-spacing: -0.02em;
+          white-space: nowrap;
+          box-shadow: 0 12px 0 #4b14ae, 0 24px 40px rgba(20, 4, 60, 0.35);
+        }
+        .s4-icon {
+          position: absolute;
+          right: 30px;
+          top: 330px;
+          width: 250px;
+          height: 250px;
+          object-fit: contain;
+          filter: drop-shadow(0 14px 18px rgba(20, 4, 60, 0.4));
+        }
+        .s4-num {
+          position: absolute;
+          left: 96px;
+          top: 300px;
+          font-weight: 900;
+          font-size: 54px;
+          line-height: 1;
+          color: #ffd400;
+          letter-spacing: 0.06em;
+          text-shadow: 0 4px 12px rgba(20, 4, 60, 0.6);
+        }
+      </style>
+
+      <div data-hf-id="hf-amaq" id="s4-root" data-composition-id="s4-experience" data-width="1080" data-height="1920" data-duration="8.26">
+        <!-- Beat 1 background: the indoor-pool photo itself, softened (no indoor-pool footage exists) -->
+        <div data-hf-id="hf-coxz" id="s4-bg1" class="clip" data-start="0" data-duration="2.43" data-track-index="0">
+          <img data-hf-id="hf-d6dt" id="s4-bg1-img" src="assets/img/piscina-coberta-blur.jpg" alt="" />
+          <div data-hf-id="hf-98i1" id="s4-bg1-tint"></div>
+        </div>
+        <!-- Beat 2 background: kids footage -->
+        <div data-hf-id="hf-m6kc" class="vwrap" id="s4-vw2a">
+          <video data-hf-id="hf-sakt" id="s4-v2a" class="clip" src="assets/video/hotel.mp4" muted playsinline
+            data-start="2.43" data-duration="1.07" data-media-start="25.5" data-playback-rate="0.5" data-track-index="0"></video>
+        </div>
+        <div data-hf-id="hf-uug7" class="vwrap" id="s4-vw2b">
+          <video data-hf-id="hf-y0ks" id="s4-v2b" class="clip" src="assets/video/hotel.mp4" muted playsinline
+            data-start="3.5" data-duration="0.74" data-media-start="17.955" data-track-index="0"></video>
+        </div>
+        <div data-hf-id="hf-qwc6" class="vwrap" id="s4-vw2c">
+          <video data-hf-id="hf-3r3y" id="s4-v2c" class="clip" src="assets/video/hotel.mp4" muted playsinline
+            data-start="4.24" data-duration="0.62" data-media-start="26.535" data-track-index="0"></video>
+        </div>
+        <!-- Beat 3 background: family in the pool -->
+        <div data-hf-id="hf-ohfy" class="vwrap" id="s4-vw3">
+          <video data-hf-id="hf-sabk" id="s4-v3" class="clip" src="assets/video/hotel.mp4" muted playsinline
+            data-start="4.86" data-duration="3.4" data-media-start="27.17" data-track-index="0"></video>
+        </div>
+        <div data-hf-id="hf-elsc" id="s4-shade"></div>
+
+        <div data-hf-id="hf-bd5j" class="s4-item" id="s4-i1">
+          <div data-hf-id="hf-fix0" class="s4-num" id="s4-n1">01 · 03</div>
+          <div data-hf-id="hf-pq6s" class="s4-card" id="s4-c1"><img data-hf-id="hf-yo6n" id="s4-p1" src="assets/img/piscina-coberta.jpg" alt="Piscina coberta do Wyndham Olímpia" /></div>
+          <img data-hf-id="hf-5nnm" class="s4-icon" id="s4-ic1" src="assets/icons/piscina.png" alt="" />
+          <div data-hf-id="hf-h9sc" class="s4-label"><span data-hf-id="hf-amlq" class="s4-pill" id="s4-l1">Piscina coberta</span></div>
+        </div>
+        <div data-hf-id="hf-2p9o" class="s4-item" id="s4-i2">
+          <div data-hf-id="hf-4au6" class="s4-num" id="s4-n2">02 · 03</div>
+          <div data-hf-id="hf-ye2n" class="s4-card" id="s4-c2"><img data-hf-id="hf-ttde" id="s4-p2" src="assets/img/espaco-kids.jpg" alt="Espaço kids do Wyndham Olímpia" /></div>
+          <img data-hf-id="hf-m743" class="s4-icon" id="s4-ic2" src="assets/icons/oculos-boia.png" alt="" />
+          <div data-hf-id="hf-uyuc" class="s4-label"><span data-hf-id="hf-f0ug" class="s4-pill" id="s4-l2">Espaço kids</span></div>
+        </div>
+        <div data-hf-id="hf-3gxh" class="s4-item" id="s4-i3">
+          <div data-hf-id="hf-ayto" class="s4-num" id="s4-n3">03 · 03</div>
+          <div data-hf-id="hf-ufym" class="s4-card" id="s4-c3"><img data-hf-id="hf-70c3" id="s4-p3" src="assets/img/diversao-familia.jpg" alt="Parque aquático infantil do Wyndham Olímpia" /></div>
+          <img data-hf-id="hf-1xtx" class="s4-icon" id="s4-ic3" src="assets/icons/sol.png" alt="" />
+          <div data-hf-id="hf-trx9" class="s4-label"><span data-hf-id="hf-kr3l" class="s4-pill" id="s4-l3">Diversão em família</span></div>
+        </div>
+      </div>
+
+      <script>
+        (function () {
+          const tl = gsap.timeline({ paused: true });
+          const beats = [
+            { i: 1, start: 0.0, end: 2.43, rot: -3, last: false },
+            { i: 2, start: 2.43, end: 4.86, rot: 3, last: false },
+            { i: 3, start: 4.86, end: 8.26, rot: -2, last: true },
+          ];
+
+          beats.forEach((b) => {
+            const id = (p) => `#s4-${p}${b.i}`;
+            const enter = Math.max(0, b.start - 0.04);
+            if (b.i > 1) tl.set(id("i"), { opacity: 1 }, enter);
+            // card deals in from the right
+            tl.fromTo(id("c"), { x: 1150, rotation: 20, opacity: 1 },
+              { x: 0, rotation: b.rot, duration: 0.5, ease: "power3.out" }, enter);
+            // gentle parallax inside the card
+            tl.fromTo(id("p"), { x: 34, y: 10, scale: 1.08 },
+              { x: -34, y: -10, scale: 1.0, duration: b.end - enter, ease: "none" }, enter);
+            tl.fromTo(id("n"), { x: -60, opacity: 0 }, { x: 0, opacity: 1, duration: 0.35, ease: "power3.out" }, b.start + 0.2);
+            tl.fromTo(id("l"), { scale: 0.2, y: 40, opacity: 0 },
+              { scale: 1, y: 0, opacity: 1, duration: 0.42, ease: "back.out(1.8)" }, b.start + 0.42);
+            tl.fromTo(id("ic"), { scale: 0, rotation: -30 },
+              { scale: 1, rotation: 0, duration: 0.45, ease: "back.out(2)" }, b.start + 0.55);
+            tl.to(id("ic"), { y: -16, rotation: 6, duration: 0.8, ease: "sine.inOut", yoyo: true, repeat: 1 }, b.start + 1.0);
+            if (!b.last) {
+              // deal out to the left as the next card arrives
+              const out = b.end - 0.3;
+              tl.to(id("c"), { x: -1200, rotation: -18, duration: 0.34, ease: "power3.in" }, out);
+              tl.to([id("l"), id("ic"), id("n")], { opacity: 0, y: 30, duration: 0.2, ease: "power2.in" }, out);
+            }
+          });
+
+          tl.fromTo("#s4-bg1-img", { scale: 1.12, x: 0 }, { scale: 1.2, x: -30, duration: 2.43, ease: "none" }, 0);
+          tl.fromTo("#s4-vw2a", { scale: 1.06 }, { scale: 1.0, duration: 1.07, ease: "none" }, 2.43);
+          tl.fromTo("#s4-vw3", { scale: 1.1 }, { scale: 1.0, duration: 3.4, ease: "power1.out" }, 4.86);
+          window.__timelines["s4-experience"] = tl;
+        })();
+      </script>
+    </template>
+  </body>
+</html>
